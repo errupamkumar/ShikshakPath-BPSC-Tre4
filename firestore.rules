@@ -1,0 +1,13 @@
+rules_version = '2';
+
+// The browser never talks to Firestore directly. Every read and write goes
+// through this app's server (Firebase Admin SDK), which bypasses these rules
+// and enforces login, ownership and paid access itself.
+// So: deny everything to clients.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

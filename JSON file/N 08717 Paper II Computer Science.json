@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "If the time is now 4 O'clock, what will be the time after 101 hours from now ?",
+    "options": {
+      "A": "9 O'clock",
+      "B": "8 O'clock",
+      "C": "5 O'clock",
+      "D": "4 O'clock"
+    },
+    "answer": "A",
+    "explanation": "101 mod 12 = 5, so 4 + 5 = 9 O'clock."
+  },
+  {
+    "id": 2,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Let m=(313)₄ and n=(322)₄. Find the base 4 expansion of m+n.",
+    "options": {
+      "A": "(635)₄",
+      "B": "(32312)₄",
+      "C": "(21323)₄",
+      "D": "(1301)₄"
+    },
+    "answer": "D",
+    "explanation": "m = 55 and n = 58, so m + n = 113 = 1·64 + 3·16 + 0·4 + 1 = (1301)₄."
+  },
+  {
+    "id": 3,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Let A = [[1 1 0],[0 1 0],[1 1 0],[0 0 1]] and B = [[1 0 0 0],[0 1 1 0],[1 0 1 1]] Find the boolean product A ⊙ B of the two matrices.\n(Matrices written row by row.)",
+    "options": {
+      "A": "[[1 1 1 0],[0 1 1 0],[1 1 1 0],[1 0 1 1]]",
+      "B": "[[1 1 0 1],[0 1 0 1],[1 1 1 0],[1 0 1 1]]",
+      "C": "[[1 1 0 1],[0 1 1 0],[1 1 1 0],[1 0 1 1]]",
+      "D": "[[1 1 1 0],[0 1 1 0],[1 0 1 1],[1 0 1 1]]"
+    },
+    "answer": "A",
+    "explanation": "Each row of A ⊙ B is the OR of the B-rows selected by the 1s in that row of A: row1 = B1∨B2 = 1110, row2 = B2 = 0110, row3 = 1110, row4 = B3 = 1011."
+  },
+  {
+    "id": 4,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "How many distinguishable permutations of the letters in the word BANANA are there ?",
+    "options": {
+      "A": "720",
+      "B": "120",
+      "C": "60",
+      "D": "360"
+    },
+    "answer": "C",
+    "explanation": "6!/(3!·2!·1!) = 720/12 = 60 (three A's, two N's)."
+  },
+  {
+    "id": 5,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Consider the graph given below :\n[Figure: vertices A, B, C, D, E, F, G with edge weights AC=6, AE=4, ED=5, AD=2, AG=3, GC=2, DG=4, GB=3, CB=4, DB (unlabelled), CF=5, BF=4]\nUse Kruskal's algorithm to find a minimal spanning tree for the graph. The List of the edges of the tree in the order in which they are choosen is ?",
+    "options": {
+      "A": "AD, AE, AG, GC, GB, BF",
+      "B": "GC, GB, BF, GA, AD, AE",
+      "C": "GC, AD, GB, GA, BF, AE",
+      "D": "AD, AG, GC, AE, GB, BF"
+    },
+    "answer": "C",
+    "explanation": "Kruskal picks edges in non-decreasing weight: GC(2), AD(2), GB(3), GA(3), BF(4), AE(4). Only option (3) is in non-decreasing order."
+  },
+  {
+    "id": 6,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "The Boolean function with the Karnaugh map\nCD\\AB | 00 01 11 10\n00 | 0 1 1 0\n01 | 0 1 1 1\n11 | 1 1 1 1\n10 | 0 1 1 0\nis :",
+    "options": {
+      "A": "(A+C).D+B",
+      "B": "(A+B).C+D",
+      "C": "(A+D).C+B",
+      "D": "(A+C).B+D"
+    },
+    "answer": "A",
+    "explanation": "Columns 01 and 11 give B; row CD=11 gives CD; the 1 at AB=10, CD=01 together with row 11 gives AD. F = B + CD + AD = (A + C)·D + B."
+  },
+  {
+    "id": 7,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "The Octal equivalent of the binary number 1011101011 is :",
+    "options": {
+      "A": "7353",
+      "B": "1353",
+      "C": "5651",
+      "D": "5657"
+    },
+    "answer": "B",
+    "explanation": "Group in threes from the right: 1 011 101 011 = 1 3 5 3 → (1353)₈."
+  },
+  {
+    "id": 8,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Let P and Q be two propositions, ¬ (P ↔ Q) is equivalent to :",
+    "options": {
+      "A": "P ↔ ¬ Q",
+      "B": "¬ P ↔ Q",
+      "C": "¬ P ↔ ¬ Q",
+      "D": "Q → P"
+    },
+    "answer": "A",
+    "explanation": "¬(P ↔ Q) is the exclusive-or, which equals P ↔ ¬Q. Note that ¬P ↔ Q (option 2) is equally correct, so two options are valid."
+  },
+  {
+    "id": 9,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Negation of the proposition ∃ x H(x) is :",
+    "options": {
+      "A": "∃ x ¬ H(x)",
+      "B": "∀ x ¬ H(x)",
+      "C": "∀ x H(x)",
+      "D": "¬ x H(x)"
+    },
+    "answer": "B",
+    "explanation": "¬∃x H(x) ≡ ∀x ¬H(x)."
+  },
+  {
+    "id": 10,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "The output of the following combinational circuit is F.\n[Figure: inputs P1, P2, P3 and their complements feed three OR gates, whose outputs go to an AND gate producing F]\nThe value of F is :",
+    "options": {
+      "A": "P1+P2'P3",
+      "B": "P1+P2'P3'",
+      "C": "P1+P2P3'",
+      "D": "P1'+P2P3"
+    },
+    "answer": "C",
+    "explanation": "The OR gates give (P1+P2+P3)(P1+P2+P3')(P1+P2'+P3'). Factoring P1 out gives P1 + (P2+P3)(P2+P3')(P2'+P3') = P1 + P2·P3'."
+  },
+  {
+    "id": 11,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "'ptrdata' is a pointer to a data type. The expression *ptrdata++ is evaluated as (in C++) :",
+    "options": {
+      "A": "*(ptrdata++)",
+      "B": "(*ptrdata)++",
+      "C": "*(ptrdata)++",
+      "D": "Depends on compiler"
+    },
+    "answer": "A",
+    "explanation": "Postfix ++ has higher precedence than unary *, so *p++ is *(p++): it dereferences, then advances the pointer."
+  },
+  {
+    "id": 12,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "The associativity of which of the following operators is Left to Right, in C++ ?",
+    "options": {
+      "A": "Unary Operator",
+      "B": "Logical not",
+      "C": "Array element access",
+      "D": "addressof"
+    },
+    "answer": "C",
+    "explanation": "Postfix operators such as [] associate left to right; unary operators (!, &, unary −) associate right to left."
+  },
+  {
+    "id": 13,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "A member function can always access the data in __________ , (in C++).",
+    "options": {
+      "A": "the class of which it is member",
+      "B": "the object of which it is a member",
+      "C": "the public part of its class",
+      "D": "the private part of its class"
+    },
+    "answer": "A",
+    "explanation": "A member function has access to all members (public, protected, private) of its own class."
+  },
+  {
+    "id": 14,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which of the following is not correct for virtual function in C++ ?",
+    "options": {
+      "A": "Must be declared in public section of class.",
+      "B": "Virtual function can be static.",
+      "C": "Virtual function should be accessed using pointers.",
+      "D": "Virtual function is defined in base class."
+    },
+    "answer": "B",
+    "explanation": "Virtual functions need an object (this) for dynamic dispatch, so they cannot be static."
+  },
+  {
+    "id": 15,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which of the following is not correct (in C++) ?",
+    "options": {
+      "A": "Class templates and function templates are instantiated in the same way.",
+      "B": "Class templates differ from function templates in the way they are initiated.",
+      "C": "Class template is initiated by defining an object using the template argument.",
+      "D": "Class templates are generally used for storage classes."
+    },
+    "answer": "A",
+    "explanation": "Function templates are instantiated implicitly from call arguments, while class templates are instantiated by declaring objects with explicit template arguments, so they are not instantiated the same way."
+  },
+  {
+    "id": 16,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which of the following is/are true with reference to 'view' in DBMS ?\n(a) A 'view' is a special stored procedure executed when certain event occurs.\n(b) A 'view' is a virtual table, which occurs after executing a pre-compiled query.\nCode :",
+    "options": {
+      "A": "Only (a) is true",
+      "B": "Only (b) is true",
+      "C": "Both (a) and (b) are true",
+      "D": "Neither (a) nor (b) are true"
+    },
+    "answer": "B",
+    "explanation": "A view is a virtual table defined by a stored query; (a) describes a trigger."
+  },
+  {
+    "id": 17,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "In SQL, __________ is an Aggregate function.",
+    "options": {
+      "A": "SELECT",
+      "B": "CREATE",
+      "C": "AVG",
+      "D": "MODIFY"
+    },
+    "answer": "C",
+    "explanation": "AVG, SUM, COUNT, MIN and MAX are aggregate functions."
+  },
+  {
+    "id": 18,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Match the following with respect to RDBMS :\n(a) Entity integrity | (i) enforces some specific business rule that do not fall into entity or domain\n(b) Domain integrity | (ii) Rows can't be deleted which are used by other records\n(c) Referential integrity | (iii) enforces valid entries for a column\n(d) Userdefined integrity | (iv) No duplicate rows in a table\nCode : (a) (b) (c) (d)",
+    "options": {
+      "A": "(iii) (iv) (i) (ii)",
+      "B": "(iv) (iii) (ii) (i)",
+      "C": "(iv) (ii) (iii) (i)",
+      "D": "(ii) (iii) (iv) (i)"
+    },
+    "answer": "B",
+    "explanation": "Entity: unique rows (iv); domain: valid column values (iii); referential: referenced rows can't be deleted (ii); user-defined: business rules (i)."
+  },
+  {
+    "id": 19,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "In RDBMS, different classes of relations are created using __________ technique to prevent modification anomalies.",
+    "options": {
+      "A": "Functional Dependencies",
+      "B": "Data integrity",
+      "C": "Referential integrity",
+      "D": "Normal Forms"
+    },
+    "answer": "D",
+    "explanation": "Normal forms (1NF, 2NF, 3NF, BCNF…) classify relations by how free they are from update, insert and delete anomalies."
+  },
+  {
+    "id": 20,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "__________ SQL command changes one or more fields in a record.",
+    "options": {
+      "A": "LOOK-UP",
+      "B": "INSERT",
+      "C": "MODIFY",
+      "D": "CHANGE"
+    },
+    "answer": "C",
+    "explanation": "The standard SQL command is UPDATE, which is not listed; MODIFY is the intended (keyed) answer."
+  },
+  {
+    "id": 21,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Consider an array representation of an n element binary heap where the elements are stored from index 1 to index n of the array. For the element stored at index i of the array (i<=n), the index of the parent is :",
+    "options": {
+      "A": "floor ((i+1)/2)",
+      "B": "ceiling ((i+1)/2)",
+      "C": "floor (i/2)",
+      "D": "ceiling (i/2)"
+    },
+    "answer": "C",
+    "explanation": "With 1-based indexing, children of i are 2i and 2i+1, so parent(i) = ⌊i/2⌋."
+  },
+  {
+    "id": 22,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "The following numbers are inserted into an empty binary search tree in the given order : 10, 1, 3, 5, 15, 12, 16. What is the height of the binary search tree ?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "A",
+    "explanation": "The longest path is 10 → 1 → 3 → 5, which has 3 edges, so the height is 3 (counting the root at height 0)."
+  },
+  {
+    "id": 23,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Let G be an undirected connected graph with distinct edge weight. Let Emax be the edge with maximum weight and Emin the edge with minimum weight. Which of the following statements is false ?",
+    "options": {
+      "A": "Every minimum spanning tree of G must contain Emin.",
+      "B": "If Emax is in minimum spanning tree, then its removal must disconnect G.",
+      "C": "No minimum spanning tree contains Emax.",
+      "D": "G has a unique minimum spanning tree."
+    },
+    "answer": "C",
+    "explanation": "If Emax is a bridge it must be in every spanning tree, so 'No MST contains Emax' is false. The other statements hold for distinct weights."
+  },
+  {
+    "id": 24,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "A list of n strings, each of length n, is sorted into lexicographic order using merge - sort algorithm. The worst case running time of this computation is :",
+    "options": {
+      "A": "O(n log n)",
+      "B": "O(n² log n)",
+      "C": "O(n² + log n)",
+      "D": "O(n³)"
+    },
+    "answer": "B",
+    "explanation": "Merge sort does O(n log n) comparisons, and each string comparison costs O(n), giving O(n² log n)."
+  },
+  {
+    "id": 25,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Postorder traversal of a given binary search tree T produces following sequence of keys :\n3, 5, 7, 9, 4, 17, 16, 20, 18, 15, 14\nWhich one of the following sequences of keys can be the result of an in-order traversal of the tree T ?",
+    "options": {
+      "A": "3, 4, 5, 7, 9, 14, 20, 18, 17, 16, 15",
+      "B": "20, 18, 17, 16, 15, 14, 3, 4, 5, 7, 9",
+      "C": "20, 18, 17, 16, 15, 14, 9, 7, 5, 4, 3",
+      "D": "3, 4, 5, 7, 9, 14, 15, 16, 17, 18, 20"
+    },
+    "answer": "D",
+    "explanation": "The in-order traversal of any BST is the keys in sorted order."
+  },
+  {
+    "id": 26,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which of the following devices takes data sent from one network device and forwards it to the destination node based on MAC address ?",
+    "options": {
+      "A": "Hub",
+      "B": "Modem",
+      "C": "Switch",
+      "D": "Gateway"
+    },
+    "answer": "C",
+    "explanation": "A switch learns MAC addresses and forwards frames only to the destination port; a hub broadcasts."
+  },
+  {
+    "id": 27,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "__________ do not take their decisions on measurements or estimates of the current traffic and topology.",
+    "options": {
+      "A": "Static algorithms",
+      "B": "Adaptive algorithms",
+      "C": "Non - adaptive algorithms",
+      "D": "Recursive algorithms"
+    },
+    "answer": "C",
+    "explanation": "Non-adaptive (static) routing algorithms compute routes in advance without using current traffic or topology (Tanenbaum's wording). Option (1) describes the same idea; (3) is the textbook term and the keyed answer."
+  },
+  {
+    "id": 28,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "The number of bits used for addressing in Gigabit Ethernet is __________.",
+    "options": {
+      "A": "32 bits",
+      "B": "48 bits",
+      "C": "64 bits",
+      "D": "128 bits"
+    },
+    "answer": "B",
+    "explanation": "All Ethernet variants use 48-bit MAC addresses."
+  },
+  {
+    "id": 29,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which of the following layer of OSI Reference model is also called end-to-end layer ?",
+    "options": {
+      "A": "Network layer",
+      "B": "Datalink layer",
+      "C": "Session layer",
+      "D": "Transport layer"
+    },
+    "answer": "D",
+    "explanation": "The transport layer provides true end-to-end (source to destination process) communication."
+  },
+  {
+    "id": 30,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "The IP address __________ is used by hosts when they are being booted.",
+    "options": {
+      "A": "0.0.0.0",
+      "B": "1.0.0.0",
+      "C": "1.1.1.1",
+      "D": "255.255.255.255"
+    },
+    "answer": "A",
+    "explanation": "0.0.0.0 means 'this host' and is used as the source address by a booting host that doesn't yet know its IP (e.g. in DHCP)."
+  },
+  {
+    "id": 31,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Consider the following program fragment in assembly language :\nmov ax, 0h\nmov cx, 0A h\ndoloop :\ndec ax\nloop doloop\nWhat is the value of ax and cx registers after the completion of the doloop ?",
+    "options": {
+      "A": "ax=FFF5 h and cx=0 h",
+      "B": "ax=FFF6 h and cx=0 h",
+      "C": "ax=FFF7 h and cx=0A h",
+      "D": "ax=FFF5 h and cx=0A h"
+    },
+    "answer": "B",
+    "explanation": "LOOP runs the body 10 times (CX 10 → 0). AX is decremented 10 times from 0: 0 − 10 = FFF6h. CX ends at 0."
+  },
+  {
+    "id": 32,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Consider the following assembly program fragment :\nstc\nmov al, 11010110b\nmov cl, 2\nrcl al, 3\nrol al, 4\nshr al, cl\nmul cl\nThe contents of the destination register ax (in hexadecimal) and the status of Carry Flag (CF) after the execution of above instructions, are :",
+    "options": {
+      "A": "ax=003CH; CF=0",
+      "B": "ax=001EH; CF=0",
+      "C": "ax=007BH; CF=1",
+      "D": "ax=00B7H; CF=1"
+    },
+    "answer": "A",
+    "explanation": "CF=1. rcl al,3 → AL = B7h. rol al,4 → 7Bh. shr al,2 → 1Eh. mul cl → AX = 1Eh × 2 = 003Ch, and MUL clears CF because AH = 0."
+  },
+  {
+    "id": 33,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which of the following regular expressions, each describing a language of binary numbers (MSB to LSB) that represents non-negative decimal values, does not include even values ?\nWhere {+, *} are quantification characters.",
+    "options": {
+      "A": "0*1+0*1*",
+      "B": "0*1*0+1*",
+      "C": "0*1*0*1+",
+      "D": "0+1*0*1*"
+    },
+    "answer": "C",
+    "explanation": "Only 0*1*0*1+ forces the last bit (LSB) to be 1, so every value is odd. The others allow strings ending in 0."
+  },
+  {
+    "id": 34,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which of the following statements is/are TRUE ?\n(a) The grammar S → SS | a is ambiguous. (Where S is the start symbol)\n(b) The grammar S → 0S1 | 01S | ϵ is ambiguous. (The special symbol ϵ represents the empty string) (Where S is the start symbol)\n(c) The grammar (Where S is the start symbol)\nS → T/U\nT → x S y | xy | ϵ\nU → yT\ngenerates a language consisting of the string yxxyy.",
+    "options": {
+      "A": "Only (a) and (b) are TRUE.",
+      "B": "Only (a) and (c) are TRUE.",
+      "C": "Only (b) and (c) are TRUE.",
+      "D": "All of (a), (b) and (c) are TRUE."
+    },
+    "answer": "D",
+    "explanation": "(a) 'aaa' has two parse trees. (b) '01' comes from 0S1 (S→ϵ) or 01S (S→ϵ). (c) S→U→yT→y x S y, S→T→xy gives yxxyy. All three are true."
+  },
+  {
+    "id": 35,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Match the description of several parts of a classic optimizing compiler in List - I, with the names of those parts in List - II :\n(a) A part of a compiler that is responsible for recognizing syntax. | (i) Optimizer\n(b) A part of a compiler that takes as input a stream of characters and produces as output a stream of words along with their associated syntactic categories. | (ii) Semantic Analysis\n(c) A part of a compiler that understand the meanings of variable names and other symbols and checks that they are used in ways consistent with their definitions. | (iii) Parser\n(d) An IR-to-IR transformer that tries to improve the IR program in some way (Intermediate Representation). | (iv) Scanner\nCode : (a) (b) (c) (d)",
+    "options": {
+      "A": "(iii) (iv) (ii) (i)",
+      "B": "(iv) (iii) (ii) (i)",
+      "C": "(ii) (iv) (i) (iii)",
+      "D": "(ii) (iv) (iii) (i)"
+    },
+    "answer": "A",
+    "explanation": "Parser recognises syntax, scanner produces tokens, semantic analysis checks meaning, optimizer transforms IR."
+  },
+  {
+    "id": 36,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "In Distributed system, the capacity of a system to adapt the increased service load is called __________ .",
+    "options": {
+      "A": "Tolerance",
+      "B": "Scalability",
+      "C": "Capability",
+      "D": "Loading"
+    },
+    "answer": "B",
+    "explanation": "Scalability is the ability to handle growing load by adding resources."
+  },
+  {
+    "id": 37,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "In __________ disk scheduling algorithm, the disk head moves from one end to other end of the disk, serving the requests along the way. When the head reaches the other end, it immediately returns to the beginning of the disk without serving any requests on the return trip.",
+    "options": {
+      "A": "LOOK",
+      "B": "SCAN",
+      "C": "C - LOOK",
+      "D": "C - SCAN"
+    },
+    "answer": "D",
+    "explanation": "C-SCAN goes all the way to the end and jumps back to the beginning without servicing; C-LOOK only goes as far as the last request."
+  },
+  {
+    "id": 38,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Suppose there are six files F1, F2, F3, F4, F5, F6 with corresponding sizes 150 KB, 225 KB, 75 KB, 60 KB, 275 KB and 65 KB respectively. The files are to be stored on a sequential device in such a way that optimizes access time. In what order should the files be stored ?",
+    "options": {
+      "A": "F5, F2, F1, F3, F6, F4",
+      "B": "F4, F6, F3, F1, F2, F5",
+      "C": "F1, F2, F3, F4, F5, F6",
+      "D": "F6, F5, F4, F3, F2, F1"
+    },
+    "answer": "B",
+    "explanation": "Optimal storage on tape (greedy): store in increasing size, 60, 65, 75, 150, 225, 275, i.e. F4, F6, F3, F1, F2, F5."
+  },
+  {
+    "id": 39,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which module gives control of the CPU to the process selected by the short - term schedular ?",
+    "options": {
+      "A": "Dispatcher",
+      "B": "Interrupt",
+      "C": "Schedular",
+      "D": "Threading"
+    },
+    "answer": "A",
+    "explanation": "The dispatcher performs the context switch and hands the CPU to the process chosen by the short-term scheduler."
+  },
+  {
+    "id": 40,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Two atomic operations permissible on Semaphores are __________ and __________.",
+    "options": {
+      "A": "wait, stop",
+      "B": "wait, hold",
+      "C": "hold, signal",
+      "D": "wait, signal"
+    },
+    "answer": "D",
+    "explanation": "Semaphores support wait (P) and signal (V)."
+  },
+  {
+    "id": 41,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Software does not wear-out in the traditional sense of the term, but software does tend to deteriorate as it evolves, because :",
+    "options": {
+      "A": "Software suffers from exposure to hostile environments.",
+      "B": "Defects are more likely to arise after software has been used often.",
+      "C": "Multiple change requests introduce errors in component interactions.",
+      "D": "Software spare parts become harder to order."
+    },
+    "answer": "C",
+    "explanation": "Pressman: each change can introduce new defects, so repeated changes cause software to deteriorate."
+  },
+  {
+    "id": 42,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Software re-engineering is concerned with :",
+    "options": {
+      "A": "Re-constructing the original source code from the existing machine (low - level) code program and modifying it to make it more user - friendly.",
+      "B": "Scrapping the source code of a software and re-writing it entirely from scratch.",
+      "C": "Re-organising and modifying existing software systems to make them more maintainable.",
+      "D": "Translating source code of an existing software to a new machine (low - level) language."
+    },
+    "answer": "C",
+    "explanation": "Re-engineering restructures existing systems to improve maintainability without rewriting from scratch."
+  },
+  {
+    "id": 43,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which of the following is not a key issue stressed by an agile philosophy of software engineering ?",
+    "options": {
+      "A": "The importance of self-organizing teams as well as communication and collaboration between team members and customers.",
+      "B": "Recognition that change represents opportunity.",
+      "C": "Emphasis on rapid delivery of software that satisfies the customer.",
+      "D": "Having a separate testing phase after a build phase."
+    },
+    "answer": "D",
+    "explanation": "Agile integrates testing continuously rather than as a separate phase after building."
+  },
+  {
+    "id": 44,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "What is the normal order of activities in which traditional software testing is organized ?\n(a) Integration Testing\n(b) System Testing\n(c) Unit Testing\n(d) Validation Testing\nCode :",
+    "options": {
+      "A": "(c), (a), (b), (d)",
+      "B": "(c), (a), (d), (b)",
+      "C": "(d), (c), (b), (a)",
+      "D": "(b), (d), (a), (c)"
+    },
+    "answer": "B",
+    "explanation": "Pressman's testing strategy: unit → integration → validation → system testing."
+  },
+  {
+    "id": 45,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which of the following testing techniques ensures that the software product runs correctly after the changes during maintenance ?",
+    "options": {
+      "A": "Path Testing",
+      "B": "Integration Testing",
+      "C": "Unit Testing",
+      "D": "Regression Testing"
+    },
+    "answer": "D",
+    "explanation": "Regression testing re-runs tests after changes to make sure nothing that worked before is broken."
+  },
+  {
+    "id": 46,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which of the following Super Computers is the fastest Super Computer ?",
+    "options": {
+      "A": "Sun-way TaihuLight",
+      "B": "Titan",
+      "C": "Piz Daint",
+      "D": "Sequoia"
+    },
+    "answer": "A",
+    "explanation": "At the time of the exam (Nov 2017), Sunway TaihuLight was No. 1 on the TOP500 list. This answer is time-dependent."
+  },
+  {
+    "id": 47,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which of the following statements about ERP system is true ?",
+    "options": {
+      "A": "Most ERP software implementations fully achieve seamless integration.",
+      "B": "ERP software packages are themselves combinations of seperate applications for manufacturing, materials, resource planning, general ledger, human resources, procurement and order entry.",
+      "C": "Integration of ERP systems can be achieved in only one way.",
+      "D": "An ERP package implemented uniformly throughout an enterprise is likely to contain very flexible connections to allow charges and software variations."
+    },
+    "answer": "B",
+    "explanation": "ERP suites are built from separate functional modules (manufacturing, finance, HR, procurement…) integrated around a common database."
+  },
+  {
+    "id": 48,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which of the following is not a Clustering method ?",
+    "options": {
+      "A": "K - Mean method",
+      "B": "Self Organizing feature map method",
+      "C": "K - nearest neighbor method",
+      "D": "Agglomerative method"
+    },
+    "answer": "C",
+    "explanation": "k-NN is a supervised classification method; k-means, SOM and agglomerative hierarchical methods are clustering."
+  },
+  {
+    "id": 49,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which of the given wireless technologies used in IoT, consumes the least amount of power ?",
+    "options": {
+      "A": "Zigbee",
+      "B": "Bluetooth",
+      "C": "Wi-Fi",
+      "D": "GSM/CDMA"
+    },
+    "answer": "A",
+    "explanation": "Zigbee (IEEE 802.15.4) is designed for very low-power, low-data-rate IoT/sensor networks."
+  },
+  {
+    "id": 50,
+    "source_file": "N 08717 Paper II Computer Science",
+    "question": "Which speed up could be achieved according to Amdahl's Law for infinite number of processes if 5% of a program is sequential and the remaining part is ideally parallel ?",
+    "options": {
+      "A": "Infinite",
+      "B": "5",
+      "C": "20",
+      "D": "50"
+    },
+    "answer": "C",
+    "explanation": "Maximum speed-up = 1/s = 1/0.05 = 20."
+  }
+]

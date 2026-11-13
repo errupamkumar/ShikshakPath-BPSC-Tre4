@@ -1,0 +1,782 @@
+[
+  {
+    "id": 1,
+    "source_file": "programmer paper 1_2024",
+    "question": "In a slotted ALOHA with G-stations attempting to transmit in one slot, the throughput is equal to -",
+    "options": {
+      "A": "e^-G",
+      "B": "G × e^-2G",
+      "C": "G × e^-G",
+      "D": "2G × e^-G"
+    },
+    "answer": "C",
+    "explanation": "In slotted ALOHA a frame succeeds only if no other frame is sent in the same slot, so throughput S = G·e^(−G) (maximum 0.368 at G = 1). Pure ALOHA gives G·e^(−2G)."
+  },
+  {
+    "id": 2,
+    "source_file": "programmer paper 1_2024",
+    "question": "There are n stations in a slotted LAN. Each station attempts to transmit with a probability p in each time slot. What is the probability that only one station transmits in a given time slot?",
+    "options": {
+      "A": "1 − (1 − p)^(n−1)",
+      "B": "(1 − p)^(n−1)",
+      "C": "n × p × (1 − p)^(n−1)",
+      "D": "p × (1 − p)^(n−1)"
+    },
+    "answer": "C",
+    "explanation": "Any one of the n stations may be the one that transmits (probability p) while the other n − 1 stay silent ((1 − p)^(n−1)), giving n·p·(1 − p)^(n−1)."
+  },
+  {
+    "id": 3,
+    "source_file": "programmer paper 1_2024",
+    "question": "In ER Model constructs, which type of attribute is most suitable to represent the skill(s) of an employee for an organization?",
+    "options": {
+      "A": "Derived attribute",
+      "B": "Composite attribute",
+      "C": "Atomic attribute",
+      "D": "Multivalued attribute"
+    },
+    "answer": "D",
+    "explanation": "An employee can have several skills, so skill is a multivalued attribute (drawn as a double ellipse)."
+  },
+  {
+    "id": 4,
+    "source_file": "programmer paper 1_2024",
+    "question": "In Relational Model, which type of constraint does not allow composite and multivalued attributes?",
+    "options": {
+      "A": "Entity integrity constraints",
+      "B": "Domain constraints",
+      "C": "Referential integrity constraints",
+      "D": "Uniqueness constraints"
+    },
+    "answer": "B",
+    "explanation": "Domain constraints require every attribute value to be an atomic value from its domain, which rules out composite and multivalued attributes (1NF)."
+  },
+  {
+    "id": 5,
+    "source_file": "programmer paper 1_2024",
+    "question": "Consider following two instances of relations X and Y -\nX (Code, Item): (100, A), (200, B), (300, B), (400, C)\nY (Item, Quantity): (A, 5), (B, 6), (C, 3)\nHow many total tuples a Cartesian product between the two relations X and Y will produce?",
+    "options": {
+      "A": "12",
+      "B": "7",
+      "C": "4",
+      "D": "3"
+    },
+    "answer": "A",
+    "explanation": "A Cartesian product pairs every tuple of X with every tuple of Y: 4 × 3 = 12 tuples."
+  },
+  {
+    "id": 6,
+    "source_file": "programmer paper 1_2024",
+    "question": "An organization has a Class B network and wishes to form subnets for 64 departments. The subnet mask would be -",
+    "options": {
+      "A": "255.255.0.0",
+      "B": "255.255.252.0",
+      "C": "255.255.64.0",
+      "D": "255.255.128.0"
+    },
+    "answer": "B",
+    "explanation": "64 subnets need 6 bits borrowed from the host part of a /16: mask /22 = 255.255.252.0."
+  },
+  {
+    "id": 7,
+    "source_file": "programmer paper 1_2024",
+    "question": "The physical layer is responsible for -",
+    "options": {
+      "A": "Process to process delivery",
+      "B": "Bit-by-bit delivery",
+      "C": "Application to application delivery",
+      "D": "Port to port delivery"
+    },
+    "answer": "B",
+    "explanation": "The physical layer moves individual bits over the medium; process-to-process (port-to-port) delivery is the transport layer's job."
+  },
+  {
+    "id": 8,
+    "source_file": "programmer paper 1_2024",
+    "question": "Consider the following instance of a relation District -\nDistrict (Name, Population): (JA, 10), (AJ, 50), (MM, 5)\nWhich of the District name will be returned by the following relational algebra expression?\n(πName(σName=\"AJ\"(District))) − [(πName(σPopulation>5(District))) ∩ (πName(σName=\"AJ\"(District)))]",
+    "options": {
+      "A": "MM",
+      "B": "JA",
+      "C": "JA, AJ",
+      "D": "AJ"
+    },
+    "answer": "D",
+    "explanation": "As printed, the first part gives {AJ} and the bracket gives {JA, AJ} ∩ {AJ} = {AJ}, so the result is empty and no option matches exactly. The only name the expression can return is AJ (it does if the population filter excludes AJ, e.g. Population < 5 gives {MM} ∩ {AJ} = ∅). Option 4 is the expected key; treat this question as flawed."
+  },
+  {
+    "id": 9,
+    "source_file": "programmer paper 1_2024",
+    "question": "Which of the following Multiple Access Protocols is not suitable for wired networks?",
+    "options": {
+      "A": "CSMA/CA",
+      "B": "CSMA/CD",
+      "C": "TGMA",
+      "D": "TDMA"
+    },
+    "answer": "A",
+    "explanation": "CSMA/CA (collision avoidance) is designed for wireless LANs (IEEE 802.11), where collisions cannot be detected reliably; wired Ethernet uses CSMA/CD."
+  },
+  {
+    "id": 10,
+    "source_file": "programmer paper 1_2024",
+    "question": "Consider a schema R (A, B, C, D) and functional dependencies A → B, C → D. Then, the decomposition of R into R1 and R2 where R1 (AB) and R2 (CD), is -",
+    "options": {
+      "A": "Dependency preserving but not lossless join",
+      "B": "Not dependency preserving and not lossless join",
+      "C": "Lossless join but not dependency preserving",
+      "D": "Dependency preserving and lossless join"
+    },
+    "answer": "A",
+    "explanation": "A → B lies in R1 and C → D in R2, so dependencies are preserved. But R1 ∩ R2 = ∅ is not a key of either part, so the join is lossy."
+  },
+  {
+    "id": 11,
+    "source_file": "programmer paper 1_2024",
+    "question": "Consider following two instances of relation Student and Faculty with operation on these instances -\nStudent (D-Name, Strength): (CS, 900), (IT, 500), (Cyber, 300), (ME, 1000), (CIVIL, 2000)\nFaculty (D-Name, Strength): (EE, 2000), (ECE, 5000), (Cyber, 300), (DS, 100), (CIVIL, 2000)\n(a) Student − Faculty\n(b) (Student ∩ Faculty) ∪ (Faculty ∩ Student)\n(c) (Student ∪ Faculty) − (Student ∩ Faculty)\n(d) Student ∩ Faculty\nIdentify the correct option that produces equivalent output -",
+    "options": {
+      "A": "b, c, d",
+      "B": "b, d",
+      "C": "a, b",
+      "D": "b, c"
+    },
+    "answer": "B",
+    "explanation": "Student ∩ Faculty = {(Cyber, 300), (CIVIL, 2000)}; (b) is the union of that set with itself, so (b) = (d). (a) gives CS, IT, ME and (c) gives the symmetric difference."
+  },
+  {
+    "id": 12,
+    "source_file": "programmer paper 1_2024",
+    "question": "For Stop-and-Wait ARQ, for 10 data packets sent, ............ acknowledgements are needed.",
+    "options": {
+      "A": "11",
+      "B": "9",
+      "C": "10",
+      "D": "20"
+    },
+    "answer": "C",
+    "explanation": "Stop-and-Wait ARQ acknowledges every frame individually, so 10 packets need 10 ACKs."
+  },
+  {
+    "id": 13,
+    "source_file": "programmer paper 1_2024",
+    "question": "'View' in a database is -",
+    "options": {
+      "A": "A method to improve database performance",
+      "B": "A physical table that stores data",
+      "C": "A virtual table created by querying one or more tables",
+      "D": "A backup copy of a database"
+    },
+    "answer": "C",
+    "explanation": "A view is a virtual table defined by a query over base tables; it normally stores no data of its own."
+  },
+  {
+    "id": 14,
+    "source_file": "programmer paper 1_2024",
+    "question": "What is the role of DNS? It is best described as -",
+    "options": {
+      "A": "translate a host's IPv6 address to an IPv4 address",
+      "B": "maps a MAC address to an IP address",
+      "C": "translate a host's private IP address to a public IP address",
+      "D": "maps a domain name to an IP address"
+    },
+    "answer": "D",
+    "explanation": "The Domain Name System resolves human-readable domain names to IP addresses."
+  },
+  {
+    "id": 15,
+    "source_file": "programmer paper 1_2024",
+    "question": "Consider Relations R1 and R2 as given below -\nR1 (P, Q, R): (p, q, r), (k, i, j), (m, q, r), (d, e, f)\nR2 (Q, R, S): (q, r, n), (l, c, o), (q, r, a), (q, r, b), (e, f, g)\nThe number of tuples in output of R1 ⋈ R2 will be -",
+    "options": {
+      "A": "20",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
+    "answer": "D",
+    "explanation": "The natural join matches on (Q, R). (p,q,r) and (m,q,r) each match three R2 tuples (n, a, b) = 6; (d,e,f) matches (e,f,g) = 1; (k,i,j) matches none. Total 7."
+  },
+  {
+    "id": 16,
+    "source_file": "programmer paper 1_2024",
+    "question": "If a Class B network on the internet has a subnet mask of 255.255.248.0, what is the maximum number of hosts per subnet?",
+    "options": {
+      "A": "1023",
+      "B": "1022",
+      "C": "1024",
+      "D": "2046"
+    },
+    "answer": "D",
+    "explanation": "255.255.248.0 is /21, which leaves 11 host bits: 2^11 − 2 = 2046 hosts."
+  },
+  {
+    "id": 17,
+    "source_file": "programmer paper 1_2024",
+    "question": "The Address Resolution Protocol (ARP) is used for -",
+    "options": {
+      "A": "finding the IP address from the DNS.",
+      "B": "finding the IP address that corresponds to a MAC address.",
+      "C": "finding the IP address of the default gateway.",
+      "D": "finding the MAC address that corresponds to an IP address."
+    },
+    "answer": "D",
+    "explanation": "ARP resolves a known IPv4 address to the corresponding MAC (hardware) address on the local network."
+  },
+  {
+    "id": 18,
+    "source_file": "programmer paper 1_2024",
+    "question": "Consider below statements -\n(I) Each non-leaf node in B+ tree has between ⌈n/2⌉ and n Children, where n is fixed for a particular tree.\n(II) The search key of a clustering index is always primary key.\n(III) Secondary indices must be dense.\n(IV) In a dense index, an index entry appears for only some of the search-key values.\nWhich of the above statements are true?",
+    "options": {
+      "A": "I and IV",
+      "B": "II and III",
+      "C": "I and III",
+      "D": "I and II"
+    },
+    "answer": "C",
+    "explanation": "I is the B+ tree occupancy rule and III is true because records are not ordered by a secondary key. II is false (a clustering index may be on a non-key attribute) and IV describes a sparse index."
+  },
+  {
+    "id": 19,
+    "source_file": "programmer paper 1_2024",
+    "question": "Which of the following protocol is used for transferring email messages from one machine to another?",
+    "options": {
+      "A": "SNMP",
+      "B": "TELNET",
+      "C": "SMTP",
+      "D": "FTP"
+    },
+    "answer": "C",
+    "explanation": "SMTP (Simple Mail Transfer Protocol) transfers e-mail between mail servers/machines."
+  },
+  {
+    "id": 20,
+    "source_file": "programmer paper 1_2024",
+    "question": "What is the advantage of setting up a DMZ (Demilitarized Zone) using firewall?",
+    "options": {
+      "A": "Improve network performance",
+      "B": "To create multiple zones of trust",
+      "C": "Load balancing on the server",
+      "D": "Brings internet service into home from internet service provider"
+    },
+    "answer": "B",
+    "explanation": "A DMZ separates public-facing servers from the internal LAN, creating separate zones of trust controlled by firewall rules."
+  },
+  {
+    "id": 21,
+    "source_file": "programmer paper 1_2024",
+    "question": "What network property is achieved through the use of the Automatic Repeat reQuest (ARQ) mechanism?",
+    "options": {
+      "A": "Reliability",
+      "B": "Availability",
+      "C": "Confidentiality",
+      "D": "Scalability"
+    },
+    "answer": "A",
+    "explanation": "ARQ retransmits lost or corrupted frames using ACKs and timeouts, which gives reliable delivery."
+  },
+  {
+    "id": 22,
+    "source_file": "programmer paper 1_2024",
+    "question": "Any relation that is not a part of the Logical Model, but is made visible to a user as a virtual relation is called a -",
+    "options": {
+      "A": "Tuple",
+      "B": "View",
+      "C": "Instance",
+      "D": "Schema"
+    },
+    "answer": "B",
+    "explanation": "A view is a virtual relation shown to users that is not part of the logical (conceptual) model."
+  },
+  {
+    "id": 23,
+    "source_file": "programmer paper 1_2024",
+    "question": "Two phase locking protocol has which of the following problem(s)?",
+    "options": {
+      "A": "Chances of deadlock",
+      "B": "Cascading Rollback",
+      "C": "Neither 1 nor 2",
+      "D": "Both 1 & 2"
+    },
+    "answer": "D",
+    "explanation": "Basic 2PL guarantees serializability but can still cause deadlocks and cascading rollbacks (strict/rigorous 2PL avoid the latter)."
+  },
+  {
+    "id": 24,
+    "source_file": "programmer paper 1_2024",
+    "question": "The size of the 'total length field' of IPv4 datagram is -",
+    "options": {
+      "A": "16 bits",
+      "B": "4 bits",
+      "C": "8 bits",
+      "D": "32 bits"
+    },
+    "answer": "A",
+    "explanation": "The IPv4 Total Length field is 16 bits, so the maximum datagram size is 65,535 bytes."
+  },
+  {
+    "id": 25,
+    "source_file": "programmer paper 1_2024",
+    "question": "Which of the following is not related to data link layer?",
+    "options": {
+      "A": "Congestion control",
+      "B": "Error control",
+      "C": "Framing",
+      "D": "MAC addressing"
+    },
+    "answer": "A",
+    "explanation": "Congestion control is handled at the network/transport layers; framing, error control and MAC addressing are data link functions."
+  },
+  {
+    "id": 26,
+    "source_file": "programmer paper 1_2024",
+    "question": "Consider following relation S(S1, S2, S3, E1, E2) and functional dependencies hold on the schema are as -\nFD1 : S1 → {S2, S3}\nFD2 : {E1, S3, S2} → S1\nFD3 : E2 → {S3, S2, E1}\nWhat is the highest normal form of the relation S?",
+    "options": {
+      "A": "1NF",
+      "B": "2NF",
+      "C": "BCNF",
+      "D": "3NF"
+    },
+    "answer": "B",
+    "explanation": "E2 never appears on a right side and E2+ = all attributes, so E2 is the only candidate key. With a single-attribute key there are no partial dependencies (2NF), but E2 → S1 → {S2, S3} is a transitive dependency on non-prime attributes, so S is not in 3NF."
+  },
+  {
+    "id": 27,
+    "source_file": "programmer paper 1_2024",
+    "question": "The operation which can be used to specify automatic actions that the database system will perform when certain events and conditions occur is known as -",
+    "options": {
+      "A": "CREATE TRIGGER",
+      "B": "CREATE VIEW",
+      "C": "CREATE ASSERTION",
+      "D": "CREATE TABLE"
+    },
+    "answer": "A",
+    "explanation": "Triggers follow the Event-Condition-Action model and fire automatically when the specified event occurs."
+  },
+  {
+    "id": 28,
+    "source_file": "programmer paper 1_2024",
+    "question": "Correct order of applying 3 passes in ARIES recovery algorithm is -",
+    "options": {
+      "A": "Undo, Analysis, Redo",
+      "B": "Analysis, Redo, Undo",
+      "C": "Undo, Redo, Analysis",
+      "D": "Analysis, Undo, Redo"
+    },
+    "answer": "B",
+    "explanation": "ARIES first analyses the log (dirty pages, active transactions), then redoes history (repeating history), then undoes loser transactions."
+  },
+  {
+    "id": 29,
+    "source_file": "programmer paper 1_2024",
+    "question": "Consider following schedule with a sequence of operations on a data object Q having the initial value of 500 -\nT1: Read (Q)\nT2: Read (Q)\nT1: Q=Q+100\nT2: Q=Q+100\nT2: Write (Q)\nT1: Write (Q)\nWhat will be the final value of Q after the last operation is completed?",
+    "options": {
+      "A": "600",
+      "B": "700",
+      "C": "550",
+      "D": "500"
+    },
+    "answer": "A",
+    "explanation": "Both transactions read 500 and compute 600. T2 writes 600, then T1 overwrites it with 600, so T2's update is lost (lost update problem) and Q = 600."
+  },
+  {
+    "id": 30,
+    "source_file": "programmer paper 1_2024",
+    "question": "Which one of the following statement is not correct?",
+    "options": {
+      "A": "Data models provide necessary means to achieve data abstraction.",
+      "B": "Self-describing nature of database system is one of the characteristics of the database approach.",
+      "C": "Database approach doesn't support data independence between data and programs.",
+      "D": "Database approach supports multiple views of the data."
+    },
+    "answer": "C",
+    "explanation": "Program-data independence is a key feature of the database approach, so statement 3 is incorrect."
+  },
+  {
+    "id": 31,
+    "source_file": "programmer paper 1_2024",
+    "question": "ICMP protocol is a ............ layer protocol.",
+    "options": {
+      "A": "Data link",
+      "B": "Application",
+      "C": "Transport",
+      "D": "Network"
+    },
+    "answer": "D",
+    "explanation": "ICMP works with IP at the network layer (its messages are carried inside IP datagrams)."
+  },
+  {
+    "id": 32,
+    "source_file": "programmer paper 1_2024",
+    "question": "What does /24 denote in CIDR?",
+    "options": {
+      "A": "24 bits are used for network portion",
+      "B": "24 addresses are available in the subnet",
+      "C": "24 subnets are created",
+      "D": "24 bits are used for host portion"
+    },
+    "answer": "A",
+    "explanation": "The CIDR prefix length gives the number of network bits; /24 leaves 8 host bits."
+  },
+  {
+    "id": 33,
+    "source_file": "programmer paper 1_2024",
+    "question": "Network Allocation Vector (NAV) is associated with which of the following MAC technologies?",
+    "options": {
+      "A": "CSMA/CD",
+      "B": "Bluetooth",
+      "C": "Wi-Fi",
+      "D": "Ethernet"
+    },
+    "answer": "C",
+    "explanation": "NAV is the virtual carrier-sensing timer used by IEEE 802.11 (Wi-Fi) CSMA/CA with RTS/CTS."
+  },
+  {
+    "id": 34,
+    "source_file": "programmer paper 1_2024",
+    "question": "In ER Model, which of the following relationship is correct for a condition that a person in INDIA has an Aadhaar Card?",
+    "options": {
+      "A": "One to one relationship",
+      "B": "One to many relationship",
+      "C": "Many to many relationship",
+      "D": "Many to one relationship"
+    },
+    "answer": "A",
+    "explanation": "Each person has exactly one Aadhaar card and each card belongs to exactly one person, so it is 1:1."
+  },
+  {
+    "id": 35,
+    "source_file": "programmer paper 1_2024",
+    "question": "An organized collection of logically related data is called -",
+    "options": {
+      "A": "Transaction",
+      "B": "Metadata",
+      "C": "Database",
+      "D": "Data type"
+    },
+    "answer": "C",
+    "explanation": "A database is an organised collection of logically related data."
+  },
+  {
+    "id": 36,
+    "source_file": "programmer paper 1_2024",
+    "question": "A Reverse Lookup in DNS means a lookup to ............ using ............ records.",
+    "options": {
+      "A": "map domain names to IP address, A",
+      "B": "map IP address to domain name, PTR",
+      "C": "determine the authoritative name servers, CNAME",
+      "D": "identify mail servers, SOA"
+    },
+    "answer": "B",
+    "explanation": "Reverse DNS maps an IP address back to a host name using PTR records in the in-addr.arpa / ip6.arpa domains."
+  },
+  {
+    "id": 37,
+    "source_file": "programmer paper 1_2024",
+    "question": "Let us assume that there are four (4) network segments in Bus topologies: A1 − A2, B1 − B2 − B3, C1 − C2 and D1 − D2 − D3. If A1, B1, C1 and D1 are interconnected in mesh, then how many mesh connections are required?",
+    "options": {
+      "A": "45",
+      "B": "6",
+      "C": "10",
+      "D": "12"
+    },
+    "answer": "B",
+    "explanation": "Only the 4 nodes A1, B1, C1 and D1 form the mesh: n(n − 1)/2 = 4 × 3/2 = 6 links."
+  },
+  {
+    "id": 38,
+    "source_file": "programmer paper 1_2024",
+    "question": "Indices whose search key specifies an order different from the sequential order of the file are called -",
+    "options": {
+      "A": "Primary Indices",
+      "B": "Random Indices",
+      "C": "Sequential Indices",
+      "D": "Secondary Indices"
+    },
+    "answer": "D",
+    "explanation": "A secondary (non-clustering) index has a search-key order different from the file's physical sequential order."
+  },
+  {
+    "id": 39,
+    "source_file": "programmer paper 1_2024",
+    "question": "Which of the following concurrency control protocols ensure both conflict serializability and freedom from deadlock?\n(I) 2PL (Two Phase Lock)\n(II) Time-Stamp ordering\n(III) Multiple granularity protocol",
+    "options": {
+      "A": "I only",
+      "B": "II only",
+      "C": "III only",
+      "D": "I and II both"
+    },
+    "answer": "B",
+    "explanation": "Timestamp ordering is conflict-serializable and, since transactions never wait (they are rolled back instead), deadlock-free. 2PL and multiple-granularity locking can deadlock."
+  },
+  {
+    "id": 40,
+    "source_file": "programmer paper 1_2024",
+    "question": "Which of the following is true for Circuit Switching handling multiple simultaneous connections?",
+    "options": {
+      "A": "A single path is used and shared for all data",
+      "B": "It encodes all data into a single channel",
+      "C": "Separate physical paths are allocated for each channel",
+      "D": "All connections are multiplexed into a single channel"
+    },
+    "answer": "C",
+    "explanation": "Circuit switching reserves a dedicated path (circuit) for each connection for its whole duration."
+  },
+  {
+    "id": 41,
+    "source_file": "programmer paper 1_2024",
+    "question": "Which SQL statement is used in embedded SQL to fetch data into host variables?",
+    "options": {
+      "A": "INSERT INTO",
+      "B": "UPDATE",
+      "C": "DELETE",
+      "D": "SELECT INTO"
+    },
+    "answer": "D",
+    "explanation": "In embedded SQL, SELECT ... INTO :hostvar (or FETCH ... INTO for cursors) copies query results into host-language variables."
+  },
+  {
+    "id": 42,
+    "source_file": "programmer paper 1_2024",
+    "question": "Which of the following protocol may be used as zeroconf and plug-and-play?",
+    "options": {
+      "A": "DHCP",
+      "B": "ICMP",
+      "C": "NAT",
+      "D": "TCP"
+    },
+    "answer": "A",
+    "explanation": "DHCP configures hosts automatically (IP, mask, gateway, DNS) with no manual setup, giving plug-and-play networking."
+  },
+  {
+    "id": 43,
+    "source_file": "programmer paper 1_2024",
+    "question": "Consider a relation R with attributes (A, B, C), where B is the only candidate key. Identify the total number of possible super keys of the relation R.",
+    "options": {
+      "A": "1",
+      "B": "3",
+      "C": "4",
+      "D": "2"
+    },
+    "answer": "C",
+    "explanation": "Every superset of B is a superkey: {B}, {A,B}, {B,C}, {A,B,C}, which is 2^(3−1) = 4."
+  },
+  {
+    "id": 44,
+    "source_file": "programmer paper 1_2024",
+    "question": "The reliable data transfer is implemented by ............",
+    "options": {
+      "A": "Network layer",
+      "B": "Presentation layer",
+      "C": "Physical layer",
+      "D": "Transport layer"
+    },
+    "answer": "D",
+    "explanation": "The transport layer (e.g. TCP) provides end-to-end reliable data transfer with ACKs, retransmission and sequencing."
+  },
+  {
+    "id": 45,
+    "source_file": "programmer paper 1_2024",
+    "question": "The cardinality of a relational table with 5000 rows and 10 columns is -",
+    "options": {
+      "A": "5000",
+      "B": "10",
+      "C": "500",
+      "D": "50000"
+    },
+    "answer": "A",
+    "explanation": "Cardinality is the number of tuples (rows) = 5000; the number of columns (10) is the degree."
+  },
+  {
+    "id": 46,
+    "source_file": "programmer paper 1_2024",
+    "question": "Which operation allows us to find tuples that are in one relation but are not in another relation?",
+    "options": {
+      "A": "Cartesian Product Operation",
+      "B": "The Union Operation",
+      "C": "The Set − Difference Operation",
+      "D": "The Set Intersection Operation"
+    },
+    "answer": "C",
+    "explanation": "Set difference R − S returns tuples in R that are not in S."
+  },
+  {
+    "id": 47,
+    "source_file": "programmer paper 1_2024",
+    "question": "Which set of SQL language commands is used to query and update a database?",
+    "options": {
+      "A": "Data Definition Language (DDL)",
+      "B": "Both Data Control Language (DCL) and Data Definition Language (DDL)",
+      "C": "Data Control Language (DCL)",
+      "D": "Data Manipulation Language (DML)"
+    },
+    "answer": "D",
+    "explanation": "DML (SELECT, INSERT, UPDATE, DELETE) queries and changes data; DDL defines structure and DCL controls access."
+  },
+  {
+    "id": 48,
+    "source_file": "programmer paper 1_2024",
+    "question": "IP address 172.16.123.213 is found to be residing on a sub-network with the following subnet mask: 255.255.255.240. What is the network address of this subnet?",
+    "options": {
+      "A": "172.16.123.213",
+      "B": "172.16.123.240",
+      "C": "172.16.123.245",
+      "D": "172.16.123.208"
+    },
+    "answer": "D",
+    "explanation": "213 AND 240 = 208 (block size 16: 208–223), so the network address is 172.16.123.208."
+  },
+  {
+    "id": 49,
+    "source_file": "programmer paper 1_2024",
+    "question": "In IPv4, packet fragmentation and reassembly is handled by ............",
+    "options": {
+      "A": "using the More Fragments and Fragment Offset Fields",
+      "B": "using the Header Checksum",
+      "C": "encapsulating packets in larger data frames",
+      "D": "using the MAC Header"
+    },
+    "answer": "A",
+    "explanation": "IPv4 uses the Identification, MF flag and Fragment Offset fields to fragment and reassemble datagrams."
+  },
+  {
+    "id": 50,
+    "source_file": "programmer paper 1_2024",
+    "question": "An ER Model describes which type of schema?",
+    "options": {
+      "A": "Internal Schema",
+      "B": "External Schema",
+      "C": "Conceptual Schema",
+      "D": "Physical Schema"
+    },
+    "answer": "C",
+    "explanation": "The ER model is a high-level conceptual data model, so it describes the conceptual schema."
+  },
+  {
+    "id": 51,
+    "source_file": "programmer paper 1_2024",
+    "question": "Consider a relation with attributes {A, B, C, D} and the following functional dependencies: A → B, B → C and C → D. If A is the primary key, which of the following is true regarding BCNF?",
+    "options": {
+      "A": "The relation is in BCNF because all determinants are super keys.",
+      "B": "The relation is in 3NF but not in BCNF.",
+      "C": "The relation is not in BCNF.",
+      "D": "The relation is in BCNF because it is in 3NF."
+    },
+    "answer": "C",
+    "explanation": "B and C are determinants but not superkeys, so BCNF is violated (the transitive dependencies also break 3NF, so option 2 is wrong)."
+  },
+  {
+    "id": 52,
+    "source_file": "programmer paper 1_2024",
+    "question": "The number of attribute in a relation is known as -",
+    "options": {
+      "A": "Features of the relation",
+      "B": "Address of the relation",
+      "C": "State of the relation",
+      "D": "Degree of the relation"
+    },
+    "answer": "D",
+    "explanation": "The degree (arity) of a relation is its number of attributes."
+  },
+  {
+    "id": 53,
+    "source_file": "programmer paper 1_2024",
+    "question": "Which operation requires two relations as input to form a new relation and these two relations must have a common attribute?",
+    "options": {
+      "A": "Division operation",
+      "B": "Cartesian product operation",
+      "C": "Natural join operation",
+      "D": "Projection operation"
+    },
+    "answer": "C",
+    "explanation": "A natural join combines two relations by equating their common attributes; a Cartesian product needs no common attribute."
+  },
+  {
+    "id": 54,
+    "source_file": "programmer paper 1_2024",
+    "question": "How many bits for 'Fragment Offset' field are there in IPv4 header?",
+    "options": {
+      "A": "10 bits",
+      "B": "32 bits",
+      "C": "13 bits",
+      "D": "16 bits"
+    },
+    "answer": "C",
+    "explanation": "The Fragment Offset field is 13 bits and is measured in 8-byte units."
+  },
+  {
+    "id": 55,
+    "source_file": "programmer paper 1_2024",
+    "question": "The size of MAC address (in bits) is -",
+    "options": {
+      "A": "24",
+      "B": "48",
+      "C": "36",
+      "D": "42"
+    },
+    "answer": "B",
+    "explanation": "A MAC address is 48 bits (6 bytes): a 24-bit OUI and a 24-bit device identifier."
+  },
+  {
+    "id": 56,
+    "source_file": "programmer paper 1_2024",
+    "question": "What are the maximum number of spanning trees (Tn) possible for a complete graph K5 on 5 vertices?",
+    "options": {
+      "A": "100",
+      "B": "20",
+      "C": "200",
+      "D": "125"
+    },
+    "answer": "D",
+    "explanation": "By Cayley's formula, K_n has n^(n−2) spanning trees: 5^3 = 125."
+  },
+  {
+    "id": 57,
+    "source_file": "programmer paper 1_2024",
+    "question": "The primary use of scramblers in Line Coding Schemes is to -",
+    "options": {
+      "A": "make the data look random",
+      "B": "compress transmission data",
+      "C": "decrease signal bandwidth",
+      "D": "increase signal bandwidth"
+    },
+    "answer": "A",
+    "explanation": "Scrambling (e.g. B8ZS, HDB3) replaces long runs of zeros so the signal looks random, keeping synchronisation without raising bandwidth."
+  },
+  {
+    "id": 58,
+    "source_file": "programmer paper 1_2024",
+    "question": "The message 1001 is to be transmitted using the CRC polynomial x³ + x + 1 to protect it from errors. The message that should be transmitted is -",
+    "options": {
+      "A": "1001000",
+      "B": "1001100",
+      "C": "1001110",
+      "D": "1001011"
+    },
+    "answer": "C",
+    "explanation": "Generator = 1011. Append 3 zeros: 1001000. Mod-2 division by 1011 gives remainder 110, so the transmitted codeword is 1001110."
+  },
+  {
+    "id": 59,
+    "source_file": "programmer paper 1_2024",
+    "question": "The three-way handshake mechanism in TCP aims to -",
+    "options": {
+      "A": "secure the communication.",
+      "B": "send bits from one device to another over an optical fibre connection.",
+      "C": "perform error detection and correction.",
+      "D": "establish connection and synchronize sequence numbers."
+    },
+    "answer": "D",
+    "explanation": "SYN, SYN-ACK and ACK establish the connection and synchronise the initial sequence numbers of both sides."
+  },
+  {
+    "id": 60,
+    "source_file": "programmer paper 1_2024",
+    "question": "Total time to access a disk block is given by the -",
+    "options": {
+      "A": "Seek time + rotational delay",
+      "B": "Seek time + rotational delay + transfer time",
+      "C": "Seek time + transfer time",
+      "D": "Seek time"
+    },
+    "answer": "B",
+    "explanation": "Disk access time = seek time + rotational latency + data transfer time."
+  }
+]

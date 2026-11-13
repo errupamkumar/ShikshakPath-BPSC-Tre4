@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "How many committees of five people can be chosen from 20 men and 12 women such that each committee contains atleast three women ?",
+    "options": {
+      "A": "75240",
+      "B": "52492",
+      "C": "41800",
+      "D": "9900"
+    },
+    "answer": "B",
+    "explanation": "3W2M + 4W1M + 5W = C(12,3)C(20,2) + C(12,4)C(20,1) + C(12,5) = 220×190 + 495×20 + 792 = 41800 + 9900 + 792 = 52492."
+  },
+  {
+    "id": 2,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Which of the following statement(s) is/are false ?\n(a) A connected multigraph has an Euler Circuit if and only if each of its vertices has even degree.\n(b) A connected multigraph has an Euler Path but not an Euler Circuit if and only if it has exactly two vertices of odd degree.\n(c) A complete graph (Kn) has a Hamilton Circuit whenever n ≥ 3.\n(d) A cycle over six vertices (C6) is not a bipartite graph but a complete graph over 3 vertices is bipartite.\nCodes :",
+    "options": {
+      "A": "(a) only",
+      "B": "(b) and (c)",
+      "C": "(c) only",
+      "D": "(d) only"
+    },
+    "answer": "D",
+    "explanation": "(a), (b), (c) are standard true theorems. (d) is false both ways: C6 (even cycle) is bipartite, while K3 (odd cycle) is not."
+  },
+  {
+    "id": 3,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Which of the following is/are not true ?\n(a) The set of negative integers is countable.\n(b) The set of integers that are multiples of 7 is countable.\n(c) The set of even integers is countable.\n(d) The set of real numbers between 0 and ½ is countable.\nCodes :",
+    "options": {
+      "A": "(a) and (c)",
+      "B": "(b) and (d)",
+      "C": "(b) only",
+      "D": "(d) only"
+    },
+    "answer": "D",
+    "explanation": "Any infinite subset of the integers is countable, so (a), (b), (c) are true. Any interval of reals such as (0, ½) is uncountable, so (d) is not true."
+  },
+  {
+    "id": 4,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Consider the graph given below :\n[Figure: graph on vertices v1–v8 — outer square v1–v2–v4–v3–v1, inner square v5–v6–v8–v7–v5, with edges v1–v5, v2–v6, v3–v7, v4–v8]\nThe two distinct sets of vertices, which make the graph bipartite are :",
+    "options": {
+      "A": "(v1, v4, v6); (v2, v3, v5, v7, v8)",
+      "B": "(v1, v7, v8); (v2, v3, v5, v6)",
+      "C": "(v1, v4, v6, v7); (v2, v3, v5, v8)",
+      "D": "(v1, v4, v6, v7, v8); (v2, v3, v5)"
+    },
+    "answer": "C",
+    "explanation": "The graph is a cube. Colouring v1 one side forces v2, v3, v5 to the other, then v4, v6, v7 back to v1's side and v8 opposite: {v1, v4, v6, v7} and {v2, v3, v5, v8}, with no edge inside either set."
+  },
+  {
+    "id": 5,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "A tree with n vertices is called graceful, if its vertices can be labelled with integers 1, 2,....n such that the absolute value of the difference of the labels of adjacent vertices are all different. Which of the following trees are graceful ?\n(a) [Figure: path v1–v2–v3–v4]\n(b) [Figure: tree on v1–v5: path v1–v2–v4–v5 with v3 attached to v2]\n(c) [Figure: tree on v1–v6: path v1–v2–v3–v5–v6 with v4 attached to v3]\nCodes :",
+    "options": {
+      "A": "(a) and (b)",
+      "B": "(b) and (c)",
+      "C": "(a) and (c)",
+      "D": "(a), (b) and (c)"
+    },
+    "answer": "D",
+    "explanation": "All three are graceful. E.g. path labels 1,4,2,3 give differences 3,2,1; small trees like (b) and (c) can likewise be labelled (all paths and caterpillars are graceful)."
+  },
+  {
+    "id": 6,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Which of the following arguments are not valid ?\n(a) If Gora gets the job and works hard, then he will be promoted. If Gora gets promotion, then he will be happy. He will not be happy, therefore, either he will not get the job or he will not work hard.\n(b) Either Puneet is not guilty or Pankaj is telling the truth. Pankaj is not telling the truth, therefore, Puneet is not guilty.\n(c) If n is a real number such that n>1, then n2>1. Suppose that n2>1, then n>1.\nCodes :",
+    "options": {
+      "A": "(a) and (c)",
+      "B": "(b) and (c)",
+      "C": "(a), (b) and (c)",
+      "D": "(a) and (b)"
+    },
+    "answer": "B",
+    "explanation": "Official key (2). (a) is valid (modus tollens twice, then De Morgan). (c) is invalid (affirming the consequent: n = −2 gives n² > 1). Note (b) is actually valid by disjunctive syllogism (¬G ∨ T, ¬T ⊢ ¬G), so strictly only (c) is invalid, which no option offers. ('n2' means n².)"
+  },
+  {
+    "id": 7,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Let P(m, n) be the statement m divides n where the Universe of discourse for both the variables is the set of positive integers. Determine the truth values of the following propositions.\n(a) ∃m ∀n P(m, n)   (b) ∀n P(1, n)   (c) ∀m ∀n P(m, n)\nCodes :",
+    "options": {
+      "A": "(a) - True; (b) - True; (c) - False",
+      "B": "(a) - True; (b) - False; (c) - False",
+      "C": "(a) - False; (b) - False; (c) - False",
+      "D": "(a) - True; (b) - True; (c) - True"
+    },
+    "answer": "A",
+    "explanation": "m = 1 divides every n, so (a) and (b) are true; (c) is false (2 does not divide 3)."
+  },
+  {
+    "id": 8,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Match the following terms :\nList - I | List - II\n(a) Vacuous proof | (i) A proof that the implication p → q is true based on the fact that p is false.\n(b) Trivial proof | (ii) A proof that the implication p → q is true based on the fact that q is true.\n(c) Direct proof | (iii) A proof that the implication p → q is true that proceeds by showing that q must be true when p is true.\n(d) Indirect proof | (iv) A proof that the implication p → q is true that proceeds by showing that p must be false when q is false.\nCodes : (a) (b) (c) (d)",
+    "options": {
+      "A": "(i) (ii) (iii) (iv)",
+      "B": "(ii) (iii) (i) (iv)",
+      "C": "(iii) (ii) (iv) (i)",
+      "D": "(iv) (iii) (ii) (i)"
+    },
+    "answer": "A",
+    "explanation": "Vacuous: p false; trivial: q true; direct: assume p, derive q; indirect (contrapositive): assume ¬q, derive ¬p."
+  },
+  {
+    "id": 9,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Consider the compound propositions given below as :\n(a) p ∨ ¬(p ∧ q)   (b) (p ∧ ¬q) ∨ ¬(p ∧ q)\n(c) p ∧ (q ∨ r)\nWhich of the above propositions are tautologies ?",
+    "options": {
+      "A": "(a) and (c)",
+      "B": "(b) and (c)",
+      "C": "(a) and (b)",
+      "D": "(a), (b) and (c)"
+    },
+    "answer": "C",
+    "explanation": "Commonly keyed as (3). Check: (a) p ∨ ¬p ∨ ¬q is a tautology. (b) simplifies to ¬(p ∧ q), which is false when p = q = T, so it is not a tautology; (c) is false when p = F. Strictly only (a) is a tautology, so the question is flawed; (3) is the closest/keyed option."
+  },
+  {
+    "id": 10,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Which of the following property/ies a Group G must hold, in order to be an Abelian group ?\n(a) The distributive property\n(b) The commutative property\n(c) The symmetric property\nCodes :",
+    "options": {
+      "A": "(a) and (b)",
+      "B": "(b) and (c)",
+      "C": "(a) only",
+      "D": "(b) only"
+    },
+    "answer": "D",
+    "explanation": "An Abelian group is a group whose operation is commutative; distributivity involves two operations (rings) and 'symmetric' is a relation property."
+  },
+  {
+    "id": 11,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Consider the following program :\n#include<stdio.h>\nmain( )\n{\nint i, inp;\nfloat x, term=1, sum=0;\nscanf(\"%d %f\", &inp, &x);\nfor(i=1; i<=inp; i++)\n{\nterm = term * x/i;\nsum = sum + term ;\n}\nprintf(\"Result = %f\\n\", sum);\n}\nThe program computes the sum of which of the following series ?",
+    "options": {
+      "A": "x + x2/2 + x3/3 + x4/4 +...",
+      "B": "x + x2/2! + x3/3! + x4/4! +...",
+      "C": "1 + x2/2 + x3/3 + x4/4 +...",
+      "D": "1 + x2/2! + x3/3! + x4/4! +..."
+    },
+    "answer": "B",
+    "explanation": "term becomes x/1, x²/2!, x³/3!, … and sum starts at 0, so it adds x + x²/2! + x³/3! + … (eˣ − 1 truncated)."
+  },
+  {
+    "id": 12,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Consider the following two statements :\n(a) A publicly derived class is a subtype of its base class.\n(b) Inheritance provides for code reuse.\nWhich one of the following statements is correct ?",
+    "options": {
+      "A": "Both the statements (a) and (b) are correct.",
+      "B": "Neither of the statements (a) and (b) are correct.",
+      "C": "Statement (a) is correct and (b) is incorrect.",
+      "D": "Statement (a) is incorrect and (b) is correct."
+    },
+    "answer": "A",
+    "explanation": "Public inheritance models an is-a (subtype) relationship, and inheritance lets the derived class reuse base-class code."
+  },
+  {
+    "id": 13,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Consider a CUSTOMERS database table having a column CITY filled with all the names of Indian cities (in capital letters). The SQL statement that finds all cities that have GAR somewhere in its name, is :",
+    "options": {
+      "A": "Select * from customers where city = '%GAR%';",
+      "B": "Select * from customers where city = '$GAR$';",
+      "C": "Select * from customers where city like '%GAR%';",
+      "D": "Select * from customers where city as '%GAR';"
+    },
+    "answer": "C",
+    "explanation": "Pattern matching needs LIKE; % matches any sequence of characters, so '%GAR%' finds GAR anywhere in the name."
+  },
+  {
+    "id": 14,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Match the following database terms to their functions :\nList - I | List - II\n(a) Normalization | (i) Enforces match of primary key to foreign key\n(b) Data Dictionary | (ii) Reduces data redundancy in a database\n(c) Referential Integrity | (iii) Defines view(s) of the database for particular user(s)\n(d) External Schema | (iv) Contains metadata describing database structure\nCodes : (a) (b) (c) (d)",
+    "options": {
+      "A": "(iv) (iii) (i) (ii)",
+      "B": "(ii) (iv) (i) (iii)",
+      "C": "(ii) (iv) (iii) (i)",
+      "D": "(iv) (iii) (ii) (i)"
+    },
+    "answer": "B",
+    "explanation": "Normalization reduces redundancy (ii); the data dictionary holds metadata (iv); referential integrity matches foreign keys to primary keys (i); the external schema defines user views (iii)."
+  },
+  {
+    "id": 15,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "In general, in a recursive and non-recursive implementation of a problem (program) :",
+    "options": {
+      "A": "Both time and space complexities are better in recursive than in non-recursive program.",
+      "B": "Both time and space complexities are better in non-recursive than in recursive program.",
+      "C": "Time complexity is better in recursive version but space complexity is better in non-recursive version of the program.",
+      "D": "Space complexity is better in recursive version but time complexity is better in non-recursive version of the program."
+    },
+    "answer": "B",
+    "explanation": "Recursion adds function-call overhead (time) and stack frames (space), so the iterative version is generally better in both."
+  },
+  {
+    "id": 16,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "A three dimensional array in C is declared as int A[x][y][z]. Here, the address of an item at the location A[p][q][r] can be computed as follows (where w is the word length of an integer) :",
+    "options": {
+      "A": "&A[0][0][0]+w(y*z*q+z*p+r)",
+      "B": "&A[0][0][0]+w(y*z*p+z*q+r)",
+      "C": "&A[0][0][0]+w(x*y*p+z*q+r)",
+      "D": "&A[0][0][0]+w(x*y*q+z*p+r)"
+    },
+    "answer": "B",
+    "explanation": "C uses row-major order: each p-step skips y·z elements, each q-step skips z elements, so offset = (p·y·z + q·z + r)·w."
+  },
+  {
+    "id": 17,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "In C++, which system - provided function is called when no handler is provided to deal with an exception ?",
+    "options": {
+      "A": "terminate ( )",
+      "B": "unexpected ( )",
+      "C": "abort ( )",
+      "D": "kill ( )"
+    },
+    "answer": "A",
+    "explanation": "An uncaught exception makes the runtime call std::terminate(), which by default calls abort(). unexpected() was for exception-specification violations."
+  },
+  {
+    "id": 18,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Which of the following provides the best description of an entity type ?",
+    "options": {
+      "A": "A specific concrete object with a defined set of processes (e.g. Jatin with diabetes)",
+      "B": "A value given to a particular attribute (e.g. height - 230 cm)",
+      "C": "A thing that we wish to collect data about zero or more, possibly real world examples of it may exist",
+      "D": "A template for a group of things with the same set of characteristics that may exist in the real world"
+    },
+    "answer": "D",
+    "explanation": "An entity type is a template/class describing a set of entities sharing the same attributes; A describes an entity instance and B an attribute value. Some keys give (3), which is a looser wording of the same idea."
+  },
+  {
+    "id": 19,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Data which improves the performance and accessibility of the database are called :",
+    "options": {
+      "A": "Indexes",
+      "B": "User Data",
+      "C": "Application Metadata",
+      "D": "Data Dictionary"
+    },
+    "answer": "A",
+    "explanation": "Indexes are overhead data structures maintained to speed up access to the user data."
+  },
+  {
+    "id": 20,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "A relation R = {A, B, C, D, E, F,G} is given with following set of functional dependencies :\nF = {AD → E, BE → F, B → C, AF → G}\nWhich of the following is a candidate key ?",
+    "options": {
+      "A": "A",
+      "B": "AB",
+      "C": "ABC",
+      "D": "ABD"
+    },
+    "answer": "D",
+    "explanation": "A, B, D never appear on a right side, so every key contains them. ABD⁺: AD→E, B→C, BE→F, AF→G gives all of ABCDEFG, and no proper subset works, so ABD is the candidate key."
+  },
+  {
+    "id": 21,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Which of the following services is not provided by wireless access point in 802.11 WLAN ?",
+    "options": {
+      "A": "Association",
+      "B": "Disassociation",
+      "C": "Error correction",
+      "D": "Integration"
+    },
+    "answer": "C",
+    "explanation": "802.11 distribution services are association, disassociation, reassociation, distribution and integration; error correction is not one of them."
+  },
+  {
+    "id": 22,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Which of the following fields in IPv 4 datagram is not related to fragmentation ?",
+    "options": {
+      "A": "Type of service",
+      "B": "Fragment offset",
+      "C": "Flags",
+      "D": "Identification"
+    },
+    "answer": "A",
+    "explanation": "Identification, Flags (DF/MF) and Fragment offset handle fragmentation; Type of Service concerns QoS."
+  },
+  {
+    "id": 23,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Four channels are multiplexed using TDM. If each channel sends 100 bytes/second and we multiplex 1 byte per channel, then the bit rate for the link is __________.",
+    "options": {
+      "A": "400 bps",
+      "B": "800 bps",
+      "C": "1600 bps",
+      "D": "3200 bps"
+    },
+    "answer": "D",
+    "explanation": "4 × 100 bytes/s = 400 bytes/s = 3200 bits/s (ignoring framing bits)."
+  },
+  {
+    "id": 24,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "In a typical mobile phone system with hexagonal cells, it is forbidden to reuse a frequency band in adjacent cells. If 840 frequencies are available, how many can be used in a given cell ?",
+    "options": {
+      "A": "280",
+      "B": "210",
+      "C": "140",
+      "D": "120"
+    },
+    "answer": "A",
+    "explanation": "Hexagonal cells can be 3-coloured so no two adjacent cells share a band; 840 / 3 = 280 frequencies per cell."
+  },
+  {
+    "id": 25,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Using p=3, q=13, d=7 and e=3 in the RSA algorithm, what is the value of ciphertext for a plain text 5 ?",
+    "options": {
+      "A": "13",
+      "B": "21",
+      "C": "26",
+      "D": "33"
+    },
+    "answer": "A",
+    "explanation": "Flawed question: C = Mᵉ mod n = 5³ mod 39 = 125 mod 39 = 8, which is not among the options (also e·d = 21 ≢ 1 mod φ(n) = 24). The answer field follows the commonly cited key (option 1); the mathematically correct value is 8. (Text layer shows 'p53, q513' due to a font issue; it means p=3, q=13.)"
+  },
+  {
+    "id": 26,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "A virtual memory has a page size of 1K words. There are eight pages and four blocks. The associative memory page table contains the following entries :\nPage | Block\n0 | 3\n2 | 1\n5 | 2\n7 | 0\nWhich of the following list of virtual addresses (in decimal) will not cause any page fault if referenced by the CPU ?",
+    "options": {
+      "A": "1024, 3072, 4096, 6144",
+      "B": "1234, 4012, 5000, 6200",
+      "C": "1020, 3012, 6120, 8100",
+      "D": "2021, 4050, 5112, 7100"
+    },
+    "answer": "C",
+    "explanation": "Page = address div 1024. 1020→0, 3012→2, 6120→5, 8100→7: all resident. The other lists contain pages 1, 3, 4 or 6, which fault."
+  },
+  {
+    "id": 27,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Suppose that the number of instructions executed between page fault is directly proportional to the number of page frames allocated to a program. If the available memory is doubled, the mean interval between page faults is also doubled. Further, consider that a normal instruction takes one microsecond, but if a page fault occurs, it takes 2001 microseconds. If a program takes 60 sec to run, during which time it gets 15,000 page faults, how long would it take to run if twice as much memory were available ?",
+    "options": {
+      "A": "60 sec",
+      "B": "30 sec",
+      "C": "45 sec",
+      "D": "10 sec"
+    },
+    "answer": "C",
+    "explanation": "Fault overhead = 15000 × 2000 µs = 30 s, so normal execution is 30 s. Doubling memory halves faults to 7500 (15 s overhead): 30 + 15 = 45 s."
+  },
+  {
+    "id": 28,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Consider a disk with 16384 bytes per track having a rotation time of 16 msec and average seek time of 40 msec. What is the time in msec to read a block of 1024 bytes from this disk ?",
+    "options": {
+      "A": "57 msec",
+      "B": "49 msec",
+      "C": "48 msec",
+      "D": "17 msec"
+    },
+    "answer": "B",
+    "explanation": "Seek 40 + average rotational latency 16/2 = 8 + transfer (1024/16384) × 16 = 1 → 49 ms."
+  },
+  {
+    "id": 29,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "A system has four processes and five allocatable resources. The current allocation and maximum needs are as follows :\nProcess | Allocated | Maximum | Available\nA | 1 0 2 1 1 | 1 1 2 1 3 | 0 0 x 1 1\nB | 2 0 1 1 0 | 2 2 2 1 0\nC | 1 1 0 1 0 | 2 1 3 1 0\nD | 1 1 1 1 0 | 1 1 2 2 1\nThe smallest value of x for which the above system in safe state is __________.",
+    "options": {
+      "A": "1",
+      "B": "3",
+      "C": "2",
+      "D": "0"
+    },
+    "answer": "C",
+    "explanation": "Classic Tanenbaum problem, answer x = 2. Need = Max − Alloc: A 01002, B 02100, C 10300, D 00111. With x = 2: D runs (avail 1 1 3 2 1), then C (2 2 3 3 1), then B, then A. x = 1 deadlocks after D. (As printed, A's need of 2 units of resource 5 exceeds what is ever available, a known flaw in this version of the data.)"
+  },
+  {
+    "id": 30,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "In Unix, the login prompt can be changed by changing the contents of the file __________.",
+    "options": {
+      "A": "contrab",
+      "B": "init",
+      "C": "gettydefs",
+      "D": "inittab"
+    },
+    "answer": "C",
+    "explanation": "/etc/gettydefs defines getty line settings, including the login prompt text. ('contrab' is a misprint of crontab.)"
+  },
+  {
+    "id": 31,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "A data cube C, has n dimensions, and each dimension has exactly p distinct values in the base cuboid. Assume that there are no concept hierarchies associated with the dimensions. What is the maximum number of cells possible in the data cube, C ?",
+    "options": {
+      "A": "pⁿ",
+      "B": "p",
+      "C": "(2ⁿ − 1) p + 1",
+      "D": "(p + 1)ⁿ"
+    },
+    "answer": "D",
+    "explanation": "Each dimension can take one of its p values or the aggregate 'all' (*), so the full cube has at most (p + 1)ⁿ cells."
+  },
+  {
+    "id": 32,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Suppose that from given statistics, it is known that meningitis causes stiff neck 50% of the time, that the proportion of persons having meningitis is 1/50000, and that the proportion of people having stiff neck is 1/20. Then the percentage of people who had meningitis and complain about stiff neck is :",
+    "options": {
+      "A": "0.01%",
+      "B": "0.02%",
+      "C": "0.04%",
+      "D": "0.05%"
+    },
+    "answer": "B",
+    "explanation": "Bayes: P(M|S) = P(S|M)P(M)/P(S) = 0.5 × (1/50000) / (1/20) = 0.0002 = 0.02%."
+  },
+  {
+    "id": 33,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "__________ system is market oriented and is used for data analysis by knowledge workers including Managers, Executives and Analysts.",
+    "options": {
+      "A": "OLTP",
+      "B": "OLAP",
+      "C": "Data System",
+      "D": "Market System"
+    },
+    "answer": "B",
+    "explanation": "OLAP is market-oriented and serves analysts/managers; OLTP is customer-oriented for clerks and day-to-day transactions (Han & Kamber)."
+  },
+  {
+    "id": 34,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "__________ allows selection of the relevant information necessary for the data warehouse.",
+    "options": {
+      "A": "The Top - Down View",
+      "B": "Data Warehouse View",
+      "C": "Datasource View",
+      "D": "Business Query View"
+    },
+    "answer": "A",
+    "explanation": "In data-warehouse design (Han & Kamber), the top-down view allows selection of relevant information; data source view exposes captured data; the warehouse view shows fact/dimension tables; business query view is the end-user view."
+  },
+  {
+    "id": 35,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "The hash function used in double hashing is of the form :",
+    "options": {
+      "A": "h (k, i) = (h1(k) + h2(k) + i) mod m",
+      "B": "h (k, i) = (h1(k) + h2(k) − i) mod m",
+      "C": "h (k, i) = (h1(k) + i h2(k)) mod m",
+      "D": "h (k, i) = (h1(k) − i h2(k)) mod m"
+    },
+    "answer": "C",
+    "explanation": "Double hashing probes h(k, i) = (h1(k) + i·h2(k)) mod m for i = 0, 1, 2, …"
+  },
+  {
+    "id": 36,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "In the following graph, discovery time stamps and finishing time stamps of Depth First Search (DFS) are shown as x/y, where x is discovery time stamp and y is finishing time stamp.\n[Figure: directed graph with a 13/14, b 11/16, c 1/10, d 8/9, e 12/15, f 3/4, g 2/7, h 5/6; edges a→b, b→c, b→f, b→e, e→a, e→f, c↔d, c→g, d→h, f↔g, g→h, h self-loop]\nIt shows which of the following depth first forest ?",
+    "options": {
+      "A": "{a, b, e} {c, d, f, g, h}",
+      "B": "{a, b, e} {c, d, h} {f, g}",
+      "C": "{a, b, e} {f, g} {c, d} {h}",
+      "D": "{a, b, c, d} {e, f, g} {h}"
+    },
+    "answer": "A",
+    "explanation": "Intervals nest within c's 1/10: g 2/7, f 3/4, h 5/6, d 8/9, giving tree {c, d, f, g, h}. A second DFS tree starts at b 11/16 containing e 12/15 and a 13/14."
+  },
+  {
+    "id": 37,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "The number of disk pages access in B - tree search, where h is height, n is the number of keys, and t is the minimum degree, is :",
+    "options": {
+      "A": "θ (logₙ h*t)",
+      "B": "θ (logₜ n*h)",
+      "C": "θ (logₕ n)",
+      "D": "θ (logₜ n)"
+    },
+    "answer": "D",
+    "explanation": "B-tree search reads one page per level, i.e. O(h) = Θ(logₜ n) disk accesses (CLRS)."
+  },
+  {
+    "id": 38,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "The inorder traversal of the following tree is :\n[Figure: binary tree — root 15; 15 has left 13, right 20; 13 has left 4, right 7; 4 has left 2, right 3; 7 has right 6; 20 has left 17, right 18; 18 has left 18]",
+    "options": {
+      "A": "2 3 4 6 7 13 15 17 18 18 20",
+      "B": "20 18 18 17 15 13 7 6 4 3 2",
+      "C": "15 13 20 4 7 17 18 2 3 6 18",
+      "D": "2 4 3 13 7 6 15 17 20 18 18"
+    },
+    "answer": "D",
+    "explanation": "Left-root-right: 2 4 3 | 13 | 7 6 | 15 | 17 | 20 | 18 18. Option (1) would be correct only for a BST; this tree is not one."
+  },
+  {
+    "id": 39,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "An ideal sort is an in-place-sort whose additional space requirement is __________.",
+    "options": {
+      "A": "O (log₂ n)",
+      "B": "O (nlog₂ n)",
+      "C": "O (1)",
+      "D": "O (n)"
+    },
+    "answer": "C",
+    "explanation": "A true in-place sort uses only a constant amount of extra memory, O(1)."
+  },
+  {
+    "id": 40,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Which of the following is not a congestion policy at network layer ?",
+    "options": {
+      "A": "Flow Control Policy",
+      "B": "Packet Discard Policy",
+      "C": "Packet Lifetime Management Policy",
+      "D": "Routing Algorithm"
+    },
+    "answer": "A",
+    "explanation": "Tanenbaum lists network-layer congestion policies as virtual circuits vs datagrams, packet queueing/service, packet discard, routing algorithm and packet lifetime management. Flow control policy belongs to the data link/transport layers."
+  },
+  {
+    "id": 41,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Loop unrolling is a code optimization technique :",
+    "options": {
+      "A": "that avoids tests at every iteration of the loop.",
+      "B": "that improves performance by decreasing the number of instructions in a basic block.",
+      "C": "that exchanges inner loops with outer loops.",
+      "D": "that reorders operations to allow multiple computations to happen in parallel."
+    },
+    "answer": "A",
+    "explanation": "Unrolling replicates the loop body so the loop test/increment runs less often. It increases (not decreases) instructions per block; C is loop interchange."
+  },
+  {
+    "id": 42,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "What will be the hexadecimal value in the register ax (32-bit) after executing the following instructions ?\nmov al, 15\nmov ah, 15\nxor al, al\nmov cl, 3\nshr ax, cl\nCodes :",
+    "options": {
+      "A": "0F00 h",
+      "B": "0F0F h",
+      "C": "01E0 h",
+      "D": "FFFF h"
+    },
+    "answer": "C",
+    "explanation": "AX = 0F0Fh, then XOR AL,AL gives 0F00h; shifting right by 3 gives 0F00h/8 = 01E0h. (AX is actually a 16-bit register.)"
+  },
+  {
+    "id": 43,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Which of the following statements is false ?",
+    "options": {
+      "A": "Top-down parsers are LL parsers where first L stands for left - to - right scan and second L stands for a leftmost derivation.",
+      "B": "(000)* is a regular expression that matches only strings containing an odd number of zeroes, including the empty string.",
+      "C": "Bottom-up parsers are in the LR family, where L stands for left - to - right scan and R stands for rightmost derivation.",
+      "D": "The class of context - free languages is closed under reversal. That is, if L is any context - free language, then the language Lᴿ = {wᴿ: w ∈ L} is context - free."
+    },
+    "answer": "B",
+    "explanation": "(000)* matches strings whose number of zeros is a multiple of 3 (0, 3, 6, …), not 'an odd number'; the empty string has an even count anyway."
+  },
+  {
+    "id": 44,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "System calls are usually invoked by using :",
+    "options": {
+      "A": "A privileged instruction",
+      "B": "An indirect jump",
+      "C": "A software interrupt",
+      "D": "Polling"
+    },
+    "answer": "C",
+    "explanation": "User programs enter the kernel through a trap/software interrupt (e.g. INT 0x80, SYSCALL)."
+  },
+  {
+    "id": 45,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "The __________ transfers the executable image of a C++ program from hard disk to main memory.",
+    "options": {
+      "A": "Compiler",
+      "B": "Linker",
+      "C": "Debugger",
+      "D": "Loader"
+    },
+    "answer": "D",
+    "explanation": "The loader places the executable into memory and prepares it to run."
+  },
+  {
+    "id": 46,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "In software testing, how the error, fault and failure are related to each other ?",
+    "options": {
+      "A": "Error leads to failure but fault is not related to error and failure.",
+      "B": "Fault leads to failure but error is not related to fault and failure.",
+      "C": "Error leads to fault and fault leads to failure.",
+      "D": "Fault leads to error and error leads to failure."
+    },
+    "answer": "C",
+    "explanation": "A human error (mistake) introduces a fault (defect/bug) in the code; executing the fault causes a failure."
+  },
+  {
+    "id": 47,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "Which of the following is not a software process model ?",
+    "options": {
+      "A": "Prototyping",
+      "B": "Iterative",
+      "C": "Timeboxing",
+      "D": "Glassboxing"
+    },
+    "answer": "D",
+    "explanation": "Prototyping, iterative and timeboxing are process models; glass-box (white-box) is a testing technique."
+  },
+  {
+    "id": 48,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "How many solutions are there for the equation x+y+z+u=29 subject to the constraints that x≥1, y≥2, z≥3 and u≥0 ?",
+    "options": {
+      "A": "4960",
+      "B": "2600",
+      "C": "23751",
+      "D": "8855"
+    },
+    "answer": "B",
+    "explanation": "Substitute to remove minimums: x'+y'+z'+u = 29−6 = 23, giving C(23+3, 3) = C(26, 3) = 2600."
+  },
+  {
+    "id": 49,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "A unix file system has 1-KB blocks and 4-byte disk addresses. What is the maximum file size if i-nodes contain 10 direct entries and one single, double and triple indirect entry each ?",
+    "options": {
+      "A": "32 GB",
+      "B": "64 GB",
+      "C": "16 GB",
+      "D": "1 GB"
+    },
+    "answer": "C",
+    "explanation": "One block holds 1024/4 = 256 addresses. Size = (10 + 256 + 256² + 256³) KB ≈ 16,843,018 KB ≈ 16 GB."
+  },
+  {
+    "id": 50,
+    "source_file": "D 8715 Paper II Computer Science",
+    "question": "__________ uses electronic means to transfer funds directly from one account to another rather than by cheque or cash.",
+    "options": {
+      "A": "M-Banking",
+      "B": "E-Banking",
+      "C": "O-Banking",
+      "D": "C-Banking"
+    },
+    "answer": "B",
+    "explanation": "Electronic banking (e-banking, including EFT) transfers funds electronically between accounts."
+  }
+]

@@ -1,0 +1,1562 @@
+[
+  {
+    "id": 1,
+    "source_file": "VISU",
+    "question": "In IPv4 which uses a 32 bit address format, what is total number of address space available ?",
+    "options": {
+      "A": "2³²",
+      "B": "2²³",
+      "C": "2¹⁶",
+      "D": "2¹⁰"
+    },
+    "answer": "A",
+    "explanation": "A 32-bit address gives 2³² (about 4.29 billion) addresses."
+  },
+  {
+    "id": 2,
+    "source_file": "VISU",
+    "question": "Which key is used to represent relation between two tables ?",
+    "options": {
+      "A": "Foreign key",
+      "B": "Primary key",
+      "C": "Candidate key",
+      "D": "Super key"
+    },
+    "answer": "A",
+    "explanation": "A foreign key in one table references the primary key of another, linking the tables."
+  },
+  {
+    "id": 3,
+    "source_file": "VISU",
+    "question": "The number of flip-flop needed to construct a binary modulo N counter is",
+    "options": {
+      "A": "log₂N",
+      "B": "2ᴺ",
+      "C": "N",
+      "D": "N²"
+    },
+    "answer": "A",
+    "explanation": "A mod-N counter needs ⌈log₂N⌉ flip-flops, since n flip-flops give 2ⁿ states."
+  },
+  {
+    "id": 4,
+    "source_file": "VISU",
+    "question": "Functional and detailed specification of all system elements are the output of which of the following phase of System Development Life Cycle (SDLC) ?",
+    "options": {
+      "A": "Logical design",
+      "B": "Analysis",
+      "C": "Physical design",
+      "D": "Project initiation and planning"
+    },
+    "answer": "C",
+    "explanation": "Physical design turns the logical design into detailed technical specifications of all system elements (programs, files, hardware, procedures)."
+  },
+  {
+    "id": 5,
+    "source_file": "VISU",
+    "question": "What will be the output of the following 'C' code ?\nfor (i = 1; i < 5; i++)\nif (i! = 3)\nprintf (\"%d\", i);",
+    "options": {
+      "A": "Error",
+      "B": "1245",
+      "C": "12345",
+      "D": "0000"
+    },
+    "answer": "B",
+    "explanation": "Flawed question. As printed, the loop runs for i = 1 to 4 and skips 3, so it prints 124, which no option matches. '1245' would be correct if the condition were i <= 5. ('i! = 3' as printed, with a space, would also be a syntax error.) '1245' is the intended answer."
+  },
+  {
+    "id": 6,
+    "source_file": "VISU",
+    "question": "A fundamental requirement of the RSA public-key encryption scheme is the ability to generate ______ numbers.",
+    "options": {
+      "A": "pseudo random numbers",
+      "B": "complex numbers",
+      "C": "random numbers",
+      "D": "prime numbers"
+    },
+    "answer": "D",
+    "explanation": "RSA keys are built from two large primes p and q, so large prime generation is essential."
+  },
+  {
+    "id": 7,
+    "source_file": "VISU",
+    "question": "For designing a normal RDBMS which of the following normal form is considered adequate ?",
+    "options": {
+      "A": "4NF",
+      "B": "2NF",
+      "C": "3NF",
+      "D": "5NF"
+    },
+    "answer": "C",
+    "explanation": "In practice 3NF (or BCNF) is considered adequate for most relational designs."
+  },
+  {
+    "id": 8,
+    "source_file": "VISU",
+    "question": "What is the worst case time complexity of inserting 'n' element into an empty linked list of the linked list need to be maintained in sorted order ?",
+    "options": {
+      "A": "θ (n)",
+      "B": "θ (1)",
+      "C": "θ (nlogn)",
+      "D": "θ (n²)"
+    },
+    "answer": "D",
+    "explanation": "Each sorted insert may scan the whole list: 1 + 2 + … + n = θ(n²)."
+  },
+  {
+    "id": 9,
+    "source_file": "VISU",
+    "question": "Which function is used to represent memory and set all allocated bytes to zero ?",
+    "options": {
+      "A": "calloc ( )",
+      "B": "realloc ( )",
+      "C": "malloc ( )",
+      "D": "free ( )"
+    },
+    "answer": "A",
+    "explanation": "calloc() allocates memory and initialises every byte to zero. ('represent' is a misprint of 'reserve'.)"
+  },
+  {
+    "id": 10,
+    "source_file": "VISU",
+    "question": "When a collection of various computers appears as a single coherent system to its clients, what is this called ?",
+    "options": {
+      "A": "Networking system",
+      "B": "Distributed system",
+      "C": "Computer network",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "Tanenbaum's definition: a distributed system is a collection of independent computers that appears to its users as a single coherent system."
+  },
+  {
+    "id": 11,
+    "source_file": "VISU",
+    "question": "Cyclomatic complexity of the flow graph given below is\n[Figure: flow graph 1→2; 2→3, 2→4; 3→5, 3→6; 5→9, 6→9; 4→7, 4→8; 7→10, 8→10; 10→11]",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "3",
+      "D": "6"
+    },
+    "answer": "A",
+    "explanation": "There are three decision nodes (2, 3 and 4), so V(G) = P + 1 = 4."
+  },
+  {
+    "id": 12,
+    "source_file": "VISU",
+    "question": "We rotate a point P(2, 5) by 60° about a pivot point (1, 2). The new transformed point P' would be",
+    "options": {
+      "A": "(1, – 4)",
+      "B": "(– 1, 4)",
+      "C": "(– 4, 1)",
+      "D": "(1, 4)"
+    },
+    "answer": "B",
+    "explanation": "Relative to the pivot the point is (1, 3). x' = 1 + 1·cos60 − 3·sin60 ≈ −1.10 and y' = 2 + 1·sin60 + 3·cos60 ≈ 4.37, so P' ≈ (−1, 4)."
+  },
+  {
+    "id": 13,
+    "source_file": "VISU",
+    "question": "Simplification of AB + A'C + BC is",
+    "options": {
+      "A": "A'C + BC",
+      "B": "C",
+      "C": "AB + AC",
+      "D": "AB + A'C"
+    },
+    "answer": "D",
+    "explanation": "By the consensus theorem, BC is redundant: AB + A'C + BC = AB + A'C."
+  },
+  {
+    "id": 14,
+    "source_file": "VISU",
+    "question": "IDEA cryptographic algorithm have following rounds and key size",
+    "options": {
+      "A": "32, 128",
+      "B": "16, 32",
+      "C": "16, 64",
+      "D": "8, 128"
+    },
+    "answer": "D",
+    "explanation": "IDEA uses 8 rounds (plus a final half-round) on 64-bit blocks with a 128-bit key."
+  },
+  {
+    "id": 15,
+    "source_file": "VISU",
+    "question": "Which of the following is NOT a function of network layer ?",
+    "options": {
+      "A": "Congestion control",
+      "B": "Routing",
+      "C": "Error control",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "Routing and congestion control are network-layer functions; error control is mainly done at the data link and transport layers."
+  },
+  {
+    "id": 16,
+    "source_file": "VISU",
+    "question": "Given below are two statements, one is labeled as Assertion (A) and other as Reason (R).\nAssertion (A): Object Oriented Programming follows bottom-up approach.\nReason (R) : Most of the design work is done at the beginning of software development of object oriented methodology.\nSelect the correct answer using the code given below :",
+    "options": {
+      "A": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "B": "(A) is true but (R) is false",
+      "C": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "D": "(A) is false but (R) is true"
+    },
+    "answer": "B",
+    "explanation": "OOP builds systems bottom-up from classes/objects, so A is true. OO development is iterative, with design spread across the life cycle rather than all done up front, so R is false."
+  },
+  {
+    "id": 17,
+    "source_file": "VISU",
+    "question": "What should be the value of Ambient Reflection Coefficient for a black hole in Universe ?",
+    "options": {
+      "A": "1",
+      "B": "< 1 but ≠ 0",
+      "C": "0",
+      "D": "> 1"
+    },
+    "answer": "C",
+    "explanation": "A black body/black hole reflects no light, so its ambient reflection coefficient kₐ = 0."
+  },
+  {
+    "id": 18,
+    "source_file": "VISU",
+    "question": "Which is the most important feature of spiral model ?",
+    "options": {
+      "A": "Task management",
+      "B": "Risk management",
+      "C": "Information management",
+      "D": "Performance management"
+    },
+    "answer": "B",
+    "explanation": "The spiral model is risk-driven: each loop includes risk analysis."
+  },
+  {
+    "id": 19,
+    "source_file": "VISU",
+    "question": "Las Vegas Algorithm is used as",
+    "options": {
+      "A": "Non-Randomized Algorithm",
+      "B": "Spanning Tree Algorithm",
+      "C": "Randomized Algorithm",
+      "D": "B-Tree Algorithm"
+    },
+    "answer": "C",
+    "explanation": "A Las Vegas algorithm is randomized: always correct, with random running time (e.g. randomized quicksort)."
+  },
+  {
+    "id": 20,
+    "source_file": "VISU",
+    "question": "Which type of IP address class is used for multicast address ?",
+    "options": {
+      "A": "Class B",
+      "B": "Class C",
+      "C": "Class A",
+      "D": "Class D"
+    },
+    "answer": "D",
+    "explanation": "Class D (224.0.0.0–239.255.255.255) is reserved for multicast."
+  },
+  {
+    "id": 21,
+    "source_file": "VISU",
+    "question": "In multilevel inheritance, which is the most significant feature of OOP ?",
+    "options": {
+      "A": "Flexibility",
+      "B": "Code reusability",
+      "C": "Code readability",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "Inheritance at each level reuses the code of its base classes."
+  },
+  {
+    "id": 22,
+    "source_file": "VISU",
+    "question": "What does cyber security protect ?",
+    "options": {
+      "A": "Cyber security protects internet connected systems",
+      "B": "Cyber security protects hackers",
+      "C": "Cyber security protects criminals",
+      "D": "None of these"
+    },
+    "answer": "A",
+    "explanation": "Cyber security protects internet-connected systems (hardware, software, data) from attacks."
+  },
+  {
+    "id": 23,
+    "source_file": "VISU",
+    "question": "If the multiplier Q is 1101 (– 3 in decimal) and 4 bit registers are in use, then in Booth's technique for multiplication the number of addition and subtractions required are",
+    "options": {
+      "A": "1 addition and 1 subtraction",
+      "B": "1 addition and 2 subtractions",
+      "C": "0 addition and 2 subtractions",
+      "D": "2 additions and 1 subtraction"
+    },
+    "answer": "B",
+    "explanation": "Scan pairs (Qᵢ, Qᵢ₋₁) with Q₋₁ = 0: (1,0) subtract, (0,1) add, (1,0) subtract, (1,1) nothing. That is 1 addition and 2 subtractions."
+  },
+  {
+    "id": 24,
+    "source_file": "VISU",
+    "question": "If a line is drawn from (2, 3) to (6, 15) using DDA algorithm. How many points will be needed to generate such lines ?",
+    "options": {
+      "A": "8",
+      "B": "7",
+      "C": "13",
+      "D": "6"
+    },
+    "answer": "C",
+    "explanation": "Δx = 4 and Δy = 12, so steps = 12; including the start point, 13 points are plotted."
+  },
+  {
+    "id": 25,
+    "source_file": "VISU",
+    "question": "In the TCP/IP protocol suite, what is the main function of the transport layer ?",
+    "options": {
+      "A": "Process-to-process delivery",
+      "B": "Synchronization",
+      "C": "Node-to-Node delivery",
+      "D": "Updating and maintenance of routing tables"
+    },
+    "answer": "A",
+    "explanation": "The transport layer delivers data between processes (using ports); node-to-node delivery is the data link layer's job."
+  },
+  {
+    "id": 26,
+    "source_file": "VISU",
+    "question": "BCNF can be achieved from 3NF by removing which of the following ?",
+    "options": {
+      "A": "partial dependencies",
+      "B": "transitive dependencies",
+      "C": "repeating groups",
+      "D": "overlapping dependencies"
+    },
+    "answer": "D",
+    "explanation": "3NF relations that are not BCNF have overlapping candidate keys where a non-key determinant determines a key attribute; removing these gives BCNF. Partial and transitive dependencies are already removed in 2NF/3NF."
+  },
+  {
+    "id": 27,
+    "source_file": "VISU",
+    "question": "MAC address is represented in ______ format.",
+    "options": {
+      "A": "Decimal",
+      "B": "Hexadecimal",
+      "C": "Octal",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "MAC addresses are written as six hexadecimal pairs, e.g. 00:1A:2B:3C:4D:5E."
+  },
+  {
+    "id": 28,
+    "source_file": "VISU",
+    "question": "A ______ is an outline of a process that develops successful information systems.",
+    "options": {
+      "A": "System analysis",
+      "B": "Software development",
+      "C": "System development life cycle",
+      "D": "CASE tool"
+    },
+    "answer": "C",
+    "explanation": "The SDLC outlines the phases for developing information systems."
+  },
+  {
+    "id": 29,
+    "source_file": "VISU",
+    "question": "The action in Java class are called",
+    "options": {
+      "A": "functions",
+      "B": "methods",
+      "C": "procedures",
+      "D": "objects"
+    },
+    "answer": "B",
+    "explanation": "Behaviours (actions) of a Java class are defined as methods."
+  },
+  {
+    "id": 30,
+    "source_file": "VISU",
+    "question": "The minimum cost spanning tree for the following graph has the cost\n[Figure: weighted graph — 1-2:7, 1-3:2, 1-4:6, 2-3:6, 3-4:6, 2-5:4, 3-5:7, 3-6:5, 4-6:3, 5-6:7]",
+    "options": {
+      "A": "24",
+      "B": "20",
+      "C": "18",
+      "D": "22"
+    },
+    "answer": "B",
+    "explanation": "Kruskal: 1-3 (2), 4-6 (3), 2-5 (4), 3-6 (5), then 2-3 (6) to join {2, 5}. Total = 2+3+4+5+6 = 20."
+  },
+  {
+    "id": 31,
+    "source_file": "VISU",
+    "question": "When performing binary multiplication of two, four bit numbers, what is size of ROM needed ?",
+    "options": {
+      "A": "128 × 16 bits",
+      "B": "64 × 32 bits",
+      "C": "256 × 8 bits",
+      "D": "256 × 16 bits"
+    },
+    "answer": "C",
+    "explanation": "The two 4-bit inputs form an 8-bit address (256 words) and the product is up to 8 bits: 256 × 8."
+  },
+  {
+    "id": 32,
+    "source_file": "VISU",
+    "question": "Alpha and beta testing are the forms of",
+    "options": {
+      "A": "Integration testing",
+      "B": "System testing",
+      "C": "Acceptance testing",
+      "D": "Unit testing"
+    },
+    "answer": "C",
+    "explanation": "Alpha (at developer site) and beta (at customer site) tests are acceptance tests by users."
+  },
+  {
+    "id": 33,
+    "source_file": "VISU",
+    "question": "Error detection at the data link layer is achieved by",
+    "options": {
+      "A": "Hamming codes",
+      "B": "Cyclic redundancy code",
+      "C": "Bit stuffing",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "CRC is the standard data-link error-detection method; Hamming codes are for error correction."
+  },
+  {
+    "id": 34,
+    "source_file": "VISU",
+    "question": "When a subroutine is called, the address of the instruction following the CALL instruction is stored in/on the",
+    "options": {
+      "A": "Accumulator",
+      "B": "Program Counter",
+      "C": "Stack Pointer",
+      "D": "Stack"
+    },
+    "answer": "D",
+    "explanation": "CALL pushes the return address onto the stack; the SP points to it but does not store it."
+  },
+  {
+    "id": 35,
+    "source_file": "VISU",
+    "question": "Which of the following traversal techniques lists the nodes of a binary search tree in ascending order ?",
+    "options": {
+      "A": "Post-order",
+      "B": "In-order",
+      "C": "Pre-order",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "In-order traversal of a BST visits keys in sorted order."
+  },
+  {
+    "id": 36,
+    "source_file": "VISU",
+    "question": "What will be the output of the following 'C' code on a 64-bit computer ?\n# include <stdio.h>\nUnion sti\n{\nint x;\nchar y;\n};\nint main ( )\n{\nUnion sti s;\nPrintf (\"%d\", sizeof (s));\nreturn 0;\n}",
+    "options": {
+      "A": "4",
+      "B": "9",
+      "C": "8",
+      "D": "5"
+    },
+    "answer": "A",
+    "explanation": "A union's size is that of its largest member (int, 4 bytes on typical 64-bit systems), so it prints 4. ('Union' and 'Printf' are capitalised misprints for union/printf.)"
+  },
+  {
+    "id": 37,
+    "source_file": "VISU",
+    "question": "In view of the security which of the following is NOT an area of risk in cloud computing ?",
+    "options": {
+      "A": "Elevated user access",
+      "B": "Regulatory compliance",
+      "C": "Location, segregation and recovery of data",
+      "D": "Cloud architecture"
+    },
+    "answer": "D",
+    "explanation": "Gartner's cloud security risks include privileged user access, regulatory compliance, data location, segregation and recovery; cloud architecture itself is not listed as a risk."
+  },
+  {
+    "id": 38,
+    "source_file": "VISU",
+    "question": "There are 5 routers and 6 networks in an internetworking, using link state routing, how many routing tables are there ?",
+    "options": {
+      "A": "6",
+      "B": "11",
+      "C": "1",
+      "D": "5"
+    },
+    "answer": "D",
+    "explanation": "Each router computes its own routing table: 5 tables."
+  },
+  {
+    "id": 39,
+    "source_file": "VISU",
+    "question": "4 way set associative cache of 64 KB is used in a system with 32 bits address. The 32 bits address is subdivided into TAG, INDEX and BLOCK OFFSET. No. of bits in TAG is",
+    "options": {
+      "A": "20",
+      "B": "19",
+      "C": "21",
+      "D": "18"
+    },
+    "answer": "D",
+    "explanation": "INDEX + OFFSET bits = log₂(cache size / ways) = log₂(64K/4) = 14, regardless of block size. TAG = 32 − 14 = 18."
+  },
+  {
+    "id": 40,
+    "source_file": "VISU",
+    "question": "______ testing is a type of high level testing in which the primary goal is to evaluate functionalities from a behavioural viewpoint.",
+    "options": {
+      "A": "Grey box",
+      "B": "Black box",
+      "C": "White box",
+      "D": "Blue box"
+    },
+    "answer": "B",
+    "explanation": "Black-box (behavioural) testing evaluates functionality without looking at internal code."
+  },
+  {
+    "id": 41,
+    "source_file": "VISU",
+    "question": "The term used for certified 802.11b product is",
+    "options": {
+      "A": "WEP",
+      "B": "WPA",
+      "C": "WAP",
+      "D": "Wi-Fi devices"
+    },
+    "answer": "D",
+    "explanation": "Products certified by the Wi-Fi Alliance for 802.11b interoperability carry the 'Wi-Fi' label."
+  },
+  {
+    "id": 42,
+    "source_file": "VISU",
+    "question": "In a 3-ary tree, every internal node has exactly 3 children. The total number of leaf nodes in such a tree with 6 internal nodes will be",
+    "options": {
+      "A": "23",
+      "B": "17",
+      "C": "10",
+      "D": "13"
+    },
+    "answer": "D",
+    "explanation": "For a full m-ary tree, L = (m − 1)·I + 1 = 2·6 + 1 = 13."
+  },
+  {
+    "id": 43,
+    "source_file": "VISU",
+    "question": "Maximum number of children of a B-tree of order m are",
+    "options": {
+      "A": "m – 1",
+      "B": "m",
+      "C": "m/2",
+      "D": "log₂m"
+    },
+    "answer": "B",
+    "explanation": "A B-tree of order m has at most m children (and m − 1 keys) per node."
+  },
+  {
+    "id": 44,
+    "source_file": "VISU",
+    "question": "Nyquist theorem to calculate the data rate is",
+    "options": {
+      "A": "H log₂V bits/sec",
+      "B": "H log₂ (1 + S/N) bits/sec",
+      "C": "2H log₂V bits/sec",
+      "D": "2H log₂ (1 + S/N) bits/sec"
+    },
+    "answer": "C",
+    "explanation": "Nyquist (noiseless): max data rate = 2H log₂V bits/s. Shannon (noisy) is H log₂(1 + S/N)."
+  },
+  {
+    "id": 45,
+    "source_file": "VISU",
+    "question": "'System' is a class in which of the following packages of Java programming language ?",
+    "options": {
+      "A": "Java.io",
+      "B": "Java.util",
+      "C": "Java.Lang",
+      "D": "Java.sql"
+    },
+    "answer": "C",
+    "explanation": "System belongs to java.lang, which is imported automatically."
+  },
+  {
+    "id": 46,
+    "source_file": "VISU",
+    "question": "Which data structure is used for converting infix notation to postfix notation ?",
+    "options": {
+      "A": "Branch",
+      "B": "Stack",
+      "C": "Tree",
+      "D": "Queue"
+    },
+    "answer": "B",
+    "explanation": "The shunting-yard algorithm uses a stack to hold operators."
+  },
+  {
+    "id": 47,
+    "source_file": "VISU",
+    "question": "Which of the following logic families use bipolar transistors ?",
+    "options": {
+      "A": "GaAS",
+      "B": "NMOS",
+      "C": "TTL",
+      "D": "CMOS"
+    },
+    "answer": "C",
+    "explanation": "TTL (transistor-transistor logic) uses bipolar junction transistors; NMOS and CMOS use MOSFETs."
+  },
+  {
+    "id": 48,
+    "source_file": "VISU",
+    "question": "It provides secure, remote logon and other secure client/server facilities",
+    "options": {
+      "A": "HTTPS",
+      "B": "IPSec",
+      "C": "SLP",
+      "D": "SSH"
+    },
+    "answer": "D",
+    "explanation": "SSH (Secure Shell) provides encrypted remote login and other secure client/server services."
+  },
+  {
+    "id": 49,
+    "source_file": "VISU",
+    "question": "The primary tool used in structured design is a",
+    "options": {
+      "A": "Module",
+      "B": "Structure chart",
+      "C": "Data flow diagram",
+      "D": "Program flow chart"
+    },
+    "answer": "B",
+    "explanation": "Structured design uses structure charts to show module hierarchy; DFDs belong to structured analysis."
+  },
+  {
+    "id": 50,
+    "source_file": "VISU",
+    "question": "If average access time of CPU is 20 ns, access time of main memory is 110 ns and the cache access time is 10 ns. What is the hit ratio ?",
+    "options": {
+      "A": "90%",
+      "B": "80%",
+      "C": "100%",
+      "D": "95%"
+    },
+    "answer": "A",
+    "explanation": "20 = h·10 + (1 − h)·110, so 100h = 90 and h = 0.9 (90%)."
+  },
+  {
+    "id": 51,
+    "source_file": "VISU",
+    "question": "For a function of 'n' variable, boundary value analysis yields",
+    "options": {
+      "A": "4n + 1 cases",
+      "B": "n + 4 cases",
+      "C": "4n + 3 cases",
+      "D": "2n + 4 cases"
+    },
+    "answer": "A",
+    "explanation": "Basic BVA tests min, min+, max−, max for each variable while the others stay nominal, plus one all-nominal case: 4n + 1."
+  },
+  {
+    "id": 52,
+    "source_file": "VISU",
+    "question": "The operand itself is contained in an instruction of",
+    "options": {
+      "A": "Direct Addressing Mode",
+      "B": "Indirect Addressing Mode",
+      "C": "Immediate Addressing Mode",
+      "D": "Register Addressing Mode"
+    },
+    "answer": "C",
+    "explanation": "In immediate addressing the operand value is part of the instruction."
+  },
+  {
+    "id": 53,
+    "source_file": "VISU",
+    "question": "The number of edges in a regular graph of degree 'd' and 'n' vertices is",
+    "options": {
+      "A": "n + d",
+      "B": "nd",
+      "C": "maximum of n, d",
+      "D": "nd/2"
+    },
+    "answer": "D",
+    "explanation": "Sum of degrees = nd = 2|E|, so |E| = nd/2."
+  },
+  {
+    "id": 54,
+    "source_file": "VISU",
+    "question": "The address of a class B host is to be split into subnets with a 6-bit subnet number. What is the maximum number of subnets and the maximum number of hosts in each subnet ?",
+    "options": {
+      "A": "64 subnets, 262142 hosts",
+      "B": "62 subnets, 1022 hosts",
+      "C": "62 subnets, 262142 hosts",
+      "D": "64 subnets, 1024 hosts"
+    },
+    "answer": "B",
+    "explanation": "Class B has 16 host bits: 6 for subnet, 10 for host. Hosts = 2¹⁰ − 2 = 1022; subnets = 2⁶ − 2 = 62 (classic rule excluding all-0s/all-1s subnets)."
+  },
+  {
+    "id": 55,
+    "source_file": "VISU",
+    "question": "What is the time complexity of the following C function ? (Assume n > 0)\nint rec (int n)\n{\nif (n = =1)\nreturn 1;\nelse\nreturn (rec (n – 1) + rec (n – 1));\n}",
+    "options": {
+      "A": "O(n log n)",
+      "B": "O(n²)",
+      "C": "O(n)",
+      "D": "O(2ⁿ)"
+    },
+    "answer": "D",
+    "explanation": "T(n) = 2T(n − 1) + c, giving O(2ⁿ)."
+  },
+  {
+    "id": 56,
+    "source_file": "VISU",
+    "question": "Postfix notation 6324 + – * has value",
+    "options": {
+      "A": "80",
+      "B": "– 5",
+      "C": "– 18",
+      "D": "22"
+    },
+    "answer": "C",
+    "explanation": "2 + 4 = 6; 3 − 6 = −3; 6 × (−3) = −18."
+  },
+  {
+    "id": 57,
+    "source_file": "VISU",
+    "question": "In UNIX which system call creates the new process ?",
+    "options": {
+      "A": "new",
+      "B": "fork",
+      "C": "create",
+      "D": "none of the above"
+    },
+    "answer": "B",
+    "explanation": "fork() creates a child process that duplicates the caller."
+  },
+  {
+    "id": 58,
+    "source_file": "VISU",
+    "question": "Which of the following is NOT a step of requirement engineering ?",
+    "options": {
+      "A": "Requirement analysis",
+      "B": "Requirement design",
+      "C": "Requirement elicitation",
+      "D": "Requirement documentation"
+    },
+    "answer": "B",
+    "explanation": "RE consists of elicitation, analysis, specification/documentation and validation; design is a later phase."
+  },
+  {
+    "id": 59,
+    "source_file": "VISU",
+    "question": "What is the full form of PNG in Computer Graphics ?",
+    "options": {
+      "A": "Printable New Graphical",
+      "B": "Port New Graphics",
+      "C": "Printable New Graphic",
+      "D": "Portable Network Graphics"
+    },
+    "answer": "D",
+    "explanation": "PNG = Portable Network Graphics."
+  },
+  {
+    "id": 60,
+    "source_file": "VISU",
+    "question": "Which of the following statements is true with reference to an interrupt occurred ?",
+    "options": {
+      "A": "CPU immediately jumps to a new process without completing the current instruction.",
+      "B": "CPU completes execution of all instructions in current process before jumping to a new process.",
+      "C": "CPU completes the execution of current instruction.",
+      "D": "None of these"
+    },
+    "answer": "C",
+    "explanation": "The CPU finishes the current instruction, saves its state, and then services the interrupt."
+  },
+  {
+    "id": 61,
+    "source_file": "VISU",
+    "question": "The coupling between different modules of a software is categorized as follows :\nI. Content coupling\nII. Common coupling\nIII. Control coupling\nIV. Stamp coupling\nV. Data coupling\nWhat will be the ranking of coupling between modules from strongest to weakest ?",
+    "options": {
+      "A": "V – IV – III – II – I",
+      "B": "I – III – V – II – IV",
+      "C": "I – II – III – IV – V",
+      "D": "IV – II – V – III – I"
+    },
+    "answer": "C",
+    "explanation": "From strongest (worst) to weakest (best): content, common, control, stamp, data."
+  },
+  {
+    "id": 62,
+    "source_file": "VISU",
+    "question": "Which of these is a technique that is used to verify message integrity ?",
+    "options": {
+      "A": "Protocol",
+      "B": "Decryption algorithm",
+      "C": "Message digest",
+      "D": "Digital signature"
+    },
+    "answer": "C",
+    "explanation": "A message digest (hash) detects any change to the message. A digital signature also provides authentication on top of this, but the digest is the integrity technique itself."
+  },
+  {
+    "id": 63,
+    "source_file": "VISU",
+    "question": "A 4 bit ripple counter and 4 bit synchronous counter are made using flip-flops having a propagation delay of 10 nsec each. If the worst case delay in the ripple counter and the synchronous counter be R and S respectively, then",
+    "options": {
+      "A": "R = 40 nsec, S = 10 nsec",
+      "B": "R = 10 nsec, S = 30 nsec",
+      "C": "R = 10 nsec, S = 40 nsec",
+      "D": "R = 30 nsec, S = 10 nsec"
+    },
+    "answer": "A",
+    "explanation": "In a ripple counter the delays add up (4 × 10 = 40 ns); in a synchronous counter all flip-flops switch together (10 ns)."
+  },
+  {
+    "id": 64,
+    "source_file": "VISU",
+    "question": "The complexity of Binary Search Algorithm is expressed as",
+    "options": {
+      "A": "O(log₂n)",
+      "B": "O(logₑn)",
+      "C": "O(n)",
+      "D": "O(n²)"
+    },
+    "answer": "A",
+    "explanation": "Binary search halves the range each step: O(log₂ n). Asymptotically O(logₑ n) is the same class, but log₂ is the conventional answer."
+  },
+  {
+    "id": 65,
+    "source_file": "VISU",
+    "question": "Match the following.\nA. Secondary index | I. Functional dependency\nB. Non-procedural query language | II. B-tree\nC. Closure of a set of attribute | III. Domain calculus\nD. Natural Join | IV. Relational algebraic operation",
+    "options": {
+      "A": "A – III, B – II, C – IV, D – I",
+      "B": "A – III, B – I, C – II, D – IV",
+      "C": "A – II, B – III, C – I, D – IV",
+      "D": "A – II, B – I, C – III, D – IV"
+    },
+    "answer": "C",
+    "explanation": "Secondary index uses a B-tree; domain calculus is non-procedural; attribute closure relates to FDs; natural join is a relational algebra operation."
+  },
+  {
+    "id": 66,
+    "source_file": "VISU",
+    "question": "Dirty bit is used to show the",
+    "options": {
+      "A": "wrong page",
+      "B": "page with corrupted data",
+      "C": "page with low frequency occurrence",
+      "D": "page that is modified after being loaded into cache memory"
+    },
+    "answer": "D",
+    "explanation": "The dirty (modified) bit marks a page/block changed since loading, so it must be written back before replacement."
+  },
+  {
+    "id": 67,
+    "source_file": "VISU",
+    "question": "How many bits are there in network ID and host ID of a class 'C' network ?",
+    "options": {
+      "A": "16 bits and 16 bits",
+      "B": "24 bits and 8 bits",
+      "C": "8 bits and 24 bits",
+      "D": "24 bits and 16 bits"
+    },
+    "answer": "B",
+    "explanation": "Class C: 24-bit network ID, 8-bit host ID."
+  },
+  {
+    "id": 68,
+    "source_file": "VISU",
+    "question": "The number of process that are completed per unit time is known as",
+    "options": {
+      "A": "Waiting time",
+      "B": "Throughput",
+      "C": "Turn around time",
+      "D": "Response time"
+    },
+    "answer": "B",
+    "explanation": "Throughput = number of processes completed per unit time."
+  },
+  {
+    "id": 69,
+    "source_file": "VISU",
+    "question": "How many address lines are needed to address each memory location in a 2048 × 4 memory chip ?",
+    "options": {
+      "A": "11",
+      "B": "8",
+      "C": "10",
+      "D": "12"
+    },
+    "answer": "A",
+    "explanation": "2048 = 2¹¹ locations, so 11 address lines (the ×4 is the word width)."
+  },
+  {
+    "id": 70,
+    "source_file": "VISU",
+    "question": "For a relational schema R(A, B, C, D, E, F) consider the following Functional Dependencies (FDs).\nA → B\nC → DF\nAC → E\nD → F\nDetermine the key from the given Functional Dependencies (FDs).",
+    "options": {
+      "A": "AC",
+      "B": "ACB",
+      "C": "AB",
+      "D": "ACD"
+    },
+    "answer": "A",
+    "explanation": "AC⁺ = A, C, B, D, F, E = all attributes; A and C never appear on a right side, so AC is the (minimal) key."
+  },
+  {
+    "id": 71,
+    "source_file": "VISU",
+    "question": "The 4-bit code of the bottom-region among the nine regions divided using the Cohen-Sutherland algorithm is",
+    "options": {
+      "A": "0010",
+      "B": "0110",
+      "C": "0000",
+      "D": "0101"
+    },
+    "answer": "A",
+    "explanation": "Doubtful question. With bits ordered Left-Right-Bottom-Top (bit 1 to bit 4), the region directly below the window has only the 'bottom' bit set: 0010. In the common TBRL ordering it would be 0100, which is not offered. 0000 is the window itself."
+  },
+  {
+    "id": 72,
+    "source_file": "VISU",
+    "question": "Match the following.\nA. Alter | I. The ER model\nB. Update | II. Relationship model\nC. Rectangle | III. DDL\nD. Record | IV. DML",
+    "options": {
+      "A": "A – IV, B – III, C – II, D – I",
+      "B": "A – IV, B – III, C – I, D – II",
+      "C": "A – III, B – IV, C – I, D – II",
+      "D": "A – III, B – IV, C – II, D – I"
+    },
+    "answer": "C",
+    "explanation": "ALTER is DDL, UPDATE is DML, a rectangle (entity) belongs to the ER model, and a record/tuple belongs to the relational ('relationship') model."
+  },
+  {
+    "id": 73,
+    "source_file": "VISU",
+    "question": "What protects the intellectual property implemented by inventors ?",
+    "options": {
+      "A": "Patents",
+      "B": "Registered design",
+      "C": "Trademark",
+      "D": "Copyright"
+    },
+    "answer": "A",
+    "explanation": "Patents protect inventions; copyright protects works of expression and trademarks protect brand marks."
+  },
+  {
+    "id": 74,
+    "source_file": "VISU",
+    "question": "Which of the following multiplexer has 4 bit data select input ?",
+    "options": {
+      "A": "16 : 1",
+      "B": "2 : 1",
+      "C": "4 : 1",
+      "D": "8 : 1"
+    },
+    "answer": "A",
+    "explanation": "4 select lines choose among 2⁴ = 16 inputs."
+  },
+  {
+    "id": 75,
+    "source_file": "VISU",
+    "question": "How many characters per second (7 bits + 1 parity) can be transmitted over a 2400 bps line if the transfer is asynchronous (1 start and 1 stop bit) ?",
+    "options": {
+      "A": "240",
+      "B": "250",
+      "C": "300",
+      "D": "275"
+    },
+    "answer": "A",
+    "explanation": "Each character takes 1 + 7 + 1 + 1 = 10 bits, so 2400/10 = 240 characters/s."
+  },
+  {
+    "id": 76,
+    "source_file": "VISU",
+    "question": "The decimal conversion of binary number (1010.011)₂ is",
+    "options": {
+      "A": "(11.395)₁₀",
+      "B": "(10.395)₁₀",
+      "C": "(11.375)₁₀",
+      "D": "(10.375)₁₀"
+    },
+    "answer": "D",
+    "explanation": "1010 = 10 and .011 = 0.25 + 0.125 = 0.375."
+  },
+  {
+    "id": 77,
+    "source_file": "VISU",
+    "question": "Stack is useful for implementing",
+    "options": {
+      "A": "Radix sort",
+      "B": "Recursion",
+      "C": "Quick sort",
+      "D": "Breadth first search"
+    },
+    "answer": "B",
+    "explanation": "Recursion uses the call stack; BFS uses a queue."
+  },
+  {
+    "id": 78,
+    "source_file": "VISU",
+    "question": "Which of the following scheduling policies cause starvation ?\nA. FIFO\nB. SJF\nC. Priority\nD. RR\nChoose the correct one.",
+    "options": {
+      "A": "B, C",
+      "B": "C, D",
+      "C": "A, B",
+      "D": "D, A"
+    },
+    "answer": "A",
+    "explanation": "SJF (long jobs) and priority scheduling (low-priority jobs) can starve; FIFO and RR cannot."
+  },
+  {
+    "id": 79,
+    "source_file": "VISU",
+    "question": "If negative numbers are represented in 2's complement form, then what is the range of numbers that can be stored in 8 bits ?",
+    "options": {
+      "A": "– 128 to + 127",
+      "B": "– 128 to + 128",
+      "C": "– 127 to + 127",
+      "D": "– 127 to + 128"
+    },
+    "answer": "A",
+    "explanation": "n-bit 2's complement range is −2ⁿ⁻¹ to 2ⁿ⁻¹ − 1: −128 to +127."
+  },
+  {
+    "id": 80,
+    "source_file": "VISU",
+    "question": "Aspect ratio is generally defined as the ratio of the",
+    "options": {
+      "A": "Vertical to horizontal points",
+      "B": "Horizontal to vertical points",
+      "C": "Vertical to (horizontal + vertical) points",
+      "D": "Either (a) or (b) depending upon the convention followed"
+    },
+    "answer": "D",
+    "explanation": "Aspect ratio is stated as width:height in some texts and as vertical:horizontal points in others (Hearn & Baker), so it depends on convention."
+  },
+  {
+    "id": 81,
+    "source_file": "VISU",
+    "question": "Rapid prototyping proves the quality of a design by",
+    "options": {
+      "A": "having a problem simulate a real system",
+      "B": "having a system analyst present an overview of the design to users, programmers and consultants",
+      "C": "having a data flow diagram",
+      "D": "both (a) and (b)"
+    },
+    "answer": "A",
+    "explanation": "A prototype simulates the real system so that users can evaluate the design. ('problem' is a misprint of 'prototype'.)"
+  },
+  {
+    "id": 82,
+    "source_file": "VISU",
+    "question": "In operating system, Banker's algorithm is used to",
+    "options": {
+      "A": "deadlock recovery",
+      "B": "deadlock removal",
+      "C": "prevent deadlock",
+      "D": "none of the above"
+    },
+    "answer": "C",
+    "explanation": "Banker's algorithm avoids deadlock by granting requests only when the system stays safe; 'prevent' is the closest option (strictly it is avoidance)."
+  },
+  {
+    "id": 83,
+    "source_file": "VISU",
+    "question": "Which operator overloads using the friend function ?",
+    "options": {
+      "A": "( )",
+      "B": "→",
+      "C": "*",
+      "D": "="
+    },
+    "answer": "C",
+    "explanation": "=, (), [] and -> must be member functions and cannot be overloaded with friends; * can be."
+  },
+  {
+    "id": 84,
+    "source_file": "VISU",
+    "question": "Which of the following is the hacking approach where cyber-criminals design fake websites or pages for tricking or gaining additional traffic ?",
+    "options": {
+      "A": "Mimicking",
+      "B": "Spamming",
+      "C": "Website-Duplication",
+      "D": "Pharming"
+    },
+    "answer": "D",
+    "explanation": "Pharming redirects users to fake websites (e.g. via DNS poisoning) to steal data or gain traffic."
+  },
+  {
+    "id": 85,
+    "source_file": "VISU",
+    "question": "Consider the following statements with reference to JavaScript.\n1. It can bring dynamic features to HTML page.\n2. It is used for form validation in web page.\nSelect the correct answer from the code given below.",
+    "options": {
+      "A": "Both 1 and 2",
+      "B": "Only 2",
+      "C": "Only 1",
+      "D": "Neither 1 nor 2"
+    },
+    "answer": "A",
+    "explanation": "JavaScript adds dynamic behaviour and is widely used for client-side form validation."
+  },
+  {
+    "id": 86,
+    "source_file": "VISU",
+    "question": "Which of the following is correct for f(x, y, z) = Σ(0, 2, 4, 5, 6) ?",
+    "options": {
+      "A": "f = xy' + z",
+      "B": "f = x'y + z",
+      "C": "f = x'y + z'",
+      "D": "f = xy' + z'"
+    },
+    "answer": "D",
+    "explanation": "Minterms 0, 2, 4, 6 (all with z = 0) give z'; minterms 4, 5 (x = 1, y = 0) give xy'. So f = xy' + z'."
+  },
+  {
+    "id": 87,
+    "source_file": "VISU",
+    "question": "Consider the following statements with reference to Batch Processing Systems.\n1. They are non-interactive system.\n2. Multiple jobs are submitted and executed sequentially.",
+    "options": {
+      "A": "Both 1 and 2",
+      "B": "Only 2",
+      "C": "Only 1",
+      "D": "Neither 1 nor 2"
+    },
+    "answer": "A",
+    "explanation": "Batch systems run grouped jobs one after another without user interaction."
+  },
+  {
+    "id": 88,
+    "source_file": "VISU",
+    "question": "Integrity constraints ensure that changes made to the database by authorized users do not result in",
+    "options": {
+      "A": "Loss of keys",
+      "B": "Loss of tables",
+      "C": "Loss of functional dependencies",
+      "D": "Loss of data consistency"
+    },
+    "answer": "D",
+    "explanation": "Integrity constraints guard against accidental damage to data consistency."
+  },
+  {
+    "id": 89,
+    "source_file": "VISU",
+    "question": "For sets X = {1, 3, 5}, Y = {7, 9} and relation R = {(1, 7), (1, 9), (3, 9), (5, 9)} the complement of R is",
+    "options": {
+      "A": "{ (7, 3), (7, 5) }",
+      "B": "{ (3, 7), (5, 7) }",
+      "C": "{ (7, 1), (9, 1), (9, 3), (9, 5) }",
+      "D": "{ (3, 9), (3, 5) }"
+    },
+    "answer": "B",
+    "explanation": "X × Y has 6 pairs; the ones not in R are (3, 7) and (5, 7)."
+  },
+  {
+    "id": 90,
+    "source_file": "VISU",
+    "question": "Bridges work at which of the following OSI/ISO reference model's layers ?",
+    "options": {
+      "A": "Network layer",
+      "B": "Session layer",
+      "C": "Data link layer",
+      "D": "Application layer"
+    },
+    "answer": "C",
+    "explanation": "Bridges forward frames using MAC addresses at the data link layer."
+  },
+  {
+    "id": 91,
+    "source_file": "VISU",
+    "question": "What is an abstraction in object-oriented programming ?",
+    "options": {
+      "A": "Hiding the implementation",
+      "B": "Hiding the implementation and showing only the features",
+      "C": "Hiding the important data",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "Abstraction exposes essential features/interface while hiding implementation details."
+  },
+  {
+    "id": 92,
+    "source_file": "VISU",
+    "question": "An overlay is",
+    "options": {
+      "A": "A specific memory location",
+      "B": "A single contiguous memory that was used in old days for running large programs by swapping",
+      "C": "A part of operating system",
+      "D": "Overloading the system with many files"
+    },
+    "answer": "B",
+    "explanation": "Overlays let a program larger than memory run by loading only the needed parts into the same memory region in turn."
+  },
+  {
+    "id": 93,
+    "source_file": "VISU",
+    "question": "Which HTML tag do we use to display text along with a scrolling effect ?",
+    "options": {
+      "A": "<scroll>",
+      "B": "<marquee>",
+      "C": "<div>",
+      "D": "<select>"
+    },
+    "answer": "B",
+    "explanation": "<marquee> (now deprecated) scrolls text across the page."
+  },
+  {
+    "id": 94,
+    "source_file": "VISU",
+    "question": "If pᵢ is the predicate used to construct fragment rᵢ and Rᵢ is the subset of relation r, the horizontal fragment of relation r is given by which of the following ?",
+    "options": {
+      "A": "σ_pᵢ (r)",
+      "B": "σ_Rᵢ (r)",
+      "C": "π_Rᵢ (r)",
+      "D": "π_pᵢ (r)"
+    },
+    "answer": "A",
+    "explanation": "A horizontal fragment is a selection rᵢ = σ_pᵢ(r); a vertical fragment is a projection π_Rᵢ(r)."
+  },
+  {
+    "id": 95,
+    "source_file": "VISU",
+    "question": "The octal equivalent of a binary number 1011101011 is",
+    "options": {
+      "A": "7353",
+      "B": "1353",
+      "C": "4651",
+      "D": "none of the above"
+    },
+    "answer": "B",
+    "explanation": "1 011 101 011 = (1353)₈."
+  },
+  {
+    "id": 96,
+    "source_file": "VISU",
+    "question": "The depth of a complete binary tree is given by",
+    "options": {
+      "A": "n. log₂(n) + 1",
+      "B": "log₂ (n)",
+      "C": "n. log₂(n)",
+      "D": "floor (log₂(n))"
+    },
+    "answer": "D",
+    "explanation": "A complete binary tree with n nodes has depth ⌊log₂ n⌋ (root at depth 0)."
+  },
+  {
+    "id": 97,
+    "source_file": "VISU",
+    "question": "The name of default access specifier for the member function or data members in the C++ is",
+    "options": {
+      "A": "Public",
+      "B": "Protected",
+      "C": "Private",
+      "D": "Depends on compiler"
+    },
+    "answer": "C",
+    "explanation": "Class members are private by default (struct members are public)."
+  },
+  {
+    "id": 98,
+    "source_file": "VISU",
+    "question": "Time complexity for the recursive relation T(n) = 2T(√n) + 1 is",
+    "options": {
+      "A": "θ (n²)",
+      "B": "θ (nlogn)",
+      "C": "θ (logn)",
+      "D": "θ (n)"
+    },
+    "answer": "C",
+    "explanation": "Let n = 2ᵐ: S(m) = 2S(m/2) + 1 = θ(m), so T(n) = θ(log n)."
+  },
+  {
+    "id": 99,
+    "source_file": "VISU",
+    "question": "Which of the following statements is true about Java string objects ?",
+    "options": {
+      "A": "Once created, contents of a string can not be changed",
+      "B": "They have been implemented as a primitive data type",
+      "C": "They can be copied by applying = = operator",
+      "D": "They should be destructed when no more in use"
+    },
+    "answer": "A",
+    "explanation": "Java Strings are immutable objects; == compares references, and garbage collection reclaims them."
+  },
+  {
+    "id": 100,
+    "source_file": "VISU",
+    "question": "Which of the following scheduling algorithm gives a minimum average waiting time ?",
+    "options": {
+      "A": "SJF",
+      "B": "FCFS",
+      "C": "RR",
+      "D": "Priority"
+    },
+    "answer": "A",
+    "explanation": "Shortest Job First is optimal for average waiting time."
+  },
+  {
+    "id": 101,
+    "source_file": "VISU",
+    "question": "If J input of J-K Flip-Flop is treated as an input and an inverter is wired between J and K input, the J-K Flip-Flop becomes",
+    "options": {
+      "A": "D Flip-Flop",
+      "B": "T Flip-Flop",
+      "C": "R-S Flip-Flop",
+      "D": "D – Latch"
+    },
+    "answer": "A",
+    "explanation": "With K = J', only the set and reset combinations occur, so Q⁺ = J: a D flip-flop."
+  },
+  {
+    "id": 102,
+    "source_file": "VISU",
+    "question": "The range of short int data type in 'C' is",
+    "options": {
+      "A": "– 32768 to 0",
+      "B": "– 32768 to + 32767",
+      "C": "– 65535 to + 65535",
+      "D": "00000 to + 65535"
+    },
+    "answer": "B",
+    "explanation": "A 16-bit signed short ranges from −32768 to +32767."
+  },
+  {
+    "id": 103,
+    "source_file": "VISU",
+    "question": "Which of the following HTML element do NOT have a closing tag ?",
+    "options": {
+      "A": "Image element",
+      "B": "Table element",
+      "C": "Link element",
+      "D": "Frame element"
+    },
+    "answer": "A",
+    "explanation": "<img> is a void element with no closing tag. (<link> is also void, but 'link element' here likely means the anchor <a>, which does close.)"
+  },
+  {
+    "id": 104,
+    "source_file": "VISU",
+    "question": "If there are m-input lines and n-output lines for a decoder that is used to uniquely address a byte addressable 1 KB RAM, then the minimum value of m + n is",
+    "options": {
+      "A": "1024",
+      "B": "1034",
+      "C": "10",
+      "D": "1014"
+    },
+    "answer": "B",
+    "explanation": "1 KB needs 10 address inputs (m = 10) and 2¹⁰ = 1024 outputs (n = 1024): m + n = 1034."
+  },
+  {
+    "id": 105,
+    "source_file": "VISU",
+    "question": "The page replacement policy that sometimes leads to more page faults when the size of memory is increased is",
+    "options": {
+      "A": "LRU",
+      "B": "No such policy exists",
+      "C": "FIFO",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "This is Belady's anomaly, which occurs with FIFO."
+  },
+  {
+    "id": 106,
+    "source_file": "VISU",
+    "question": "Curves in computer graphics is primarily used for which of the following functions ?",
+    "options": {
+      "A": "copying a picture",
+      "B": "zooming in a picture",
+      "C": "zooming out a picture",
+      "D": "to draw different types of objects onto the screen"
+    },
+    "answer": "D",
+    "explanation": "Curves (Bezier, B-spline) are used to draw and model object shapes."
+  },
+  {
+    "id": 107,
+    "source_file": "VISU",
+    "question": "Which keyword is used for storage class ?",
+    "options": {
+      "A": "auto",
+      "B": "external",
+      "C": "printf",
+      "D": "scanf"
+    },
+    "answer": "A",
+    "explanation": "C storage classes are auto, register, static and extern ('external' is not a keyword)."
+  },
+  {
+    "id": 108,
+    "source_file": "VISU",
+    "question": "Among the following process, which process is known as the elimination of part of a scene outside a window or a viewport ?",
+    "options": {
+      "A": "plucking",
+      "B": "cutting",
+      "C": "editing",
+      "D": "clipping"
+    },
+    "answer": "D",
+    "explanation": "Clipping removes the parts of a picture lying outside the window or viewport."
+  },
+  {
+    "id": 109,
+    "source_file": "VISU",
+    "question": "What is the signal used to interrupt processor and to execute service routine that takes an error recovery action ?",
+    "options": {
+      "A": "Handshaking",
+      "B": "Polling",
+      "C": "Strobe",
+      "D": "Time-out"
+    },
+    "answer": "D",
+    "explanation": "If an expected response does not arrive in time, a time-out signal interrupts the processor so that an error-recovery routine can run."
+  },
+  {
+    "id": 110,
+    "source_file": "VISU",
+    "question": "Consider two sequence X and Y :\nX = ⟨0, 1, 2, 1, 3, 0, 1⟩\nY = ⟨1, 3, 2, 0, 1, 0⟩\nWhat is the length of the longest common subsequence between X and Y ?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "C",
+    "explanation": "For example ⟨1, 2, 0, 1⟩ or ⟨1, 3, 0, 1⟩ is common to both; no common subsequence of length 5 exists."
+  },
+  {
+    "id": 111,
+    "source_file": "VISU",
+    "question": "Let A = 1111 1010 and B = 0000 1010 be two 8-bit 2's complement numbers. What will their product in 2's complement be ?",
+    "options": {
+      "A": "1100 0100",
+      "B": "1101 0101",
+      "C": "1001 1100",
+      "D": "1010 0101"
+    },
+    "answer": "A",
+    "explanation": "A = −6 and B = 10, so the product is −60. +60 = 00111100, giving 11000100."
+  },
+  {
+    "id": 112,
+    "source_file": "VISU",
+    "question": "Which of the following is NOT a Web Browser ?",
+    "options": {
+      "A": "Opera",
+      "B": "JavaScript",
+      "C": "Netscape",
+      "D": "Internet Explorer"
+    },
+    "answer": "B",
+    "explanation": "JavaScript is a programming language; the others are browsers."
+  },
+  {
+    "id": 113,
+    "source_file": "VISU",
+    "question": "What are the contents of the stack (initially the stack is empty) after the following operations ?\nPUSH (A)\nPUSH (B)\nPUSH (C)\nPOP\nPUSH (D) ; POP ; POP ;\nPUSH (E)\nPUSH (F)\nPOP",
+    "options": {
+      "A": "AE",
+      "B": "A",
+      "C": "ABE",
+      "D": "ABCE"
+    },
+    "answer": "A",
+    "explanation": "A B C → pop C → push D, pop D, pop B → A → push E, F → pop F → A E (bottom to top)."
+  },
+  {
+    "id": 114,
+    "source_file": "VISU",
+    "question": "The value obtained in the function is given back to main by using ______ keyword.",
+    "options": {
+      "A": "New",
+      "B": "Static",
+      "C": "Volatile",
+      "D": "Return"
+    },
+    "answer": "D",
+    "explanation": "return passes a value back to the caller."
+  },
+  {
+    "id": 115,
+    "source_file": "VISU",
+    "question": "Match List – I with List – II and choose the correct answer from the code given below the list.\nList – I | List – II\nA. Disk scheduling | 1. Round Robin\nB. Batch processing | 2. SCAN\nC. Time sharing | 3. LIFO\nD. Interrupt processing | 4. FIFO",
+    "options": {
+      "A": "A – 4, B – 3, C – 2, D – 1",
+      "B": "A – 3, B – 1, C – 4, D – 2",
+      "C": "A – 2, B – 4, C – 1, D – 3",
+      "D": "A – 4, B – 2, C – 3, D – 1"
+    },
+    "answer": "C",
+    "explanation": "Disk scheduling uses SCAN, batch processing FIFO, time sharing Round Robin, and nested interrupt processing LIFO (stack)."
+  },
+  {
+    "id": 116,
+    "source_file": "VISU",
+    "question": "Match List – I with List – II and choose the correct answer using the code given below the lists.\nList – I | List – II\nA. x ⊕ y | 1. 1\nB. x ⊙ y | 2. x'y' + xy\nC. x + 1 | 3. x'y + xy'\nD. x . 1 | 4. x",
+    "options": {
+      "A": "A – 3, B – 2, C – 1, D – 4",
+      "B": "A – 4, B – 3, C – 2, D – 1",
+      "C": "A – 1, B – 2, C – 3, D – 4",
+      "D": "A – 3, B – 4, C – 1, D – 2"
+    },
+    "answer": "A",
+    "explanation": "XOR = x'y + xy', XNOR = x'y' + xy, x + 1 = 1, x·1 = x."
+  },
+  {
+    "id": 117,
+    "source_file": "VISU",
+    "question": "In C language, FILE is of which data type ?",
+    "options": {
+      "A": "int",
+      "B": "struct",
+      "C": "char*",
+      "D": "none of the above"
+    },
+    "answer": "B",
+    "explanation": "FILE is a typedef of a structure defined in <stdio.h>."
+  },
+  {
+    "id": 118,
+    "source_file": "VISU",
+    "question": "It is a network protocol that enables dynamic allocation of IP addresses to hosts",
+    "options": {
+      "A": "IEEE 802.1X",
+      "B": "EAPS",
+      "C": "VLAN",
+      "D": "DHCP"
+    },
+    "answer": "D",
+    "explanation": "DHCP automatically assigns IP addresses and configuration to hosts."
+  },
+  {
+    "id": 119,
+    "source_file": "VISU",
+    "question": "Which of the following statement is true about schedules ?",
+    "options": {
+      "A": "Every conflict serializable schedule is view serializable",
+      "B": "Every view serializable schedule is conflict serializable",
+      "C": "Both (a) and (b)",
+      "D": "A schedule can be either only conflict serializable or only view serializable"
+    },
+    "answer": "A",
+    "explanation": "Conflict serializability implies view serializability, but not conversely (blind writes)."
+  },
+  {
+    "id": 120,
+    "source_file": "VISU",
+    "question": "How many chips are required of 128 × 8 RAM to make 2048 byte memory ?",
+    "options": {
+      "A": "10",
+      "B": "1024",
+      "C": "7",
+      "D": "16"
+    },
+    "answer": "D",
+    "explanation": "2048 bytes / 128 bytes per chip = 16 chips."
+  }
+]

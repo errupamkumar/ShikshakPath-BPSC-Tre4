@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "The binary equivalent of (1011·011)10 is equal to",
+    "options": {
+      "A": "11·375",
+      "B": "10·123",
+      "C": "11·175",
+      "D": "9·234"
+    },
+    "answer": "A",
+    "explanation": "(1011.011)₂ = 8+2+1 + 0.25+0.125 = 11.375. The subscript '10' is a misprint; the number is binary and the question asks for its decimal value."
+  },
+  {
+    "id": 2,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "The following switching functions are to be implemented using a decoder :\nf1 = Σm (1, 2, 4, 8, 10, 14), f2 = Σm (2, 5, 9, 11), f3 = Σm (2, 4, 5, 6, 7).\nThe minimum configuration of the decoder will be",
+    "options": {
+      "A": "2 to 4 line",
+      "B": "3 to 8 line",
+      "C": "4 to 16 line",
+      "D": "5 to 32 line"
+    },
+    "answer": "C",
+    "explanation": "The largest minterm is 14, so 4 input variables are needed. That means a 4-to-16 line decoder."
+  },
+  {
+    "id": 3,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "The parallel outputs of a counter circuit represent the",
+    "options": {
+      "A": "parallel data word",
+      "B": "clock frequency",
+      "C": "counter modulus",
+      "D": "clock count"
+    },
+    "answer": "D",
+    "explanation": "The flip-flop outputs of a counter, read in parallel, give the number of clock pulses counted (the clock count)."
+  },
+  {
+    "id": 4,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "The figure shows a digital circuit constructed using negative edge triggered J-K flip flops. Assume a starting state of Q2Q1Q0=000. This state Q2Q1Q0=000 will repeat after _____ number of cycles of the clock CLK. [Figure: three negative-edge J-K flip-flops; FF0 has J0=K0=1 clocked by CLK; FF1 and FF2 clocked by Q0 with feedback from Q2/Q1 as shown]",
+    "options": {
+      "A": "4",
+      "B": "8",
+      "C": "16",
+      "D": "6"
+    },
+    "answer": "D",
+    "explanation": "This is GATE 2005; the official answer is 6. FF0 toggles on every clock, and FF1 and FF2 are clocked from Q0 with cross-coupled J/K inputs, so the circuit runs a 6-state cycle before returning to 000."
+  },
+  {
+    "id": 5,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "In a k-way set associative cache, the cache is divided into v sets, each of which consists of k lines. The lines of a set are placed in sequence one after another. The lines in set s are sequenced before the lines in set (s+1). The main memory blocks are numbered from 0 onwards. The main memory block numbered j must be mapped to any one of the cache lines from",
+    "options": {
+      "A": "(j mod v)* k to (j mod v) * k+(k–1)",
+      "B": "(j mod v) to (j mod v) + (k–1)",
+      "C": "(j mod k) to (j mod k) + (v–1)",
+      "D": "(j mod k) * v to (j mod k) * v + (v–1)"
+    },
+    "answer": "A",
+    "explanation": "Block j goes to set (j mod v). That set occupies lines (j mod v)·k through (j mod v)·k + (k−1). (GATE 2013)"
+  },
+  {
+    "id": 6,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "The main virtue for using single Bus structure is",
+    "options": {
+      "A": "fast data transfers",
+      "B": "cost effective connectivity and speed",
+      "C": "cost effective connectivity and ease of attaching peripheral devices",
+      "D": "cheaper in price"
+    },
+    "answer": "C",
+    "explanation": "A single bus is low-cost and makes attaching peripheral devices easy. Its drawback is speed, because only one transfer can happen at a time."
+  },
+  {
+    "id": 7,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Consider three different processors P1, P2, P3 executing the same instruction set. P1 has a 3 GHz clock rate and a CPI of 1·5. P2 has a 2·5 GHz clock rate and a CPI of 1·0. P3 has a 4 GHz clock rate and a CPI of 2·2. If each processor executes a program in 10 seconds, find the number of instructions executed by the processors.",
+    "options": {
+      "A": "18*10^3, 13*10^2, 17*10^5",
+      "B": "20*10^9, 25*10^9, 18·18*10^9",
+      "C": "18*10^4, 25*10^1, 20*10^3",
+      "D": "3*10^1, 15*10^2, 2·5*10^3"
+    },
+    "answer": "B",
+    "explanation": "Instructions = clock rate × time / CPI.\nP1 = 3e9×10/1.5 = 20×10⁹.\nP2 = 2.5e9×10/1 = 25×10⁹.\nP3 = 4e9×10/2.2 = 18.18×10⁹."
+  },
+  {
+    "id": 8,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "A 50 kbps device is connected to a processor. The interrupt overhead is 50 μsec. The minimum performance achieved when interrupt is initiated and data transferred is used instead of programmed I/O is",
+    "options": {
+      "A": "2·4",
+      "B": "0·4",
+      "C": "3",
+      "D": "3·5"
+    },
+    "answer": "B",
+    "explanation": "The gain is the transfer time per unit divided by the interrupt overhead. If the rate is read as 50 KB/s, a byte takes 20 µs, so the gain is 20/50 = 0.4. Note: if it really were 50 kbps with byte-wise transfer, a byte would take 160 µs and the gain would be 3.2 (≈3). The wording is ambiguous; B matches exactly."
+  },
+  {
+    "id": 9,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "What will be the output printed by the following C program?\nvoid main()\n{\nint x=1, i, y=2;\nfor (i=0; i<5; i++)\n{\nx<<1;\ny=x+i;\n}\nprintf(\"%d, %d\", x,y);\n}",
+    "options": {
+      "A": "1, 5",
+      "B": "32, 5",
+      "C": "1, 72",
+      "D": "32, 72"
+    },
+    "answer": "A",
+    "explanation": "The statement x<<1 computes a value but does not assign it, so x stays 1. In the last iteration y = 1 + 4 = 5. Output: 1, 5."
+  },
+  {
+    "id": 10,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Suppose, a circular queue of capacity (n–1) elements is implemented with an array of n elements. Assume that the insertion and deletion operations are carried out using REAR and FRONT as array index variables respectively. Initially, REAR = FRONT = 0. The conditions to detect queue full and queue empty are",
+    "options": {
+      "A": "full:(REAR+1) mod n ==FRONT\nempty:REAR ==FRONT",
+      "B": "full:(REAR+1) mod n==FRONT\nempty:(FRONT+1) mod n==REAR",
+      "C": "full:REAR==FRONT\nempty:(REAR+1) mod n==FRONT",
+      "D": "full:(FRONT+1) mod n==REAR\nempty:REAR==FRONT"
+    },
+    "answer": "A",
+    "explanation": "One slot is kept empty. The queue is full when (REAR+1) mod n == FRONT and empty when REAR == FRONT. (GATE 2012)"
+  },
+  {
+    "id": 11,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "The post-order traversal of a binary tree is 8, 9, 6, 7, 4, 5, 2, 3, 1. The in-order traversal of the same tree is 8, 6, 9, 4, 7, 2, 5, 1, 3. The height of a tree is the length of the longest path from the root to any leaf. The height of the binary tree above is",
+    "options": {
+      "A": "3",
+      "B": "5",
+      "C": "4",
+      "D": "2"
+    },
+    "answer": "C",
+    "explanation": "The root is 1 (left subtree rooted at 2, right child 3). Under 2: left child 4, right child 5. Under 4: left child 6, right child 7. Under 6: children 8 and 9. The longest path is 1-2-4-6-8, which has 4 edges. (GATE 2018)"
+  },
+  {
+    "id": 12,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "N items are stored in a sorted doubly linked list. For a delete operation, a pointer is provided to the record to be deleted. For a decrease-key operation, a pointer is provided to the record on which the operation is to be performed. An algorithm performs the following operations on the list in this order: Θ(N)delete, O(logN)insert, O(logN)find and Θ(N)decrease-key. What is the time complexity of all these operations put together?",
+    "options": {
+      "A": "O(log²N)",
+      "B": "O(N)",
+      "C": "O(N²)",
+      "D": "Θ(N²logN)"
+    },
+    "answer": "C",
+    "explanation": "Each delete is O(1), so Θ(N) deletes cost O(N). Each insert or find is O(N), so log N of them cost O(N log N). Each decrease-key may have to move the node to keep the list sorted, which is O(N); Θ(N) of them cost O(N²). Total: O(N²). (GATE 2016)"
+  },
+  {
+    "id": 13,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "What is the maximum number of edges in a bipartite graph having 10 vertices?",
+    "options": {
+      "A": "24",
+      "B": "21",
+      "C": "25",
+      "D": "16"
+    },
+    "answer": "C",
+    "explanation": "The maximum is reached with a 5+5 split: 5×5 = 25 edges."
+  },
+  {
+    "id": 14,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "If the array A contains the items 10, 4, 7, 23, 67, 12 and 5 in that order, what will be the resultant array A after third pass of insertion sort?",
+    "options": {
+      "A": "67, 12, 10, 5, 4, 7, 23",
+      "B": "4, 7, 10, 23, 67, 12, 5",
+      "C": "4, 5, 7, 67, 10, 12, 23",
+      "D": "10, 7, 4, 67, 23, 12, 5"
+    },
+    "answer": "B",
+    "explanation": "Pass 1 gives 4,10. Pass 2 gives 4,7,10. Pass 3 inserts 23, which is already in place. The array is now 4, 7, 10, 23, 67, 12, 5."
+  },
+  {
+    "id": 15,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Which one of the following hash functions on integers will distribute keys most uniformly over 10 buckets numbered 0 to 9 for i ranging from 0 to 2020?",
+    "options": {
+      "A": "h(i)=i² mod 10",
+      "B": "h(i)=i³ mod 10",
+      "C": "h(i)=(11*i²) mod 10",
+      "D": "h(i)=(12*i) mod 10"
+    },
+    "answer": "B",
+    "explanation": "Cubes mod 10 take every last digit 0–9 (the map is a permutation of digits), so the keys spread evenly. Squares hit only 0,1,4,5,6,9, and 12i hits only even digits. (GATE 2015)"
+  },
+  {
+    "id": 16,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "What happens when a top-down approach of dynamic programming is applied to any problem?",
+    "options": {
+      "A": "It increases both the time complexity and the space complexity",
+      "B": "It increases the space complexity and decreases the time complexity",
+      "C": "It increases the time complexity and decreases the space complexity",
+      "D": "It decreases both the time complexity and the space complexity"
+    },
+    "answer": "B",
+    "explanation": "Top-down DP (memoization) stores the results of subproblems. This uses extra space but avoids recomputation, so it saves time."
+  },
+  {
+    "id": 17,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Let G be a complete undirected graph on 4 vertices, having 6 edges with weights being 1, 2, 3, 4, 5 and 6. The maximum possible weight that a minimum weight spanning tree of G can have is",
+    "options": {
+      "A": "5",
+      "B": "8",
+      "C": "7",
+      "D": "20"
+    },
+    "answer": "C",
+    "explanation": "Put weights 1, 2, 3 on a triangle of three vertices. The 4th vertex is then joined only by edges 4, 5 and 6, so the MST must use 4. MST = 1 + 2 + 4 = 7, and a brute-force check over all arrangements confirms 7 is the maximum. (GATE 2016)"
+  },
+  {
+    "id": 18,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "The Floyd-Warshall algorithm for all-pair shortest paths computation is based on",
+    "options": {
+      "A": "Greedy paradigm",
+      "B": "Divide-and-Conquer paradigm",
+      "C": "Dynamic Programming paradigm",
+      "D": "Heuristics"
+    },
+    "answer": "C",
+    "explanation": "Floyd–Warshall builds the shortest paths through intermediate vertices 1..k using a dynamic-programming recurrence."
+  },
+  {
+    "id": 19,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "An array of 25 distinct elements is to be sorted using quicksort. Assume that the pivot element is chosen uniformly at random. The probability that the pivot element gets placed in the worst possible location in the first round of partitioning (rounded off to 2 decimal places) is",
+    "options": {
+      "A": "0·5",
+      "B": "0·7",
+      "C": "0·9",
+      "D": "0·08"
+    },
+    "answer": "D",
+    "explanation": "The worst positions are the first and the last (pivot is the minimum or maximum). Probability = 2/25 = 0.08. (GATE 2019)"
+  },
+  {
+    "id": 20,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Which of the following CFG's cannot be simulated by an FSM?",
+    "options": {
+      "A": "S→Sa|b",
+      "B": "S→aSb|ab",
+      "C": "S→abX, X→cY, Y→d|aX",
+      "D": "S→Sb|a"
+    },
+    "answer": "B",
+    "explanation": "S→aSb|ab generates aⁿbⁿ (n≥1), which is not regular. The other grammars generate regular languages."
+  },
+  {
+    "id": 21,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "What is the pumping length of string of length x?",
+    "options": {
+      "A": "x+1",
+      "B": "x",
+      "C": "x–1",
+      "D": "x²"
+    },
+    "answer": "A",
+    "explanation": "For a finite language whose longest string has length x, a pumping length of x+1 satisfies the pumping lemma vacuously, since no string is that long. This is the standard answer (Sanfoundry). The question is loosely worded."
+  },
+  {
+    "id": 22,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Consider the languages L1= φ and L2={a}. Which of the following represents L1 L2* U L1* ?",
+    "options": {
+      "A": "{σ}",
+      "B": "{εφ}",
+      "C": "{π}",
+      "D": "{ε}"
+    },
+    "answer": "D",
+    "explanation": "φ·L2* = φ and φ* = {ε}. So the union is {ε}. (GATE 2013)"
+  },
+  {
+    "id": 23,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Access time of the symbol table will be logarithmic, if it is implemented by",
+    "options": {
+      "A": "Linear list",
+      "B": "Search Tree",
+      "C": "Hash Table",
+      "D": "Self-organization list"
+    },
+    "answer": "B",
+    "explanation": "A (balanced) search tree gives O(log n) access. A linear list is O(n), and a hash table is O(1) on average."
+  },
+  {
+    "id": 24,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Which one of the following is a top-down parser?",
+    "options": {
+      "A": "Recursive descent parser",
+      "B": "Operator precedence parser",
+      "C": "An LR(k) parser",
+      "D": "An LALR(k) parser"
+    },
+    "answer": "A",
+    "explanation": "Recursive descent is top-down. Operator precedence, LR and LALR are bottom-up. (GATE 2007)"
+  },
+  {
+    "id": 25,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Whenever a procedure is executed, its activation record is stored on the stack, also known as",
+    "options": {
+      "A": "Access Stack",
+      "B": "Control Stack",
+      "C": "Formal Stack",
+      "D": "Return Stack"
+    },
+    "answer": "B",
+    "explanation": "The run-time stack of activation records is called the control stack."
+  },
+  {
+    "id": 26,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Consider the following translation scheme :\nS→ER\nR→*E{print(\"*\");}R|ε\nE→F+E{print(\"+\");}|F\nF→(S)|id{print(id.value);}\nHere id is a token that represents an integer and id.value represents the corresponding integer value. For an input '2 * 3 + 4', this translation scheme prints",
+    "options": {
+      "A": "2 * 3 + 4",
+      "B": "2 * + 3 4",
+      "C": "2 3 * 4 +",
+      "D": "2 3 4 + *"
+    },
+    "answer": "D",
+    "explanation": "E produces 2. Then R matches *E, where E→F+E produces 3, 4 and prints +. Then * is printed. Output: 2 3 4 + *. (GATE 2006)"
+  },
+  {
+    "id": 27,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "What is the maximum number of reduce moves that can be taken by a bottom-up parser for a grammar with no epsilon-production and unit-production (i.e., of type A→ε and A→a) to parse a string with n tokens?",
+    "options": {
+      "A": "n/2",
+      "B": "n-1",
+      "C": "2n-1",
+      "D": "2^n"
+    },
+    "answer": "B",
+    "explanation": "With no ε- or unit productions, each reduction combines at least 2 symbols into one. Going from n symbols to 1 takes at most n−1 reductions. (GATE 2013)"
+  },
+  {
+    "id": 28,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "How are system calls invoked?",
+    "options": {
+      "A": "By a privileged instruction",
+      "B": "With an indirect jump",
+      "C": "Through a software interrupt",
+      "D": "Through polling"
+    },
+    "answer": "C",
+    "explanation": "A system call is made with a trap (software interrupt), which switches the CPU to kernel mode."
+  },
+  {
+    "id": 29,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "The time required to create a new thread in an existing process is",
+    "options": {
+      "A": "greater than the time required to create a new process",
+      "B": "less than the time required to create a new process",
+      "C": "equal to the time required to create a new process",
+      "D": "double the time required to create a new process"
+    },
+    "answer": "B",
+    "explanation": "Threads share the process's address space and resources, so creating one is cheaper than creating a process."
+  },
+  {
+    "id": 30,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Consider the following snapshot of a system running n concurrent processes. Process i is holding Xi instances of a resource R, 1 ≤ i ≤ n. Assume that all instances of R are currently in use. Further, for all i, process i can place a request for at most Yi additional instances of R while holding the Xi instances it already has. Of the n processes, there are exactly two processes p and q such that Yp = Yq = 0. Which one of the following conditions guarantees that no other process apart from p and q can complete execution?",
+    "options": {
+      "A": "Xp+Xq<Min{Yk | 1 ≤ k ≤ n, k≠p, k≠q}",
+      "B": "Xp+Xq<Max{Yk | 1 ≤ k ≤ n, k≠p, k≠q}",
+      "C": "Min(Xp,Xq) ≥ Min{Yk | 1≤k≤n, k≠p, k≠q}",
+      "D": "Min(Xp,Xq) ≤ Max{Yk | 1≤k≤n, k≠p, k≠q}"
+    },
+    "answer": "A",
+    "explanation": "Only p and q can finish, and they free Xp + Xq instances. If that is less than every other process's need (the minimum Yk), no other process can ever finish. (GATE 2019)"
+  },
+  {
+    "id": 31,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Consider three concurrent processes P1, P2 and P3 as shown below, which access a shared variable D that has been initialized to 100 :\nP1::D=D+20 P2::D=D+50 P3::D=D+10\nThe processes are executed on a uniprocessor system running a time-shared operating system. If the minimum and maximum possible values of D after the three processes have completed execution are X and Y respectively, then the value of Y–X is",
+    "options": {
+      "A": "110",
+      "B": "20",
+      "C": "80",
+      "D": "10"
+    },
+    "answer": "C",
+    "explanation": "Intended answer 80, from GATE 2019, where P2 is D=D−50: then max = 130 and min = 50, so Y−X = 80. Note: as printed (P2 = D+50), max = 180 and min = 110, which gives 70. That value is not among the options, so the '+50' is a misprint."
+  },
+  {
+    "id": 32,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "If we preempt a resource from a process, the process cannot continue with its normal execution and it must be",
+    "options": {
+      "A": "aborted",
+      "B": "rolled back",
+      "C": "terminated",
+      "D": "queued"
+    },
+    "answer": "B",
+    "explanation": "In deadlock recovery by preemption, the victim process is rolled back to a safe state and restarted from there."
+  },
+  {
+    "id": 33,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Consider the following four processes with arrival times (in milliseconds) and their lengths of CPU bursts (in milliseconds) as shown below :\nProcess: P1 P2 P3 P4\nArrival time: 0 1 3 4\nCPU burst time: 3 1 3 Z\nThese processes are run on a single processor using preemptive Shortest Remaining Time First scheduling algorithm. If the average waiting time of the processes is 1 millisecond, then the value of Z is",
+    "options": {
+      "A": "3",
+      "B": "2",
+      "C": "5",
+      "D": "7"
+    },
+    "answer": "B",
+    "explanation": "With Z=2 the schedule is P1 0–1, P2 1–2, P1 2–4, P4 4–6, P3 6–9. The waits are 1, 0, 3, 0, so the average is 1. Z = 2. (GATE 2019)"
+  },
+  {
+    "id": 34,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "An ER model of a database consists of entity types A and B. These are connected by a relationship R which does not have its own attribute. Under which one of the following conditions can the relational table for R be merged with that of A?",
+    "options": {
+      "A": "Relationship R is one-to-many and the participation of A in R is total",
+      "B": "Relationship R is one-to-many and the participation of A in R is partial",
+      "C": "Relationship R is many-to-one and the participation of A in R is total",
+      "D": "Relationship R is many-to-one and the participation of A in R is partial"
+    },
+    "answer": "C",
+    "explanation": "If R is many-to-one from A to B, each A tuple relates to at most one B. With total participation, B's key can be stored in A's table without nulls. (GATE 2017)"
+  },
+  {
+    "id": 35,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Consider a database table T containing two columns X and Y each of type integer. After the creation of the table, one record (X=1, Y=1) is inserted in the table. Let MX and MY denote the respective maximum values of X and Y among all records in the table at any point in time. Using MX and MY, new records are inserted in the table 128 times with X and Y values being MX+1, 2*MY+1 respectively. It may be noted that each time after the insertion, values of MX and MY change. What will be the output of the following SQL query after the steps mentioned above are carried out?\nSELECT Y FROM T WHERE X=7",
+    "options": {
+      "A": "127",
+      "B": "255",
+      "C": "129",
+      "D": "257"
+    },
+    "answer": "A",
+    "explanation": "Y follows 1, 3, 7, 15, 31, 63, 127 for X = 1..7, that is Y = 2^X − 1. At X=7, Y = 127. (GATE 2011)"
+  },
+  {
+    "id": 36,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "The employee information in a company is stored in the relation\nEmployee (name, sex, salary, deptName)\nConsider the following SQL query\nselect deptName\nfrom Employee\nwhere sex = 'M'\ngroup by deptName\nhaving avg (salary) > (select avg (salary) from Employee)\nIt returns the names of the department in which",
+    "options": {
+      "A": "the average salary is more than the average salary in the company",
+      "B": "the average salary of male employees is more than the average salary of all male employees in the company",
+      "C": "the average salary of male employees is more than the average salary of employees in the same department",
+      "D": "the average salary of male employees is more than the average salary in the company"
+    },
+    "answer": "D",
+    "explanation": "The WHERE clause keeps only male rows, so the HAVING clause compares the department's male average with the company-wide average of all employees. (GATE 2004)"
+  },
+  {
+    "id": 37,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "How many 8-bit characters can be transmitted per second over a 9600 baud serial communication link using asynchronous mode of transmission with one start bit, eight data bits, two stop bits and one parity bit?",
+    "options": {
+      "A": "600",
+      "B": "800",
+      "C": "876",
+      "D": "120"
+    },
+    "answer": "B",
+    "explanation": "Each character takes 1 + 8 + 2 + 1 = 12 bits. 9600/12 = 800 characters per second. (GATE 2004)"
+  },
+  {
+    "id": 38,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "A link has a transmission speed of 10⁶ bits/sec. It uses data packets of size 1000 bytes each. Assume that the acknowledgement has negligible transmission delay and that its propagation delay is the same as the data propagation delay. Also assume that the processing delays at the nodes are negligible. The efficiency of the stop-and-wait protocol in this setup is exactly 25%. The value of the one-way propagation delay (in milliseconds) is",
+    "options": {
+      "A": "10",
+      "B": "24",
+      "C": "12",
+      "D": "05"
+    },
+    "answer": "C",
+    "explanation": "Tt = 8000/10⁶ = 8 ms. Efficiency = Tt/(Tt + 2Tp) = 0.25, so 8 + 2Tp = 32 and Tp = 12 ms. (GATE 2015)"
+  },
+  {
+    "id": 39,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Determine the maximum length of the cable (in km) for transmitting data at a rate of 500 Mbps in an Ethernet LAN with frames of size 10000 bits. Assume the signal speed in the cable to be 200000 km/s.",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "2·5",
+      "D": "5"
+    },
+    "answer": "B",
+    "explanation": "Tt = 10000/500×10⁶ = 20 µs. CSMA/CD needs Tt ≥ 2Tp, so Tp ≤ 10 µs. Length = 200000 km/s × 10 µs = 2 km. (GATE 2013)"
+  },
+  {
+    "id": 40,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Consider a source computer(S) transmitting a file of size 10⁶ bits to a destination computer(D)over a network of two routers (R1 and R2) and three links (L1, L2 and L3). L1connects S to R1; L2 connects R1 to R2; and L3 connects R2 to D. Let each link be of length 100 km. Assume signals travel over each link at a speed of 10⁸ meters per second. Assume that the link bandwidth on each link is 1 Mbps. Let the file be broken down into 1000 packets each of size 1000 bits. Find the total sum of transmission and propagation delays in transmitting the file from S to D.",
+    "options": {
+      "A": "1005 ms",
+      "B": "1010 ms",
+      "C": "3000 ms",
+      "D": "3003 ms"
+    },
+    "answer": "A",
+    "explanation": "Each packet takes 1 ms to transmit and 1 ms to propagate per link. The last packet leaves S at 1000 ms. It then needs 2 more transmissions plus 3 propagations, so the total is 1000 + 2 + 3 = 1005 ms. (GATE 2012)"
+  },
+  {
+    "id": 41,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Consider an IP packet with a length of 4500 bytes that includes a 20-byte IPv4 header and a 40-byte TCP header. The packet is forwarded to an IPv4 router that supports a Maximum Transmission Unit (MTU) of 600 bytes. Assume that the length of the IP header in all the outgoing fragments of this packet is 20 bytes. Assume that the fragmentation offset value stored in the first fragment is 0. The fragmentation offset value stored in the third fragment is",
+    "options": {
+      "A": "144",
+      "B": "255",
+      "C": "102",
+      "D": "124"
+    },
+    "answer": "A",
+    "explanation": "Each fragment can carry 580 data bytes, rounded down to a multiple of 8, which is 576. The third fragment starts at byte 2×576 = 1152, so its offset is 1152/8 = 144. (GATE 2018)"
+  },
+  {
+    "id": 42,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "In the IPv4 addressing format, the number of networks allowed under Class C addresses is",
+    "options": {
+      "A": "2^14",
+      "B": "2^7",
+      "C": "2^21",
+      "D": "2^24"
+    },
+    "answer": "C",
+    "explanation": "Class C uses 24 network bits, of which the first 3 are fixed (110). That leaves 2²¹ networks."
+  },
+  {
+    "id": 43,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Let Z = [aij] which is given by abij = (i–j)³. Z is denoted by",
+    "options": {
+      "A": "symmetric matrix",
+      "B": "anti-symmetric matrix",
+      "C": "identity matrix",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "a_ji = (j−i)³ = −(i−j)³ = −a_ij, and the diagonal is 0, so the matrix is skew-symmetric (anti-symmetric). 'ab_ij' is a misprint for a_ij."
+  },
+  {
+    "id": 44,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "What is the mean value (mv) in a Poisson Distribution, such that 't' is the number of trials and 's' is the probability of success?",
+    "options": {
+      "A": "mv = ts",
+      "B": "mv = (ts)²",
+      "C": "mv = ts(1–s)",
+      "D": "mv = s"
+    },
+    "answer": "A",
+    "explanation": "For a Poisson distribution, the mean is λ = n·p = t·s."
+  },
+  {
+    "id": 45,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Which among the following logic gates are known as universal gates?",
+    "options": {
+      "A": "XOR, NAND, OR",
+      "B": "OR, NOT, XOR",
+      "C": "NOR, NAND, XNOR",
+      "D": "NOR, NAND"
+    },
+    "answer": "D",
+    "explanation": "NAND and NOR can each implement any Boolean function on their own."
+  },
+  {
+    "id": 46,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "The SIMD is an organization which",
+    "options": {
+      "A": "contains a lot of processing units under the common control unit supervision",
+      "B": "is capable of processing many programs at one time",
+      "C": "contains an individual computer having control unit, processing unit and a memory unit",
+      "D": "All of the above"
+    },
+    "answer": "A",
+    "explanation": "SIMD means many processing elements run the same instruction under a single control unit."
+  },
+  {
+    "id": 47,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "The rotational latency required in reading a block of data from a disk to memory along with seek time and transfer time is",
+    "options": {
+      "A": "the total time required for the platter to rotate the right sector under the head",
+      "B": "the total time required for read and write head to move in the correct position over the appropriate track",
+      "C": "the total time required for the platter to complete its full rotation",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "Rotational latency is the time for the required sector to rotate under the head. Option B describes seek time."
+  },
+  {
+    "id": 48,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Which among the following bits is used when the cache location is updated?",
+    "options": {
+      "A": "Flag bit",
+      "B": "Reference bit",
+      "C": "Update bit",
+      "D": "Dirty bit"
+    },
+    "answer": "D",
+    "explanation": "The dirty (modified) bit marks a cache line that has been written, so it must be written back before it is replaced."
+  },
+  {
+    "id": 49,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "When a subroutine is called, the address of the instruction following the CALL instructions is stored in/on the",
+    "options": {
+      "A": "Stack",
+      "B": "Accumulator",
+      "C": "Program Counter (PC)",
+      "D": "Stack pointer"
+    },
+    "answer": "A",
+    "explanation": "CALL pushes the return address (the address of the next instruction) onto the stack."
+  },
+  {
+    "id": 50,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "For a given priority queue, what is the time complexity to insert a node based on some position?",
+    "options": {
+      "A": "O(nlogn)",
+      "B": "O(logn)",
+      "C": "O(n²)",
+      "D": "O(n)"
+    },
+    "answer": "D",
+    "explanation": "In a linked-list priority queue, finding the position for the node takes O(n). This is the standard (Sanfoundry) answer; a binary-heap insert would be O(log n)."
+  },
+  {
+    "id": 51,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Convert the infix expression to postfix expression\n\"a+(b*c(d/e^f)*g)*h)\"",
+    "options": {
+      "A": "ab*cdef/^*g-h+",
+      "B": "abcdef^/*g*h*+",
+      "C": "abcd*^ed/g*-h*+",
+      "D": "abc*de^fg/*-*h+"
+    },
+    "answer": "D",
+    "explanation": "The intended expression is a+(b*c−(d/e^f)*g)*h, and its postfix form is abc*def^/g*-h*+. Note: both the question (missing '−' and '(') and option D (printed abc*de^fg/*-*h+) contain misprints. D is the intended option."
+  },
+  {
+    "id": 52,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Dijkstra's algorithm follows",
+    "options": {
+      "A": "Greedy algorithm",
+      "B": "Branch and bound",
+      "C": "Back tracking",
+      "D": "Dynamic programming"
+    },
+    "answer": "A",
+    "explanation": "Dijkstra's algorithm greedily picks the unvisited vertex with the smallest tentative distance."
+  },
+  {
+    "id": 53,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Given an alphabet Σ, a regular language is a language which is not obtained from the basic languages by using which of the following operations?",
+    "options": {
+      "A": "Union",
+      "B": "Concatenation",
+      "C": "Kleene*",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "Regular languages are obtained from the basic languages by union, concatenation and Kleene star, so the intended answer is 'All of the above'. Note: the word 'not' makes the question flawed, since none of these is excluded."
+  },
+  {
+    "id": 54,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Lang1 = {x|x does not contain the string 'pg'}\nLang2 = {x|x contains the string 'pg'}\nGiven Σ = {p, g}, what is the difference of the minimum number of states that is required to form Lang1 and Lang2?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "2",
+      "D": "Not determined"
+    },
+    "answer": "A",
+    "explanation": "Lang1 is the complement of Lang2. A complement's minimal DFA has the same states, with final and non-final swapped (3 each). The difference is 0."
+  },
+  {
+    "id": 55,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Given an expression L(G)={w in T*|S→*w}, find out the total number of incorrect notations or symbols, such that changing them would make the expression correct.",
+    "options": {
+      "A": "0 Error",
+      "B": "1 Error",
+      "C": "2 Errors",
+      "D": "Invalid Expression"
+    },
+    "answer": "A",
+    "explanation": "L(G) = {w ∈ T* | S ⇒* w} is the standard definition of the language of a grammar, so there are no errors."
+  },
+  {
+    "id": 56,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "What is the total number of states that are required to automate the given expression i.e. {a,b}*{aba}{a,b}*using finite automata?",
+    "options": {
+      "A": "4",
+      "B": "3",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "A",
+    "explanation": "A DFA for strings containing 'aba' needs states for having seen nothing, 'a', 'ab' and 'aba' (accepting, with self-loops). That is 4 states."
+  },
+  {
+    "id": 57,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Find the non-context free language among the following.",
+    "options": {
+      "A": "L = {ωωR|ω∈{0,1}*}",
+      "B": "L = {p^nq^n|n≥0}",
+      "C": "L = {ωω|ω∈{0,1}*}",
+      "D": "L = {p^nq^mr^ms^n|n, m≥0}"
+    },
+    "answer": "C",
+    "explanation": "{ww} (the copy language) is not context-free. ww^R, pⁿqⁿ and pⁿq^m r^m sⁿ are all CFLs."
+  },
+  {
+    "id": 58,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "The Bottom-up parsing method is also called",
+    "options": {
+      "A": "Predictive parsing",
+      "B": "Shift reduce parsing",
+      "C": "Recursive descent parsing",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "Bottom-up parsers work by shifting and reducing, so they are called shift-reduce parsers."
+  },
+  {
+    "id": 59,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Which FSA concept is used in the compiler?",
+    "options": {
+      "A": "Code optimization",
+      "B": "Code generation",
+      "C": "Lexical analysis",
+      "D": "Parser"
+    },
+    "answer": "C",
+    "explanation": "Lexical analysers are built as finite automata that recognise tokens."
+  },
+  {
+    "id": 60,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Find out the most powerful parsers.",
+    "options": {
+      "A": "SLR",
+      "B": "LALR",
+      "C": "Canonical LR",
+      "D": "Operator-precedence"
+    },
+    "answer": "C",
+    "explanation": "Canonical LR(1) is the most powerful. The order is CLR > LALR > SLR."
+  },
+  {
+    "id": 61,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Given a string of tokens; which of the following is the method of finding a parse?",
+    "options": {
+      "A": "Analysing",
+      "B": "Recognizing",
+      "C": "Parsing",
+      "D": "Tokenizing"
+    },
+    "answer": "C",
+    "explanation": "Finding a parse tree for a token string is called parsing."
+  },
+  {
+    "id": 62,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Which among the following is used to group the characters into tokens?",
+    "options": {
+      "A": "Parser",
+      "B": "Code generator",
+      "C": "Lexical analyser",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "The lexical analyser (scanner) groups characters into tokens."
+  },
+  {
+    "id": 63,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "In the translation process, compiler always reports the existence of which of the following?",
+    "options": {
+      "A": "Objects",
+      "B": "Classes",
+      "C": "Errors",
+      "D": "Text"
+    },
+    "answer": "C",
+    "explanation": "A compiler reports errors it finds in the source program."
+  },
+  {
+    "id": 64,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "What is the exact location of operating system in the memory?",
+    "options": {
+      "A": "Either low or high memory (depending on the location of interrupt vector)",
+      "B": "In the low memory",
+      "C": "In the high memory",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "The OS is usually placed in the same part of memory as the interrupt vector, which can be low or high memory (Galvin)."
+  },
+  {
+    "id": 65,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "The technique of copying a process from main memory to secondary memory based on requirement is called",
+    "options": {
+      "A": "Demand paging",
+      "B": "Paging",
+      "C": "Threads",
+      "D": "Segmentation"
+    },
+    "answer": "A",
+    "explanation": "Moving process pages between memory and disk as required is demand paging. Note: strictly, copying a whole process out is 'swapping', which is not an option, so A is the closest."
+  },
+  {
+    "id": 66,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Find out the reference to the associative memory.",
+    "options": {
+      "A": "The data address is generated by the CPU",
+      "B": "The data address of the data is supplied by the users",
+      "C": "The data itself is used as an address and there is no need for an address",
+      "D": "The data are accessed sequentially"
+    },
+    "answer": "C",
+    "explanation": "Associative (content-addressable) memory is accessed by content, not by address."
+  },
+  {
+    "id": 67,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Select one statement which contains error.",
+    "options": {
+      "A": "select* from stock where stockid = 10008",
+      "B": "select stockid from stock where stockid = 10003",
+      "C": "select stockid from stock",
+      "D": "select stockid where stockid = 10005 and Lastname = 'johnson'"
+    },
+    "answer": "D",
+    "explanation": "Option D has no FROM clause."
+  },
+  {
+    "id": 68,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Choose the correct expression from the following for maximum children of a B-tree having order m.",
+    "options": {
+      "A": "m/2",
+      "B": "m –1",
+      "C": "m",
+      "D": "m+1"
+    },
+    "answer": "C",
+    "explanation": "A B-tree of order m has at most m children per node (and m−1 keys)."
+  },
+  {
+    "id": 69,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "It is stated that every time an attribute X is appeared, the same value of Y is matched and a different value of Z is matched. Thus, it is clear that",
+    "options": {
+      "A": "X→Y",
+      "B": "X→Z",
+      "C": "X→(Y,Z)",
+      "D": "(Y,Z)→X"
+    },
+    "answer": "A",
+    "explanation": "The same X always gives the same Y, so X→Y. X does not determine Z."
+  },
+  {
+    "id": 70,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Which of the following is the characteristic of distributed database?",
+    "options": {
+      "A": "It is a single logical database which is limited to only one location",
+      "B": "It is a loose collection of file which is limited to only one location",
+      "C": "It is a loose collection of file that is spread to multiple locations and is interconnected by a network",
+      "D": "A single logical database that is spread to multiple locations and is interconnected by a network"
+    },
+    "answer": "D",
+    "explanation": "A distributed database is one logical database that is physically spread over networked sites."
+  },
+  {
+    "id": 71,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Identify the device from the following options that usually links two homogeneous packed broadcast local networks.",
+    "options": {
+      "A": "A Hub",
+      "B": "A Router",
+      "C": "A Bridge",
+      "D": "A Gateway"
+    },
+    "answer": "C",
+    "explanation": "A bridge connects two homogeneous broadcast LANs ('packed' is a misprint for 'packet')."
+  },
+  {
+    "id": 72,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Find the transmission rate of circuit of the TDM where a link transmits 4000 frames per second and each slot has 8 bits respectively. TDM is",
+    "options": {
+      "A": "32 kbps",
+      "B": "500 bps",
+      "C": "500kbps",
+      "D": "32 bps"
+    },
+    "answer": "A",
+    "explanation": "Each input circuit gets one 8-bit slot per frame: 4000 × 8 = 32 kbps."
+  },
+  {
+    "id": 73,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "There is a point where secure internal network and untrusted external network meet and a firewall is installed at this point. This is known as",
+    "options": {
+      "A": "Chokepoint",
+      "B": "Meeting point",
+      "C": "Firewall point",
+      "D": "Securepoint"
+    },
+    "answer": "A",
+    "explanation": "The firewall sits at the chokepoint, where all traffic between the inside and outside networks must pass."
+  },
+  {
+    "id": 74,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Choose the correct expression from the following for the length of UDP datagram.",
+    "options": {
+      "A": "UDP length = IP length – IP header's length",
+      "B": "UDP length = UDP length – UDP header's length",
+      "C": "UDP length = IP length + IP header's length",
+      "D": "UDP length = UDP length + UDP header's length"
+    },
+    "answer": "A",
+    "explanation": "A UDP datagram is the IP payload: IP total length − IP header length."
+  },
+  {
+    "id": 75,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "If a processor clock is rated as 1250 million cycles per second, then its clock period is",
+    "options": {
+      "A": "1·9*10^–10 sec",
+      "B": "1·6*10^–9 sec",
+      "C": "1·25*10^–10 sec",
+      "D": "8*10^–10 sec"
+    },
+    "answer": "D",
+    "explanation": "Period = 1/(1.25×10⁹) = 0.8 ns = 8×10⁻¹⁰ s."
+  },
+  {
+    "id": 76,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "A program consists of four major types of instructions. The instructions mix and the CPI for each instruction type are given in the following table. If the clock frequency of the processor is 400 MHz, what is the average CPI of the processor?\nInstruction Type | CPI | Instruction Mix\nArithmetic and Logic | 1 | 60%\nLoad/Store with cache hit | 2 | 18%\nBranch | 4 | 12%\nMemory reference with cache miss | 8 | 10%",
+    "options": {
+      "A": "3·75",
+      "B": "2·24",
+      "C": "1·87",
+      "D": "1·54"
+    },
+    "answer": "B",
+    "explanation": "Average CPI = 0.6×1 + 0.18×2 + 0.12×4 + 0.1×8 = 0.6 + 0.36 + 0.48 + 0.8 = 2.24."
+  },
+  {
+    "id": 77,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "A hypothetical control unit supports 5 groups of mutually exclusive control signals. The number of bits that can be saved using vertical approach compared to horizontal is\nGroups: G1 G2 G3 G4 G5\n#control signals: 1 5 7 15 8",
+    "options": {
+      "A": "22",
+      "B": "36",
+      "C": "14",
+      "D": "4"
+    },
+    "answer": "A",
+    "explanation": "Horizontal needs 1+5+7+15+8 = 36 bits. Vertical (encoded) needs 1+3+3+4+3 = 14 bits, so 36 − 14 = 22 bits are saved. Note: with the stricter ⌈log₂(n+1)⌉ encoding the saving would be 21; 22 is the standard key."
+  },
+  {
+    "id": 78,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "A device has been used in cycle stealing mode of DMA. A word of 4 bytes can be transferred when it is available. The memory cycle time is 40 ms and CPU is idle for 10% of its time. What is the data transfer rate of the device?",
+    "options": {
+      "A": "1011 bits/sec",
+      "B": "11.11 B/sec",
+      "C": "12.33 B/sec",
+      "D": "2048 B/sec"
+    },
+    "answer": "B",
+    "explanation": "Using the key's reasoning, one 4-byte word is transferred every 9 memory cycles (360 ms), so the rate is 4/0.36 = 11.11 B/s. Note: the question's wording is loose; if the device took exactly 10% of the cycles, the rate would be 10 B/s."
+  },
+  {
+    "id": 79,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Consider the following C program.\nstruct listnode\n{\nint data;\nstruct listnode *next;\n}\nvoid fun (struct listnode *head);\n{\nif(head= = NULL || head → next == NULL) return;\nstruct listnode *tmp = head → next;\nhead → next = tmp → next;\nfree (tmp);\nfun (head → next);\n}\nWhat is the functionality of the above function?",
+    "options": {
+      "A": "It reverses the linked list",
+      "B": "It deletes the linked list",
+      "C": "Alternate nodes will be deleted",
+      "D": "It reverses the linked list and deletes alternate nodes"
+    },
+    "answer": "C",
+    "explanation": "Each call removes the node after head, then recurses from the node after that. This deletes the 2nd, 4th, 6th, … nodes, i.e. alternate nodes."
+  },
+  {
+    "id": 80,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Five items P, Q, R, S and T are pushed onto a stack one after another starting from P. The stack is popped four times and the popped elements are inserted into a queue. The two elements are deleted from the queue and pushed back onto the stack. Again one element is popped from the stack. The popped item is",
+    "options": {
+      "A": "P",
+      "B": "R",
+      "C": "Q",
+      "D": "S"
+    },
+    "answer": "D",
+    "explanation": "The four pops give T, S, R, Q, enqueued in that order. Dequeuing gives T then S, which are pushed back, so the stack is P, T, S. The next pop returns S."
+  },
+  {
+    "id": 81,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "What is the output of the BFS traversal of the graph below?\n[Figure: directed graph with an entry arrow into A; edges A→B, B→C, A→D, D→F, E→D]",
+    "options": {
+      "A": "A F D B C E",
+      "B": "C B A F D",
+      "C": "A B D C F",
+      "D": "F D C B A"
+    },
+    "answer": "C",
+    "explanation": "BFS from A visits A, then B and D, then C (from B) and F (from D). E is not reachable from A. Order: A B D C F."
+  },
+  {
+    "id": 82,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Let A be an array of 31 numbers consisting of a sequence of 0's followed by a sequence of 1's. The problem is to find the smallest index i such that A[i] is 1 by probing the minimum number of locations in A. The worst-case number of probes performed by an optimal algorithm is",
+    "options": {
+      "A": "8",
+      "B": "4",
+      "C": "5",
+      "D": "10"
+    },
+    "answer": "C",
+    "explanation": "Binary search for the 0→1 boundary over 31 elements (32 possible outcomes) needs ⌈log₂ 32⌉ = 5 probes. (GATE 2017)"
+  },
+  {
+    "id": 83,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "There are n unsorted arrays : A1, A2, ..., An. (Assume that n is odd) Each of A1, A2, ..., An contains n distinct elements. There are no common elements between any two arrays. The worst-case time complexity of computing the median of the medians of A1, A2, ..., An is",
+    "options": {
+      "A": "O(n)",
+      "B": "O(nlogn)",
+      "C": "O(n²)",
+      "D": "O(n²/logn)"
+    },
+    "answer": "C",
+    "explanation": "The linear-time median of each of the n arrays costs n×O(n) = O(n²). The median of the n medians then costs O(n), so the total is O(n²). (GATE 2019)"
+  },
+  {
+    "id": 84,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "If L is a regular language over Σ = {a,b}, which one of the following languages is not regular?",
+    "options": {
+      "A": "L·L^R = {xy | x ∈ L, y^R ∈ L}",
+      "B": "Suffix(L) = {y ∈ Σ* | ∃ x ∈ Σ* such that xy ∈ L}",
+      "C": "Prefix(L) = {x ∈ Σ* | ∃ y ∈ Σ* such that xy ∈ L}",
+      "D": "{ww^R | w ∈ L}"
+    },
+    "answer": "D",
+    "explanation": "{ww^R | w ∈ L} needs matching, so it is not regular (for example when L = Σ*). Regular languages are closed under reversal, concatenation, prefix and suffix. (GATE 2019)"
+  },
+  {
+    "id": 85,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "The context-free grammar S → A111|S1, A → A0|00 is equivalent to",
+    "options": {
+      "A": "{0^n1^m|n=2,m=3}",
+      "B": "{0^n1^m|n=1,m=5}",
+      "C": "{0^n1^m|n should be greater than two and m should be greater than four}",
+      "D": "{0^n1^m|n should be less than four and m should be less than three}"
+    },
+    "answer": "C",
+    "explanation": "A gives 0ⁿ with n ≥ 2, and S gives A111 followed by any number of 1s, so L = {0ⁿ1^m | n ≥ 2, m ≥ 3}. Option C is the intended answer. Note: as worded, C ('greater than two', 'greater than four') is off by one; it should read n ≥ 2 and m ≥ 3."
+  },
+  {
+    "id": 86,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Following context-free grammar\nS → aB|bA\nA → b|aS|bAA\nB → b|bS|aBB\ngenerates strings of terminals that have",
+    "options": {
+      "A": "equal number of a's and b's",
+      "B": "odd number of a's and odd number of b's",
+      "C": "even number of a's and even number of b's",
+      "D": "odd number of a's and even number of a's"
+    },
+    "answer": "A",
+    "explanation": "This is the classic grammar for strings with equal numbers of a's and b's. A derives strings with one extra a, and B derives strings with one extra b. Note: as printed, A→b and B→b break the usual pattern (it should be A→a). The intended answer is still A."
+  },
+  {
+    "id": 87,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Assuming P ≠ NP, which of the following is true?",
+    "options": {
+      "A": "NP–complete = NP",
+      "B": "NP–complete ∩ P = φ",
+      "C": "NP–hard = NP",
+      "D": "P = NP–complete"
+    },
+    "answer": "B",
+    "explanation": "If any NP-complete problem were in P, then P = NP. So when P ≠ NP, no NP-complete problem is in P. (GATE 2012)"
+  },
+  {
+    "id": 88,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "A lexical analyzer uses the following patterns to recognize three tokens T1, T2 and T3 over the alphabet {a, b, c}.\nT1:a?(b|c)*a\nT2:b?(a|c)*b\nT3:c?(b|a)*c\nNote that 'x?' means 0 or 1 occurrence of the symbol x. Note also that the analyzer outputs the token that matches the longest possible prefix. If the string bbaacabc is processed by the analyzer, which one of the following is the sequence of tokens it outputs?",
+    "options": {
+      "A": "T1T2T3",
+      "B": "T1T1T3",
+      "C": "T2T1T3",
+      "D": "T3T3"
+    },
+    "answer": "D",
+    "explanation": "The longest prefix 'bbaac' matches T3 ((b|a)* = bbaa, then c). The remainder 'abc' also matches T3. Output: T3T3. (GATE 2018)"
+  },
+  {
+    "id": 89,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Consider the CFG with {S,A,B} as the non-terminal alphabet, {a,b} as the terminal alphabet, S as the start symbol and the following set of production rules :\nS → bA    S → aB\nA → a     B → b\nA → aS    B → bS\nS → bAA   B → aBB\nWhich of the following strings is generated by the grammar?",
+    "options": {
+      "A": "aaaabb",
+      "B": "aabbbb",
+      "C": "aabbab",
+      "D": "Abbba"
+    },
+    "answer": "C",
+    "explanation": "S ⇒ aB ⇒ aaBB ⇒ aabB ⇒ aabbS ⇒ aabbaB ⇒ aabbab. The grammar keeps a's and b's balanced, so A and B (unequal counts) are impossible. (GATE 2007)"
+  },
+  {
+    "id": 90,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Which of the following derivations does a top-down parser use while parsing an input string? The input is assumed to be scanned in left to right order.",
+    "options": {
+      "A": "Leftmost derivation",
+      "B": "Leftmost derivation traced out in reverse",
+      "C": "Rightmost derivation",
+      "D": "Rightmost derivation traced out in reverse"
+    },
+    "answer": "A",
+    "explanation": "A top-down (LL) parser builds a leftmost derivation. Bottom-up parsers trace a rightmost derivation in reverse. (GATE 2000)"
+  },
+  {
+    "id": 91,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Restricting the child process to a subset of the parent's resources prevents any process from",
+    "options": {
+      "A": "overloading the system by using a lot of secondary storage",
+      "B": "underloading the system by very less CPU utilization",
+      "C": "overloading the system by creating a lot of sub-processes",
+      "D": "crashing the system by utilizing multiple resources"
+    },
+    "answer": "C",
+    "explanation": "If children can only use the parent's resources, no process can overload the system by spawning many subprocesses (Galvin)."
+  },
+  {
+    "id": 92,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "A computer system has 6 tape drives, with 'n' processes competing for them. Each process may need 3 tape drives. The maximum value of 'n' for which the system is guaranteed to be deadlock free is",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "1"
+    },
+    "answer": "A",
+    "explanation": "Deadlock-free condition: n(3−1) + 1 ≤ 6, so n ≤ 2.5. The maximum n is 2. (GATE 1992)"
+  },
+  {
+    "id": 93,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "In which one of the following page replacement algorithms, it is possible for the page fault rate to increase even when the number of allocated frames increases?",
+    "options": {
+      "A": "LRU (Least Recently Used)",
+      "B": "OPT (Optimal Page Replacement)",
+      "C": "MRU (Most Recently Used)",
+      "D": "FIFO (First In First Out)"
+    },
+    "answer": "D",
+    "explanation": "This is Belady's anomaly, which occurs with FIFO. LRU and OPT are stack algorithms and are immune. (GATE 2016)"
+  },
+  {
+    "id": 94,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Consider two relations R1(A,B) with the tuples (1,5), (3,7) and R2(A,C) = (1,7), (4,9). Assume that R(A,B,C) is the full natural outer join of R1 and R2. Consider the following tuples of the form (A,B,C):\na = (1,5, null), b = (1,null,7), c = (3,null,9), d = (4,7,null), e = (1,5,7), f = (3,7,null), g = (4,null,9).\nWhich one of the following statements is correct?",
+    "options": {
+      "A": "R contains a, b, e, f, g but not c, d",
+      "B": "R contains all of a, b, c, d, e, f, g",
+      "C": "R contains e, f, g but not a, b",
+      "D": "R contains e but not f, g"
+    },
+    "answer": "C",
+    "explanation": "The full outer join is (1,5,7), (3,7,null) and (4,null,9), i.e. e, f and g. It does not contain a or b. (GATE 2015)"
+  },
+  {
+    "id": 95,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Consider the relation X(P, Q, R, S, T, U) with the following set of functional dependencies\nF = {\n{P, R} → {S, T};\n{P, S, U} → {Q, R}\n}\nWhich of the following is the trivial functional dependency in F+, where F+ is closure of F?",
+    "options": {
+      "A": "{P, R} → {S, T}",
+      "B": "{P, R} → {R, T}",
+      "C": "{P, S} → {S}",
+      "D": "{P, S, U} → {Q}"
+    },
+    "answer": "C",
+    "explanation": "An FD is trivial when its right side is a subset of its left side. {S} ⊆ {P,S}. (GATE 2021)"
+  },
+  {
+    "id": 96,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "A clustering index is defined on the fields which are of the type",
+    "options": {
+      "A": "non-key and ordering",
+      "B": "non-key and non-ordering",
+      "C": "key and ordering",
+      "D": "key and non-ordering"
+    },
+    "answer": "A",
+    "explanation": "A clustering index is built on the ordering field when that field is not a key (it has duplicates). (GATE 2008)"
+  },
+  {
+    "id": 97,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "In a file with 1 million records and with an order of the tree being 100, find out the maximum number of nodes to be accessed if B+ tree index is used.",
+    "options": {
+      "A": "5",
+      "B": "4",
+      "C": "3",
+      "D": "10"
+    },
+    "answer": "B",
+    "explanation": "In the worst case each node is half full (fan-out 50). 50³ = 125,000 < 10⁶ ≤ 50⁴, so about 4 levels (nodes) are accessed."
+  },
+  {
+    "id": 98,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "Two-phase protocol in database management system is",
+    "options": {
+      "A": "a concurrency mechanism that is deadlock free",
+      "B": "a recovery protocol used for restoring a database after a crash",
+      "C": "any update to the system log done in 2 phases",
+      "D": "not effective in database"
+    },
+    "answer": "A",
+    "explanation": "Two-phase locking is a concurrency-control protocol, so A is the intended answer. Note: basic 2PL guarantees serializability but is not deadlock-free (only conservative 2PL is). The statement in A is technically flawed."
+  },
+  {
+    "id": 99,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "A channel has a bit rate of 4 kbps and one-way propagation delay of 20 ms. The channel uses stop and wait protocol. The transmission time of the acknowledgement frame is negligible. To get a channel efficiency of at least 50%, the minimum frame size should be",
+    "options": {
+      "A": "80 bytes",
+      "B": "80 bits",
+      "C": "160 bytes",
+      "D": "160 bits"
+    },
+    "answer": "D",
+    "explanation": "Efficiency = Tt/(Tt + 2Tp) ≥ 0.5 means Tt ≥ 40 ms. Frame size = 4000 × 0.04 = 160 bits. (GATE 2005)"
+  },
+  {
+    "id": 100,
+    "source_file": "Lect_Tech_Computer_Engg-1",
+    "question": "If a browser sends a request to remote server to access a web page, then which among the following is the correct sequence to send the packet over the network from a host? (Assume that the host has just restarted)",
+    "options": {
+      "A": "HTTP GET request, DNS query, TCP SYN",
+      "B": "DNS query, HTTP GET request, TCP SYN",
+      "C": "DNS query, TCP SYN, HTTP GET request",
+      "D": "TCP SYN, DNS query, HTTP GET request"
+    },
+    "answer": "C",
+    "explanation": "The host first resolves the name (DNS), then opens a TCP connection (SYN), then sends the HTTP GET. (GATE 2016)"
+  }
+]

@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "source_file": "programmer paper 2_2024",
+    "question": "The process of organizing subsystems so as to reduce the number of interconnections is termed as ............",
+    "options": {
+      "A": "Decomposition",
+      "B": "Simplification",
+      "C": "Regrouping",
+      "D": "Decoupling"
+    },
+    "answer": "B",
+    "explanation": "In system theory, simplification means organising subsystems so that the number of interconnections between them is reduced; decoupling instead makes subsystems independent of each other."
+  },
+  {
+    "id": 2,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following is correct definition of Coupling in Java language?",
+    "options": {
+      "A": "Degree to which elements of a module belong together.",
+      "B": "The ability of a class to inherit from other classes.",
+      "C": "Process of hiding internal details of a module.",
+      "D": "Degree of direct knowledge one class has of other."
+    },
+    "answer": "D",
+    "explanation": "Coupling measures how much one class knows about or depends on another. Option 1 defines cohesion and option 3 encapsulation."
+  },
+  {
+    "id": 3,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which command is used to convert the code written in Java to bytecode?",
+    "options": {
+      "A": "javap",
+      "B": "java",
+      "C": "javadoc",
+      "D": "javac"
+    },
+    "answer": "D",
+    "explanation": "javac compiles .java source files into .class bytecode; javap disassembles class files and java runs them."
+  },
+  {
+    "id": 4,
+    "source_file": "programmer paper 2_2024",
+    "question": "............ is a usable system or system component that is built quickly and at lesser cost and with the intention of modifying or replacing it by a full-scale and fully operational system.",
+    "options": {
+      "A": "Approved system",
+      "B": "Increment",
+      "C": "Prototype",
+      "D": "Spiral"
+    },
+    "answer": "C",
+    "explanation": "A prototype is a quick, low-cost working model that is later refined or replaced by the full system."
+  },
+  {
+    "id": 5,
+    "source_file": "programmer paper 2_2024",
+    "question": "What will be the value of 'val' displayed when JSP page is accessed for the third time since server startup?\n<%! int val = 0; %>\n<% val++; %>\n<html> <body> <p> val : <%= val%> </p> </body> </html>",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "The value of val will remain 0"
+    },
+    "answer": "C",
+    "explanation": "<%! %> declares an instance variable of the generated servlet, which persists across requests. Each request increments it, so the third access shows 3."
+  },
+  {
+    "id": 6,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following streams is used to deserialize the primitive data and objects in Java?",
+    "options": {
+      "A": "PrintWriter",
+      "B": "BufferedReader",
+      "C": "FileWriter",
+      "D": "ObjectInputStream"
+    },
+    "answer": "D",
+    "explanation": "ObjectInputStream reads (deserialises) primitive data and objects previously written with ObjectOutputStream."
+  },
+  {
+    "id": 7,
+    "source_file": "programmer paper 2_2024",
+    "question": "System Design is carried out ............",
+    "options": {
+      "A": "as soon as system requirements are determined.",
+      "B": "whenever the System Analyst feels it to be urgent.",
+      "C": "after the final system specifications are approved by the management.",
+      "D": "whenever the management feels it to be urgent."
+    },
+    "answer": "C",
+    "explanation": "Design begins only after the system specifications from analysis are finalised and approved by management."
+  },
+  {
+    "id": 8,
+    "source_file": "programmer paper 2_2024",
+    "question": "............, a program development tool, shows how the program has been partitioned into smaller more manageable modules, the hierarchy and organization of those modules and the communication interfaces between modules.",
+    "options": {
+      "A": "Structure Chart",
+      "B": "Fourth Generation Language Tools (4GL Tools)",
+      "C": "Object-Oriented Programming and Design Tools",
+      "D": "Program Flow Chart"
+    },
+    "answer": "A",
+    "explanation": "A structure chart shows the module hierarchy and the data/control passed between modules."
+  },
+  {
+    "id": 9,
+    "source_file": "programmer paper 2_2024",
+    "question": "What is Polymorphism in Java?",
+    "options": {
+      "A": "The ability of a single method to perform different tasks.",
+      "B": "The ability of different methods to perform different tasks.",
+      "C": "The ability of a class to inherit properties of another class.",
+      "D": "The ability of a single variable to hold multiple values."
+    },
+    "answer": "A",
+    "explanation": "Polymorphism ('many forms') lets one method name/interface behave differently depending on arguments (overloading) or the runtime object (overriding)."
+  },
+  {
+    "id": 10,
+    "source_file": "programmer paper 2_2024",
+    "question": "In testing, alongwith batch control, which of the following programmed check cannot be used?",
+    "options": {
+      "A": "Sequence check",
+      "B": "Completeness check",
+      "C": "Consistency check",
+      "D": "Consumable check"
+    },
+    "answer": "D",
+    "explanation": "Sequence, completeness and consistency checks are standard programmed input-validation checks; 'consumable check' is not a programmed control."
+  },
+  {
+    "id": 11,
+    "source_file": "programmer paper 2_2024",
+    "question": "In the statement 'System.out.println(\"Hello World!\")', the keyword 'out' stands for the following -",
+    "options": {
+      "A": "Static member of the 'System' class",
+      "B": "An interface in the Java standard library",
+      "C": "A method in the 'System' class",
+      "D": "Class in the Java standard library"
+    },
+    "answer": "A",
+    "explanation": "out is a public static final PrintStream field of java.lang.System; println() is a method of PrintStream."
+  },
+  {
+    "id": 12,
+    "source_file": "programmer paper 2_2024",
+    "question": "What does the following code do?\npublic class Example {\n    private int var;\n    public Example(int var) {\n        this.var = var;\n    }\n}",
+    "options": {
+      "A": "Creates a new instance of the class Example.",
+      "B": "Throws an error because this cannot be used.",
+      "C": "Assigns the parameter var to the instance variable var.",
+      "D": "Compilation Error."
+    },
+    "answer": "C",
+    "explanation": "Inside the constructor, this.var refers to the field and var to the parameter, so the parameter's value is stored in the instance variable."
+  },
+  {
+    "id": 13,
+    "source_file": "programmer paper 2_2024",
+    "question": "What is the output of the following code?\npublic class Demo {\n  public static void main(String[] args) {\n    int x=5;\n    System.out.println(++x*2);\n  }\n}",
+    "options": {
+      "A": "12",
+      "B": "11",
+      "C": "10",
+      "D": "Compile time error"
+    },
+    "answer": "A",
+    "explanation": "Pre-increment makes x = 6 before the multiplication, so 6 × 2 = 12 is printed."
+  },
+  {
+    "id": 14,
+    "source_file": "programmer paper 2_2024",
+    "question": "What is bytecode in Java?",
+    "options": {
+      "A": "Machine-dependent code in Java.",
+      "B": "Source code in Java.",
+      "C": "Intermediate machine-independent code generated by Java compiler.",
+      "D": "Machine code specified to a processor."
+    },
+    "answer": "C",
+    "explanation": "javac produces platform-independent bytecode that any JVM can interpret or JIT-compile."
+  },
+  {
+    "id": 15,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following class in Java is responsible for handling files in Java?",
+    "options": {
+      "A": "FileStream",
+      "B": "FileHandler",
+      "C": "File",
+      "D": "FileManager"
+    },
+    "answer": "C",
+    "explanation": "java.io.File represents file and directory paths and supports creating, deleting and inspecting files."
+  },
+  {
+    "id": 16,
+    "source_file": "programmer paper 2_2024",
+    "question": "............ refers to the automation of anything that humans do to develop systems and supports virtually all phases of Traditional System Development Process.",
+    "options": {
+      "A": "Decision Tree",
+      "B": "Computer-Aided-Software Engineering (CASE)",
+      "C": "System Flow Charts",
+      "D": "Data Flow Diagram"
+    },
+    "answer": "B",
+    "explanation": "CASE tools automate development activities across all SDLC phases (analysis, design, coding, testing, documentation)."
+  },
+  {
+    "id": 17,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which syntax is incorrect to initialize a two-dimensional array in Java?",
+    "options": {
+      "A": "int myarr[][] = new int[3][4];",
+      "B": "int[][] myarr = {{1, 2, 3}, {4, 5, 6}};",
+      "C": "int[][] myarr = new int[3][4];",
+      "D": "int myarr = new int[3][4];"
+    },
+    "answer": "D",
+    "explanation": "myarr is declared as a plain int, so a 2-D array cannot be assigned to it; this is a compile error."
+  },
+  {
+    "id": 18,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following Symbol in Data Flow Diagrams represents Data Store?\n(1) Arrow  (2) Two parallel horizontal lines (open-ended rectangle)  (3) Rectangle  (4) Oval",
+    "options": {
+      "A": "Arrow",
+      "B": "Two parallel horizontal lines",
+      "C": "Rectangle",
+      "D": "Oval"
+    },
+    "answer": "B",
+    "explanation": "In DeMarco/Yourdon DFD notation, a data store is drawn as two parallel lines (open rectangle). Arrows are data flows, rectangles external entities, and circles/ovals processes."
+  },
+  {
+    "id": 19,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following activity is not involved in the Design of Database during System Designing phase of System Development Life Cycle?",
+    "options": {
+      "A": "Physical Layout Design",
+      "B": "Data Modeling",
+      "C": "Conceptual Modeling",
+      "D": "Input/output Volume"
+    },
+    "answer": "D",
+    "explanation": "Database design covers conceptual modelling, data modelling and physical layout; input/output volume estimation belongs to I/O and capacity design."
+  },
+  {
+    "id": 20,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following is a commonly used Object Oriented Programming Language?",
+    "options": {
+      "A": "PROLOG",
+      "B": "C Language",
+      "C": "JAVA",
+      "D": "COBOL"
+    },
+    "answer": "C",
+    "explanation": "Java is object oriented; C is procedural, COBOL is business-procedural and PROLOG is a logic language."
+  },
+  {
+    "id": 21,
+    "source_file": "programmer paper 2_2024",
+    "question": "............ refers to the set of task that ensures that software correctly implements a specific function.",
+    "options": {
+      "A": "Validation",
+      "B": "Veracity",
+      "C": "Verification",
+      "D": "Volume"
+    },
+    "answer": "C",
+    "explanation": "Verification asks 'Are we building the product right?' (does the software correctly implement a function); validation asks 'Are we building the right product?'"
+  },
+  {
+    "id": 22,
+    "source_file": "programmer paper 2_2024",
+    "question": "............ approach of system development is easy to accommodate product changes, but not suitable for large high-risk or mission critical projects.",
+    "options": {
+      "A": "Rapid Application Development (RAD)",
+      "B": "Spiral",
+      "C": "Agile",
+      "D": "Prototype"
+    },
+    "answer": "C",
+    "explanation": "Agile handles changing requirements easily through short iterations, but its light documentation and planning make it a poor fit for large, high-risk or mission-critical projects."
+  },
+  {
+    "id": 23,
+    "source_file": "programmer paper 2_2024",
+    "question": "A ............ describes how a user interacts with the system by defining the steps required to accomplish a specific goal.",
+    "options": {
+      "A": "DFD",
+      "B": "Program Flow Chart",
+      "C": "Use Case Diagram",
+      "D": "System Chart"
+    },
+    "answer": "C",
+    "explanation": "A use case describes the interaction steps between an actor (user) and the system needed to achieve a goal."
+  },
+  {
+    "id": 24,
+    "source_file": "programmer paper 2_2024",
+    "question": "............ is an indication of the relative functional strength of a module.",
+    "options": {
+      "A": "Aversion",
+      "B": "Cohesion",
+      "C": "Ripple effect",
+      "D": "Coupling"
+    },
+    "answer": "B",
+    "explanation": "Pressman defines cohesion as the relative functional strength of a module; coupling is the relative interdependence among modules."
+  },
+  {
+    "id": 25,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following is the correct way to create an abstract class in Java?",
+    "options": {
+      "A": "class Demo {\n    abstract void fun();\n}",
+      "B": "class abstract Demo {\n    void abstract fun();\n}",
+      "C": "abstract class Demo {\n    abstract void fun();\n}",
+      "D": "abstract class Demo {\n    void fun() {\n        abstract;\n    }\n}"
+    },
+    "answer": "C",
+    "explanation": "The abstract modifier comes before class, and an abstract method is declared with abstract and no body. A class with an abstract method must itself be abstract."
+  },
+  {
+    "id": 26,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of these classes are the direct subclasses of the Throwable Class?",
+    "options": {
+      "A": "Exception and VirtualMachineError Class",
+      "B": "Error and Exception Class",
+      "C": "IOException and VirtualMachineError Class",
+      "D": "Runtime Exception and Error Class"
+    },
+    "answer": "B",
+    "explanation": "Throwable has two direct subclasses: Error and Exception."
+  },
+  {
+    "id": 27,
+    "source_file": "programmer paper 2_2024",
+    "question": "A ............ is a record of historical data that remains in a file, used for reference and serves as control on key details.",
+    "options": {
+      "A": "Rewrite form",
+      "B": "Report form",
+      "C": "Memory form",
+      "D": "Record form"
+    },
+    "answer": "D",
+    "explanation": "In forms design, a record form holds historical data kept on file for reference and control of key details."
+  },
+  {
+    "id": 28,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following is true about JSP?",
+    "options": {
+      "A": "JSP pages are interpreted at runtime.",
+      "B": "JSP pages are compiled into servlets.",
+      "C": "JSP is not used to make interactive web pages.",
+      "D": "JSP pages cannot use Java code."
+    },
+    "answer": "B",
+    "explanation": "The JSP engine translates each JSP page into a servlet, compiles it and runs it."
+  },
+  {
+    "id": 29,
+    "source_file": "programmer paper 2_2024",
+    "question": "What is the correct sequence of steps for handling a client in a Java servlet as per the lifecycle of a servlet?",
+    "options": {
+      "A": "Init method, Service method, doPost/doGet method",
+      "B": "Init method, doPost/doGet method, Service method",
+      "C": "Service method, doPost/doGet method, Destroy method",
+      "D": "Init method, Service method, Destroy method"
+    },
+    "answer": "D",
+    "explanation": "The servlet lifecycle is init() once, service() for each request, and destroy() once before unloading."
+  },
+  {
+    "id": 30,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following is NOT a stage of agile software development approach?",
+    "options": {
+      "A": "Documenting",
+      "B": "Exploration",
+      "C": "Maintenance",
+      "D": "Planning"
+    },
+    "answer": "A",
+    "explanation": "Agile (XP) phases are exploration, planning, iterations to release, productionizing, maintenance and death. Heavy documentation is not a stage."
+  },
+  {
+    "id": 31,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which one of the following correctly defines a System?",
+    "options": {
+      "A": "System may be defined as a group of two or more interrelated components or sub-systems that serve a common purpose.",
+      "B": "System may be defined as a group of two or more interrelated components or sub-systems that function independently of the others and do not contribute to the common goal.",
+      "C": "System may be defined as a group of two or more interrelated components or sub-systems that do not serve a common purpose.",
+      "D": "System may be defined as a group of elements that operate in a predictable manner."
+    },
+    "answer": "A",
+    "explanation": "A system is a set of interrelated components working together toward a common objective."
+  },
+  {
+    "id": 32,
+    "source_file": "programmer paper 2_2024",
+    "question": "What will be the output of the code after the given code executes?\nint a = 5;\nint b = a++;\nSystem.out.println(\"a=\" + a + \" b=\" + b);",
+    "options": {
+      "A": "a=6 b=5",
+      "B": "a=5 b=6",
+      "C": "a=6 b=6",
+      "D": "a=5 b=5"
+    },
+    "answer": "A",
+    "explanation": "Post-increment assigns the old value (5) to b, then increments a to 6."
+  },
+  {
+    "id": 33,
+    "source_file": "programmer paper 2_2024",
+    "question": "Mr. X is a member of System Development Team who visits his client company XYZ Ltd. frequently to interview its employees to gather the details regarding the drawbacks of the existing system in the company XYZ Ltd. and understand their future requirements. Identify the role Mr. X is performing.",
+    "options": {
+      "A": "Programmer",
+      "B": "Project Leader",
+      "C": "System Analyst",
+      "D": "Project Manager"
+    },
+    "answer": "C",
+    "explanation": "Gathering requirements and studying the existing system through interviews is the system analyst's job."
+  },
+  {
+    "id": 34,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which statement is true about an Interface in Java?",
+    "options": {
+      "A": "An interface cannot extend another interface.",
+      "B": "An interface can contain implemented methods.",
+      "C": "An interface can contain instance variables.",
+      "D": "A class can implement multiple interfaces."
+    },
+    "answer": "D",
+    "explanation": "Java allows a class to implement any number of interfaces. Interfaces can extend other interfaces and have no instance variables (only constants)."
+  },
+  {
+    "id": 35,
+    "source_file": "programmer paper 2_2024",
+    "question": "What is the correct way to close a file in Java after writing to it?",
+    "options": {
+      "A": "fileInput.close();",
+      "B": "file.close();",
+      "C": "fileWriter.close();",
+      "D": "fileStream.close();"
+    },
+    "answer": "C",
+    "explanation": "You close the writer object used for writing, e.g. fileWriter.close(), which flushes and releases the file."
+  },
+  {
+    "id": 36,
+    "source_file": "programmer paper 2_2024",
+    "question": "What will be the value of arr[2] in the following code?\nString[] arr = new String[3];\narr[0] = \"Maths\";\narr[1] = \"Science\";",
+    "options": {
+      "A": "Null",
+      "B": "\"Science\"",
+      "C": "\"Maths\"",
+      "D": "\" \""
+    },
+    "answer": "A",
+    "explanation": "Elements of a new reference-type array default to null, and arr[2] was never assigned."
+  },
+  {
+    "id": 37,
+    "source_file": "programmer paper 2_2024",
+    "question": "In Java, what is a Base Class?",
+    "options": {
+      "A": "A class that is used as a template to create other classes and can be instantiated directly.",
+      "B": "A class that is used as a foundation for other classes to inherit properties and methods.",
+      "C": "A class that contains only static methods and variables.",
+      "D": "A class that cannot be inherited by other classes and is only used for creating objects."
+    },
+    "answer": "B",
+    "explanation": "A base (super/parent) class provides fields and methods that derived classes inherit."
+  },
+  {
+    "id": 38,
+    "source_file": "programmer paper 2_2024",
+    "question": "Financial Feasibility Study is carried out by the System Analysts to evaluate that ............",
+    "options": {
+      "A": "it will be profitable to implement the system.",
+      "B": "the proposed system will result in improved operations.",
+      "C": "finances are available to implement the proposed system and it will be cost-effective.",
+      "D": "implementation will lead to low operating cost."
+    },
+    "answer": "C",
+    "explanation": "Financial (economic) feasibility checks that funds are available and that benefits justify the costs."
+  },
+  {
+    "id": 39,
+    "source_file": "programmer paper 2_2024",
+    "question": "............, are computerized information systems that were developed to process large amount of data for routine business transactions such as payroll and inventory.",
+    "options": {
+      "A": "Knowledge Work Systems (KWS)",
+      "B": "Group Decision Support System (GDSS)",
+      "C": "Transaction Processing Systems (TPS)",
+      "D": "Office Automated System (OAS)"
+    },
+    "answer": "C",
+    "explanation": "Transaction Processing Systems handle high volumes of routine operational transactions such as payroll and inventory."
+  },
+  {
+    "id": 40,
+    "source_file": "programmer paper 2_2024",
+    "question": "What will be the result of following Java code?\npublic class MyString {\n    public static void main(String[] args) {\n        String s1 = \"Program\";\n        String s2 = \"Program\";\n        System.out.println(s1 == s2); }\n}",
+    "options": {
+      "A": "True",
+      "B": "Compilation error",
+      "C": "Runtime error",
+      "D": "False"
+    },
+    "answer": "A",
+    "explanation": "Identical string literals are interned in the string pool, so s1 and s2 refer to the same object and == prints true."
+  },
+  {
+    "id": 41,
+    "source_file": "programmer paper 2_2024",
+    "question": "Each time a new module is added to the system, new data flow paths are established, new input/output may occur and new control logic is invoked. These changes may cause problems with functions that previously worked flawlessly. ............ Tests ensure that changes or corrections have not introduced new errors.",
+    "options": {
+      "A": "Top-Down Integration",
+      "B": "Regression",
+      "C": "Bottom-Up Integration",
+      "D": "Performance"
+    },
+    "answer": "B",
+    "explanation": "Regression testing re-runs earlier tests after changes to make sure no new defects were introduced."
+  },
+  {
+    "id": 42,
+    "source_file": "programmer paper 2_2024",
+    "question": "The maintenance input of matter and energy required to repair, replenish and maintain the system is termed as ............",
+    "options": {
+      "A": "System Maintenance",
+      "B": "Debugging",
+      "C": "Positive Entropy",
+      "D": "Negative Entropy"
+    },
+    "answer": "D",
+    "explanation": "In system theory, entropy is decay; the input needed to counter it (repair and replenish) is called negative entropy."
+  },
+  {
+    "id": 43,
+    "source_file": "programmer paper 2_2024",
+    "question": "Code ............ is the quality of a good coded program that makes it easy to understand, modify and maintain by other developers.",
+    "options": {
+      "A": "resistance",
+      "B": "adaptability",
+      "C": "effectiveness",
+      "D": "readability"
+    },
+    "answer": "D",
+    "explanation": "Readable code (clear names, structure, comments) is easy for others to understand and maintain."
+  },
+  {
+    "id": 44,
+    "source_file": "programmer paper 2_2024",
+    "question": "What is the output of following code?\npublic class ex {\n  public static void main(String[] args) {\n    int[] a = {1, 2, 3, 4, 5};\n    printn(a);\n  }\n  public static void printn(int[] a) {\n    for(int n : a) {\n      System.out.print(n + \" \");\n    }\n  }\n}",
+    "options": {
+      "A": "Compilation error",
+      "B": "5 4 3 2 1",
+      "C": "Runtime error",
+      "D": "1 2 3 4 5"
+    },
+    "answer": "D",
+    "explanation": "The enhanced for loop visits the elements in order, printing 1 2 3 4 5."
+  },
+  {
+    "id": 45,
+    "source_file": "programmer paper 2_2024",
+    "question": "Size of \"int\" data type in Java language is -",
+    "options": {
+      "A": "64-bits",
+      "B": "16-bits",
+      "C": "8-bits",
+      "D": "32-bits"
+    },
+    "answer": "D",
+    "explanation": "A Java int is always 32 bits, whatever the platform."
+  },
+  {
+    "id": 46,
+    "source_file": "programmer paper 2_2024",
+    "question": "............ are conceptual and non-physical entities that may be formulas, representation or model of a real system.",
+    "options": {
+      "A": "Physical systems",
+      "B": "Abstract systems",
+      "C": "Deterministic systems",
+      "D": "Probabilistic systems"
+    },
+    "answer": "B",
+    "explanation": "Abstract systems are conceptual (formulas, models), unlike tangible physical systems."
+  },
+  {
+    "id": 47,
+    "source_file": "programmer paper 2_2024",
+    "question": "What output is produced for the command: \"java cmd a b c d\", when following code is run?\nclass cmd {\n  public static void main(String args[]) {\n  System.out.println(args[2]);\n  }\n}",
+    "options": {
+      "A": "c",
+      "B": "cmd",
+      "C": "b",
+      "D": "a"
+    },
+    "answer": "A",
+    "explanation": "The class name is not part of args; args = {\"a\", \"b\", \"c\", \"d\"}, so args[2] is \"c\"."
+  },
+  {
+    "id": 48,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following code gives error of \"outofbounds\" in array?",
+    "options": {
+      "A": "int[] a = new int[5]; a[4]=5;",
+      "B": "int[] a = {1, 2, 3, 4, 5}; System.out.print(a[2]);",
+      "C": "int[] a = new int[10]; for (int i=0; i < a.length; i++) {a[i] = i*2;}",
+      "D": "int[] a = new int[3]; a[3] = 9;"
+    },
+    "answer": "D",
+    "explanation": "An array of size 3 has indices 0–2, so a[3] throws ArrayIndexOutOfBoundsException."
+  },
+  {
+    "id": 49,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of these exceptions is thrown in cases when the file specified for writing is not found?",
+    "options": {
+      "A": "FileOutputException",
+      "B": "FileException",
+      "C": "FileNotFoundException",
+      "D": "IOException"
+    },
+    "answer": "C",
+    "explanation": "FileOutputStream/FileWriter constructors throw FileNotFoundException when the file cannot be opened or created."
+  },
+  {
+    "id": 50,
+    "source_file": "programmer paper 2_2024",
+    "question": "Project requests are evaluated in the ............ phase of System Development Life Cycle.",
+    "options": {
+      "A": "Preliminary Investigation",
+      "B": "System Testing",
+      "C": "System Design",
+      "D": "Requirement Analysis"
+    },
+    "answer": "A",
+    "explanation": "The preliminary investigation evaluates project requests to decide whether they are worth pursuing."
+  },
+  {
+    "id": 51,
+    "source_file": "programmer paper 2_2024",
+    "question": "What will be the output of the following code?\npublic class Demo {\n  public static void main(String[] args) {\n    String str=\"Hello\";\n    str=str+\"World\";\n    str=str.substring(5,10);\n    System.out.println(str);\n  }\n}",
+    "options": {
+      "A": "Hello",
+      "B": "Hello World",
+      "C": "ello",
+      "D": "World"
+    },
+    "answer": "D",
+    "explanation": "str becomes \"HelloWorld\"; substring(5,10) returns indices 5–9, which is \"World\"."
+  },
+  {
+    "id": 52,
+    "source_file": "programmer paper 2_2024",
+    "question": "Consider the following class definition:\npublic class Test {\n    int var; String myString;\n    public Test(){\n        this(0, \"Default\");}\n    public Test(int var, String myString) {\n        this.var = var; this.myString = myString;\n    }\n}\nWhat will the following code do?\nTest test = new Test();",
+    "options": {
+      "A": "Create an object test with var = 0 and myString = \"Default\"",
+      "B": "Throw a runtime exception",
+      "C": "Create an object test with var = 0 and myString = null",
+      "D": "Throw a compilation error"
+    },
+    "answer": "A",
+    "explanation": "The no-argument constructor chains via this(0, \"Default\") to the two-argument constructor, which sets the fields."
+  },
+  {
+    "id": 53,
+    "source_file": "programmer paper 2_2024",
+    "question": "What is Encapsulation in Java?",
+    "options": {
+      "A": "The ability of one class to inherit the properties of another class.",
+      "B": "The ability of an object to take many forms.",
+      "C": "Integrating data (variables) and code (methods) into a single unit.",
+      "D": "The ability to overload methods."
+    },
+    "answer": "C",
+    "explanation": "Encapsulation bundles data and the methods that act on it into one unit (a class), usually with private fields."
+  },
+  {
+    "id": 54,
+    "source_file": "programmer paper 2_2024",
+    "question": "What does the .NET framework primarily consist of?",
+    "options": {
+      "A": "JVM and Web forms",
+      "B": "CLR and Web forms",
+      "C": "CLR and .NET framework class libraries",
+      "D": "JVM and Base class libraries"
+    },
+    "answer": "C",
+    "explanation": "The .NET Framework has two main parts: the Common Language Runtime (CLR) and the Framework Class Library (FCL/BCL)."
+  },
+  {
+    "id": 55,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following is a correct statement about constructors in Java?",
+    "options": {
+      "A": "Constructors cannot be overloaded.",
+      "B": "A constructor can be called directly like a regular method.",
+      "C": "A constructor does not have a return type, not even void type.",
+      "D": "A class can have only one constructor."
+    },
+    "answer": "C",
+    "explanation": "Constructors have no return type (not even void), can be overloaded, and run only through new or this()/super()."
+  },
+  {
+    "id": 56,
+    "source_file": "programmer paper 2_2024",
+    "question": "Fact Finding Technique through ............ enables the analysts to collect a large amount of data through a variety of users quickly.",
+    "options": {
+      "A": "Interviews",
+      "B": "Documents",
+      "C": "Observations",
+      "D": "Questionnaires"
+    },
+    "answer": "D",
+    "explanation": "Questionnaires can be given to many users at once, so they gather a lot of data quickly and cheaply."
+  },
+  {
+    "id": 57,
+    "source_file": "programmer paper 2_2024",
+    "question": "............ is a visual representation that depicts the information flow and the transformation that are applied to data as data moves from input to output.",
+    "options": {
+      "A": "Data Flow Diagram",
+      "B": "System Flow Chart",
+      "C": "Layout Form",
+      "D": "Hierarchy Chart"
+    },
+    "answer": "A",
+    "explanation": "A DFD shows how data flows through processes that transform input into output."
+  },
+  {
+    "id": 58,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following is not a valid variable name in Java language?",
+    "options": {
+      "A": "x15",
+      "B": "rate",
+      "C": "rate_of_taxi",
+      "D": "rate-of-taxi"
+    },
+    "answer": "D",
+    "explanation": "Hyphens are not allowed in Java identifiers (they would be read as the minus operator)."
+  },
+  {
+    "id": 59,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which user acceptance testing is generally performed by the external users and normally involves sending the product outside for real world exposure?",
+    "options": {
+      "A": "Beta testing",
+      "B": "Gamma testing",
+      "C": "Alpha testing",
+      "D": "Regression testing"
+    },
+    "answer": "A",
+    "explanation": "Beta testing is done by real users in their own environment, outside the developer's site."
+  },
+  {
+    "id": 60,
+    "source_file": "programmer paper 2_2024",
+    "question": "............ Tests on a program unit are performed to check \"whether programs do what they are expected to do or not\".",
+    "options": {
+      "A": "Performance",
+      "B": "Structural",
+      "C": "Stress",
+      "D": "Functional"
+    },
+    "answer": "D",
+    "explanation": "Functional tests check that the program unit does what its specification says it should do."
+  },
+  {
+    "id": 61,
+    "source_file": "programmer paper 2_2024",
+    "question": "The goal of requirements ............ is to collect and document what various stakeholders want from the software that is to be built.",
+    "options": {
+      "A": "analysis",
+      "B": "gathering",
+      "C": "list",
+      "D": "specification"
+    },
+    "answer": "B",
+    "explanation": "Requirements gathering (elicitation) collects and records what stakeholders want from the system."
+  },
+  {
+    "id": 62,
+    "source_file": "programmer paper 2_2024",
+    "question": "Scrum is an agile software development method, in which, within each framework activity, work tasks occur within a process pattern called ............",
+    "options": {
+      "A": "Sprint",
+      "B": "Demo",
+      "C": "Backlog",
+      "D": "Scrum master"
+    },
+    "answer": "A",
+    "explanation": "In Scrum, work is done in short time-boxed iterations called sprints."
+  },
+  {
+    "id": 63,
+    "source_file": "programmer paper 2_2024",
+    "question": "What will be the output of the following program?\npublic class Demo {\n  public static void main(String[] args) {\n    int[] arr={120, 200, 016};\n    for (int i=0; i<arr.length; i++) {\n      System.out.print(arr[i]+\" \");\n    }\n  }\n}",
+    "options": {
+      "A": "120 200 14",
+      "B": "120 200 016",
+      "C": "Compilation Error",
+      "D": "120 200 16"
+    },
+    "answer": "A",
+    "explanation": "An integer literal with a leading 0 is octal in Java: 016 = 1×8 + 6 = 14."
+  },
+  {
+    "id": 64,
+    "source_file": "programmer paper 2_2024",
+    "question": "What will be the output of the following code?\nclass Vehicle {\n  public void move() {\n    System.out.println(\"Vehicle is moving\");\n  }\n}\nclass Car extends Vehicle {\n  public void move() {\n    System.out.println(\"Car is moving\");\n  }\n}\npublic class Main {\n  public static void main(String[] args) {\n    Vehicle v = new Car();\n    v.move();\n  }\n}",
+    "options": {
+      "A": "Runtime error",
+      "B": "Vehicle is moving",
+      "C": "Compilation error",
+      "D": "Car is moving"
+    },
+    "answer": "D",
+    "explanation": "Dynamic method dispatch calls the overriding method of the actual object type (Car), even through a Vehicle reference."
+  },
+  {
+    "id": 65,
+    "source_file": "programmer paper 2_2024",
+    "question": "............ tests are performed on a program unit to verify the response time, the execution time, the throughput, primary and secondary memory utilization and traffic rates on data channels and communication links.",
+    "options": {
+      "A": "Performance",
+      "B": "Stress",
+      "C": "Parallel",
+      "D": "Functional"
+    },
+    "answer": "A",
+    "explanation": "Performance testing measures response time, throughput, memory use and channel traffic."
+  },
+  {
+    "id": 66,
+    "source_file": "programmer paper 2_2024",
+    "question": "............ is a program development tool used for specifying program logic.",
+    "options": {
+      "A": "DFD",
+      "B": "Structure Chart",
+      "C": "Program Flow Chart",
+      "D": "Fourth Generation Language Tools (4GL Tools)"
+    },
+    "answer": "C",
+    "explanation": "A program flowchart shows the detailed step-by-step logic of a program."
+  },
+  {
+    "id": 67,
+    "source_file": "programmer paper 2_2024",
+    "question": "The ............ approach of system development is not suitable for accommodating changes as it follows all sequential steps.",
+    "options": {
+      "A": "Agile",
+      "B": "Prototyping",
+      "C": "Waterfall",
+      "D": "Rapid Application Development (RAD)"
+    },
+    "answer": "C",
+    "explanation": "The waterfall model is linear and sequential, so changes after a phase is complete are hard to make."
+  },
+  {
+    "id": 68,
+    "source_file": "programmer paper 2_2024",
+    "question": "Conducting study to find out if the proposed system can be used by the employees or not is covered under the ............ feasibility.",
+    "options": {
+      "A": "Technical",
+      "B": "Schedule",
+      "C": "Economic",
+      "D": "Operational"
+    },
+    "answer": "D",
+    "explanation": "Operational feasibility checks whether users will accept and be able to use the system in their work."
+  },
+  {
+    "id": 69,
+    "source_file": "programmer paper 2_2024",
+    "question": "Technical Feasibility is carried out by the System Analysts to evaluate ............",
+    "options": {
+      "A": "that the needed technology is available.",
+      "B": "that there will be no resistance for the implementation of the new system.",
+      "C": "the cost of converting and preparing data files and the cost of preparing new or expanded computer facilities.",
+      "D": "the time within which the new system will become operational."
+    },
+    "answer": "A",
+    "explanation": "Technical feasibility checks whether the required hardware, software and technical expertise are available."
+  },
+  {
+    "id": 70,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which component of Java platform is responsible for converting bytecode into machine-specific code?",
+    "options": {
+      "A": "Java Runtime Environment (JRE)",
+      "B": "Java Development Kit (JDK)",
+      "C": "Java Compiler",
+      "D": "Java Virtual Machine (JVM)"
+    },
+    "answer": "D",
+    "explanation": "The JVM interprets/JIT-compiles bytecode into native machine code for the host platform."
+  },
+  {
+    "id": 71,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which keyword is used in Java to inherit a class?",
+    "options": {
+      "A": "inherits",
+      "B": "extends",
+      "C": "implements",
+      "D": "super"
+    },
+    "answer": "B",
+    "explanation": "A class inherits from another class using extends; implements is used for interfaces."
+  },
+  {
+    "id": 72,
+    "source_file": "programmer paper 2_2024",
+    "question": "If A is a superclass and B is a subclass of it and C is subclass of B, in what order the constructors that make up the classes be called?",
+    "options": {
+      "A": "A, C, B",
+      "B": "A, B, C",
+      "C": "C, A, B",
+      "D": "C, B, A"
+    },
+    "answer": "B",
+    "explanation": "Constructors run from the top of the hierarchy down: A, then B, then C (each calls super() first)."
+  },
+  {
+    "id": 73,
+    "source_file": "programmer paper 2_2024",
+    "question": "The interconnections and interactions between the sub-systems are termed as ............",
+    "options": {
+      "A": "Connectors",
+      "B": "Interfaces",
+      "C": "Protocols",
+      "D": "Links"
+    },
+    "answer": "B",
+    "explanation": "In system theory, the interconnections and interactions between subsystems are called interfaces."
+  },
+  {
+    "id": 74,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following correctly declares a method that accepts one dimensional array of double as a parameter?",
+    "options": {
+      "A": "public void fun(double *arr[])",
+      "B": "public void fun(double[] arr)",
+      "C": "public void fun(arr double[])",
+      "D": "public void fun(double arr)"
+    },
+    "answer": "B",
+    "explanation": "double[] arr declares a one-dimensional double array parameter; Java has no pointer syntax."
+  },
+  {
+    "id": 75,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following is not an access modifier in Java language?",
+    "options": {
+      "A": "Public",
+      "B": "Private",
+      "C": "Protected",
+      "D": "External"
+    },
+    "answer": "D",
+    "explanation": "Java access modifiers are public, protected, private and default (package-private); 'external' does not exist."
+  },
+  {
+    "id": 76,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following is false about Vector class in Java?",
+    "options": {
+      "A": "It is part of java.util package.",
+      "B": "It is synchronized.",
+      "C": "It can grow or shrink as needed.",
+      "D": "It is part of java.io package."
+    },
+    "answer": "D",
+    "explanation": "Vector is in java.util, not java.io; it is a synchronized, growable array."
+  },
+  {
+    "id": 77,
+    "source_file": "programmer paper 2_2024",
+    "question": "A generic process framework for software engineering defines five framework activities. A ............ executes each of these five framework activities in sequence.",
+    "options": {
+      "A": "evolutionary flow",
+      "B": "parallel process flow",
+      "C": "linear process flow",
+      "D": "iterative flow"
+    },
+    "answer": "C",
+    "explanation": "Pressman: a linear process flow runs communication, planning, modeling, construction and deployment in sequence."
+  },
+  {
+    "id": 78,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following Java technology is used for server-side programming in Internet applications?",
+    "options": {
+      "A": "Java Servlet",
+      "B": "Java Swing",
+      "C": "JavaFX",
+      "D": "Java Applets"
+    },
+    "answer": "A",
+    "explanation": "Servlets run on the web server to handle requests; Swing, JavaFX and applets are client-side UI technologies."
+  },
+  {
+    "id": 79,
+    "source_file": "programmer paper 2_2024",
+    "question": "System Requirements Specification (SRS) document does NOT include ............",
+    "options": {
+      "A": "Non-Functional Attributes",
+      "B": "Design Solutions",
+      "C": "Schedule and Budget",
+      "D": "Functional Requirements"
+    },
+    "answer": "B",
+    "explanation": "An SRS states what the system must do (functional and non-functional requirements), not how to build it, so design solutions are excluded. (Project schedule/budget also normally sit outside the SRS; the expected key is design solutions.)"
+  },
+  {
+    "id": 80,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following general problem solving step is equivalent to system analysis in software development process?",
+    "options": {
+      "A": "Design the chosen problem",
+      "B": "Implement the chosen solution",
+      "C": "Identify the solution requirements and expectations",
+      "D": "Identify the problem"
+    },
+    "answer": "C",
+    "explanation": "System analysis works out what the solution must do, i.e. the requirements and expectations. Identifying the problem corresponds to the preliminary investigation."
+  },
+  {
+    "id": 81,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which protocol does RMI use to communicate between objects distributed across a network?",
+    "options": {
+      "A": "HTTP",
+      "B": "TCP/IP",
+      "C": "SMTP",
+      "D": "FTP"
+    },
+    "answer": "B",
+    "explanation": "Java RMI uses its JRMP wire protocol on top of TCP/IP sockets."
+  },
+  {
+    "id": 82,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following statement is true about public and private members in Java?",
+    "options": {
+      "A": "Private members can be accessed from any other class.",
+      "B": "Private members can be accessed from subclasses.",
+      "C": "Public members can only be accessed within the same class.",
+      "D": "Public members can be accessed from any other class."
+    },
+    "answer": "D",
+    "explanation": "public members are accessible everywhere; private members only inside their own class."
+  },
+  {
+    "id": 83,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following software testing verifies that all elements mesh properly and that overall system function/performance is achieved?",
+    "options": {
+      "A": "Unit testing",
+      "B": "Integration testing",
+      "C": "Validation testing",
+      "D": "System testing"
+    },
+    "answer": "D",
+    "explanation": "Pressman: system testing verifies that all system elements mesh properly and that overall system function and performance is achieved."
+  },
+  {
+    "id": 84,
+    "source_file": "programmer paper 2_2024",
+    "question": "A company was recommended to adopt a new Accounting System. The company was advised to use both the old and the new Accounting Systems alongside each other, both being able to operate independently. If all goes well, the old system is discontinued and the new system carries on as the only system. Which of the following new Accounting System implementation strategy was advised to the company?",
+    "options": {
+      "A": "Phased Implementation",
+      "B": "Direct Implementation",
+      "C": "Parallel Implementation",
+      "D": "Pilot Implementation"
+    },
+    "answer": "C",
+    "explanation": "Running the old and new systems at the same time until the new one is proven is parallel conversion."
+  },
+  {
+    "id": 85,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which part of a Decision Table comprehensively lists the comparisons or conditions?",
+    "options": {
+      "A": "Action Entries",
+      "B": "Condition Entries",
+      "C": "Condition Stub",
+      "D": "Action Stub"
+    },
+    "answer": "C",
+    "explanation": "The condition stub (upper left) lists all the conditions; condition entries hold their values for each rule."
+  },
+  {
+    "id": 86,
+    "source_file": "programmer paper 2_2024",
+    "question": "Most of the Information Systems require some modification after development. There are different categories of Maintenance which are Scheduled, Adaptive, Corrective, Rescue, Preventive and Perfective. Which of the following statement is NOT correct about these categories of Maintenance?",
+    "options": {
+      "A": "Corrective Maintenance deals with fixing bugs in the code or defects found during the executions.",
+      "B": "Scheduled Maintenance is anticipated and can be planned in advance.",
+      "C": "Adaptive Maintenance mainly deals with accommodating to the new or changed user requirements.",
+      "D": "Rescue Maintenance deals with the undetected malfunctions that require immediate troubleshooting solution."
+    },
+    "answer": "C",
+    "explanation": "Adaptive maintenance adapts software to a changed environment (OS, hardware, rules); handling new or changed user requirements is perfective maintenance."
+  },
+  {
+    "id": 87,
+    "source_file": "programmer paper 2_2024",
+    "question": "............ errors occur when the code executes without errors but the output is not what the programmer intended.",
+    "options": {
+      "A": "Compilation",
+      "B": "Logical",
+      "C": "Syntax",
+      "D": "Semantic"
+    },
+    "answer": "B",
+    "explanation": "A logic error lets the program run, but it produces wrong results because the algorithm is wrong."
+  },
+  {
+    "id": 88,
+    "source_file": "programmer paper 2_2024",
+    "question": "What is the right syntax to read an integer from the user in Java?",
+    "options": {
+      "A": "Scanner sc = new Scanner(System.in); int num = sc.readInt();",
+      "B": "Scanner sc = new Scanner(System.in); int num = sc.inputInt();",
+      "C": "Scanner sc = new Scanner(System.in); int num = sc.nextInt();",
+      "D": "Scanner sc = new Scanner(System.in); int num = sc.getInt();"
+    },
+    "answer": "C",
+    "explanation": "java.util.Scanner provides nextInt() to read the next integer token."
+  },
+  {
+    "id": 89,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following is the most important feature that makes Java suitable for Internet applications?",
+    "options": {
+      "A": "Faster execution",
+      "B": "Object oriented & robust",
+      "C": "Portable and distributed",
+      "D": "Simple & secure"
+    },
+    "answer": "C",
+    "explanation": "Platform-independent bytecode (portability) and built-in networking/distributed support (RMI, sockets, URL classes) make Java well suited to the Internet."
+  },
+  {
+    "id": 90,
+    "source_file": "programmer paper 2_2024",
+    "question": "............ Test is not included in unit testing.",
+    "options": {
+      "A": "Performance",
+      "B": "Stress",
+      "C": "Security",
+      "D": "Structural"
+    },
+    "answer": "C",
+    "explanation": "Unit testing of a program covers functional, performance, stress and structural tests; security testing is done at system level."
+  },
+  {
+    "id": 91,
+    "source_file": "programmer paper 2_2024",
+    "question": "What is the purpose of the 'new' keyword in Java?",
+    "options": {
+      "A": "Defines a new method",
+      "B": "Imports a package",
+      "C": "Creates a new object instance",
+      "D": "Declares a new variable"
+    },
+    "answer": "C",
+    "explanation": "new allocates memory for an object, calls its constructor and returns a reference to the new instance."
+  },
+  {
+    "id": 92,
+    "source_file": "programmer paper 2_2024",
+    "question": "In the 'System Requirements Specification' document, behavioural description covers ............",
+    "options": {
+      "A": "classes of tests to be performed to validate functions, performance and constraints.",
+      "B": "Diagrammatic representation of functions; Processing narrative for each function; Interplay among functions; Design constraints.",
+      "C": "goals and objectives of the software context of the computer-based system; information description.",
+      "D": "response to external events and internal controls."
+    },
+    "answer": "D",
+    "explanation": "In Pressman's SRS outline, the behavioural description section describes the system's response to external events and internal controls."
+  },
+  {
+    "id": 93,
+    "source_file": "programmer paper 2_2024",
+    "question": "What is the main role of Java Development Kit (JDK)?",
+    "options": {
+      "A": "To provide only runtime environment for Java Applications",
+      "B": "To provide a Graphical User Interface",
+      "C": "To only compile and run Java Applications",
+      "D": "To create, compile and execute Java Applications"
+    },
+    "answer": "D",
+    "explanation": "The JDK includes the JRE plus development tools (javac, javadoc, jdb, ...) to create, compile and run Java programs."
+  },
+  {
+    "id": 94,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following is true about Java applets?",
+    "options": {
+      "A": "No plugin is required to run an applet.",
+      "B": "They run within a web browser and work at server side.",
+      "C": "Applets are not secured.",
+      "D": "They run within a web browser and work at client side."
+    },
+    "answer": "D",
+    "explanation": "Applets are downloaded and run in the client's browser (inside a sandbox, via the Java plug-in)."
+  },
+  {
+    "id": 95,
+    "source_file": "programmer paper 2_2024",
+    "question": "............ is a structured repository of data, about data.",
+    "options": {
+      "A": "Data Flow Diagram",
+      "B": "System Components Matrix",
+      "C": "Data Dictionary",
+      "D": "Decision Table"
+    },
+    "answer": "C",
+    "explanation": "A data dictionary is a structured repository of metadata (data about data)."
+  },
+  {
+    "id": 96,
+    "source_file": "programmer paper 2_2024",
+    "question": "\"System Requirements Specification (SRS)\" document is prepared by the System Analyst at the end of ............ phase of System Development Life Cycle.",
+    "options": {
+      "A": "Systems Design",
+      "B": "Systems Implementation",
+      "C": "Preliminary Investigation",
+      "D": "Systems Requirement Analysis"
+    },
+    "answer": "D",
+    "explanation": "The SRS is the deliverable produced at the end of requirements analysis."
+  },
+  {
+    "id": 97,
+    "source_file": "programmer paper 2_2024",
+    "question": "A class that exhibits a high degree of primitiveness encapsulates only ............ operations.",
+    "options": {
+      "A": "Volatility",
+      "B": "Primitive",
+      "C": "Cohesive",
+      "D": "Similarity"
+    },
+    "answer": "B",
+    "explanation": "Pressman (OO design metrics): a class with high primitiveness encapsulates only primitive operations."
+  },
+  {
+    "id": 98,
+    "source_file": "programmer paper 2_2024",
+    "question": "What do you mean by Method Overloading in Java?",
+    "options": {
+      "A": "Having two methods with the same name in different packages.",
+      "B": "Having two methods with the same name and same parameters.",
+      "C": "Having two methods with the same name but different parameters.",
+      "D": "Having two methods with the same name in different classes."
+    },
+    "answer": "C",
+    "explanation": "Overloading means several methods in the same class with the same name but different parameter lists."
+  },
+  {
+    "id": 99,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which of the following is NOT an advantage of Java bytecode?",
+    "options": {
+      "A": "Portability",
+      "B": "Security",
+      "C": "Platform independent",
+      "D": "Faster execution than machine code"
+    },
+    "answer": "D",
+    "explanation": "Bytecode must be interpreted or JIT-compiled, so it is not faster than native machine code."
+  },
+  {
+    "id": 100,
+    "source_file": "programmer paper 2_2024",
+    "question": "Which software testing is used to check the defects in software without executing the actual code?",
+    "options": {
+      "A": "Static testing",
+      "B": "Black Box",
+      "C": "White Box",
+      "D": "Performance Analysis testing"
+    },
+    "answer": "A",
+    "explanation": "Static testing (reviews, walkthroughs, inspections, static analysis) finds defects without running the code."
+  }
+]

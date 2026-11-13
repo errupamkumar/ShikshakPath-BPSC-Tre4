@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "The postfix expression AB + CD – * can be evaluated using a",
+    "options": {
+      "A": "stack",
+      "B": "tree",
+      "C": "queue",
+      "D": "linked list"
+    },
+    "answer": "A",
+    "explanation": "Postfix expressions are evaluated with a stack: push operands, pop two operands on each operator."
+  },
+  {
+    "id": 2,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "The post order traversal of a binary tree is DEBFCA. Find out the pre-order traversal.",
+    "options": {
+      "A": "ABFCDE",
+      "B": "ADBFEC",
+      "C": "ABDECF",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "Assuming root A with left child B (children D, E) and right child C (left child F), the preorder is ABDECF. (A postorder alone does not fix a unique tree, but (C) is the intended answer.)"
+  },
+  {
+    "id": 3,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "The branch logic that provides making capabilities in the control unit is known as",
+    "options": {
+      "A": "Controlled transfer",
+      "B": "Conditional transfer",
+      "C": "Unconditional transfer",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "Conditional transfer (conditional branch) gives the control unit its decision-making capability."
+  },
+  {
+    "id": 4,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "The number of colours required to properly colour the vertices of every planer graph is",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "C",
+    "explanation": "Four colour theorem: every planar graph is 4-colourable."
+  },
+  {
+    "id": 5,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Networks that use different technologies can be connected by using",
+    "options": {
+      "A": "Packets",
+      "B": "Switches",
+      "C": "Bridges",
+      "D": "Routers"
+    },
+    "answer": "D",
+    "explanation": "Routers interconnect heterogeneous networks at the network layer."
+  },
+  {
+    "id": 6,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Both hosts and routers are TCP/IP protocol software. However, routers do not use protocol from all layers. The layer for which protocol software is not needed by a router is",
+    "options": {
+      "A": "Layer – 5 (Application)",
+      "B": "Layer – 1 (Physical)",
+      "C": "Layer – 3 (Internet)",
+      "D": "Layer – 2 (Network Interface)"
+    },
+    "answer": "A",
+    "explanation": "Routers forward packets using layers 1–3; they do not need application-layer (or transport) software for forwarding."
+  },
+  {
+    "id": 7,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "In multiuser database if two users wish to update the same record at the same time, they are prevented from doing so by",
+    "options": {
+      "A": "Jamming",
+      "B": "Password",
+      "C": "Documentation",
+      "D": "Record lock"
+    },
+    "answer": "D",
+    "explanation": "Record locking serialises concurrent updates to the same record."
+  },
+  {
+    "id": 8,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "A binary search tree is a binary tree :",
+    "options": {
+      "A": "All items in the left subtree are less than root",
+      "B": "All items in the right subtree are greater than or equal to the root",
+      "C": "Each subtree is itself a binary search tree",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "All three properties together define a BST."
+  },
+  {
+    "id": 9,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "What deletes the entire file except the file structure ?",
+    "options": {
+      "A": "ERASE",
+      "B": "DELETE",
+      "C": "ZAP",
+      "D": "PACK"
+    },
+    "answer": "C",
+    "explanation": "In dBASE, ZAP removes all records but keeps the file structure; DELETE only marks records and PACK removes marked ones."
+  },
+  {
+    "id": 10,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Which command is the fastest among the following ?",
+    "options": {
+      "A": "COPY TO <NEW FILE>",
+      "B": "COPY STRUCTURE TO <NEW FILE>",
+      "C": "COPY FILE <FILE 1> <FILE 2>",
+      "D": "COPY TO MFILE-DAT DELIMITED"
+    },
+    "answer": "C",
+    "explanation": "dBASE's COPY FILE copies the file byte-by-byte at OS level, which is fastest; COPY TO processes records."
+  },
+  {
+    "id": 11,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "B+ tree are preferred to binary tree in Database because",
+    "options": {
+      "A": "Disk capacity are greater than memory capacities",
+      "B": "Disk access is much slower than memory access",
+      "C": "Disk data transfer rates are much less than memory data transfer rate",
+      "D": "Disks are more reliable than memory"
+    },
+    "answer": "B",
+    "explanation": "Because disk access is slow, high-fanout B+ trees minimise the number of disk accesses (tree height)."
+  },
+  {
+    "id": 12,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "A Transaction Manager is which of the following ?",
+    "options": {
+      "A": "Maintains a log of transactions",
+      "B": "Maintains before and after database images",
+      "C": "Maintains appropriate concurrency control",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "The transaction manager handles logging, before/after images for recovery and concurrency control."
+  },
+  {
+    "id": 13,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Leaves of which of the following trees are at the same level ?",
+    "options": {
+      "A": "Binary tree",
+      "B": "B-tree",
+      "C": "AVL-tree",
+      "D": "Expression tree"
+    },
+    "answer": "B",
+    "explanation": "All leaves of a B-tree are at the same depth."
+  },
+  {
+    "id": 14,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Which of the following TCP/IP Internet protocol is diskless machine uses to obtain its IP address from a server ?",
+    "options": {
+      "A": "RAP",
+      "B": "RIP",
+      "C": "ARP",
+      "D": "X.25"
+    },
+    "answer": "A",
+    "explanation": "RARP (printed 'RAP') lets a diskless machine get its IP address from its MAC address."
+  },
+  {
+    "id": 15,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Decryption and encryption of data are the responsibility of which of the following layer ?",
+    "options": {
+      "A": "Physical layer",
+      "B": "Data Link layer",
+      "C": "Presentation layer",
+      "D": "Session layer"
+    },
+    "answer": "C",
+    "explanation": "The OSI presentation layer handles encryption, compression and translation."
+  },
+  {
+    "id": 16,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "In which circuit switching, delivery of data is delayed because data must be stored and retrieved from RAM ?",
+    "options": {
+      "A": "Space division",
+      "B": "Time division",
+      "C": "Virtual",
+      "D": "Packet"
+    },
+    "answer": "B",
+    "explanation": "Time-division switching (TSI) writes slots into RAM and reads them out in a new order, causing delay."
+  },
+  {
+    "id": 17,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "In which Routing Method do all the routers have a common database ?",
+    "options": {
+      "A": "Distance vector",
+      "B": "Link state",
+      "C": "Link vector",
+      "D": "Dijkestra method"
+    },
+    "answer": "B",
+    "explanation": "In link-state routing every router builds the same link-state database of the whole topology."
+  },
+  {
+    "id": 18,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Page Shift Keying (PSK) Method is used to modulate digital signal at 9600 bps using 16 level. Find the line signals and speed (i.e. modulation rate).",
+    "options": {
+      "A": "2400 bauds",
+      "B": "1200 bauds",
+      "C": "4800 bauds",
+      "D": "9600 bauds"
+    },
+    "answer": "A",
+    "explanation": "16 levels = 4 bits per symbol, so 9600/4 = 2400 baud. ('Page' is a misprint for 'Phase'.)"
+  },
+  {
+    "id": 19,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "The station to hub distance in which it is 2000 metres.",
+    "options": {
+      "A": "100 Base-Tx",
+      "B": "100 Base-Fx",
+      "C": "100 Base-T4",
+      "D": "100 Base-T1"
+    },
+    "answer": "B",
+    "explanation": "100BASE-FX (fibre) supports up to 2 km station-to-hub; the twisted-pair variants are limited to 100 m."
+  },
+  {
+    "id": 20,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Main aim of software engineering is to produce",
+    "options": {
+      "A": "program",
+      "B": "software",
+      "C": "within budget",
+      "D": "software within budget in the given schedule"
+    },
+    "answer": "D",
+    "explanation": "Software engineering aims at quality software delivered within budget and schedule."
+  },
+  {
+    "id": 21,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Key process areas of CMM level 4 are also classified by a process which is",
+    "options": {
+      "A": "CMM level 2",
+      "B": "CMM level 3",
+      "C": "CMM level 5",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "Doubtful question with no clear basis: KPAs are cumulative, so higher levels build on those of lower levels. (D) is chosen as the best guess; verify with an official key."
+  },
+  {
+    "id": 22,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Validation means",
+    "options": {
+      "A": "are we building the product right",
+      "B": "are we building the right product",
+      "C": "verification of fields",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "Validation: 'Are we building the right product?' Verification: 'Are we building the product right?'"
+  },
+  {
+    "id": 23,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "If a process is under statistical control, then it is",
+    "options": {
+      "A": "Maintainable",
+      "B": "Measurable",
+      "C": "Predictable",
+      "D": "Verifiable"
+    },
+    "answer": "C",
+    "explanation": "A process under statistical control has stable, predictable variation."
+  },
+  {
+    "id": 24,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "In a function oriented design, we",
+    "options": {
+      "A": "minimize cohesion and maximize coupling",
+      "B": "maximize cohesion and minimize coupling",
+      "C": "maximize cohesion and maximize coupling",
+      "D": "minimize cohesion and minimize coupling"
+    },
+    "answer": "B",
+    "explanation": "Good modular design has high cohesion and low coupling."
+  },
+  {
+    "id": 25,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Which of the following metric does not depend on the programming language used ?",
+    "options": {
+      "A": "Line of code",
+      "B": "Function count",
+      "C": "Member of token",
+      "D": "All of the above"
+    },
+    "answer": "B",
+    "explanation": "Function points (function count) are language independent; LOC and token counts are not."
+  },
+  {
+    "id": 26,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "A / B⁺ tree index is to be built on the name attribute of the relation STUDENT. Assume that all students names are of length 8 bytes, disk block are of size 512 bytes and index pointers are of size 4 bytes. Given this scenario what would be the best choice of the degree (i.e. the number of pointers per node) of the B⁺ tree ?",
+    "options": {
+      "A": "16",
+      "B": "42",
+      "C": "43",
+      "D": "44"
+    },
+    "answer": "C",
+    "explanation": "With n pointers and n−1 keys per node: 4n + 8(n − 1) ≤ 512, so 12n ≤ 520 and n = 43."
+  },
+  {
+    "id": 27,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "The Inorder traversal of the tree will yield a sorted listing of elements of tree in",
+    "options": {
+      "A": "Binary tree",
+      "B": "Binary search tree",
+      "C": "Heaps",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "An inorder traversal of a BST visits keys in ascending order."
+  },
+  {
+    "id": 28,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Mobile IP provides two basic functions.",
+    "options": {
+      "A": "Route discovery and registration",
+      "B": "Agent discovery and registration",
+      "C": "IP binding and registration",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "Mobile IP's two basic functions are agent discovery and registration (followed by tunnelling)."
+  },
+  {
+    "id": 29,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Pre-emptive scheduling is the strategy of temporarily suspending a gunning process",
+    "options": {
+      "A": "before the CPU time slice expires",
+      "B": "to allow starving processes to run",
+      "C": "when it requests I/O",
+      "D": "to avoid collision"
+    },
+    "answer": "A",
+    "explanation": "Pre-emption suspends a running process (printed 'gunning') before it finishes its CPU burst, e.g. when its time slice expires or a higher-priority process arrives. (A) is the key's choice."
+  },
+  {
+    "id": 30,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "In round robin CPU scheduling as time quantum is increased the average turn around time",
+    "options": {
+      "A": "increases",
+      "B": "decreases",
+      "C": "remains constant",
+      "D": "varies irregularly"
+    },
+    "answer": "D",
+    "explanation": "Silberschatz shows that average turnaround time does not necessarily improve with a larger quantum; it varies irregularly."
+  },
+  {
+    "id": 31,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Resources are allocated to the process on non-sharable basis is",
+    "options": {
+      "A": "mutual exclusion",
+      "B": "hold and wait",
+      "C": "no pre-emption",
+      "D": "circular wait"
+    },
+    "answer": "A",
+    "explanation": "Non-sharable resource allocation is the mutual exclusion condition for deadlock."
+  },
+  {
+    "id": 32,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Cached and interleaved memories are ways of speeding up memory access between CPU's and slower RAM. Which memory models are best suited (i.e. improves the performance most) for which programs ?\n(i) Cached memory is best suited for small loops.\n(ii) Interleaved memory is best suited for small loops\n(iii) Interleaved memory is best suited for large sequential code.\n(iv) Cached memory is best suited for large sequential code.",
+    "options": {
+      "A": "(i) and (ii) are true.",
+      "B": "(i) and (iii) are true.",
+      "C": "(iv) and (ii) are true.",
+      "D": "(iv) and (iii) are true."
+    },
+    "answer": "B",
+    "explanation": "Caches exploit the temporal locality of small loops; interleaving speeds up long sequential accesses."
+  },
+  {
+    "id": 33,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Consider the following page trace :\n4,3, 2, 1, 4, 3, 5, 4, 3, 2, 1, 5\nPercentage of page fault that would occur if FIFO page replacement algorithm is used with number of frames for the JOB m = 4 will be",
+    "options": {
+      "A": "8",
+      "B": "9",
+      "C": "10",
+      "D": "12"
+    },
+    "answer": "C",
+    "explanation": "FIFO with 4 frames: 4, 3, 2, 1 fault; 4, 3 hit; then 5, 4, 3, 2, 1, 5 all fault, 10 faults in all. (The options give the number of faults; as a percentage this is 10/12 ≈ 83%. This is the Belady's anomaly example: 3 frames give 9.)"
+  },
+  {
+    "id": 34,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Check sum used along with each packet computes the sum of the data, where data is treated as a sequence of",
+    "options": {
+      "A": "Integer",
+      "B": "Character",
+      "C": "Real numbers",
+      "D": "Bits"
+    },
+    "answer": "A",
+    "explanation": "The Internet checksum treats the data as a sequence of (16-bit) integers and sums them in one's complement."
+  },
+  {
+    "id": 35,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "If an integer needs two bytes of storage, then the maximum value of a signed integer is",
+    "options": {
+      "A": "2¹⁶ – 1",
+      "B": "2¹⁵ – 1",
+      "C": "2¹⁶",
+      "D": "2¹⁵"
+    },
+    "answer": "B",
+    "explanation": "A 16-bit two's-complement range is −2¹⁵ to 2¹⁵ − 1 = 32767."
+  },
+  {
+    "id": 36,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Which of the following logic families is well suited for high-speed operations ?",
+    "options": {
+      "A": "TTL",
+      "B": "ECL",
+      "C": "MOS",
+      "D": "CMOS"
+    },
+    "answer": "B",
+    "explanation": "ECL is non-saturating and the fastest of these logic families."
+  },
+  {
+    "id": 37,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Interrupts which are initiated by an instruction are",
+    "options": {
+      "A": "Internal",
+      "B": "External",
+      "C": "Hardware",
+      "D": "Software"
+    },
+    "answer": "D",
+    "explanation": "Software interrupts are generated by executing an instruction (e.g. INT, trap)."
+  },
+  {
+    "id": 38,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "printf(“%c”, 100);",
+    "options": {
+      "A": "prints 100",
+      "B": "prints ASCII equivalent of 100",
+      "C": "prints garbage",
+      "D": "none of the above"
+    },
+    "answer": "B",
+    "explanation": "%c prints the character with code 100, i.e. 'd'."
+  },
+  {
+    "id": 39,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "For the transmission of the signal, Bluetooth wireless technology uses",
+    "options": {
+      "A": "time division multiplexing",
+      "B": "frequency division multiplexing",
+      "C": "time division duplex",
+      "D": "frequency division duplex"
+    },
+    "answer": "C",
+    "explanation": "Bluetooth uses frequency hopping with time-division duplex (master and slave transmit in alternate slots)."
+  },
+  {
+    "id": 40,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Consider the following statements :\nI. Recursive languages are closed under complementation.\nII. Recursively enumerable languages are closed under union.\nIII. Recursively enumerable languages are closed under complementation.\nWhich of the above statements are true ?",
+    "options": {
+      "A": "I only",
+      "B": "I and II",
+      "C": "I and III",
+      "D": "II and III"
+    },
+    "answer": "B",
+    "explanation": "Recursive languages are closed under complement; RE languages are closed under union but not under complement."
+  },
+  {
+    "id": 41,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "What is the routing algorithm used by RIP and IGRP ?",
+    "options": {
+      "A": "OSPF",
+      "B": "Link-state",
+      "C": "Dynamic",
+      "D": "Dijkestra vector"
+    },
+    "answer": "C",
+    "explanation": "RIP and IGRP use dynamic distance-vector routing. Distance vector is not offered, so 'Dynamic' is the best fit."
+  },
+  {
+    "id": 42,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Identify the incorrect statement :",
+    "options": {
+      "A": "The overall strategy drives the E-Commerce data warehousing strategy.",
+      "B": "Data warehousing in an E-Commerce environment should be done in a classical manner.",
+      "C": "E-Commerce opens up an entirely new world of web server.",
+      "D": "E-Commerce security threats can be grouped into three major categories."
+    },
+    "answer": "B",
+    "explanation": "E-commerce data warehousing must handle web/clickstream data and cannot be done in the classical manner."
+  },
+  {
+    "id": 43,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Reliability of software is directly dependent on",
+    "options": {
+      "A": "quality of the design",
+      "B": "number of errors present",
+      "C": "software engineers experience",
+      "D": "user requirement"
+    },
+    "answer": "B",
+    "explanation": "Reliability (failure-free operation) depends directly on the number of faults present."
+  },
+  {
+    "id": 44,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "______ is not an E-Commerce application.",
+    "options": {
+      "A": "House banking",
+      "B": "Buying stocks",
+      "C": "Conducting an auction",
+      "D": "Evaluating an employee"
+    },
+    "answer": "D",
+    "explanation": "Employee evaluation is an internal HR task, not e-commerce."
+  },
+  {
+    "id": 45,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "______ is a satellite based tracking system that enables the determination of person's position.",
+    "options": {
+      "A": "Bluetooth",
+      "B": "WAP",
+      "C": "Short Message Service",
+      "D": "Global Positioning System"
+    },
+    "answer": "D",
+    "explanation": "GPS uses satellites to determine position."
+  },
+  {
+    "id": 46,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "A complete microcomputer system consists of",
+    "options": {
+      "A": "Microprocessor",
+      "B": "Memory",
+      "C": "Peripheral equipment",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "A microcomputer includes the CPU (microprocessor), memory and I/O peripherals."
+  },
+  {
+    "id": 47,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Where does a computer add and compare data ?",
+    "options": {
+      "A": "Hard disk",
+      "B": "Floppy disk",
+      "C": "CPU chip",
+      "D": "Memory chip"
+    },
+    "answer": "C",
+    "explanation": "The ALU in the CPU performs arithmetic and comparisons."
+  },
+  {
+    "id": 48,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Pipelining strategy is called implement",
+    "options": {
+      "A": "instruction execution",
+      "B": "instruction prefetch",
+      "C": "instruction decoding",
+      "D": "instruction manipulation"
+    },
+    "answer": "B",
+    "explanation": "Pipelining overlaps fetching the next instruction with executing the current one (instruction prefetch)."
+  },
+  {
+    "id": 49,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "Which of the following data structure is linear type ?",
+    "options": {
+      "A": "Strings",
+      "B": "Lists",
+      "C": "Queues",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "Strings, lists and queues are all linear data structures."
+  },
+  {
+    "id": 50,
+    "source_file": "J-87-12 Comp Sci",
+    "question": "To represent hierarchical relationship between elements, which data structure is suitable ?",
+    "options": {
+      "A": "Dequeue",
+      "B": "Priority",
+      "C": "Tree",
+      "D": "All of the above"
+    },
+    "answer": "C",
+    "explanation": "Trees represent hierarchical relationships."
+  }
+]

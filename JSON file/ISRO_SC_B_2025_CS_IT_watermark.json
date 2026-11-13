@@ -1,0 +1,1042 @@
+[
+  {
+    "id": 1,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following sorting technique was applied for an input array {10, 5, 16, 2, 8, 9} which gives array {2, 5, 10, 16, 8, 9} after three iterations?",
+    "options": {
+      "A": "Bubble sort",
+      "B": "Selection sort",
+      "C": "Insertion sort",
+      "D": "All of the above"
+    },
+    "answer": "C",
+    "explanation": "Insertion sort: after pass 1 the array is 5,10,16,…; after pass 2 it is 5,10,16 (16 already in place); after pass 3 it is 2,5,10,16,8,9. Selection sort would give 2,5,8,… after 3 passes, and bubble sort would put the largest values at the end."
+  },
+  {
+    "id": 2,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "How many keys are needed for encrypted communication among 16 persons using AES encryption assuming unique key is used between any two persons?",
+    "options": {
+      "A": "120 keys",
+      "B": "256 keys",
+      "C": "32 keys",
+      "D": "2^16 keys"
+    },
+    "answer": "A",
+    "explanation": "Symmetric AES needs one key per pair: C(16,2) = 16×15/2 = 120."
+  },
+  {
+    "id": 3,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following does not use key(s)?",
+    "options": {
+      "A": "Symmetric Ciphers",
+      "B": "Generation of Message Digest",
+      "C": "Generation of Message Authentication Code",
+      "D": "Key exchange algorithms"
+    },
+    "answer": "B",
+    "explanation": "A plain message digest (a hash such as SHA-256) uses no key. A MAC does use a secret key."
+  },
+  {
+    "id": 4,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following algorithms is used for Reinforcement learning?",
+    "options": {
+      "A": "Naive Bayes",
+      "B": "Principal Component Analysis",
+      "C": "Fast Forest Quantile",
+      "D": "Q-learning"
+    },
+    "answer": "D",
+    "explanation": "Q-learning is a model-free reinforcement-learning algorithm."
+  },
+  {
+    "id": 5,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following algorithms is used for search/optimization in AI?",
+    "options": {
+      "A": "Greedy Algorithm",
+      "B": "Recursive Algorithm",
+      "C": "Hill Climbing Algorithm",
+      "D": "Hot Potato Algorithm"
+    },
+    "answer": "C",
+    "explanation": "Hill climbing is a local search/optimization technique in AI."
+  },
+  {
+    "id": 6,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "What does \"elasticity\" in cloud computing refer to?",
+    "options": {
+      "A": "Ability to scale up and scale down of compute resources",
+      "B": "Parallel execution of jobs",
+      "C": "High availability of systems",
+      "D": "Minimum response time"
+    },
+    "answer": "A",
+    "explanation": "Elasticity means provisioning and releasing resources automatically as demand changes."
+  },
+  {
+    "id": 7,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "For the same input string, which of the following options is true in the case of ambiguous grammar?\n(i) two different parse trees\n(ii) two leftmost derivations\n(iii) two rightmost derivations\n(iv) leftmost and rightmost derivations are different\nWhich one is correct?",
+    "options": {
+      "A": "(i), (ii), (iii) are true; (iv) is false",
+      "B": "(i) is true; (ii), (iii), (iv) are false",
+      "C": "(i), (iv) are true; (ii), (iii) are false",
+      "D": "(i) is false; (ii),(iii),(iv) are true"
+    },
+    "answer": "A",
+    "explanation": "An ambiguous string has two parse trees, and so two leftmost and two rightmost derivations. A leftmost and a rightmost derivation differing is normal even for unambiguous grammars, so (iv) does not characterise ambiguity."
+  },
+  {
+    "id": 8,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following strings will correctly match the Grammar G represented by production rules given?\nS → A | B\nA → aAb | c\nB → bBd | e",
+    "options": {
+      "A": "accbb",
+      "B": "aacbb",
+      "C": "abaed",
+      "D": "aaebb"
+    },
+    "answer": "B",
+    "explanation": "A generates aⁿcbⁿ, so aacbb (n=2) matches. B generates bⁿedⁿ."
+  },
+  {
+    "id": 9,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Computer A is assigned with IP address 10.0.0.126 and computer B is assigned with IP address 10.0.0.131. Network mask is 255.255.255.192 in both cases. Which of the following statements is true?",
+    "options": {
+      "A": "10.0.0.x addresses have to be allocated by IANA and cannot be used by hosts",
+      "B": "The given network mask cannot be assigned to class A IP addresses",
+      "C": "A router will be required to communicate between A and B",
+      "D": "Computer A and B form part of a multicast group"
+    },
+    "answer": "C",
+    "explanation": "The /26 mask splits the last octet into blocks of 64. A (126) is in 64–127 and B (131) is in 128–191. They are on different subnets, so a router is needed."
+  },
+  {
+    "id": 10,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following is a characteristic of NoSQL databases?",
+    "options": {
+      "A": "They enforce a strict schema",
+      "B": "They support only relational data model",
+      "C": "They are queried using SQL",
+      "D": "They support flexible schema"
+    },
+    "answer": "D",
+    "explanation": "NoSQL databases are schema-less or have a flexible schema."
+  },
+  {
+    "id": 11,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Consider R = (A, B, C, D, E, P, G) and the following Functional Dependencies in R:\nAB→CD, DE→P, C→E, P→C, B→G\nWhich one of the following is true?",
+    "options": {
+      "A": "R is in BCNF",
+      "B": "R is in 3NF, but not in BCNF",
+      "C": "R is in 2NF, but not in 3NF",
+      "D": "R is not in 2NF"
+    },
+    "answer": "D",
+    "explanation": "AB is the key (AB⁺ = all attributes). B→G is a partial dependency of a non-prime attribute on part of the key, so R is not in 2NF. (GATE 2019)"
+  },
+  {
+    "id": 12,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "If x and y are two decimal numbers such as (0.11101)2 = (0.90xy5)10, what are the values of x and y?",
+    "options": {
+      "A": "x = 2, y = 6",
+      "B": "x = 6, y = 2",
+      "C": "x = 9, y = 8",
+      "D": "none of the above"
+    },
+    "answer": "B",
+    "explanation": "0.11101₂ = 0.5 + 0.25 + 0.125 + 0.03125 = 0.90625, so x = 6 and y = 2."
+  },
+  {
+    "id": 13,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "How many 3 to 8 line decoders are required for a 1 of 32 decoder?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "4",
+      "D": "8"
+    },
+    "answer": "C",
+    "explanation": "32/8 = 4 decoders (their enables are driven by the two high-order bits, typically through a 2-to-4 decoder)."
+  },
+  {
+    "id": 14,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Let A = (11111010)2 and B = (00001010)2 represent numbers in 2's complement and stored as 1 byte. The product of A and B in 2's complement is",
+    "options": {
+      "A": "(1001 1100)2",
+      "B": "(1010 0101)2",
+      "C": "(1100 0100)2",
+      "D": "(1101 0101)2"
+    },
+    "answer": "C",
+    "explanation": "A = −6 and B = 10, so the product is −60. +60 = 00111100, and its 2's complement is 11000100. (GATE 2004)"
+  },
+  {
+    "id": 15,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Let the scenario 'If the vehicle is powered ON and if power is available to the avionics package, then the communication to the vehicle will be established' be represented with statements\np = power is available to avionics package;\nq = vehicle is powered ON;\nr = communication to the vehicle will be established\nThe logic form (p ∧ q) → r is equivalent to",
+    "options": {
+      "A": "¬r → (p ∧ q)",
+      "B": "p → (q ∧ r)",
+      "C": "¬p ∨ ¬q ∨ r",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "(p∧q)→r ≡ ¬(p∧q) ∨ r ≡ ¬p ∨ ¬q ∨ r."
+  },
+  {
+    "id": 16,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "How many subsets of {1, 2, 3, 4...12} can be formed such that no two elements in the subset are consecutive?",
+    "options": {
+      "A": "144",
+      "B": "377",
+      "C": "610",
+      "D": "89"
+    },
+    "answer": "B",
+    "explanation": "The count of subsets of {1..n} with no two consecutive elements is F(n+2). For n=12 that is F(14) = 377."
+  },
+  {
+    "id": 17,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "If A is a set with m elements and n is a positive integer, the number of different elements in Aⁿ is :",
+    "options": {
+      "A": "m×n",
+      "B": "m×m",
+      "C": "n^m",
+      "D": "m^n"
+    },
+    "answer": "D",
+    "explanation": "Aⁿ is the set of n-tuples, each entry chosen from m elements, so |Aⁿ| = mⁿ."
+  },
+  {
+    "id": 18,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "For the following list of processes, the average turnaround time and average waiting time using FCFS algorithm is :\nProcess | Arrival Time (ms) | Execution Time (ms)\nP1 | 6 | 24\nP2 | 0 | 3\nP3 | 3 | 3",
+    "options": {
+      "A": "Average Turnaround time 30 ms and Average Waiting Time 4.5 ms",
+      "B": "Average Turnaround time 13 ms and Average Waiting Time 3 ms",
+      "C": "Average Turnaround time 10 ms and Average Waiting Time 0 ms",
+      "D": "Average Turnaround time 24 ms and Average Waiting Time 0 ms"
+    },
+    "answer": "C",
+    "explanation": "Run order by arrival: P2 0–3, P3 3–6, P1 6–30. Turnaround times are 3, 3, 24 (average 10). No process waits, so the average waiting time is 0."
+  },
+  {
+    "id": 19,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "As per software engineering, which of the following order is correct for stages of Risk Management process of a software project?",
+    "options": {
+      "A": "Risk identification → Risk planning → Risk analysis → Risk monitoring",
+      "B": "Risk planning → Risk identification → Risk analysis → Risk monitoring",
+      "C": "Risk analysis → Risk identification → Risk planning → Risk monitoring",
+      "D": "Risk identification → Risk analysis → Risk planning → Risk monitoring"
+    },
+    "answer": "D",
+    "explanation": "Sommerville's order is identification, then analysis, then planning, then monitoring."
+  },
+  {
+    "id": 20,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Considering, X is a function defined in a software project, following statements are made\n(i) Fan-in is a measure of the number of functions that call the function, X\n(ii) Fan-out is the number of functions which are called by the function, X\n(iii) High value of Fan-in means that X is tightly coupled to the rest of design of software\n(iv) High value of Fan-out means that overall complexity of X may be high\nWhich of the following options is correct for the above-mentioned statements?",
+    "options": {
+      "A": "Only (i) and (ii) are true",
+      "B": "Only (i) and (iii) are true",
+      "C": "Only (ii) and (iv) are true",
+      "D": "(i), (ii), (iii) and (iv) are true"
+    },
+    "answer": "D",
+    "explanation": "All four statements are true, as given in Sommerville: high fan-in means tight coupling with wide knock-on effects of change, and high fan-out suggests high complexity."
+  },
+  {
+    "id": 21,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "When a tree given in the diagram is traversed inorder, the order would be\n[Figure: binary tree with root a; a's children b (left) and c (right); b's children d and e; d's left child h; e's children i and j; c's children f and g; g's child k]",
+    "options": {
+      "A": "a, b, d, h, e, i, j, c, f, g, k",
+      "B": "h, d, i, j, e, b, f, k, g, c, a",
+      "C": "h, d, b, i, e, j, a, f, c, k, g",
+      "D": "h, d, b, e, i, j, a, f, c, k, g"
+    },
+    "answer": "C",
+    "explanation": "Inorder visits left, root, right: h d b i e j a f c k g (k is drawn as g's left child). Option B is the postorder."
+  },
+  {
+    "id": 22,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Huffman coding algorithm works on the principle of",
+    "options": {
+      "A": "Randomization of symbols",
+      "B": "Key based portioning of symbols",
+      "C": "Hashing of symbols",
+      "D": "Frequencies of input symbols"
+    },
+    "answer": "D",
+    "explanation": "Huffman coding builds its prefix code from symbol frequencies: frequent symbols get shorter codes."
+  },
+  {
+    "id": 23,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Match the following in the context of Information Security.\n(i) Non-repudiation  (P) Protection of data from unauthorised disclosure\n(ii) Data Integrity  (Q) Prevention of unauthorised use of a resource\n(iii) Data Confidentiality  (R) Protection against denial by one of the entities involved in a communication having participated in all or part of communication\n(iv) Access Control  (S) Assurance that data arrived are exactly as sent by authorised entity",
+    "options": {
+      "A": "(i) - (R), (ii) - (P), (iii) - (Q), (iv) - (S)",
+      "B": "(i) - (R), (ii) - (S), (iii) - (P), (iv) - (Q)",
+      "C": "(i) - (P), (ii) - (R), (iii) - (S), (iv) - (Q)",
+      "D": "(i) - (R), (ii) - (Q), (iii) - (P), (iv) - (S)"
+    },
+    "answer": "B",
+    "explanation": "Non-repudiation matches R, integrity matches S, confidentiality matches P, and access control matches Q (X.800 definitions)."
+  },
+  {
+    "id": 24,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "With respect to hypervisors, following statements are given below:\n(P) Runs on host machine physical hardware\n(Q) Hosted hypervisor\n(R) Runs on the operating system of physical host machine\n(S) Bare metal hypervisor\nWhich of the following is correct match?",
+    "options": {
+      "A": "Type-1 Hypervisor : (P) and (Q), Type-2 Hypervisor : (R) and (S)",
+      "B": "Type-1 Hypervisor : (P) and (S), Type-2 Hypervisor : (Q) and (R)",
+      "C": "Type-1 Hypervisor : (R) and (S), Type-2 Hypervisor : (P) and (Q)",
+      "D": "Type-1 Hypervisor : (R) and (Q), Type-2 Hypervisor : (P) and (S)"
+    },
+    "answer": "B",
+    "explanation": "Type-1 is bare-metal and runs on the hardware. Type-2 is hosted and runs on a host OS."
+  },
+  {
+    "id": 25,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following is not a characteristic of Big Data?",
+    "options": {
+      "A": "Velocity",
+      "B": "Visualisation",
+      "C": "Volume",
+      "D": "Variety"
+    },
+    "answer": "B",
+    "explanation": "The classic 3 Vs are Volume, Velocity and Variety. Visualisation is not a defining characteristic."
+  },
+  {
+    "id": 26,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "What is the primary purpose of Hadoop Distributed File System (HDFS) in Big Data storage?",
+    "options": {
+      "A": "To compress files",
+      "B": "To store in-memory data",
+      "C": "To store relational data",
+      "D": "To store large files across multiple machines"
+    },
+    "answer": "D",
+    "explanation": "HDFS stores very large files in blocks spread and replicated across a cluster."
+  },
+  {
+    "id": 27,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Consider following C++ snippet, which allocates memory?\nint *ptr;\nptr = new int [4];\nWhich of the following statements may make the program crash when executed subsequently?",
+    "options": {
+      "A": "ptr++;",
+      "B": "ptr += 3;",
+      "C": "ptr[4] = 0x16;",
+      "D": "ptr = null;"
+    },
+    "answer": "C",
+    "explanation": "ptr[4] writes past the 4-element array (valid indices are 0–3). This is undefined behaviour and may crash. Moving the pointer, or setting it to null, does not access memory."
+  },
+  {
+    "id": 28,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "While troubleshooting Internet access problem reported by a user, a computer technician finds that the default gateway setting is wrong. Which layer of OSI model is associated with the cause of the problem experienced by the user?",
+    "options": {
+      "A": "Layer 2",
+      "B": "Layer 5",
+      "C": "Layer 3",
+      "D": "Layer 4"
+    },
+    "answer": "C",
+    "explanation": "The default gateway is an IP routing setting, which belongs to the network layer (layer 3)."
+  },
+  {
+    "id": 29,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following statement is true about database views?",
+    "options": {
+      "A": "Views always store a duplicate copy of the data",
+      "B": "Views can be used to restrict access to sensitive columns",
+      "C": "Views cannot be queried like normal database tables",
+      "D": "Views cannot be updated under any condition"
+    },
+    "answer": "B",
+    "explanation": "A view can expose only some columns or rows, which hides sensitive data. Views are virtual, can be queried, and simple views are updatable."
+  },
+  {
+    "id": 30,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Assume a one-to-many relationship from table named \"authors\" to the table named \"books\". Where should the foreign key reside in an optimal design for this relationship?",
+    "options": {
+      "A": "In the \"books\" table",
+      "B": "In the \"authors\" table",
+      "C": "In both the tables",
+      "D": "In a separate linking table"
+    },
+    "answer": "A",
+    "explanation": "In a 1:N relationship the foreign key goes on the 'many' side, so books stores author_id."
+  },
+  {
+    "id": 31,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "The given Boolean expression is : X'Y'Z' + X'YZ'\nWhich of the following represents the Karnaugh map for the above expression?",
+    "options": {
+      "A": "K-map (rows X'Y', X'Y, XY, XY'; columns Z', Z): X'Y' = 1 0; X'Y = 1 0; XY = 0 0; XY' = 0 0",
+      "B": "K-map (rows X'Y', X'Y, XY, XY'; columns Z, Z'): X'Y' = 1 0; X'Y = 1 0; XY = 0 0; XY' = 0 0",
+      "C": "K-map (rows X', X; columns Y'Z', Y'Z, YZ, YZ'): X' = 0 0 1 0; X = 1 0 0 0",
+      "D": "K-map (rows X', X; columns Y'Z', Y'Z, YZ, YZ'): X' = 0 1 1 0; X = 0 0 0 0"
+    },
+    "answer": "A",
+    "explanation": "The minterms are X'Y'Z' (000) and X'YZ' (010), so there are 1s in the Z' column for rows X'Y' and X'Y. Only map (a) shows this. (Options are K-map figures, transcribed here as text.)"
+  },
+  {
+    "id": 32,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "How many four letter words can be formed using the letters of the word 'GAGANYAAN' with no repetition of letter?",
+    "options": {
+      "A": "3024",
+      "B": "192",
+      "C": "64",
+      "D": "24"
+    },
+    "answer": "D",
+    "explanation": "The distinct letters are G, A, N, Y (4 letters). Four-letter words with no repeated letter: 4! = 24."
+  },
+  {
+    "id": 33,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "A situation where several processes access and manipulate the same data concurrently and the outcome of the execution depends on the particular order in which access takes place is called",
+    "options": {
+      "A": "Stack overflow",
+      "B": "Aging",
+      "C": "Race Condition",
+      "D": "Buffer overflow"
+    },
+    "answer": "C",
+    "explanation": "This is the definition of a race condition."
+  },
+  {
+    "id": 34,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "In the context of Operating system process scheduling, if W represents Wait Time, R represents Run Time, T represents Turnaround time, S represents Response time, then which of the following is correct option with respect to given diagram?\n[Figure: timeline Arrival → Execution → First Output → Finish; Time1 spans Arrival to Execution, Time2 spans Execution to Finish, Time3 spans Arrival to First Output, Time4 spans Arrival to Finish]",
+    "options": {
+      "A": "Time1:W, Time2:R, Time3:T, Time4:S",
+      "B": "Time1:S, Time2:W, Time3:R, Time4:T",
+      "C": "Time1:W, Time2:R, Time3:S, Time4:T",
+      "D": "Time1:R, Time2:S, Time3:W, Time4:T"
+    },
+    "answer": "C",
+    "explanation": "Arrival to start is wait time. Start to finish is run time. Arrival to first output is response time. Arrival to finish is turnaround time."
+  },
+  {
+    "id": 35,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Consider the deterministic finite-state automaton (DFA) below over the alphabet {a,b}. The state with a small incoming arrow is the initial state, while a double circle state denotes a final state.\n[Figure: initial non-final state q0; q0 –a→ q1 (final, self-loop on b); q0 –b→ q2 (final, self-loop on a,b); q1 –a→ q2]\nThe number of states in the MINIMAL DFA for the language accepted by this DFA is:",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "B",
+    "explanation": "Every non-empty string is accepted and ε is rejected, so the language is (a+b)⁺. Minimal DFA: one non-final start state plus one final state = 2. (GATE 2015)"
+  },
+  {
+    "id": 36,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Consider the context-free grammar G below. Here S is the starting non-terminal symbol, while a and b are terminal symbols.\nS → aSb | T\nT → bT | b\nThe language generated by G is:",
+    "options": {
+      "A": "{a^m b^n : 0 ≤ m < n}",
+      "B": "{a^m b^n : 0 < m < n}",
+      "C": "{a^m b^n : 0 < n ≤ m}",
+      "D": "{a^n b^n : 0 ≤ n}"
+    },
+    "answer": "A",
+    "explanation": "S wraps m a's and m b's around T, and T gives at least one b. So n > m ≥ 0."
+  },
+  {
+    "id": 37,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Match the following table showing algorithm and its application.\n(P) A person wants to visit from one place to another place in shortest period — (i) Floyd's algorithm\n(Q) A person wants to visit M places in shortest period — (ii) Multi-stage graph algorithm\n(R) All N persons wants to visit all M places in shortest period — (iii) Dijkstra's algorithm",
+    "options": {
+      "A": "P – (ii), Q – (iii), R – (i)",
+      "B": "P – (i), Q – (iii), R – (ii)",
+      "C": "P – (ii), Q – (i), R – (iii)",
+      "D": "P – (i), Q – (ii), R – (iii)"
+    },
+    "answer": "A",
+    "explanation": "A single source-to-destination path is solved by the multistage-graph method. One source to many destinations is single-source shortest paths (Dijkstra). All persons to all places is all-pairs shortest paths (Floyd). This gives P-ii, Q-iii, R-i."
+  },
+  {
+    "id": 38,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following is true about Greedy algorithm?",
+    "options": {
+      "A": "does not make any optimization",
+      "B": "makes local optimal decisions based on the selected criterion",
+      "C": "requires exhaustive search of all possible solutions",
+      "D": "is obvious in its correctness"
+    },
+    "answer": "B",
+    "explanation": "At each step a greedy algorithm makes the locally optimal choice according to a selection criterion."
+  },
+  {
+    "id": 39,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "In which of the following cases, a user is persuaded to reveal personal data by hackers/cyber criminals?",
+    "options": {
+      "A": "Eavesdropping attack",
+      "B": "SQL Injection attack",
+      "C": "Phishing",
+      "D": "Website Defacement"
+    },
+    "answer": "C",
+    "explanation": "Phishing tricks users into giving away personal data."
+  },
+  {
+    "id": 40,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following protocols/applications does not facilitate data encryption when data is sent over computer network using that protocol/application?",
+    "options": {
+      "A": "HTTPS",
+      "B": "SNMPv3 (Version 3)",
+      "C": "DNS using DNSSEC",
+      "D": "SFTP"
+    },
+    "answer": "C",
+    "explanation": "DNSSEC adds authentication and integrity (signatures) but does not encrypt. HTTPS, SNMPv3 (privacy mode) and SFTP all encrypt."
+  },
+  {
+    "id": 41,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "If an encryption key is n bits long, then how many distinct encryption keys are possible?",
+    "options": {
+      "A": "2^n",
+      "B": "2^n – 1",
+      "C": "(n×(n+1))/2",
+      "D": "2n"
+    },
+    "answer": "A",
+    "explanation": "Each of the n bits can be 0 or 1, giving 2ⁿ keys."
+  },
+  {
+    "id": 42,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following can be protected using a firewall?",
+    "options": {
+      "A": "Dumpster Diving",
+      "B": "Physical Theft",
+      "C": "Shoulder Surfing",
+      "D": "Network Scanning"
+    },
+    "answer": "D",
+    "explanation": "A firewall can block network scanning (probe traffic). The other threats are physical or social."
+  },
+  {
+    "id": 43,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following is a Big Data tool employed for real-time stream processing?",
+    "options": {
+      "A": "Hadoop",
+      "B": "Apache Flink",
+      "C": "Splunk",
+      "D": "ERDPlus"
+    },
+    "answer": "B",
+    "explanation": "Apache Flink is a stream-processing engine. Hadoop MapReduce is for batch processing."
+  },
+  {
+    "id": 44,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following is used for storing unstructured data in Big Data environment?",
+    "options": {
+      "A": "In-memory database",
+      "B": "Relational database",
+      "C": "NOSQL database",
+      "D": "SQL database"
+    },
+    "answer": "C",
+    "explanation": "NoSQL stores (document, key-value, column) handle unstructured data."
+  },
+  {
+    "id": 45,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Match the following in the context of Big Data :\n(i) Structured data  (P) Text files, Images, Videos\n(ii) Semi-structured data  (Q) Fixed format data\n(iii) Unstructured data  (R) XML, JSON",
+    "options": {
+      "A": "(i)-(Q), (ii)-(R), (iii)-(P)",
+      "B": "(i)-(Q), (ii)-(P), (iii)-(R)",
+      "C": "(i)-(P), (ii)-(R), (iii)-(Q)",
+      "D": "(i)-(R), (ii)-(Q), (iii)-(P)"
+    },
+    "answer": "A",
+    "explanation": "Structured data has a fixed format, semi-structured data is XML/JSON, and unstructured data is text, images and video."
+  },
+  {
+    "id": 46,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "A company wants to transmit data between its two offices with full confidentiality and integrity. Private IP addresses used by system inside the company should also be confidential. Which of the following IPSec configuration will meet the requirements?",
+    "options": {
+      "A": "IPSec using AH in Tunnel mode",
+      "B": "IPSec using ESP in Transport mode",
+      "C": "IPSec using ESP in Tunnel mode",
+      "D": "IPSec using AH in Transport mode"
+    },
+    "answer": "C",
+    "explanation": "ESP gives confidentiality and integrity. Tunnel mode encrypts the whole original packet, including the private IP header."
+  },
+  {
+    "id": 47,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "A communication system is designed using the following three 5 bit words as the only valid codewords and uses error correction using hamming distance.\nCodeword A: 00000\nCodeword B: 01110\nCodeword C: 11000\nDuring operation, receiver gets the word 01000. What would the system conclude?",
+    "options": {
+      "A": "It will correct to codeword A",
+      "B": "It will correct to codeword B",
+      "C": "It will correct to codeword C",
+      "D": "It will be unable to correct the error"
+    },
+    "answer": "D",
+    "explanation": "01000 is at distance 1 from A, 2 from B and 1 from C. A and C tie, so it cannot be corrected (the code's minimum distance is 2, so it can only detect single errors)."
+  },
+  {
+    "id": 48,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Consider a table users(userid, country, city, street) with 50 million users. DBA creates the following index for the table\nCREATE INDEX myindex ON users(country, city, street)\nFor which of the following queries will this index be least useful?",
+    "options": {
+      "A": "SELECT userid FROM users WHERE country='IN'",
+      "B": "SELECT userid FROM users WHERE street='MG Road'",
+      "C": "SELECT userid FROM users WHERE country='IN' AND city='Pune' AND street='MG Road'",
+      "D": "SELECT userid FROM users WHERE country='IN' AND city='Pune'"
+    },
+    "answer": "B",
+    "explanation": "A composite index helps only when the query uses its leading columns. Filtering on street alone skips country and city."
+  },
+  {
+    "id": 49,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Let A and B be two entities in an E-R diagram with simple single value attributes. R1 and R2 are two relationships between M and N. R1 is one-to-many from A to B. R2 is many-to-many from A to B. What is the minimum number of tables required to represent A, B, R1 and R2 in the relational mode?",
+    "options": {
+      "A": "4",
+      "B": "2",
+      "C": "6",
+      "D": "3"
+    },
+    "answer": "D",
+    "explanation": "A and B each need a table. R1 (1:N) folds into B's table as a foreign key. R2 (M:N) needs its own table. Total 3. Note: 'between M and N' is a misprint for 'between A and B'. (GATE 2017)"
+  },
+  {
+    "id": 50,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "A MOD-16 ripple counter using J-K flip-flop has a current state 1001. How many clock pulses are required to get the state 0000?",
+    "options": {
+      "A": "8",
+      "B": "6",
+      "C": "7",
+      "D": "5"
+    },
+    "answer": "C",
+    "explanation": "Going from 9 to 16 (which wraps to 0) takes 16 − 9 = 7 pulses."
+  },
+  {
+    "id": 51,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following options is not true for a gated D-type flip-flop?",
+    "options": {
+      "A": "when clock is high, allows the input data (D) to pass through to the output (Q)",
+      "B": "stores a single bit of data",
+      "C": "uses a clock signal to control when the input data (D) is transferred to the output (Q)",
+      "D": "when clock is low, allows the input data (D) to pass through to the output (Q)"
+    },
+    "answer": "D",
+    "explanation": "A gated D latch is transparent when the gate/clock is high and holds its value when low. So D is false."
+  },
+  {
+    "id": 52,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "In order to get low output from the following logic circuit, the possible inputs are\n[Figure: A and B feed a NOR gate; its output and C feed a NAND gate giving Y]",
+    "options": {
+      "A": "A-1,B-1,C-0",
+      "B": "A-1,B-1,C-1",
+      "C": "A-0,B-0,C-1",
+      "D": "A-0,B-0,C-0"
+    },
+    "answer": "C",
+    "explanation": "Y = NAND(NOR(A,B), C). Y is 0 only when NOR(A,B) = 1 (A = B = 0) and C = 1."
+  },
+  {
+    "id": 53,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Operating systems must provide a mechanism for parent processes to create new child processes. Which of the following statements is true when a parent process creates new process?",
+    "options": {
+      "A": "The parent continues to execute concurrently with its children",
+      "B": "The parent waits until some or all of its children have terminated",
+      "C": "The parent waits for the child process by issuing a signal ( ) system call",
+      "D": "Both (a) and (b)"
+    },
+    "answer": "D",
+    "explanation": "Galvin lists two possibilities after creating a child: the parent runs concurrently, or it waits for some or all children to terminate (with wait(), not signal())."
+  },
+  {
+    "id": 54,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following transitions is not possible between the process states shown below?",
+    "options": {
+      "A": "Run → Ready",
+      "B": "Run → Terminated",
+      "C": "Run → Waiting",
+      "D": "Waiting → Run"
+    },
+    "answer": "D",
+    "explanation": "A waiting (blocked) process must first move to Ready; it cannot go straight to Running."
+  },
+  {
+    "id": 55,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Consider a system with 3 processes P0 to P2 and 3 resource types A, B, and C. Resource type A has 10 instances, resource type B has 5 instances and resource type C has 7 instances. The following snapshot of the system has been taken at a given time.\nProcess | Allocation (A B C) | Max (A B C) | Available (A B C)\nP0 | 0 1 0 | 7 5 3 | 5 4 5\nP1 | 2 0 0 | 3 2 2 |\nP2 | 3 0 2 | 9 0 2 |\nWhich of the following is true?",
+    "options": {
+      "A": "The system is not in safe state",
+      "B": "The system is blocked",
+      "C": "The system is in safe state",
+      "D": "The request cannot be granted to all the processes"
+    },
+    "answer": "C",
+    "explanation": "Need: P0 = 7 4 3, P1 = 1 2 2, P2 = 6 0 0. With Available 5 4 5, P1 can finish (Available becomes 7 4 5), then P0 (7 5 5), then P2. The safe sequence is P1, P0, P2."
+  },
+  {
+    "id": 56,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Consider the following reference strings and assume 3 frames are available, then the number of page faults that occur using Optimal page replacement algorithm is\n6, 0, 5, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 5, 2",
+    "options": {
+      "A": "15 Page Faults",
+      "B": "9 Page Faults",
+      "C": "12 Page Faults",
+      "D": "8 Page Faults"
+    },
+    "answer": "D",
+    "explanation": "Simulating optimal replacement (evict the page used furthest in the future) with 3 frames gives 8 faults (checked by computation)."
+  },
+  {
+    "id": 57,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "For a software project, following information about the domain characteristics are given :\nSl No | Description | Count | Average Weight factor\n1 | Number of user inputs | 30 | 4\n2 | Number of user outputs | 60 | 5\n3 | Number of user enquiries | 20 | 4\n4 | Number of files | 5 | 10\n5 | Number of external interfaces | 4 | 7\nAssume that all complexity adjustment values are average having scale = 3. The function point value for the project will be",
+    "options": {
+      "A": "681.46",
+      "B": "186.46",
+      "C": "816.46",
+      "D": "618.46"
+    },
+    "answer": "D",
+    "explanation": "UFP = 120 + 300 + 80 + 50 + 28 = 578. VAF = 0.65 + 0.01 × (14 × 3) = 1.07. FP = 578 × 1.07 = 618.46."
+  },
+  {
+    "id": 58,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Consider the regular expression R over the alphabet {a,b}:\n(a*b)* + (b*a)*\nWhich of the following regular expressions below describe the same language as R?",
+    "options": {
+      "A": "(a*b*) + (b*a*)",
+      "B": "a* + b*",
+      "C": "(a + b)*",
+      "D": "a*b + b*a"
+    },
+    "answer": "C",
+    "explanation": "(a*b)* gives ε and every string ending in b. (b*a)* gives ε and every string ending in a. Together they give every string over {a,b}: (a+b)*."
+  },
+  {
+    "id": 59,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "There are 20 shopping malls in a city interconnected by roads. Each shopping mall can be reached through 3 different roads. It is assumed that\n• only one park is planned to be constructed in a region\n• roads do not cross each other\n• road(s) do not pass through a park.\nWhat is the maximum number of parks that can be constructed in the regions enclosed by roads?",
+    "options": {
+      "A": "12",
+      "B": "30",
+      "C": "60",
+      "D": "11"
+    },
+    "answer": "D",
+    "explanation": "This is a planar graph with V = 20 and degree 3, so E = 30. Euler's formula gives F = E − V + 2 = 12 regions. Excluding the unbounded outer region leaves 11 enclosed regions."
+  },
+  {
+    "id": 60,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "What is the chromatic number of the graph shown below?\n[Figure: graph on vertices a, b, c, d, e, f, g, h with edges a–f, a–e, f–b, b–h, h–c, c–g, g–d, d–e, e–f, e–g, f–g, f–h, g–h]",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "A",
+    "explanation": "The graph has triangles (e-f-g, f-g-h), so it needs at least 3 colours. A valid 3-colouring: f=1, g=2, e=h=3, a=b=2, c=d=1. Chromatic number = 3. (GATE 2009)"
+  },
+  {
+    "id": 61,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following defines format for Public Key Infrastructure?",
+    "options": {
+      "A": "X.25",
+      "B": "X.509",
+      "C": "IEEE 802.11",
+      "D": "IEEE 802.3"
+    },
+    "answer": "B",
+    "explanation": "X.509 defines the format of public-key certificates used in PKI."
+  },
+  {
+    "id": 62,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following is not a type of Artificial Intelligence agent?",
+    "options": {
+      "A": "Simple AI agent",
+      "B": "Unity based AI agent",
+      "C": "Learning AI agent",
+      "D": "Goal based AI agent"
+    },
+    "answer": "B",
+    "explanation": "The standard agent types are simple reflex, model-based, goal-based, utility-based and learning. 'Unity based' is not one (it is a pun on utility-based)."
+  },
+  {
+    "id": 63,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following is advantage of Artificial Intelligence?",
+    "options": {
+      "A": "Identifying a business trend to help in informed decision making",
+      "B": "Helps in analysis of cyber security incidents",
+      "C": "Based on learning capability, solves a pattern recognition problem",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "All three are applications and advantages of AI."
+  },
+  {
+    "id": 64,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "A decision tree in AI can be used for",
+    "options": {
+      "A": "Only classification tasks",
+      "B": "Only regression tasks",
+      "C": "Both classification and regression tasks",
+      "D": "Neither classification nor regression tasks"
+    },
+    "answer": "C",
+    "explanation": "Decision trees (CART) handle both classification and regression."
+  },
+  {
+    "id": 65,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following hexadecimal constants match the regular expression given?\n(0x[0-9A-F]+)",
+    "options": {
+      "A": "0x4C5",
+      "B": "0x50b",
+      "C": "04A",
+      "D": "0x"
+    },
+    "answer": "A",
+    "explanation": "0x4C5 has the 0x prefix followed by uppercase hex digits. 0x50b has a lowercase b, 04A has no 0x, and 0x has no digits."
+  },
+  {
+    "id": 66,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which one of the following is true for Virtual Machine like JVM?",
+    "options": {
+      "A": "Hardware dependent",
+      "B": "Hardware independent",
+      "C": "Bytecode is part of VM",
+      "D": "Links object code"
+    },
+    "answer": "B",
+    "explanation": "The JVM lets bytecode run unchanged on any hardware, so it is hardware independent."
+  },
+  {
+    "id": 67,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which compiler phase receives tokenized output?",
+    "options": {
+      "A": "Lexical Analyser",
+      "B": "Parser",
+      "C": "Pre-processor",
+      "D": "Assembler"
+    },
+    "answer": "B",
+    "explanation": "The lexical analyser produces tokens and the parser (syntax analyser) consumes them."
+  },
+  {
+    "id": 68,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which one of the following tools generates parser from BNF notation?",
+    "options": {
+      "A": "lex",
+      "B": "yacc",
+      "C": "ed",
+      "D": "gdb"
+    },
+    "answer": "B",
+    "explanation": "yacc (Yet Another Compiler-Compiler) builds a parser from a BNF-like grammar. lex builds scanners."
+  },
+  {
+    "id": 69,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "An RSA crypto system selects two primes p=11 and q=13. If the private key is d=7, which of the following can be the value of the public key 'e'?",
+    "options": {
+      "A": "103",
+      "B": "143",
+      "C": "21",
+      "D": "19"
+    },
+    "answer": "A",
+    "explanation": "n = 143 and φ = 10 × 12 = 120. e·7 ≡ 1 (mod 120) gives e = 103, since 7 × 103 = 721 = 6 × 120 + 1."
+  },
+  {
+    "id": 70,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Suppose the host firewall of a computer is configured to block all incoming ICMP packets. What could be its effect on function of TCP/IP protocol stack of the host?",
+    "options": {
+      "A": "No effect",
+      "B": "Path MTU discovery fails",
+      "C": "Slow start fails",
+      "D": "Congestion control fails"
+    },
+    "answer": "B",
+    "explanation": "Path MTU discovery depends on ICMP 'Fragmentation Needed' messages. Blocking them breaks PMTUD (the 'black hole' problem)."
+  },
+  {
+    "id": 71,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "What is the ideal TCP window size of a sender to fully utilize a link of bandwidth 8192000bps and latency of 32ms?",
+    "options": {
+      "A": "65536 bytes",
+      "B": "8192 bytes",
+      "C": "16384 bytes",
+      "D": "32768 bytes"
+    },
+    "answer": "D",
+    "explanation": "Bandwidth-delay product = 8,192,000 × 0.032 = 262,144 bits = 32,768 bytes (taking the latency as the round-trip time)."
+  },
+  {
+    "id": 72,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Consider table bank_accounts = (account_id, balance). Assume two accounts with account_id as A and B. Also assume that initially both accounts have a balance Rs. 5,000 each. Two transactions T1 and T2 are executed concurrently, both under REPEATABLE READ isolation level. Database uses standard locking mechanism.\nT1: transfers Rs.1,000 from A to B.\nDB operation sequence is as follows:\nBEGIN; READ(A); READ(B); WRITE(A); WRITE(B); END\nT2: transfers Rs.1,000 from B to A.\nDB operation sequence is as follows :\nBEGIN; READ(B); READ(A); WRITE(B); WRITE(A); END\nBoth transactions read the corresponding account balances, deducts Rs. 1,000 from one account, then adds Rs. 1,000 to the other account and results are written back.\nAssuming that all interleaving of execution of T1 and T2 are possible and that there are no extraneous factors, which of the following will never occur?",
+    "options": {
+      "A": "A's account balance shows Rs. 5,000 and B's account balance shows Rs. 5,000",
+      "B": "Deadlock is detected and T1 will be rolled back to recover",
+      "C": "Deadlock is detected and T2 will be rolled back to recover",
+      "D": "A's account balance shows Rs. 4,000 and that of B will have Rs. 6,000"
+    },
+    "answer": "D",
+    "explanation": "Under REPEATABLE READ with locking, shared locks are held until commit. If both transactions read before writing, each waits for the other's lock, so deadlock occurs and either T1 or T2 may be the victim (B and C possible). The aborted transaction is retried, so the final state is A = B = 5,000 (A possible). The intended answer is D. Note: low confidence, because if a rolled-back T2 were never retried, D could appear temporarily."
+  },
+  {
+    "id": 73,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Let C = [[sin²θ, 1, cos²θ], [cos²θ, 1, sin²θ], [−3, 4, 7]]. Then det (C) will be",
+    "options": {
+      "A": "7cos²θ + 3sin²θ + 1",
+      "B": "4sin²θ + 3cos²θ",
+      "C": "7 − 4sin²θ",
+      "D": "0"
+    },
+    "answer": "D",
+    "explanation": "Let s = sin²θ and c = cos²θ. det = s(7 − 4s) − (7c + 3s) + c(4c + 3) = 4s − 4c + 4(c² − s²) = 4s − 4c + 4(c − s)(c + s) = 0, since c + s = 1."
+  },
+  {
+    "id": 74,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "The smallest Eigen value of the matrix A = [[4, 3, 1], [0, 6, 0], [0, 4, 7]] is",
+    "options": {
+      "A": "1",
+      "B": "3",
+      "C": "4",
+      "D": "6"
+    },
+    "answer": "C",
+    "explanation": "Expanding along the first column gives (4 − λ)·det([[6−λ, 0], [4, 7−λ]]), so the eigenvalues are 4, 6 and 7. The smallest is 4."
+  },
+  {
+    "id": 75,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "The value of the triple integral ∫(z=1 to 2) ∫(y=0 to 1) ∫(x=−3 to 3) (2xy − z³) dx dy dz is",
+    "options": {
+      "A": "9",
+      "B": "18",
+      "C": "0",
+      "D": "None of the above"
+    },
+    "answer": "D",
+    "explanation": "The 2xy term integrates to 0 over the symmetric x-range. The −z³ term gives −6 × 1 × [z⁴/4] from 1 to 2 = −6 × 3.75 = −22.5. That is not listed, so 'None of the above'."
+  },
+  {
+    "id": 76,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Analyze the below resource allocation graph,\n[Figure: RAG with processes P1–P5 and resources R1–R5: P1 holds R2 and requests R1; R1 is held by P2; P2 requests R3, R4 and R5; R3 is held by P5; R4 is held by P3; P3 requests R5; R5 is held by P4; P4 requests R2]\nWhich of the following is the corresponding wait-for graph?",
+    "options": {
+      "A": "Wait-for graph with edges P1→P2, P2→P5, P2→P3, P2→P4, P3→P4, P4→P1",
+      "B": "Wait-for graph with edges P1→P2, P2→P5, P2→P3, P3→P4, P4→P1 (no P2→P4)",
+      "C": "Wait-for graph with edges P1→P2, P2→P5, P2→P3, P2→P4, P4→P1 (no P3→P4)",
+      "D": "Wait-for graph with edges P1→P2, P2→P5, P2→P3, P2→P4, P3→P4 (no P4→P1)"
+    },
+    "answer": "A",
+    "explanation": "Collapse the resources: P1 waits for P2 (R1). P2 waits for P5 (R3), P3 (R4) and P4 (R5). P3 waits for P4 (R5). P4 waits for P1 (R2). Only graph (a) has all six edges. This is the Galvin textbook example. (The options are figures, transcribed here as edge lists.)"
+  },
+  {
+    "id": 77,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "In the V Model of Software Testing shown below, please identify (A), (B), (C), (D)\n[Figure: V-model, left arm Requirement Analysis → System Design → Architecture Design → Module Design → Implementation; right arm from top (A), (B), (C), (D)]",
+    "options": {
+      "A": "(A): Acceptance Testing, (B): System Testing, (C): Integration Testing, (D): Unit Testing",
+      "B": "(A): Acceptance Testing, (B): Integration Testing, (C): System Testing, (D): Unit Testing",
+      "C": "(A): Unit Testing, (B): System Testing, (C): Integration Testing, (D): Acceptance Testing",
+      "D": "(A): Unit Testing, (B): Integration Testing, (C): System Testing, (D): Acceptance Testing"
+    },
+    "answer": "A",
+    "explanation": "Each test level mirrors a design stage: requirements with acceptance, system design with system testing, architecture with integration, and module design with unit testing."
+  },
+  {
+    "id": 78,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Cyclomatic complexity is associated with",
+    "options": {
+      "A": "White Box Testing",
+      "B": "Black Box Testing",
+      "C": "Grey Box Testing",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "Cyclomatic complexity measures independent paths in the code and is used in white-box (basis-path) testing."
+  },
+  {
+    "id": 79,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "Which of the following is related to Alpha Testing and Beta Testing?",
+    "options": {
+      "A": "Unit Testing",
+      "B": "System Testing",
+      "C": "Acceptance Testing",
+      "D": "Integration Testing"
+    },
+    "answer": "C",
+    "explanation": "Alpha and beta tests are forms of user acceptance testing."
+  },
+  {
+    "id": 80,
+    "source_file": "ISRO_SC_B_2025_CS_IT_watermark",
+    "question": "As per the Capability Maturity Model (CMM), the process maturity levels are defined as\nLevel 1 : Initial\nLevel 2 : (A)\nLevel 3 : (B)\nLevel 4 : (C)\nLevel 5 : Optimizing\nIdentify (A), (B) and (C).",
+    "options": {
+      "A": "A : Defined, B : Repeatable, C : Managed",
+      "B": "A : Repeatable, B : Managed, C : Defined",
+      "C": "A : Repeatable, B : Defined, C : Managed",
+      "D": "A : Defined, B : Managed, C : Repeatable"
+    },
+    "answer": "C",
+    "explanation": "The CMM levels are Initial, Repeatable, Defined, Managed, Optimizing."
+  }
+]

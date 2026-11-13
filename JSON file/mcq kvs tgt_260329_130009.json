@@ -1,0 +1,782 @@
+[
+  {
+    "id": 1,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "If a variable is created inside a function (a Local Variable), what happens to that variable once the function finishes its execution and returns a value ?",
+    "options": {
+      "A": "It is stored in the global memory for the rest of the program's life.",
+      "B": "It is permanently saved to the hard drive.",
+      "C": "It is “destroyed” or removed from memory and its value is no longer accessible.",
+      "D": "It is renamed automatically to avoid confusion with other variables."
+    },
+    "answer": "C",
+    "explanation": "A local variable exists only in the function's local scope (stack frame); when the function returns, the frame is discarded and the variable can no longer be accessed."
+  },
+  {
+    "id": 2,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "In a function definition like\ndef calculate_area(radius):\nWhat is the technical term for the variable radius ?",
+    "options": {
+      "A": "Return Value",
+      "B": "Literal",
+      "C": "Parameter",
+      "D": "Constant"
+    },
+    "answer": "C",
+    "explanation": "A name listed in the function header is a (formal) parameter; the value passed at call time is the argument."
+  },
+  {
+    "id": 3,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "A programmer wants to add a new line of text to the end of an existing file named logs.txt without deleting the current content. Which mode should they use in the open() function ?",
+    "options": {
+      "A": "r",
+      "B": "w",
+      "C": "a",
+      "D": "x"
+    },
+    "answer": "C",
+    "explanation": "Mode 'a' (append) opens the file for writing at the end without truncating it; 'w' truncates, 'r' is read-only, 'x' fails if the file exists."
+  },
+  {
+    "id": 4,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "When using the csv module to read a file, which object allows you to access each row of the CSV file as a dictionary, where the keys are the column headers ?",
+    "options": {
+      "A": "csv.reader()",
+      "B": "csv.DictReader()",
+      "C": "csv.writer()",
+      "D": "csv.ListReader()"
+    },
+    "answer": "B",
+    "explanation": "csv.DictReader maps each row to a dict keyed by the header row; csv.reader returns lists; csv.ListReader does not exist."
+  },
+  {
+    "id": 5,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "In Python, what is the technical purpose of the pickle module ?",
+    "options": {
+      "A": "To compress text files to take up less disk space.",
+      "B": "To convert a Python object hierarchy into a byte stream (Serialization) so it can be saved to a file.",
+      "C": "To encrypt sensitive data stored in CSV files.",
+      "D": "To convert Python code into a standalone executable file."
+    },
+    "answer": "B",
+    "explanation": "pickle serializes (pickle.dump) Python objects into a byte stream and deserializes (pickle.load) them back."
+  },
+  {
+    "id": 6,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "What will be the results of math.floor(4.7) and math.ceil(4.7) respectively ?",
+    "options": {
+      "A": "5 and 4",
+      "B": "4 and 5",
+      "C": "4.0 and 4.0",
+      "D": "5.0 and 5.0"
+    },
+    "answer": "B",
+    "explanation": "floor gives the largest integer ≤ 4.7 = 4 and ceil the smallest integer ≥ 4.7 = 5; in Python 3 both return int."
+  },
+  {
+    "id": 7,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Given a NumPy array\nArr = np.array([[1, 2, 3], [4, 5, 6]])\nWhat will be the output of Arr.shape ?",
+    "options": {
+      "A": "(6,)",
+      "B": "(3, 2)",
+      "C": "(2, 3)",
+      "D": "(1, 6)"
+    },
+    "answer": "C",
+    "explanation": "The array has 2 rows and 3 columns, so shape is (2, 3)."
+  },
+  {
+    "id": 8,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "In NumPy, what is the result of the operation\nnp.array([1, 2, 3]) + 5 ?",
+    "options": {
+      "A": "An error",
+      "B": "[6, 7, 8]",
+      "C": "[1, 2, 3, 5]",
+      "D": "[5, 10, 15]"
+    },
+    "answer": "B",
+    "explanation": "Broadcasting adds the scalar 5 to every element: [6 7 8]."
+  },
+  {
+    "id": 9,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "What is the primary difference between a Pandas Series and a Pandas DataFrame ?",
+    "options": {
+      "A": "A series is 3D, while a DataFrame is 2D.",
+      "B": "A series is a 1D array-like object with labels, whereas a DataFrame is a 2D table-like structure with rows and columns.",
+      "C": "DataFrames can only store numbers, while series can store any data type.",
+      "D": "Series are used for time-series data only, while DataFrames are for static data."
+    },
+    "answer": "B",
+    "explanation": "A Series is a one-dimensional labelled array; a DataFrame is a two-dimensional labelled table (a collection of Series as columns)."
+  },
+  {
+    "id": 10,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "If you have a large DataFrame called df and you want to view the summary statistics (mean, count, standard deviation, etc.) for all numerical columns, which method should you use ?",
+    "options": {
+      "A": "df.info()",
+      "B": "df.describe()",
+      "C": "df.head()",
+      "D": "df.summary()"
+    },
+    "answer": "B",
+    "explanation": "describe() reports count, mean, std, min, quartiles and max for numeric columns; info() shows dtypes/non-null counts; summary() does not exist."
+  },
+  {
+    "id": 11,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "In database terminology, a single row in a table representing a unique record is called a ________ while a single column representing a specific category of data is called an ________.",
+    "options": {
+      "A": "Field, Record",
+      "B": "Tuple, Attribute",
+      "C": "Attribute, Tuple",
+      "D": "Key, Value"
+    },
+    "answer": "B",
+    "explanation": "In the relational model a row is a tuple and a column is an attribute."
+  },
+  {
+    "id": 12,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following keys is used to uniquely identify each record in a table and cannot contain a NULL value ?",
+    "options": {
+      "A": "Foreign Key",
+      "B": "Candidate Key",
+      "C": "Primary Key",
+      "D": "Composite Key"
+    },
+    "answer": "C",
+    "explanation": "The primary key uniquely identifies each row and is implicitly NOT NULL."
+  },
+  {
+    "id": 13,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which category of SQL commands does the INSERT statement belong to ?",
+    "options": {
+      "A": "DDL (Data Definition Language)",
+      "B": "DCL (Data Control Language)",
+      "C": "DML (Data Manipulation Language)",
+      "D": "TCL (Transaction Control Language)"
+    },
+    "answer": "C",
+    "explanation": "INSERT, UPDATE, DELETE (and SELECT) are DML commands."
+  },
+  {
+    "id": 14,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which command is used to remove all records from a table while keeping the table structure intact and cannot be rolled back in most default settings ?",
+    "options": {
+      "A": "DELETE",
+      "B": "DROP",
+      "C": "TRUNCATE",
+      "D": "REMOVE"
+    },
+    "answer": "C",
+    "explanation": "TRUNCATE removes all rows but keeps the structure; it is DDL with an implicit commit, so it normally cannot be rolled back. DELETE can be rolled back; DROP removes the table itself."
+  },
+  {
+    "id": 15,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "To return only unique (non-duplicate) values from a specific column in a query, which keyword must be used ?",
+    "options": {
+      "A": "UNIQUE",
+      "B": "DISTINCT",
+      "C": "DIFFERENT",
+      "D": "SINGULAR"
+    },
+    "answer": "B",
+    "explanation": "SELECT DISTINCT col ... eliminates duplicate values."
+  },
+  {
+    "id": 16,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which clause is specifically used to place a condition on groups created by the GROUP BY clause, rather than individual rows ?",
+    "options": {
+      "A": "WHERE",
+      "B": "HAVING",
+      "C": "WHEN",
+      "D": "LIMIT"
+    },
+    "answer": "B",
+    "explanation": "HAVING filters groups after aggregation; WHERE filters individual rows before grouping."
+  },
+  {
+    "id": 17,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which aggregate function is used to find the total sum of all values in a numeric column ?",
+    "options": {
+      "A": "TOTAL()",
+      "B": "COUNT()",
+      "C": "ADD()",
+      "D": "SUM()"
+    },
+    "answer": "D",
+    "explanation": "SUM() returns the total of a numeric column; COUNT() counts rows."
+  },
+  {
+    "id": 18,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "What will be the output of the following MySQL query ?\nSELECT CONCAT(UPPER(SUBSTR('MyKid',1,2)),'Sys');",
+    "options": {
+      "A": "mysys",
+      "B": "MySys",
+      "C": "MYSys",
+      "D": "YKSys"
+    },
+    "answer": "C",
+    "explanation": "SUBSTR('MyKid',1,2) = 'My'; UPPER gives 'MY'; concatenated with 'Sys' gives 'MYSys'. (The SUBSTR arguments are partly obscured in the scan and read as 1,2.)"
+  },
+  {
+    "id": 19,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Consider the date '2026-02-27'. What will be the output of the following query ?\nSELECT DAYNAME('2026-02-27');",
+    "options": {
+      "A": "27",
+      "B": "February",
+      "C": "Friday",
+      "D": "02"
+    },
+    "answer": "C",
+    "explanation": "DAYNAME returns the weekday name; 27 February 2026 is a Friday (MONTHNAME would give February, DAY would give 27)."
+  },
+  {
+    "id": 20,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which method is used to create a connection object between a Python script and a MySQL database assuming that the module pymysql is imported ?",
+    "options": {
+      "A": "pymysql.open()",
+      "B": "pymysql.connect()",
+      "C": "pymysql.link()",
+      "D": "pymysql.join()"
+    },
+    "answer": "B",
+    "explanation": "pymysql.connect(host=..., user=..., password=..., database=...) returns a Connection object."
+  },
+  {
+    "id": 21,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "In which network topology are all individual nodes connected to a central connection point, such as a hub or switch ?",
+    "options": {
+      "A": "Bus Topology",
+      "B": "Star Topology",
+      "C": "Mesh Topology",
+      "D": "Ring Topology"
+    },
+    "answer": "B",
+    "explanation": "In a star topology every node is linked to a central hub/switch."
+  },
+  {
+    "id": 22,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Every Network Interface Card (NIC) has a unique, permanent hardware address assigned by the manufacturer. This is known as the :",
+    "options": {
+      "A": "IP Address",
+      "B": "MAC Address",
+      "C": "Gateway Address",
+      "D": "Subnet Mask"
+    },
+    "answer": "B",
+    "explanation": "The MAC (physical) address is a 48-bit address burned into the NIC by the manufacturer."
+  },
+  {
+    "id": 23,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which device is “intelligent” enough to learn the MAC addresses of connected devices and send data only to the specific port of the intended recipient ?",
+    "options": {
+      "A": "Hub",
+      "B": "Repeater",
+      "C": "Switch",
+      "D": "Bridge"
+    },
+    "answer": "C",
+    "explanation": "A switch builds a MAC address table and forwards frames only to the destination port; a hub broadcasts to all ports."
+  },
+  {
+    "id": 24,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which protocol is primarily used by web browsers to request and display web pages from a server ?",
+    "options": {
+      "A": "SMTP",
+      "B": "HTTP",
+      "C": "DNS",
+      "D": "SNMP"
+    },
+    "answer": "B",
+    "explanation": "HTTP (HyperText Transfer Protocol) carries web page requests/responses; SMTP is for mail, DNS for name resolution, SNMP for network management."
+  },
+  {
+    "id": 25,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which device acts as a “traffic controller” to connect two different networks (like your home LAN and the internet) and determines the best path for data packets ?",
+    "options": {
+      "A": "Modem",
+      "B": "Router",
+      "C": "Access Point",
+      "D": "Hub"
+    },
+    "answer": "B",
+    "explanation": "A router connects different networks and routes packets along the best path using IP addresses."
+  },
+  {
+    "id": 26,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following is not an example of a Mobile Operating System ?",
+    "options": {
+      "A": "Android",
+      "B": "iOS",
+      "C": "Tizen",
+      "D": "Mac OS"
+    },
+    "answer": "D",
+    "explanation": "Android, iOS and Tizen are mobile OSs; macOS is Apple's desktop/laptop operating system."
+  },
+  {
+    "id": 27,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which Boolean Law is represented in the following ?\nP = P + P . Q",
+    "options": {
+      "A": "Absorption Law",
+      "B": "Distributive Law",
+      "C": "Associative Law",
+      "D": "De Morgan's Law"
+    },
+    "answer": "A",
+    "explanation": "P + P·Q = P(1 + Q) = P is the absorption law."
+  },
+  {
+    "id": 28,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following is the correct simplified form of the given Boolean Expression ?\nP'.Q + P.Q' + P.Q",
+    "options": {
+      "A": "P' + Q",
+      "B": "P + Q'",
+      "C": "P + Q",
+      "D": "P' + Q'"
+    },
+    "answer": "C",
+    "explanation": "P·Q' + P·Q = P, so the expression is P'Q + P = P + Q."
+  },
+  {
+    "id": 29,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Find the Boolean Expression R(P, Q) which is represented in the following Truth Table.\nP Q R(P,Q)\n0 0 1\n0 1 1\n1 0 1\n1 1 0",
+    "options": {
+      "A": "P'.Q'",
+      "B": "P.Q",
+      "C": "P+Q",
+      "D": "(P.Q)'"
+    },
+    "answer": "D",
+    "explanation": "R is 0 only when both inputs are 1, i.e. the NAND function (P·Q)'."
+  },
+  {
+    "id": 30,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following expressions is not True about NAND gates in Boolean Algebra ?",
+    "options": {
+      "A": "It is a Universal Gate",
+      "B": "It is NOT gate of AND gate",
+      "C": "For variables U and V, NAND is represented as (U.V)'",
+      "D": "Every Boolean Expression cannot be represented with the help of NAND gate only"
+    },
+    "answer": "D",
+    "explanation": "NAND is a universal gate, so every Boolean expression CAN be built from NAND gates alone; statement (4) is false."
+  },
+  {
+    "id": 31,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "What will be the output of the following Python function ?\nprint(len(['PM',2,False]))",
+    "options": {
+      "A": "3",
+      "B": "2",
+      "C": "4",
+      "D": "Error"
+    },
+    "answer": "A",
+    "explanation": "The list has three elements ('PM', 2, False), so len returns 3."
+  },
+  {
+    "id": 32,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following can be used as a variable name in Python ?",
+    "options": {
+      "A": "while",
+      "B": "My Number",
+      "C": "2ndValue",
+      "D": "Data_1"
+    },
+    "answer": "D",
+    "explanation": "Data_1 is a valid identifier; 'while' is a keyword, 'My Number' contains a space, '2ndValue' starts with a digit."
+  },
+  {
+    "id": 33,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Find the output of the following print statement in Python.\nprint(False or True and not False)",
+    "options": {
+      "A": "True",
+      "B": "False",
+      "C": "Error",
+      "D": "None"
+    },
+    "answer": "A",
+    "explanation": "Precedence: not > and > or. not False = True; True and True = True; False or True = True."
+  },
+  {
+    "id": 34,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following is an example of an augmented operator in Python ?",
+    "options": {
+      "A": "<",
+      "B": "not in",
+      "C": "and",
+      "D": "**="
+    },
+    "answer": "D",
+    "explanation": "**= is an augmented assignment operator (x **= y means x = x ** y)."
+  },
+  {
+    "id": 35,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following is a collection in Python ?",
+    "options": {
+      "A": "int",
+      "B": "float",
+      "C": "bool",
+      "D": "str"
+    },
+    "answer": "D",
+    "explanation": "A str is a sequence (collection) of characters that can be indexed and iterated; int, float and bool are scalar types."
+  },
+  {
+    "id": 36,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Why is a digital footprint often described as “permanent”, even if you delete a post ?",
+    "options": {
+      "A": "Data is stored in a physical “Master Vault” regulated by the government.",
+      "B": "Internet archiving services, screenshots and server backups can preserve data indefinitely.",
+      "C": "Digital data physically alters the hardware of the router it passes through.",
+      "D": "Terms of Service agreements legally prevent the deletion of any uploaded data."
+    },
+    "answer": "B",
+    "explanation": "Copies may persist through archives, screenshots, caches and backups even after the original is deleted."
+  },
+  {
+    "id": 37,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "A scientist invents a new, non-obvious method for purifying water and wants to prevent others from making or selling this specific technology for a limited period of 20 years. Which protection should they apply for ?",
+    "options": {
+      "A": "Patent",
+      "B": "Geographical Indication",
+      "C": "Industrial Design",
+      "D": "Copyright"
+    },
+    "answer": "A",
+    "explanation": "A patent protects a novel, non-obvious invention, generally for 20 years."
+  },
+  {
+    "id": 38,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "What is the primary environmental concern associated with the “informal recycling” or burning of E-waste in open landfills ?",
+    "options": {
+      "A": "The release of persistent organic pollutants (POPs) and toxic fumes like dioxins.",
+      "B": "An increase in the local temperature due to the heat generated by the devices.",
+      "C": "The depletion of atmospheric nitrogen levels.",
+      "D": "The creation of magnetic fields that interfere with local wildlife migration."
+    },
+    "answer": "A",
+    "explanation": "Open burning/informal recycling of e-waste releases dioxins, furans, heavy metals and other persistent pollutants."
+  },
+  {
+    "id": 39,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "A user receives an urgent email that appears to be from their bank, claiming their account will be suspended unless they click a link to verify their credentials. This specific type of social engineering attack is known as :",
+    "options": {
+      "A": "Phishing",
+      "B": "Trojan Horse",
+      "C": "Spyware",
+      "D": "Logic Bomb"
+    },
+    "answer": "A",
+    "explanation": "Phishing uses fraudulent messages impersonating trusted entities to steal credentials."
+  },
+  {
+    "id": 40,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which section of the IT Act (as amended in 2008) specifically addresses the punishment for “identity theft,” such as fraudulently using another person's digital signature or password ?",
+    "options": {
+      "A": "Section 65",
+      "B": "Section 66C",
+      "C": "Section 67",
+      "D": "Section 70"
+    },
+    "answer": "B",
+    "explanation": "Section 66C punishes identity theft; 65 is tampering with source documents, 67 obscene material, 70 protected systems."
+  },
+  {
+    "id": 41,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following is ideally suited to get a digital copy of a content available on a paper sheet ?",
+    "options": {
+      "A": "Scanner",
+      "B": "Plotter",
+      "C": "Joy Stick",
+      "D": "Light Pen"
+    },
+    "answer": "A",
+    "explanation": "A scanner digitizes printed/handwritten content on paper."
+  },
+  {
+    "id": 42,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following is the correct full form of ROM ?",
+    "options": {
+      "A": "Read Only Memory",
+      "B": "Random Only Memory",
+      "C": "Read Once Memory",
+      "D": "Random Once Memory"
+    },
+    "answer": "A",
+    "explanation": "ROM = Read Only Memory."
+  },
+  {
+    "id": 43,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which storage device can hold the maximum amount of data ?",
+    "options": {
+      "A": "2112 MB memory card",
+      "B": "512 GB HDD",
+      "C": "2 TB SSD",
+      "D": "2³⁰ KB SD card"
+    },
+    "answer": "C",
+    "explanation": "2 TB = 2⁴¹ bytes; 2³⁰ KB = 2⁴⁰ B = 1 TB; 512 GB = 2³⁹ B; option (1) is printed as '2112 MB' (probably 2¹² MB = 4 GB). So 2 TB SSD is largest."
+  },
+  {
+    "id": 44,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following is not an example of Fully Open Source Web Browser ?",
+    "options": {
+      "A": "Firefox",
+      "B": "Chromium",
+      "C": "Brave",
+      "D": "Edge"
+    },
+    "answer": "D",
+    "explanation": "Microsoft Edge is proprietary (though built on Chromium); Firefox, Chromium and Brave are open source."
+  },
+  {
+    "id": 45,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following is an example of a Programming Language ?",
+    "options": {
+      "A": "HTML",
+      "B": "Python",
+      "C": "XML",
+      "D": "CSV"
+    },
+    "answer": "B",
+    "explanation": "Python is a programming language; HTML and XML are markup languages and CSV is a file format."
+  },
+  {
+    "id": 46,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Find out the equivalent Octal number equivalent to the binary number 110101011100 ?",
+    "options": {
+      "A": "6534",
+      "B": "7645",
+      "C": "311130",
+      "D": "3256"
+    },
+    "answer": "A",
+    "explanation": "Group in threes from the right: 110 101 011 100 = 6 5 3 4 → (6534)₈."
+  },
+  {
+    "id": 47,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which Hexadecimal number is equivalent to the decimal number 241 ?",
+    "options": {
+      "A": "F1",
+      "B": "E1",
+      "C": "151",
+      "D": "141"
+    },
+    "answer": "A",
+    "explanation": "241 = 15×16 + 1 → F1."
+  },
+  {
+    "id": 48,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Observe following numbers, which one cannot be considered as an example of Binary Numbers ?",
+    "options": {
+      "A": "101011",
+      "B": "111011",
+      "C": "101111",
+      "D": "101210"
+    },
+    "answer": "D",
+    "explanation": "101210 contains the digit 2, which is not a binary digit."
+  },
+  {
+    "id": 49,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "BCD is a class of encodings where each digit of a decimal number is represented by its own fixed sequence of bits, what is the full form of BCD ?",
+    "options": {
+      "A": "Binary Complete Decimal",
+      "B": "Binary Coded Digital",
+      "C": "Binary Coded Decimal",
+      "D": "Boolean Coded Decimal"
+    },
+    "answer": "C",
+    "explanation": "BCD = Binary Coded Decimal."
+  },
+  {
+    "id": 50,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "________ a universal character encoding standard that assigns a unique numeric “code point” to every character, symbol and emoji across all languages and platforms. (Fill in the blank with most appropriate option from the following)",
+    "options": {
+      "A": "Unicode",
+      "B": "HTML",
+      "C": "XML",
+      "D": "ASCII"
+    },
+    "answer": "A",
+    "explanation": "Unicode assigns a unique code point to every character across scripts; ASCII covers only 128 characters."
+  },
+  {
+    "id": 51,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which out of the following Python functions/methods can never be used with tuple ?",
+    "options": {
+      "A": "max",
+      "B": "insert",
+      "C": "index",
+      "D": "sorted"
+    },
+    "answer": "B",
+    "explanation": "Tuples are immutable and have no insert() method; max(), sorted() and tuple.index() all work."
+  },
+  {
+    "id": 52,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "What will be the output of the following Python function ?\nprint((20,\"*\")*2)",
+    "options": {
+      "A": "((20, \"*\"), (20, \"*\"))",
+      "B": "(20, \"*\", 20, \"*\")",
+      "C": "(20, 20, \"*\", \"*\")",
+      "D": "[20, \"*\", 20, \"*\"]"
+    },
+    "answer": "B",
+    "explanation": "Multiplying a tuple by 2 repeats its elements: (20, '*', 20, '*')."
+  },
+  {
+    "id": 53,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "What will be the output of the following Python code ?\nA=[10,20,30]\nB=\"U\"\nD=dict.fromkeys(A,B)\nprint(D)",
+    "options": {
+      "A": "{10: 'U', 20: 'U', 30: 'U'}",
+      "B": "{10: 'U', 20: None, 30: None}",
+      "C": "{10: None, 20: None, 30: 'U'}",
+      "D": "[(10, 'U'), (20, 'U'), (30, 'U')]"
+    },
+    "answer": "A",
+    "explanation": "dict.fromkeys(keys, value) assigns the same value to every key."
+  },
+  {
+    "id": 54,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following statements correctly imports the math module in Python ?",
+    "options": {
+      "A": "include math",
+      "B": "import math",
+      "C": "using math",
+      "D": "#import math"
+    },
+    "answer": "B",
+    "explanation": "Python uses the import statement; '#import math' is just a comment."
+  },
+  {
+    "id": 55,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which keyword is used for defining a function in Python ?",
+    "options": {
+      "A": "function",
+      "B": "method",
+      "C": "define",
+      "D": "def"
+    },
+    "answer": "D",
+    "explanation": "Functions are defined with def."
+  },
+  {
+    "id": 56,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following operators has the highest order of precedence in Python ?",
+    "options": {
+      "A": "**",
+      "B": "/",
+      "C": "+",
+      "D": "-"
+    },
+    "answer": "A",
+    "explanation": "Exponentiation ** has higher precedence than *, / and +, -."
+  },
+  {
+    "id": 57,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following characters is used for specifying a single line/inline comment in Python ?",
+    "options": {
+      "A": "$",
+      "B": "#",
+      "C": "\"\"\"",
+      "D": "!"
+    },
+    "answer": "B",
+    "explanation": "# starts a single-line comment; triple quotes create string literals (often used as docstrings)."
+  },
+  {
+    "id": 58,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following print statements will display output as RAMA in Python ?",
+    "options": {
+      "A": "print(\"AMARDEEP\"[3::-1])",
+      "B": "print(\"AMARDEEP\"[4::-1])",
+      "C": "print(\"AMARDEEP\"[2::-1])",
+      "D": "print(\"AMARDEEP\"[3:-1])"
+    },
+    "answer": "A",
+    "explanation": "\"AMARDEEP\"[3::-1] takes indices 3,2,1,0 = R,A,M,A → 'RAMA'. [4::-1] gives 'DRAMA', [2::-1] 'AMA', [3:-1] 'RDEE'."
+  },
+  {
+    "id": 59,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "Which of the following Python statements will not result in error ?\nVALS=[1,\"A\",2,\"B\",3,\"C\"]",
+    "options": {
+      "A": "print(len(VALS))",
+      "B": "print(max(VALS))",
+      "C": "print(sum(VALS))",
+      "D": "print(VALS.sort())"
+    },
+    "answer": "A",
+    "explanation": "len() returns 6. max() and sort() fail comparing str with int, and sum() fails adding int and str (TypeError)."
+  },
+  {
+    "id": 60,
+    "source_file": "mcq kvs tgt_260329_130009",
+    "question": "What will be the output of the following Python code ?\nprint(min(max(False,-2,-5), 2,5))",
+    "options": {
+      "A": "-2",
+      "B": "2",
+      "C": "False",
+      "D": "-5"
+    },
+    "answer": "C",
+    "explanation": "max(False,-2,-5) = False (False == 0 is the largest); min(False,2,5) = False, which prints as False."
+  }
+]

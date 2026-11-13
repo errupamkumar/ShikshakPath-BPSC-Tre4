@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "The term \"double buffered\" is used in which of the following:",
+    "options": {
+      "A": "Synchronous Communication Interface",
+      "B": "Asynchronous Communication Interface",
+      "C": "Addressing Mode",
+      "D": "Serial Communication"
+    },
+    "answer": "B",
+    "explanation": "Double buffering (a holding register plus a shift register) is a feature of asynchronous communication interfaces such as UARTs; it lets the CPU load the next character while the current one is being shifted out."
+  },
+  {
+    "id": 2,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following is not a 'concern' during the management of a software project?",
+    "options": {
+      "A": "Project/Product information",
+      "B": "Product quality",
+      "C": "Time",
+      "D": "Money"
+    },
+    "answer": "A",
+    "explanation": "The classic project-management concerns are product quality, time (schedule) and money (cost/budget). Project/product information is not one of them."
+  },
+  {
+    "id": 3,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "What will be the output of the following program\n#include<stdio.h>\nint main ()\n{ int i;\n  for (i = 0; i++<10;)\n    printf (\"%d\", i++);\n  return 0;\n}",
+    "options": {
+      "A": "0 1 2 3 4 5 6 7 8 9",
+      "B": "1 2 3 4 5 6 7 8",
+      "C": "1 3 5 7 9",
+      "D": "2 4 6 8"
+    },
+    "answer": "C",
+    "explanation": "The condition i++<10 tests i and then increments it, and the printf prints i and increments it again. So i goes 0→1 (prints 1)→2→3 (prints 3)… and the output is 1 3 5 7 9."
+  },
+  {
+    "id": 4,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Out of 32 people, 30 people save paper and 14 people save plastic bottles. What is the total number of people who save both paper and plastic bottles? Assume all people save either paper or plastic bottles or both paper and plastic bottles.",
+    "options": {
+      "A": "12",
+      "B": "14",
+      "C": "16",
+      "D": "18"
+    },
+    "answer": "A",
+    "explanation": "|P ∩ B| = |P| + |B| − |P ∪ B| = 30 + 14 − 32 = 12."
+  },
+  {
+    "id": 5,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Classifying email as spam, labeling web pages based on their context, voice recognition are the example of which of the following?",
+    "options": {
+      "A": "Reinforcement learning",
+      "B": "Shortest Path Algorithm.",
+      "C": "Supervised learning",
+      "D": "Unsupervised learning"
+    },
+    "answer": "C",
+    "explanation": "These are classification tasks learned from labelled examples, which is supervised learning."
+  },
+  {
+    "id": 6,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match the LIST-I with LIST-II\nLIST-I (SMTP Response Code): A. 214  B. 421  C. 220  D. 554\nLIST-II (Description): I. Service Ready  II. Transaction Failed  III. Help message  IV. Service Not Available\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-I, D-II",
+      "B": "A-IV, B-III, C-I, D-II",
+      "C": "A-IV, B-I, C-III, D-II",
+      "D": "A-II, B-I, C-IV, D-III"
+    },
+    "answer": "A",
+    "explanation": "SMTP codes: 214 = Help message, 421 = Service not available, 220 = Service ready, 554 = Transaction failed."
+  },
+  {
+    "id": 7,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following statements maybe false for a decision problem X ∈ NP",
+    "options": {
+      "A": "X can be solved in nondeterministic polynomial time",
+      "B": "X can be solved in exponential time",
+      "C": "X can be solved in polynomial space",
+      "D": "X can be solved in deterministic polynomial time"
+    },
+    "answer": "D",
+    "explanation": "NP ⊆ PSPACE ⊆ EXPTIME, so statements 1–3 always hold. Whether every NP problem is in P is unknown (P vs NP), so statement 4 may be false."
+  },
+  {
+    "id": 8,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "For the reference string: (given that number of frames is 3)\n7 0 1 2 0 3 0 4 2 3 0 3 2 1 2 0 1 7 0 1\nfor the optimal page replacement algorithm, which of the following will represent the hit ratio?",
+    "options": {
+      "A": "11/20",
+      "B": "10/20",
+      "C": "9/20",
+      "D": "12/20"
+    },
+    "answer": "A",
+    "explanation": "Optimal replacement with 3 frames on this standard string gives 9 page faults, so there are 20 − 9 = 11 hits and the hit ratio is 11/20."
+  },
+  {
+    "id": 9,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match the LIST-I with LIST-II\nEach of the following relations is defined on set {1, 2, 3, 4}. Match the relation types.\nLIST-I (Relation):\nA. {(2, 2), (2, 3), (2, 4), (3, 2), (3, 3), (3, 4)}\nB. {(2, 4), (4, 2)}\nC. {(1, 2), (2, 3), (3, 4)}\nD. {(1, 3), (1, 4), (2, 3), (2, 4), (3, 1), (3, 4)}\nLIST-II (Relation type): I. Anti symmetric  II. Only transitive  III. Only symmetric  IV. neither symmetric, nor transitive\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-III, C-I, D-IV",
+      "B": "A-II, B-III, C-IV, D-I",
+      "C": "A-IV, B-III, C-I, D-II",
+      "D": "A-I, B-III, C-IV, D-II"
+    },
+    "answer": "A",
+    "explanation": "A is transitive but not symmetric (II). B is symmetric but not transitive, since (2,2) is missing (III). C is antisymmetric (I). D is neither symmetric nor transitive (IV)."
+  },
+  {
+    "id": 10,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Arrange the following families of languages from specialization to generalization, defined over alphabet Σ :\nA. Family of all regular languages.\nB. Family of all Turing acceptable languages.\nC. Family of all Turing decidable languages.\nD. Family of all context free languages.\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "A, B, C, D",
+      "B": "A, C, B, D",
+      "C": "A, D, C, B",
+      "D": "A, D, B, C"
+    },
+    "answer": "C",
+    "explanation": "Regular ⊂ Context-free ⊂ Decidable (recursive) ⊂ Turing-acceptable (recursively enumerable), giving the order A, D, C, B."
+  },
+  {
+    "id": 11,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following would be the value of z for the C program code?\nx = 16;\ny = 4;\nz = x >> y;",
+    "options": {
+      "A": "5",
+      "B": "4",
+      "C": "2",
+      "D": "1"
+    },
+    "answer": "D",
+    "explanation": "16 >> 4 = 16 / 2^4 = 1."
+  },
+  {
+    "id": 12,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "What is the maximum bit rate of a noiseless channel with a bandwidth of 2KHz, transmitting a signal with 8 levels",
+    "options": {
+      "A": "12000 bps",
+      "B": "16000 bps",
+      "C": "4000 bps",
+      "D": "32000 bps"
+    },
+    "answer": "A",
+    "explanation": "Nyquist: bit rate = 2 × B × log2 L = 2 × 2000 × log2 8 = 2 × 2000 × 3 = 12000 bps."
+  },
+  {
+    "id": 13,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match the LIST-I with LIST-II\nLIST-I (Life Cycle Model): A. Waterfall Model  B. Agile Methodology  C. Test-driven Development (TDD)  D. Continual Integration (CI)\nLIST-II (Description): I. Interactive collaboration, customer feedback, rapid releases  II. Automatic testing, frequent integration, main branch  III. Sequential, fixed steps from requirement to maintenance  IV. Write tests before code implementation\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-I, C-II, D-IV",
+      "B": "A-II, B-I, C-IV, D-III",
+      "C": "A-I, B-III, C-II, D-IV",
+      "D": "A-III, B-I, C-IV, D-II"
+    },
+    "answer": "D",
+    "explanation": "Waterfall is sequential (III), Agile is collaborative with customer feedback (I), TDD writes tests first (IV), and CI means frequent integration with automatic testing (II)."
+  },
+  {
+    "id": 14,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Choose the right sequence of stages for data transmission using CSMA/CD.\nA. If the channel is clear, the sender sends the data.\nB. The sender senses the channel for activity.\nC. The sender waits for a random back off time before retransmitting.\nD. Collision detection occurs if two devices transmit at the same time.\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, B, D, C",
+      "B": "B, A, D, C",
+      "C": "B, A, C, D",
+      "D": "C, B, A, D"
+    },
+    "answer": "B",
+    "explanation": "In CSMA/CD the sender senses the channel, transmits if it is idle, detects a collision, and then backs off for a random time: B, A, D, C."
+  },
+  {
+    "id": 15,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following are true?\nA. A database may have only one primary key\nB. Every key is a candidate key\nC. There can be multiple candidate keys\nD. There can be more than one super keys\nE. Every candidate key is a primary key.\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, C, D only",
+      "B": "A, D, E only",
+      "C": "B, C, D only",
+      "D": "B, D, E only"
+    },
+    "answer": "A",
+    "explanation": "A relation has a single primary key chosen from possibly many candidate keys, and there can be many superkeys. Not every key (superkey) is a candidate key, and not every candidate key is the primary key."
+  },
+  {
+    "id": 16,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following statements is incorrect ?\n(1) Given a context free grammar G and a string x, an algorithm can be designed to decide whether x∈L(G) in polynomial time.\n(2) Given a context free language L, its complement is also context free.\n(3) The language {aⁿ bᵐ cᵖ : m, n, p ≥ 0, m ≠ n or m ≠ p} is not deterministic context free.\n(4) Class of deterministic context free languages is closed under intersection.",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "B",
+    "explanation": "CFLs are not closed under complement, so (2) is incorrect (the official choice). Note: (4) is also false, because DCFLs are not closed under intersection. Membership is decidable in polynomial time (CYK), and the language in (3) is inherently non-deterministic."
+  },
+  {
+    "id": 17,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "If L₁ is a regular language and L₂ is a context free language, which of the following statement is correct ?\n(1) Any subset of L₁∪L₂ is context free.\n(2) L₁∩L₂ is a context free language.\n(3) L₁∩L₂ is a regular language.\n(4) L₁∩L₂ is accepted by a deterministic push down automatons.",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "B",
+    "explanation": "CFLs are closed under intersection with regular languages, so L₁ ∩ L₂ is context free. It need not be regular or deterministic, and subsets of a CFL need not be context free."
+  },
+  {
+    "id": 18,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Consider a linear program {max cᵀx | Ax ≤ b}. Which of the following statements is true ?\n(1) the dual program is {min bᵀy | Aᵀy ≤ c, y ≥ 0}\n(2) the dual program is {min bᵀy | Aᵀy ≥ c, y ≥ 0}\n(3) the dual program is {min bᵀy | Aᵀy = c, y ≥ 0}\n(4) the dual program is {max bᵀY | Aᵀy = c}",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "C",
+    "explanation": "With x unrestricted in sign and constraints Ax ≤ b, the dual has y ≥ 0 and equality constraints Aᵀy = c, minimising bᵀy."
+  },
+  {
+    "id": 19,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Arrange the following data types in non-decreasing order according to the length of their representation in C++.\nA. char\nB. int\nC. float\nD. double\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "B, A, C, D",
+      "B": "A, B, D, C",
+      "C": "D, C, B, A",
+      "D": "A, B, C, D"
+    },
+    "answer": "D",
+    "explanation": "Typical sizes are char 1 byte, int 4, float 4 and double 8, so the non-decreasing order is A, B, C, D."
+  },
+  {
+    "id": 20,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Arrange the following in the correct order in the context of OSI model (from bottom to top)\nA. Network layer\nB. Physical layer\nC. Presentation layer\nD. Data link layer\nE. Application layer\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "D A C B E",
+      "B": "A C E B D",
+      "C": "B D A C E",
+      "D": "C A B E D"
+    },
+    "answer": "C",
+    "explanation": "Bottom to top: Physical, Data link, Network, …, Presentation, Application, which is B D A C E."
+  },
+  {
+    "id": 21,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Consider the following List-I and List-II in context of graph & model.\nLIST-I: A. Planar Graph  B. Bipartite Graph  C. PERT  D. CPM (Critical Path Method)\nLIST-II: I. Probabilistic Model  II. Deterministic Model  III. 4 - Colorable  IV. 2 - Colorable\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-I, D-II",
+      "B": "A-IV, B-III, C-I, D-II",
+      "C": "A-II, B-IV, C-I, D-III",
+      "D": "A-III, B-IV, C-II, D-I"
+    },
+    "answer": "A",
+    "explanation": "Planar graphs are 4-colourable (Four Colour Theorem) and bipartite graphs are 2-colourable. PERT uses probabilistic time estimates, while CPM is deterministic."
+  },
+  {
+    "id": 22,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "How will the following min-heap appear on inserting the key 32 ?\n[Min-heap (level order): 5; 10, 25; 30, 40, 50, 60; 70, 80, 90]\n[Options are drawn as trees:\n(1) 5; 10, 25; 30, 40, 50, 60; 70, 80, 90, 32 (32 as child of 40, no swap)\n(2) same as (1) with 32 drawn under 40\n(3) 5; 10, 25; 30, 32, 50, 60; 70, 80, 90, 40\n(4) 5; 10, 25; 30, 40, 50, 60; 32, 80, 90; 70 below 32]",
+    "options": {
+      "A": "Tree (1)",
+      "B": "Tree (2)",
+      "C": "Tree (3)",
+      "D": "Tree (4)"
+    },
+    "answer": "C",
+    "explanation": "32 is inserted at the next free position (right child of 40). Since 32 < 40, it swaps with 40, and since 32 > 10 it stops. The level order becomes 5; 10, 25; 30, 32, 50, 60; 70, 80, 90, 40, which is tree (3)."
+  },
+  {
+    "id": 23,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "How many solution does the equation\nx + y + z = 11 have, where x, y, z are non-negative integers?",
+    "options": {
+      "A": "33",
+      "B": "66",
+      "C": "68",
+      "D": "78"
+    },
+    "answer": "D",
+    "explanation": "By stars and bars, the number of solutions is C(11+3−1, 3−1) = C(13, 2) = 78."
+  },
+  {
+    "id": 24,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following is/are true for UDP protocol ?\nA. It is called Uniform Data Protocol\nB. It is called User Datagram Protocol\nC. It belongs to Transport Layer\nD. It belongs to Network Layer\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "A and C only",
+      "B": "B and C only",
+      "C": "A and D only",
+      "D": "B and D only"
+    },
+    "answer": "B",
+    "explanation": "UDP stands for User Datagram Protocol and is a transport-layer protocol."
+  },
+  {
+    "id": 25,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "What is the height of the binary search tree obtained by inserting the numbers\n40, 60, 50, 37, 52, 15, 8, 22 in the given order",
+    "options": {
+      "A": "4",
+      "B": "3",
+      "C": "2",
+      "D": "1"
+    },
+    "answer": "B",
+    "explanation": "The longest root-to-leaf paths are 40→37→15→8 (or 22) and 40→60→50→52, each with 3 edges, so the height is 3."
+  },
+  {
+    "id": 26,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Arrange the following in terms of their capacity from smallest to largest :\nA. L3 Cache\nB. L1 Cache\nC. CPU Register\nD. L2 Cache\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "C, D, B, A",
+      "B": "C, A, B, D",
+      "C": "C, B, D, A",
+      "D": "A, C, D, B"
+    },
+    "answer": "C",
+    "explanation": "By capacity: Registers < L1 < L2 < L3, which is C, B, D, A."
+  },
+  {
+    "id": 27,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match the LIST-I with LIST-II\nLIST-I: A. Wait-for graph  B. Precedence graph  C. Rigorous 2PL  D. Strict 2PL\nLIST-II: I. Holds all locks until it commits  II. Holds write-locks until it commits  III. Use to check deadlocks  IV. Used to check serialzability\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-I, D-II",
+      "B": "A-III, B-IV, C-II, D-I",
+      "C": "A-IV, B-I, C-II, D-III",
+      "D": "A-IV, B-III, C-II, D-I"
+    },
+    "answer": "A",
+    "explanation": "A wait-for graph detects deadlocks, and a precedence graph tests conflict serializability. Rigorous 2PL holds all locks until commit, while strict 2PL holds exclusive (write) locks until commit."
+  },
+  {
+    "id": 28,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "The number of pixel column divided by the number of scan lines that can be displayed by the system, is called",
+    "options": {
+      "A": "Pixmap",
+      "B": "Bitmap",
+      "C": "Aspect ratio",
+      "D": "Depth"
+    },
+    "answer": "C",
+    "explanation": "The aspect ratio is the ratio of horizontal pixels (columns) to vertical scan lines (rows)."
+  },
+  {
+    "id": 29,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following is not a part of the general activation record of a procedure?",
+    "options": {
+      "A": "Local data",
+      "B": "Global data",
+      "C": "Access link",
+      "D": "Temporaries"
+    },
+    "answer": "B",
+    "explanation": "An activation record holds parameters, the return value, control and access links, saved machine status, local data and temporaries. Global data lives in the static area, not in the activation record."
+  },
+  {
+    "id": 30,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "A doctor knows that the disease Meningitis causes a patient to have a stiff neck say 70% of time. The doctor also knows some unconditional facts : the prior probability that any patient has Meningitis is 1/50,000 and the prior probability that any patient has a stiff neck is 1%. Letting s be the proposition that the patient has a stiff neck and m the proposition that the patient has meningitis, compute the probability P(m/s) using Bayes' rule.",
+    "options": {
+      "A": ".014",
+      "B": ".0014",
+      "C": ".14",
+      "D": ".00014"
+    },
+    "answer": "B",
+    "explanation": "P(m|s) = P(s|m)·P(m)/P(s) = 0.7 × (1/50000) / 0.01 = 0.0014."
+  },
+  {
+    "id": 31,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "What is the correct sequence of database design process?\nA. Create conceptual schema\nB. Data model mapping\nC. Requirements collection and analysis\nD. Physical design\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "C, A, B, D",
+      "B": "C, B, A, D",
+      "C": "A, B, C, D",
+      "D": "A, C, B, D"
+    },
+    "answer": "A",
+    "explanation": "The steps are requirements collection → conceptual design (ER schema) → data model mapping (logical design) → physical design."
+  },
+  {
+    "id": 32,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Let <H₁, *> and <H₂, *> be subgroups of group <G, *>. Which of the following is False?",
+    "options": {
+      "A": "H₁.H₂ = {h₁ * h₂ : h₁ ∈ H₁ and h₂ ∈ H₁} is a subgroup.",
+      "B": "H₁.H₂ = {h₁ * h₂ : h₁ ∈ H₁ and h₂ ∈ H₁} is a normal subgroup given that H₁ and H₂ are normal subgroups.",
+      "C": "<H₁ ∩ H₂, *> is a subgroup.",
+      "D": "<H₁ ∩ H₂, *> is a subgroup."
+    },
+    "answer": "A",
+    "explanation": "H₁H₂ need not be a subgroup in general (it is one only if H₁H₂ = H₂H₁). If both are normal, H₁H₂ is a normal subgroup, and H₁ ∩ H₂ is always a subgroup. Note: options 3 and 4 are printed identically in the paper."
+  },
+  {
+    "id": 33,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following is not an interprocessor communication mechanism in UNIX?",
+    "options": {
+      "A": "Pipes",
+      "B": "Messages",
+      "C": "Shared memory",
+      "D": "Semaphore"
+    },
+    "answer": "D",
+    "explanation": "Pipes, message queues and shared memory transfer data between processes. Semaphores only provide synchronisation and carry no data, so they are the intended answer."
+  },
+  {
+    "id": 34,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "The one way propagation delay for a single bit of information (travelling at the speed of light i.e., 3×10⁸ meters per second) over a fiber optic cable from point A to point B, 12000 kilometers apart would be :",
+    "options": {
+      "A": "20 ms",
+      "B": "5 ms",
+      "C": "50 ms",
+      "D": "40 ms"
+    },
+    "answer": "D",
+    "explanation": "Delay = distance / speed = 12 × 10⁶ m / 3 × 10⁸ m/s = 0.04 s = 40 ms."
+  },
+  {
+    "id": 35,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match the LIST-I with LIST-II\nLIST-I: A. long signed int  B. double  C. long double  D. unsigned character\nLIST-II: I. % lf  II. % Lf  III. % c  IV. % ld\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-I, C-IV, D-III",
+      "B": "A-IV, B-I, C-II, D-III",
+      "C": "A-III, B-I, C-II, D-IV",
+      "D": "A-I, B-II, C-IV, D-III"
+    },
+    "answer": "B",
+    "explanation": "The format specifiers are long int → %ld, double → %lf, long double → %Lf, and char → %c."
+  },
+  {
+    "id": 36,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "In the worst case, the smallest number of comparisons required by any sorting algorithm, which does only binary comparisons is",
+    "options": {
+      "A": "⌈log n⌉",
+      "B": "⌈log n!⌉",
+      "C": "⌈log n(n−1)⌉",
+      "D": "2ⁿ"
+    },
+    "answer": "B",
+    "explanation": "A comparison-sort decision tree must have at least n! leaves, so its height is at least ⌈log₂ n!⌉."
+  },
+  {
+    "id": 37,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "What does \"Amdahl's Law\" describe in the context of parallel processing ?",
+    "options": {
+      "A": "Maximum speedup achievable, considering serial and parallel portions of a program",
+      "B": "The efficiency of message passing in a distributed memory system",
+      "C": "Computational efficiency of a parallel algorithm",
+      "D": "The reliability of a fault tolerant system"
+    },
+    "answer": "A",
+    "explanation": "Amdahl's law gives the maximum speedup S = 1/((1−p) + p/N), which is limited by the serial fraction of the program."
+  },
+  {
+    "id": 38,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "The number of vertices of odd degree in any graph of 'n' vertices with 'e' edges is :",
+    "options": {
+      "A": "odd",
+      "B": "even",
+      "C": "(n-e)",
+      "D": "prime"
+    },
+    "answer": "B",
+    "explanation": "By the handshaking lemma the sum of degrees is 2e, which is even, so the number of odd-degree vertices is even."
+  },
+  {
+    "id": 39,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "The combination of selection lines for sending the input I₁₄ to output in the following multiplexer is?\n[Figure: 64 × 1 MUX with inputs I₀ … I₆₃, select lines S₅ … S₁ S₀, and an output]",
+    "options": {
+      "A": "001111",
+      "B": "110000",
+      "C": "111100",
+      "D": "001110"
+    },
+    "answer": "D",
+    "explanation": "14 in 6-bit binary (S₅…S₀) is 001110."
+  },
+  {
+    "id": 40,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match List - I with List - II.\nList - I: A. Merge sort  B. Binary search  C. Quick sort  D. Search in an unsorted array\nList - II: I. n²  II. nlogn  III. n  IV. logn\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "A-I, B-IV, C-II, D-III",
+      "B": "A-I, B-II, C-III, D-IV",
+      "C": "A-II, B-I, C-III, D-IV",
+      "D": "A-II, B-IV, C-I, D-III"
+    },
+    "answer": "D",
+    "explanation": "The worst cases are merge sort n log n, binary search log n, quick sort n², and linear search in an unsorted array n."
+  },
+  {
+    "id": 41,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "A binary search tree is obtained by inserting the words \"Mathematics\", \"Physics\", \"Geography\", \"Zoology\", \"Metrology\", \"Geology\", \"Psychology\" and \"Chemistry\" in order. Words are compared by dictionary order. Arrange the following words in increasing order of their level in the tree.\nA. Mathematics\nB. Zoology\nC. Psychology\nD. Physics\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, D, C, B",
+      "B": "A, C, D, B",
+      "C": "A, D, B, C",
+      "D": "C, B, D, A"
+    },
+    "answer": "C",
+    "explanation": "Mathematics is the root (level 0), Physics is its right child (1), Zoology is Physics' right child (2), and Psychology is Zoology's left child (3). The order is A, D, B, C."
+  },
+  {
+    "id": 42,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which document outlines the functional and non-functional requirements of a software system?",
+    "options": {
+      "A": "SRS Document",
+      "B": "Design Document",
+      "C": "Test Plan",
+      "D": "User Manual"
+    },
+    "answer": "A",
+    "explanation": "The Software Requirements Specification (SRS) records the functional and non-functional requirements."
+  },
+  {
+    "id": 43,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Suppose P(·) is used for power set and ∅ is usual notation of empty set. Arrange following on the basis of their cardinality in non-decreasing order:\nA. P({a, b, {a, b}})\nB. P({∅, a, {a}, {{a}}})\nC. P(P(Φ))\nD. P(P({a}))\nE. P({{a, b}, c})\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "C, D, A, B, E",
+      "B": "D, C, E, A, B",
+      "C": "C, D, E, A, B",
+      "D": "D, C, B, A, E"
+    },
+    "answer": "C",
+    "explanation": "The cardinalities are |C| = 2, |D| = 4, |E| = 4, |A| = 2³ = 8 and |B| = 2⁴ = 16, giving C, D, E, A, B."
+  },
+  {
+    "id": 44,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match List - I with List - II.\nList - I: A. Latency  B. Delay  C. Throughput  D. Interrupt\nList - II: I. number of tasks completed in a given time period  II. causes the current activity to be deferred  III. time elapsed before next activity starts  IV. time to complete a single task\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "A-I, B-III, C-II, D-IV",
+      "B": "A-III, B-IV, C-I, D-II",
+      "C": "A-IV, B-II, C-III, D-I",
+      "D": "A-IV, B-III, C-I, D-II"
+    },
+    "answer": "D",
+    "explanation": "Latency is the time for one task (IV) and delay is the time before the next activity starts (III). Throughput is tasks per unit time (I), and an interrupt defers the current activity (II)."
+  },
+  {
+    "id": 45,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which topology requires a central controller or a hub?",
+    "options": {
+      "A": "Bus",
+      "B": "Star",
+      "C": "Mesh",
+      "D": "Ring"
+    },
+    "answer": "B",
+    "explanation": "In a star topology every device connects to a central hub or controller."
+  },
+  {
+    "id": 46,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "In Rate Monotonic scheduling, if a task has a period of 80 ms and an execution time of 55 ms, then its processor utilization and task rate will be",
+    "options": {
+      "A": "0.69, 12.5 Hz",
+      "B": "0.58, 12.3 Hz",
+      "C": "0.48, 11.4 Hz",
+      "D": "0.38, 10.5 Hz"
+    },
+    "answer": "A",
+    "explanation": "U = C/T = 55/80 ≈ 0.69, and the rate = 1/T = 1/0.08 s = 12.5 Hz."
+  },
+  {
+    "id": 47,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Let R = {(1, 2), (3, 4), (2, 2)} and\nS = {(4, 2), (2, 5), (3, 1), (1, 3)} be two relations. The composite relation R o S of R and S is :",
+    "options": {
+      "A": "{(4, 2), (3, 2), (2, 5)}",
+      "B": "{(1, 5), (3, 2), (2, 5)}",
+      "C": "{(1, 3), (3, 1), (2, 5)}",
+      "D": "{(2, 5), (3, 1), (2, 3), (3, 3)}"
+    },
+    "answer": "B",
+    "explanation": "Taking R first and then S: (1,2)·(2,5) → (1,5), (3,4)·(4,2) → (3,2), and (2,2)·(2,5) → (2,5). So R o S = {(1,5), (3,2), (2,5)}."
+  },
+  {
+    "id": 48,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "For the relation schema r (M, Y, P, MP, C) and set of functional dependencies F = {M→MP, {M, Y} → P, MP → C}, which of the following is the key?",
+    "options": {
+      "A": "M",
+      "B": "{M, Y}",
+      "C": "{M, C}",
+      "D": "MP"
+    },
+    "answer": "B",
+    "explanation": "{M,Y}⁺ = {M, Y, MP, P, C}, which is all the attributes. Y appears on no right-hand side, so every key must contain Y, and M alone does not determine Y."
+  },
+  {
+    "id": 49,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "The number of leaf nodes in a full 4-ary rooted tree of n nodes is",
+    "options": {
+      "A": "n/2",
+      "B": "(2n − 1) / 4",
+      "C": "(n + 1) / 4",
+      "D": "(3n + 1) / 4"
+    },
+    "answer": "D",
+    "explanation": "For a full m-ary tree with n nodes, the number of leaves is L = ((m−1)n + 1)/m. With m = 4 this gives (3n+1)/4."
+  },
+  {
+    "id": 50,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Consider the following binary codes\nC₁ 00000\nC₂ 01011\nC₃ 10101\nWhat is the maximum Hamming Distance value for all pairs of above mentioned codes.",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "C",
+    "explanation": "d(C₁,C₂) = 3, d(C₁,C₃) = 3 and d(C₂,C₃) = 4, so the maximum is 4."
+  },
+  {
+    "id": 51,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match the LIST-I with LIST-II\nLIST-I: A. Pivot point  B. Fixed point  C. Mirror image  D. Distortion\nLIST-II: I. Reflection  II. Shear  III. Rotation  IV. Scaling\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-I, D-II",
+      "B": "A-III, B-IV, C-II, D-I",
+      "C": "A-IV, B-III, C-II, D-I",
+      "D": "A-I, B-II, C-III, D-IV"
+    },
+    "answer": "A",
+    "explanation": "Rotation is about a pivot point and scaling is about a fixed point. Reflection produces a mirror image, and shear distorts the shape."
+  },
+  {
+    "id": 52,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Choose the correct order for the following sequence in the context of OSI layers (from bottom to top)\nA. Transforming the datagrams into frame for transmission\nB. Transmission of bits over communication channel\nC. Handling user interface\nD. Control and monitoring of subnet\nE. Transmission of data using either connection-oriented or connection-less protocol\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A B C D E",
+      "B": "B C D E A",
+      "C": "B A D E C",
+      "D": "A B D E C"
+    },
+    "answer": "C",
+    "explanation": "The functions map to Physical (B), Data link (A), Network (D), Transport (E) and Application (C), so the order is B A D E C."
+  },
+  {
+    "id": 53,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match the LIST-I with LIST-II\nLIST-I (Process model): A. Classical Waterfall Model  B. Prototype Model  C. Evolutionary Model  D. Spiral Model\nLIST-II (Characteristics): I. Risk Analysis  II. Large Problem with Incremental delivery  III. Clear Requirements  IV. Requirements are not well understood\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-I, B-III, C-II, D-IV",
+      "B": "A-III, B-IV, C-II, D-I",
+      "C": "A-II, B-III, C-IV, D-I",
+      "D": "A-IV, B-I, C-III, D-II"
+    },
+    "answer": "B",
+    "explanation": "Waterfall suits clear requirements and prototyping suits unclear requirements. The evolutionary model suits large problems with incremental delivery, and the spiral model centres on risk analysis."
+  },
+  {
+    "id": 54,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Identify the incorrect statements from the following regarding the protocols used in the TCP/IP protocol suite.\nA. IP is a reliable connection less protocol.\nB. ARP is used to find the physical address of a node given its logical address\nC. ICMP is used to send notification of datagram problems to the recipient of the message.\nD. IGMP is used to facilitate simultaneous transmission of a message to a group of recipients.\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B and D only",
+      "B": "D only",
+      "C": "A and C only",
+      "D": "A, C and D only"
+    },
+    "answer": "C",
+    "explanation": "IP is an unreliable (best-effort) connectionless protocol, so A is wrong. ICMP reports datagram problems back to the sender (source), not the recipient, so C is wrong. B and D are correct."
+  },
+  {
+    "id": 55,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following is memory interleaving ?\n(1) Layering of memory stacks one above the other\n(2) Hierarchy of different type of memories\n(3) Division of memory into multiple modules, allowing the CPU to access multiple modules simultaneously\n(4) Combining different type of memories",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "C",
+    "explanation": "Interleaving spreads consecutive addresses across several memory modules so that they can be accessed in parallel or overlapped."
+  },
+  {
+    "id": 56,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "If f(n) = θ(g(n)) and g(n) = O(h(n)), then which of the following is true ?\n(1) f(n) = O(h(n))\n(2) f(n) = θ(h(n))\n(3) h(n) = O(f(n))\n(4) h(n) = θ(f(n))",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "A",
+    "explanation": "f = θ(g) implies f = O(g), and since g = O(h), transitivity gives f = O(h). Nothing stronger follows."
+  },
+  {
+    "id": 57,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Following is not the feature/characteristics of Linked-List allocation of Files in a File system :\n(1) No space is lost in this allocation to disk fragmentation (except for internal fragmentation in the last block)\n(2) Reading of files or accessing them in Random access is very fast\n(3) Amount of data stored in a block is not in powers of 2 as pointer takes few bytes\n(4) The disadvantages of Linked-List allocation can be overcome by using Table in main memory called FAT",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "B",
+    "explanation": "Linked allocation makes random access slow, because the chain must be followed from the start, so statement (2) is not a characteristic."
+  },
+  {
+    "id": 58,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Consider the following neural network\n[Figure: inputs x₁ = 0.5, x₂ = 0.6, x₃ = 0.8 with weights 0.5, −0.8, 1 into neuron A, bias 0.5, activation unit B, output y]\nWhat will be the net input yin and final output 'y' of this neural network given that the activation function is threshold function defined as follows\nf(x) = 1 if x ≥ 1; 0 if x < 1",
+    "options": {
+      "A": "yin = 2.03, y = 1",
+      "B": "yin = 1.53, y = 1",
+      "C": "yin = 1.07, y = 1",
+      "D": "yin = 0.57, y = 0"
+    },
+    "answer": "C",
+    "explanation": "yin = 0.5 + 0.5(0.5) + 0.6(−0.8) + 0.8(1) = 0.5 + 0.25 − 0.48 + 0.8 = 1.07. Since 1.07 ≥ 1, y = 1."
+  },
+  {
+    "id": 59,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "In disk scheduling example, suppose the disk tracks are numbered from 0 to 49. Head is presently positioned at track 15 and requests for tracks 4, 40, 11, 35, 7 and 14 have arrived (in that order). It takes 1 ms to travel from one track to the next adjacent track. Following disk scheduling algorithms are to be executed and total time traversed is to be recorded in ms in ascending order (assume arm-movement toward high numbered request first, wherever needed)\nA. FCFS\nB. LOOK\nC. SSTF\nD. SCAN\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "C, B, D, A",
+      "B": "B, A, C, D",
+      "C": "C, D, B, A",
+      "D": "D, B, C, A"
+    },
+    "answer": "A",
+    "explanation": "The totals are SSTF 47 ms (15→14→11→7→4→35→40), LOOK 61 ms (15→40→4), SCAN 79 ms (15→49→4) and FCFS 135 ms. The ascending order is C, B, D, A."
+  },
+  {
+    "id": 60,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Arrange the following in ascending order on the basis of number of distinct prime numbers in their prime factorization.\nA. 729\nB. 1001\nC. 1111\nD. 420\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, C, B, D",
+      "B": "D, A, B, C",
+      "C": "A, B, C, D",
+      "D": "D, A, C, B"
+    },
+    "answer": "A",
+    "explanation": "729 = 3⁶ (1 prime), 1111 = 11·101 (2), 1001 = 7·11·13 (3) and 420 = 2²·3·5·7 (4), giving A, C, B, D."
+  },
+  {
+    "id": 61,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following are correct about constructors in C++ ?\nA. They have the same name as the class.\nB. They can return values.\nC. They are called automatically when an object is created.\nD. They can be overloaded.\nE. They can be inherited.\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, B, C & D only",
+      "B": "A, C & D only",
+      "C": "B, C & D only",
+      "D": "C, D & E only"
+    },
+    "answer": "B",
+    "explanation": "Constructors share the class name, run automatically and can be overloaded. They have no return type and are not inherited."
+  },
+  {
+    "id": 62,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "How many edges are there in a graph with 10 vertices each of degree six?",
+    "options": {
+      "A": "60",
+      "B": "15",
+      "C": "20",
+      "D": "30"
+    },
+    "answer": "D",
+    "explanation": "By the handshaking lemma, 2e = 10 × 6 = 60, so e = 30."
+  },
+  {
+    "id": 63,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match the LIST-I with LIST-II\nLIST-I: A. Disk Scheduling  B. Batch Processing  C. Time Sharing  D. Interrupt Processing\nLIST-II: I. Round Robin  II. SCAN  III. LIFO  IV. FIFO\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-II, D-I",
+      "B": "A-IV, B-III, C-II, D-I",
+      "C": "A-II, B-IV, C-I, D-III",
+      "D": "A-II, B-I, C-IV, D-III"
+    },
+    "answer": "C",
+    "explanation": "SCAN is a disk-scheduling algorithm, batch jobs run FIFO, time sharing uses round robin, and nested interrupts are serviced LIFO."
+  },
+  {
+    "id": 64,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "The minimum state of DFA of the following would be the following:\n[DFA: q0 is the start state and q4 is the final state. q0 –0→ q1, q0 –1→ q3; q1 –0→ q2, q2 –0→ q1; q1 –1→ q4, q2 –1→ q4; q3 –0→ q2, q3 –1→ q4]\n[Options are drawn as DFAs with states A (start), B, C (final):\n(1) A –0,1→ B, B loops on 0, B –1→ C\n(2) A –0,1→ B, B loops on 1, B –0→ C\n(3) A –0,1→ B, B loops on 0,1, B –1→ C\n(4) A –0,1→ B, B –1→ C]",
+    "options": {
+      "A": "DFA (1)",
+      "B": "DFA (2)",
+      "C": "DFA (3)",
+      "D": "DFA (4)"
+    },
+    "answer": "A",
+    "explanation": "q1, q2 and q3 are equivalent (on 0 they stay in the group and on 1 they go to q4), so they merge into B. The language is (0+1)0*1, which matches DFA (1)."
+  },
+  {
+    "id": 65,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match the LIST-I with LIST-II\nLIST-I (Data structure): A. Stack  B. Queue  C. Linked list  D. Binary search tree\nLIST-II (Characteristics): I. First-In-First-Out (FIFO) order  II. Last-In-First-Out (LIFO) order  III. Nodes with two children ordered  IV. Dynamic size, nodes linked sequentially\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-I, C-II, D-III",
+      "B": "A-II, B-I, C-IV, D-III",
+      "C": "A-III, B-IV, C-I, D-II",
+      "D": "A-II, B-I, C-III, D-IV"
+    },
+    "answer": "B",
+    "explanation": "A stack is LIFO and a queue is FIFO. A linked list has dynamic size with sequentially linked nodes, and a BST has ordered nodes with two children."
+  },
+  {
+    "id": 66,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "For sending input I₆ on the output line of a 8×1 multiplexer,\n[Figure: 8×1 MUX with inputs I₀ … I₇, select lines S₂ S₁ S₀, output O/P]\nWhich of the following will represent the combination of selection lines?",
+    "options": {
+      "A": "001",
+      "B": "100",
+      "C": "110",
+      "D": "111"
+    },
+    "answer": "C",
+    "explanation": "6 in binary on S₂S₁S₀ is 110."
+  },
+  {
+    "id": 67,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "In open addressing, how are collisions typically resolved ?",
+    "options": {
+      "A": "By probing and finding the next available slot in the table",
+      "B": "By creating a linked list at the point of collision",
+      "C": "By rehashing the entire table",
+      "D": "By storing the colliding elements in a separate array"
+    },
+    "answer": "A",
+    "explanation": "Open addressing resolves collisions by probing (linear, quadratic or double hashing) for another empty slot in the same table."
+  },
+  {
+    "id": 68,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Simplify the following Boolean expression using 4-variables K-map.\nF(A, B, C, D) = Σ m(3, 6, 7, 11, 12, 13, 14, 15)",
+    "options": {
+      "A": "A̅B̅ + B̅C + C̅D̅",
+      "B": "A̅B + CD̅ + AB̅",
+      "C": "AB + BC + CD",
+      "D": "CD + AC̅ + BD"
+    },
+    "answer": "C",
+    "explanation": "The groups are AB (12–15), BC (6, 7, 14, 15) and CD (3, 7, 11, 15), so F = AB + BC + CD."
+  },
+  {
+    "id": 69,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match the LIST-I with LIST-II\nLIST-I: A. FDM  B. Digital Circuits  C. A Two-Variable function  D. J-K flip flop\nLIST-II: I. has four possible Minterms  II. Frequency Division Multiplexing  III. Universal flip-flop  IV. Combinational or Sequential\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-II, B-I, C-IV, D-III",
+      "B": "A-II, B-IV, C-I, D-III",
+      "C": "A-II, B-III, C-I, D-IV",
+      "D": "A-II, B-I, C-III, D-IV"
+    },
+    "answer": "B",
+    "explanation": "FDM stands for Frequency Division Multiplexing, and digital circuits are either combinational or sequential. A two-variable function has 2² = 4 minterms, and the JK flip-flop is the universal flip-flop."
+  },
+  {
+    "id": 70,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following have true value if universe of discourse consist of all integers:\nA. ∃n (2n = 3n)\nB. ∀n (n² ≥ n)\nC. ∀n (2n > n)\nD. ∃n (n² = 2)\nE. ∀x∀y ∃z (xy = z)\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "B, C and E only",
+      "B": "A, B and E only",
+      "C": "A, B, C and D only",
+      "D": "B, C, D and E only"
+    },
+    "answer": "B",
+    "explanation": "A is true (n = 0), B is true for every integer, and E is true because integers are closed under multiplication. C fails for n ≤ 0, and D fails because √2 is not an integer."
+  },
+  {
+    "id": 71,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match the LIST-I with LIST-II\nLIST-I: A. Commutative law  B. Distributive law  C. Demorgan law  D. Adsorption law\nLIST-II: I. P∧(Q∨R) ≡ (P∧Q) ∨ (P∧R)  II. P∧(P∨Q) ≡ P  III. P∧Q ≡ Q∧P  IV. ¬(P∨Q) ≡ ¬P∧¬Q\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-IV, C-II, D-I",
+      "B": "A-II, B-I, C-IV, D-III",
+      "C": "A-III, B-I, C-IV, D-II",
+      "D": "A-IV, B-II, C-III, D-I"
+    },
+    "answer": "C",
+    "explanation": "Commutative is III, distributive is I, De Morgan is IV, and absorption is II."
+  },
+  {
+    "id": 72,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "The problem(s) in piggybacking acknowledgement frames is :\nA. There is no need to send separate acknowledgement frames\nB. It requires more bandwidth\nC. To ascertain, how long the data link layer must wait for a packet onto which the acknowledgement is attached\nD. Numbers of acknowledgement frames decrease\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "A and D only",
+      "B": "B only",
+      "C": "B and C only",
+      "D": "C only"
+    },
+    "answer": "D",
+    "explanation": "The difficulty with piggybacking is deciding how long to wait for an outgoing frame to carry the ACK. A and D are advantages, and piggybacking saves bandwidth rather than using more."
+  },
+  {
+    "id": 73,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "A problem of size n requires n² bit operations. What is the largest size instance that can be solved in 1 second, if each bit operation is carried out in 10⁻⁹ second?",
+    "options": {
+      "A": "10⁹",
+      "B": "3.16×10⁴",
+      "C": "3.96×10⁷",
+      "D": "2^(10⁹)"
+    },
+    "answer": "B",
+    "explanation": "In one second 10⁹ operations are possible. n² = 10⁹ gives n = √10⁹ ≈ 3.16 × 10⁴."
+  },
+  {
+    "id": 74,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "The average memory access time is 130 ns and average time of cache memory is 100 ns. With 75% hit ratio, The average time to access a word is?",
+    "options": {
+      "A": "130 ns",
+      "B": "150 ns",
+      "C": "132.5 ns",
+      "D": "107.5 ns"
+    },
+    "answer": "C",
+    "explanation": "Using the hierarchical (sequential) access formula, t = h·tc + (1−h)(tc + tm) = 0.75 × 100 + 0.25 × (100 + 130) = 75 + 57.5 = 132.5 ns."
+  },
+  {
+    "id": 75,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "A tree is:\nA. a circuitless connected graph\nB. a connected graph of 'n' vertices with (n−1) edges\nC. a circuitless graph of 'n' vertices with (n−1) edges\nD. a minimally connected graph\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "A, B and C only",
+      "B": "B, C and D only",
+      "C": "A, B, C and D",
+      "D": "A and B only"
+    },
+    "answer": "C",
+    "explanation": "All four are equivalent characterisations of a tree."
+  },
+  {
+    "id": 76,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match List - I with List - II.\nList - I: A. SMTP  B. UDP  C. Ethernet  D. IP\nList - II: I. Network layer  II. Transport layer  III. Application layer  IV. Data Link layer\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "A-I, B-II, C-III, D-IV",
+      "B": "A-III, B-II, C-IV, D-I",
+      "C": "A-II, B-III, C-IV, D-I",
+      "D": "A-I, B-II, C-IV, D-III"
+    },
+    "answer": "B",
+    "explanation": "SMTP is an application-layer protocol, UDP is transport, Ethernet is data link, and IP is network."
+  },
+  {
+    "id": 77,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Given the functions:\nPredecessor function : Pred (x) = x − 1\nand T(x, y+1) = pred (T(x, y)), T(x, 0) = x.\nWhich of the following operations is a candidate for T?",
+    "options": {
+      "A": "Subtraction Operation",
+      "B": "Addition Operation",
+      "C": "Multiplication Operation",
+      "D": "Division Operation"
+    },
+    "answer": "A",
+    "explanation": "T(x, y) applies pred y times to x, so T(x, y) = x − y (subtraction)."
+  },
+  {
+    "id": 78,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match the LIST-I with LIST-II\nLIST-I (Language): A. L₁ = {aⁿbᵐ | n, m ≥ 0}  B. L₂ = {aⁿbᵐ | (n = m) ≥ 0}  C. L₃ = {aⁿbⁿcⁿdⁿeⁿ | n ≥ 1}  D. L₄ = {aⁿbⁿcᵐdⁿe² | n, m ≥ 0}\nLIST-II (Type of Language): I. Unrestricted  II. Context Sensitive  III. Regular  IV. Context Free\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-III, B-I, C-II, D-IV",
+      "B": "A-III, B-IV, C-I, D-II",
+      "C": "A-III, B-II, C-IV, D-I",
+      "D": "A-II, B-III, C-IV, D-I"
+    },
+    "answer": "B",
+    "explanation": "L₁ = a*b* is regular and L₂ = aⁿbⁿ is context free, and only option 2 has both A-III and B-IV. Note: in strict terms L₃ is context-sensitive (and therefore also unrestricted), and L₄ (aⁿbⁿ…dⁿ) is also not context free, so the official pairing C-I, D-II is loose."
+  },
+  {
+    "id": 79,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match the LIST-I with LIST-II\nLIST-I: A. Data link layer  B. Network layer  C. Transport layer  D. Presentation layer\nLIST-II: I. Encryption  II. Connection Control  III. Routing  IV. Framing\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-III, C-I, D-II",
+      "B": "A-III, B-IV, C-II, D-I",
+      "C": "A-IV, B-II, C-III, D-I",
+      "D": "A-IV, B-III, C-II, D-I"
+    },
+    "answer": "D",
+    "explanation": "The data link layer does framing, the network layer does routing, the transport layer does connection control, and the presentation layer does encryption."
+  },
+  {
+    "id": 80,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "What is the maximum number of nodes that can be inserted in the following AVL tree without changing its height ?\n[AVL tree: root 60, left child 50, right child 70; 70 has right child 80]",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "3",
+      "D": "5"
+    },
+    "answer": "C",
+    "explanation": "The tree has height 2 with 4 nodes. A tree of height 2 holds at most 7 nodes, so 3 more nodes can be inserted (at the vacant positions) without increasing the height."
+  },
+  {
+    "id": 81,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following technologies enables the creation of virtual servers in cloud computing environment?",
+    "options": {
+      "A": "DNS Server",
+      "B": "Hypervisor",
+      "C": "Firewall",
+      "D": "Load Balancer"
+    },
+    "answer": "B",
+    "explanation": "A hypervisor (virtual machine monitor) creates and runs virtual machines on physical hardware."
+  },
+  {
+    "id": 82,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following relational algebraic expression is equivalent to the SQL query SELECT X FROM B WHERE Y ?",
+    "options": {
+      "A": "σ_y(π_x(B))",
+      "B": "π_y(σ_x(B))",
+      "C": "σ_x(π_x(B))",
+      "D": "π_x(σ_y(B))"
+    },
+    "answer": "D",
+    "explanation": "WHERE corresponds to selection σ and SELECT to projection π, so the query is π_X(σ_Y(B))."
+  },
+  {
+    "id": 83,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following additional properties is supposed to be satisfied by a group (G, *) to be an abelian group ?",
+    "options": {
+      "A": "Commutative",
+      "B": "Identity",
+      "C": "Inverse",
+      "D": "Associativity"
+    },
+    "answer": "A",
+    "explanation": "An abelian group is a group that is also commutative."
+  },
+  {
+    "id": 84,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "A safe expression in relational calculus is one that is guaranteed to yield",
+    "options": {
+      "A": "Finite number of tuples",
+      "B": "Finite number of attributes",
+      "C": "Finite number of null values",
+      "D": "Finite number of indices"
+    },
+    "answer": "A",
+    "explanation": "Safe expressions guarantee a finite result, meaning a finite number of tuples."
+  },
+  {
+    "id": 85,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "[Figure: an object in the 'Original Position' (vertices 1, 2, 3) on one side of the y-axis and its 'Reflected Position' mirrored across the y-axis]\nThe above figure shows:\nA. Reflection of object about x axis.\nB. Reflection of object about y axis.\nC. Reflection of object about x = 0\nD. Reflection of object about y = 0\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A, D only",
+      "B": "A, C only",
+      "C": "B, C only",
+      "D": "B, D only"
+    },
+    "answer": "C",
+    "explanation": "The object is mirrored across the y-axis, and the y-axis is the line x = 0, so B and C are true."
+  },
+  {
+    "id": 86,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following deals with the interaction between computers and humans using the natural language.",
+    "options": {
+      "A": "PROLOG",
+      "B": "ELIZA",
+      "C": "NLP",
+      "D": "LISP"
+    },
+    "answer": "C",
+    "explanation": "Natural Language Processing (NLP) is the field that deals with interaction between computers and humans in natural language."
+  },
+  {
+    "id": 87,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match List - I with List - II.\nList - I: A. Macros  B. Assembler  C. Loader  D. Compiler\nList - II: I. Converts high level code to object (Machine) code  II. Used for code Expansion  III. Used to translate assembly language code to object code  IV. Used to allocate memory and relocate program in memory\nChoose the correct answer from the options given below :",
+    "options": {
+      "A": "A-IV, B-III, C-I, D-II",
+      "B": "A-II, B-III, C-I, D-IV",
+      "C": "A-II, B-III, C-IV, D-I",
+      "D": "A-IV, B-I, C-III, D-II"
+    },
+    "answer": "C",
+    "explanation": "Macros are used for code expansion and an assembler translates assembly to object code. A loader allocates memory and relocates the program, and a compiler translates high-level code."
+  },
+  {
+    "id": 88,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "In order to define the relationship between two entity sets, which of the following operations can be used?",
+    "options": {
+      "A": "Concatenation",
+      "B": "Adding",
+      "C": "Cartesian product",
+      "D": "Union"
+    },
+    "answer": "C",
+    "explanation": "A relationship set is a subset of the Cartesian product of the participating entity sets."
+  },
+  {
+    "id": 89,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Which of the following ICs has lowest power consumption?",
+    "options": {
+      "A": "ECL",
+      "B": "MOS",
+      "C": "TTL",
+      "D": "CMOS"
+    },
+    "answer": "D",
+    "explanation": "CMOS draws almost no static current, so it has the lowest power dissipation. ECL has the highest."
+  },
+  {
+    "id": 90,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Match the LIST-I with LIST-II\nMatch the equivalent propositions in List-I and List-II\nLIST-I: A. P → (Q → P)  B. P → (Q ∨ R)  C. (P → Q) ∧ (R → Q)  D. ¬(P ⇄ Q)\nLIST-II: I. (P ∨ Q) ∧ ¬(P ∧ Q)  II. (P ∨ R) → Q  III. (P → Q) ∨ (P → R)  IV. ¬P → (P → Q)\nChoose the correct answer from the options given below:",
+    "options": {
+      "A": "A-IV, B-II, C-III, D-I",
+      "B": "A-IV, B-III, C-II, D-I",
+      "C": "A-I, B-II, C-III, D-IV",
+      "D": "A-I, B-III, C-II, D-IV"
+    },
+    "answer": "B",
+    "explanation": "A and IV are both tautologies. P→(Q∨R) ≡ (P→Q)∨(P→R), (P→Q)∧(R→Q) ≡ (P∨R)→Q, and ¬(P⇄Q) is XOR = (P∨Q)∧¬(P∧Q)."
+  },
+  {
+    "id": 91,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "In a particular program, it is found that 1% of the code accounts for 50% of the execution time. To code the program in FORTRAN, it takes 100 man-days. Coding in assembly language is 10 times harder than coding in FORTRAN, but runs 5 times faster. Converting (rewriting) an existing FORTRAN program to an assembly language program is 4 times harder than coding in FORTRAN.\n\nHow many days will it take for 2 programmers to write the entire code in FORTRAN and then rewrite the 1% code to assembly language?",
+    "options": {
+      "A": "52",
+      "B": "53",
+      "C": "54",
+      "D": "55"
+    },
+    "answer": "A",
+    "explanation": "Writing in FORTRAN takes 100 man-days and rewriting 1% takes 4 × 1 = 4 man-days, for 104 man-days in total. With 2 programmers that is 52 days."
+  },
+  {
+    "id": 92,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "In a particular program, it is found that 1% of the code accounts for 50% of the execution time. To code the program in FORTRAN, it takes 100 man-days. Coding in assembly language is 10 times harder than coding in FORTRAN, but runs 5 times faster. Converting (rewriting) an existing FORTRAN program to an assembly language program is 4 times harder than coding in FORTRAN.\n\nThe entire program is written in FORTRAN. The percentage decrease in the execution time, resulting from rewriting the 1% in assembly language is",
+    "options": {
+      "A": "20",
+      "B": "32",
+      "C": "40",
+      "D": "60"
+    },
+    "answer": "C",
+    "explanation": "Execution time drops from T to 0.5T + 0.5T/5 = 0.6T, a 40% decrease."
+  },
+  {
+    "id": 93,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "In a particular program, it is found that 1% of the code accounts for 50% of the execution time. To code the program in FORTRAN, it takes 100 man-days. Coding in assembly language is 10 times harder than coding in FORTRAN, but runs 5 times faster. Converting (rewriting) an existing FORTRAN program to an assembly language program is 4 times harder than coding in FORTRAN.\n\nIf a project team needs 13 days to completely write the program in FORTRAN and rewriting (converting) the 1% code to assembly language, then the team consists of",
+    "options": {
+      "A": "13 Programmers",
+      "B": "10 Programmers",
+      "C": "8 Programmers",
+      "D": "100/13 Programmers"
+    },
+    "answer": "C",
+    "explanation": "The total effort is 100 + 4 = 104 man-days, and 104 / 13 = 8 programmers."
+  },
+  {
+    "id": 94,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "In a particular program, it is found that 1% of the code accounts for 50% of the execution time. To code the program in FORTRAN, it takes 100 man-days. Coding in assembly language is 10 times harder than coding in FORTRAN, but runs 5 times faster. Converting (rewriting) an existing FORTRAN program to an assembly language program is 4 times harder than coding in FORTRAN.\n\nIf 99% of the program is written in FORTRAN and the remaining 1% in assembly language, the percentage increase in the execution time, compared to writing the entire program in FORTRAN and rewriting the 1% in assembly language is",
+    "options": {
+      "A": "0.9",
+      "B": "1",
+      "C": "0.1",
+      "D": "0"
+    },
+    "answer": "D",
+    "explanation": "In both cases the final code is 99% FORTRAN and 1% assembly, so the execution time is the same and the increase is 0%."
+  },
+  {
+    "id": 95,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "In a particular program, it is found that 1% of the code accounts for 50% of the execution time. To code the program in FORTRAN, it takes 100 man-days. Coding in assembly language is 10 times harder than coding in FORTRAN, but runs 5 times faster. Converting (rewriting) an existing FORTRAN program to an assembly language program is 4 times harder than coding in FORTRAN.\n\nIf 99% of the program is written in FORTRAN and the remaining 1% in assembly language, the percentage increase in the programming time compared to writing the entire program in FORTRAN and rewriting (converting) the 1% to assembly language is",
+    "options": {
+      "A": "10",
+      "B": "5",
+      "C": "13",
+      "D": "8"
+    },
+    "answer": "B",
+    "explanation": "Direct coding takes 99 + 10 × 1 = 109 man-days, while write-then-convert takes 100 + 4 = 104. The increase is 5/104 ≈ 4.8%, approximately 5%."
+  },
+  {
+    "id": 96,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Consider the Following Context Free Grammar (G) :-\nS → AB\nB → +AB | ∈\nA → CD\nD → *CD | ∈\nC → [S] | x\nVariable = { S, A, B, C, D }\nTerminals = { +, *, [, ], x }\n\nFind the Follow (A) & Follow (C).",
+    "options": {
+      "A": "Follow (A) = { ], $ }; Follow (C) = { +, ], $ };",
+      "B": "Follow (A) = { +, ], $ }; Follow (C) = { *, +, ], $ };",
+      "C": "Follow (A) = { *, $, [ }; Follow (C) = { *, [, $ };",
+      "D": "Follow (A) = { *, ], $ }; Follow (C) = { +, ], $ };"
+    },
+    "answer": "B",
+    "explanation": "Follow(S) = Follow(B) = { ], $ }. Follow(A) = FIRST(B) − ∈ ∪ Follow(B) = { +, ], $ }. Follow(C) = FIRST(D) − ∈ ∪ Follow(A) = { *, +, ], $ }."
+  },
+  {
+    "id": 97,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Consider the Following Context Free Grammar (G) :-\nS → AB\nB → +AB | ∈\nA → CD\nD → *CD | ∈\nC → [S] | x\nVariable = { S, A, B, C, D }\nTerminals = { +, *, [, ], x }\n\nThe I₀ state of the canonical LR(0) set of the SLR(1) parser of this CFG has how many productions?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "C",
+    "explanation": "I₀ = closure(S' → .S) = { S' → .S, S → .AB, A → .CD, C → .[S], C → .x }, which is 5 items."
+  },
+  {
+    "id": 98,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Consider the Following Context Free Grammar (G) :-\nS → AB\nB → +AB | ∈\nA → CD\nD → *CD | ∈\nC → [S] | x\nVariable = { S, A, B, C, D }\nTerminals = { +, *, [, ], x }\n\nWhat will be the FIRST(S) & FIRST(D)?",
+    "options": {
+      "A": "FIRST(S) = { +, [, x }; FIRST(D) = { +, * };",
+      "B": "FIRST(S) = { [, ], x }; FIRST(D) = { +, ∈ };",
+      "C": "FIRST(S) = { [, x }; FIRST(D) = { *, ∈ };",
+      "D": "FIRST(S) = { [, x, ∈ }; FIRST(D) = { *, ∈ };"
+    },
+    "answer": "C",
+    "explanation": "FIRST(S) = FIRST(A) = FIRST(C) = { [, x }, and FIRST(D) = { *, ∈ }."
+  },
+  {
+    "id": 99,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Consider the Following Context Free Grammar (G) :-\nS → AB\nB → +AB | ∈\nA → CD\nD → *CD | ∈\nC → [S] | x\nVariable = { S, A, B, C, D }\nTerminals = { +, *, [, ], x }\n\nIn the LL(1) Parsing table of the given CFG, how many valid non blank entities will be there in the rows for variables 'B' and 'D' ?",
+    "options": {
+      "A": "B=3 entries; D=4 entries",
+      "B": "B=6 entries; D=5 entries",
+      "C": "B=2 entries; D=3 entries",
+      "D": "B=1 entry; D=2 entries"
+    },
+    "answer": "A",
+    "explanation": "Row B has B → +AB under '+' and B → ∈ under Follow(B) = { ], $ }, so 3 entries. Row D has D → *CD under '*' and D → ∈ under Follow(D) = { +, ], $ }, so 4 entries."
+  },
+  {
+    "id": 100,
+    "source_file": "UGC_NET_June2026_PYQ",
+    "question": "Consider the Following Context Free Grammar (G) :-\nS → AB\nB → +AB | ∈\nA → CD\nD → *CD | ∈\nC → [S] | x\nVariable = { S, A, B, C, D }\nTerminals = { +, *, [, ], x }\n\nIdentify the correct statement from the following.",
+    "options": {
+      "A": "The given CFG(G) is Left recursive",
+      "B": "The given CFG(G) needs Left factorization",
+      "C": "[[x * x] + x] is a valid sentence of this grammar",
+      "D": "The given CFG(G) has an SLR(o) Parser as well."
+    },
+    "answer": "C",
+    "explanation": "[[x*x]+x] derives as S ⇒ AB ⇒ C ⇒ [S], with the inner S ⇒ A B ⇒ [x*x] + x. The grammar has no left recursion and no common prefixes. It is not LR(0), because the ∈-productions cause shift/reduce conflicts."
+  }
+]

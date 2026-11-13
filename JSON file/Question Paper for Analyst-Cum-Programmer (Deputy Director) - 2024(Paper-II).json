@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which type of feasibility assesses whether the proposed system can be developed with the available technology and resources?",
+    "options": {
+      "A": "Legal feasibility",
+      "B": "Operational feasibility",
+      "C": "Economic feasibility",
+      "D": "Technical feasibility"
+    },
+    "answer": "D",
+    "explanation": "Technical feasibility checks whether the required technology, equipment and expertise are available."
+  },
+  {
+    "id": 2,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which one of the alternatives given below is not a tool of structured analysis?",
+    "options": {
+      "A": "DFD",
+      "B": "Bar chart",
+      "C": "Decision table",
+      "D": "Decision tree"
+    },
+    "answer": "B",
+    "explanation": "Structured analysis tools are DFDs, data dictionaries, decision tables/trees and structured English; a bar chart is a project scheduling tool."
+  },
+  {
+    "id": 3,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Identify an approach which is not used to evaluate user interface design -",
+    "options": {
+      "A": "Integration testing",
+      "B": "Heuristic evaluation",
+      "C": "Formal usability testing",
+      "D": "Walk through evaluation"
+    },
+    "answer": "A",
+    "explanation": "UI design is evaluated by heuristic evaluation, usability testing and walkthroughs; integration testing tests module interfaces."
+  },
+  {
+    "id": 4,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which one of the following input devices recognize pencil, ink marks or characters by their configuration (shape)?",
+    "options": {
+      "A": "Mark sensing readers",
+      "B": "MICR",
+      "C": "Optical bar-code readers",
+      "D": "OCR"
+    },
+    "answer": "D",
+    "explanation": "Optical character recognition identifies characters/marks by their shape; mark-sense readers only detect mark positions."
+  },
+  {
+    "id": 5,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is an example of a tangible cost in system analysis and design?",
+    "options": {
+      "A": "User satisfaction levels",
+      "B": "Software licensing fees",
+      "C": "Employee satisfaction levels",
+      "D": "Employee motivation"
+    },
+    "answer": "B",
+    "explanation": "Tangible costs can be measured in money, like licence fees; satisfaction and motivation are intangible."
+  },
+  {
+    "id": 6,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "................ is a structured repository of data about data.",
+    "options": {
+      "A": "Data table",
+      "B": "Decision tree",
+      "C": "Data dictionary",
+      "D": "Decision table"
+    },
+    "answer": "C",
+    "explanation": "A data dictionary stores metadata (data about data)."
+  },
+  {
+    "id": 7,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is a type of performance requirements in SAD?",
+    "options": {
+      "A": "System integration requirements",
+      "B": "Capacity requirements",
+      "C": "Portability requirements",
+      "D": "Maintainability requirements"
+    },
+    "answer": "B",
+    "explanation": "Performance requirements cover throughput, response time and capacity."
+  },
+  {
+    "id": 8,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "................ Means that the same message can be interpreted differently by different classes of objects.",
+    "options": {
+      "A": "Static binding",
+      "B": "Encapsulation",
+      "C": "Polymorphism",
+      "D": "Dynamic capturing"
+    },
+    "answer": "C",
+    "explanation": "Polymorphism lets different classes respond to the same message in their own way."
+  },
+  {
+    "id": 9,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "................ advocates building a simple system through trial error and refining it through an iterative process.",
+    "options": {
+      "A": "Fact finding",
+      "B": "Investigation",
+      "C": "Background analysis",
+      "D": "Prototyping"
+    },
+    "answer": "D",
+    "explanation": "Prototyping builds a quick working model and refines it iteratively with user feedback."
+  },
+  {
+    "id": 10,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following shows succession of interactions between object instances over time?",
+    "options": {
+      "A": "Object diagram",
+      "B": "Sequence diagram",
+      "C": "Use case diagram",
+      "D": "Class diagram"
+    },
+    "answer": "B",
+    "explanation": "A sequence diagram shows object interactions ordered along a time axis."
+  },
+  {
+    "id": 11,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "................ consists of a hierarchy chart and an associated set of input/process/output charts.",
+    "options": {
+      "A": "HIPO chart",
+      "B": "ER diagram",
+      "C": "Decision tree",
+      "D": "DFD"
+    },
+    "answer": "A",
+    "explanation": "HIPO = Hierarchy plus Input-Process-Output."
+  },
+  {
+    "id": 12,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Release testing primarily involves -",
+    "options": {
+      "A": "Load testing under extreme conditions by end user.",
+      "B": "Black-box testing based on system specification.",
+      "C": "Regression testing of individual units.",
+      "D": "Static analysis of modules."
+    },
+    "answer": "B",
+    "explanation": "Sommerville: release testing tests a system release from its specification, as a black-box process."
+  },
+  {
+    "id": 13,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "................ displays decision logic (if statements) as a set of nodes (questions) and branches (answers).",
+    "options": {
+      "A": "Decision tree",
+      "B": "Red-black tree",
+      "C": "Segment tree",
+      "D": "AVL tree"
+    },
+    "answer": "A",
+    "explanation": "A decision tree shows conditions as nodes and outcomes as branches."
+  },
+  {
+    "id": 14,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following model is most suitable when the developer is unsure about the form that human-machine interaction should take?",
+    "options": {
+      "A": "Prototyping model",
+      "B": "Spiral model",
+      "C": "Waterfall model",
+      "D": "Component based model"
+    },
+    "answer": "A",
+    "explanation": "Pressman: prototyping helps when the developer is unsure of algorithm efficiency, OS adaptability or the form of human-machine interaction."
+  },
+  {
+    "id": 15,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Debugging is an action that -",
+    "options": {
+      "A": "checks that the software correctly implements a specific function.",
+      "B": "includes Black-box testing.",
+      "C": "checks that the software satisfies customer requirements.",
+      "D": "results in the removal of error."
+    },
+    "answer": "D",
+    "explanation": "Debugging follows successful testing and results in removing the error. Option 1 is verification and option 3 is validation."
+  },
+  {
+    "id": 16,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "In SDLC, during which phase the detailed evaluation of the present system is done?",
+    "options": {
+      "A": "Design phase",
+      "B": "Maintenance phase",
+      "C": "Implementation phase",
+      "D": "Analysis phase"
+    },
+    "answer": "D",
+    "explanation": "System analysis studies the existing system in detail."
+  },
+  {
+    "id": 17,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following design strategy is the merger of various structured techniques with prototyping techniques and joint-application development techniques for quick system development?",
+    "options": {
+      "A": "Rapid Application Development",
+      "B": "Prototyping",
+      "C": "Information Engineering",
+      "D": "Model Structured Design"
+    },
+    "answer": "A",
+    "explanation": "Whitten & Bentley: RAD merges structured techniques (especially data-driven IE) with prototyping and JAD to speed development."
+  },
+  {
+    "id": 18,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "A bank's credit card approval logic is based on three conditions: income level, credit score and existing loans. Management wants a complete and compact tabular view of how decisions are made based on these variables. Which representation is most suitable?",
+    "options": {
+      "A": "Decision tree",
+      "B": "Class diagram",
+      "C": "Flowchart",
+      "D": "Decision table"
+    },
+    "answer": "D",
+    "explanation": "A decision table lists every combination of conditions with its action, in compact tabular form."
+  },
+  {
+    "id": 19,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is not an element of a system?",
+    "options": {
+      "A": "Control",
+      "B": "Processor(s)",
+      "C": "Feedback",
+      "D": "Integration"
+    },
+    "answer": "D",
+    "explanation": "System elements are outputs/inputs, processors, control, feedback, environment and boundaries/interface. Integration is a characteristic, not an element."
+  },
+  {
+    "id": 20,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is/are role(s) of System Analyst?\n(I) Consultant\n(II) Agent of change\n(III) Supporting expert\nChoose the correct option -",
+    "options": {
+      "A": "(II) and (III) only",
+      "B": "(I) and (II) only",
+      "C": "(I) and (III) only",
+      "D": "(I), (II) and (III)"
+    },
+    "answer": "D",
+    "explanation": "Awad lists the analyst's roles as change agent, consultant and supporting expert (plus investigator, architect, etc.)."
+  },
+  {
+    "id": 21,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which type of benefits are easily quantified and usually measured in terms of monthly or annual savings or of profit to the firm?",
+    "options": {
+      "A": "Immaterial benefits",
+      "B": "Impalpable benefits",
+      "C": "Tangible benefits",
+      "D": "Intangible benefits"
+    },
+    "answer": "C",
+    "explanation": "Tangible benefits can be measured in money, e.g. savings or profit."
+  },
+  {
+    "id": 22,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is NOT a component of use case diagram?",
+    "options": {
+      "A": "System boundary",
+      "B": "Association relationship",
+      "C": "Actor",
+      "D": "Database"
+    },
+    "answer": "D",
+    "explanation": "Use case diagrams contain actors, use cases, the system boundary and relationships; databases are not shown."
+  },
+  {
+    "id": 23,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which one of the following is NOT a UML diagram?",
+    "options": {
+      "A": "E-R diagram",
+      "B": "Sequence diagram",
+      "C": "Use case diagram",
+      "D": "State chart diagram"
+    },
+    "answer": "A",
+    "explanation": "The ER diagram is a data-modelling notation, not part of UML."
+  },
+  {
+    "id": 24,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which is the type of maintenance for enhancing performance or modifying programs to accommodate user's changing needs?",
+    "options": {
+      "A": "Corrective Maintenance",
+      "B": "Preventive Maintenance",
+      "C": "Perfective Maintenance",
+      "D": "Adaptive Maintenance"
+    },
+    "answer": "C",
+    "explanation": "Perfective maintenance adds enhancements and improves performance in response to user requests."
+  },
+  {
+    "id": 25,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "When a module contains functions that are executed in the same time span, then the module is said to possess -",
+    "options": {
+      "A": "Procedural cohesion",
+      "B": "Temporal cohesion",
+      "C": "Spatial cohesion",
+      "D": "Logical cohesion"
+    },
+    "answer": "B",
+    "explanation": "Temporal cohesion groups tasks executed at the same time (e.g. initialisation)."
+  },
+  {
+    "id": 26,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "................ are used to document an organization's complex business policies and decision-making",
+    "options": {
+      "A": "Decision tables",
+      "B": "Requirement tables",
+      "C": "Heuristic tables",
+      "D": "Data tables"
+    },
+    "answer": "A",
+    "explanation": "Decision tables document complex business rules and policies."
+  },
+  {
+    "id": 27,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which scenario justifies the use of the Incremental Process Model over the Waterfall Model in enterprise software development?",
+    "options": {
+      "A": "Stakeholders prefer full delivery in one release.",
+      "B": "System requires formal verification at every stage.",
+      "C": "Core functionalities are well defined but additional features are expected to evolve over time.",
+      "D": "Requirements are fixed and clearly understood from the beginning."
+    },
+    "answer": "C",
+    "explanation": "The incremental model delivers core functions first and adds features in later increments."
+  },
+  {
+    "id": 28,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "................ is the number of entities that participate in a relationship.",
+    "options": {
+      "A": "Degree",
+      "B": "Association",
+      "C": "Modulo",
+      "D": "Cardinality"
+    },
+    "answer": "A",
+    "explanation": "Degree is the number of participating entity types (unary, binary, ternary); cardinality is the number of instances."
+  },
+  {
+    "id": 29,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is not a category of class in UML?",
+    "options": {
+      "A": "Interface",
+      "B": "Equivalence",
+      "C": "Abstract",
+      "D": "Entity"
+    },
+    "answer": "B",
+    "explanation": "Interface, abstract and entity (boundary, control) classes exist in UML; 'equivalence' is a testing term."
+  },
+  {
+    "id": 30,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following testing strategy aims to test every independent execution path through a program?",
+    "options": {
+      "A": "Equivalence partitioning",
+      "B": "Boundary value analysis",
+      "C": "Path testing",
+      "D": "Usability testing"
+    },
+    "answer": "C",
+    "explanation": "Basis path testing executes every independent path at least once."
+  },
+  {
+    "id": 31,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Select the correct mapping of system phase with the corresponding deliverables in SDLC -",
+    "options": {
+      "A": "Analysis - Data Model, Process Models, Use Cases",
+      "B": "Implementation : Program Design, Hardware & Software specifications",
+      "C": "Design - Test Plan, Programs, Migration Plan",
+      "D": "Planning - Test Plan, Program Design, Support Plan"
+    },
+    "answer": "A",
+    "explanation": "The analysis phase produces data models, process models and use cases. Program design belongs to design, and test plans and programs to implementation."
+  },
+  {
+    "id": 32,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which model is best suited for projects with well-defined requirements and no expected changes?",
+    "options": {
+      "A": "Spiral",
+      "B": "RAD",
+      "C": "Waterfall",
+      "D": "Agile"
+    },
+    "answer": "C",
+    "explanation": "The waterfall model suits stable, well-understood requirements."
+  },
+  {
+    "id": 33,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is NOT a reason for corrective maintenance?",
+    "options": {
+      "A": "System errors detected by users.",
+      "B": "User requests for additional features.",
+      "C": "System crashes due to software bugs.",
+      "D": "Security vulnerabilities discovered post-deployment due to existing flaw."
+    },
+    "answer": "B",
+    "explanation": "New features requested by users are perfective maintenance; corrective maintenance fixes defects."
+  },
+  {
+    "id": 34,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "What does \"Coupling\" indicate in modular design?",
+    "options": {
+      "A": "The strength of the connection between modules.",
+      "B": "The relationship between system hardware.",
+      "C": "The documentation process of modules.",
+      "D": "The cohesion of a module."
+    },
+    "answer": "A",
+    "explanation": "Coupling measures the interdependence between modules."
+  },
+  {
+    "id": 35,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Orderly grouping of interdependent components linked together according to a plan to achieve a specific objective is called ........",
+    "options": {
+      "A": "system",
+      "B": "interconnection",
+      "C": "relationship",
+      "D": "entity"
+    },
+    "answer": "A",
+    "explanation": "This is the classic definition of a system (Awad)."
+  },
+  {
+    "id": 36,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "An open system is characterized by -",
+    "options": {
+      "A": "being closed during runtime.",
+      "B": "complete independence from its environment.",
+      "C": "require no input.",
+      "D": "interaction and exchange with its environment."
+    },
+    "answer": "D",
+    "explanation": "An open system exchanges inputs and outputs with its environment."
+  },
+  {
+    "id": 37,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Out of the following in which situation, state chart diagrams are NOT created?",
+    "options": {
+      "A": "A class has a simple life cycle.",
+      "B": "A class has a complex life cycle.",
+      "C": "A class has an operational life cycle.",
+      "D": "Two classes depend on each other."
+    },
+    "answer": "A",
+    "explanation": "State chart diagrams are drawn for classes with complex, state-dependent behaviour; a simple life cycle doesn't need one."
+  },
+  {
+    "id": 38,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is an example of a physical system?",
+    "options": {
+      "A": "A car engine",
+      "B": "A budgeting algorithm",
+      "C": "An abstract class in OOP",
+      "D": "A decision-making model"
+    },
+    "answer": "A",
+    "explanation": "A physical system is tangible, like a car engine; the others are abstract (conceptual) systems."
+  },
+  {
+    "id": 39,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Site for Beta testing is -",
+    "options": {
+      "A": "End user's site(s)",
+      "B": "Testing lab in software company",
+      "C": "Within the development team",
+      "D": "Software developer's site"
+    },
+    "answer": "A",
+    "explanation": "Beta testing is done by end users at their own sites; alpha testing is at the developer's site."
+  },
+  {
+    "id": 40,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is a normal acceptance testing?",
+    "options": {
+      "A": "Data Flow testing",
+      "B": "Alpha testing",
+      "C": "Security testing",
+      "D": "Usability testing"
+    },
+    "answer": "B",
+    "explanation": "Alpha and beta testing are forms of acceptance testing."
+  },
+  {
+    "id": 41,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Data Flow Diagram (DFD) is a -",
+    "options": {
+      "A": "Flow model",
+      "B": "Class model",
+      "C": "Scenario-based model",
+      "D": "Behavioral model"
+    },
+    "answer": "A",
+    "explanation": "Pressman classifies the DFD as a flow-oriented model."
+  },
+  {
+    "id": 42,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Match the following -\nList-1:\n(i) The degree to which one class is connected to or relies upon other classes.\n(ii) The degree to which the attributes and behaviors of a single class are related to each other.\n(iii) A group of objects packaged together into one unit.\n(iv) An object class that contains business related information and implements the analysis classes.\nList-2: (a) Component (b) Entity class (c) Coupling (d) Cohesion",
+    "options": {
+      "A": "(i)-(c), (ii)-(a), (iii)-(d), (iv)-(b)",
+      "B": "(i)-(c), (ii)-(d), (iii)-(b), (iv)-(a)",
+      "C": "(i)-(a), (ii)-(d), (iii)-(b), (iv)-(c)",
+      "D": "(i)-(c), (ii)-(d), (iii)-(a), (iv)-(b)"
+    },
+    "answer": "D",
+    "explanation": "Dependence on other classes = coupling, relatedness within a class = cohesion, packaged group of objects = component, business-information class = entity class."
+  },
+  {
+    "id": 43,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of these are the five generic software engineering framework activities?",
+    "options": {
+      "A": "Analysis, designing, programming, debugging, maintenance",
+      "B": "Communication, planning, modelling, construction, deployment",
+      "C": "Analysis, planning, designing, programming, testing",
+      "D": "Communication, risk management, measurement, production, reviewing"
+    },
+    "answer": "B",
+    "explanation": "Pressman's generic framework: communication, planning, modeling, construction and deployment."
+  },
+  {
+    "id": 44,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is the key question in \"Recognition of needs\" stage of SDLC?",
+    "options": {
+      "A": "What is the problem or opportunity?",
+      "B": "How will the individual programs test out?",
+      "C": "Are user manuals ready?",
+      "D": "Does the user approve the system?"
+    },
+    "answer": "A",
+    "explanation": "Recognition of need asks what the problem or opportunity is."
+  },
+  {
+    "id": 45,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "In a hospital management system, patient data is stored and retrieved as needed. The \"Patient records\" component in the DFD would most likely be categorized as -",
+    "options": {
+      "A": "Data flow",
+      "B": "Data store",
+      "C": "External entity",
+      "D": "Process"
+    },
+    "answer": "B",
+    "explanation": "Data at rest that is stored and retrieved is a data store."
+  },
+  {
+    "id": 46,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Validation is -",
+    "options": {
+      "A": "Evaluating the developer's performance.",
+      "B": "Checking the product with respect to customer's requirements.",
+      "C": "Checking the product with respect to implementation details.",
+      "D": "Checking the product with respect to the constraints of the project."
+    },
+    "answer": "B",
+    "explanation": "Validation asks 'are we building the right product?' against customer requirements."
+  },
+  {
+    "id": 47,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is an example of a 'report form' in system design?",
+    "options": {
+      "A": "Purchase order",
+      "B": "Profit and loss statement",
+      "C": "Stock ledger",
+      "D": "Inventory record"
+    },
+    "answer": "B",
+    "explanation": "Report forms summarise data, e.g. a profit & loss statement. A purchase order is an action form, and ledgers/records are memory forms."
+  },
+  {
+    "id": 48,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Match the following -\nList-1:\n(i) An entity that contains attributes and behaviors that are common to one or more class subtypes.\n(ii) An object class that inherits attributes and behaviors from a supertype class and then may contain other attributes and behaviors that are unique to it.\n(iii) The concept wherein methods and/or attributes defined in an object class can be inherited or reused by another object class.\n(iv) The packaging of several items together into one unit.\nList-2: (a) Subtype (b) Encapsulation (c) Supertype (d) Inheritance",
+    "options": {
+      "A": "(i)-(c), (ii)-(d), (iii)-(a), (iv)-(b)",
+      "B": "(i)-(a), (ii)-(d), (iii)-(b), (iv)-(c)",
+      "C": "(i)-(c), (ii)-(a), (iii)-(d), (iv)-(b)",
+      "D": "(i)-(c), (ii)-(a), (iii)-(b), (iv)-(d)"
+    },
+    "answer": "C",
+    "explanation": "Common attributes = supertype, inheriting class = subtype, reuse of attributes/methods = inheritance, packaging into one unit = encapsulation."
+  },
+  {
+    "id": 49,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "In the context of system design, the \"Separation of concerns\" principle primarily ensures -",
+    "options": {
+      "A": "The system is fully decoupled from any hardware layer.",
+      "B": "A single unified data representation across all modules.",
+      "C": "Minimized use of system resources.",
+      "D": "Each module addresses a specific aspect of the problem domain."
+    },
+    "answer": "D",
+    "explanation": "Separation of concerns divides a problem so each part handles one concern."
+  },
+  {
+    "id": 50,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "A university admission system developed as a closed system lacks external feedback mechanisms. Over time, student grievances and complaints increase. What is the most significant drawback of a closed system in this context?",
+    "options": {
+      "A": "Inaccurate inputs",
+      "B": "Low scalability",
+      "C": "No environmental interaction",
+      "D": "High maintenance cost"
+    },
+    "answer": "C",
+    "explanation": "A closed system does not interact with its environment, so it cannot take in feedback and adapt."
+  },
+  {
+    "id": 51,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is NOT listed as cause of software errors?",
+    "options": {
+      "A": "Client-developer communication failures",
+      "B": "Faulty requirement definition",
+      "C": "Client-server communication failures",
+      "D": "Logical design errors"
+    },
+    "answer": "C",
+    "explanation": "Galin's nine causes include faulty requirements, client-developer communication failures and logical design errors, but not client-server communication failures."
+  },
+  {
+    "id": 52,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Assertion (A): Agile planning avoids long-term, fixed scheduling of project activities.\nReason (R) : Agile projects break work into short iterations and use velocity-based estimation for future planning.\nWhich of the following option is correct?",
+    "options": {
+      "A": "(A) is true but (R) is false",
+      "B": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "C": "(A) is false but (R) is true",
+      "D": "Both (A) and (R) are true but (R) is not the correct explanation of (A)"
+    },
+    "answer": "B",
+    "explanation": "Agile plans iteratively, using short iterations and velocity, which is exactly why it avoids fixed long-term schedules."
+  },
+  {
+    "id": 53,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which planning approach is most effective for large safety-critical systems?",
+    "options": {
+      "A": "Fully agile planning",
+      "B": "Dynamic iterative planning",
+      "C": "Plan-driven approach",
+      "D": "Planning poker"
+    },
+    "answer": "C",
+    "explanation": "Sommerville: large and safety-critical systems need plan-driven development with extensive upfront analysis and documentation."
+  },
+  {
+    "id": 54,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Given the following data for several projects of an organization. What is the overall productivity in terms of SLOC per work-month for the organization?\nProject : SLOC : Work month\na : 6050 : 16.7\nb : 8363 : 22.6\nc : 13334 : 32.2\nd : 5942 : 3.9\ne : 3315 : 17.3\nf : 38988 : 67.7\ng : 38614 : 10.1\nh : 12762 : 19.3\ni : 26500 : 59.5",
+    "options": {
+      "A": "617.20 SLOC/Work-month",
+      "B": "550.10 SLOC/Work-month",
+      "C": "472.50 SLOC/Work-month",
+      "D": "635.40 SLOC/Work-month"
+    },
+    "answer": "A",
+    "explanation": "Overall productivity = total SLOC / total effort = 153868 / 249.3 ≈ 617.20 SLOC per work-month."
+  },
+  {
+    "id": 55,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "A PERT network has 9 activities on its critical path. The standard deviation of each activity on the critical path is 3. The standard deviation of the critical path for project event is -",
+    "options": {
+      "A": "27",
+      "B": "81",
+      "C": "9",
+      "D": "3"
+    },
+    "answer": "C",
+    "explanation": "Variances add: 9 × 3² = 81, so σ = √81 = 9."
+  },
+  {
+    "id": 56,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is NOT a common project scheduling technique?",
+    "options": {
+      "A": "Critical Path Method (CPM)",
+      "B": "Waterfall Model",
+      "C": "Gantt Chart",
+      "D": "PERT"
+    },
+    "answer": "B",
+    "explanation": "The waterfall model is a process model, not a scheduling technique."
+  },
+  {
+    "id": 57,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Consider the following statements (A) and (B) -\nStatement (A) : Risk planning provides approach in terms of effective steps in dealing with risk in terms of strategies and execution.\nStatement (B) : Risk mitigation helps to meet the challenges of risk occurrence in effective implementation of specific plan of risk management.\nWhich of these statement/s is/are true?",
+    "options": {
+      "A": "Neither (A) nor (B)",
+      "B": "Both (A) and (B)",
+      "C": "Only (A)",
+      "D": "Only (B)"
+    },
+    "answer": "B",
+    "explanation": "Both statements correctly describe risk planning (strategies to deal with risks) and risk mitigation (carrying out the plan when risks occur)."
+  },
+  {
+    "id": 58,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which one of the following is a quantitative technique for monitoring project progress?",
+    "options": {
+      "A": "Earned Value Analysis",
+      "B": "Monte Carlo Simulation",
+      "C": "Configuration Audit",
+      "D": "Software Reviews"
+    },
+    "answer": "A",
+    "explanation": "Pressman: earned value analysis is a quantitative technique for assessing progress."
+  },
+  {
+    "id": 59,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Why is decomposition an important step in software project planning?",
+    "options": {
+      "A": "To divide the project into manageable components for accurate cost and effort estimation.",
+      "B": "To simplify the design of the user interface.",
+      "C": "To assign tasks randomly.",
+      "D": "To estimate the project's size in terms of hardware requirements."
+    },
+    "answer": "A",
+    "explanation": "Decomposing the problem/process into smaller pieces makes cost and effort estimates more accurate."
+  },
+  {
+    "id": 60,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Chidamber and Kemerer's Suite of Metrics is widely used in which area of software engineering?",
+    "options": {
+      "A": "Object-oriented software metrics",
+      "B": "Functional testing",
+      "C": "Hardware performance metrics",
+      "D": "Traditional procedural programming metrics"
+    },
+    "answer": "A",
+    "explanation": "The CK suite (WMC, DIT, NOC, CBO, RFC, LCOM) measures object-oriented designs."
+  },
+  {
+    "id": 61,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "What is the primary objective of the People Capability Maturity Model (PCMM)?",
+    "options": {
+      "A": "To minimize overall project expenditure.",
+      "B": "To strengthen and develop the capabilities of an organization's workforce.",
+      "C": "To enhance software development methodologies.",
+      "D": "To implement automation in software system development."
+    },
+    "answer": "B",
+    "explanation": "P-CMM guides organisations in improving the capability of their workforce."
+  },
+  {
+    "id": 62,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "What is the primary purpose of software measurement in software engineering?",
+    "options": {
+      "A": "To eliminate the need of documentation.",
+      "B": "To quantify an attribute of a software product for assessing the quality of software.",
+      "C": "To replace the review entirely.",
+      "D": "To perform manual testing of software components."
+    },
+    "answer": "B",
+    "explanation": "Measurement assigns numbers to attributes of products/processes so quality can be assessed."
+  },
+  {
+    "id": 63,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following does NOT fall under top five business risks in software engineering?",
+    "options": {
+      "A": "Strategic risk",
+      "B": "Market risk",
+      "C": "Technical risk",
+      "D": "Sales risk"
+    },
+    "answer": "C",
+    "explanation": "Pressman's top five business risks are market, strategic, sales, management and budget risk; technical risk is a separate category."
+  },
+  {
+    "id": 64,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is NOT a question in Boehm's W5HH principle?",
+    "options": {
+      "A": "How many people are on the team?",
+      "B": "How will the job be done technically and managerially?",
+      "C": "Why is system being developed?",
+      "D": "How much of each resource is needed?"
+    },
+    "answer": "A",
+    "explanation": "W5HH asks Why, What, When, Who, Where, How (technically and managerially) and How much (resources); team headcount is not one of them."
+  },
+  {
+    "id": 65,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "A software development team uses historical project data to estimate the complexity of new software projects. To find the most suitable past project that is the similar one for analogy based estimation, the team uses Euclidean distance between the feature pairs. A new project is expected to have 6 inputs and 12 outputs. Three historical projects are described as below -\n• Project X: 5 inputs, 10 outputs\n• Project Y: 7 inputs, 14 outputs\n• Project Z: 4 inputs, 9 outputs\nUsing Euclidean distance to measure similarity, which is most accurate?",
+    "options": {
+      "A": "Project X is a closer match than project Y",
+      "B": "Project X and Y are equally similar to the new project",
+      "C": "Project Y is the farthest from the new project",
+      "D": "Project Z is the closest match to new project"
+    },
+    "answer": "B",
+    "explanation": "d(X) = √(1² + 2²) = √5, d(Y) = √(1² + 2²) = √5, d(Z) = √(2² + 3²) = √13, so X and Y are equally close."
+  },
+  {
+    "id": 66,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is NOT considered a valid step in the risk projection process during software project management?",
+    "options": {
+      "A": "Delineate the potential consequences of each risk.",
+      "B": "Estimating the potential impact of each risk on the project and product.",
+      "C": "Eliminating all identified risks prior to the start of project execution.",
+      "D": "Establishing a scale to reflect the perceived likelihood of each identified risk."
+    },
+    "answer": "C",
+    "explanation": "Risk projection establishes a likelihood scale, delineates consequences, estimates impact and assesses accuracy; it does not eliminate risks."
+  },
+  {
+    "id": 67,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "What can be considered as a practical way to meet self-realization needs in developers?",
+    "options": {
+      "A": "Give time to meet their co-workers.",
+      "B": "Offerings larger salaries.",
+      "C": "Public recognitions of achievements.",
+      "D": "Assigning demanding tasks and providing training opportunities."
+    },
+    "answer": "D",
+    "explanation": "Sommerville (Maslow): self-realisation is met by responsibility for one's work, demanding tasks and training; recognition meets esteem needs and meeting co-workers meets social needs."
+  },
+  {
+    "id": 68,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "The database used in the system cannot process as many transactions per second as expected. This is an example of which type of risk?",
+    "options": {
+      "A": "Estimation",
+      "B": "People",
+      "C": "Technology",
+      "D": "Organizational"
+    },
+    "answer": "C",
+    "explanation": "Sommerville lists this exact example as a technology risk."
+  },
+  {
+    "id": 69,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following best defines the concept of a software configuration version?",
+    "options": {
+      "A": "A selected set of software modules from various versions.",
+      "B": "A selected set of backup strategies for run-time failure.",
+      "C": "A snapshot of all user requirements at the end of the development process.",
+      "D": "A documented and approved set of Software Configuration Item (SCI) versions at a specific time during development or maintenance."
+    },
+    "answer": "D",
+    "explanation": "A configuration version (baseline) is an approved, documented set of SCI versions at a given point in time."
+  },
+  {
+    "id": 70,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "What is the primary purpose of using a Pareto Chart in Statistical Software Quality Assurance (SQA)?",
+    "options": {
+      "A": "To analyze the variability of measurements.",
+      "B": "To show the relationship between some effect and all possible causes.",
+      "C": "To visualize long-term performance trends.",
+      "D": "To show fault sources identified in a software product during test."
+    },
+    "answer": "D",
+    "explanation": "A Pareto chart ranks fault sources by frequency to find the 'vital few' causes. Option 2 describes a cause-and-effect (fishbone) diagram."
+  },
+  {
+    "id": 71,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following best defines the Function Point Metric in software engineering?",
+    "options": {
+      "A": "A metric that determines the hardware requirements for a software system.",
+      "B": "A metric that quantifies the functionality delivered by the software to the user.",
+      "C": "A metric used to measure the physical size of the software.",
+      "D": "A metric for evaluating the time complexity of a software program."
+    },
+    "answer": "B",
+    "explanation": "Function points measure the functionality delivered to the user, independent of language."
+  },
+  {
+    "id": 72,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is NOT one of the seven project factors listed by Mantei that influence Software Engineering Team structure?",
+    "options": {
+      "A": "Team salary levels",
+      "B": "Quality and reliability required",
+      "C": "Degree of sociability required",
+      "D": "Rigidity of delivery date"
+    },
+    "answer": "A",
+    "explanation": "Mantei's factors: problem difficulty, size, team lifetime, modularity, required quality/reliability, rigidity of delivery date and degree of sociability. Salary is not one of them."
+  },
+  {
+    "id": 73,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Assertion (A) : In software project scheduling, estimated effort and duration is always same for each task.\nReason (R): A task with 10 person-days of effort will always take 10 calendar days.\nWhich amongst the following option is correct?",
+    "options": {
+      "A": "(A) is false, (R) is false",
+      "B": "(A) is true, (R) is false",
+      "C": "(A) is false, (R) is true",
+      "D": "(A) is true, (R) is true and (R) is the correct explanation of (A)"
+    },
+    "answer": "A",
+    "explanation": "Effort and duration differ: 10 person-days can take 5 days with 2 people. Both statements are false."
+  },
+  {
+    "id": 74,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "In the context of project scheduling, what does the critical path represent?",
+    "options": {
+      "A": "The path with the lowest cost.",
+      "B": "The list of tasks that can be skipped without affecting the project.",
+      "C": "The path consisting of tasks with no dependencies.",
+      "D": "The chain of activities that determines the duration of the project."
+    },
+    "answer": "D",
+    "explanation": "The critical path is the longest chain of dependent activities; it fixes the minimum project duration."
+  },
+  {
+    "id": 75,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "What is one of the primary problems that can occur if a company does not develop effective configuration management policies?",
+    "options": {
+      "A": "Reduced need for testing",
+      "B": "Difficulty in tracking modifications made in each system version",
+      "C": "Increased code reuse",
+      "D": "Faster development process"
+    },
+    "answer": "B",
+    "explanation": "Without CM it becomes hard to know which changes went into which version."
+  },
+  {
+    "id": 76,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "A change request is submitted for a project component and the change management tool logs the following :\nChange ID : 1024\nDate Submitted : 15 Jan, 2024\nChange description : \"Update login security protocols\"\nIf the team resolves this change and finally approves it on March 10, 2024, then how long did the change process take, assuming period is inclusive of date of submission?",
+    "options": {
+      "A": "56",
+      "B": "59",
+      "C": "55",
+      "D": "54"
+    },
+    "answer": "A",
+    "explanation": "Jan 15–31 = 17 days, February 2024 (leap year) = 29 days, March 1–10 = 10 days; 17 + 29 + 10 = 56 days."
+  },
+  {
+    "id": 77,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which quality model is most associated with usability, reliability, efficiency, maintainability and portability?",
+    "options": {
+      "A": "SSM model",
+      "B": "Six sigma",
+      "C": "ISO 9126",
+      "D": "Boehm's model"
+    },
+    "answer": "C",
+    "explanation": "ISO 9126 defines functionality, reliability, usability, efficiency, maintainability and portability."
+  },
+  {
+    "id": 78,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is NOT one of the approaches to the software sizing problem suggested by Putnam and Myers?",
+    "options": {
+      "A": "Standard component sizing",
+      "B": "Function point sizing",
+      "C": "Market based sizing",
+      "D": "Fuzzy logic sizing"
+    },
+    "answer": "C",
+    "explanation": "Putnam & Myers suggest fuzzy logic sizing, function point sizing, standard component sizing and change sizing."
+  },
+  {
+    "id": 79,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is NOT one of the four critical factors that influence the relationship between a manager and his/her team?",
+    "options": {
+      "A": "Inclusion",
+      "B": "Rigidity",
+      "C": "Consistency",
+      "D": "Honesty"
+    },
+    "answer": "B",
+    "explanation": "Sommerville: consistency, respect, inclusion and honesty."
+  },
+  {
+    "id": 80,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following activity is NOT directly supported by the use of project metrics in software project management?",
+    "options": {
+      "A": "Adjusting workflow",
+      "B": "Reviewing the statement of project scope",
+      "C": "Tracking potential risks",
+      "D": "Identifying problem areas before they become critical"
+    },
+    "answer": "B",
+    "explanation": "Pressman: project metrics help adjust workflow and tasks, track risks, uncover problem areas early and evaluate quality control."
+  },
+  {
+    "id": 81,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "What does \"Process maturity\" in software engineering signify?",
+    "options": {
+      "A": "Use of modern programming languages",
+      "B": "Popularity of the software",
+      "C": "Number of bugs in the system",
+      "D": "Goal is to improve product quality and process predictability"
+    },
+    "answer": "D",
+    "explanation": "Process maturity (CMM levels) reflects how well-defined and controlled a process is, improving quality and predictability."
+  },
+  {
+    "id": 82,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following statement is NOT correct in relation to the SCM (Software Configuration Management) repository?",
+    "options": {
+      "A": "It is the set of mechanisms and data structures that allow a software team to manage change in an effective manner.",
+      "B": "It provides the obvious functions of a modern database management system by ensuring data integrity, sharing and integration.",
+      "C": "It is only used during the testing phase and has no role in earlier stages of software development.",
+      "D": "It provides a hub for the integration of software tools, is central to the flow of the software process and can enforce uniform structure and format for software engineering work products."
+    },
+    "answer": "C",
+    "explanation": "The SCM repository is used throughout the life cycle, not only in testing."
+  },
+  {
+    "id": 83,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is NOT considered a component in the calculation of Function Point Metric?",
+    "options": {
+      "A": "Number of External Inquiries",
+      "B": "Number of External Inputs",
+      "C": "Number of External Logics",
+      "D": "Number of External Interface Files"
+    },
+    "answer": "C",
+    "explanation": "FP uses external inputs, outputs, inquiries, internal logical files and external interface files; 'external logics' is not one of them."
+  },
+  {
+    "id": 84,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is NOT an objective of Software Quality Assurance activities during software development?",
+    "options": {
+      "A": "Maximizing the number of features regardless of requirements",
+      "B": "Ensuring conformance to managerial scheduling and budgetary requirements",
+      "C": "Ensuring conformance to functional technical requirements",
+      "D": "Initiating activities for improvement and efficiency"
+    },
+    "answer": "A",
+    "explanation": "SQA ensures conformance to technical and managerial requirements and drives improvement; adding features regardless of requirements is not a goal."
+  },
+  {
+    "id": 85,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is NOT a fundamental principle that guides software project scheduling?",
+    "options": {
+      "A": "The project must be compartmentalized into a number of manageable activities and tasks.",
+      "B": "Every scheduled task may not be assigned a start date and a completion date.",
+      "C": "Every scheduled task should have a defined outcome.",
+      "D": "Every scheduled task should be assigned to a specific team member."
+    },
+    "answer": "B",
+    "explanation": "The time-allocation principle says every task must have a start date and a completion date."
+  },
+  {
+    "id": 86,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Assertion (A) : Descriptive statistics are sufficient for determining the significance of metric trends.\nReason (R) : Descriptive statistics include mean, mode and visual plots like histograms to illustrate the information to which they relate.\nWhich of the following option is correct?",
+    "options": {
+      "A": "(A) is true but (R) is false",
+      "B": "(A) is false but (R) is true",
+      "C": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "D": "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+    },
+    "answer": "B",
+    "explanation": "Descriptive statistics only summarise data; judging whether a trend is significant needs inferential statistics. R correctly describes descriptive statistics."
+  },
+  {
+    "id": 87,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following best describes Lines of Code (LOC) in the context of software estimation?",
+    "options": {
+      "A": "A measure of the number of errors in a program.",
+      "B": "A measure of the number of lines in software documentation.",
+      "C": "A measure of testing time for software modules.",
+      "D": "A measure of the size of software based on the number of lines in the source code."
+    },
+    "answer": "D",
+    "explanation": "LOC is a size metric that counts source code lines."
+  },
+  {
+    "id": 88,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is an objective of risk management in software projects?",
+    "options": {
+      "A": "Ensure maximum reuse of legacy code to avoid risk",
+      "B": "Anticipating risks that might affect the project schedule and then taking action to avoid these risks",
+      "C": "Minimize the effort in software coding for risk management",
+      "D": "Ensure continuous integration and deployment of the codebase to avoid vulnerabilities to reduce further risk"
+    },
+    "answer": "B",
+    "explanation": "Risk management anticipates risks to schedule and quality and acts to avoid or minimise them."
+  },
+  {
+    "id": 89,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is NOT a key responsibility of Benefits Management?",
+    "options": {
+      "A": "Ensure benefits are realized",
+      "B": "Measure code efficiency",
+      "C": "Allocate responsibilities for successful delivery of benefits",
+      "D": "Define expected benefits"
+    },
+    "answer": "B",
+    "explanation": "Benefits management defines, monitors and assigns responsibility for business benefits; code efficiency is a technical matter."
+  },
+  {
+    "id": 90,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "In PERT analysis, the following time estimates are provided for an activity : The optimistic time is 5 days, the most likely time is 8 days and the pessimistic time is 12 days. What is the Estimated Time (TE) for the activity?",
+    "options": {
+      "A": "7.8 days",
+      "B": "8.2 days",
+      "C": "8.0 days",
+      "D": "8.5 days"
+    },
+    "answer": "B",
+    "explanation": "TE = (o + 4m + p)/6 = (5 + 32 + 12)/6 = 49/6 ≈ 8.17 ≈ 8.2 days."
+  },
+  {
+    "id": 91,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following will most likely be addressed by a reactive risk management strategy?",
+    "options": {
+      "A": "Deal with risks if they become actual problems",
+      "B": "Use of unproven CASE tools during design phase",
+      "C": "Staff turnover identified during feasibility study",
+      "D": "Architectural instability"
+    },
+    "answer": "A",
+    "explanation": "Reactive ('fire-fighting') strategies respond only when risks turn into problems."
+  },
+  {
+    "id": 92,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is the most widely recognized empirical model used for software cost estimation?",
+    "options": {
+      "A": "Spiral Model",
+      "B": "COCOMO Model",
+      "C": "Waterfall Model",
+      "D": "V-Model"
+    },
+    "answer": "B",
+    "explanation": "COCOMO is the best-known empirical (algorithmic) cost estimation model; the rest are process models."
+  },
+  {
+    "id": 93,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "In the basic COCOMO (Constructive Cost Model) for software estimation, which of the following formula is used to calculate the Development Time (DT) in the embedded mode when estimated Labour Months (LM) is given?",
+    "options": {
+      "A": "DT = 2.5 × (LM)^0.80",
+      "B": "DT = 2.5 × (LM)^0.55",
+      "C": "DT = 2.5 × (LM)^0.32",
+      "D": "DT = 2.5 × (LM)^0.72"
+    },
+    "answer": "C",
+    "explanation": "Basic COCOMO time exponents: organic 0.38, semi-detached 0.35, embedded 0.32, so DT = 2.5 × LM^0.32."
+  },
+  {
+    "id": 94,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Assertion (A) : Software products require a unique software quality assurance methodology.\nReason (R) : Software products have higher product complexity and are invisible, in comparison to other products.\nWhich of the following is true?",
+    "options": {
+      "A": "(A) is false but (R) is true",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "C": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "D": "(A) is true but (R) is false"
+    },
+    "answer": "C",
+    "explanation": "Galin: because software is complex and invisible (and defects show up only in development), it needs a distinct SQA methodology."
+  },
+  {
+    "id": 95,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following set of factors is considered as the key component of effective software project management?",
+    "options": {
+      "A": "People, Product, Performance, Process",
+      "B": "People, Process, Payoff, Product",
+      "C": "People, Product, Process, Project",
+      "D": "People, Performance, Payoff, Product"
+    },
+    "answer": "C",
+    "explanation": "Pressman's 4 P's: People, Product, Process, Project."
+  },
+  {
+    "id": 96,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Why is measurement ambiguity a concern in software metrics?",
+    "options": {
+      "A": "Because ambiguity is irrelevant in software measurement.",
+      "B": "Because all metrics are straightforward and unambiguous.",
+      "C": "Because data collected can be misinterpreted without context.",
+      "D": "Because measurement tools are perfect and always provide clear insights."
+    },
+    "answer": "C",
+    "explanation": "Ambiguous metrics can be misread unless the context of the data is known."
+  },
+  {
+    "id": 97,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "In the context of the organic mode of software development in basic COCOMO (Constructive Cost Model), which of the following best describes the composition of the development team?",
+    "options": {
+      "A": "A small, cohesive team of experienced developers who are well-versed in both application area and the development environment.",
+      "B": "Developers with limited experience and no domain knowledge.",
+      "C": "Developers with extensive experience but limited familiarity with the specific application technology.",
+      "D": "A distributed team of developers working remotely on different project domains."
+    },
+    "answer": "A",
+    "explanation": "Organic mode: small teams experienced in a familiar, in-house environment."
+  },
+  {
+    "id": 98,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following is NOT considered a core aspect of a proper Software Quality Assurance (SQA) process?",
+    "options": {
+      "A": "Team commitment",
+      "B": "Completeness",
+      "C": "Cost analysis",
+      "D": "Applicability"
+    },
+    "answer": "C",
+    "explanation": "A proper SQA process needs commitment, completeness and applicability; cost analysis is not one of its core aspects."
+  },
+  {
+    "id": 99,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "What is primary goal of configuration management?",
+    "options": {
+      "A": "Reduce coding effort",
+      "B": "Automate test cases",
+      "C": "Maintain control over software changes",
+      "D": "Manage project deadlines"
+    },
+    "answer": "C",
+    "explanation": "SCM identifies, controls, tracks and audits changes to software."
+  },
+  {
+    "id": 100,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-II)",
+    "question": "Which of the following factor does NOT impact the reliability of estimates during the software project planning phase?",
+    "options": {
+      "A": "Team size",
+      "B": "Degree of structural uncertainty",
+      "C": "Project size",
+      "D": "Project complexity"
+    },
+    "answer": "A",
+    "explanation": "Pressman: estimation risk depends on project complexity, project size and degree of structural uncertainty."
+  }
+]

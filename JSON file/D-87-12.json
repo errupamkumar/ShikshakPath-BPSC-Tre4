@@ -1,0 +1,626 @@
+[
+  {
+    "id": 1,
+    "source_file": "D-87-12",
+    "question": "Consider the circuit shown below. In a certain steady state, Y is at logical '1'. What are possible values of A, B, C ?\n[Figure: NAND gate 1 has inputs A and the fed-back output Y; NAND gate 2 has inputs (NAND 1 output) and B; an AND gate has inputs (NAND 2 output) and C; its output is Y (labelled f)]",
+    "options": {
+      "A": "A = 0, B = 0, C = 1",
+      "B": "A = 0, B = C = 1",
+      "C": "A = 1, B = C = 0",
+      "D": "A = B = 1, C = 1"
+    },
+    "answer": "D",
+    "explanation": "With Y = 1 the AND needs C = 1 and NAND2 = 1. N1 = NAND(A, 1) = A'. For A = B = 1: N1 = 0, N2 = 1, Y = 1, consistent. Note: A = 0, B = 0, C = 1 (option A) is also a consistent steady state, so the question is ambiguous; D is the keyed answer."
+  },
+  {
+    "id": 2,
+    "source_file": "D-87-12",
+    "question": "The worst case time complexity of AVL tree is better in comparison to binary search tree for",
+    "options": {
+      "A": "Search and Insert Operations",
+      "B": "Search and Delete Operations",
+      "C": "Insert and Delete Operations",
+      "D": "Search, Insert and Delete Operations"
+    },
+    "answer": "D",
+    "explanation": "An AVL tree stays balanced, giving O(log n) worst case for search, insert and delete; an unbalanced BST can degrade to O(n) for all three."
+  },
+  {
+    "id": 3,
+    "source_file": "D-87-12",
+    "question": "The GSM network is divided into the following three major systems :",
+    "options": {
+      "A": "SS, BSS, OSS",
+      "B": "BSS, BSC, MSC",
+      "C": "CELL, BSC, OSS",
+      "D": "SS, CELL, MSC"
+    },
+    "answer": "A",
+    "explanation": "GSM consists of the Switching System (SS), Base Station System (BSS) and Operation and Support System (OSS)."
+  },
+  {
+    "id": 4,
+    "source_file": "D-87-12",
+    "question": "The power set of the set {ϕ} is",
+    "options": {
+      "A": "{ϕ}",
+      "B": "{ϕ, {ϕ}}",
+      "C": "{0}",
+      "D": "{0, ϕ, {ϕ}}"
+    },
+    "answer": "B",
+    "explanation": "{ϕ} has one element, so its power set has 2 subsets: ϕ and {ϕ}."
+  },
+  {
+    "id": 5,
+    "source_file": "D-87-12",
+    "question": "If the disk head is located initially at 32, find the number of disk moves required with FCFS if the disk queue of I/O blocks requests are 98, 37, 14, 124, 65, 67.",
+    "options": {
+      "A": "239",
+      "B": "310",
+      "C": "321",
+      "D": "325"
+    },
+    "answer": "C",
+    "explanation": "|32−98| + |98−37| + |37−14| + |14−124| + |124−65| + |65−67| = 66 + 61 + 23 + 110 + 59 + 2 = 321."
+  },
+  {
+    "id": 6,
+    "source_file": "D-87-12",
+    "question": "Component level design is concerned with",
+    "options": {
+      "A": "Flow oriented analysis",
+      "B": "Class based analysis",
+      "C": "Both of the above",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "Pressman: component-level design draws on both class-based elements (OO view) and flow-oriented elements (conventional view) of the analysis model."
+  },
+  {
+    "id": 7,
+    "source_file": "D-87-12",
+    "question": "The 'C' language is",
+    "options": {
+      "A": "Context free language",
+      "B": "Context sensitive language",
+      "C": "Regular language",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "C's syntax is defined by a context-free grammar and parsed as such (keyed answer). Strictly, rules like declare-before-use make it context-sensitive, but these are handled by semantic analysis."
+  },
+  {
+    "id": 8,
+    "source_file": "D-87-12",
+    "question": "The Mobile Application Protocol (MAP) typically runs on top of which protocol ?",
+    "options": {
+      "A": "SNMP (Simple Network Management Protocol)",
+      "B": "SMTP (Simple Mail Transfer Protocol)",
+      "C": "SS7 (Signalling System 7)",
+      "D": "HTTP (Hyper Text Transfer Protocol)"
+    },
+    "answer": "C",
+    "explanation": "GSM's Mobile Application Part (MAP) runs over the SS7 signalling stack (TCAP/SCCP)."
+  },
+  {
+    "id": 9,
+    "source_file": "D-87-12",
+    "question": "If a packet arrive with an M-bit value is 'l' and a fragmentation offset value '0', then it is ______ fragment.",
+    "options": {
+      "A": "First",
+      "B": "Middle",
+      "C": "Last",
+      "D": "All of the above"
+    },
+    "answer": "A",
+    "explanation": "M = 1 means more fragments follow and offset 0 means it is the start of the datagram, so it is the first fragment."
+  },
+  {
+    "id": 10,
+    "source_file": "D-87-12",
+    "question": "The number of bit strings of length eight that will either start with a 1 bit or end with two bits 00 shall be",
+    "options": {
+      "A": "32",
+      "B": "64",
+      "C": "128",
+      "D": "160"
+    },
+    "answer": "D",
+    "explanation": "Start with 1: 2⁷ = 128; end with 00: 2⁶ = 64; both: 2⁵ = 32. Inclusion–exclusion: 128 + 64 − 32 = 160."
+  },
+  {
+    "id": 11,
+    "source_file": "D-87-12",
+    "question": "In compiler design 'reducing the strength' refers to",
+    "options": {
+      "A": "reducing the range of values of input variables.",
+      "B": "code optimization using cheaper machine instructions.",
+      "C": "reducing efficiency of program.",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "Strength reduction replaces expensive operations with cheaper ones (e.g. multiplication by addition or shift)."
+  },
+  {
+    "id": 12,
+    "source_file": "D-87-12",
+    "question": "In which addressing mode, the effective address of the operand is generated by adding a constant value to the contents of register ?",
+    "options": {
+      "A": "Absolute",
+      "B": "Indirect",
+      "C": "Immediate",
+      "D": "Index"
+    },
+    "answer": "D",
+    "explanation": "Indexed (or base/displacement) addressing: EA = constant + contents of a register."
+  },
+  {
+    "id": 13,
+    "source_file": "D-87-12",
+    "question": "Which of the following is true ?",
+    "options": {
+      "A": "A relation in BCNF is always in 3NF.",
+      "B": "A relation in 3NF is always in BCNF.",
+      "C": "BCNF and 3NF are same.",
+      "D": "A relation in BCNF is not in 3NF."
+    },
+    "answer": "A",
+    "explanation": "BCNF is stricter than 3NF, so every BCNF relation is in 3NF but not vice versa."
+  },
+  {
+    "id": 14,
+    "source_file": "D-87-12",
+    "question": "Given memory partitions of 100 K, 500 K, 200 K, 300 K and 600 K (in order) and processes of 212 K, 417 K, 112 K, and 426 K (in order), using the first-fit algorithm, in which partition would the process requiring 426 K be placed ?",
+    "options": {
+      "A": "500 K",
+      "B": "200 K",
+      "C": "300 K",
+      "D": "600 K"
+    },
+    "answer": "D",
+    "explanation": "Flawed question. First fit: 212 K → 500 K (288 K left), 417 K → 600 K (183 K left), 112 K → the 288 K remainder. No hole of 426 K remains, so 426 K must wait (Galvin's example). D (600 K) is the commonly keyed answer, but strictly no listed partition is correct."
+  },
+  {
+    "id": 15,
+    "source_file": "D-87-12",
+    "question": "What is the size of the Unicode character in Windows Operating System ?",
+    "options": {
+      "A": "8-Bits",
+      "B": "16-Bits",
+      "C": "32-Bits",
+      "D": "64-Bits"
+    },
+    "answer": "B",
+    "explanation": "Windows uses UTF-16, so WCHAR (a Unicode character unit) is 16 bits."
+  },
+  {
+    "id": 16,
+    "source_file": "D-87-12",
+    "question": "In which tree, for every node the height of its left subtree and right subtree differ almost by one ?",
+    "options": {
+      "A": "Binary search tree",
+      "B": "AVL tree",
+      "C": "Threaded Binary Tree",
+      "D": "Complete Binary Tree"
+    },
+    "answer": "B",
+    "explanation": "The AVL property: the balance factor of every node is −1, 0 or +1. ('almost' is a misprint of 'at most'.)"
+  },
+  {
+    "id": 17,
+    "source_file": "D-87-12",
+    "question": "The design issue of Datalink Layer in OSI Reference Model is",
+    "options": {
+      "A": "Framing",
+      "B": "Representation of bits",
+      "C": "Synchronization of bits",
+      "D": "Connection control"
+    },
+    "answer": "A",
+    "explanation": "The data link layer groups bits into frames; bit representation and synchronisation are physical-layer issues."
+  },
+  {
+    "id": 18,
+    "source_file": "D-87-12",
+    "question": "Given the following expressions of a grammar\nE → E * F / F + E / F\nF → F – F / id\nWhich of the following is true ?",
+    "options": {
+      "A": "* has higher precedence than +",
+      "B": "– has higher precedence than *",
+      "C": "+ and – have same precedence",
+      "D": "+ has higher precedence than *"
+    },
+    "answer": "B",
+    "explanation": "'/' separates alternatives. * and + are produced at the same level (E), while − is generated lower in the tree (F), so − binds tighter and has higher precedence than both."
+  },
+  {
+    "id": 19,
+    "source_file": "D-87-12",
+    "question": "The maturity levels used to measure a process are",
+    "options": {
+      "A": "Initial, Repeatable, Defined, Managed, Optimized.",
+      "B": "Primary, Secondary, Defined, Managed, Optimized.",
+      "C": "Initial, Stating, Defined, Managed, Optimized.",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "The five SEI CMM levels are Initial, Repeatable, Defined, Managed and Optimizing."
+  },
+  {
+    "id": 20,
+    "source_file": "D-87-12",
+    "question": "The problem of indefinite blockage of low-priority jobs in general priority scheduling algorithm can be solved using :",
+    "options": {
+      "A": "Parity bit",
+      "B": "Aging",
+      "C": "Compaction",
+      "D": "Timer"
+    },
+    "answer": "B",
+    "explanation": "Aging gradually raises the priority of waiting processes, preventing starvation."
+  },
+  {
+    "id": 21,
+    "source_file": "D-87-12",
+    "question": "Which API is used to draw a circle ?",
+    "options": {
+      "A": "Circle ( )",
+      "B": "Ellipse ( )",
+      "C": "Round Rect ( )",
+      "D": "Pie ( )"
+    },
+    "answer": "B",
+    "explanation": "The Windows GDI has no Circle(); a circle is drawn with Ellipse() using a square bounding rectangle."
+  },
+  {
+    "id": 22,
+    "source_file": "D-87-12",
+    "question": "In DML, RECONNCT command cannot be used with",
+    "options": {
+      "A": "OPTIONAL Set",
+      "B": "FIXED Set",
+      "C": "MANDATOR Set",
+      "D": "All of the above"
+    },
+    "answer": "B",
+    "explanation": "In the CODASYL network model, a member of a FIXED set can never be moved to another owner, so RECONNECT is not allowed; it works for OPTIONAL and MANDATORY sets. (RECONNCT/MANDATOR are misprints.)"
+  },
+  {
+    "id": 23,
+    "source_file": "D-87-12",
+    "question": "Coaxial cables are categorized by Radio Government rating are adapted for specialized functions. Category RG-59 with impedance 75 Ω used for",
+    "options": {
+      "A": "Cable TV",
+      "B": "Ethernet",
+      "C": "Thin Ethernet",
+      "D": "Thick Ethernet"
+    },
+    "answer": "A",
+    "explanation": "RG-59 (75 Ω) is used for cable TV; RG-58 (50 Ω) is thin Ethernet and RG-11 (50 Ω) thick Ethernet."
+  },
+  {
+    "id": 24,
+    "source_file": "D-87-12",
+    "question": "RAD stands for ______.",
+    "options": {
+      "A": "Rapid and Design",
+      "B": "Rapid Aided Development",
+      "C": "Rapid Application Development",
+      "D": "Rapid Application Design"
+    },
+    "answer": "C",
+    "explanation": "RAD is Rapid Application Development, an incremental model with very short development cycles."
+  },
+  {
+    "id": 25,
+    "source_file": "D-87-12",
+    "question": "Suppose that someone starts with a chain letter. Each person who receives the letter is asked to send it on to 4 other people. Some people do this, while some do not send any letter. How many people have seen the letter, including the first person, if no one receives more than one letter and if the chain letter ends after there have been 100 people who read it but did not send it out ? Also find how many people sent out the letter ?",
+    "options": {
+      "A": "122 & 22",
+      "B": "111 & 11",
+      "C": "133 & 33",
+      "D": "144 & 44"
+    },
+    "answer": "C",
+    "explanation": "This is a full 4-ary tree with l = 100 leaves. Internal nodes i = (l − 1)/(m − 1) = 99/3 = 33 (senders) and total n = mi + 1 = 133 people."
+  },
+  {
+    "id": 26,
+    "source_file": "D-87-12",
+    "question": "A hash function f defined as f (key) = key mod 13, with linear probing is used to insert keys 55, 58, 68, 91, 27, 145. What will be the location of 79 ?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "D",
+    "explanation": "Flawed question. 55→3, 58→6, 68→3 collides→4, 91→0, 27→1, 145→2. Then 79 mod 13 = 1, and probing 1, 2, 3, 4 (all full) gives slot 5, which is not offered. D (4) is the commonly keyed answer."
+  },
+  {
+    "id": 27,
+    "source_file": "D-87-12",
+    "question": "Which of the following is true while converting CFG to LL(I) grammar ?",
+    "options": {
+      "A": "Remove left recursion alone",
+      "B": "Factoring grammar alone",
+      "C": "Both of the above",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "To make a grammar suitable for LL(1) you must eliminate left recursion and left-factor it. ('LL(I)' is printed for LL(1).)"
+  },
+  {
+    "id": 28,
+    "source_file": "D-87-12",
+    "question": "Identify the Risk factors which are associated with Electronic payment system.",
+    "options": {
+      "A": "Fraudulent use of Credit Cards.",
+      "B": "Sending Credit Card details over internet.",
+      "C": "Remote storage of Credit Card details.",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "All three are recognised risks of electronic payment systems."
+  },
+  {
+    "id": 29,
+    "source_file": "D-87-12",
+    "question": "Which of the following are two special functions that are meant for handling exception, that occur during exception handling itself ?",
+    "options": {
+      "A": "Void terminate ( ) and Void unexpected ( )",
+      "B": "Non void terminate ( ) and void unexpected ( )",
+      "C": "Void terminate ( ) and non void unexpected ( )",
+      "D": "Non void terminate ( ) and non void unexpected ( )"
+    },
+    "answer": "A",
+    "explanation": "C++ provides void terminate() and void unexpected() for failures in exception handling itself."
+  },
+  {
+    "id": 30,
+    "source_file": "D-87-12",
+    "question": "Which of the following memory allocation scheme suffers from external fragmentation ?",
+    "options": {
+      "A": "Segmentation",
+      "B": "Pure demand paging",
+      "C": "Swapping",
+      "D": "Paging"
+    },
+    "answer": "A",
+    "explanation": "Variable-sized segments leave scattered holes (external fragmentation); paging has only internal fragmentation."
+  },
+  {
+    "id": 31,
+    "source_file": "D-87-12",
+    "question": "Basis path testing falls under",
+    "options": {
+      "A": "system testing",
+      "B": "white box testing",
+      "C": "black box testing",
+      "D": "unit testing"
+    },
+    "answer": "B",
+    "explanation": "McCabe's basis path testing uses the program's control-flow graph, so it is a white-box technique."
+  },
+  {
+    "id": 32,
+    "source_file": "D-87-12",
+    "question": "The User Work Area (UWA) is a set of Program variables declared in the host program to communicate the contents of individual records between",
+    "options": {
+      "A": "DBMS & the Host record",
+      "B": "Host program and Host record",
+      "C": "Host program and DBMS",
+      "D": "Host program and Host language"
+    },
+    "answer": "C",
+    "explanation": "In the CODASYL/network model, the UWA is the buffer through which records pass between the DBMS and the host program."
+  },
+  {
+    "id": 33,
+    "source_file": "D-87-12",
+    "question": "Consider the tree given below :\n[Figure: tree with centre-left vertex c joined to b (b–a), d (d–e), g (g–f) and to h; h joined to i (i–j), k (k–l) and m (m–n)]\nUsing the property of eccentricity of a vertex, find every vertex that is the centre of the given tree.",
+    "options": {
+      "A": "d & h",
+      "B": "c & k",
+      "C": "g, b, c, h, i, m",
+      "D": "c & h"
+    },
+    "answer": "D",
+    "explanation": "c and h each have eccentricity 3 (e.g. c→h→i→j, h→c→b→a); every other vertex has larger eccentricity, so the centre is {c, h}."
+  },
+  {
+    "id": 34,
+    "source_file": "D-87-12",
+    "question": "The maximum number of keys stored in a B-tree of order m and depth d is",
+    "options": {
+      "A": "m^(d+1) – 1",
+      "B": "(m^(d+1) – 1)/(m – 1)",
+      "C": "(m – 1)(m^(d+1) – 1)",
+      "D": "(m^d – 1)/(m – 1)"
+    },
+    "answer": "A",
+    "explanation": "Up to (1 + m + … + mᵈ) nodes, each with up to m − 1 keys: (m − 1)(m^(d+1) − 1)/(m − 1) = m^(d+1) − 1. (Exponents are printed inline in the paper as 'md + 1'.)"
+  },
+  {
+    "id": 35,
+    "source_file": "D-87-12",
+    "question": "Which of the following is the most powerful parring method ?",
+    "options": {
+      "A": "LL(I)",
+      "B": "Canonical LR",
+      "C": "SLR",
+      "D": "LALR"
+    },
+    "answer": "B",
+    "explanation": "Power ordering: LL(1) < SLR < LALR < canonical LR(1). ('parring' is a misprint of parsing.)"
+  },
+  {
+    "id": 36,
+    "source_file": "D-87-12",
+    "question": "In UNIX, which of the following command is used to set the task priority ?",
+    "options": {
+      "A": "init",
+      "B": "nice",
+      "C": "kill",
+      "D": "PS"
+    },
+    "answer": "B",
+    "explanation": "nice runs a command with a modified scheduling priority (renice changes a running process)."
+  },
+  {
+    "id": 37,
+    "source_file": "D-87-12",
+    "question": "AES is a round cipher based on the Rijndal Algorithm that uses a 128-bit block of data. AES has three different configurations. ______ rounds with a key size of 128 bits, ______ rounds with a key size of 192 bits and ______ rounds with a key size of 256 bits.",
+    "options": {
+      "A": "5, 7, 15",
+      "B": "10, 12, 14",
+      "C": "5, 6, 7",
+      "D": "20, 12, 14"
+    },
+    "answer": "B",
+    "explanation": "AES-128 uses 10 rounds, AES-192 12 and AES-256 14."
+  },
+  {
+    "id": 38,
+    "source_file": "D-87-12",
+    "question": "Match the following with respect to C++ data types :\na. User defined type | 1. Qualifier\nb. Built in type | 2. Union\nc. Derived type | 3. Void\nd. Long double | 4. Pointer\nCode : a b c d",
+    "options": {
+      "A": "2 3 4 1",
+      "B": "3 1 4 2",
+      "C": "4 1 2 3",
+      "D": "3 4 1 2"
+    },
+    "answer": "A",
+    "explanation": "Union is user-defined, void is built-in, pointer is derived, and 'long' acts as a qualifier/modifier in long double."
+  },
+  {
+    "id": 39,
+    "source_file": "D-87-12",
+    "question": "Given an empty stack, after performing push (1), push (2), Pop, push (3), push (4), Pop, Pop, push(5), Pop, what is the value of the top of the stack ?",
+    "options": {
+      "A": "4",
+      "B": "3",
+      "C": "2",
+      "D": "1"
+    },
+    "answer": "D",
+    "explanation": "[1] → [1,2] → [1] → [1,3] → [1,3,4] → [1,3] → [1] → [1,5] → [1]. Top is 1."
+  },
+  {
+    "id": 40,
+    "source_file": "D-87-12",
+    "question": "Enumeration is a process of",
+    "options": {
+      "A": "Declaring a set of numbers",
+      "B": "Sorting a list of strings",
+      "C": "Assigning a legal values possible for a variable",
+      "D": "Sequencing a list of operators"
+    },
+    "answer": "C",
+    "explanation": "An enumeration lists (names) all the legal values a variable of that type may take."
+  },
+  {
+    "id": 41,
+    "source_file": "D-87-12",
+    "question": "Which of the following mode declaration is used in C++ to open a file for input ?",
+    "options": {
+      "A": "ios : : app",
+      "B": "in : : ios",
+      "C": "ios : : file",
+      "D": "ios : : in"
+    },
+    "answer": "D",
+    "explanation": "ios::in opens a file for reading; ios::app appends."
+  },
+  {
+    "id": 42,
+    "source_file": "D-87-12",
+    "question": "Data Encryption Techniques are particularly used for ______.",
+    "options": {
+      "A": "protecting data in Data Communication System.",
+      "B": "reduce Storage Space Requirement.",
+      "C": "enhances Data Integrity.",
+      "D": "decreases Data Integrity."
+    },
+    "answer": "A",
+    "explanation": "Encryption protects data confidentiality, especially during transmission."
+  },
+  {
+    "id": 43,
+    "source_file": "D-87-12",
+    "question": "Let L be a set accepted by a non-deterministic finite automaton. The number of states in non-deterministic finite automaton is |Q|. The maximum number of states in equivalent finite automaton that accepts L is",
+    "options": {
+      "A": "|Q|",
+      "B": "2|Q|",
+      "C": "2^|Q| – 1",
+      "D": "2^|Q|"
+    },
+    "answer": "D",
+    "explanation": "Subset construction yields at most 2^|Q| DFA states (one per subset of Q)."
+  },
+  {
+    "id": 44,
+    "source_file": "D-87-12",
+    "question": "What is the result of the following expression ?\n(1 & 2) + (3 & 4)",
+    "options": {
+      "A": "1",
+      "B": "3",
+      "C": "2",
+      "D": "0"
+    },
+    "answer": "D",
+    "explanation": "Bitwise AND: 01 & 10 = 0 and 011 & 100 = 0, so the sum is 0."
+  },
+  {
+    "id": 45,
+    "source_file": "D-87-12",
+    "question": "Back propagation is a learning technique that adjusts weights in the neural network by propagating weight changes.",
+    "options": {
+      "A": "Forward from source to sink",
+      "B": "Backward from sink to source",
+      "C": "Forward from source to hidden nodes",
+      "D": "Backward from since to hidden nodes"
+    },
+    "answer": "B",
+    "explanation": "Errors/weight changes are propagated backward from the output (sink) toward the input (source)."
+  },
+  {
+    "id": 46,
+    "source_file": "D-87-12",
+    "question": "______ is an \"umbrella\" activity that is applied throughout the software engineering process.",
+    "options": {
+      "A": "Debugging",
+      "B": "Testing",
+      "C": "Designing",
+      "D": "Software quality assurance"
+    },
+    "answer": "D",
+    "explanation": "Pressman lists SQA as an umbrella activity spanning the whole process."
+  },
+  {
+    "id": 47,
+    "source_file": "D-87-12",
+    "question": "Identify the operation which is commutative but not associative ?",
+    "options": {
+      "A": "OR",
+      "B": "NOR",
+      "C": "EX-OR",
+      "D": "NAND"
+    },
+    "answer": "D",
+    "explanation": "NAND is commutative but not associative. Note that NOR (B) has the same property, so the question has two correct options; OR and XOR are both commutative and associative."
+  },
+  {
+    "id": 48,
+    "source_file": "D-87-12",
+    "question": "Given a Relation POSITION (Posting-No, Skill), then query to retrieve all distinct pairs of posting-nos. requiring skill is",
+    "options": {
+      "A": "Select p.posting-No, p.posting-No from position p where p.skill = p.skill and p.posting-No < p.posting-No",
+      "B": "Select p1.posting-No, p2.posting-No from position p1, position p2 where p1.skill = p2.skill",
+      "C": "Select p1.posting-No, p2.posting-No from position p1, position p2 where p1.skill = p2.skill and p1.posting-No < p2.posting-No",
+      "D": "Select p1.posting-No, p2.posting-No from position p1, position p2 where p1.skill = p2.skill and p1.posting-No = p2.posting-No"
+    },
+    "answer": "C",
+    "explanation": "A self-join on equal skill, with p1 < p2 to drop self-pairs and duplicate (reversed) pairs."
+  }
+]

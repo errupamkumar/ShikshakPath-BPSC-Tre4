@@ -1,0 +1,782 @@
+[
+  {
+    "id": 1,
+    "source_file": "HTET PGT CS L3",
+    "question": "MS PowerPoint slide component for visual context & branding consistency?",
+    "options": {
+      "A": "Slide Master & Layouts",
+      "B": "Placeholder text boxes",
+      "C": "Outline view",
+      "D": "Notes only"
+    },
+    "answer": "A",
+    "explanation": "Q91 in the paper. The Slide Master and its layouts control themes, logos and fonts across all slides, which keeps branding consistent."
+  },
+  {
+    "id": 2,
+    "source_file": "HTET PGT CS L3",
+    "question": "Slide layout element auto-adjusting text size/wrapping while maintaining hierarchy?",
+    "options": {
+      "A": "Manual font resize",
+      "B": "Static text frames",
+      "C": "Autofit in Smart Shape boxes",
+      "D": "Outline numbering only"
+    },
+    "answer": "C",
+    "explanation": "Q92. AutoFit shrinks or wraps text to fit its placeholder or shape while keeping the bullet hierarchy."
+  },
+  {
+    "id": 3,
+    "source_file": "HTET PGT CS L3",
+    "question": "ClipArt method preserving vector quality on scaling without pixelation?",
+    "options": {
+      "A": "PNG transparency",
+      "B": "JPEG comprehenssion",
+      "C": "SVG w/ SmartArt",
+      "D": "Bitmap only"
+    },
+    "answer": "C",
+    "explanation": "Q93. SVG is a vector format, so it scales without pixelation. PNG, JPEG and bitmap are raster formats. ('comprehenssion' is a misprint.)"
+  },
+  {
+    "id": 4,
+    "source_file": "HTET PGT CS L3",
+    "question": "Presentation save option for offline editing with cloud sync on reconnect?",
+    "options": {
+      "A": "Manual save",
+      "B": "Offline w/ AutoSave & sync queue",
+      "C": "No offline",
+      "D": "Online-only"
+    },
+    "answer": "B",
+    "explanation": "Q94. Office lets you edit offline and syncs the queued AutoSave changes when the connection returns."
+  },
+  {
+    "id": 5,
+    "source_file": "HTET PGT CS L3",
+    "question": "C/C++ dynamic memory without bounds checking causes which vulnerability?",
+    "options": {
+      "A": "Integer overflow",
+      "B": "Format string",
+      "C": "Buffer overflow → arbitrary code exec",
+      "D": "Stack overflow only"
+    },
+    "answer": "C",
+    "explanation": "Q95. Writing past an unchecked buffer causes a buffer overflow, which can let an attacker run arbitrary code."
+  },
+  {
+    "id": 6,
+    "source_file": "HTET PGT CS L3",
+    "question": "Implementation metric for scalability under increasing user concurrency?",
+    "options": {
+      "A": "Throughput (TPS) vs. response time",
+      "B": "Lines of code",
+      "C": "CPU utilization",
+      "D": "Memory footprint"
+    },
+    "answer": "A",
+    "explanation": "Q96. Scalability is measured by how throughput (transactions per second) and response time behave as concurrent users increase."
+  },
+  {
+    "id": 7,
+    "source_file": "HTET PGT CS L3",
+    "question": "Testing phase formal verification proving no division-by-zero/array bounds errors?",
+    "options": {
+      "A": "Model checking w/ temporal logic",
+      "B": "Fuzz testing",
+      "C": "Integration testing",
+      "D": "Manual review"
+    },
+    "answer": "A",
+    "explanation": "Q97. Formal verification (model checking with temporal logic) proves the absence of such errors. Fuzzing only finds errors by trying inputs."
+  },
+  {
+    "id": 8,
+    "source_file": "HTET PGT CS L3",
+    "question": "Algorithm property provable by induction regardless of input size?",
+    "options": {
+      "A": "Effectiveness",
+      "B": "Finiteness",
+      "C": "Generality",
+      "D": "Definiteness"
+    },
+    "answer": "C",
+    "explanation": "Q98. Generality means the algorithm works for every input of the problem class, of any size. This is what an induction proof establishes."
+  },
+  {
+    "id": 9,
+    "source_file": "HTET PGT CS L3",
+    "question": "Flowchart with multiple reachable STOP symbols violates which algorithm property?",
+    "options": {
+      "A": "Output definiteness (single result)",
+      "B": "Input requirement",
+      "C": "Effectiveness",
+      "D": "Finiteness"
+    },
+    "answer": "A",
+    "explanation": "Q99. Per the question's framing, several possible STOP points break the definiteness of a single, well-defined output."
+  },
+  {
+    "id": 10,
+    "source_file": "HTET PGT CS L3",
+    "question": "Program construct ensuring deterministic execution: each statement processes once in fixed order?",
+    "options": {
+      "A": "Recurrence",
+      "B": "Sequence",
+      "C": "Recursion",
+      "D": "Selection"
+    },
+    "answer": "B",
+    "explanation": "Q100. In a sequence construct, statements run one after another, each once, in a fixed order."
+  },
+  {
+    "id": 11,
+    "source_file": "HTET PGT CS L3",
+    "question": "Requirement Gathering artifact: primary client-dev contract with functional/non-functional reqs & traceability?",
+    "options": {
+      "A": "SRS document",
+      "B": "Use case diagrams only",
+      "C": "High-level design",
+      "D": "Feasibility report"
+    },
+    "answer": "A",
+    "explanation": "Q101. The Software Requirements Specification (SRS) is the agreed contract that lists functional and non-functional requirements."
+  },
+  {
+    "id": 12,
+    "source_file": "HTET PGT CS L3",
+    "question": "Feasibility Study: Technique quantifying technical feasibility vs SLAs via prototyping/benchmarking?",
+    "options": {
+      "A": "Performance assessment w/ load metrics",
+      "B": "Cost-benefit only",
+      "C": "Stakeholder analysis",
+      "D": "Risk matrix"
+    },
+    "answer": "A",
+    "explanation": "Q102. Benchmarking a prototype under load measures whether performance can meet the SLAs."
+  },
+  {
+    "id": 13,
+    "source_file": "HTET PGT CS L3",
+    "question": "Design principle for minimal module changes via interfaces?",
+    "options": {
+      "A": "Inheritance",
+      "B": "Low coupling w/high cohesion",
+      "C": "Data encapsulation only",
+      "D": "Cohesion only"
+    },
+    "answer": "B",
+    "explanation": "Q103. Low coupling and high cohesion keep a change inside one module."
+  },
+  {
+    "id": 14,
+    "source_file": "HTET PGT CS L3",
+    "question": "Coding practice for cross-platform compatibility via consistent API patterns across versions?",
+    "options": {
+      "A": "Variable naming only",
+      "B": "Indentation standards",
+      "C": "Defensive prog. w/ version-agnostic APIs & polyfills",
+      "D": "Comment density"
+    },
+    "answer": "C",
+    "explanation": "Q104. Version-agnostic APIs and polyfills, used defensively, keep code working across platforms and versions."
+  },
+  {
+    "id": 15,
+    "source_file": "HTET PGT CS L3",
+    "question": "Black Box Testing primarily focuses on:",
+    "options": {
+      "A": "DB schema",
+      "B": "Memory allocation",
+      "C": "Program functionality per requirements",
+      "D": "Internal code"
+    },
+    "answer": "C",
+    "explanation": "Q105. Black-box testing checks behaviour against the requirements without looking at the internal code."
+  },
+  {
+    "id": 16,
+    "source_file": "HTET PGT CS L3",
+    "question": "White Box Testing also known as?",
+    "options": {
+      "A": "Functional",
+      "B": "Behavioural",
+      "C": "Structural",
+      "D": "Acceptance"
+    },
+    "answer": "C",
+    "explanation": "Q106. White-box testing is also called structural (glass-box) testing."
+  },
+  {
+    "id": 17,
+    "source_file": "HTET PGT CS L3",
+    "question": "Testing level verifying individual program modules/components?",
+    "options": {
+      "A": "System",
+      "B": "Integration",
+      "C": "Unit",
+      "D": "Acceptance"
+    },
+    "answer": "C",
+    "explanation": "Q107. Unit testing tests individual modules or components."
+  },
+  {
+    "id": 18,
+    "source_file": "HTET PGT CS L3",
+    "question": "Python's key feature different from C++?",
+    "options": {
+      "A": "Compiled before execution",
+      "B": "Static memory allocation",
+      "C": "Manual memory management",
+      "D": "Dynamic typing"
+    },
+    "answer": "D",
+    "explanation": "Q108. Python is dynamically typed; C++ is statically typed."
+  },
+  {
+    "id": 19,
+    "source_file": "HTET PGT CS L3",
+    "question": "Python feature of code once, run on Windows/Linux/macOs without changes?",
+    "options": {
+      "A": "Auto memory mgmt.",
+      "B": "Bytecode compilation platform independence",
+      "C": "OOP paradigm",
+      "D": "Dynamic typing"
+    },
+    "answer": "B",
+    "explanation": "Q109. Python compiles to bytecode that runs on the interpreter for each OS, so the same code is portable."
+  },
+  {
+    "id": 20,
+    "source_file": "HTET PGT CS L3",
+    "question": "What is the output of print(\"Age:\", 25, sep='-', end='!')?",
+    "options": {
+      "A": "Age:-25!",
+      "B": "Age: 25!",
+      "C": "Age:25",
+      "D": "Syntax error"
+    },
+    "answer": "A",
+    "explanation": "Q110. sep='-' joins the two items with '-', and end='!' replaces the newline. Output: Age:-25!"
+  },
+  {
+    "id": 21,
+    "source_file": "HTET PGT CS L3",
+    "question": "What is the result of result = 10//3+2**2 following precedence rules?",
+    "options": {
+      "A": "13",
+      "B": "4",
+      "C": "7",
+      "D": "20"
+    },
+    "answer": "C",
+    "explanation": "Q111. ** binds tightest, so 2**2 = 4. 10//3 = 3. 3 + 4 = 7."
+  },
+  {
+    "id": 22,
+    "source_file": "HTET PGT CS L3",
+    "question": "The primary need for functions in programming is to achieve:",
+    "options": {
+      "A": "More variables",
+      "B": "Code reusability and modularity",
+      "C": "Complex syntax",
+      "D": "Faster execution speed"
+    },
+    "answer": "B",
+    "explanation": "Q112. Functions let code be reused and split into modules."
+  },
+  {
+    "id": 23,
+    "source_file": "HTET PGT CS L3",
+    "question": "For std::string s = \"HELLO\";, which access method performs bounds checking at runtime and throws an exception if index is invalid?",
+    "options": {
+      "A": "s[i]",
+      "B": "*(&s[0] + i)",
+      "C": "*(s.data()+i)",
+      "D": "s.at(i)"
+    },
+    "answer": "D",
+    "explanation": "Q113. std::string::at() checks the index and throws std::out_of_range. operator[] and pointer access do not check."
+  },
+  {
+    "id": 24,
+    "source_file": "HTET PGT CS L3",
+    "question": "What does s.find('py', 2) return for s = \"Happy Python Learning\"?",
+    "options": {
+      "A": "–1",
+      "B": "3",
+      "C": "6",
+      "D": "2"
+    },
+    "answer": "B",
+    "explanation": "Q114. 'Happy' has 'p' at index 3 followed by 'y' at 4, so the lowercase 'py' first occurs at index 3 (searching from 2). The 'Py' in 'Python' is capitalised and does not match. Returns 3."
+  },
+  {
+    "id": 25,
+    "source_file": "HTET PGT CS L3",
+    "question": "Which operation is NOT possible on tuples?",
+    "options": {
+      "A": "Slicing",
+      "B": "Indexing",
+      "C": "append()",
+      "D": "len()"
+    },
+    "answer": "C",
+    "explanation": "Q115. Tuples are immutable and have no append() method."
+  },
+  {
+    "id": 26,
+    "source_file": "HTET PGT CS L3",
+    "question": "Which method returns the value for a key or a default if key doesn't exist, without modifying the dictionary unlike get() with None default?",
+    "options": {
+      "A": "d.pop('key', 0)",
+      "B": "d.get('key', 0)",
+      "C": "d['key']",
+      "D": "d.setdefault('key', 0)"
+    },
+    "answer": "B",
+    "explanation": "Q116. d.get('key', 0) returns the value or 0 and does not change the dict. pop removes the key, setdefault inserts it, and d['key'] raises KeyError."
+  },
+  {
+    "id": 27,
+    "source_file": "HTET PGT CS L3",
+    "question": "Data Science lifecycle: phase with feature engineering & model selection via cross-validation?",
+    "options": {
+      "A": "Evaluation",
+      "B": "Data prep",
+      "C": "Deployment",
+      "D": "Modeling"
+    },
+    "answer": "D",
+    "explanation": "Q117. Feature engineering and model selection with cross-validation belong to the Modeling phase."
+  },
+  {
+    "id": 28,
+    "source_file": "HTET PGT CS L3",
+    "question": "E-commerce recommendation: collaborative filtering using user-item matrices?",
+    "options": {
+      "A": "Demographic",
+      "B": "Matrix Factorization (SVD++)",
+      "C": "Rule-based",
+      "D": "Content-based"
+    },
+    "answer": "B",
+    "explanation": "Q118. Matrix factorization (SVD/SVD++) decomposes the user-item rating matrix for collaborative filtering."
+  },
+  {
+    "id": 29,
+    "source_file": "HTET PGT CS L3",
+    "question": "5G slicing privacy concern from location/biometric/behavioural data?",
+    "options": {
+      "A": "Rural connectivity",
+      "B": "Surveillance via digital profiling",
+      "C": "Lower data costs",
+      "D": "Emergency services"
+    },
+    "answer": "B",
+    "explanation": "Q119. Collecting location, biometric and behavioural data raises the risk of surveillance through digital profiling."
+  },
+  {
+    "id": 30,
+    "source_file": "HTET PGT CS L3",
+    "question": "Hardware for direct Internet without NAT?",
+    "options": {
+      "A": "8GB RAM",
+      "B": "Public IP from ISP",
+      "C": "SSD drive",
+      "D": "DirectX 12 GPU"
+    },
+    "answer": "B",
+    "explanation": "Q120. Direct Internet access without NAT needs a public IP address from the ISP. Note: this is an addressing resource, not hardware."
+  },
+  {
+    "id": 31,
+    "source_file": "HTET PGT CS L3",
+    "question": "Browser engine with CSS Grid L2 subgrid for nested alignment?",
+    "options": {
+      "A": "Blink (Chrome)",
+      "B": "Gecko (Firefox)",
+      "C": "WebKit (Safari)",
+      "D": "EdgeHTML (legacy)"
+    },
+    "answer": "B",
+    "explanation": "Q121. Gecko (Firefox 71, 2019) was the first engine to ship CSS subgrid. WebKit and Blink added it later, and EdgeHTML never did."
+  },
+  {
+    "id": 32,
+    "source_file": "HTET PGT CS L3",
+    "question": "TCP/IP layer for reliable end-to-end data delivery with error correction & flow control?",
+    "options": {
+      "A": "Physical",
+      "B": "Application",
+      "C": "Transport",
+      "D": "Network"
+    },
+    "answer": "C",
+    "explanation": "Q122. The transport layer (TCP) gives reliable end-to-end delivery with flow and error control."
+  },
+  {
+    "id": 33,
+    "source_file": "HTET PGT CS L3",
+    "question": "Access specifier for same class + derived classes only (not outside inheritance)?",
+    "options": {
+      "A": "Protected",
+      "B": "Public",
+      "C": "Static",
+      "D": "Private"
+    },
+    "answer": "A",
+    "explanation": "Q123. Protected members can be used by the class and its derived classes, but not from outside."
+  },
+  {
+    "id": 34,
+    "source_file": "HTET PGT CS L3",
+    "question": "Method overriding demonstrates which type of polymorphism?",
+    "options": {
+      "A": "Compile-time polymorphism",
+      "B": "Runtime polymorphism",
+      "C": "Static polymorphism",
+      "D": "Ad-hoc polymorphism"
+    },
+    "answer": "B",
+    "explanation": "Q124. Overriding is resolved at run time (dynamic binding)."
+  },
+  {
+    "id": 35,
+    "source_file": "HTET PGT CS L3",
+    "question": "Virtual function via base pointer to derived object?",
+    "options": {
+      "A": "Program crashes",
+      "B": "Base version executes",
+      "C": "Derived version (dynamic binding)",
+      "D": "Compilation error"
+    },
+    "answer": "C",
+    "explanation": "Q125. Calling a virtual function through a base pointer runs the derived class's override."
+  },
+  {
+    "id": 36,
+    "source_file": "HTET PGT CS L3",
+    "question": "Abstract classes primarily serve to:",
+    "options": {
+      "A": "Define interfaces for concrete derived classes",
+      "B": "Provide full implementation",
+      "C": "Create objects directly",
+      "D": "Eliminate inheritance"
+    },
+    "answer": "A",
+    "explanation": "Q126. Abstract classes define an interface (pure virtual functions) that concrete derived classes implement. They cannot be instantiated."
+  },
+  {
+    "id": 37,
+    "source_file": "HTET PGT CS L3",
+    "question": "Which keyword is used to achieve runtime polymorphism in C++?",
+    "options": {
+      "A": "override",
+      "B": "virtual",
+      "C": "static",
+      "D": "final"
+    },
+    "answer": "B",
+    "explanation": "Q127. The 'virtual' keyword enables dynamic dispatch. 'override' only checks that a function overrides one."
+  },
+  {
+    "id": 38,
+    "source_file": "HTET PGT CS L3",
+    "question": "Which C++ array statement is FALSE?",
+    "options": {
+      "A": "Size: sizeof(arr)/sizeof(arr)",
+      "B": "Name = base address",
+      "C": "Passed by value to functions",
+      "D": "Contiguous memory"
+    },
+    "answer": "C",
+    "explanation": "Q128. Arrays are not passed by value; they decay to a pointer to the first element. Note: option A should read sizeof(arr)/sizeof(arr[0])."
+  },
+  {
+    "id": 39,
+    "source_file": "HTET PGT CS L3",
+    "question": "Output of int arr[] (10,20,30); cout << arr;?",
+    "options": {
+      "A": "Compile error (out of bounds)",
+      "B": "Garbage value",
+      "C": "40 (next value)",
+      "D": "0 (auto-initialized)"
+    },
+    "answer": "B",
+    "explanation": "Q129. cout << arr prints the array's address (decayed pointer), which looks like a garbage hex value. Note: the parenthesised initialiser is only valid from C++20 (braces are usual), and none of the options says 'address'. B is the closest."
+  },
+  {
+    "id": 40,
+    "source_file": "HTET PGT CS L3",
+    "question": "C++ operator: higher precedence than* but lower than postfix ++?",
+    "options": {
+      "A": "&&",
+      "B": "unary &",
+      "C": "==",
+      "D": "+"
+    },
+    "answer": "B",
+    "explanation": "Q130. Unary operators (including unary &) rank below postfix operators and above multiplicative '*'."
+  },
+  {
+    "id": 41,
+    "source_file": "HTET PGT CS L3",
+    "question": "Local class object destructor called when?",
+    "options": {
+      "A": "Function scope exit",
+      "B": "Program end",
+      "C": "Object creation",
+      "D": "Constructor call"
+    },
+    "answer": "A",
+    "explanation": "Q131. An automatic (local) object is destroyed when it goes out of scope, at the end of the function or block."
+  },
+  {
+    "id": 42,
+    "source_file": "HTET PGT CS L3",
+    "question": "When a destructor is not explicitly defined in a class, the compiler generates a _______ destructor.",
+    "options": {
+      "A": "Private",
+      "B": "Default public",
+      "C": "Virtual",
+      "D": "Inline public"
+    },
+    "answer": "D",
+    "explanation": "Q132. The C++ standard says the implicitly declared destructor is an inline public member. Note: 'Default public' (B) is also loosely correct; D is the precise wording."
+  },
+  {
+    "id": 43,
+    "source_file": "HTET PGT CS L3",
+    "question": "Which declaration inside a class makes a member function accessible without creating class object?",
+    "options": {
+      "A": "friend void func();",
+      "B": "public: static void func();",
+      "C": "private: static void func();",
+      "D": "virtual void func();"
+    },
+    "answer": "B",
+    "explanation": "Q133. A public static member function can be called as Class::func() without an object."
+  },
+  {
+    "id": 44,
+    "source_file": "HTET PGT CS L3",
+    "question": "Passing entire Student struct to function: value vs reference-which has higher overhead & why?",
+    "options": {
+      "A": "Both same",
+      "B": "Reference; copies pointer (4/8 bytes)",
+      "C": "Value; copies entire struct (sizeof(Student) bytes)",
+      "D": "Compiler optimization"
+    },
+    "answer": "C",
+    "explanation": "Q134. Pass by value copies the whole struct. Pass by reference only passes an address."
+  },
+  {
+    "id": 45,
+    "source_file": "HTET PGT CS L3",
+    "question": "Class () {} destructor cannot be _______ for proper inheritance cleanup.",
+    "options": {
+      "A": "Virtual",
+      "B": "Inline",
+      "C": "Static",
+      "D": "Private"
+    },
+    "answer": "D",
+    "explanation": "Q135. A private destructor stops derived classes and normal deletion from destroying the object, so inheritance cleanup breaks. Note: a destructor can never be static either, so the question is ambiguous. 'Private' fits the inheritance context. The question prints 'Class ()' for ~Class()."
+  },
+  {
+    "id": 46,
+    "source_file": "HTET PGT CS L3",
+    "question": "In modern computer applications like scientific simulations, which characteristic provides the primary advantage over earlier generations?",
+    "options": {
+      "A": "Fixed-word instruction sets",
+      "B": "Multi-core parallel processing",
+      "C": "Mechanical reliability only",
+      "D": "Magnetic core memory usage"
+    },
+    "answer": "B",
+    "explanation": "Q136. Multi-core parallel processing is what speeds up modern simulations."
+  },
+  {
+    "id": 47,
+    "source_file": "HTET PGT CS L3",
+    "question": "Which memory hierarchy level is optimized for holding intermediate ALU results?",
+    "options": {
+      "A": "L1 cache/On-chip registers",
+      "B": "Secondary storage (HDD/SSD)",
+      "C": "Virtual memory",
+      "D": "ROM"
+    },
+    "answer": "A",
+    "explanation": "Q137. Registers and L1 cache on the chip are fastest and hold intermediate ALU results."
+  },
+  {
+    "id": 48,
+    "source_file": "HTET PGT CS L3",
+    "question": "Which Intel 8086 innovation enabled 1 MB segmented memory addressing over the 8080?",
+    "options": {
+      "A": "Pipeline prefetch queue",
+      "B": "Harvard architectiure",
+      "C": "20-bit physical address bus (segment:offset)",
+      "D": "Built-in FPU"
+    },
+    "answer": "C",
+    "explanation": "Q138. The 8086 has a 20-bit address bus (2²⁰ = 1 MB), addressed as segment:offset. ('architectiure' is a misprint.)"
+  },
+  {
+    "id": 49,
+    "source_file": "HTET PGT CS L3",
+    "question": "Which milestone enabled transition from assembly to portable high-level code?",
+    "options": {
+      "A": "FORTRAN (1957) compiler to machine code",
+      "B": "Windows OS introduction",
+      "C": "1947 transistor invention",
+      "D": "USB standard creation"
+    },
+    "answer": "A",
+    "explanation": "Q139. The FORTRAN compiler (1957) was the first widely used high-level language compiler."
+  },
+  {
+    "id": 50,
+    "source_file": "HTET PGT CS L3",
+    "question": "ASCII-7 (128 code points) can't represent é/ñ directly due to?",
+    "options": {
+      "A": "Parity bit requirement",
+      "B": "No uppercase support",
+      "C": "Insufficient points after control chars (0-31, 127)",
+      "D": "Fixed 8-bit only"
+    },
+    "answer": "C",
+    "explanation": "Q140. 7-bit ASCII has only 95 printable characters (excluding control codes 0–31 and 127), with no room for accented letters. (The question prints 'e/n' for é/ñ.)"
+  },
+  {
+    "id": 51,
+    "source_file": "HTET PGT CS L3",
+    "question": "OS function for CPU sharing via context switching & process isolation?",
+    "options": {
+      "A": "File organization",
+      "B": "Memory only",
+      "C": "Process scheduling & time slicing",
+      "D": "Device buffers"
+    },
+    "answer": "C",
+    "explanation": "Q141. Process management (scheduling and time slicing) shares the CPU using context switches."
+  },
+  {
+    "id": 52,
+    "source_file": "HTET PGT CS L3",
+    "question": "Utility function for sector-by-sector data recovery from corrupted FAT without overwriting clusters?",
+    "options": {
+      "A": "Non-destructive data recovery/scanning",
+      "B": "Disk defragmentation",
+      "C": "Antivirus scanning",
+      "D": "File compression"
+    },
+    "answer": "A",
+    "explanation": "Q142. Recovery tools scan sector by sector without writing, so lost clusters are not overwritten."
+  },
+  {
+    "id": 53,
+    "source_file": "HTET PGT CS L3",
+    "question": "What Cut/Copy/Paste across storage (SSD to network), which Windows clipboard handles format negotiation & large files efficiently?",
+    "options": {
+      "A": "Drag-and-drop",
+      "B": "Ctrl + C/V only",
+      "C": "Send To menu",
+      "D": "Clipboard History with cloud sync"
+    },
+    "answer": "D",
+    "explanation": "Q143. The intended answer is Clipboard History with cloud sync (Win+V), the advanced clipboard feature. Note: the question is poorly worded; for very large files, Windows actually uses shell copy (file references), not the clipboard history."
+  },
+  {
+    "id": 54,
+    "source_file": "HTET PGT CS L3",
+    "question": "Windows theme syncs accent colors across Start, taskbar, borders, edge?",
+    "options": {
+      "A": "Transparency toggle",
+      "B": "Auto-pick from background + Edge",
+      "C": "High contrast only",
+      "D": "Windows 7 fallback"
+    },
+    "answer": "B",
+    "explanation": "Q144. Setting the accent colour to 'Automatic' picks it from the background and applies it to Start, the taskbar, title bars and Edge."
+  },
+  {
+    "id": 55,
+    "source_file": "HTET PGT CS L3",
+    "question": "Insert Σ with limits in Words using native tools?",
+    "options": {
+      "A": "Insert > Shapes > Callouts",
+      "B": "Insert > Symbol > Greek",
+      "C": "Insert > Equation > Σ + Script Limits",
+      "D": "Home > Font > Subscript"
+    },
+    "answer": "C",
+    "explanation": "Q145. Word's Equation tool has the large-operator (Σ) structure with upper and lower limits."
+  },
+  {
+    "id": 56,
+    "source_file": "HTET PGT CS L3",
+    "question": "WordArt metallic 3D extrusion with glow/shadow for certificates?",
+    "options": {
+      "A": "3-D Rotation + Bevel + Metal + Custom Glow",
+      "B": "Outline + Gradient Fill",
+      "C": "Glow + Shadow only",
+      "D": "Reflection +Soft Edges"
+    },
+    "answer": "A",
+    "explanation": "Q146. A metallic 3D look comes from combining 3-D Rotation, Bevel and the Metal material, plus a custom Glow."
+  },
+  {
+    "id": 57,
+    "source_file": "HTET PGT CS L3",
+    "question": "Advanced conditional formating using formulas referencing cells outside selection?",
+    "options": {
+      "A": "Color Scales",
+      "B": "Data Bars only",
+      "C": "Formula-based w/relative refs",
+      "D": "Icon Sets"
+    },
+    "answer": "C",
+    "explanation": "Q147. 'Use a formula to determine which cells to format' can refer to any cells through relative or absolute references."
+  },
+  {
+    "id": 58,
+    "source_file": "HTET PGT CS L3",
+    "question": "Excel function counting non-empty cells (numbers, text, logical) excluding errors?",
+    "options": {
+      "A": "COUNTA()",
+      "B": "COUNT()",
+      "C": "COUNTIF()",
+      "D": "COUNTBLANK()"
+    },
+    "answer": "A",
+    "explanation": "Q148. COUNTA counts non-empty cells of any type. COUNT counts numbers only. Note: COUNTA also counts error values, so the phrase 'excluding errors' is inaccurate."
+  },
+  {
+    "id": 59,
+    "source_file": "HTET PGT CS L3",
+    "question": "In Excel date/time functions, which formula extracts only the time portion from a datetime value while preserving fractional hours (minutes/ seconds)?",
+    "options": {
+      "A": "=A1-INT(A1)",
+      "B": "=TEXT(A1, \"hh:mm:ss\")",
+      "C": "=MOD(A1,1)",
+      "D": "=HOUR(A1) + MINUTE(A1)/60"
+    },
+    "answer": "C",
+    "explanation": "Q149. MOD(A1,1) returns the fractional (time) part as a numeric time value. Note: =A1-INT(A1) gives the same result for positive dates. MOD is the standard answer."
+  },
+  {
+    "id": 60,
+    "source_file": "HTET PGT CS L3",
+    "question": "Which advanced range selection technique selects entire contiguous data table using keyboard shortcut while excluding headers and totals?",
+    "options": {
+      "A": "Ctrl + Shift + Arrow",
+      "B": "Ctrl + Shift + Space (Current Region)",
+      "C": "Ctrl + A (selects all)",
+      "D": "Ctrl + Shift + End"
+    },
+    "answer": "B",
+    "explanation": "Q150. Intended answer B (current region). Note: in real Excel the current region is Ctrl+Shift+* (Ctrl+Shift+Space selects all), and inside an Excel Table the first Ctrl+A selects the data without headers or totals. The question is imprecise."
+  }
+]

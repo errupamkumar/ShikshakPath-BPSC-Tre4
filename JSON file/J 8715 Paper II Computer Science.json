@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "How many strings of 5 digits have the property that the sum of their digits is 7 ?",
+    "options": {
+      "A": "66",
+      "B": "330",
+      "C": "495",
+      "D": "99"
+    },
+    "answer": "B",
+    "explanation": "Number of non-negative solutions of d1+...+d5 = 7 (no digit can exceed 9) = C(7+4, 4) = C(11,4) = 330."
+  },
+  {
+    "id": 2,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Consider an experiment of tossing two fair dice, one black and one red. What is the probability that the number on the black die divides the number on red die ?",
+    "options": {
+      "A": "22/36",
+      "B": "12/36",
+      "C": "14/36",
+      "D": "6/36"
+    },
+    "answer": "C",
+    "explanation": "Black = 1: 6 cases, 2: 3 (2,4,6), 3: 2 (3,6), 4: 1, 5: 1, 6: 1, total 14, so 14/36."
+  },
+  {
+    "id": 3,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "In how many ways can 15 indistinguishable fish be placed into 5 different ponds, so that each pond contains atleast one fish ?",
+    "options": {
+      "A": "1001",
+      "B": "3876",
+      "C": "775",
+      "D": "200"
+    },
+    "answer": "A",
+    "explanation": "Put one fish in each pond, then distribute 10 freely: C(10+4, 4) = C(14,4) = 1001."
+  },
+  {
+    "id": 4,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Consider the following statements :\n(a) Depth - first search is used to traverse a rooted tree.\n(b) Pre - order, Post-order and Inorder are used to list the vertices of an ordered rooted tree.\n(c) Huffman's algorithm is used to find an optimal binary tree with given weights.\n(d) Topological sorting provides a labelling such that the parents have larger labels than their children.\nWhich of the above statements are true ?",
+    "options": {
+      "A": "(a) and (b)",
+      "B": "(c) and (d)",
+      "C": "(a), (b) and (c)",
+      "D": "(a), (b), (c) and (d)"
+    },
+    "answer": "C",
+    "explanation": "(a), (b), (c) are standard facts. In a topological sort parents (predecessors) come first, i.e. get smaller labels, so (d) is false."
+  },
+  {
+    "id": 5,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Consider a Hamiltonian Graph (G) with no loops and parallel edges. Which of the following is true with respect to this Graph (G) ?\n(a) deg (v) ≥ n/2 for each vertex of G\n(b) |E(G)| ≥ 1/2 (n−1) (n−2) + 2 edges\n(c) deg (v) + deg (w) ≥ n for every v and ω not connected by an edge",
+    "options": {
+      "A": "(a) and (b)",
+      "B": "(b) and (c)",
+      "C": "(a) and (c)",
+      "D": "(a), (b) and (c)"
+    },
+    "answer": "D",
+    "explanation": "These are Dirac's, the edge-count and Ore's conditions for a Hamiltonian graph; the official key takes all three. Strictly they are sufficient (not necessary) conditions, so the question is flawed."
+  },
+  {
+    "id": 6,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Consider the following statements :\n(a) Boolean expressions and logic networks correspond to labelled acyclic digraphs.\n(b) Optimal boolean expressions may not correspond to simplest networks.\n(c) Choosing essential blocks first in a Karnaugh map and then greedily choosing the largest remaining blocks to cover may not give an optimal expression.\nWhich of these statement(s) is/are correct ?",
+    "options": {
+      "A": "(a) only",
+      "B": "(b) only",
+      "C": "(a) and (b)",
+      "D": "(a), (b) and (c)"
+    },
+    "answer": "D",
+    "explanation": "All three are true: logic networks are labelled DAGs, the minimal SOP need not give the simplest multi-level network, and the greedy K-map cover is not guaranteed optimal."
+  },
+  {
+    "id": 7,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Consider a full - adder with the following input values :\n(a) x=1, y=0 and Ci(carry input)=0\n(b) x=0, y=1 and Ci=1\nCompute the values of S(sum) and Co (carry output) for the above input values.",
+    "options": {
+      "A": "S=1, Co=0 and S=0, Co=1",
+      "B": "S=0, Co=0 and S=1, Co=1",
+      "C": "S=1, Co=1 and S=0, Co=0",
+      "D": "S=0, Co=1 and S=1, Co=0"
+    },
+    "answer": "A",
+    "explanation": "(a) 1+0+0 = 1: S=1, Co=0. (b) 0+1+1 = 10₂: S=0, Co=1."
+  },
+  {
+    "id": 8,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "“If my computations are correct and I pay the electric bill, then I will run out of money. If I don't pay the electric bill, the power will be turned off. Therefore, if I don't run out of money and the power is still on, then my computations are incorrect.”\nConvert this argument into logical notations using the variables c, b, r, p for propositions of computations, electric bills, out of money and the power respectively. (Where ¬ means NOT)",
+    "options": {
+      "A": "if (c∧b)→r and ¬b→¬p, then (¬r∧p)→¬c",
+      "B": "if (c∨b)→r and ¬b→¬p, then (r∧p)→c",
+      "C": "if (c∧b)→r and ¬p→¬b, then (¬r∨p)→¬c",
+      "D": "if (c∨b)→r and ¬b→¬p, then (¬r∧p)→¬c"
+    },
+    "answer": "A",
+    "explanation": "'Correct AND pay' gives c∧b → r; 'don't pay → power off' gives ¬b → ¬p; conclusion (¬r ∧ p) → ¬c."
+  },
+  {
+    "id": 9,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Match the following :\nList - I\n(a) (p→q)⇔(¬q→¬p)\n(b) [(p∧q)→r]⇔[p→(q→r)]\n(c) (p→q)⇔[(p∧¬q)→o]\n(d) (p↔q)⇔[(p→q)∧(q→p)]\nList - II\n(i) Contrapositive\n(ii) Exportation law\n(iii) Reductio ad absurdum\n(iv) Equivalence",
+    "options": {
+      "A": "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+      "B": "(a)-(ii), (b)-(iii), (c)-(i), (d)-(iv)",
+      "C": "(a)-(iii), (b)-(ii), (c)-(iv), (d)-(i)",
+      "D": "(a)-(iv), (b)-(ii), (c)-(iii), (d)-(i)"
+    },
+    "answer": "A",
+    "explanation": "(a) is the contrapositive, (b) exportation, (c) reductio ad absurdum (o = contradiction), (d) the biconditional equivalence."
+  },
+  {
+    "id": 10,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Consider a proposition given as :\n“ x≥6, if x²≥25 and its proof as :\nIf x≥6, then x²=x·x≥6·6=36≥25\nWhich of the following is correct w.r.to the given proposition and its proof ?\n(a) The proof shows the converse of what is to be proved.\n(b) The proof starts by assuming what is to be shown.\n(c) The proof is correct and there is nothing wrong.",
+    "options": {
+      "A": "(a) only",
+      "B": "(c) only",
+      "C": "(a) and (b)",
+      "D": "(b) only"
+    },
+    "answer": "A",
+    "explanation": "The proposition is x² ≥ 25 → x ≥ 6, but the proof proves x ≥ 6 → x² ≥ 25, i.e. the converse (which is also false as a proof of the claim: x = 5 is a counterexample)."
+  },
+  {
+    "id": 11,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "What is the output of the following program ?\n(Assume that the appropriate preprocessor directives are included and there is no syntax error)\nmain ( )\n{ char S[ ]=\"ABCDEFGH\";\n printf (\"%C\", * (& S[3]));\n printf (\"%s\", S+4);\n printf (\"%u\", S);\n /* Base address of S is 1000 */\n}",
+    "options": {
+      "A": "ABCDEFGH1000",
+      "B": "CDEFGH1000",
+      "C": "DDEFGHH1000",
+      "D": "DEFGH1000"
+    },
+    "answer": "D",
+    "explanation": "*(&S[3]) = 'D'; S+4 prints \"EFGH\"; S prints the address 1000, giving DEFGH1000. (%C is printed in the paper for %c.)"
+  },
+  {
+    "id": 12,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Which of the following, in C++, is inherited in a derived class from base class ?",
+    "options": {
+      "A": "constructor",
+      "B": "destructor",
+      "C": "data members",
+      "D": "virtual methods"
+    },
+    "answer": "C",
+    "explanation": "Constructors and destructors are not inherited; data members are. (Virtual methods are also inherited, but the key gives data members.)"
+  },
+  {
+    "id": 13,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Given that x=7.5, j=−1.0, n=1.0, m=2.0\nthe value of − − x+j==x>n>=m is :",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "2",
+      "D": "3"
+    },
+    "answer": "A",
+    "explanation": "--x makes x = 6.5, so the left side is 6.5 + (−1.0) = 5.5. Relational operators bind tighter than ==: (x > n) = 1, then 1 >= 2.0 = 0. So 5.5 == 0 gives 0."
+  },
+  {
+    "id": 14,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Which of the following is incorrect in C++ ?",
+    "options": {
+      "A": "When we write overloaded function we must code the function for each usage.",
+      "B": "When we write function template we code the function only once.",
+      "C": "It is difficult to debug macros",
+      "D": "Templates are more efficient than macros"
+    },
+    "answer": "D",
+    "explanation": "Templates are safer (type-checked) but not more efficient than macros; macros are expanded inline without call overhead. Statements (1)–(3) are correct."
+  },
+  {
+    "id": 15,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "When the inheritance is private, the private methods in base class are __________ in the derived class (in C++).",
+    "options": {
+      "A": "inaccessible",
+      "B": "accessible",
+      "C": "protected",
+      "D": "public"
+    },
+    "answer": "A",
+    "explanation": "Private members of a base class are never accessible in a derived class, whatever the inheritance mode."
+  },
+  {
+    "id": 16,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "An Assertion is a predicate expressing a condition we wish database to always satisfy. The correct syntax for Assertion is :",
+    "options": {
+      "A": "CREATE ASSERTION ASSERTION Name CHECK Predicate",
+      "B": "CREATE ASSERTION ASSERTION Name",
+      "C": "CREATE ASSERTION, CHECK Predicate",
+      "D": "SELECT ASSERTION"
+    },
+    "answer": "A",
+    "explanation": "SQL syntax: CREATE ASSERTION <assertion-name> CHECK (<predicate>)."
+  },
+  {
+    "id": 17,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Which of the following concurrency protocol ensures both conflict serializability and freedom from deadlock ?\n(a) z - phase Locking\n(b) Time stamp - ordering",
+    "options": {
+      "A": "Both (a) and (b)",
+      "B": "(a) only",
+      "C": "(b) only",
+      "D": "Neither (a) nor (b)"
+    },
+    "answer": "C",
+    "explanation": "('z - phase' is a misprint for 2-phase.) Two-phase locking guarantees conflict serializability but can deadlock; timestamp ordering guarantees both, since transactions never wait."
+  },
+  {
+    "id": 18,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Drop Table cannot be used to drop a Table referenced by __________ constraint.\n(a) Primary key\n(b) Sub key\n(c) Super key\n(d) Foreign key",
+    "options": {
+      "A": "(a)",
+      "B": "(a), (b) and (c)",
+      "C": "(d)",
+      "D": "(a) and (d)"
+    },
+    "answer": "C",
+    "explanation": "A table referenced by another table's foreign key constraint cannot be dropped (without CASCADE)."
+  },
+  {
+    "id": 19,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Database applications were built directly on top of file system to overcome the following drawbacks of using file-systems :\n(a) Data redundancy and inconsistency\n(b) Difficulty in accessing Data\n(c) Data isolation\n(d) Integrity problems",
+    "options": {
+      "A": "(a)",
+      "B": "(a) and (d)",
+      "C": "(a), (b) and (c)",
+      "D": "(a), (b), (c) and (d)"
+    },
+    "answer": "D",
+    "explanation": "Korth lists all of these (plus atomicity, concurrent access and security problems) as drawbacks of file-processing systems. The wording 'built directly on top of' reflects Korth's description."
+  },
+  {
+    "id": 20,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "For a weak entity set to be meaningful, it must be associated with another entity set in combination with some of their attribute values, is called as :",
+    "options": {
+      "A": "Neighbour Set",
+      "B": "Strong Entity Set",
+      "C": "Owner Entity Set",
+      "D": "Weak Set"
+    },
+    "answer": "C",
+    "explanation": "The identifying (owner) entity set gives the weak entity set its meaning/identity."
+  },
+  {
+    "id": 21,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Consider the given graph\n[Weighted graph: edges 1–6 (10), 1–2 (28), 2–7 (14), 2–3 (16), 6–5 (25), 5–7 (24), 7–4 (18), 5–4 (22), 4–3 (12)]\nIts Minimum Cost Spanning Tree is __________.\n(The options are drawn as trees in the paper.)",
+    "options": {
+      "A": "Tree with edges 1–2 (28), 2–3 (16), 3–4 (12), 4–5 (22), 5–6 (25), 6–7",
+      "B": "Tree with edges 1–6 (10), 6–5 (25), 5–4 (22), 4–3 (12), 3–2 (16), 2–7 (14)",
+      "C": "Tree with edges 1–2 (28), 2–3 (16), 3–4 (12), 4–5 (22), 5–6 (25), 5–7 (24)",
+      "D": "Tree with edges 1–6 (10), 1–2 (28), 2–3 (16), 3–4 (12), 4–5 (22), 4–7 (18)"
+    },
+    "answer": "B",
+    "explanation": "Kruskal: take 10, 12, 14, 16; skip 18 (4–7 forms a cycle); take 22; skip 24; take 25. Total 99, which is the tree in option (2)."
+  },
+  {
+    "id": 22,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "The inorder and preorder Traversal of binary Tree are dbeafcg and abdecfg respectively. The post-order Traversal is __________.",
+    "options": {
+      "A": "dbefacg",
+      "B": "debfagc",
+      "C": "dbefcga",
+      "D": "debfgca"
+    },
+    "answer": "D",
+    "explanation": "Root a; left subtree (in: dbe, pre: bde) has root b with children d, e; right subtree (in: fcg, pre: cfg) has root c with children f, g. Postorder: d e b f g c a."
+  },
+  {
+    "id": 23,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Level order Traversal of a rooted Tree can be done by starting from root and performing :",
+    "options": {
+      "A": "Breadth First Search",
+      "B": "Depth First Search",
+      "C": "Root Search",
+      "D": "Deep Search"
+    },
+    "answer": "A",
+    "explanation": "Level-order traversal is BFS from the root, using a queue."
+  },
+  {
+    "id": 24,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "The average case occurs in the Linear Search Algorithm when :",
+    "options": {
+      "A": "The item to be searched is in some where middle of the Array",
+      "B": "The item to be searched is not in the array",
+      "C": "The item to be searched is in the last of the array",
+      "D": "The item to be searched is either in the last or not in the array"
+    },
+    "answer": "A",
+    "explanation": "On average the item is found about half-way, about n/2 comparisons. The last position or not found is the worst case."
+  },
+  {
+    "id": 25,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "To determine the efficiency of an algorithm the time factor is measured by :",
+    "options": {
+      "A": "Counting micro seconds",
+      "B": "Counting number of key operations",
+      "C": "Counting number of statements",
+      "D": "Counting kilobytes of algorithm"
+    },
+    "answer": "B",
+    "explanation": "Time complexity is measured by counting the key (basic) operations, independent of machine speed."
+  },
+  {
+    "id": 26,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Which of the following protocols is an application layer protocol that establishes, manages and terminates multimedia sessions ?",
+    "options": {
+      "A": "Session Maintenance Protocol",
+      "B": "Real - time Streaming Protocol",
+      "C": "Real - time Transport Control Protocol",
+      "D": "Session Initiation Protocol"
+    },
+    "answer": "D",
+    "explanation": "SIP is an application-layer signalling protocol that sets up, modifies and tears down multimedia sessions (e.g. VoIP)."
+  },
+  {
+    "id": 27,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Match the following port numbers with their uses :\nList - I\n(a) 23\n(b) 25\n(c) 80\n(d) 119\nList - II\n(i) World wide web\n(ii) Remote Login\n(iii) USENET news\n(iv) E - mail",
+    "options": {
+      "A": "(a)-(iv), (b)-(i), (c)-(ii), (d)-(iii)",
+      "B": "(a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)",
+      "C": "(a)-(ii), (b)-(iv), (c)-(iii), (d)-(i)",
+      "D": "(a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)"
+    },
+    "answer": "D",
+    "explanation": "23 Telnet (remote login), 25 SMTP (e-mail), 80 HTTP (WWW), 119 NNTP (USENET news)."
+  },
+  {
+    "id": 28,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Which of the following is not associated with the session layer ?",
+    "options": {
+      "A": "Dialog control",
+      "B": "Token management",
+      "C": "Semantics of the information transmitted",
+      "D": "Synchronization"
+    },
+    "answer": "C",
+    "explanation": "Syntax and semantics of the information transmitted are handled by the presentation layer."
+  },
+  {
+    "id": 29,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "What is the size of the total length field in IPv 4 datagram ?",
+    "options": {
+      "A": "4 bits",
+      "B": "8 bits",
+      "C": "16 bits",
+      "D": "32 bits"
+    },
+    "answer": "C",
+    "explanation": "Total Length is 16 bits (maximum datagram size 65,535 bytes)."
+  },
+  {
+    "id": 30,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Which of the following is/are restriction(s) in classless addressing ?",
+    "options": {
+      "A": "The number of addresses needs to be a power of 2.",
+      "B": "The mask needs to be included in the address to define the block.",
+      "C": "The starting address must be divisible by the number of addresses in the block.",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "Forouzan lists all three as restrictions on CIDR blocks."
+  },
+  {
+    "id": 31,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Match the following :\n(a) Forward Reference Table\n(b) Mnemonic Table\n(c) Segment Register Table\n(d) EQU\n(i) Assembler directive\n(ii) Uses array data structure\n(iii) Contains machine OP code\n(iv) Uses linked list data structure",
+    "options": {
+      "A": "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)",
+      "B": "(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)",
+      "C": "(a)-(iv), (b)-(i), (c)-(iii), (d)-(ii)",
+      "D": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)"
+    },
+    "answer": "D",
+    "explanation": "Forward reference table is a linked list; mnemonic table holds machine opcodes; segment register table is an array; EQU is an assembler directive."
+  },
+  {
+    "id": 32,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "The translator which performs macro calls expansion is called :",
+    "options": {
+      "A": "Macro processor",
+      "B": "Micro pre - processor",
+      "C": "Macro pre - processor",
+      "D": "Dynamic Linker"
+    },
+    "answer": "C",
+    "explanation": "A macro pre-processor expands macro calls before assembly/compilation (key: option 3; 'macro processor' is a looser name for the same thing)."
+  },
+  {
+    "id": 33,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "If all the production rules have single non - terminal symbol on the left side, the grammar defined is :",
+    "options": {
+      "A": "context free grammar",
+      "B": "context sensitive grammar",
+      "C": "unrestricted grammar",
+      "D": "phrase grammar"
+    },
+    "answer": "A",
+    "explanation": "Type-2 (context-free) productions have the form A → α, with a single non-terminal on the left."
+  },
+  {
+    "id": 34,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Which one from the following is false ?",
+    "options": {
+      "A": "LALR parser is Bottom - Up parser",
+      "B": "A parsing algorithm which performs a left to right scanning and a right most deviation is RL (1).",
+      "C": "LR parser is Bottom - Up parser.",
+      "D": "In LL(1), the 1 indicates that there is a one - symbol look - ahead."
+    },
+    "answer": "B",
+    "explanation": "Left-to-right scan with a rightmost derivation (in reverse) is LR(1), not RL(1). ('deviation' is a misprint for derivation.)"
+  },
+  {
+    "id": 35,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Which phase of compiler generates stream of atoms ?",
+    "options": {
+      "A": "Syntax Analysis",
+      "B": "Lexical Analysis",
+      "C": "Code Generation",
+      "D": "Code Optimization"
+    },
+    "answer": "A",
+    "explanation": "Key: (1). In Bergmann's textbook the syntax phase emits a stream of 'atoms' (intermediate code), while the lexical phase emits tokens. Many guides answer lexical analysis, so treat this as doubtful."
+  },
+  {
+    "id": 36,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "A disk drive has 100 cyclinders, numbered 0 to 99. Disk requests come to the disk driver for cyclinders 12, 26, 24, 4, 42, 8 and 50 in that order. The driver is currently serving a request at cyclinder 24. A seek takes 6 msec per cyclinder moved. How much seek time is needed for shortest seek time first (SSTF) algorithm ?",
+    "options": {
+      "A": "0.984 sec",
+      "B": "0.396 sec",
+      "C": "0.738 sec",
+      "D": "0.42 sec"
+    },
+    "answer": "D",
+    "explanation": "SSTF order: 24 → 26 (2) → 12 (14) → 8 (4) → 4 (4) → 42 (38) → 50 (8), 70 cylinders in total. 70 × 6 ms = 420 ms = 0.42 s."
+  },
+  {
+    "id": 37,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Let Pi and Pj be two processes, R be the set of variables read from memory, and W be the set of variables written to memory. For the concurrent execution of two processes Pi and Pj which of the following conditions is not true ?",
+    "options": {
+      "A": "R(Pi) ∩ W(Pj)=Φ",
+      "B": "W(Pi) ∩ R(Pj)=Φ",
+      "C": "R(Pi) ∩ R(Pj)=Φ",
+      "D": "W(Pi) ∩ W(Pj)=Φ"
+    },
+    "answer": "C",
+    "explanation": "Bernstein's conditions require the R∩W, W∩R and W∩W intersections to be empty; two processes may read the same variables, so R∩R = Φ is not required."
+  },
+  {
+    "id": 38,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "A LRU page replacement is used with four page frames and eight pages. How many page faults will occur with the reference string 0172327103 if the four frames are initially empty ?",
+    "options": {
+      "A": "6",
+      "B": "7",
+      "C": "5",
+      "D": "8"
+    },
+    "answer": "B",
+    "explanation": "0, 1, 7, 2 fault (4); 3 faults, replacing 0 (5); 2, 7, 1 hit; 0 faults, replacing 3 (6); 3 faults (7). Total 7."
+  },
+  {
+    "id": 39,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "What does the following command do ?\ngrep −vn abc x",
+    "options": {
+      "A": "It will print all of the lines in the file x that match the search string abc.",
+      "B": "It will print all of the lines in file x that do not match the search string abc.",
+      "C": "It will print the total number of lines in the file x that match the string abc.",
+      "D": "It will print the specific line numbers of the file x in which there is a match for string abc."
+    },
+    "answer": "B",
+    "explanation": "-v inverts the match (non-matching lines) and -n prefixes line numbers."
+  },
+  {
+    "id": 40,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "The Unix Kernel maintains two key data structures related to processes, the process table and the user structure. Which of the following information is not the part of user structure ?",
+    "options": {
+      "A": "File descriptor table",
+      "B": "System call state",
+      "C": "Scheduling parameters",
+      "D": "Kernel stack"
+    },
+    "answer": "C",
+    "explanation": "Scheduling parameters (priority, CPU usage) are in the always-resident process table; the user structure holds registers, system-call state, the file descriptor table, accounting and the kernel stack."
+  },
+  {
+    "id": 41,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Match the following :\n(a) Size-oriented metrics\n(b) Function-oriented metrics\n(c) Extended Function Point metrics\n(d) Function point\n(i) uses number of external interfaces as one of the measurement parameter.\n(ii) originally designed to be applied to business information systems.\n(iii) derived by normalizing quality and/or productivity measures by considering the size of the software.\n(iv) uses algorithm characteristics as one of the measurement parameter.",
+    "options": {
+      "A": "(a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)",
+      "B": "(a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)",
+      "C": "(a)-(iv), (b)-(ii), (c)-(iii), (d)-(i)",
+      "D": "(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)"
+    },
+    "answer": "D",
+    "explanation": "Size-oriented metrics normalise by size (iii); function-oriented metrics use external interfaces among their inputs (i); extended FP (feature points) add algorithm characteristics (iv); function points were designed for business information systems (ii)."
+  },
+  {
+    "id": 42,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "In which testing strategy requirements established during requirements analysis are validated against developed software ?",
+    "options": {
+      "A": "Validation testing",
+      "B": "Integration testing",
+      "C": "Regression testing",
+      "D": "System testing"
+    },
+    "answer": "A",
+    "explanation": "Pressman: validation testing validates the requirements established during analysis against the constructed software."
+  },
+  {
+    "id": 43,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Which process model is also called as classic life cycle model ?",
+    "options": {
+      "A": "Waterfall model",
+      "B": "RAD model",
+      "C": "Prototyping model",
+      "D": "Incremental model"
+    },
+    "answer": "A",
+    "explanation": "The waterfall model is also called the classic life cycle."
+  },
+  {
+    "id": 44,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Cohesion is an extension of :",
+    "options": {
+      "A": "Abstraction concept",
+      "B": "Refinment concept",
+      "C": "Information hiding concept",
+      "D": "Modularity"
+    },
+    "answer": "C",
+    "explanation": "Pressman: 'Cohesion is a natural extension of the information-hiding concept.'"
+  },
+  {
+    "id": 45,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Which one from the following is highly associated activity of project planning ?",
+    "options": {
+      "A": "Keep track of the project progress.",
+      "B": "Compare actual and planned progress and costs.",
+      "C": "Identify the activities, milestones and deliverables produced by a project.",
+      "D": "Both (2) and (3)."
+    },
+    "answer": "C",
+    "explanation": "Planning identifies activities, milestones and deliverables; tracking progress and comparing actual with planned figures is project monitoring/control."
+  },
+  {
+    "id": 46,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "In the case of parallelization, Amdahl's law states that if P is the proportion of a program that can be made parallel and (1−P) is the proportion that cannot be parallelized, then the maximum speed-up that can be achieved by using N processors is :",
+    "options": {
+      "A": "1/((1 − P) + N·P)",
+      "B": "1/((N − 1)P + P)",
+      "C": "1/((1 − P) + P/N)",
+      "D": "1/(P + (1 − P)/N)"
+    },
+    "answer": "C",
+    "explanation": "Amdahl's law: Speed-up = 1 / ((1 − P) + P/N)."
+  },
+  {
+    "id": 47,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Which of the following statements is incorrect for Parallel Virtual Machine (PVM) ?",
+    "options": {
+      "A": "The PVM communication model provides asynchronous blocking send, asynchronous blocking receive, and non-blocking receive function.",
+      "B": "Message buffers are allocated dynamically.",
+      "C": "The PVM communication model assumes that any task can send a message to any other PVM task and that there is no limit to the size or number of such messages.",
+      "D": "In PVM model, the message order is not preserved."
+    },
+    "answer": "D",
+    "explanation": "PVM guarantees that message order between any pair of tasks is preserved, so (4) is incorrect."
+  },
+  {
+    "id": 48,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Which of the following algorithms sort n integers, having the range 0 to (n²−1), in ascending order in O(n) time ?",
+    "options": {
+      "A": "Selection sort",
+      "B": "Bubble sort",
+      "C": "Radix sort",
+      "D": "Insertion sort"
+    },
+    "answer": "C",
+    "explanation": "Treat each number as 2 digits in base n; radix sort with counting sort per digit takes O(2(n + n)) = O(n)."
+  },
+  {
+    "id": 49,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Which of the following statements is FALSE about weak entity set ?",
+    "options": {
+      "A": "Weak entities can be deleted automatically when their strong entity is deleted.",
+      "B": "Weak entity set avoids the data duplication and consequent possible inconsistencies caused by duplicating the key of the strong entity.",
+      "C": "A weak entity set has no primary keys unless attributes of the strong entity set on which it depends are included.",
+      "D": "Tuples in a weak entity set are not partitioned according to their relationship with tuples in a strong entity set."
+    },
+    "answer": "D",
+    "explanation": "Tuples of a weak entity set ARE partitioned according to their relationship with tuples of the strong (owner) entity set, so (4) is false."
+  },
+  {
+    "id": 50,
+    "source_file": "J 8715 Paper II Computer Science",
+    "question": "Which of the following is not valid with reference to Message Passing Interface (MPI) ?",
+    "options": {
+      "A": "MPI can run on any hardware platform.",
+      "B": "The programming model is a distributed memory model.",
+      "C": "All parallelism is implicit.",
+      "D": "MPI - Comm - Size returns the total number of MPI processes in specified communication."
+    },
+    "answer": "C",
+    "explanation": "In MPI all parallelism is explicit; the programmer must identify and code it."
+  }
+]

@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "What is the base-16 representation of the decimal number 43981?",
+    "options": {
+      "A": "AABD",
+      "B": "ABAD",
+      "C": "AB1D",
+      "D": "ABCD"
+    },
+    "answer": "D",
+    "explanation": "43981 = 10×4096 + 11×256 + 12×16 + 13 = 0xABCD."
+  },
+  {
+    "id": 2,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "A hamming code can correct",
+    "options": {
+      "A": "all double-bit errors",
+      "B": "all single-bit errors",
+      "C": "all burst errors",
+      "D": "all even parity errors"
+    },
+    "answer": "B",
+    "explanation": "A standard Hamming code (distance 3) corrects any single-bit error. With an extra parity bit (SEC-DED) it can also detect, but not correct, double-bit errors."
+  },
+  {
+    "id": 3,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "What is the output of the expression (A + !(B.C)) + D when A = 1, B = 0, C = 1 and D = 0?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "Undefined",
+      "D": "Depends on gate delay"
+    },
+    "answer": "B",
+    "explanation": "A = 1, so the OR expression is 1 whatever the other terms are."
+  },
+  {
+    "id": 4,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which of the following is equivalent to A + A′B ?",
+    "options": {
+      "A": "B",
+      "B": "A + B",
+      "C": "A′ + B",
+      "D": "A ⊕ B"
+    },
+    "answer": "B",
+    "explanation": "By the absorption (redundancy) theorem, A + A′B = (A + A′)(A + B) = A + B."
+  },
+  {
+    "id": 5,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "A 5-variable K-map has 32 cells. What is the maximum number of non-overlapping prime implicants possible?",
+    "options": {
+      "A": "6",
+      "B": "10",
+      "C": "16",
+      "D": "32"
+    },
+    "answer": "C",
+    "explanation": "In a checkerboard pattern (e.g. odd-parity function) 16 minterms are 1 and no two are adjacent, so each is its own prime implicant: 16. More than 16 isolated 1s cannot fit in 32 cells."
+  },
+  {
+    "id": 6,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In a 4-bit ripple carry adder, the worst-case delay is proportional to",
+    "options": {
+      "A": "constant time",
+      "B": "log₂(n)",
+      "C": "n",
+      "D": "n²"
+    },
+    "answer": "C",
+    "explanation": "The carry ripples through every stage, so the worst-case delay grows linearly with the number of bits n."
+  },
+  {
+    "id": 7,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "A 16 : 1 multiplexer can be constructed using how many 4 : 1 multiplexers (minimum)?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "D",
+    "explanation": "Four 4:1 MUXes select within groups of 4 inputs, and one more 4:1 MUX selects among their outputs: 4 + 1 = 5."
+  },
+  {
+    "id": 8,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "A JK flip-flop is in toggle mode. If clock has frequency 4 MHz, then output frequency is",
+    "options": {
+      "A": "1 MHz",
+      "B": "2 MHz",
+      "C": "4 MHz",
+      "D": "8 MHz"
+    },
+    "answer": "B",
+    "explanation": "In toggle mode the output changes once per clock cycle, so it completes one cycle every two clocks: 4/2 = 2 MHz."
+  },
+  {
+    "id": 9,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "What is the IEEE 754 32-bit representation of −5.75?",
+    "options": {
+      "A": "11000000101110000000000000000000",
+      "B": "10111111101110000000000000000000",
+      "C": "11000000101100000000000000000000",
+      "D": "11000000101111000000000000000000"
+    },
+    "answer": "A",
+    "explanation": "5.75 = 101.11₂ = 1.0111 × 2². Sign = 1, exponent = 2 + 127 = 129 = 10000001, mantissa = 0111000…0, giving 1 10000001 01110000000000000000000."
+  },
+  {
+    "id": 10,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In floating-point addition, the first step is",
+    "options": {
+      "A": "add significant",
+      "B": "add exponents",
+      "C": "align exponents",
+      "D": "normalize result"
+    },
+    "answer": "C",
+    "explanation": "The exponents are compared and the smaller number's significand is shifted so both have the same exponent; only then are the significands added and the result normalised."
+  },
+  {
+    "id": 11,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which addressing mode is used when the operand is given explicitly in the instruction?",
+    "options": {
+      "A": "Immediate",
+      "B": "Direct",
+      "C": "Indirect",
+      "D": "Register"
+    },
+    "answer": "A",
+    "explanation": "In immediate addressing the operand value itself is part of the instruction."
+  },
+  {
+    "id": 12,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In a basic instruction cycle, the Instruction Register (IR) is loaded during which phase?",
+    "options": {
+      "A": "Decode",
+      "B": "Execute",
+      "C": "Fetch",
+      "D": "Memory Access"
+    },
+    "answer": "C",
+    "explanation": "During fetch the instruction at the address in the PC is read from memory into the IR."
+  },
+  {
+    "id": 13,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which control technique uses firmware to execute instructions?",
+    "options": {
+      "A": "Hardware control",
+      "B": "Direct control",
+      "C": "Microprogrammed control",
+      "D": "Pipeline control"
+    },
+    "answer": "C",
+    "explanation": "A microprogrammed control unit stores control words (microinstructions) in control memory, which is firmware."
+  },
+  {
+    "id": 14,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which memory is fastest in access time but smallest in size?",
+    "options": {
+      "A": "RAM",
+      "B": "Cache",
+      "C": "ROM",
+      "D": "Hard disk"
+    },
+    "answer": "B",
+    "explanation": "Among the options, cache (SRAM close to the CPU) is the fastest and smallest. Registers would be faster still but are not listed."
+  },
+  {
+    "id": 15,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which of the following correctly matches the instruction type with its operation?",
+    "options": {
+      "A": "Load → Store to memory, Add → Bring from memory, Branch → Arithmetic",
+      "B": "Load → Bring from memory, Store → Store to memory, Add → Change flow, Branch → Arithmetic",
+      "C": "Load → Arithmetic, Store → Register load, Add → Store to memory, Branch → Change flow",
+      "D": "Load → Bring from memory, Store → Store to memory, Add → Arithmetic, Branch → Change flow"
+    },
+    "answer": "D",
+    "explanation": "Load reads from memory, Store writes to memory, Add is an arithmetic operation, and Branch changes the flow of control."
+  },
+  {
+    "id": 16,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which of the following options correctly matches CPU components with their primary functions?",
+    "options": {
+      "A": "ALU → Store instruction, Register File → Stores next address, Instruction Reg → Arithmetic, PC → Temporary data",
+      "B": "ALU → Logic/arithmetic, Register File → Temp data, Instruction Reg → Stores instruction, PC → Next address",
+      "C": "ALU → Next address, Register File → Permanent storage, Instruction Reg → Logic, PC → Instruction decoding",
+      "D": "ALU → Data caching, Register File → Instruction decoding, Instruction Reg → Next address, PC → Logic"
+    },
+    "answer": "B",
+    "explanation": "The ALU does arithmetic and logic, the register file holds temporary data, the IR holds the current instruction, and the PC holds the address of the next instruction."
+  },
+  {
+    "id": 17,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which of the following correctly matches memory types with their characteristics?",
+    "options": {
+      "A": "RAM → Non-volatile, ROM → Temporary, Cache → Secondary, Secondary Storage → High speed",
+      "B": "RAM → Volatile, ROM → Read-only, Cache → High speed small memory, Secondary → Large permanent storage",
+      "C": "RAM → Stores instructions permanently, ROM → Volatile, Cache → Magnetic, Secondary → Temporary",
+      "D": "RAM → Permanent, ROM → Writable, Cache → Backup, Secondary → Small fast access"
+    },
+    "answer": "B",
+    "explanation": "RAM is volatile, ROM is read-only, cache is a small high-speed memory, and secondary storage is large and permanent."
+  },
+  {
+    "id": 18,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In Direct Memory Access (DMA), the CPU handles each data transfer between I/O and memory.",
+    "options": {
+      "A": "True, because CPU has to supervise all memory transfers",
+      "B": "True, because DMA interrupts CPU after each byte",
+      "C": "False, because DMA uses CPU registers directly",
+      "D": "False, because DMA bypasses the CPU for faster data transfers"
+    },
+    "answer": "D",
+    "explanation": "The DMA controller moves data directly between I/O and memory; the CPU only sets up the transfer and is interrupted when the whole block is done."
+  },
+  {
+    "id": 19,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Microprogrammed control units are easier to modify than hardwired control units.",
+    "options": {
+      "A": "True, because control logic is implemented using memory which can be updated",
+      "B": "False, because memory-based logic is slower to access",
+      "C": "False, because microprogramming requires rewriting hardware",
+      "D": "True, because microcode executes faster than hardwired logic"
+    },
+    "answer": "A",
+    "explanation": "Microprogrammed control stores control signals as microcode in control memory, so changing behaviour means changing the microprogram, not rewiring logic. It is slower than hardwired control, not faster."
+  },
+  {
+    "id": 20,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In pipelining, a hazard occurs when the next instruction depends on the result of the previous one.",
+    "options": {
+      "A": "True, because this dependency creates a data hazard",
+      "B": "False, because pipelining avoids such dependencies automatically",
+      "C": "False, because hazards only occur during branching",
+      "D": "True, because instruction fetching is delayed intentionally"
+    },
+    "answer": "A",
+    "explanation": "When an instruction needs a result that an earlier instruction has not yet produced (e.g. RAW dependency), a data hazard occurs."
+  },
+  {
+    "id": 21,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which of the following C functions modifies a variable passed to it only when passed by reference?",
+    "options": {
+      "A": "void update(int a)",
+      "B": "void update(int *a)",
+      "C": "void update(const int a)",
+      "D": "void update(int a[])"
+    },
+    "answer": "B",
+    "explanation": "C passes arguments by value; to modify the caller's variable, its address is passed and the function takes a pointer parameter, int *a."
+  },
+  {
+    "id": 22,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "What is the output of this C expression?\nint a = 5;\nprintf(\"%d\", a++ + ++a);",
+    "options": {
+      "A": "11",
+      "B": "12",
+      "C": "10",
+      "D": "Undefined"
+    },
+    "answer": "D",
+    "explanation": "a is modified twice without an intervening sequence point, so the behaviour is undefined in C. (Many compilers print 12, and some keys give 12, but the language standard makes it undefined.)"
+  },
+  {
+    "id": 23,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which C++ concept enables functions with same name but different parameter lists?",
+    "options": {
+      "A": "Inheritance",
+      "B": "Overriding",
+      "C": "Overloading",
+      "D": "Virtual function"
+    },
+    "answer": "C",
+    "explanation": "Function overloading allows several functions with the same name but different parameter lists; the compiler picks one from the argument types."
+  },
+  {
+    "id": 24,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which C++ feature ensures that a class with at least one pure virtual function cannot be instantiated?",
+    "options": {
+      "A": "Virtual Constructor",
+      "B": "Virtual Base Class",
+      "C": "Abstract Class",
+      "D": "Interface"
+    },
+    "answer": "C",
+    "explanation": "A class with at least one pure virtual function is an abstract class, and the compiler forbids creating objects of it."
+  },
+  {
+    "id": 25,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In C, sizeof(char) is always equal to 2 bytes.",
+    "options": {
+      "A": "True, because ASCII characters require 16 bits",
+      "B": "False, because it depends on the operating system's memory model",
+      "C": "False, because sizeof(char) is always 1 byte by definition",
+      "D": "True, because all data types are at least 2 bytes in C"
+    },
+    "answer": "C",
+    "explanation": "The C standard defines sizeof(char) as 1."
+  },
+  {
+    "id": 26,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which of the following options correctly matches C programming concepts with their purposes?",
+    "options": {
+      "A": "malloc() → Deallocate, free() → Allocate, Pointer → Calls itself, Recursion → Holds address",
+      "B": "malloc() → Allocate, free() → Deallocate, Pointer → Holds address, Recursion → Calls itself",
+      "C": "malloc() → Address holder, free() → Calls itself, Pointer → Allocate, Recursion → Deallocate",
+      "D": "malloc() → Temporary file, free() → Opens file, Pointer → File pointer, Recursion → Repeat loop"
+    },
+    "answer": "B",
+    "explanation": "malloc() allocates memory, free() releases it, a pointer holds an address, and a recursive function calls itself."
+  },
+  {
+    "id": 27,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which of the following options correctly matches C++ OOP terms with their descriptions?",
+    "options": {
+      "A": "Constructor → Deletes object, Destructor → Initializes object, Inheritance → Overloading, Polymorphism → Object creation",
+      "B": "Constructor → Called at object creation, Destructor → Cleans up resources, Inheritance → Code reuse, Polymorphism → Many forms",
+      "C": "Constructor → Overloads operator, Destructor → Compiles class, Inheritance → Cleans memory, Polymorphism → One form",
+      "D": "Constructor → Cleans memory, Destructor → Object copy, Inheritance → Inlines function, Polymorphism → Class only"
+    },
+    "answer": "B",
+    "explanation": "A constructor runs when an object is created, a destructor cleans up, inheritance enables code reuse, and polymorphism means 'many forms'."
+  },
+  {
+    "id": 28,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which of the following options correctly matches C file-handling functions with their actions?",
+    "options": {
+      "A": "fopen() → Write file, fclose() → Skip character, fgetc() → Write char, fputc() → Read char",
+      "B": "fopen() → Close file, fclose() → Open file, fgetc() → Print to screen, fputc() → Move file pointer",
+      "C": "fopen() → Open file, fclose() → Close file, fgetc() → Read a character, fputc() → Write a character",
+      "D": "fopen() → Read char, fclose() → Write char, fgetc() → Open file, fputc() → Close file"
+    },
+    "answer": "C",
+    "explanation": "fopen() opens a file, fclose() closes it, fgetc() reads one character and fputc() writes one character."
+  },
+  {
+    "id": 29,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "A pure virtual function makes a class abstract in C++.",
+    "options": {
+      "A": "False, because virtual functions do not affect class type",
+      "B": "True, because abstract classes must have only pure virtual functions",
+      "C": "True, because any class with at least one pure virtual function is abstract",
+      "D": "False, because only interfaces can have pure virtual functions"
+    },
+    "answer": "C",
+    "explanation": "Declaring even one pure virtual function (= 0) makes a class abstract; it may still have ordinary members."
+  },
+  {
+    "id": 30,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In C, local variables declared in a function retain their values between calls if declared static.",
+    "options": {
+      "A": "True, because static stores the variable in heap memory",
+      "B": "False, because all local variables are destroyed after function call",
+      "C": "True, because static variables maintain state across function calls",
+      "D": "False, because static is only used with global variables"
+    },
+    "answer": "C",
+    "explanation": "A static local variable has static storage duration (data segment, not heap), so it keeps its value between calls."
+  },
+  {
+    "id": 31,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which of the following data structures is most suitable for implementing recursion?",
+    "options": {
+      "A": "Queue",
+      "B": "Stack",
+      "C": "Heap",
+      "D": "Graph"
+    },
+    "answer": "B",
+    "explanation": "Recursive calls are managed with a (call) stack, since the most recent call returns first (LIFO)."
+  },
+  {
+    "id": 32,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which sorting algorithm has the best worst-case time complexity among the following options?",
+    "options": {
+      "A": "Insertion Sort",
+      "B": "Merge Sort",
+      "C": "Bubble Sort",
+      "D": "Selection Sort"
+    },
+    "answer": "B",
+    "explanation": "Merge sort is O(n log n) in the worst case; the others are O(n²)."
+  },
+  {
+    "id": 33,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "What is the time complexity of building a binary heap from an unsorted array of n elements?",
+    "options": {
+      "A": "O(n log n)",
+      "B": "O(n²)",
+      "C": "O(n)",
+      "D": "O(log n)"
+    },
+    "answer": "C",
+    "explanation": "Bottom-up heap construction (heapify from the last internal node up) runs in O(n), because most nodes are near the bottom and sift down only a little."
+  },
+  {
+    "id": 34,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which of the following problems is not solvable in polynomial time (P)?",
+    "options": {
+      "A": "Shortest path using Dijkstra's algorithm",
+      "B": "Minimum Spanning Tree",
+      "C": "Hamiltonian Cycle",
+      "D": "Binary Search"
+    },
+    "answer": "C",
+    "explanation": "Hamiltonian Cycle is NP-complete, with no known polynomial-time algorithm. The others are solvable in polynomial time."
+  },
+  {
+    "id": 35,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which of the following correctly matches data structures with their typical usages?",
+    "options": {
+      "A": "Queue → Undo operation, Stack → Routing, Hash Table → Sorting, Graph → Stack reversal",
+      "B": "Queue → Printer scheduling, Stack → Undo operation, Hash Table → Constant time search, Graph → Route navigation",
+      "C": "Queue → Binary Tree traversal, Stack → Recursion optimization, Hash Table → Tree traversal, Graph → Heap usage",
+      "D": "Queue → File encryption, Stack → Tree navigation, Hash Table → Memory allocation, Graph → Code optimization"
+    },
+    "answer": "B",
+    "explanation": "Queues schedule jobs such as printing (FIFO), stacks implement undo (LIFO), hash tables give average O(1) search, and graphs model routes."
+  },
+  {
+    "id": 36,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which of the following options matches traversal types to their most suitable structures or use case?",
+    "options": {
+      "A": "Inorder → Linked List, BFS → DFS, DFS → Heap tree, Postorder → Cycle detection",
+      "B": "Inorder → BST sorted output, BFS → Level-order traversal, DFS → Depth-first traversal, Postorder → Expression tree evaluation",
+      "C": "Inorder → Postfix expression, BFS → Inorder traversal, DFS → Recursion, Postorder → Stack usage",
+      "D": "Inorder → Tree deletion, BFS → Memory management, DFS → Shortest path, Postorder → Encryption"
+    },
+    "answer": "B",
+    "explanation": "Inorder traversal of a BST gives sorted output, BFS is level-order traversal, DFS goes depth-first, and postorder evaluates expression trees (operands before operator)."
+  },
+  {
+    "id": 37,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which of the following correctly matches algorithm types with their underlying techniques?",
+    "options": {
+      "A": "Dijkstra's → Divide and Conquer, Merge Sort → Greedy, Floyd-Warshall → Brute Force, Kruskal's → Backtracking",
+      "B": "Dijkstra's → Dynamic Programming, Merge Sort → Divide and Conquer, Floyd-Warshall → Greedy, Kruskal's → Recursive",
+      "C": "Dijkstra's → Greedy, Merge Sort → Divide and Conquer, Floyd-Warshall → Dynamic Programming, Kruskal's → Greedy",
+      "D": "Dijkstra's → Recursion, Merge Sort → Brute Force, Floyd-Warshall → DFS, Kruskal's → Stack"
+    },
+    "answer": "C",
+    "explanation": "Dijkstra's and Kruskal's are greedy, merge sort is divide and conquer, and Floyd-Warshall is dynamic programming."
+  },
+  {
+    "id": 38,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "The worst-case time complexity of Quick Sort is O(n²).",
+    "options": {
+      "A": "True, because Quick Sort is not a stable algorithm",
+      "B": "False, because Quick Sort always runs in O(n log n)",
+      "C": "False, because Quick Sort is recursive and has linear complexity",
+      "D": "True, because poor pivot choices lead to unbalanced partitions"
+    },
+    "answer": "D",
+    "explanation": "If the pivot is always the smallest or largest element (e.g. sorted input with first-element pivot), partitions are of size n−1 and 0, giving O(n²). Stability has nothing to do with it."
+  },
+  {
+    "id": 39,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "A tree with n nodes always has exactly n − 1 edges.",
+    "options": {
+      "A": "True, because trees are acyclic graphs with minimal connections",
+      "B": "False, because it depends on tree height",
+      "C": "True, because every graph with n − 1 edges is a tree",
+      "D": "False, because trees can contain cycles if balanced"
+    },
+    "answer": "A",
+    "explanation": "A tree is a connected acyclic graph, the minimally connected graph on n nodes, so it has exactly n − 1 edges. C is wrong because a graph with n − 1 edges need not be connected."
+  },
+  {
+    "id": 40,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "All NP-complete problems are NP-hard, but not all NP-hard problems are NP complete.",
+    "options": {
+      "A": "False, because NP-complete and NP-hard are equivalent classes",
+      "B": "True, because NP-complete problems are both in NP and NP-hard",
+      "C": "False, because NP-hard problems must be verifiable in polynomial time",
+      "D": "True, because NP-complete is a subset of NP, but NP-hard may not even be decidable"
+    },
+    "answer": "B",
+    "explanation": "By definition NP-complete = NP ∩ NP-hard, so every NP-complete problem is NP-hard, while NP-hard problems outside NP (e.g. optimisation versions, or even the undecidable halting problem) are not NP-complete. Note: D is also a true statement; B is chosen as it states the definition."
+  },
+  {
+    "id": 41,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "A lexical analyzer uses a DFA with n states. What is the worst-case time complexity to tokenize an input string of length m?",
+    "options": {
+      "A": "O(n × m)",
+      "B": "O(m)",
+      "C": "O(n + m)",
+      "D": "O(m log n)"
+    },
+    "answer": "B",
+    "explanation": "A DFA makes exactly one table-driven transition per input character, so scanning is O(m), independent of the number of states."
+  },
+  {
+    "id": 42,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which parsing approach can naturally handle ambiguous grammars by producing multiple parse trees simultaneously?",
+    "options": {
+      "A": "LL(1) parsing",
+      "B": "LR(1) parsing",
+      "C": "GLR parsing",
+      "D": "Operator-precedence parsing"
+    },
+    "answer": "C",
+    "explanation": "Generalized LR (GLR) parsing forks the parse stack on conflicts and keeps all alternatives, producing a parse forest for ambiguous input."
+  },
+  {
+    "id": 43,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In an S-attributed definition, attributes can be evaluated during",
+    "options": {
+      "A": "bottom-up parsing only",
+      "B": "top-down parsing only",
+      "C": "both top-down parsing and bottom-up parsing",
+      "D": "semantic analysis phase only"
+    },
+    "answer": "C",
+    "explanation": "S-attributed definitions use only synthesized attributes. They fit naturally into bottom-up (LR) parsing, and since every S-attributed definition is also L-attributed, they can be evaluated during top-down parsing too."
+  },
+  {
+    "id": 44,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "How does a stack link in an activation record help in accessing non-local variables?",
+    "options": {
+      "A": "By pointing to the global data segment",
+      "B": "By pointing to the caller's activation record",
+      "C": "By pointing to the lexically enclosing procedure's activation record",
+      "D": "By pointing to the heap memory"
+    },
+    "answer": "C",
+    "explanation": "The access (static) link points to the activation record of the lexically enclosing procedure, which is how non-local variables are reached under static scoping. (The control link points to the caller's record.)"
+  },
+  {
+    "id": 45,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which intermediate code form best supports complex control flow like loops and conditionals?",
+    "options": {
+      "A": "Three-address code with jumps",
+      "B": "High-level source code",
+      "C": "Linear quadruples without jumps",
+      "D": "Assembly code"
+    },
+    "answer": "A",
+    "explanation": "Three-address code with conditional and unconditional jumps can express any loop or branch while staying machine-independent."
+  },
+  {
+    "id": 46,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "When targeting a RISC architecture with few registers, which technique reduces load/store instructions?",
+    "options": {
+      "A": "Instruction scheduling",
+      "B": "Register allocation by graph coloring",
+      "C": "Dead code elimination",
+      "D": "Lexical analysis"
+    },
+    "answer": "B",
+    "explanation": "Good register allocation (graph colouring) keeps values in registers and minimises spills, which are the extra loads and stores."
+  },
+  {
+    "id": 47,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Partial Redundancy Elimination (PRE) differs from Common Subexpression Elimination (CSE) because it",
+    "options": {
+      "A": "only optimizes arithmetic operations",
+      "B": "removes redundancy that occurs on some but not all execution paths",
+      "C": "requires data flow analysis only on basic blocks",
+      "D": "is a lexical analysis technique"
+    },
+    "answer": "B",
+    "explanation": "CSE removes fully redundant computations; PRE also handles expressions that are redundant along only some paths, by inserting computations so they become fully redundant (it subsumes loop-invariant code motion)."
+  },
+  {
+    "id": 48,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which data structure is most efficient for implementing the symbol table in lexical analysis?",
+    "options": {
+      "A": "Array",
+      "B": "Linked list",
+      "C": "Hash table",
+      "D": "Stack"
+    },
+    "answer": "C",
+    "explanation": "A hash table gives average O(1) insertion and lookup of identifiers."
+  },
+  {
+    "id": 49,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In LR parsing, the \"shift/reduce\" conflict occurs because",
+    "options": {
+      "A": "the parser cannot decide whether to shift the next input or reduce a production",
+      "B": "the parser always reduces first",
+      "C": "the parser cannot handle left recursion",
+      "D": "the grammar is ambiguous"
+    },
+    "answer": "A",
+    "explanation": "A shift/reduce conflict is a parsing-table state where, for the same lookahead, both a shift and a reduce are possible, so the parser cannot decide. Ambiguity can cause it, but so can a grammar that is simply not LR(k)."
+  },
+  {
+    "id": 50,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which activation record field is essential for implementing recursion?",
+    "options": {
+      "A": "Return address",
+      "B": "Static link",
+      "C": "Dynamic link",
+      "D": "Parameters"
+    },
+    "answer": "A",
+    "explanation": "Each recursive call gets its own activation record, and the return address in it tells each call where to resume in its caller. Note: the dynamic (control) link is also needed to restore the caller's frame, so C is arguable; return address is the usual key."
+  },
+  {
+    "id": 51,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In an ER diagram, if a weak entity depends on multiple identifying entities, then how is its key defined?",
+    "options": {
+      "A": "It has a simple primary key unrelated to owners",
+      "B": "It uses a composite key including partial keys of all owners",
+      "C": "It uses foreign keys only",
+      "D": "It does not have a key"
+    },
+    "answer": "B",
+    "explanation": "A weak entity's key is formed from the primary keys of all its identifying (owner) entities plus its own partial key (discriminator), i.e. a composite key."
+  },
+  {
+    "id": 52,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which relational algebra operation can be expressed entirely using natural join and projection?",
+    "options": {
+      "A": "Selection",
+      "B": "Union",
+      "C": "Division",
+      "D": "Difference"
+    },
+    "answer": "A",
+    "explanation": "An equality selection σ(A = c)(R) can be written as a natural join of R with a one-tuple constant relation {(c)} on A. Union, difference and division need set difference or union. Note: this question is loosely worded; strictly, only equality selections (and intersection) can be expressed this way."
+  },
+  {
+    "id": 53,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In Tuple Relational Calculus, what does the following formula represent?\n{t | ∃s(R(s) ∧ s[A] = t[A] ∧ s[B] > 10)}",
+    "options": {
+      "A": "All tuples t such that t is in R",
+      "B": "Tuples t sharing attribute A with some tuple s having B > 10",
+      "C": "Tuples s where attribute B > 10",
+      "D": "Tuples t with B > 10"
+    },
+    "answer": "B",
+    "explanation": "The formula returns tuples t whose A value equals the A value of some tuple s in R with s[B] > 10."
+  },
+  {
+    "id": 54,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which constraint type can ensure that an employee's salary is always greater than their department's average salary?",
+    "options": {
+      "A": "Key constraint",
+      "B": "Domain constraint",
+      "C": "Assertion (general constraint)",
+      "D": "Foreign key constraint"
+    },
+    "answer": "C",
+    "explanation": "The condition involves an aggregate over other rows, so it needs a general constraint such as an SQL ASSERTION (or a trigger); key, domain and foreign-key constraints cannot express it."
+  },
+  {
+    "id": 55,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which normal form is violated if a non-key attribute determines another non-key attribute?",
+    "options": {
+      "A": "1 NF",
+      "B": "2 NF",
+      "C": "3 NF",
+      "D": "BCNF"
+    },
+    "answer": "C",
+    "explanation": "A non-key attribute determining another non-key attribute is a transitive dependency, which 3NF forbids."
+  },
+  {
+    "id": 56,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which SQL clause is necessary to remove duplicates from the result of a SELECT statement?",
+    "options": {
+      "A": "WHERE",
+      "B": "GROUP BY",
+      "C": "DISTINCT",
+      "D": "HAVING"
+    },
+    "answer": "C",
+    "explanation": "SELECT DISTINCT removes duplicate rows from the result."
+  },
+  {
+    "id": 57,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which file organization is most suitable for range queries on a large dataset?",
+    "options": {
+      "A": "Heap file",
+      "B": "Sorted file",
+      "C": "Hash file",
+      "D": "Indexed sequential file"
+    },
+    "answer": "D",
+    "explanation": "An indexed sequential file keeps records in key order and adds an index, so the start of a range is found quickly and the rest is read sequentially. Hash files are poor for ranges, and a plain sorted file lacks the index for large data."
+  },
+  {
+    "id": 58,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which property uniquely distinguishes a B+ tree from a B tree?",
+    "options": {
+      "A": "Only B+ trees keep all keys in internal nodes",
+      "B": "Only B+ trees store keys only in leaf nodes, with leaves linked sequentially",
+      "C": "B– trees support only binary search",
+      "D": "B+ trees are unbalanced"
+    },
+    "answer": "B",
+    "explanation": "In a B+ tree all keys/records appear in the leaves, which are linked for sequential access; internal nodes hold only routing copies of keys."
+  },
+  {
+    "id": 59,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which property of transactions guarantees that if a transaction commits, its effects persist despite system crashes?",
+    "options": {
+      "A": "Atomicity",
+      "B": "Consistency",
+      "C": "Isolation",
+      "D": "Durability"
+    },
+    "answer": "D",
+    "explanation": "Durability guarantees that committed changes survive failures."
+  },
+  {
+    "id": 60,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In two-phase locking (2PL), what happens if a transaction releases a lock before acquiring all others?",
+    "options": {
+      "A": "It follows strict 2PL",
+      "B": "It can cause cascading aborts",
+      "C": "It violates 2PL and may lead to non-serializable schedules",
+      "D": "It improves concurrency without risk"
+    },
+    "answer": "C",
+    "explanation": "2PL requires that no lock is acquired after the first release (growing then shrinking phase). Releasing early and then locking again breaks the protocol and loses the serializability guarantee."
+  },
+  {
+    "id": 61,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which technique is most effective to uncover tacit requirements that users may find hard to express explicitly?",
+    "options": {
+      "A": "Questionnaire",
+      "B": "Observation",
+      "C": "Document analysis",
+      "D": "Interviews"
+    },
+    "answer": "B",
+    "explanation": "Tacit knowledge is what users do without being able to describe it, so watching them work (observation/ethnography) reveals it better than asking."
+  },
+  {
+    "id": 62,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In feasibility analysis, which aspect assesses whether the system will be accepted by users?",
+    "options": {
+      "A": "Technical feasibility",
+      "B": "Operational feasibility",
+      "C": "Economic feasibility",
+      "D": "Legal feasibility"
+    },
+    "answer": "B",
+    "explanation": "Operational feasibility checks whether the system will be used and accepted by its users within the organisation."
+  },
+  {
+    "id": 63,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "What does a data stored symbol in a DFD represent?",
+    "options": {
+      "A": "A process transforming data",
+      "B": "An external entity interacting with the system",
+      "C": "A repository where data is held temporarily or permanently",
+      "D": "A data flow between processes"
+    },
+    "answer": "C",
+    "explanation": "A data store (open rectangle / parallel lines) is a repository where data is kept for later use."
+  },
+  {
+    "id": 64,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which technique is best suited for specifying complex process logic in software design?",
+    "options": {
+      "A": "Structured English",
+      "B": "Data dictionary",
+      "C": "Decision tables",
+      "D": "Entity-relationship diagrams"
+    },
+    "answer": "C",
+    "explanation": "Decision tables list every combination of conditions with its action, so they specify complex, many-condition logic completely and unambiguously. Note: Structured English is also used for process logic, so A is arguable, but it is better suited to simpler, sequential logic."
+  },
+  {
+    "id": 65,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which principle primarily improves user efficiency in input form design?",
+    "options": {
+      "A": "Consistency",
+      "B": "Data validation",
+      "C": "Minimizing keystrokes",
+      "D": "Color coding"
+    },
+    "answer": "C",
+    "explanation": "Reducing the number of keystrokes (defaults, codes, auto-fill) speeds up data entry and also reduces errors."
+  },
+  {
+    "id": 66,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which software development lifecycle model allows returning to previous phases even late in the project?",
+    "options": {
+      "A": "Waterfall model",
+      "B": "V-model",
+      "C": "Spiral model",
+      "D": "Prototype model"
+    },
+    "answer": "C",
+    "explanation": "The spiral model is iterative: each loop revisits planning, risk analysis, engineering and evaluation, so earlier phases can be revisited at any stage. Waterfall and V-model are sequential."
+  },
+  {
+    "id": 67,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In project management, what does the Critical Path Method (CPM) primarily determine?",
+    "options": {
+      "A": "Total cost of the project",
+      "B": "Longest sequence of dependent tasks that determines project duration",
+      "C": "Number of resources required",
+      "D": "Stakeholder communication plan"
+    },
+    "answer": "B",
+    "explanation": "The critical path is the longest chain of dependent activities; its length is the minimum project duration, and its tasks have zero slack."
+  },
+  {
+    "id": 68,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "What is the main advantage of modular design in software engineering?",
+    "options": {
+      "A": "Faster coding",
+      "B": "Reduced documentation",
+      "C": "Improved maintainability and reuse",
+      "D": "Simpler user interfaces"
+    },
+    "answer": "C",
+    "explanation": "Independent modules can be understood, changed, tested and reused separately, which improves maintainability and reuse."
+  },
+  {
+    "id": 69,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which testing technique focuses on the internal logic of the software rather than its functionality?",
+    "options": {
+      "A": "Black-box testing",
+      "B": "Beta testing",
+      "C": "White-box testing",
+      "D": "System testing"
+    },
+    "answer": "C",
+    "explanation": "White-box (structural) testing designs tests from the code's internal logic, e.g. paths, branches and conditions."
+  },
+  {
+    "id": 70,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which type of maintenance involves modifying software to improve performance or maintainability without changing functionality?",
+    "options": {
+      "A": "Corrective maintenance",
+      "B": "Adaptive maintenance",
+      "C": "Perfective maintenance",
+      "D": "Preventive maintenance"
+    },
+    "answer": "C",
+    "explanation": "Perfective maintenance improves performance, maintainability or other attributes. Note: preventive maintenance (restructuring to prevent future problems) also targets maintainability, so D is arguable; the classic IEEE definition places performance and maintainability improvement under perfective."
+  },
+  {
+    "id": 71,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which layering model explicitly separates connection establishment from data transfer in the transport layer?",
+    "options": {
+      "A": "OSI model",
+      "B": "TCP/IP model",
+      "C": "Hybrid layering model",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "The OSI transport service is defined with distinct connection-establishment, data-transfer and connection-release phases and primitives (T-CONNECT, T-DATA, T-DISCONNECT)."
+  },
+  {
+    "id": 72,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In Ethernet's CSMA/CD, what happens immediately after a collision is detected?",
+    "options": {
+      "A": "The stations continue transmitting",
+      "B": "Stations stop transmitting and wait for a random backoff time",
+      "C": "Stations reset their hardware",
+      "D": "Stations broadcast a collision message"
+    },
+    "answer": "B",
+    "explanation": "On detecting a collision a station stops sending its frame (after a short jam signal) and waits a random binary-exponential backoff time before retrying."
+  },
+  {
+    "id": 73,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which error control protocol ensures in-order, reliable delivery with minimal retransmissions?",
+    "options": {
+      "A": "Stop-and-wait ARQ",
+      "B": "Go-Bank-N ARQ",
+      "C": "Selective Repeat ARQ",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "Selective Repeat retransmits only the frames that were lost or damaged and buffers out-of-order frames so they are delivered in order. Go-Back-N ('Go-Bank-N' is a misprint) resends every frame after the lost one."
+  },
+  {
+    "id": 74,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In packet switching, what is the primary cause of packet delay in a congested network?",
+    "options": {
+      "A": "Propagation delay",
+      "B": "Transmission delay",
+      "C": "Queuing delay",
+      "D": "Processing delay"
+    },
+    "answer": "C",
+    "explanation": "Under congestion, packets wait in router buffers, so queuing delay dominates."
+  },
+  {
+    "id": 75,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which IPv6 feature eliminates the need for Network Address Translation (NAT)?",
+    "options": {
+      "A": "Larger address space",
+      "B": "Header simplification",
+      "C": "Multicast support",
+      "D": "Stateless address auto configuration (SLAAC)"
+    },
+    "answer": "A",
+    "explanation": "IPv6's 128-bit address space gives every device a globally unique address, so address-sharing via NAT is no longer needed."
+  },
+  {
+    "id": 76,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "What is a key advantage of link-state routing over distance vector routing?",
+    "options": {
+      "A": "Simpler implementation",
+      "B": "Faster convergence and avoidance of routing loops",
+      "C": "Requires less memory",
+      "D": "Uses periodic broadcasts only"
+    },
+    "answer": "B",
+    "explanation": "Each link-state router has the full topology and computes routes itself, so it converges quickly and avoids count-to-infinity loops, at the cost of more memory and computation."
+  },
+  {
+    "id": 77,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In ink-state routing protocols, how does the use of Dijkstra's algorithm contribute to consistent routing across the network?",
+    "options": {
+      "A": "It prioritizes routes with the least number of hops",
+      "B": "It relies on random updates to avoid predictability",
+      "C": "It computes a complete map of the network and selects shortest paths deterministically",
+      "D": "It discards outdated topology information aggressively to save memory"
+    },
+    "answer": "C",
+    "explanation": "Every router runs Dijkstra on the same link-state database, so all compute consistent shortest-path trees. ('ink-state' is a misprint for link-state.)"
+  },
+  {
+    "id": 78,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which TCP congestion control phase rapidly increases the congestion window to probe available bandwidth?",
+    "options": {
+      "A": "Slow start",
+      "B": "Congestion avoidance",
+      "C": "Fast recovery",
+      "D": "Timeout"
+    },
+    "answer": "A",
+    "explanation": "In slow start, cwnd doubles every RTT (exponential growth) until it reaches ssthresh."
+  },
+  {
+    "id": 79,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which protocol uses a push mechanism to send emails from client to server?",
+    "options": {
+      "A": "POP",
+      "B": "SMTP",
+      "C": "FTP",
+      "D": "DNS"
+    },
+    "answer": "B",
+    "explanation": "SMTP pushes mail from the client to the server (and between servers); POP/IMAP pull mail from the server."
+  },
+  {
+    "id": 80,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which component in Public Key Infrastructure (PKI) binds a public key to an identity?",
+    "options": {
+      "A": "Firewall",
+      "B": "Digital certificate",
+      "C": "Digital signature",
+      "D": "Symmetric key"
+    },
+    "answer": "B",
+    "explanation": "A digital certificate, signed by a certificate authority, binds a public key to the identity of its owner."
+  },
+  {
+    "id": 81,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which HTML5 element is specifically designed to hold navigation links?",
+    "options": {
+      "A": "<nav>",
+      "B": "<section>",
+      "C": "<article>",
+      "D": "<aside>"
+    },
+    "answer": "A",
+    "explanation": "The <nav> element marks a block of navigation links."
+  },
+  {
+    "id": 82,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which XML feature allows defining custom data types and enforcing structure on XML documents?",
+    "options": {
+      "A": "XML Schema (XSD)",
+      "B": "DTD",
+      "C": "XPath",
+      "D": "XSLT"
+    },
+    "answer": "A",
+    "explanation": "XML Schema can define custom simple and complex data types and validate document structure. DTDs enforce structure but have no real data types."
+  },
+  {
+    "id": 83,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which statement about client-server architecture is true?",
+    "options": {
+      "A": "The server initiates communication with clients",
+      "B": "Clients store all data locally",
+      "C": "Servers provide centralized resources accessible by multiple clients",
+      "D": "Clients directly communicate with each other"
+    },
+    "answer": "C",
+    "explanation": "In client-server architecture, clients send requests to a central server that provides shared resources and services."
+  },
+  {
+    "id": 84,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which of the following is not a typical use of client-side scripting?",
+    "options": {
+      "A": "Form validation",
+      "B": "Dynamic content update",
+      "C": "Database queries",
+      "D": "User interface effects"
+    },
+    "answer": "C",
+    "explanation": "Database queries run on the server; client-side scripts handle validation, dynamic page updates and UI effects."
+  },
+  {
+    "id": 85,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "What role does the JDBC Driver Manager play in JDBC architecture?",
+    "options": {
+      "A": "Manages database connection pooling",
+      "B": "Loads and registers JDBC drivers",
+      "C": "Executes SQL statements",
+      "D": "Manages transactions"
+    },
+    "answer": "B",
+    "explanation": "DriverManager keeps the list of registered JDBC drivers and picks the right one to open a connection (getConnection())."
+  },
+  {
+    "id": 86,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which method of a HttpServlet class handles HTTP POST requests?",
+    "options": {
+      "A": "doGet()",
+      "B": "doPost()",
+      "C": "service()",
+      "D": "init()"
+    },
+    "answer": "B",
+    "explanation": "HttpServlet.service() dispatches POST requests to doPost()."
+  },
+  {
+    "id": 87,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which JSP element allows embedding Java code directly inside HTML?",
+    "options": {
+      "A": "<jsp:useBean>",
+      "B": "<%! %>",
+      "C": "<% %>",
+      "D": "<jsp:scriptlet>"
+    },
+    "answer": "C",
+    "explanation": "A scriptlet <% … %> embeds Java statements in the page. <%! %> is a declaration. Note: <jsp:scriptlet> is the XML-syntax form of the same scriptlet, so D is arguable; <% %> is the standard answer."
+  },
+  {
+    "id": 88,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In a three-tier architecture, what is the main function of the middle tier?",
+    "options": {
+      "A": "Present data to users",
+      "B": "Handle business logic and processing",
+      "C": "Store persistent data",
+      "D": "Manage network connections"
+    },
+    "answer": "B",
+    "explanation": "The tiers are presentation, application (business logic) and data; the middle tier holds the business logic."
+  },
+  {
+    "id": 89,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which type of JDBC statement allows execution of parameterized queries?",
+    "options": {
+      "A": "Statement",
+      "B": "PreparedStatement",
+      "C": "CallableStatement",
+      "D": "ResultSet"
+    },
+    "answer": "B",
+    "explanation": "PreparedStatement is precompiled and uses ? placeholders set with setXxx() methods."
+  },
+  {
+    "id": 90,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "Which servlet lifecycle method is called only once during servlet initialization?",
+    "options": {
+      "A": "service()",
+      "B": "destroy()",
+      "C": "init()",
+      "D": "doGet()"
+    },
+    "answer": "C",
+    "explanation": "init() runs once when the servlet is loaded; service() runs for each request and destroy() once at unloading."
+  },
+  {
+    "id": 91,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "IPv6 uses broadcast to communicate with all hosts in the network.",
+    "options": {
+      "A": "True, because IPv6 extends broadcast from IPv4",
+      "B": "False, because IPv6 eliminates broadcast and uses multicast instead",
+      "C": "True, because broadcast is required for ARP",
+      "D": "False, because IPv6 uses only unicast communication"
+    },
+    "answer": "B",
+    "explanation": "IPv6 has no broadcast; it uses multicast (e.g. all-nodes ff02::1) and anycast, and Neighbor Discovery replaces ARP."
+  },
+  {
+    "id": 92,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "A firewall can block traffic based on source IP, destination port and application protocol.",
+    "options": {
+      "A": "True, because firewalls operate at multiple layers of the OSI model",
+      "B": "False, because firewalls only filter based on IP address",
+      "C": "False, because application protocols are encrypted",
+      "D": "True, but only at the physical layer"
+    },
+    "answer": "A",
+    "explanation": "Firewalls inspect network-layer (IP), transport-layer (port) and, for application-level/next-generation firewalls, application-layer information."
+  },
+  {
+    "id": 93,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In the ER-model, a multivalued attribute can be represented directly within a single relation in the relational model.",
+    "options": {
+      "A": "True, because relational databases support arrays and lists",
+      "B": "False, because multivalued attributes must be decomposed into separate relations",
+      "C": "False, because ER models don't allow multivalued attributes",
+      "D": "True, because multivalued attributes map to a single foreign key"
+    },
+    "answer": "B",
+    "explanation": "The relational model requires atomic values (1NF), so a multivalued attribute is mapped to a separate relation holding the owner's key and each value."
+  },
+  {
+    "id": 94,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In B+ trees, all actual data records are stored only at the leaf level.",
+    "options": {
+      "A": "True, because internal nodes contain only keys and pointers",
+      "B": "False, because data is distributed across all levels",
+      "C": "False, because B+ trees store indexes and data together in internal nodes",
+      "D": "False, because B+ trees are used only for memory indexing"
+    },
+    "answer": "A",
+    "explanation": "In a B+ tree, internal nodes hold only keys and child pointers for routing; all records (or record pointers) are in the linked leaf level."
+  },
+  {
+    "id": 95,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In C, when dynamic memory is allocated using malloc(), the memory is initialized to zero by default.",
+    "options": {
+      "A": "True, because malloc() guarantees zero-initialized memory",
+      "B": "False, because malloc() allocates uninitialized memory",
+      "C": "False, because memory in C is always garbage-filled",
+      "D": "True, because all heap memory is cleared by the OS"
+    },
+    "answer": "B",
+    "explanation": "malloc() returns uninitialised memory with indeterminate contents; calloc() zero-initialises."
+  },
+  {
+    "id": 96,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In C++, a class with at least one pure virtual function cannot be instantiated.",
+    "options": {
+      "A": "True, because it is an abstract class",
+      "B": "False, because constructors allow instantiation",
+      "C": "False, because the class can still inherit from interfaces",
+      "D": "True, because such classes are template-based"
+    },
+    "answer": "A",
+    "explanation": "A class with a pure virtual function is abstract, and objects of an abstract class cannot be created."
+  },
+  {
+    "id": 97,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In C, the expression arr[i] is exactly equivalent to *(arr + i) for arrays.",
+    "options": {
+      "A": "False, because pointer arithmetic and indexing are different",
+      "B": "True, because array indexing is defined as pointer offset",
+      "C": "False, because arr[i] requires contiguous memory",
+      "D": "True, but only when i = 0"
+    },
+    "answer": "B",
+    "explanation": "The C standard defines E1[E2] as (*((E1)+(E2))), so arr[i] and *(arr + i) are identical."
+  },
+  {
+    "id": 98,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In C++, constructor overloading is an example of runtime polymorphism.",
+    "options": {
+      "A": "True, because constructors are virtual",
+      "B": "False, because overloading is resolved at compile time",
+      "C": "True, because constructors can be overridden",
+      "D": "False, because constructors can't be overloaded"
+    },
+    "answer": "B",
+    "explanation": "Overloading (including constructor overloading) is resolved by the compiler, so it is compile-time polymorphism. Constructors cannot be virtual."
+  },
+  {
+    "id": 99,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "In XML, attribute values can contain multiple nested elements to represent complex data hierarchies.",
+    "options": {
+      "A": "True, because XML attributes support embedded tags",
+      "B": "False, because attributes can only hold simple text values, not nested elements",
+      "C": "True, because XML schema defines nested attributes",
+      "D": "False, because nested elements must be inside CDATA sections"
+    },
+    "answer": "B",
+    "explanation": "XML attribute values are plain text; hierarchical data must be expressed with child elements."
+  },
+  {
+    "id": 100,
+    "source_file": "APPSC_AE_2025_EXAM_27TH JUNE_Completed",
+    "question": "The Boolean expression (A + B) (A + B′) (A + B) (A + B′) simplifies to A.",
+    "options": {
+      "A": "True",
+      "B": "False",
+      "C": "True, only if B = 1",
+      "D": "False, it simplifies to A + B"
+    },
+    "answer": "A",
+    "explanation": "By idempotence the expression is (A + B)(A + B′) = A + BB′ = A + 0 = A."
+  }
+]

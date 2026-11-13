@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 1,
+    "source_file": "paper 2",
+    "question": "Which type of feasibility assesses whether the proposed system can be developed with the available technology and resources?",
+    "options": {
+      "A": "Legal feasibility",
+      "B": "Operational feasibility",
+      "C": "Economic feasibility",
+      "D": "Technical feasibility",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Technical feasibility checks whether the required technology, hardware, software and expertise are available to build the system."
+  },
+  {
+    "id": 2,
+    "source_file": "paper 2",
+    "question": "Which one of the alternatives given below is not a tool of structured analysis?",
+    "options": {
+      "A": "DFD",
+      "B": "Bar chart",
+      "C": "Decision table",
+      "D": "Decision tree",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "DFDs, data dictionary, decision tables/trees and structured English are structured-analysis tools; a bar chart (Gantt) is a project-scheduling aid."
+  },
+  {
+    "id": 3,
+    "source_file": "paper 2",
+    "question": "Identify an approach which is not used to evaluate user interface design -",
+    "options": {
+      "A": "Integration testing",
+      "B": "Heuristic evaluation",
+      "C": "Formal usability testing",
+      "D": "Walk through evaluation",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Heuristic evaluation, usability testing and walkthroughs evaluate UI design; integration testing checks interfaces between program modules."
+  },
+  {
+    "id": 4,
+    "source_file": "paper 2",
+    "question": "Which one of the following input devices recognize pencil, ink marks or characters by the configuration (shape)?",
+    "options": {
+      "A": "Mark sensing readers",
+      "B": "MICR",
+      "C": "Optical bar-code readers",
+      "D": "OCR",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Optical Character Recognition identifies characters (printed or handwritten) by their shape; MICR reads magnetic ink, OMR/mark-sense reads mark positions."
+  },
+  {
+    "id": 5,
+    "source_file": "paper 2",
+    "question": "Which of the following is an example of a tangible cost in system analysis and design?",
+    "options": {
+      "A": "User satisfaction levels",
+      "B": "Software licensing fees",
+      "C": "Employee satisfaction levels",
+      "D": "Employee motivation",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Tangible costs can be measured in money, e.g. licence fees; satisfaction and motivation are intangible."
+  },
+  {
+    "id": 6,
+    "source_file": "paper 2",
+    "question": "A ...................... is a structured repository of data about data.",
+    "options": {
+      "A": "Data table",
+      "B": "Decision tree",
+      "C": "Data dictionary",
+      "D": "Decision table",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "A data dictionary stores metadata (data about data) for all data elements, flows and stores."
+  },
+  {
+    "id": 7,
+    "source_file": "paper 2",
+    "question": "Which of the following is a type of performance requirements in SAD?",
+    "options": {
+      "A": "System integration requirements",
+      "B": "Capacity requirements",
+      "C": "Portability requirements",
+      "D": "Maintainability requirements",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Performance requirements cover response time, throughput and capacity (volume of users/transactions); portability and maintainability are other quality attributes."
+  },
+  {
+    "id": 8,
+    "source_file": "paper 2",
+    "question": "............... means that the same message can be interpreted differently by different classes of objects.",
+    "options": {
+      "A": "Static binding",
+      "B": "Encapsulation",
+      "C": "Polymorphism",
+      "D": "Dynamic capturing",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Polymorphism: the same message (method call) produces different behaviour depending on the receiving object's class."
+  },
+  {
+    "id": 9,
+    "source_file": "paper 2",
+    "question": "...................... advocates building a simple system through trial error and refining it through an iterative process.",
+    "options": {
+      "A": "Fact finding",
+      "B": "Investigation",
+      "C": "Background analysis",
+      "D": "Prototyping",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Prototyping builds a quick working model and refines it iteratively with user feedback. ('trial error' is printed for 'trial and error'.)"
+  },
+  {
+    "id": 10,
+    "source_file": "paper 2",
+    "question": "Which of the following shows succession of interactions between object instances over time?",
+    "options": {
+      "A": "Object diagram",
+      "B": "Sequence diagram",
+      "C": "Use case diagram",
+      "D": "Class diagram",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "A sequence diagram shows messages exchanged between object instances ordered along a time axis (lifelines)."
+  },
+  {
+    "id": 11,
+    "source_file": "paper 2",
+    "question": "......................consists of a hierarchy chart and an associated set of input/process/output charts.",
+    "options": {
+      "A": "HIPO chart",
+      "B": "ER diagram",
+      "C": "Decision tree",
+      "D": "DFD",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "HIPO = Hierarchy plus Input-Process-Output: a hierarchy (VTOC) chart with IPO charts for each module."
+  },
+  {
+    "id": 12,
+    "source_file": "paper 2",
+    "question": "Release testing primarily involves -",
+    "options": {
+      "A": "Load testing under extreme conditions by end user.",
+      "B": "Black-box testing based on system specification.",
+      "C": "Regression testing of individual units.",
+      "D": "Static analysis of modules.",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Release testing (Sommerville) tests a release of the system intended for use outside the team; it is usually a black-box process based on the system specification."
+  },
+  {
+    "id": 13,
+    "source_file": "paper 2",
+    "question": "................................................ displays decision logic (if statements) as a set of nodes (questions) branches (answers).",
+    "options": {
+      "A": "Decision tree",
+      "B": "Red-black tree",
+      "C": "Segment tree",
+      "D": "AVL tree",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "A decision tree represents conditions as nodes and outcomes as branches."
+  },
+  {
+    "id": 14,
+    "source_file": "paper 2",
+    "question": "Which of the following model is most suitable when the developer is unsure about the form human-machine interaction should take?",
+    "options": {
+      "A": "Prototyping model",
+      "B": "Spiral model",
+      "C": "Waterfall model",
+      "D": "Component based model",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Pressman: prototyping is appropriate when the developer is unsure of an algorithm's efficiency, OS adaptability or the form human-machine interaction should take."
+  },
+  {
+    "id": 15,
+    "source_file": "paper 2",
+    "question": "Debugging is an action that -",
+    "options": {
+      "A": "checks that the software correctly implements a specific function.",
+      "B": "includes Black-box testing.",
+      "C": "checks that the software satisfies customer requirements.",
+      "D": "results in the removal of error.",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Testing finds errors; debugging locates and removes them. (1) describes verification and (3) validation."
+  },
+  {
+    "id": 16,
+    "source_file": "paper 2",
+    "question": "In SDLC, during which phase the detailed evaluation of the present system is done?",
+    "options": {
+      "A": "Design phase",
+      "B": "Maintenance phase",
+      "C": "Implementation phase",
+      "D": "Analysis phase",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "System analysis studies the existing system in detail to identify problems and requirements."
+  },
+  {
+    "id": 17,
+    "source_file": "paper 2",
+    "question": "Which of the following design strategy is the merger of various structured techniques with prototyping techniques and joint-application development techniques for quick system development?",
+    "options": {
+      "A": "Rapid Application Development",
+      "B": "Prototyping",
+      "C": "Information Engineering",
+      "D": "Model Structured Design",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "RAD merges structured techniques (notably information engineering) with prototyping and JAD to accelerate development."
+  },
+  {
+    "id": 18,
+    "source_file": "paper 2",
+    "question": "A bank's credit card approval logic is based on three conditions: income level, credit score and existing loans. Management wants a complete and compact tabular view of how decisions are made based on these variables. Which representation is most suitable?",
+    "options": {
+      "A": "Decision tree",
+      "B": "Class diagram",
+      "C": "Flowchart",
+      "D": "Decision table",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "A decision table lists all combinations of conditions and the resulting actions in compact tabular form."
+  },
+  {
+    "id": 19,
+    "source_file": "paper 2",
+    "question": "Which of the following is not an element of a system?",
+    "options": {
+      "A": "Control",
+      "B": "Processor(s)",
+      "C": "Feedback",
+      "D": "Integration",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Elements of a system: outputs/inputs, processor(s), control, feedback, environment and boundaries/interface. Integration is a characteristic of a system, not an element."
+  },
+  {
+    "id": 20,
+    "source_file": "paper 2",
+    "question": "Which of the following is/are role(s) of System Analyst?\n(I) Consultant\n(II) Agent of change\n(III) Supporting expert\nChoose the correct option -",
+    "options": {
+      "A": "(II) and (III) only",
+      "B": "(I) and (II) only",
+      "C": "(I) and (III) only",
+      "D": "(I), (II) and (III)",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Awad lists the analyst's roles as change agent, consultant (outside), supporting expert, investigator/monitor, architect, psychologist, etc. All three apply."
+  },
+  {
+    "id": 21,
+    "source_file": "paper 2",
+    "question": "Which type of benefits are easily quantified and usually measured in terms of monthly or annual savings or of profit to the firm?",
+    "options": {
+      "A": "Immaterial benefits",
+      "B": "Impalpable benefits",
+      "C": "Tangible benefits",
+      "D": "Intangible benefits",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Tangible benefits (e.g. cost savings, increased profit) can be measured in money."
+  },
+  {
+    "id": 22,
+    "source_file": "paper 2",
+    "question": "Which of the following is NOT a component of use case diagram?",
+    "options": {
+      "A": "System boundary",
+      "B": "Association relationship",
+      "C": "Actor",
+      "D": "Database",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Use case diagrams contain actors, use cases, the system boundary and relationships (association, include, extend, generalization); a database is not a component."
+  },
+  {
+    "id": 23,
+    "source_file": "paper 2",
+    "question": "Which one of the following is NOT a UML diagram?",
+    "options": {
+      "A": "E-R diagram",
+      "B": "Sequence diagram",
+      "C": "Use case diagram",
+      "D": "State chart diagram",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "The E-R diagram belongs to data modelling, not UML; sequence, use case and statechart diagrams are UML diagrams."
+  },
+  {
+    "id": 24,
+    "source_file": "paper 2",
+    "question": "Which is the type of maintenance for enhancing performance or modifying programs to accommodate user's changing needs?",
+    "options": {
+      "A": "Corrective Maintenance",
+      "B": "Preventive Maintenance",
+      "C": "Perfective Maintenance",
+      "D": "Adaptive Maintenance",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Perfective maintenance improves performance or adds/modifies features for changed user requirements; adaptive maintenance adapts to a changed environment (OS, hardware). Some texts lump user changes under adaptive, so (4) may also be keyed."
+  },
+  {
+    "id": 25,
+    "source_file": "paper 2",
+    "question": "When a module contains functions that are executed in the same time span, then the module is said to possess -",
+    "options": {
+      "A": "Procedural cohesion",
+      "B": "Temporal cohesion",
+      "C": "Spatial cohesion",
+      "D": "Logical cohesion",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Temporal cohesion groups tasks that execute at the same time (e.g. initialization)."
+  },
+  {
+    "id": 26,
+    "source_file": "paper 2",
+    "question": "...................... are used to document an organization's complex business policies and decision-making rules.",
+    "options": {
+      "A": "Decision tables",
+      "B": "Requirement tables",
+      "C": "Heuristic tables",
+      "D": "Data tables",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Decision tables document complex policies/business rules by listing condition combinations and resulting actions."
+  },
+  {
+    "id": 27,
+    "source_file": "paper 2",
+    "question": "Which scenario justifies the use of the Incremental Process Model over the Waterfall Model in enterprise software development?",
+    "options": {
+      "A": "Stakeholders prefer full delivery in one release",
+      "B": "System requires formal verification at every stage.",
+      "C": "Core functionalities are well defined but additional features are expected to evolve over time.",
+      "D": "Requirements are fixed and clearly understood from the beginning.",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "The incremental model delivers the well-defined core first and adds features in later increments as requirements evolve."
+  },
+  {
+    "id": 28,
+    "source_file": "paper 2",
+    "question": "........................ is the number of entities that participate in a relationship.",
+    "options": {
+      "A": "Degree",
+      "B": "Association",
+      "C": "Modulo",
+      "D": "Cardinality",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "The degree of a relationship is the number of participating entity types (unary, binary, ternary); cardinality is the number of instances."
+  },
+  {
+    "id": 29,
+    "source_file": "paper 2",
+    "question": "Which of the following is not a category of class in UML?",
+    "options": {
+      "A": "Interface",
+      "B": "Equivalence",
+      "C": "Abstract",
+      "D": "Entity",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Interface, abstract and entity classes are recognised class kinds/stereotypes in UML; 'equivalence' is a testing term (equivalence partitioning), not a class category."
+  },
+  {
+    "id": 30,
+    "source_file": "paper 2",
+    "question": "Which of the following testing strategy aims to test every independent execution path through a program?",
+    "options": {
+      "A": "Equivalence partitioning",
+      "B": "Boundary value analysis",
+      "C": "Path testing",
+      "D": "Usability testing",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Basis-path testing exercises every independent path (number given by cyclomatic complexity)."
+  },
+  {
+    "id": 31,
+    "source_file": "paper 2",
+    "question": "Select the correct mapping of system phase with the corresponding deliverables in SDLC -",
+    "options": {
+      "A": "Analysis - Data Model, Process Models, Use Cases",
+      "B": "Implementation - Program Design, Hardware & Software specifications",
+      "C": "Design - Test Plan, Programs, Migration Plan",
+      "D": "Planning - Test Plan, Program Design, Support Plan",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Analysis produces requirements models (data models, process models/DFDs, use cases). Program design and specifications belong to Design; programs, test and migration plans to Implementation."
+  },
+  {
+    "id": 32,
+    "source_file": "paper 2",
+    "question": "Which model is best suited for projects with well-defined requirements and no expected changes?",
+    "options": {
+      "A": "Spiral",
+      "B": "RAD",
+      "C": "Waterfall",
+      "D": "Agile",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "The waterfall model suits projects whose requirements are clear and stable."
+  },
+  {
+    "id": 33,
+    "source_file": "paper 2",
+    "question": "Which of the following is NOT a reason for corrective maintenance?",
+    "options": {
+      "A": "System errors detected by users.",
+      "B": "User requests for additional features.",
+      "C": "System crashes due to software bugs.",
+      "D": "Security vulnerabilities discovered post-deployment due to existing flaw.",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Corrective maintenance fixes faults; adding features is perfective maintenance."
+  },
+  {
+    "id": 34,
+    "source_file": "paper 2",
+    "question": "What does “Coupling” indicate in modular design?",
+    "options": {
+      "A": "The strength of the connection between modules.",
+      "B": "The relationship between system hardware.",
+      "C": "The documentation process of modules.",
+      "D": "The cohesion of a module.",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Coupling measures the degree of interdependence between modules; cohesion measures relatedness within a module."
+  },
+  {
+    "id": 35,
+    "source_file": "paper 2",
+    "question": "Orderly grouping of interdependent components linked together according to a plan to achieve a specific objective is called ......................",
+    "options": {
+      "A": "system",
+      "B": "interconnection",
+      "C": "relationship",
+      "D": "entity",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "This is the standard definition of a system (Awad)."
+  },
+  {
+    "id": 36,
+    "source_file": "paper 2",
+    "question": "An open system is characterized by -",
+    "options": {
+      "A": "being closed during runtime.",
+      "B": "complete independence from its environment.",
+      "C": "require no input.",
+      "D": "interaction and exchange with its environment.",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "An open system interacts with its environment, exchanging inputs and outputs."
+  },
+  {
+    "id": 37,
+    "source_file": "paper 2",
+    "question": "Out of the following in which situation, state chart diagrams are NOT created?",
+    "options": {
+      "A": "A class has a simple life cycle.",
+      "B": "A class has a complex life cycle.",
+      "C": "A class has an operational life cycle.",
+      "D": "Two classes depend on each other.",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Statechart diagrams are drawn only for classes with complex/interesting state-dependent behaviour; they are not needed for a simple life cycle. (Option 4 is also not a reason to draw one, but (1) is the intended answer.)"
+  },
+  {
+    "id": 38,
+    "source_file": "paper 2",
+    "question": "Which of the following is an example of a physical system?",
+    "options": {
+      "A": "A car engine",
+      "B": "A budgeting algorithm",
+      "C": "An abstract class in OOP",
+      "D": "A decision-making model",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "A physical system consists of tangible components such as a car engine; the others are abstract/conceptual systems."
+  },
+  {
+    "id": 39,
+    "source_file": "paper 2",
+    "question": "Site for Beta testing is -",
+    "options": {
+      "A": "End user's site(s)",
+      "B": "Testing lab in software company",
+      "C": "Within the development team",
+      "D": "Software developer's site",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Beta testing is done by end users at their own sites; alpha testing is done at the developer's site."
+  },
+  {
+    "id": 40,
+    "source_file": "paper 2",
+    "question": "Which of the following is a normal acceptance testing?",
+    "options": {
+      "A": "Data Flow testing",
+      "B": "Alpha testing",
+      "C": "Security testing",
+      "D": "Usability testing",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Alpha and beta tests are the normal forms of acceptance testing by the customer/users."
+  },
+  {
+    "id": 41,
+    "source_file": "paper 2",
+    "question": "Data Flow Diagram (DFD) is a -",
+    "options": {
+      "A": "Flow model",
+      "B": "Class model",
+      "C": "Scenario-based model",
+      "D": "Behavioral model",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "In Pressman's classification, DFDs are flow-oriented models."
+  },
+  {
+    "id": 42,
+    "source_file": "paper 2",
+    "question": "Match the following -\nList-1\n(i) The degree to which one class is connected to or relies upon other classes.\n(ii) The degree to which the attributes and behaviors of a single class are related to each other.\n(iii) A group of objects packaged together into one unit.\n(iv) An object class that contains business related information and implements the analysis classes.\nList-2\n(a) Component\n(b) Entity class\n(c) Coupling\n(d) Cohesion",
+    "options": {
+      "A": "(i)-(c), (ii)-(a), (iii)-(d), (iv)-(b)",
+      "B": "(i)-(c), (ii)-(d), (iii)-(b), (iv)-(a)",
+      "C": "(i)-(a), (ii)-(d), (iii)-(b), (iv)-(c)",
+      "D": "(i)-(c), (ii)-(d), (iii)-(a), (iv)-(b)",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Dependence between classes = coupling; relatedness within a class = cohesion; objects packaged as one unit = component; class holding business information = entity class."
+  },
+  {
+    "id": 43,
+    "source_file": "paper 2",
+    "question": "Which of these are the five generic software engineering framework activities?",
+    "options": {
+      "A": "Analysis, designing, programming, debugging, maintenance",
+      "B": "Communication, planning, modelling, construction, deployment",
+      "C": "Analysis, planning, designing, programming, testing",
+      "D": "Communication, risk management, measurement, production, reviewing",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Pressman's generic process framework: communication, planning, modeling, construction and deployment."
+  },
+  {
+    "id": 44,
+    "source_file": "paper 2",
+    "question": "Which of the following is the key question in “Recognition of needs” stage of SDLC?",
+    "options": {
+      "A": "What is the problem or opportunity?",
+      "B": "How will the individual programs test out?",
+      "C": "Are user manuals ready?",
+      "D": "Does the user approve the system?",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Awad's SDLC table: Recognition of need asks 'What is the problem or opportunity?'"
+  },
+  {
+    "id": 45,
+    "source_file": "paper 2",
+    "question": "In a hospital management system, patient data is stored and retrieved as needed. The “Patient record” component in the DFD would most likely be categorized as -",
+    "options": {
+      "A": "Data flow",
+      "B": "Data store",
+      "C": "External entity",
+      "D": "Process",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Data that is kept and retrieved later is a data store in a DFD."
+  },
+  {
+    "id": 46,
+    "source_file": "paper 2",
+    "question": "Validation is -",
+    "options": {
+      "A": "Evaluating the developer's performance.",
+      "B": "Checking the product with respect to customer's requirements.",
+      "C": "Checking the product with respect to implementation details.",
+      "D": "Checking the product with respect to the constraints of the project.",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Validation: 'Are we building the right product?', i.e. does it meet customer requirements. Verification checks conformance to specifications."
+  },
+  {
+    "id": 47,
+    "source_file": "paper 2",
+    "question": "Which of the following is an example of a ‘report form’ in system design?",
+    "options": {
+      "A": "Purchase order",
+      "B": "Profit and loss statement",
+      "C": "Stock ledger",
+      "D": "Inventory record",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Awad classifies forms as action forms (purchase order), memory forms (stock ledger, inventory record) and report forms (profit and loss statement)."
+  },
+  {
+    "id": 48,
+    "source_file": "paper 2",
+    "question": "Match the following –\nList-1\n(i) An entity that contains attributes and behaviors that are common to one or more class subtypes.\n(ii) An object class that inherits attributes and behaviors from a supertype class and then may contain other attributes and behaviors that are unique to it.\n(iii) The concept wherein methods and/or attributes defined in an object class can be inherited or reused by another object class.\n(iv) The packaging of several items together into one unit.\nList-2\n(a) Subtype\n(b) Encapsulation\n(c) Supertype\n(d) Inheritance",
+    "options": {
+      "A": "(i)-(c), (ii)-(d), (iii)-(a), (iv)-(b)",
+      "B": "(i)-(a), (ii)-(d), (iii)-(b), (iv)-(c)",
+      "C": "(i)-(c), (ii)-(a), (iii)-(d), (iv)-(b)",
+      "D": "(i)-(c), (ii)-(a), (iii)-(b), (iv)-(d)",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Common attributes = supertype; class that inherits = subtype; reuse of methods/attributes = inheritance; packaging into one unit = encapsulation."
+  },
+  {
+    "id": 49,
+    "source_file": "paper 2",
+    "question": "In the context of system design, the “Separation of concerns” principle primarily ensures -",
+    "options": {
+      "A": "The system is fully decoupled from any hardware layer.",
+      "B": "A single unified data representation across all modules.",
+      "C": "Minimized use of system resources.",
+      "D": "Each module addresses a specific aspect of the problem domain.",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Separation of concerns divides a problem into parts, each handling one concern independently."
+  },
+  {
+    "id": 50,
+    "source_file": "paper 2",
+    "question": "A university admission system developed as a closed system lacks external feedback mechanisms. Over time, student grievances and complaints increase. What is the most significant drawback of a closed system in this context?",
+    "options": {
+      "A": "Inaccurate inputs",
+      "B": "Low scalability",
+      "C": "No environmental interaction",
+      "D": "High maintenance cost",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "A closed system does not interact with its environment, so it cannot receive feedback and adapt."
+  },
+  {
+    "id": 51,
+    "source_file": "paper 2",
+    "question": "Which of the following is NOT listed as cause of software errors?",
+    "options": {
+      "A": "Client-developer communication failures",
+      "B": "Faulty requirement definition",
+      "C": "Client-server communication failures",
+      "D": "Logical design errors",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Galin's nine causes of software errors include faulty requirements definition, client-developer communication failures, deliberate deviations, logical design errors, coding errors, etc. Client-server communication failures is not one of them."
+  },
+  {
+    "id": 52,
+    "source_file": "paper 2",
+    "question": "Assertion (A) : Agile planning avoids long-term, fixed scheduling of project activities.\nReason (R) : Agile projects break work into short iterations and use velocity-based estimation for future planning.\nWhich of the following option is correct?",
+    "options": {
+      "A": "(A) is true but (R) is false",
+      "B": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "C": "(A) is false but (R) is true",
+      "D": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Agile plans incrementally rather than fixing a long-term schedule, precisely because work is done in short iterations with velocity-based estimates. (Answer computed; no official key.)"
+  },
+  {
+    "id": 53,
+    "source_file": "paper 2",
+    "question": "Which planning approach is most effective for large safety-critical systems?",
+    "options": {
+      "A": "Fully agile planning",
+      "B": "Dynamic iterative planning",
+      "C": "Plan-driven approach",
+      "D": "Planning poker",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Sommerville: large, safety-critical systems need extensive upfront analysis and documentation, so a plan-driven approach is preferred."
+  },
+  {
+    "id": 54,
+    "source_file": "paper 2",
+    "question": "Given the following data for several projects of an organization. What is the overall productivity in terms of SLOC per work-month for the organization?\nProject  SLOC   Work month\na        6050   16.7\nb        8363   22.6\nc        13334  32.2\nd        5942   3.9\ne        3315   17.3\nf        38988  67.7\ng        38614  10.1\nh        12762  19.3\ni        26500  59.5",
+    "options": {
+      "A": "617.20 SLOC/Work-month",
+      "B": "550.10 SLOC/Work-month",
+      "C": "472.50 SLOC/Work-month",
+      "D": "635.40 SLOC/Work-month",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Overall productivity = total SLOC / total effort = 153868 / 249.3 = 617.20 SLOC per work-month."
+  },
+  {
+    "id": 55,
+    "source_file": "paper 2",
+    "question": "A PERT network has 9 activities on its critical path. The standard deviation of each activity on the critical path is 3. The standard deviation of the critical path for project event is -",
+    "options": {
+      "A": "27",
+      "B": "81",
+      "C": "9",
+      "D": "3",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Variances add: 9 × 3² = 81, so the project standard deviation = √81 = 9."
+  },
+  {
+    "id": 56,
+    "source_file": "paper 2",
+    "question": "Which of the following is NOT a common project scheduling technique?",
+    "options": {
+      "A": "Critical Path Method (CPM)",
+      "B": "Waterfall Model",
+      "C": "Gantt Chart",
+      "D": "PERT",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "CPM, PERT and Gantt charts are scheduling techniques; the waterfall model is a software process model."
+  },
+  {
+    "id": 57,
+    "source_file": "paper 2",
+    "question": "Consider the following statements (A) and (B) -\nStatement (A) : Risk planning provides approach in terms of effective steps in dealing with risk in terms of strategies and execution.\nStatement (B) : Risk mitigation helps to meet the challenges of risk occurrence in effective implementation of specific plan of risk management.\nWhich of these statement/s is/are true?",
+    "options": {
+      "A": "Neither (A) nor (B)",
+      "B": "Both (A) and (B)",
+      "C": "Only (A)",
+      "D": "Only (B)",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Both statements correctly describe risk planning (strategies to deal with risks) and risk mitigation (actions that reduce impact when risks occur). (Answer computed; no official key.)"
+  },
+  {
+    "id": 58,
+    "source_file": "paper 2",
+    "question": "Which one of the following is a quantitative technique for monitoring project progress?",
+    "options": {
+      "A": "Earned Value Analysis",
+      "B": "Monte Carlo Simulation",
+      "C": "Configuration Audit",
+      "D": "Software Reviews",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Earned value analysis gives quantitative measures (SPI, CPI, SV, CV) of schedule and cost progress."
+  },
+  {
+    "id": 59,
+    "source_file": "paper 2",
+    "question": "Why is decomposition an important step in software project planning?",
+    "options": {
+      "A": "To divide the project into manageable components for accurate cost and effort estimation.",
+      "B": "To simplify the design of the user interface.",
+      "C": "To assign tasks randomly.",
+      "D": "To estimate the project's size in terms of hardware requirements.",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Breaking the problem/process into smaller parts allows each to be estimated more accurately."
+  },
+  {
+    "id": 60,
+    "source_file": "paper 2",
+    "question": "Chidamber and Kemerer's Suite of Metrics is widely used in which area of software engineering?",
+    "options": {
+      "A": "Object-oriented software metrics",
+      "B": "Functional testing",
+      "C": "Hardware performance metrics",
+      "D": "Traditional procedural programming metrics",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "The CK suite (WMC, DIT, NOC, CBO, RFC, LCOM) measures object-oriented designs."
+  },
+  {
+    "id": 61,
+    "source_file": "paper 2",
+    "question": "What is the primary objective of the People Capability Maturity Model (PCMM)?",
+    "options": {
+      "A": "To minimize overall project expenditure.",
+      "B": "To strengthen and develop the capabilities of an organization's workforce.",
+      "C": "To enhance software development methodologies.",
+      "D": "To implement automation in software system development.",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "People CMM guides organizations in improving the capability of their workforce."
+  },
+  {
+    "id": 62,
+    "source_file": "paper 2",
+    "question": "What is the primary purpose of software measurement in software engineering?",
+    "options": {
+      "A": "To eliminate the need of documentation.",
+      "B": "To quantify an attribute of a software product for assessing the quality of software.",
+      "C": "To replace the review entirely.",
+      "D": "To perform manual testing of software components.",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Measurement assigns numbers to attributes of products/processes so quality can be assessed and controlled."
+  },
+  {
+    "id": 63,
+    "source_file": "paper 2",
+    "question": "Which of the following does NOT fall under top five business risks in software engineering?",
+    "options": {
+      "A": "Strategic risk",
+      "B": "Market risk",
+      "C": "Technical risk",
+      "D": "Sales risk",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Pressman's top five business risks: market risk, strategic risk, sales risk, management risk and budget risk. Technical risk is a separate category."
+  },
+  {
+    "id": 64,
+    "source_file": "paper 2",
+    "question": "Which of the following is NOT a question in Boehm's W⁵HH principle?",
+    "options": {
+      "A": "How many people are on the team?",
+      "B": "How will the job be done technically and managerially?",
+      "C": "Why is system being developed?",
+      "D": "How much of each resource is needed?",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "W5HH: Why is the system being developed? What will be done? When? Who is responsible? Where are they located? How will the job be done technically and managerially? How much of each resource is needed? 'How many people are on the team?' is not one of them."
+  },
+  {
+    "id": 65,
+    "source_file": "paper 2",
+    "question": "A software development team uses historical project data to estimate the complexity of new software projects. To find the most suitable past project that is the similar one for analogy based estimation, the team uses Euclidean distance between the feature pairs. A new project is expected to have 6 inputs and 12 outputs. Three historical projects are described as below -\n• Project X: 5 inputs, 10 outputs\n• Project Y: 7 inputs, 14 outputs\n• Project Z: 4 inputs, 9 outputs\nUsing Euclidean distance to measure similarity, which is most accurate?",
+    "options": {
+      "A": "Project X is a closer match than project Y",
+      "B": "Project X and Y are equally similar to the new project",
+      "C": "Project Y is the farthest from the new project",
+      "D": "Project Z is the closest match to new project",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "d(X) = √(1²+2²) = √5, d(Y) = √(1²+2²) = √5, d(Z) = √(2²+3²) = √13. X and Y are equally close; Z is farthest."
+  },
+  {
+    "id": 66,
+    "source_file": "paper 2",
+    "question": "Which of the following is NOT considered a valid step in the risk projection process during software project management?",
+    "options": {
+      "A": "Delineate the potential consequences of each risk.",
+      "B": "Estimating the potential impact of each risk on the project and product.",
+      "C": "Eliminating all identified risks prior to the start of project execution.",
+      "D": "Establishing a scale to reflect the perceived likelihood of each identified risk.",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Pressman's risk projection steps: establish a likelihood scale, delineate consequences, estimate impact, assess overall accuracy. Eliminating all risks beforehand is not a step (nor possible)."
+  },
+  {
+    "id": 67,
+    "source_file": "paper 2",
+    "question": "What can be considered as a practical way to meet self-realization needs in developers?",
+    "options": {
+      "A": "Give time to meet their co-workers.",
+      "B": "Offerings larger salaries.",
+      "C": "Public recognitions of achievements.",
+      "D": "Assigning demanding tasks and providing training opportunities.",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Sommerville (Maslow's hierarchy): social needs met by time to meet co-workers, esteem needs by recognition, self-realization needs by responsibility, demanding work and training."
+  },
+  {
+    "id": 68,
+    "source_file": "paper 2",
+    "question": "The database used in the system cannot process as many transactions per second as expected. This is an example of which type of risk?",
+    "options": {
+      "A": "Estimation",
+      "B": "People",
+      "C": "Technology",
+      "D": "Organizational",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Sommerville lists this exact example under technology risks."
+  },
+  {
+    "id": 69,
+    "source_file": "paper 2",
+    "question": "Which of the following best defines the concept of a software configuration version?",
+    "options": {
+      "A": "A selected set of software modules from various versions.",
+      "B": "A selected set of backup strategies for run-time failure.",
+      "C": "A snapshot of all user requirements at the end of the development process.",
+      "D": "A documented and approved set of Software Configuration Item (SCI) versions at a specific time during development or maintenance.",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Answer is doubtful: option (4) is really the definition of a baseline/configuration of approved SCI versions, while option (1) describes assembling a configuration from module versions. (4) is taken as the most complete definition."
+  },
+  {
+    "id": 70,
+    "source_file": "paper 2",
+    "question": "What is the primary purpose of using a Pareto Chart in Statistical Software Quality Assurance (SQA)?",
+    "options": {
+      "A": "To analyze the variability of measurements.",
+      "B": "To show the relationship between some effect and all possible causes.",
+      "C": "To visualize long-term performance trends.",
+      "D": "To show fault sources identified in a software product during test.",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "In statistical SQA, defects are traced to their causes and a Pareto chart ranks those fault sources so the 'vital few' (80/20) can be fixed first. (2) describes a cause-effect (fishbone) diagram."
+  },
+  {
+    "id": 71,
+    "source_file": "paper 2",
+    "question": "Which of the following best defines the Function Point Metric in software engineering?",
+    "options": {
+      "A": "A metric that determines the hardware requirements for a software system.",
+      "B": "A metric that quantifies the functionality delivered by the software to the user.",
+      "C": "A metric used to measure the physical size of the software.",
+      "D": "A metric for evaluating the time complexity of a software program.",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Function points measure delivered functionality (inputs, outputs, inquiries, files, interfaces), independent of language; LOC measures physical size."
+  },
+  {
+    "id": 72,
+    "source_file": "paper 2",
+    "question": "Which of the following is NOT one of the seven project factors listed by Mantei that influence Software Engineering Team structure?",
+    "options": {
+      "A": "Team salary levels",
+      "B": "Quality and reliability required",
+      "C": "Degree of sociability required",
+      "D": "Rigidity of delivery date",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Mantei's factors: difficulty of the problem, size of the program, time the team stays together, modularity, required quality and reliability, rigidity of delivery date, and degree of sociability (communication) required. Salary is not one."
+  },
+  {
+    "id": 73,
+    "source_file": "paper 2",
+    "question": "Assertion (A) : In software project scheduling, estimated effort and duration is always same for each task.\nReason (R) : A task with 10 person-days of effort will always take 10 calendar days.\nWhich amongst the following option is correct?",
+    "options": {
+      "A": "(A) is false, (R) is false",
+      "B": "(A) is true, (R) is false",
+      "C": "(A) is false, (R) is true",
+      "D": "(A) is true, (R) is true and (R) is the correct explanation of (A)",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Effort (person-days) and duration (calendar days) differ when several people work on a task, so both statements are false."
+  },
+  {
+    "id": 74,
+    "source_file": "paper 2",
+    "question": "In the context of project scheduling, what does the critical path represent?",
+    "options": {
+      "A": "The path with the lowest cost",
+      "B": "The list of tasks that can be skipped without affecting the project",
+      "C": "The path consisting of tasks with no dependencies.",
+      "D": "The chain of activities that determines the duration of the project.",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "The critical path is the longest chain of dependent activities; it determines the minimum project duration."
+  },
+  {
+    "id": 75,
+    "source_file": "paper 2",
+    "question": "What is one of the primary problems that can occur if a company does not develop effective configuration management policies?",
+    "options": {
+      "A": "Reduced need for testing",
+      "B": "Difficulty in tracking modifications made in each system version",
+      "C": "Increased code reuse",
+      "D": "Faster development process",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Without configuration management, changes across versions cannot be tracked or controlled."
+  },
+  {
+    "id": 76,
+    "source_file": "paper 2",
+    "question": "A change request is submitted for a project component and the change management tool logs the following :\nChange ID : 1024\nDate Submitted : 15 Jan, 2024\nChange description : “Update login security protocols”\nIf the team resolves this change and finally approves it on March 10, 2024, then how long did the change process take, assuming period is inclusive of date of submission?",
+    "options": {
+      "A": "56",
+      "B": "59",
+      "C": "55",
+      "D": "54",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "15–31 Jan = 17 days, February 2024 (leap year) = 29 days, 1–10 March = 10 days: 17 + 29 + 10 = 56 days."
+  },
+  {
+    "id": 77,
+    "source_file": "paper 2",
+    "question": "Which quality model is most associated with usability, reliability, efficiency, maintainability and portability?",
+    "options": {
+      "A": "SSM model",
+      "B": "Six sigma",
+      "C": "ISO 9126",
+      "D": "Boehm's model",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "ISO 9126 defines six quality characteristics: functionality, reliability, usability, efficiency, maintainability and portability. (Boehm's model shares several, but ISO 9126 is the standard answer.)"
+  },
+  {
+    "id": 78,
+    "source_file": "paper 2",
+    "question": "Which of the following is NOT one of the approaches to the software sizing problem suggested Putnam and Myers?",
+    "options": {
+      "A": "Standard component sizing",
+      "B": "Function point sizing",
+      "C": "Market based sizing",
+      "D": "Fuzzy logic sizing",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Putnam and Myers suggest fuzzy logic sizing, function point sizing, standard component sizing and change sizing. 'Market based sizing' is not one."
+  },
+  {
+    "id": 79,
+    "source_file": "paper 2",
+    "question": "Which of the following is NOT one of the four critical factors that influence the relationship between a manager and his/her team?",
+    "options": {
+      "A": "Inclusion",
+      "B": "Rigidity",
+      "C": "Consistency",
+      "D": "Honesty",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Sommerville: the four critical factors in people management are consistency, respect, inclusion and honesty. Rigidity is not one."
+  },
+  {
+    "id": 80,
+    "source_file": "paper 2",
+    "question": "Which of the following activity is NOT directly supported by the use of project metrics in software project management?",
+    "options": {
+      "A": "Adjusting workflow",
+      "B": "Reviewing the statement of project scope",
+      "C": "Tracking potential risks",
+      "D": "Identifying problem areas before they become critical",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Pressman: project metrics are used to assess status, track potential risks, uncover problem areas before they go critical, adjust workflow or tasks and evaluate quality control. Reviewing the scope statement is not among them."
+  },
+  {
+    "id": 81,
+    "source_file": "paper 2",
+    "question": "What does “Process maturity” in software engineering signify?",
+    "options": {
+      "A": "Use of modern programming languages",
+      "B": "Popularity of the software",
+      "C": "Number of bugs in the system",
+      "D": "Goal is to improve product quality and process predictability",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Process maturity (as in CMM) is the extent to which a process is defined, managed, measured and controlled, aiming at predictable process outcomes and better quality."
+  },
+  {
+    "id": 82,
+    "source_file": "paper 2",
+    "question": "Which of the following statement is NOT correct in relation to the SCM (Software Configuration Management) repository?",
+    "options": {
+      "A": "It is the set of mechanisms and data structures that allow a software team to manage change in an effective manner.",
+      "B": "It provides the obvious functions of a modern database management system by ensuring data integrity, sharing and integration.",
+      "C": "It is only used during the testing phase and has no role in earlier stages of software development.",
+      "D": "It provides a hub for the integration of software tools, is central to the flow of the software process and can enforce uniform structure and format for software engineering work products.",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "The SCM repository is used throughout the software process, not only in testing; (1), (2) and (4) are Pressman's descriptions."
+  },
+  {
+    "id": 83,
+    "source_file": "paper 2",
+    "question": "Which of the following is NOT considered a component in the calculation of Function Point Metric?",
+    "options": {
+      "A": "Number of External Inquiries",
+      "B": "Number of External Inputs",
+      "C": "Number of External Logics",
+      "D": "Number of External Interface Files",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "The five FP information domain values are external inputs, external outputs, external inquiries, internal logical files and external interface files. 'External Logics' is not one."
+  },
+  {
+    "id": 84,
+    "source_file": "paper 2",
+    "question": "Which of the following is NOT an objective of Software Quality Assurance activities during software development?",
+    "options": {
+      "A": "Maximizing the number of features regardless of requirements",
+      "B": "Ensuring conformance to managerial scheduling and budgetary requirements",
+      "C": "Ensuring conformance to functional technical requirements",
+      "D": "Initiating activities for improvement and efficiency",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Galin's SQA objectives: assure conformance to functional technical requirements, to managerial schedule and budget requirements, and initiate improvement activities. Adding features regardless of requirements is not."
+  },
+  {
+    "id": 85,
+    "source_file": "paper 2",
+    "question": "Which of the following is NOT a fundamental principle that guides software project scheduling?",
+    "options": {
+      "A": "The project must be compartmentalized into a number of manageable activities and tasks.",
+      "B": "Every scheduled task may not be assigned a start date and a completion date.",
+      "C": "Every scheduled task should have a defined outcome.",
+      "D": "Every scheduled task should be assigned to a specific team member.",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Pressman's time-allocation principle says every task MUST be assigned a start date and a completion date, so (2) contradicts the principles."
+  },
+  {
+    "id": 86,
+    "source_file": "paper 2",
+    "question": "Assertion (A) : Descriptive statistics are sufficient for determining the significance of metric trends.\nReason (R) : Descriptive statistics include mean, mode and visual plots like histograms to illustrate the information to which they relate.\nWhich of the following option is correct?",
+    "options": {
+      "A": "(A) is true but (R) is false",
+      "B": "(A) is false but (R) is true",
+      "C": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "D": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Descriptive statistics only summarise data; the significance of trends needs inferential/statistical tests. So (A) is false while (R) correctly describes descriptive statistics. (Answer computed; no official key.)"
+  },
+  {
+    "id": 87,
+    "source_file": "paper 2",
+    "question": "Which of the following best describes Lines of Code (LOC) in the context of software estimation?",
+    "options": {
+      "A": "A measure of the number of errors in a program.",
+      "B": "A measure of the number of lines in software documentation",
+      "C": "A measure of testing time for software modules.",
+      "D": "A measure of the size of software based on the number of lines in the source code.",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "LOC is a size-oriented metric counting source code lines."
+  },
+  {
+    "id": 88,
+    "source_file": "paper 2",
+    "question": "Which of the following is an objective of risk management in software projects?",
+    "options": {
+      "A": "Ensure maximum reuse of legacy code to avoid risk",
+      "B": "Anticipating risks that might affect the project schedule and then taking action to avoid these risks",
+      "C": "Minimize the effort in software coding for risk management",
+      "D": "Ensure continuous integration and deployment of the codebase to avoid vulnerabilities to reduce further risk",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Risk management identifies/anticipates risks affecting schedule or quality and plans actions to avoid or minimise them."
+  },
+  {
+    "id": 89,
+    "source_file": "paper 2",
+    "question": "Which of the following is NOT a key responsibility of Benefits Management?",
+    "options": {
+      "A": "Ensure benefits are realized",
+      "B": "Measure code efficiency",
+      "C": "Allocate responsibilities for successful delivery of benefits",
+      "D": "Define expected benefits",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Benefits management defines expected benefits, allocates responsibility for delivering them and ensures they are realised; measuring code efficiency is a technical task."
+  },
+  {
+    "id": 90,
+    "source_file": "paper 2",
+    "question": "In PERT analysis, the following time estimates are provided for an activity : The optimistic time is 5 days, the most likely time is 8 days and the pessimistic time is 12 days. What is the Estimated Time (TE) for the activity?",
+    "options": {
+      "A": "7.8 days",
+      "B": "8.2 days",
+      "C": "8.0 days",
+      "D": "8.5 days",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "TE = (a + 4m + b)/6 = (5 + 32 + 12)/6 = 49/6 ≈ 8.17 ≈ 8.2 days."
+  },
+  {
+    "id": 91,
+    "source_file": "paper 2",
+    "question": "Which of the following will most likely be addressed by a reactive risk management strategy?",
+    "options": {
+      "A": "Deal with risks if they become actual problems",
+      "B": "Use of unproven CASE tools during design phase",
+      "C": "Staff turnover identified during feasibility study",
+      "D": "Architectural instability",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "A reactive strategy acts only when a risk becomes an actual problem ('fire-fighting'); proactive strategies identify risks in advance."
+  },
+  {
+    "id": 92,
+    "source_file": "paper 2",
+    "question": "Which of the following is the most widely recognized empirical model used for software cost estimation?",
+    "options": {
+      "A": "Spiral Model",
+      "B": "COCOMO Model",
+      "C": "Waterfall Model",
+      "D": "V-Model",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "COCOMO (Boehm) is the best-known empirical cost estimation model; the others are process models."
+  },
+  {
+    "id": 93,
+    "source_file": "paper 2",
+    "question": "In the basic COCOMO (Constructive Cost Model) for software estimation, which of the following formula is used to calculate the Development Time (DT) in the embedded mode when estimated Labour Months (LM) is given?",
+    "options": {
+      "A": "DT = 2.5 × (LM)^0.80",
+      "B": "DT = 2.5 × (LM)^0.55",
+      "C": "DT = 2.5 × (LM)^0.32",
+      "D": "DT = 2.5 × (LM)^0.72",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Basic COCOMO development time = 2.5 × E^d with d = 0.38 (organic), 0.35 (semi-detached), 0.32 (embedded)."
+  },
+  {
+    "id": 94,
+    "source_file": "paper 2",
+    "question": "Assertion (A) : Software products require a unique software quality assurance methodology.\nReason (R) : Software products have higher product complexity and are invisible, in comparison to other products.\nWhich of the following is true?",
+    "options": {
+      "A": "(A) is false but (R) is true",
+      "B": "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+      "C": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "D": "(A) is true but (R) is false",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Galin: the special characteristics of software (high complexity, invisibility, nature of the development/production process) are why software needs its own SQA methodology."
+  },
+  {
+    "id": 95,
+    "source_file": "paper 2",
+    "question": "Which of the following set of factors is considered as the key component of effective software project management?",
+    "options": {
+      "A": "People, Product, Performance, Process",
+      "B": "People, Process, Payoff, Product",
+      "C": "People, Product, Process, Project",
+      "D": "People, Performance, Payoff, Product",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Pressman's four Ps of project management: people, product, process and project."
+  },
+  {
+    "id": 96,
+    "source_file": "paper 2",
+    "question": "Why is measurement ambiguity a concern in software metrics?",
+    "options": {
+      "A": "Because ambiguity is irrelevant in software measurement.",
+      "B": "Because all metrics are straightforward and unambiguous.",
+      "C": "Because data collected can be misinterpreted without context.",
+      "D": "Because measurement tools are perfect and always provide clear insights.",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Ambiguous measures can be interpreted differently, leading to wrong conclusions unless their context and definition are clear."
+  },
+  {
+    "id": 97,
+    "source_file": "paper 2",
+    "question": "In the context of the organic mode of software development in basic COCOMO (Constructive Cost Model), which of the following best describes the composition of the development team?",
+    "options": {
+      "A": "A small, cohesive team of experienced developers who are well-versed in both application area and the development environment.",
+      "B": "Developers with limited experience and no domain knowledge.",
+      "C": "Developers with extensive experience but limited familiarity with the specific application technology.",
+      "D": "A distributed team of developers working remotely on different project domains.",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Organic projects are small, done by small teams with good experience of similar applications in a familiar in-house environment."
+  },
+  {
+    "id": 98,
+    "source_file": "paper 2",
+    "question": "Which of the following is NOT considered a core aspect of a proper Software Quality Assurance (SQA) process?",
+    "options": {
+      "A": "Team commitment",
+      "B": "Completeness",
+      "C": "Cost analysis",
+      "D": "Applicability",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Answer is a judgement call (no key found): team commitment, completeness and applicability describe a proper SQA process, while cost analysis is a project-management activity."
+  },
+  {
+    "id": 99,
+    "source_file": "paper 2",
+    "question": "What is primary goal of configuration management?",
+    "options": {
+      "A": "Reduce coding effort",
+      "B": "Automate test cases",
+      "C": "Maintain control over software changes",
+      "D": "Manage project deadlines",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "SCM identifies, controls, audits and reports changes so the software stays consistent as it evolves."
+  },
+  {
+    "id": 100,
+    "source_file": "paper 2",
+    "question": "Which of the following factor does NOT impact the reliability of estimates during the software project planning phase?",
+    "options": {
+      "A": "Team size",
+      "B": "Degree of structural uncertainty",
+      "C": "Project size",
+      "D": "Project complexity",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Pressman: estimation risk depends on project complexity, project size and the degree of structural uncertainty (plus availability of historical data). Team size is not listed."
+  }
+]

@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Assertion (A) : The ALU in a processor contains and adder, multiplier, divider and logical bitwise-operation units.\nReason (R) : All arithmetic and logical operations required by an instruction set must be computed with in a single shared adder circuit.\nChoose the correct option.",
+    "options": {
+      "A": "(A) is true, (R) is false",
+      "B": "Both (A) and (R) are true and (R) correctly explains (A)",
+      "C": "Both (A) and (R) are true, but (R) does not correctly explains (A)",
+      "D": "(A) is false, (R) is true"
+    },
+    "answer": "A",
+    "explanation": "An ALU does contain adder, multiplier/divider and logic units, so (A) is true. Operations are not all forced through one shared adder circuit, so (R) is false."
+  },
+  {
+    "id": 2,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "For a system with three transactions (T1, T2, T3) accessing shared data item X, the schedule is S : r1(x) ; r3(x) ;w1(x) ;r2(x) ;w3(x). Is S conflict serializable ? If so, what is the equivalent serial schedule ?\nChoose the correct answer from the following.",
+    "options": {
+      "A": "Yes, equivalent to (T3, T1, T2)",
+      "B": "No, a cycle exists between T1 and T3",
+      "C": "Yes, equivalent to (T1, T2, T3)",
+      "D": "No, because T2 reads before T3 writes"
+    },
+    "answer": "B",
+    "explanation": "r3(x) before w1(x) gives the edge T3→T1, and w1(x) before w3(x) (also r1 before w3) gives T1→T3. The precedence graph has a cycle, so S is not conflict serializable."
+  },
+  {
+    "id": 3,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Consider four distinct graphs with the following vertex, degree sequences. Arrange the graphs in order of their total edge counts in ascending order.\n1. A graph with 6 vertices, each with degree 3\n2. A complete graph with 6 vertices (K₆)\n3. A tree with 11 vertices.\n4. A complete bipartite graph (K₃,₄)\nChoose the correct option from the following code.",
+    "options": {
+      "A": "1 → 3 → 4 → 2",
+      "B": "1 → 3 → 2 → 4",
+      "C": "1 → 2 → 3 → 4",
+      "D": "3 → 2 → 1 → 4"
+    },
+    "answer": "A",
+    "explanation": "The edge counts are (1) 6·3/2 = 9, (3) 11 − 1 = 10, (4) 3·4 = 12 and (2) 6·5/2 = 15, giving 1 → 3 → 4 → 2."
+  },
+  {
+    "id": 4,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Match the control unit design style with its correct characteristic.\nColumn – A: 1. Hardwired control unit  2. Micro programmed control unit\nColumn – B: P. Uses logic gates to directly generate control signals from opcode bits ; fast but inflexible.  Q. Breaks instructions into micro instructions executed by a dedicated unit, flexible, allows post-shipment modifications.",
+    "options": {
+      "A": "1-P, 2-P",
+      "B": "1-P, 2-Q",
+      "C": "1-Q, 2-P",
+      "D": "1-Q, 2-Q"
+    },
+    "answer": "B",
+    "explanation": "A hardwired control unit uses logic gates (fast but inflexible), while a microprogrammed control unit uses microinstructions (flexible and modifiable)."
+  },
+  {
+    "id": 5,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Why must the intermediate sorting algorithm used in Radix sort be stable ?\nChoose the correct answer from the following.",
+    "options": {
+      "A": "To make every pass execute in constant time",
+      "B": "To ensure that the relative order of elements with equal digit values is preserved across successive digit passes",
+      "C": "To reduce the number of digits that need to be processed",
+      "D": "To eliminate the need for multiple sorting passes"
+    },
+    "answer": "B",
+    "explanation": "LSD radix sort relies on each pass preserving the order established by earlier (less significant) digit passes, which requires a stable sort."
+  },
+  {
+    "id": 6,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A malware program is executed by the user, installs a Remote Access Trojan (RAT) ; and later performs malicious activities. Which of the following statements, best describes its behavior ?",
+    "options": {
+      "A": "It is a virus because stealing confidential data is a characteristic unique to viruses",
+      "B": "It behaves primarily as a Trojan because the user executes it and its payload is then executed",
+      "C": "It is a worm because every malware that spreads to multiple systems is a worm",
+      "D": "It cannot install remote access software because only spyware has that capability"
+    },
+    "answer": "B",
+    "explanation": "A Trojan relies on the user running it, after which its hidden payload (here a RAT) executes."
+  },
+  {
+    "id": 7,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "For the recurrence relation aₙ = aₙ₋₁ + 6aₙ₋₂ (Characteristic equation r² – r – 6 = 0), what are the characteristic roots, using the characteristic root technique ?",
+    "options": {
+      "A": "r = 1, r = 6",
+      "B": "r = 2, r = –3",
+      "C": "r = –2, r = 3",
+      "D": "r = 3, r = 2 (repeated)"
+    },
+    "answer": "C",
+    "explanation": "r² − r − 6 = (r − 3)(r + 2) = 0, so r = 3 and r = −2."
+  },
+  {
+    "id": 8,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A software project has\ni) Planned Value (PV) = ₹ 8,00,000\nii) Earned Value (EV) = ₹ 7,20,000\nWhich of the following will be the Scheduled Performance Index (SPI) ?",
+    "options": {
+      "A": "0.90",
+      "B": "0.80",
+      "C": "1.11",
+      "D": "1.25"
+    },
+    "answer": "A",
+    "explanation": "SPI = EV / PV = 7,20,000 / 8,00,000 = 0.90."
+  },
+  {
+    "id": 9,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "T(n) is said to be Ω(g(n)) if there exists a positive constant c. Such that T(n) ≥ c.g(n) for",
+    "options": {
+      "A": "An infinite number of values of n",
+      "B": "No values of n",
+      "C": "All values of n",
+      "D": "Exactly one value of n"
+    },
+    "answer": "A",
+    "explanation": "In Aho–Hopcroft–Ullman's definition, T(n) = Ω(g(n)) if T(n) ≥ c·g(n) for infinitely many values of n."
+  },
+  {
+    "id": 10,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "In a B-tree, what must be tree of every path from the root to leaf ?",
+    "options": {
+      "A": "Every path from the root to a leaf has the same length",
+      "B": "Each path may vary in length depending on the number of keys stored",
+      "C": "Only the left most path needs to reach a leaf",
+      "D": "Paths are undefined for B-trees since they are unbalanced structures"
+    },
+    "answer": "A",
+    "explanation": "B-trees are perfectly height-balanced, so all leaves are at the same depth."
+  },
+  {
+    "id": 11,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "During insertion into a Binary Search Tree (BST), the algorithm maintains a trailing pointer y while another pointer x searches for the insertion position.\nWhat is the primary purpose of maintaining the trailing pointer y ?",
+    "options": {
+      "A": "To record the height of the tree during insertion",
+      "B": "To store the root of the tree throughout the insertion process",
+      "C": "To ensure that the Binary Search Tree remains balanced after insertion",
+      "D": "To keep track of the parent of the current node so that the new node can be attached once the search reaches a NIL child"
+    },
+    "answer": "D",
+    "explanation": "In CLRS TREE-INSERT, y trails x as x's parent. When x becomes NIL, the new node is attached as a child of y."
+  },
+  {
+    "id": 12,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Consider relation R (A, B, C, D, E) with functional dependencies F = { AB → C, C → D, D → E, E → A }. Using attribute- closure computation, which of the following is a candidate key of R ?",
+    "options": {
+      "A": "AB",
+      "B": "A",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A",
+    "explanation": "B appears on no right-hand side, so it must be in every key. AB⁺ = {A, B, C, D, E}, while A⁺, C⁺ and D⁺ do not include B, so AB is a candidate key."
+  },
+  {
+    "id": 13,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which of the following is lossless, but not necessarily dependency preserving ?",
+    "options": {
+      "A": "3NF decomposition",
+      "B": "1NF decomposition",
+      "C": "2NF decomposition",
+      "D": "BCNF decomposition"
+    },
+    "answer": "D",
+    "explanation": "A BCNF decomposition is always lossless-join but may not preserve all functional dependencies. 3NF synthesis guarantees both."
+  },
+  {
+    "id": 14,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which of the following statements regarding the critical path is correct ?",
+    "options": {
+      "A": "It always contains activities having the highest cost",
+      "B": "It always contains the largest number of activities",
+      "C": "It is the path with maximum total duration",
+      "D": "It cannot change during project execution"
+    },
+    "answer": "C",
+    "explanation": "The critical path is the longest-duration path through the project network, and it determines the minimum project completion time."
+  },
+  {
+    "id": 15,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "An attacker performs a memory linearization attack on a smart card instead of trying to break the AES/RSA algorithm. What is the main advantage of this attack ?",
+    "options": {
+      "A": "It permanently disables the smart card, making data recovery impossible",
+      "B": "It weakens the encryption algorithm by reducing its key length",
+      "C": "It forces the processor to execute memory sequentially, exposing secret data without directly breaking the cryptographic algorithm",
+      "D": "It replaces the secret key with a new key chosen by the attacker"
+    },
+    "answer": "C",
+    "explanation": "Memory linearization forces the processor to read memory sequentially, so secret keys and data are leaked without attacking the cipher's mathematics."
+  },
+  {
+    "id": 16,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Consider the propositional logic formula\nϕ = ((P → Q) → P) → P.\nWhich of the following classifications accurately describes ϕ ?",
+    "options": {
+      "A": "Tautology",
+      "B": "Contradiction",
+      "C": "Contingency",
+      "D": "Valid only under institutionalistic logic"
+    },
+    "answer": "A",
+    "explanation": "This is Peirce's law, which is true under every truth assignment (a classical tautology)."
+  },
+  {
+    "id": 17,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A university plans to improve the security of its campus network. Instead of using one large network protected by a single firewall, it decides to divide the campus into multiple smaller networks separated by firewalls. What is the main reason for adopting this network architecture ?",
+    "options": {
+      "A": "It allows every department to use the same security configuration without modification",
+      "B": "It completely prevents any attacker from accessing another network",
+      "C": "It removes the need for security policies and network monitoring",
+      "D": "It limits the impact of a security compromise and allows each network segment to be managed and secured independently"
+    },
+    "answer": "D",
+    "explanation": "Network segmentation contains breaches to one segment and allows per-segment security policies."
+  },
+  {
+    "id": 18,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "In Strict Two Phase Locking (Strict 2PL), when are a transaction's exclusive (write) locks released, and what guarantee does this timing provide that basic 2PL does not ?",
+    "options": {
+      "A": "At the beginning of the shrinking phase, all at once, regardless of the commit status",
+      "B": "Immediately after the last access to each data item-this guarantees serializability but nothing more",
+      "C": "Only upon transaction commit or abort besides guaranteeing serializability, this ensures recoverability and prevents cascading",
+      "D": "Whenever the buffer manager decides to flush the corresponding page to disk"
+    },
+    "answer": "C",
+    "explanation": "Strict 2PL holds exclusive locks until commit or abort, which gives strict, cascadeless and recoverable schedules in addition to serializability."
+  },
+  {
+    "id": 19,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A recursive algorithm multiples two n×n matrices by partitioning each matrix into four equal sized submatrices and recursively evaluating all block multiplication required by the standard block matrix multiplication equations. Ignoring constant factors, which recurrence relation correctly represents its running time ?",
+    "options": {
+      "A": "T(n) = 8 T (n/2) + θ (n²)",
+      "B": "T(n) = 4 T (n/2) + θ (n²)",
+      "C": "T(n) = 8 T (n/2) + θ (n)",
+      "D": "T(n) = 16 T (n/2) + θ (1)"
+    },
+    "answer": "A",
+    "explanation": "The standard block method needs 8 recursive multiplications of size n/2 plus θ(n²) additions, giving T(n) = 8T(n/2) + θ(n²) = θ(n³)."
+  },
+  {
+    "id": 20,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which of the following statement is NOT true ?",
+    "options": {
+      "A": "Linked list supports random access in O(1)",
+      "B": "A doubly linked list requires additional memory per node as compared to singly linked list",
+      "C": "A circular linked list has no NULL link",
+      "D": "Insertion at the beginning of a singly linked list is O(1)"
+    },
+    "answer": "A",
+    "explanation": "Linked lists need O(n) traversal to reach the i-th element, so they do not support O(1) random access."
+  },
+  {
+    "id": 21,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A receiving application processes incoming data very slowly. Which of the following TCP mechanism prevents the sender from overwhelming the receiver's buffer ?",
+    "options": {
+      "A": "Error detection using CRC",
+      "B": "Congestion control",
+      "C": "Flow control using the receive window",
+      "D": "Routing algorithm"
+    },
+    "answer": "C",
+    "explanation": "TCP flow control uses the advertised receive window (rwnd) to stop a fast sender from overflowing a slow receiver's buffer."
+  },
+  {
+    "id": 22,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Assertion (A) :TCP uses cumulative acknowledgements.\nReason (R) : A cumulative acknowledges receipt of all bytes upto a certain sequence number.\nChoose the correct option :",
+    "options": {
+      "A": "(A) is true, but (R) is false",
+      "B": "Both (A) and (R) are true and (R) correctly explains (A)",
+      "C": "Both (A) and (R) are true, but (R) is not correct explanation of (A)",
+      "D": "(A) is false, but (R) is true"
+    },
+    "answer": "B",
+    "explanation": "TCP ACKs are cumulative: ACK n confirms all bytes up to n−1. The reason states exactly what a cumulative ACK means."
+  },
+  {
+    "id": 23,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "What is the distinct advantage of packet switching over circuit switching ?",
+    "options": {
+      "A": "Packet switching uses statistical multiplexing allowing more users to share link capacity dynamically without pre-allocating dedicated lines",
+      "B": "Packet switching guarantees fixed, predictable, end to end bandwidth allocations for real time video streaming",
+      "C": "Packet switching eliminates queing delay at the intermediate routing nodes",
+      "D": "Packet switching simplifies the header processing overhead because frames do not require destination address"
+    },
+    "answer": "A",
+    "explanation": "Packet switching shares link capacity on demand through statistical multiplexing. Guaranteed bandwidth is a property of circuit switching."
+  },
+  {
+    "id": 24,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Arrange the steps of a DMA- based data transfer in the correct order.\n(i) The device driver suspends itself and the processor runs other programs\n(ii) The DMA engine sends an interrupt indicating the transfer in complete\n(iii) The device driver specified the memory range and I/O port details to the DMA engine\n(iv) The DMA engine transfers data between memory and I/O device",
+    "options": {
+      "A": "(iv) → (iii) → (i) → (ii)",
+      "B": "(iii) → (i) → (iv) → (ii)",
+      "C": "(i) → (iii) → (ii) → (iv)",
+      "D": "(iii) → (iv) → (i) → (ii)"
+    },
+    "answer": "B",
+    "explanation": "The driver programs the DMA controller, then suspends while the CPU does other work. The DMA engine transfers the data and finally raises a completion interrupt."
+  },
+  {
+    "id": 25,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Match the List – I with List – II.\nList – I: A. Gantt Chart  B. Milestone Chart  C. PERT  D. CPM\nList – II: 1. Shows project milestones  2. Time scaled activity schedule  3. Probabilistic network  4. Deterministic network\nChoose the correct option :",
+    "options": {
+      "A": "A – 1, B – 2, C – 3, D – 4",
+      "B": "A – 2, B – 1, C – 3, D – 4",
+      "C": "A – 2, B – 1, C – 4, D – 3",
+      "D": "A – 3, B – 4, C – 1, D – 2"
+    },
+    "answer": "B",
+    "explanation": "A Gantt chart is a time-scaled activity schedule and a milestone chart shows milestones. PERT is a probabilistic network and CPM is deterministic."
+  },
+  {
+    "id": 26,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "In the Floyd-Warshall algorithm, suppose that for some pair of vertices (i, j)\ndᵢⱼ⁽ᴷ⁻¹⁾ > dᵢₖ⁽ᴷ⁻¹⁾ + dₖⱼ⁽ᴷ⁻¹⁾\nAccording to the algorithm, what happens during the Kᵗʰ iteration ?",
+    "options": {
+      "A": "The predecessor matrix remains unchanged because a shorter path has been found",
+      "B": "The shortest-path estimate dᵢⱼ is updated using the path through vertex K",
+      "C": "Vertex K is permanently removed from further consideration",
+      "D": "The algorithm terminates since an improved path has been discovered"
+    },
+    "answer": "B",
+    "explanation": "dᵢⱼ⁽ᴷ⁾ = min(dᵢⱼ⁽ᴷ⁻¹⁾, dᵢₖ⁽ᴷ⁻¹⁾ + dₖⱼ⁽ᴷ⁻¹⁾), so the estimate is updated to the path through K (and the predecessor is updated too)."
+  },
+  {
+    "id": 27,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Consider a relation R(A, B, C, D) with functional dependencies. {A → B, B → C, A → D}\nWhich of the following statement is correct ?",
+    "options": {
+      "A": "R violates 3NF",
+      "B": "R violates 2NF",
+      "C": "R is in 3NF but not in BCNF",
+      "D": "R is in BCNF"
+    },
+    "answer": "A",
+    "explanation": "A is the only key. B → C is a transitive dependency of a non-prime attribute on a non-key, so R violates 3NF. It is in 2NF because the key is a single attribute."
+  },
+  {
+    "id": 28,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Why is it necessary to establish an upper bound on the maximum degree D(n) of any node in an n-node Fibonacci Heap ?",
+    "options": {
+      "A": "To ensure that the heap remains perfectly balanced after any operation",
+      "B": "To prove that the amortized running time of EXTRACT – MIN and DELETE is O(log(n))",
+      "C": "To guarantee that every node has exactly two children",
+      "D": "To eliminate the need for cascading cuts"
+    },
+    "answer": "B",
+    "explanation": "The amortized cost of EXTRACT-MIN is O(D(n)). Showing D(n) = O(log n) proves the O(log n) bounds for EXTRACT-MIN and DELETE."
+  },
+  {
+    "id": 29,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Assertion (A) : A queue is called a \"FIFO\" list.\nReason (R) : In a queue, insertions occur at the rear and deletions occur at the front.\nChoose the correct option from the following:",
+    "options": {
+      "A": "Both (A) and (R) are true, but (R) does not explains (A)",
+      "B": "(A) is true, (R) is false",
+      "C": "(A) is false, (R) is true",
+      "D": "Both (A) and (R) are true, and (R) correctly explains (A)"
+    },
+    "answer": "D",
+    "explanation": "Because elements enter at the rear and leave from the front, the first element inserted is the first removed (FIFO)."
+  },
+  {
+    "id": 30,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which of the following statements about Abstract Data Types (ADTs) is correct ?",
+    "options": {
+      "A": "An ADT exposes its internal implementation to every part of the program that uses it",
+      "B": "An ADT cannot be changed once a program is written",
+      "C": "An ADT can only be implemented in Pascal",
+      "D": "An ADT encapsulates a data type so that its definition and operations can be localized to one section of program"
+    },
+    "answer": "D",
+    "explanation": "An ADT hides its implementation and encapsulates the type's definition and operations in one place."
+  },
+  {
+    "id": 31,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "The Knuth-Morris-Prat (KMP) algorithm preprocesses a pattern by computing its prefix function before searching the text. What is the primary advantage of using this prefix function ?",
+    "options": {
+      "A": "It determines how far the pattern can be shifted after a mismatch without rechecking characters that are already known to match",
+      "B": "It stores the positions of every occurrence of the pattern in the text",
+      "C": "It eliminates the need to compare any characters during pattern matching",
+      "D": "It sorts the pattern characters so that matching becomes faster"
+    },
+    "answer": "A",
+    "explanation": "The prefix (failure) function tells KMP the longest proper prefix that is also a suffix, so after a mismatch it shifts without re-examining matched text, giving O(n + m) time."
+  },
+  {
+    "id": 32,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Let P(n) be the statement that n cents of postage can be formed using only 5-cent and 8-cent stamps. What is the smallest integer n₀ >= 1 such that p(n) is true for all n >= n₀ serving as the base case starting point for proof by mathematical induction ?\nChoose the correct option.",
+    "options": {
+      "A": "n₀ = 40",
+      "B": "n₀ = 1",
+      "C": "n₀ = 28",
+      "D": "n₀ = 13"
+    },
+    "answer": "C",
+    "explanation": "The largest amount not formable from 5 and 8 is the Frobenius number 5·8 − 5 − 8 = 27, so every n ≥ 28 can be formed."
+  },
+  {
+    "id": 33,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "During development, a WebApp increment requires additional implementation tasks. What is the most appropriate scheduling actions ?",
+    "options": {
+      "A": "Refine the detailed schedule for the affected increment while retaining the macroscopic schedule",
+      "B": "Replace the entire project schedule",
+      "C": "Keep the schedule unchanged until deployment",
+      "D": "Suspend work on all other increments"
+    },
+    "answer": "A",
+    "explanation": "In WebApp project scheduling (Pressman), the macroscopic schedule stays fixed while the detailed schedule for each increment is refined as tasks are added."
+  },
+  {
+    "id": 34,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "An attacker intercepts confidential information transmitted between two communicating parties without modifying the data or affecting the communication process. Which of the following type of security attack best describes this scenario ?",
+    "options": {
+      "A": "Replay attack",
+      "B": "Masquerade attack",
+      "C": "Passive attack",
+      "D": "Denial of Service (DoS) attack"
+    },
+    "answer": "C",
+    "explanation": "Eavesdropping without altering the data is a passive attack. Replay, masquerade and DoS are active attacks."
+  },
+  {
+    "id": 35,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which of the following are objectives of Software Configuration Management (SCM) ?\nI. Control changes to the software artifacts.\nII. Maintains version history.\nChoose the correct option.",
+    "options": {
+      "A": "Both I and II",
+      "B": "I only",
+      "C": "II only",
+      "D": "None of these"
+    },
+    "answer": "A",
+    "explanation": "SCM covers change control and version control of software artifacts."
+  },
+  {
+    "id": 36,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Assertion (A) : To prove \"if a and b are odd, then a + b is odd\" by contrapositive, the proof must assume a and b are even and show a + b is even.\nReason (R) : The contrapositive of P → Q is ¬Q → ¬P, and by De Morgan's law, the negation of \"a or b is odd\" is \"a or b are even\".\nChoose the correct answer from the following :",
+    "options": {
+      "A": "A is true, R is false",
+      "B": "Both A and R are true, and R correctly explains A",
+      "C": "Both A and R are true, but R does not explains A",
+      "D": "A is false, R is true"
+    },
+    "answer": "D",
+    "explanation": "A is false: the contrapositive assumes a + b is not odd (even) and shows that a or b is even. The intended answer treats R (contrapositive = ¬Q → ¬P) as true. Note: the De Morgan clause in R is itself loosely worded, since ¬(a odd ∨ b odd) = a and b even."
+  },
+  {
+    "id": 37,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "What is a major implementation drawback of structure equivalence compared to name equivalence in type checking ?",
+    "options": {
+      "A": "Structure equivalence requires complex recursive comparison of field types, sizes and handles record field ordering and cyclic pointer references with difficulty",
+      "B": "Structure equivalence prohibits the use of user-defined data types entirely",
+      "C": "Name equivalence requires parsing full record structures recursively for every variable assignment",
+      "D": "Name equivalence cannot differentiate distinct type declarations with identical internal memory layouts"
+    },
+    "answer": "A",
+    "explanation": "Structural equivalence must recursively compare type structures, which is expensive and tricky with field order and recursive (cyclic) pointer types. Name equivalence is a simple name comparison."
+  },
+  {
+    "id": 38,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "What does it mean for a running time T(n) to be O(f(n)) ?\nChoose the correct answer from the following.",
+    "options": {
+      "A": "T(n) = f(n) for all n",
+      "B": "There exists positive constant c and n₀ such that T(n) ≤ c f(n) for all n ≥ n₀",
+      "C": "f(n) is the exact running time of the best-case input",
+      "D": "T(n) is always less than f(n)"
+    },
+    "answer": "B",
+    "explanation": "This is the definition of the Big-O upper bound."
+  },
+  {
+    "id": 39,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Assertion (A) : Every finite integral domain is a field.\nReason (R) : Every non-zero element of a finite integral domain has a multiplicative inverse.\nChoose the correct option :",
+    "options": {
+      "A": "(A) is true but (R) is false",
+      "B": "Both (A) and (R) are true and (R) correctly explains (A)",
+      "C": "Both (A) and (R) are true and (R) is not the correct explanation of (A)",
+      "D": "(A) is false but (R) is true"
+    },
+    "answer": "B",
+    "explanation": "In a finite integral domain, x ↦ ax is injective and hence surjective, so every a ≠ 0 has an inverse. That is exactly why the domain is a field."
+  },
+  {
+    "id": 40,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "What is the fundamental difference in implementation strategy between C++ Templates and Java Generics ?",
+    "options": {
+      "A": "C++ performs generic type checks exclusively at runtime, while java does it strictly at compile time",
+      "B": "C++ generates separate machine code instances for each concrete type (Monomorphization); Java uses type eraser to share a single class file",
+      "C": "Java creates separate binary code for primitives; C++ erases all type of parameters to void* pointers",
+      "D": "There is no operational difference; both languages use identical virtual table structures"
+    },
+    "answer": "B",
+    "explanation": "C++ templates are instantiated separately for each type argument, while Java generics use type erasure and compile to one shared class."
+  },
+  {
+    "id": 41,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "While restoring the max-heap property, the procedure first identifies the largest among the current node and its two children. If the current node already contains the largest value, what should the procedure do next ?\nChoose the correct answer from the following :",
+    "options": {
+      "A": "Recursively process both child subtrees",
+      "B": "Exchange the current node with its left child",
+      "C": "Exchange the current node with its right child",
+      "D": "Terminate, because the subtree rooted at the current node already satisfies the max-heap property"
+    },
+    "answer": "D",
+    "explanation": "In MAX-HEAPIFY, if the node is already the largest no swap is needed and the procedure stops, because the child subtrees are already heaps."
+  },
+  {
+    "id": 42,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Before exchanging application data, TCP establishes a reliable connection between the sender and receiver. Which of the following mechanism is used for establishing this connection ?",
+    "options": {
+      "A": "Four-way handshake",
+      "B": "Two-way handshake",
+      "C": "Three-way handshake",
+      "D": "Selective repeat"
+    },
+    "answer": "C",
+    "explanation": "TCP opens a connection with SYN, SYN-ACK and ACK (the three-way handshake)."
+  },
+  {
+    "id": 43,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which operations on a Balanced Binary Search Tree (BST) have worst case time complexity of O (log (n)) ?\n1. Search\n2. Insertion\n3. Deletion\n4. In order traversal\nChoose the correct option :",
+    "options": {
+      "A": "1 and 4 only",
+      "B": "1, 2 and 3 only",
+      "C": "2, 3 and 4 only",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "Search, insert and delete take O(log n) on a balanced BST. In-order traversal visits all nodes, so it is O(n)."
+  },
+  {
+    "id": 44,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Scenario : An online travel agency manages a multi database transaction involving a bank (RDBMS) and a hotel inventory (OODBMS). During phase 1 of the two phase commit protocol, the bank signals \"ok\" but the hotel encounters a disk error and signals \"not ok\".\nHow must the coordinator proceed in phase 2, and what is the goal ?\nChoose the correct option from the following :",
+    "options": {
+      "A": "Send a \"roll back\" (UNDO) to both databases to maintain transaction atomicity",
+      "B": "Commit the bank payment and roll back the hotel to maximize success",
+      "C": "Repeatedly poll the hotel until the error resolves to ensure consistency",
+      "D": "Force-commit the transaction globally, overriding the hotel's failure"
+    },
+    "answer": "A",
+    "explanation": "In 2PC, if any participant votes 'not ok' the coordinator sends a global abort (rollback) to all participants, preserving atomicity."
+  },
+  {
+    "id": 45,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "In the micoprogrammed processor shared bus design, what is the role of the \"transfer multiplexer\" ?\nChoose the correct answer from the following.",
+    "options": {
+      "A": "It directly connects the PC only to the write bus",
+      "B": "It selects between the write bus output, the embedded micro-immediate and the M adder output, sending the result onto the read bus",
+      "C": "It arbitrates which external I/O device gets bus access",
+      "D": "It generates the ISM Branch signal independently of the write bus"
+    },
+    "answer": "B",
+    "explanation": "In this design the transfer multiplexer chooses one source (the write bus, the micro-immediate or the M-adder output) and places it on the read bus."
+  },
+  {
+    "id": 46,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which compiler optimization converts a recursive function call into an iterative jump preventing the allocation of additional stack frames ?",
+    "options": {
+      "A": "Common sub expression elimination",
+      "B": "Loop unrolling optimization",
+      "C": "Tail call optimization",
+      "D": "Partial Evaluation"
+    },
+    "answer": "C",
+    "explanation": "Tail-call optimisation replaces a call in tail position with a jump and reuses the current stack frame."
+  },
+  {
+    "id": 47,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "In an ER model, how must an attribute be specified if it's value is determined by the combination of participating entities in an M : N relationship instance (such as the number of \"hours\" an employee works on a specific project) rather than by any single entity alone ?\nChoose the correct answer from the following :",
+    "options": {
+      "A": "It must be migrated to a new weak entity type",
+      "B": "It must be specified as an attribute of the dominant entity type",
+      "C": "It must be specified as a relationship attribute on the M : N relationship",
+      "D": "It must be duplicated as an attribute in both participating entity type"
+    },
+    "answer": "C",
+    "explanation": "For M:N relationships, attributes such as Hours (WORKS_ON) depend on the combination of entities, so they belong to the relationship itself."
+  },
+  {
+    "id": 48,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A company changes its biometric system from verification to identification. What is the biggest security concern ?\nChoose the correct answer from the following :",
+    "options": {
+      "A": "Matching thresholds become unnecessary",
+      "B": "More comparisions increase the chance of false matches",
+      "C": "Multiple biometrics cannot be used",
+      "D": "Hill climbing attacks become impossible"
+    },
+    "answer": "B",
+    "explanation": "Identification is 1:N matching against the whole database, so the false-match probability grows with the number of comparisons."
+  },
+  {
+    "id": 49,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Match List – I with List – II.\nList – I: A. Worm  B. Virus  C. Trojan horse  D. Logic bomb\nList – II: 1. Requires host file to spread  2. Self replicate over networks  3. Disguised as legitimate software  4. Triggered by specific condition\nChoose the correct option :",
+    "options": {
+      "A": "A – 2, B – 3, C – 1, D – 4",
+      "B": "A – 2, B – 1, C – 3, D – 4",
+      "C": "A – 1, B – 2, C – 3, D – 4",
+      "D": "A – 3, B – 1, C – 2, D – 4"
+    },
+    "answer": "B",
+    "explanation": "A worm self-replicates over networks and a virus needs a host file. A Trojan is disguised as legitimate software, and a logic bomb fires on a specific condition."
+  },
+  {
+    "id": 50,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "In a proof by contradiction, assuming ¬P leads to a false statement (a contradiction), what can be concluded ?\nChoose the correct answer from the following :",
+    "options": {
+      "A": "Nothing can be concluded about P",
+      "B": "P is false",
+      "C": "P is true",
+      "D": "The statement Q must also be true"
+    },
+    "answer": "C",
+    "explanation": "If ¬P implies a contradiction, then ¬P is false, so P is true."
+  },
+  {
+    "id": 51,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Given the stated properties of free trees, if a free tree has n ≥ 1 vertices, how many edges does it contain and what happens if one or more edge is added ?",
+    "options": {
+      "A": "2n edges; adding another edge has no effect",
+      "B": "n edges; adding another edge disconnects the graph",
+      "C": "n + 1 edges; adding another edge removes a cycle",
+      "D": "n – 1 edges; adding another edge creates a cycle"
+    },
+    "answer": "D",
+    "explanation": "A free tree on n vertices has n − 1 edges, and adding any edge creates exactly one cycle."
+  },
+  {
+    "id": 52,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "In a modern Switched Ethernet LAN, why can two hosts connected to different switch ports transmit data simultaneously without causing a collision ?",
+    "options": {
+      "A": "Because switches remove MAC addresses before forwarding frames",
+      "B": "Because every frame is broadcasted to all ports",
+      "C": "Because each switch port represents a independent collision domain",
+      "D": "Because Ethernet no longer uses frames"
+    },
+    "answer": "C",
+    "explanation": "Each switch port is its own collision domain (usually full duplex), so hosts on different ports do not collide."
+  },
+  {
+    "id": 53,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A set of distinct keys = { 45, 22, 68, 11, 30, 89, 7 } are inserted sequentially into an initially empty binary search tree (BST) in the exact order written. Which of the following sequence matches the correct post order traversal of the resulting BST ?",
+    "options": {
+      "A": "7, 30, 11, 22, 89, 68, 45",
+      "B": "7, 11, 30, 22, 89, 68, 45",
+      "C": "7, 11, 22, 30, 68, 89, 45",
+      "D": "45, 22, 11, 7, 30, 68, 89"
+    },
+    "answer": "B",
+    "explanation": "The tree has root 45 with left child 22 (children 11 and 30, and 7 under 11) and right child 68 (right child 89). The postorder traversal is 7, 11, 30, 22, 89, 68, 45."
+  },
+  {
+    "id": 54,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A company upgrades its Ethernet technology from fast Ethernet to gigabit Ethernet without making any changes to HTTP, TCP or IP. Which property of network architecture makes this possible ?",
+    "options": {
+      "A": "Application protocols directly control network hardware",
+      "B": "Every protocol works at the physical layer",
+      "C": "TCP determines the physical transmission medium",
+      "D": "Layered architecture provides modularity allowing one layer to change without affecting other layers"
+    },
+    "answer": "D",
+    "explanation": "Layering isolates each layer behind interfaces, so the link and physical layers can change without affecting the upper layers."
+  },
+  {
+    "id": 55,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "In Cyclic Redundancy Check (CRC), the receiver divides the received bit pattern by the agreed generator polynomial. If the remainder is non-zero, what should the receiver conclude ?\nChoose the correct answer from the following :",
+    "options": {
+      "A": "The frame should be accepted because CRC always produces a remainder",
+      "B": "The frame is error free",
+      "C": "An error has been detected in the frame",
+      "D": "The generator polynomial should be changed"
+    },
+    "answer": "C",
+    "explanation": "A non-zero CRC remainder means the received codeword is not a multiple of the generator, so an error is detected."
+  },
+  {
+    "id": 56,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A software project manager prepares a schedule by first identifying project activities, estimating the duration of each activity, identifying task dependencies and then allocating available resources. Which process of the following is the manager performing ?",
+    "options": {
+      "A": "Software maintenance",
+      "B": "Software testing",
+      "C": "Building the project schedule",
+      "D": "Risk identification"
+    },
+    "answer": "C",
+    "explanation": "Identifying activities, estimating durations, finding dependencies and allocating resources are the steps of project scheduling."
+  },
+  {
+    "id": 57,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A software project encounters frequent requirement changes and newly identified risks after development begins. Which of the following planning strategy is most appropriate ?",
+    "options": {
+      "A": "Revise the plan iteratively while tracking progress and accommodating change",
+      "B": "Follow the original plan without modification",
+      "C": "Increase planning detail for all remaining activities",
+      "D": "Delay plan updates until the current phase is completed"
+    },
+    "answer": "A",
+    "explanation": "Project plans should be living documents that are revised iteratively as requirements and risks change."
+  },
+  {
+    "id": 58,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A software product has high correctness, maintainability and integrity, but many defects are found after release of deployment. Which of the following statements is most appropriate ?",
+    "options": {
+      "A": "Maintainability must be poor",
+      "B": "High quality attributes always imply high DRE",
+      "C": "The software cannot be correct",
+      "D": "DRE (Defect removal) measures the effectiveness of defect removal, not software quality attributes"
+    },
+    "answer": "D",
+    "explanation": "Defect Removal Efficiency, DRE = E/(E + D), measures how well defects were removed before release. It is a separate metric from quality attributes such as correctness and maintainability."
+  },
+  {
+    "id": 59,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Consider the set of Natural numbers N and the following arithmetic statements.\nI. A single counter example is logically sufficient to completely disprove a universally quantified statement like ∀x P(x)\nII. If a|b and b|c, then a|c ∀ a, b, c ∈N\nWhich of the above statements are correct ?",
+    "options": {
+      "A": "Both I and II",
+      "B": "Only I",
+      "C": "Only II",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "One counterexample refutes ∀x P(x), and divisibility is transitive (b = ak and c = bm give c = a(km)). Both statements are true."
+  },
+  {
+    "id": 60,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A company establishes a Virtual Private Network (VPN) between its headquarters and a branch office using IP Sec. The network administrator wants to ensure that every IP packet is authenticated, its integrity is verified, and its payload remains confidential, while also supporting protection against replay attacks.\nWhich of the following IP Sec protocol should be selected to satisfy all these security requirements ?",
+    "options": {
+      "A": "Internet Key Exchange (IKE)",
+      "B": "Authentication Header (AH)",
+      "C": "Encapsulating Security Payload (ESP)",
+      "D": "Secure Socket Layer (SSL)"
+    },
+    "answer": "C",
+    "explanation": "ESP provides confidentiality (encryption) together with authentication, integrity and anti-replay. AH provides no confidentiality."
+  },
+  {
+    "id": 61,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Assertion (A) : Interrupt driven I/O improves CPU utilization compared to programmed I/O.\nReason (R) : The CPU is free to execute other instructions until an interrupt occurs.\nChoose the correct option :",
+    "options": {
+      "A": "(A) is true, but (R) is false",
+      "B": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "C": "Both (A) and (R) are true, but (R) is not the correct explanation of (A)",
+      "D": "(A) is false, but (R) is true"
+    },
+    "answer": "B",
+    "explanation": "With interrupts the CPU does not busy-wait, so it executes other work until the device interrupts. That is why utilisation improves."
+  },
+  {
+    "id": 62,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "What is the address mapping function for a two dimensional array A [i] [j] stored in row major order, where the lower bounds are 0, w is the element size in bytes and N represents the total no. of columns ?",
+    "options": {
+      "A": "Base (A) + (i × N + j) × W",
+      "B": "Base (A) + (j × N + i) × W",
+      "C": "Base (A) + (i × M + j) × W",
+      "D": "Base (A) + (j × M + i) × W"
+    },
+    "answer": "A",
+    "explanation": "In row-major order, i full rows of N elements precede row i and then j elements precede column j, so the address is Base + (i·N + j)·W."
+  },
+  {
+    "id": 63,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which of the following statements about binary tree is incorrect ?",
+    "options": {
+      "A": "Every node in a binary tree may have a left child, a right child, both or neither.",
+      "B": "A binary tree with one child per node is identical to an ordered, oriented tree with one child per node, because both only have one child at that node.",
+      "C": "A binary tree can be empty.",
+      "D": "Whether a child is left child or a right child is a distinguishing feature of a binary tree."
+    },
+    "answer": "B",
+    "explanation": "In a binary tree a lone child is still either a left or a right child, so such trees differ from ordered trees where a single child has no left/right distinction."
+  },
+  {
+    "id": 64,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Arrange the following steps of memory read cycle in correct order.\n1. CPU reads the data\n2. Memory read signal activated\n3. Address placed on address bus\n4. Data becomes available\nChoose the correct option :",
+    "options": {
+      "A": "2 → 1 → 4 → 3",
+      "B": "1 → 2 → 3 → 4",
+      "C": "4 → 3 → 2 → 1",
+      "D": "3 → 2 → 4 → 1"
+    },
+    "answer": "D",
+    "explanation": "The address is placed on the bus, then MEMR is asserted, then memory places the data, and finally the CPU latches it."
+  },
+  {
+    "id": 65,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Suppose an attacker obtains only the private verification key of a digital signature scheme. Which of the following is the maximum capability the attacker gains ?",
+    "options": {
+      "A": "Verify whether an existing signature is genuine",
+      "B": "Generate valid signatures for arbitrary messages",
+      "C": "Recover the private signing key",
+      "D": "Decrypt all signed messages"
+    },
+    "answer": "A",
+    "explanation": "A verification key only allows signatures to be checked. Forging needs the signing key, which cannot be derived from the verification key."
+  },
+  {
+    "id": 66,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "What is the main advantage of memory-mapped I/O over port-mapped I/O ?",
+    "options": {
+      "A": "It uses regular load/store instructions and hides I/O port addresses from the programmer via virtual address mapping",
+      "B": "It requires dedicated in/out instructions specific to each mother board",
+      "C": "It only works with PCI express bus",
+      "D": "It eliminates the need for an operating system device driver entirely"
+    },
+    "answer": "A",
+    "explanation": "Memory-mapped I/O places device registers in the address space, so ordinary load/store instructions (and virtual memory protection) can be used."
+  },
+  {
+    "id": 67,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Match List – I with List – II.\nList – I: A. Sliding window protocol/Framing  B. Border Gateway Protocol/Routing  C. Three way hand shake/congestion control  D. ASN.1/Data compression\nList – II: 1. Data Link layer  2. Network layer  3. Transport layer  4. Presentation layer\nChoose the correct option.",
+    "options": {
+      "A": "A – 1 B – 3 C – 2 D – 4",
+      "B": "A – 1 B – 2 C – 3 D – 4",
+      "C": "A – 4 B – 3 C – 2 D – 1",
+      "D": "A – 4 B – 2 C – 3 D – 1"
+    },
+    "answer": "B",
+    "explanation": "Framing and sliding window belong to the data link layer and BGP routing to the network layer. The three-way handshake and congestion control are transport, and ASN.1 and compression are presentation."
+  },
+  {
+    "id": 68,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which of the following statements correctly describes polling ?",
+    "options": {
+      "A": "A dedicated DMA engine transfers data without processor involvement",
+      "B": "The I/O device interrupts the processor whenever it becomes free",
+      "C": "The preprocessor repeatedly queries a device's status register until it reaches the desired state",
+      "D": "The device sends a vectored interrupt containing a unique device ID"
+    },
+    "answer": "C",
+    "explanation": "Polling means the processor repeatedly checks a device's status register (busy-waiting). Note: 'preprocessor' in the option is a typo for processor."
+  },
+  {
+    "id": 69,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which of the following is NOT correctly matched ?",
+    "options": {
+      "A": "Count sort : Non stable, in-place, O(n²) worst case, non linear",
+      "B": "Merge sort : Stable, not in-place, O(n log n) worst case",
+      "C": "Insertion sort : Stable, in-place, O(n²) worst case",
+      "D": "Bubble sort : Stable, O(n²) worst case"
+    },
+    "answer": "A",
+    "explanation": "Counting sort is stable and not in-place, and runs in linear O(n + k) time, so option (a) is wrongly matched."
+  },
+  {
+    "id": 70,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "An organization digitally sign software updates before distributing them to users. During transmission, an attacker intercepts the update but is unable to generate a new valid signature after modifying the contents. Which of the following property of a digital signature primarily prevents the attacker from creating a valid signature for the modified software ?",
+    "options": {
+      "A": "The message is encrypted using a symmetric session key before signing",
+      "B": "The sender's 'private key' is required to generate the signature",
+      "C": "The receiver's public key is kept secret from attackers",
+      "D": "The hash function prevents anyone from reading message"
+    },
+    "answer": "B",
+    "explanation": "Only the holder of the signer's private key can produce a valid signature, so the attacker cannot re-sign the modified update."
+  },
+  {
+    "id": 71,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "An organization encrypts all confidential data transmitted over its network. However, an attacker captures a valid authenticated transaction and retransmits it later to gain unauthorized access without modifying the original message. Which security service should be implemented in addition to encryption to most effectively prevent this attack ?\nChoose the correct answer from the following :",
+    "options": {
+      "A": "Authentication (with freshness protection, e.g. timestamps/nonces)",
+      "B": "Confidentiality",
+      "C": "Data integrity",
+      "D": "Access control"
+    },
+    "answer": "A",
+    "explanation": "This is a replay attack. It is defeated by authentication with freshness (nonces, timestamps or sequence numbers)."
+  },
+  {
+    "id": 72,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which of the following statements correctly describes a PERT network diagram ?",
+    "options": {
+      "A": "It is used only often project completion.",
+      "B": "It represents only project cost.",
+      "C": "It shows activities, dependencies and possible project completion time using optimistic, most likely and pessimistic time estimates.",
+      "D": "It replaces project planning completely."
+    },
+    "answer": "C",
+    "explanation": "PERT models activities and dependencies with three time estimates, te = (o + 4m + p)/6."
+  },
+  {
+    "id": 73,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "In call by value results (copy-in/copy-out)",
+    "options": {
+      "A": "Only address is copied",
+      "B": "A formal parameter is an alias of the actual parameter",
+      "C": "Actual parameter is copied to the formal parameter on entry and copied back on exit",
+      "D": "Formal parameter is initialized to NULL"
+    },
+    "answer": "C",
+    "explanation": "In call by value-result, the value is copied in on entry and the final value is copied back to the actual parameter on return."
+  },
+  {
+    "id": 74,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A hospital IT team replaces its heap file storage engine with a B+-tree indexed storage engine to speed-up patient lookups. No application code, reports or user-facing views change as a result. Which architectural property is being exploited and which schema level absorbs the modification ?",
+    "options": {
+      "A": "No independence is involved , since any storage engine change necessarily forces application re-writes",
+      "B": "Logical data independence, absorbed at the conceptual schema",
+      "C": "View independence ; absorbed at the external schema",
+      "D": "Physical data independence ; absorbed at the internal schema, leaving the conceptual and external schema untouched"
+    },
+    "answer": "D",
+    "explanation": "Changing file organisation or indexes is a change to the internal (physical) schema, and physical data independence keeps the higher levels unchanged."
+  },
+  {
+    "id": 75,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "In relational Algebra, what specific condition of the following must two relation (R and S) satisfy before set theoretic operation like UNION, INTERSECTION or SET DIFFERENCE can be applied to them ?",
+    "options": {
+      "A": "They must have a different number of attributes",
+      "B": "They must contain the exact same tuples",
+      "C": "They must be union compatible",
+      "D": "They must share the same relation name"
+    },
+    "answer": "C",
+    "explanation": "Set operations require union (type) compatibility: the same degree and compatible domains for corresponding attributes."
+  },
+  {
+    "id": 76,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "What fundamentally causes 'the lost update problem' in a database system ?\nChoose the correct answer from the following :",
+    "options": {
+      "A": "Two transactions having their operations interleaved such that one reads a database items value before the other changes it, causing the first transactions update to be overwritten and lost",
+      "B": "A hardware failure that prevents a transaction from writing its final computed value to the disk",
+      "C": "Two transactions attempting to read the same database item simultaneously without applying any modification",
+      "D": "A single transaction failing to commit, forcing the system to restore the database to an older, outdated state"
+    },
+    "answer": "A",
+    "explanation": "A lost update happens when interleaved read-modify-write sequences cause one transaction's write to overwrite the other's."
+  },
+  {
+    "id": 77,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which of the following statement is NOT correct ?",
+    "options": {
+      "A": "Predicate logic allows variables",
+      "B": "Quantifiers apply to predicates",
+      "C": "Predicate logic is more expressive than propositional logic",
+      "D": "Predicate logic has no quantifiers"
+    },
+    "answer": "D",
+    "explanation": "Predicate (first-order) logic includes the quantifiers ∀ and ∃, so statement (d) is false."
+  },
+  {
+    "id": 78,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "During project evaluation, a software organization rejects a technically feasible project because the expected financial returns are lower than the organizations minimum acceptable rate of return.\nWhich of the following project evaluation technique is primarily responsible for this decision ?",
+    "options": {
+      "A": "Gantt Chart",
+      "B": "Work Breakdown Structure (WBS)",
+      "C": "Internal Rate of Return (IRR)",
+      "D": "PERT network diagram"
+    },
+    "answer": "C",
+    "explanation": "Under the IRR technique, a project is rejected when its IRR is below the hurdle rate (the minimum acceptable rate of return)."
+  },
+  {
+    "id": 79,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which of the following examples correctly illustrates a scenario where a variable's life time continues, but its scope is suspended/inactive ?",
+    "options": {
+      "A": "A local variable in a calling subprogram when execution control calls a nested/child subprogram that redeclares the same identifier",
+      "B": "A local variable declared inside a subprogram after the subprogram has returned",
+      "C": "A heap allocated object before its reference pointer is assigned",
+      "D": "A global static variable before the main program execution begins"
+    },
+    "answer": "A",
+    "explanation": "The caller's local variable is still alive (its frame is on the stack), but it is hidden while the callee redeclares the same name."
+  },
+  {
+    "id": 80,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "SMTP is mainly used to send e-mail between mail servers. Which of the following protocol is commonly used by a user's mail client to retrieve and manage emails stored on the mail server ?",
+    "options": {
+      "A": "RIP",
+      "B": "IMAP",
+      "C": "ARP",
+      "D": "OSPF"
+    },
+    "answer": "B",
+    "explanation": "IMAP lets clients retrieve and manage mail kept on the server. RIP and OSPF are routing protocols, and ARP resolves addresses."
+  },
+  {
+    "id": 81,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Assertion (A) : Encryption alone does not guarantee integrity.\nReason (R) : An attacker may modify cipher text without necessarily learning the plaintext.\nChoose the correct option.",
+    "options": {
+      "A": "(A) is true, but (R) is false",
+      "B": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+      "C": "Both (A) and (R) are true, but (R) is not the correct explanation of (A)",
+      "D": "(A) is false, but (R) is true"
+    },
+    "answer": "B",
+    "explanation": "Ciphertext can be altered (for example by bit-flipping in stream or CTR modes) without knowing the key or plaintext. That is why a MAC or AEAD is needed for integrity."
+  },
+  {
+    "id": 82,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "How is dynamic method binding (polymorphism) efficiently implemented in compilers for language like C++ ?",
+    "options": {
+      "A": "By performing string search lookups of method names in class dictionaries at runtime",
+      "B": "By recompiling class hierarchy code every time a virtual function call occurs",
+      "C": "Through virtual method tables (vtables) containing pointers to dynamically bound functions, with instance vptr offsets",
+      "D": "By inline expansion of all polymorphic methods inside calling stack frames"
+    },
+    "answer": "C",
+    "explanation": "C++ compilers give each polymorphic class a vtable of function pointers, and each object holds a vptr to it, so a virtual call is an indexed indirect call."
+  },
+  {
+    "id": 83,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "In a daisy chain arbitration scheme, why does the device physically closest to the arbiter get the highest priority ?",
+    "options": {
+      "A": "Because it consumes the least power",
+      "B": "Because it has the fastest clock signal",
+      "C": "Because the token is passed starting from the arbiter, so the nearest device receives it first",
+      "D": "Because it uses a dedicated point-to-point bus"
+    },
+    "answer": "C",
+    "explanation": "The grant signal ripples from the arbiter through the devices in series, so the nearest requesting device captures it first."
+  },
+  {
+    "id": 84,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A pipelined processor is executing program P and an interrupt handler begins. According to the text book's definition of a precise interrupt/exception, which of the following condition must hold ?",
+    "options": {
+      "A": "The interrupt handler must execute before any instruction of P enters the pipeline",
+      "B": "All instructions in P must be flushed immediately regardless of completion state",
+      "C": "Every instruction before the last-completed instruction I(k) must have completed and no instruction after I(k) may complete before the handler finishes",
+      "D": "Only store instruction need to be checked for precise exceptions"
+    },
+    "answer": "C",
+    "explanation": "A precise interrupt means all instructions before the faulting or last-completed instruction have finished and none after it have modified the state."
+  },
+  {
+    "id": 85,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Consider the following statements :\ni. T is a tree of node n if and only if it contains exactly (n – 1) edges and has no cycle.\nii. Adding a single edge between any two non-adjacent vertices of a tree creates exactly two distinct cycles.\nWhich of the above statements are true ?",
+    "options": {
+      "A": "Both i and ii",
+      "B": "i only",
+      "C": "ii only",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "explanation": "An acyclic graph with n − 1 edges is a tree, so (i) is true. Adding an edge to a tree creates exactly one cycle, so (ii) is false."
+  },
+  {
+    "id": 86,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Based on the recursive definition of a tree, which of the following is true ?",
+    "options": {
+      "A": "A single node by itself qualifies as a tree and is also its own root",
+      "B": "A tree must always have atleast two nodes",
+      "C": "Every node in a tree must have exactly two children",
+      "D": "A tree cannot have a node with zero children"
+    },
+    "answer": "A",
+    "explanation": "The basis of the recursive definition says a single node is a tree, and that node is the root."
+  },
+  {
+    "id": 87,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Why is the partially ordered tree (heap) data structure well suited for implementing heap sort abstract algorithm ?",
+    "options": {
+      "A": "Because it always keeps the array in fully sorted order at every step",
+      "B": "Because it supports INSERT and DELETE MIN in O(log n) time per operation",
+      "C": "Because it requires no extra array space",
+      "D": "Because it supports arbitrary DELETE of any element in O(1) time"
+    },
+    "answer": "B",
+    "explanation": "A partially ordered tree supports INSERT and DELETEMIN in O(log n), so n of each gives an O(n log n) sort (Aho, Hopcroft and Ullman)."
+  },
+  {
+    "id": 88,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A divide-and-conquer sorting algorithm partitions an array around a pivot element. Suppose every partition divides, the array into two subarrays of sizes n – 1 and 0. What is the resulting asymptotic running time of the algorithm ?\nChoose the correct answer from the following.",
+    "options": {
+      "A": "θ (n²)",
+      "B": "θ (n log n)",
+      "C": "θ (n)",
+      "D": "θ (log n)"
+    },
+    "answer": "A",
+    "explanation": "T(n) = T(n−1) + θ(n) gives θ(n²), the worst case of quicksort."
+  },
+  {
+    "id": 89,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "In an array based stack implementation, in which direction does the stack grow ?\nChoose the correct answer from the following.",
+    "options": {
+      "A": "The stack does not use an array in this implementation",
+      "B": "From the high-indexed end (bottom, anchored ) toward the low-indexed end (top)",
+      "C": "From the low index end (top) toward the high-indexed end (bottom, anchored)",
+      "D": "It grows in both direction simultaneously"
+    },
+    "answer": "B",
+    "explanation": "In Aho, Hopcroft and Ullman's array implementation, the bottom is anchored at the high-indexed end and the stack grows toward lower indices."
+  },
+  {
+    "id": 90,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which one of the following statements about little-o and little-w notation is correct ?",
+    "options": {
+      "A": "Every function is O(g(n)) also belongs to o(g(n))",
+      "B": "If f(n) = o(g(n)), then f(n) is an asymptotically tight upper bound of g(n)",
+      "C": "If f(n) = w(g(n)), then g(n) = o(f(n))",
+      "D": "If f(n) = o(g(n)); then f(n) = θ(g(n))"
+    },
+    "answer": "C",
+    "explanation": "f = ω(g) if and only if g = o(f), the transpose symmetry. Little-o is a strict (non-tight) bound, so the other options are wrong."
+  },
+  {
+    "id": 91,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "A fund-transfer transaction debits account A and credits account B. The system crashes after the debit is written to disk but before the credit is applied. Which acid property enforced correctly by the recovery subsystem guarantees that on restart the partial debit is rolled back so no money simply vanishes ?",
+    "options": {
+      "A": "Isolation",
+      "B": "Atomicity",
+      "C": "Consistency",
+      "D": "Durability"
+    },
+    "answer": "B",
+    "explanation": "Atomicity (all or nothing) is enforced by the recovery manager undoing the partial transaction."
+  },
+  {
+    "id": 92,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Scenario : A databases disk fails on Wednesday, destroying the database and system log. Full backups occur every Sunday ; system logs are backed up hourly. How can the manager restore to its most recent consistent state without loosing transactions between Sunday and Wednesday ?",
+    "options": {
+      "A": "Load only the hourly logs to resume operations",
+      "B": "Use the shadow directory to bypass tape backups",
+      "C": "Restore the Sunday backup and redo committed transactions from the hourly logs",
+      "D": "Restore only the Sunday backup and accept data loss"
+    },
+    "answer": "C",
+    "explanation": "Recovery from catastrophic failure restores the last full backup and then REDOes committed transactions from the archived logs."
+  },
+  {
+    "id": 93,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "What is the effect of choosing the number of buckets B to be roughly as large as the number of elements N when using open hashing ?\nChoose the correct option from the following.",
+    "options": {
+      "A": "Every bucket becomes empty",
+      "B": "It has no effect on the performance of dictionary operation",
+      "C": "The average bucket has only one or two members, so dictionary operation take a small constant number of steps on average",
+      "D": "It guarantees worst case O(N) performance for all operations"
+    },
+    "answer": "C",
+    "explanation": "With B ≈ N the load factor is about 1, so the average chain length is constant and operations take O(1) on average."
+  },
+  {
+    "id": 94,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "In the quicksort partitioning scheme, after the cursors l and r finally cross, what is true of the subarray ?",
+    "options": {
+      "A": "A[i], ...., A[l – 1] contains all keys less than pivot, and A[r + 1], ... A[j] contains all keys equal to or greater than the pivot",
+      "B": "All elements in the subarray are now fully sorted",
+      "C": "The pivot element is discarded from the array",
+      "D": "A[i], ...., A[l – 1] contains keys equal to or greater than the pivot and A[r + 1], ..., A[j] contains keys less than the pivot"
+    },
+    "answer": "A",
+    "explanation": "In Aho, Hopcroft and Ullman's partition, l moves right over keys smaller than the pivot and r moves left over keys ≥ the pivot. When they cross, the left part holds the smaller keys and the right part the keys ≥ the pivot."
+  },
+  {
+    "id": 95,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Match List – I with List – II.\nList – I: A. Address Bus  B. Data Bus  C. Control Bus  D. System Bus\nList – II: 1. Transfer data  2. Transfers memory address  3. Control signals  4. Combination of all buses\nChoose the correct option :",
+    "options": {
+      "A": "A – 2, B – 1, C – 3, D – 4",
+      "B": "A – 1, B – 2, C – 3, D – 4",
+      "C": "A – 4, B – 3, C – 2, D – 1",
+      "D": "A – 3, B – 4, C – 1, D – 2"
+    },
+    "answer": "A",
+    "explanation": "The address bus carries addresses, the data bus carries data, and the control bus carries control signals. The system bus is the combination of all three."
+  },
+  {
+    "id": 96,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Packets 1, 2, 3, 4 and 5 are transmitted.\nPacket 2 is lost in transit , while packet 3, 4 and 5 reach the receiver successfully.\nWhich statement correctly describes the behavior of Go-Back-N (GBN) and Selective Repeat (SR) ?",
+    "options": {
+      "A": "SR discards all correctly received out-of-order packets",
+      "B": "GBN may retransmit packet 2 and all subsequent unacknowledged packets, whereas SR retransmits only the missing packet",
+      "C": "Both protocols retransmit every packet from the beginning",
+      "D": "GBN never uses acknowledgements"
+    },
+    "answer": "B",
+    "explanation": "The GBN receiver discards out-of-order packets, so the sender resends 2, 3, 4 and 5. SR buffers 3 to 5 and resends only packet 2."
+  },
+  {
+    "id": 97,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Why are technologies such as MTA-STS used in email communication ?",
+    "options": {
+      "A": "They replace the need for digital certificates in secure email communication",
+      "B": "They ensure that mail servers exchange emails only over authenticated TLS connections, reducing the risk of interception and down grade attacks",
+      "C": "They automatically encrypt all emails stored in a user's mail box",
+      "D": "They prevent all spam emails from reaching the recipient"
+    },
+    "answer": "B",
+    "explanation": "MTA-STS (SMTP MTA Strict Transport Security) requires validated TLS between mail servers, blocking STARTTLS-downgrade and man-in-the-middle attacks."
+  },
+  {
+    "id": 98,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "In the formal definition of a B-tree of order m, which of the following is one of its defining properties ?",
+    "options": {
+      "A": "Paths from the root to different leaves may have different lengths",
+      "B": "Every node, including the root and leaves, must have exactly m children",
+      "C": "Each node, except the root and the leaves, has between ⌈m/2⌉ and m children",
+      "D": "The root must always have exactly m children"
+    },
+    "answer": "C",
+    "explanation": "Internal non-root nodes of a B-tree of order m have between ⌈m/2⌉ and m children. All leaves are at the same depth, and the root has between 2 and m children."
+  },
+  {
+    "id": 99,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Which of the following statements are true ?\n1. Every θ (f(n)) is also O (f(n))\n2. Every θ (f(n)) is also Ω (f(n))\n3. Every O (f(n)) is also θ (f(n))\n4. Every Ω (f(n)) is also θ (f(n))\nChoose the correct option :",
+    "options": {
+      "A": "1 and 3 only",
+      "B": "1, 2 and 3 only",
+      "C": "2, 3 and 4 only",
+      "D": "1 and 2 only"
+    },
+    "answer": "D",
+    "explanation": "θ is both O and Ω, so 1 and 2 hold. An O or Ω bound alone need not be tight, so 3 and 4 fail."
+  },
+  {
+    "id": 100,
+    "source_file": "UPPSC_POLYTECHNIC_CS_PAPER1",
+    "question": "Consider the scheme :\nOrders (OrderID, Customer ID, Amount) its instance has 10 rows total; 3 of them have Amount = NULL because those orders are still pending. What does SELECT COUNT (*), COUNT (Amount), AVG (Amount). FROM orders; return ?",
+    "options": {
+      "A": "COUNT(*) = 10, COUNT (Amount) = 10, AVG (Amount) = NULL because of the presence of NULLs",
+      "B": "COUNT(*) = 10, COUNT (Amount) = 7 and AVG (Amount) is computed only over the 7 non NULL rows",
+      "C": "COUNT (*) = 7, COUNT (Amount) = 10, AVG treats NULL as 0",
+      "D": "The query raises an error since NULL cannot appear in an aggregated column"
+    },
+    "answer": "B",
+    "explanation": "COUNT(*) counts all rows (10). COUNT(col) and AVG(col) ignore NULLs, so they work over the 7 non-NULL rows."
+  }
+]

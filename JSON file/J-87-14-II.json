@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "source_file": "J-87-14-II",
+    "question": "Infrared signals can be used for short range communication in a closed area using _______ propagation.",
+    "options": {
+      "A": "ground",
+      "B": "sky",
+      "C": "line of sight",
+      "D": "space"
+    },
+    "answer": "C",
+    "explanation": "Infrared needs line-of-sight propagation (it cannot penetrate walls)."
+  },
+  {
+    "id": 2,
+    "source_file": "J-87-14-II",
+    "question": "A bridge has access to _______ address in the same network.",
+    "options": {
+      "A": "Physical",
+      "B": "Network",
+      "C": "Datalink",
+      "D": "Application"
+    },
+    "answer": "A",
+    "explanation": "A bridge filters on physical (MAC) addresses. 'Physical' and 'Datalink' both describe the MAC address; Forouzan's wording is 'physical (MAC) address', so (A) is taken."
+  },
+  {
+    "id": 3,
+    "source_file": "J-87-14-II",
+    "question": "The minimum frame length for 10 Mbps Ethernet is _______ bytes and maximum is _______ bytes.",
+    "options": {
+      "A": "64 & 128",
+      "B": "128 & 1518",
+      "C": "1518 & 3036",
+      "D": "64 & 1518"
+    },
+    "answer": "D",
+    "explanation": "An Ethernet frame is 64 to 1518 bytes."
+  },
+  {
+    "id": 4,
+    "source_file": "J-87-14-II",
+    "question": "The bit rate of a signal is 3000 bps. If each signal unit carries 6 bits, the baud rate of the signal is _______.",
+    "options": {
+      "A": "500 baud/sec",
+      "B": "1000 baud/sec",
+      "C": "3000 baud/sec",
+      "D": "18000 baud/sec."
+    },
+    "answer": "A",
+    "explanation": "Baud = 3000 / 6 = 500."
+  },
+  {
+    "id": 5,
+    "source_file": "J-87-14-II",
+    "question": "Match the following :\nList – I\na. Physical layer\nb. Datalink layer\nc. Network layer\nd. Transport layer\ne. Application Layer\nList – II\ni. Allow resources to network access\nii. Move packets from one destination to other\niii. Process to process message delivery\niv. Transmission of bit stream\nv. Formation of frames",
+    "options": {
+      "A": "a-iv, b-v, c-ii, d-iii, e-i",
+      "B": "a-v, b-iv, c-i, d-ii, e-iii",
+      "C": "a-i, b-iii, c-ii, d-v, e-iv",
+      "D": "a-i, b-ii, c-iv, d-iii, e-v"
+    },
+    "answer": "A",
+    "explanation": "Physical: bit stream; data link: framing; network: packet delivery; transport: process-to-process; application: resource access."
+  },
+  {
+    "id": 6,
+    "source_file": "J-87-14-II",
+    "question": "A grammar G is LL(1) if and only if the following conditions hold for two distinct productions A → α | β\nI. First (α) ∩ First (β) ≠ {a} where a is some terminal symbol of the grammar.\nII. First (α) ∩ First (β) ≠ λ\nIII. First (α) ∩ Follow (A) = ϕ if λ ∈ First (β)",
+    "options": {
+      "A": "I and II",
+      "B": "I and III",
+      "C": "II and III",
+      "D": "I, II and III"
+    },
+    "answer": "D",
+    "explanation": "All three are the LL(1) conditions: α and β start with no common terminal, at most one derives λ, and if β ⇒* λ then First(α) and Follow(A) are disjoint."
+  },
+  {
+    "id": 7,
+    "source_file": "J-87-14-II",
+    "question": "Which of the following suffices to convert an arbitrary CFG to an LL(1) grammar ?",
+    "options": {
+      "A": "Removing left recursion alone",
+      "B": "Removing the grammar alone",
+      "C": "Removing left recursion and factoring the grammar",
+      "D": "None of the above"
+    },
+    "answer": "D",
+    "explanation": "Removing left recursion and left factoring are necessary but not sufficient; some CFLs have no LL(1) grammar at all."
+  },
+  {
+    "id": 8,
+    "source_file": "J-87-14-II",
+    "question": "A shift reduce parser suffers from",
+    "options": {
+      "A": "shift reduce conflict only",
+      "B": "reduce reduce conflict only",
+      "C": "both shift reduce conflict and reduce reduce conflict",
+      "D": "shift handle and reduce handle conflicts"
+    },
+    "answer": "C",
+    "explanation": "Shift-reduce parsers can face both shift/reduce and reduce/reduce conflicts."
+  },
+  {
+    "id": 9,
+    "source_file": "J-87-14-II",
+    "question": "The context free grammar for the language L = {aⁿbᵐcᵏ | k = |n – m|, n ≥ 0, m ≥ 0, k ≥ 0} is",
+    "options": {
+      "A": "S → S1S3, S1 → aS1c | S2| λ, S2 → aS2b|λ, S3 → aS3b| S4 | λ, S4 → bS4c|λ",
+      "B": "S → S1S3, S1 → aS1S2c | λ, S2 → aS2b|λ, S3 → aS3b| S4 |λ, S4 → bS4c|λ",
+      "C": "S → S1|S2, S1 → aS1S2c | λ, S2 → aS2b | λ, S3 → aS3b | S4 |λ, S4 → bS4c|λ",
+      "D": "S → S1 | S3, S1 → aS1c|S2 | λ, S2 → aS2b | λ, S3 → a S3b| S4 | λ, S4 → bS4c | λ"
+    },
+    "answer": "D",
+    "explanation": "Split on n ≥ m: aⁿ⁻ᵐ(aᵐbᵐ)cⁿ⁻ᵐ via S1 → aS1c | S2, or m ≥ n via S3, joined by a union S → S1 | S3. Only (D) has this union structure. (S3 → aS3b | S4 as printed nests S4 wrongly; it should be S3 → S2 S4, so the grammar is flawed but (D) is intended.)"
+  },
+  {
+    "id": 10,
+    "source_file": "J-87-14-II",
+    "question": "The regular grammar for the language L = {w|na(w) and nb(w) are both even, w ∈ {a, b}*} is given by :\n(Assume, p, q, r and s are states)",
+    "options": {
+      "A": "p → aq | br | λ, q → bs | ap\nr → as | bp, s → ar | bq, p and s are initial and final states.",
+      "B": "p → aq | br, q → bs | ap\nr → as | bp, s → ar | bq, p and s are initial and final states.",
+      "C": "p → aq | br | λ, q → bs | ap\nr → as | bp, s → ar | bq\np is both initial and final states.",
+      "D": "p → aq | br, q → bs | ap\nr → as | bp, s → ar | bq\np is both initial and final states."
+    },
+    "answer": "C",
+    "explanation": "p = (even a, even b) must be both start and accepting (hence p → λ); q, r, s track the other parity combinations."
+  },
+  {
+    "id": 11,
+    "source_file": "J-87-14-II",
+    "question": "KPA in CMM stands for",
+    "options": {
+      "A": "Key Process Area",
+      "B": "Key Product Area",
+      "C": "Key Principal Area",
+      "D": "Key Performance Area"
+    },
+    "answer": "A",
+    "explanation": "Key Process Area."
+  },
+  {
+    "id": 12,
+    "source_file": "J-87-14-II",
+    "question": "Which one of the following is not a risk management technique for managing the risk due to unrealistic schedules and budgets ?",
+    "options": {
+      "A": "Detailed multi source cost and schedule estimation.",
+      "B": "Design cost",
+      "C": "Incremental development",
+      "D": "Information hiding"
+    },
+    "answer": "D",
+    "explanation": "Boehm's techniques for unrealistic schedules and budgets: detailed multi-source estimation, design to cost, incremental development, software reuse, requirements scrubbing. Information hiding is a design principle."
+  },
+  {
+    "id": 13,
+    "source_file": "J-87-14-II",
+    "question": "_______ of a system is the structure or structures of the system which comprise software elements, the externally visible properties of these elements and the relationship amongst them.",
+    "options": {
+      "A": "Software construction",
+      "B": "Software evolution",
+      "C": "Software architecture",
+      "D": "Software reuse"
+    },
+    "answer": "C",
+    "explanation": "This is Bass, Clements and Kazman's definition of software architecture."
+  },
+  {
+    "id": 14,
+    "source_file": "J-87-14-II",
+    "question": "In function point analysis, the number of complexity adjustment factors is",
+    "options": {
+      "A": "10",
+      "B": "12",
+      "C": "14",
+      "D": "20"
+    },
+    "answer": "C",
+    "explanation": "There are 14 value adjustment factors (Fi)."
+  },
+  {
+    "id": 15,
+    "source_file": "J-87-14-II",
+    "question": "Regression testing is primarily related to",
+    "options": {
+      "A": "Functional testing",
+      "B": "Development testing",
+      "C": "Data flow testing",
+      "D": "Maintenance testing"
+    },
+    "answer": "D",
+    "explanation": "Regression testing re-tests after changes, mainly during maintenance."
+  },
+  {
+    "id": 16,
+    "source_file": "J-87-14-II",
+    "question": "How many different truth tables of the compound propositions are there that involve the propositions p & q ?",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "8",
+      "D": "16"
+    },
+    "answer": "D",
+    "explanation": "There are 4 rows, each 0/1, giving 2⁴ = 16 distinct truth tables."
+  },
+  {
+    "id": 17,
+    "source_file": "J-87-14-II",
+    "question": "A Boolean function F is called self-dual if and only if\nF(x1, x2, … xn) = F(x̄1, x̄2, … x̄n)‾\nHow many Boolean functions of degree n are self-dual ?",
+    "options": {
+      "A": "2ⁿ",
+      "B": "(2)^(2ⁿ)",
+      "C": "(2)^(n²)",
+      "D": "(2)^(2ⁿ⁻¹)"
+    },
+    "answer": "D",
+    "explanation": "Values on half of the 2ⁿ inputs determine the other half, so there are 2^(2ⁿ⁻¹) self-dual functions."
+  },
+  {
+    "id": 18,
+    "source_file": "J-87-14-II",
+    "question": "Which of the following statement(s) is (are) not correct ?\ni. The 2's complement of 0 is 0.\nii. In 2's complement, the left most bit cannot be used to express a quantity.\niii. For an n-bit word (2's complement) which includes the sign bit, there are 2ⁿ⁻¹ positive integers, 2ⁿ⁺¹ negative integers and one 0 for a total of 2ⁿ unique states.\niv. In 2's complement the significant information is contained in the 1's of positive numbers and 0's of the negative numbers.",
+    "options": {
+      "A": "i & iv",
+      "B": "i & ii",
+      "C": "iii",
+      "D": "iv"
+    },
+    "answer": "C",
+    "explanation": "(iii) is wrong: there are 2ⁿ⁻¹ − 1 positive and 2ⁿ⁻¹ negative values, not 2ⁿ⁺¹. The other statements are correct."
+  },
+  {
+    "id": 19,
+    "source_file": "J-87-14-II",
+    "question": "The notation ∃!xP(x) denotes the proposition “there exists a unique x such that P(x) is true”.\nGive the truth values of the following statements :\nI. ∃!xP(x) → ∃xP(x)\nII. ∃!x ¬ P(x) → ¬∀xP(x)",
+    "options": {
+      "A": "Both I & II are true.",
+      "B": "Both I & II are false.",
+      "C": "I – false, II – true",
+      "D": "I – true, II – false"
+    },
+    "answer": "A",
+    "explanation": "A unique witness is in particular a witness, so I is valid. If exactly one x has ¬P(x), then not all x have P(x), so II is valid."
+  },
+  {
+    "id": 20,
+    "source_file": "J-87-14-II",
+    "question": "Give a compound proposition involving propositions p, q and r that is true when exactly two of p, q and r are true and is false otherwise.",
+    "options": {
+      "A": "(p∨q∧¬r) ∧ (p∧¬q∧r) ∧ (¬p∧q∧r)",
+      "B": "(p∧q∧¬r) ∧ (p∨q∧¬r) ∧ (¬p∧q∧r)",
+      "C": "(p∧q∧¬r) ∨ (p∧¬q∧r) ∧ (¬p∧q∧r)",
+      "D": "(p∧q∧¬r) ∨ (p∧¬q∧r) ∨ (¬p∧q∧r)"
+    },
+    "answer": "D",
+    "explanation": "The disjunction of the three minterms with exactly two variables true."
+  },
+  {
+    "id": 21,
+    "source_file": "J-87-14-II",
+    "question": "Consider the graph given below as :\n[Bipartite graph on u1–u4 (top) and u5–u8 (bottom); each top vertex is joined to three bottom vertices, i.e. K4,4 minus a perfect matching]\nWhich one of the following graph is isomorphic to the above graph ?\n(Options are drawings on v1–v8.)",
+    "options": {
+      "A": "Square v1v2v3v4 with an inner zig-zag through v6, v7, v5, v8 (contains odd cycles)",
+      "B": "Square v1v2v3v4 with an inner quadrilateral v6v7v8v5 joined by diagonals to v1 and v4",
+      "C": "Outer square v1v2v3v4 and inner square v6v7v8v5 with corners joined (cube graph)",
+      "D": "Outer square and inner square with an extra diagonal v6–v8"
+    },
+    "answer": "C",
+    "explanation": "K4,4 minus a perfect matching is the 3-cube Q3: 3-regular, bipartite, 8 vertices. Option (C) is the cube drawing; the others contain odd cycles (triangles) or the wrong degrees."
+  },
+  {
+    "id": 22,
+    "source_file": "J-87-14-II",
+    "question": "The upper bound and lower bound for the number of leaves in a B-tree of degree K with height h is given by :",
+    "options": {
+      "A": "Kʰ and 2⌈K/2⌉ʰ⁻¹",
+      "B": "K*h and 2⌊K/2⌋ʰ⁻¹",
+      "C": "Kʰ and 2⌊K/2⌋ʰ⁻¹",
+      "D": "K*h and 2⌈K/2⌉ʰ⁻¹"
+    },
+    "answer": "A",
+    "explanation": "At most every node has K children (Kʰ leaves); at least the root has 2 children and the others ⌈K/2⌉, giving 2⌈K/2⌉ʰ⁻¹."
+  },
+  {
+    "id": 23,
+    "source_file": "J-87-14-II",
+    "question": "Consider a complete bipartite graph kₘ,ₙ. For which values of m and n does this, complete graph have a Hamilton circuit",
+    "options": {
+      "A": "m = 3, n = 2",
+      "B": "m = 2, n = 3",
+      "C": "m = n ≥ 2",
+      "D": "m = n ≥ 3"
+    },
+    "answer": "C",
+    "explanation": "Kₘ,ₙ has a Hamiltonian circuit iff m = n ≥ 2."
+  },
+  {
+    "id": 24,
+    "source_file": "J-87-14-II",
+    "question": "Big-O estimates for the factorial function and the logarithm of the factorial function i.e. n! and log n! is given by",
+    "options": {
+      "A": "O(n!) and O(n log n)",
+      "B": "O(nⁿ) and O(n log n)",
+      "C": "O(n!) and O(log n!)",
+      "D": "O(nⁿ) and O(log n!)"
+    },
+    "answer": "B",
+    "explanation": "n! ≤ nⁿ, so n! = O(nⁿ) and log n! = O(n log n) (Rosen)."
+  },
+  {
+    "id": 25,
+    "source_file": "J-87-14-II",
+    "question": "How many cards must be chosen from a deck to guarantee that atleast\ni. two aces of two kinds are chosen.\nii. two aces are chosen.\niii. two cards of the same kind are chosen.\niv. two cards of two different kinds are chosen.",
+    "options": {
+      "A": "50, 50, 14, 5",
+      "B": "51, 51, 15, 7",
+      "C": "52, 52, 14, 5",
+      "D": "51, 51, 14, 5"
+    },
+    "answer": "A",
+    "explanation": "Worst case all 48 non-aces come first, so 50 cards guarantee two aces. With 'kind' = rank: 13 ranks + 1 = 14 guarantees two of the same rank. With 'kind' = suit: 4 suits + 1 = 5 guarantees two of the same suit. The key reads (iii) as 14 and (iv) as 5, so the question is loosely worded."
+  },
+  {
+    "id": 26,
+    "source_file": "J-87-14-II",
+    "question": "Match the following with respect to the mobile computing technologies :\nList – I\na. GPRS\nb. GSM\nc. UMTS\nd. EDGE\nList – II\ni. An integrated digital radio standard\nii. 3G wireless/Mobile technology\niii. Nine different schemes for modulation and error correction\niv. An emerging wireless service that offers a mobile data",
+    "options": {
+      "A": "a-iii, b-iv, c-ii, d-i",
+      "B": "a-iv, b-i, c-ii, d-iii",
+      "C": "a-ii, b-iii, c-iv, d-i",
+      "D": "a-ii, b-i, c-iv, d-iii"
+    },
+    "answer": "B",
+    "explanation": "GPRS: wireless data service; GSM: integrated digital radio standard; UMTS: 3G; EDGE: nine modulation/coding schemes."
+  },
+  {
+    "id": 27,
+    "source_file": "J-87-14-II",
+    "question": "Object Request Broker (ORB) is\nI. A software program that runs on the client as well as on the application server.\nII. A software program that runs on the client side only.\nIII. A software program that runs on the application server, where most of the components reside.",
+    "options": {
+      "A": "I, II & III",
+      "B": "I & II",
+      "C": "II & III",
+      "D": "I only"
+    },
+    "answer": "D",
+    "explanation": "An ORB runs on both the client and the server, so I is correct and II and III (single-side only) are not."
+  },
+  {
+    "id": 28,
+    "source_file": "J-87-14-II",
+    "question": "A software agent is defined as\nI. A software developed for accomplishing a given task.\nII. A computer program which is capable of acting on behalf of the user in order to accomplish a given computational task.\nIII. An open source software for accomplishing a given task.",
+    "options": {
+      "A": "I",
+      "B": "II",
+      "C": "III",
+      "D": "All of the above"
+    },
+    "answer": "B",
+    "explanation": "A software agent acts autonomously on behalf of a user."
+  },
+  {
+    "id": 29,
+    "source_file": "J-87-14-II",
+    "question": "Match the following :\nList – I\na. Classification\nb. Clustering\nc. Feature Extraction\nd. Feature Selection\nList – II\ni. Principal component analysis\nii. Branch and Bound\niii. K-nearest neighbour\niv. K-means",
+    "options": {
+      "A": "a-iii, b-iv, c-ii, d-i",
+      "B": "a-iv, b-iii, c-i, d-ii",
+      "C": "a-iii, b-iv, c-i, d-ii",
+      "D": "a-iv, b-iii, c-ii, d-i"
+    },
+    "answer": "C",
+    "explanation": "Classification: k-NN; clustering: k-means; feature extraction: PCA; feature selection: branch and bound."
+  },
+  {
+    "id": 30,
+    "source_file": "J-87-14-II",
+    "question": "SET, an open encryption and security specification model that is designed for protecting credit card transactions on the internet, stands for",
+    "options": {
+      "A": "Secure Electronic Transaction",
+      "B": "Secular Enterprise for Transaction",
+      "C": "Security Electronic Transmission",
+      "D": "Secured Electronic Termination"
+    },
+    "answer": "A",
+    "explanation": "SET = Secure Electronic Transaction (Visa/MasterCard)."
+  },
+  {
+    "id": 31,
+    "source_file": "J-87-14-II",
+    "question": "In a paged memory management algorithm, the hit ratio is 70%. If it takes 30 nanoseconds to search Translation Look-aside Buffer (TLB) and 100 nanoseconds (ns) to access memory, the effective memory access time is",
+    "options": {
+      "A": "91 ns",
+      "B": "69 ns",
+      "C": "200 ns",
+      "D": "160 ns"
+    },
+    "answer": "D",
+    "explanation": "0.7 × (30 + 100) + 0.3 × (30 + 100 + 100) = 91 + 69 = 160 ns."
+  },
+  {
+    "id": 32,
+    "source_file": "J-87-14-II",
+    "question": "Match the following :\nList – I\na. Multilevel feedback queue\nb. FCFS\nc. Shortest process next\nd. Round robin scheduling\nList – II\ni. Time-slicing\nii. Criteria to move processes between queues\niii. Batch processing\niv. Exponential smoothening",
+    "options": {
+      "A": "a-i, b-iii, c-ii, d-iv",
+      "B": "a-iv, b-iii, c-ii, d-i",
+      "C": "a-iii, b-i, c-iv, d-i",
+      "D": "a-ii, b-iii, c-iv, d-i"
+    },
+    "answer": "D",
+    "explanation": "MLFQ needs criteria to move processes between queues; FCFS suits batch; shortest process next estimates bursts by exponential averaging; RR uses time slicing."
+  },
+  {
+    "id": 33,
+    "source_file": "J-87-14-II",
+    "question": "Consider a system with five processes P0 through P4 and three resource types R1, R2 and R3. Resource type R1 has 10 instances, R2 has 5 instances and R3 has 7 instances. Suppose that at time T0, the following snapshot of the system has been taken :\nAllocation (R1 R2 R3): P0 0 1 0; P1 2 0 0; P2 3 0 2; P3 2 1 1; P4 0 0 2\nMax (R1 R2 R3): P0 7 5 3; P1 3 2 2; P2 9 0 2; P3 2 2 2; P4 4 3 3\nAvailable (R1 R2 R3): 3 3 2\nAssume that now the process P1 requests one additional instance of type R1 and two instances of resource type R3. The state resulting after this allocation will be",
+    "options": {
+      "A": "Ready state",
+      "B": "Safe state",
+      "C": "Blocked state",
+      "D": "Unsafe state"
+    },
+    "answer": "B",
+    "explanation": "Granting (1,0,2) leaves Available = (2,3,0); the sequence ⟨P1, P3, P4, P0, P2⟩ still completes, so the state is safe (Silberschatz example). (P4's allocation is printed as 0 2 2 in one place; it is 0 0 2 in the standard example.)"
+  },
+  {
+    "id": 34,
+    "source_file": "J-87-14-II",
+    "question": "Match the following :\nList – I\na. Contiguous allocation\nb. Linked allocation\nc. Indexed allocation\nd. Multi-level indexed\nList – II\ni. This scheme supports very large file sizes.\nii. This allocation technique supports only sequential files.\niii. Number of disks required to access file is minimal.\niv. This technique suffers from maximum wastage of space in storing pointers.",
+    "options": {
+      "A": "a-iii, b-iv, c-ii, d-i",
+      "B": "a-iii, b-ii, c-iv, d-i",
+      "C": "a-i, b-ii, c-iv, d-iii",
+      "D": "a-i, b-iv, c-ii, d-iii"
+    },
+    "answer": "B",
+    "explanation": "Contiguous: minimal disk seeks; linked: sequential access only; indexed: wastes space on index blocks; multi-level index: very large files."
+  },
+  {
+    "id": 35,
+    "source_file": "J-87-14-II",
+    "question": "Which of the following commands will output “onetwothree” ?",
+    "options": {
+      "A": "for val; do echo-n $val; done < one two three",
+      "B": "for one two three; do echo-n-; done",
+      "C": "for n in one two three; do echo-n $n; done",
+      "D": "for n in one two three {echo –n $ n}"
+    },
+    "answer": "C",
+    "explanation": "for n in one two three; do echo -n $n; done prints the words without newlines: onetwothree."
+  },
+  {
+    "id": 36,
+    "source_file": "J-87-14-II",
+    "question": "Mergesort makes two recursive calls. Which statement is true after these two recursive calls finish, but before the merge step ?",
+    "options": {
+      "A": "The array elements form a heap.",
+      "B": "Elements in each half of the array are sorted amongst themselves.",
+      "C": "Elements in the first half of the array are less than or equal to elements in second half of the array.",
+      "D": "All of the above"
+    },
+    "answer": "B",
+    "explanation": "Each half has been sorted independently; merging combines them."
+  },
+  {
+    "id": 37,
+    "source_file": "J-87-14-II",
+    "question": "A text is made up of the characters α, β, γ, δ and σ with the probability 0.12, 0.40, 0.15, 0.08 and 0.25 respectively. The optimal coding technique will have the average length of",
+    "options": {
+      "A": "1.7",
+      "B": "2.15",
+      "C": "3.4",
+      "D": "3.8"
+    },
+    "answer": "B",
+    "explanation": "Huffman code lengths: β 1, σ 2, γ 3, α 4, δ 4, so 0.40 + 0.50 + 0.45 + 0.48 + 0.32 = 2.15."
+  },
+  {
+    "id": 38,
+    "source_file": "J-87-14-II",
+    "question": "Searching for an element in the hash table requires O(1) time for the ________ time, whereas for direct addressing it holds for the ________ time.",
+    "options": {
+      "A": "worst-case, average",
+      "B": "worst-case, worst-case",
+      "C": "average, worst-case",
+      "D": "best, average"
+    },
+    "answer": "C",
+    "explanation": "Hashing is O(1) on average; direct addressing is O(1) even in the worst case."
+  },
+  {
+    "id": 39,
+    "source_file": "J-87-14-II",
+    "question": "An algorithm is made up of 2 modules M1 and M2. If time complexity of modules M1 and M2 are h(n) and g(n) respectively, the time complexity of the algorithm is",
+    "options": {
+      "A": "min (h(n), g(n))",
+      "B": "max (h(n), g(n))",
+      "C": "h(n) + g(n)",
+      "D": "h(n) * g(n)"
+    },
+    "answer": "B",
+    "explanation": "Sequential modules take h(n) + g(n) = O(max(h(n), g(n))); the key gives max. (C) is equivalent asymptotically."
+  },
+  {
+    "id": 40,
+    "source_file": "J-87-14-II",
+    "question": "What is the maximum number of parenthesis that will appear on the stack at any one time for parenthesis expression given by\n( ( ) ( ( ) ) ( ( ) ) )",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "B",
+    "explanation": "The maximum nesting depth reached is 3."
+  },
+  {
+    "id": 41,
+    "source_file": "J-87-14-II",
+    "question": "Match the following :\nList – I\na. Automatic storage class\nb. Register storage class\nc. Static storage class\nd. External storage class\nList – II\ni. Scope of the variable is global.\nii. Value of the variable persists between different function calls.\niii. Value stored in memory and local to the block in which the variable is defined.\niv. Value stored in CPU registers.",
+    "options": {
+      "A": "a-iii, b-iv, c-ii, d-i",
+      "B": "a-iii, b-iv, c-i, d-ii",
+      "C": "a-iv, b-iii, c-ii, d-i",
+      "D": "a-iv, b-iii, c-i, d-ii"
+    },
+    "answer": "A",
+    "explanation": "auto: in memory, block-local; register: CPU registers; static: persists between calls; extern: global scope."
+  },
+  {
+    "id": 42,
+    "source_file": "J-87-14-II",
+    "question": "When we pass an array as an argument to a function, what actually gets passed ?",
+    "options": {
+      "A": "Address of the array",
+      "B": "Values of the elements of the array",
+      "C": "Base address of the array",
+      "D": "Number of elements of the array"
+    },
+    "answer": "C",
+    "explanation": "The array name decays to a pointer to its first element (the base address)."
+  },
+  {
+    "id": 43,
+    "source_file": "J-87-14-II",
+    "question": "While (87) printf(“computer”);\nThe above C statement will",
+    "options": {
+      "A": "print “computer” 87 times",
+      "B": "print “computer” 0 times",
+      "C": "print “computer” 1 times",
+      "D": "print “computer” infinite times"
+    },
+    "answer": "D",
+    "explanation": "87 is non-zero (always true), so the loop never ends."
+  },
+  {
+    "id": 44,
+    "source_file": "J-87-14-II",
+    "question": "A friend function can be used to",
+    "options": {
+      "A": "avoid arguments between classes.",
+      "B": "allow access to classes whose source code is unavailable.",
+      "C": "allow one class to access an unrelated class.",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "A friend function or class can access the private members of an otherwise unrelated class."
+  },
+  {
+    "id": 45,
+    "source_file": "J-87-14-II",
+    "question": "Which of the following is the correct value returned to the operating system upon the successful completion of a program ?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "– 1",
+      "D": "Program do not return a value."
+    },
+    "answer": "A",
+    "explanation": "By convention main returns 0 (EXIT_SUCCESS) on success."
+  },
+  {
+    "id": 46,
+    "source_file": "J-87-14-II",
+    "question": "Manager's salary details are hidden from the employee. This is called as",
+    "options": {
+      "A": "Conceptual level data hiding",
+      "B": "Physical level data hiding",
+      "C": "External level data hiding",
+      "D": "Local level data hiding"
+    },
+    "answer": "C",
+    "explanation": "Views at the external level hide data from particular users."
+  },
+  {
+    "id": 47,
+    "source_file": "J-87-14-II",
+    "question": "Which of the following statements is false ?",
+    "options": {
+      "A": "Any relation with two attributes is in BCNF.",
+      "B": "A relation in which every key has only one attribute is in 2NF.",
+      "C": "A prime attribute can be transitively dependent on a key in 3NF relation.",
+      "D": "A prime attribute can be transitively dependent on a key in BCNF relation."
+    },
+    "answer": "D",
+    "explanation": "BCNF requires every determinant to be a superkey, so no transitive dependency is possible. 3NF allows it for prime attributes."
+  },
+  {
+    "id": 48,
+    "source_file": "J-87-14-II",
+    "question": "A clustering index is created when _______.",
+    "options": {
+      "A": "primary key is declared and ordered",
+      "B": "no key ordered",
+      "C": "foreign key ordered",
+      "D": "there is no key and no order"
+    },
+    "answer": "A",
+    "explanation": "Key: (A). Strictly, a clustering index is defined on an ordered non-key field (the primary index is on the ordered key), so the question is doubtful."
+  },
+  {
+    "id": 49,
+    "source_file": "J-87-14-II",
+    "question": "Let R ={A, B, C, D, E, F} be a relation schema with the following dependencies C → F, E → A, EC → D, A → B\nWhich of the following is a key for R ?",
+    "options": {
+      "A": "CD",
+      "B": "EC",
+      "C": "AE",
+      "D": "AC"
+    },
+    "answer": "B",
+    "explanation": "(EC)⁺ = {E, C, F, A, D, B}, i.e. all attributes."
+  },
+  {
+    "id": 50,
+    "source_file": "J-87-14-II",
+    "question": "Match the following :\nList – I\na. DDL\nb. DML\nc. TCL\nd. BINARY Operation\nList – II\ni. LOCK TABLE\nii. COMMIT\niii. Natural Difference\niv. REVOKE",
+    "options": {
+      "A": "a-ii, b-i, c-iii, d-iv",
+      "B": "a-i, b-ii, c-iv, d-iii",
+      "C": "a-iii, b-ii, c-i, d-iv",
+      "D": "a-iv, b-i, c-ii, d-iii"
+    },
+    "answer": "D",
+    "explanation": "REVOKE is grouped with DDL here (strictly DCL), LOCK TABLE is DML (Oracle), COMMIT is TCL, and difference is a binary relational operation."
+  }
+]

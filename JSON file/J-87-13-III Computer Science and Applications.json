@@ -1,0 +1,977 @@
+[
+  {
+    "id": 1,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The Software Maturity Index (SMI) is defined as\nSMI = [Mf – (Fa + Fc + Fd)] / Mf\nWhere\nMf = the number of modules in the current release.\nFa = the number of modules in the current release that have been added.\nFc = the number of modules in the current release that have been changed.\nFd = the number of modules in the current release that have been deleted.\nThe product begins to stabilize when",
+    "options": {
+      "A": "SMI approaches 1",
+      "B": "SMI approaches 0",
+      "C": "SMI approaches –1",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "Pressman: as SMI approaches 1.0 the product begins to stabilise (few modules added, changed or deleted)."
+  },
+  {
+    "id": 2,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Match the following :\na. Watson-Felix model\nb. Quick-Fix model\nc. Putnam resource allocation model\nd. Logarithmetic-Poisson Model\ni. Failure intensity\nii. Cost estimation\niii. Project planning\niv. Maintenance",
+    "options": {
+      "A": "a-ii, b-i, c-iv, d-iii",
+      "B": "a-i, b-ii, c-iv, d-iii",
+      "C": "a-ii, b-i, c-iii, d-iv",
+      "D": "a-ii, b-iv, c-iii, d-i"
+    },
+    "answer": "D",
+    "explanation": "Watson–Felix is a cost estimation model; quick-fix is a maintenance model; Putnam's model is for project planning (resource allocation); the logarithmic Poisson model gives failure intensity (reliability)."
+  },
+  {
+    "id": 3,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "__________ is a process model that removes defects before they can precipitate serious hazards.",
+    "options": {
+      "A": "Incremental model",
+      "B": "Spiral model",
+      "C": "Cleanroom software engineering",
+      "D": "Agile model"
+    },
+    "answer": "C",
+    "explanation": "Cleanroom software engineering emphasises defect prevention through formal verification before testing."
+  },
+  {
+    "id": 4,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Equivalence partitioning is a __________ method that divides the input domain of a program into classes of data from which test cases can be derived.",
+    "options": {
+      "A": "White-box testing",
+      "B": "Black-box testing",
+      "C": "Orthogonal array testing",
+      "D": "Stress testing"
+    },
+    "answer": "B",
+    "explanation": "Equivalence partitioning is a black-box technique."
+  },
+  {
+    "id": 5,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The following three golden rules :\n(i) Place the user in control\n(ii) Reduce the user's memory load\n(iii) Make the interface consistent\nare for",
+    "options": {
+      "A": "User satisfaction",
+      "B": "Good interface design",
+      "C": "Saving system's resources",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "explanation": "These are Mandel's three golden rules of user interface design (Pressman)."
+  },
+  {
+    "id": 6,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Software safety is a __________ activity that focuses on the identification and assessment of potential hazards that may affect software negatively and cause an entire system to fail.",
+    "options": {
+      "A": "Risk mitigation, monitoring and management",
+      "B": "Software quality assurance",
+      "C": "Software cost estimation",
+      "D": "Defect removal efficiency"
+    },
+    "answer": "B",
+    "explanation": "Pressman: 'Software safety is a software quality assurance activity that focuses on the identification and assessment of potential hazards...'"
+  },
+  {
+    "id": 7,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The “PROJECT” operator of a relational algebra creates a new table that has always",
+    "options": {
+      "A": "More columns than columns in original table",
+      "B": "More rows than original table",
+      "C": "Same number of rows as the original table",
+      "D": "Same number of columns as the original table"
+    },
+    "answer": "C",
+    "explanation": "Doubtful question: projection never adds columns or rows. In SQL (without DISTINCT) the row count is unchanged, which is the intended answer (C); in pure relational algebra duplicates are removed, so there may be fewer rows."
+  },
+  {
+    "id": 8,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The employee information of an Organization is stored in the relation :\nEmployee (name, sex, salary, deptname)\nConsider the following SQL query\nSelect deptname from Employee\nWhere sex = ‘M’\ngroup by deptname\nhaving avg (salary) > {select avg (salary) from Employee}\nOutput of the given query corresponds to",
+    "options": {
+      "A": "Average salary of employee more than average salary of the organization.",
+      "B": "Average salary less than average salary of the organization.",
+      "C": "Average salary of employee equal to average salary of the organization.",
+      "D": "Average salary of male employees in a department is more than average salary of the organization."
+    },
+    "answer": "D",
+    "explanation": "The query returns departments whose male employees' average salary exceeds the average salary of all employees."
+  },
+  {
+    "id": 9,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "For a database relation R(a, b, c, d) where the domains of a, b, c, d include only the atomic values. The functional dependency a → c, b → d holds in the following relation",
+    "options": {
+      "A": "In 1NF not in 2NF",
+      "B": "In 2NF not in 3NF",
+      "C": "In 3NF",
+      "D": "In 1NF"
+    },
+    "answer": "A",
+    "explanation": "The key is {a, b}; c and d depend on parts of the key (partial dependencies), so R is in 1NF but not 2NF."
+  },
+  {
+    "id": 10,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Match the following :\na. RAID 0\nb. RAID 1\nc. RAID 2\nd. RAID 3\ni. Bit interleaved parity\nii. Non redundant stripping\niii. Mirrored disks\niv. Error correcting codes",
+    "options": {
+      "A": "a-iv, b-i, c-ii, d-iii",
+      "B": "a-iii, b-iv, c-i, d-ii",
+      "C": "a-iii, b-i, c-iv, d-ii",
+      "D": "a-iii, b-ii, c-iv, d-i"
+    },
+    "answer": "D",
+    "explanation": "Flawed question: the correct match is RAID 0 = non-redundant striping (ii), RAID 1 = mirroring (iii), RAID 2 = error-correcting codes (iv), RAID 3 = bit-interleaved parity (i), which is not offered. (D) matches c and d and swaps a/b; it is taken as the intended answer."
+  },
+  {
+    "id": 11,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The golden ratio φ and its conjugate φ̄ both satisfy the equation",
+    "options": {
+      "A": "x³ – x – 1 = 0",
+      "B": "x³ + x – 1 = 0",
+      "C": "x² – x – 1 = 0",
+      "D": "x² + x – 1 = 0"
+    },
+    "answer": "C",
+    "explanation": "φ = (1 + √5)/2 and φ̄ = (1 − √5)/2 are the roots of x² − x − 1 = 0."
+  },
+  {
+    "id": 12,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The solution of recurrence relation, T(n) = 2T(floor (√n)) + logn is",
+    "options": {
+      "A": "O(n log log logn)",
+      "B": "O(n logn)",
+      "C": "O(log logn)",
+      "D": "O(logn log logn)"
+    },
+    "answer": "D",
+    "explanation": "Let m = log n and S(m) = T(2^m): S(m) = 2S(m/2) + m = O(m log m), i.e. T(n) = O(log n · log log n)."
+  },
+  {
+    "id": 13,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "In any n-element heap, the number of nodes of height h is",
+    "options": {
+      "A": "less than equal to ⌈n/2ʰ⌉",
+      "B": "greater than ⌈n/2ʰ⌉",
+      "C": "greater than ⌈n/2ʰ⁺¹⌉",
+      "D": "less than equal to ⌈n/2ʰ⁺¹⌉"
+    },
+    "answer": "D",
+    "explanation": "CLRS: an n-element heap has at most ⌈n/2^(h+1)⌉ nodes of height h."
+  },
+  {
+    "id": 14,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "A data file of 1,00,000 characters contains only the characters g-l, with the frequencies as indicated in table :\ng 45, h 13, i 12, j 16, k 9, l 5 (frequency in thousand)\nusing the variable-length code by Huffman codes, the file can be encoded with",
+    "options": {
+      "A": "2,52,000 bits",
+      "B": "2,64,000 bits",
+      "C": "2,46,000 bits",
+      "D": "2,24,000 bits"
+    },
+    "answer": "D",
+    "explanation": "Huffman code lengths are 1 (g), 3 (h, i, j), 4 (k, l): 45×1 + (13+12+16)×3 + (9+5)×4 = 224 thousand bits (the CLRS example)."
+  },
+  {
+    "id": 15,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "A vertex cover of an undirected graph G(V, E) is a subset V1 ⊆ V vertices such that",
+    "options": {
+      "A": "Each pair of vertices in V1 is connected by an edge",
+      "B": "If (u, v) ∈ E then u ∈ V1 and v ∈ V1",
+      "C": "If (u, v) ∈ E then u ∈ V1 or v ∈ V1",
+      "D": "All pairs of vertices in V1 are not connected by an edge"
+    },
+    "answer": "C",
+    "explanation": "Every edge must have at least one endpoint in the cover."
+  },
+  {
+    "id": 16,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "In a fully connected mesh network with n devices, there are ________ physical channels to link all devices.",
+    "options": {
+      "A": "n(n–1)/2",
+      "B": "n(n+1)/2",
+      "C": "2n",
+      "D": "2n+1"
+    },
+    "answer": "A",
+    "explanation": "Each pair needs a link: C(n,2) = n(n−1)/2 duplex links."
+  },
+  {
+    "id": 17,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The baud rate of a signal is 600 baud/second. If each signal unit carries 6 bits, then the bit rate of a signal is ________.",
+    "options": {
+      "A": "3600",
+      "B": "100",
+      "C": "6/600",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "Bit rate = baud × bits per signal unit = 600 × 6 = 3600 bps."
+  },
+  {
+    "id": 18,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Match the following :\na. Data link layer\nb. Network layer\nc. Transport layer\nd. Application layer\ni. Flow control\nii. Node to node delivery\niii. Mail services\niv. Routing",
+    "options": {
+      "A": "a-ii, b-i, c-iv, d-iii",
+      "B": "a-ii, b-iv, c-i, d-iii",
+      "C": "a-ii, b-i, c-iii, d-iv",
+      "D": "a-ii, b-iv, c-iii, d-i"
+    },
+    "answer": "B",
+    "explanation": "Data link: node-to-node delivery; network: routing; transport: (end-to-end) flow control; application: mail services."
+  },
+  {
+    "id": 19,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "An image is 1024*800 pixels with 3 bytes/pixel. Assume the image is uncompressed. How long does it take to transmit it over a 10-Mbps Ethernet ?",
+    "options": {
+      "A": "196.6 seconds",
+      "B": "19.66 seconds",
+      "C": "1.966 seconds",
+      "D": "0.1966 seconds"
+    },
+    "answer": "C",
+    "explanation": "1024 × 800 × 3 × 8 = 19,660,800 bits; ÷ 10⁷ bps = 1.966 s."
+  },
+  {
+    "id": 20,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The ________ measures the relative strengths of two signals or a signal at two different points.",
+    "options": {
+      "A": "frequency",
+      "B": "attenuation",
+      "C": "throughput",
+      "D": "decibel"
+    },
+    "answer": "D",
+    "explanation": "The decibel (10 log₁₀ P2/P1) expresses relative signal strength."
+  },
+  {
+    "id": 21,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Which one of the following media is multidrop ?",
+    "options": {
+      "A": "Shielded Twisted pair cable",
+      "B": "Unshielded Twisted pair cable",
+      "C": "Thick Coaxial cable",
+      "D": "Fiber Optic cable"
+    },
+    "answer": "C",
+    "explanation": "Thick coax (10BASE5) is a shared bus where many stations tap in (multidrop); twisted pair and fibre are point-to-point."
+  },
+  {
+    "id": 22,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "What is the baud rate of the standard 10 Mbps Ethernet ?",
+    "options": {
+      "A": "10 megabaud",
+      "B": "20 megabaud",
+      "C": "30 megabaud",
+      "D": "40 megabaud"
+    },
+    "answer": "B",
+    "explanation": "Manchester encoding needs two signal changes per bit, so 20 megabaud."
+  },
+  {
+    "id": 23,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "At any iteration of simplex method, if Δj (Zj – Cj) corresponding to any non-basic variable Xj is obtained as zero, the solution under the test is",
+    "options": {
+      "A": "Degenerate solution",
+      "B": "Unbounded solution",
+      "C": "Alternative solution",
+      "D": "Optimal solution"
+    },
+    "answer": "C",
+    "explanation": "A zero net evaluation for a non-basic variable in the optimal table indicates alternative optimal solutions."
+  },
+  {
+    "id": 24,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "A basic feasible solution to a m-origin, n-destination transportation problem is said to be ________ if the number of positive allocations are less than m + n – 1.",
+    "options": {
+      "A": "degenerate",
+      "B": "non-degenerate",
+      "C": "unbounded",
+      "D": "unbalanced"
+    },
+    "answer": "A",
+    "explanation": "Fewer than m + n − 1 positive allocations makes the BFS degenerate."
+  },
+  {
+    "id": 25,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The total transportation cost in an initial basic feasible solution to the following transportation problem using Vogel's Approximation method is\n     W1 W2 W3 W4 W5 Supply\nF1   4  2  3  2  6   8\nF2   5  4  5  2  1   12\nF3   6  5  4  7  3   14\nDemand 4 4 6 8 8",
+    "options": {
+      "A": "76",
+      "B": "80",
+      "C": "90",
+      "D": "96"
+    },
+    "answer": "B",
+    "explanation": "Applying VAM (largest penalty first, allocating to the least-cost cell) gives a total cost of 80."
+  },
+  {
+    "id": 26,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "An actor in an animation is a small program invoked _______ per frame to determine the characteristics of some object in the animation.",
+    "options": {
+      "A": "once",
+      "B": "twice",
+      "C": "30 times",
+      "D": "60 times"
+    },
+    "answer": "A",
+    "explanation": "In actor-based animation each actor is invoked once per frame."
+  },
+  {
+    "id": 27,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Bresenham line drawing algorithm is attractive because it uses",
+    "options": {
+      "A": "Real arithmetic only",
+      "B": "Integer arithmetic only",
+      "C": "Floating point arithmetic",
+      "D": "Real and integer arithmetic"
+    },
+    "answer": "B",
+    "explanation": "Bresenham's algorithm uses only integer additions, subtractions and shifts."
+  },
+  {
+    "id": 28,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The refresh rate above which a picture stops flickering and fuses into a steady image is called _________.",
+    "options": {
+      "A": "Crucial fusion frequency",
+      "B": "Current frequency fusion",
+      "C": "Critical fusion frequency",
+      "D": "Critically diffused frequency"
+    },
+    "answer": "C",
+    "explanation": "Critical fusion (flicker) frequency."
+  },
+  {
+    "id": 29,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "In homogenous coordinate system (x, y, z) the points with z = 0 are called",
+    "options": {
+      "A": "Cartesian points",
+      "B": "Parallel points",
+      "C": "Origin point",
+      "D": "Point at infinity"
+    },
+    "answer": "D",
+    "explanation": "In homogeneous coordinates (x, y, w), w = 0 represents points at infinity."
+  },
+  {
+    "id": 30,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "If 40 black lines interleaved with 40 white lines can be distinguished across one inch, the resolution is",
+    "options": {
+      "A": "40 line-pairs per inch",
+      "B": "80 line-pairs per inch",
+      "C": "1600 lines per inch",
+      "D": "40 lines per inch"
+    },
+    "answer": "A",
+    "explanation": "Each black + white pair is one line pair: 40 line-pairs per inch."
+  },
+  {
+    "id": 31,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Images tend to be very large collection of data. The size of memory required for a 1024 by 1024 image in which the colour of each pixel is represented by a n-bit number, (in an 8 bit machines) is",
+    "options": {
+      "A": "n × 8 MB",
+      "B": "n / 8 MB",
+      "C": "(1024 × 1024) / 8 MB",
+      "D": "1024 MB"
+    },
+    "answer": "B",
+    "explanation": "1024 × 1024 × n bits = n Mbit = n/8 MB."
+  },
+  {
+    "id": 32,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Arrays in C language can have _________ with reference to memory representation.",
+    "options": {
+      "A": "n-subscripts",
+      "B": "two-subscripts",
+      "C": "only one subscript",
+      "D": "three subscripts only"
+    },
+    "answer": "A",
+    "explanation": "C supports multidimensional arrays with any number of subscripts (stored row-major in linear memory)."
+  },
+  {
+    "id": 33,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Refer the points as listed below :\n(a) What are the operator precedence rules ?\n(b) What are the operator associativity rules ?\n(c) What is the order of operand evaluation ?\n(d) Are there restrictions on operand evaluation side effects ?\nWhich of the above must be considered as primary design issues for arithmetic expressions ?",
+    "options": {
+      "A": "(a), (b) and (c)",
+      "B": "(a), (c) and (d)",
+      "C": "(a), (b) and (d)",
+      "D": "(a), (b), (c) and (d)"
+    },
+    "answer": "D",
+    "explanation": "Sebesta lists all four (plus overloading and mixed-mode) as design issues for arithmetic expressions."
+  },
+  {
+    "id": 34,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Horn clauses are special kinds of propositions which can be described as",
+    "options": {
+      "A": "Single atomic proposition on left side.",
+      "B": "Single or multiple atomic proposition on left side.",
+      "C": "A single atomic proposition on left side and a single atomic proposition on right side.",
+      "D": "A single atomic proposition on left side or an empty left side."
+    },
+    "answer": "D",
+    "explanation": "Sebesta: a Horn clause has either a single atomic proposition on the left (headed) or an empty left side (headless)."
+  },
+  {
+    "id": 35,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Which of the following is/are the fundamental semantic model(s) of parameter passing ?",
+    "options": {
+      "A": "in mode",
+      "B": "out mode",
+      "C": "in-out mode",
+      "D": "all of the above"
+    },
+    "answer": "D",
+    "explanation": "The three semantic models are in mode, out mode and in-out mode."
+  },
+  {
+    "id": 36,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The grammar with production rules\nS → aSb |SS|λ\ngenerates language L given by :",
+    "options": {
+      "A": "L = {w∈{a, b}* | na(w) = nb(w) and na(v) ≥ nb(v) where v is any prefix of w}",
+      "B": "L = {w∈{a, b}* | na(w) = nb(w) and na(v) ≤ nb(v) where v is any prefix of w}",
+      "C": "L = {w∈{a, b}* | na(w) ≠ nb(w) and na(v) ≥ nb(v) where v is any prefix of w}",
+      "D": "L = {w∈{a, b}* | na(w) ≠ nb(w) and na(v) ≤ nb(v) where v is any prefix of w}"
+    },
+    "answer": "A",
+    "explanation": "This is the balanced-parentheses grammar (a = '(', b = ')'): equal counts and every prefix has at least as many a's as b's."
+  },
+  {
+    "id": 37,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "A pushdown automation M = (Q, Σ, Γ, δ, q0, z, F) is set to be deterministic subject to which of the following condition(s), for every q ∈ Q, a ∈ Σ ∪ {λ} and b ∈ Γ\n(s1) δ(q, a, b) contains at most one element\n(s2) if δ(q, λ, b) is not empty then δ(q, c, b) must be empty for every c ∈ Σ",
+    "options": {
+      "A": "only s1",
+      "B": "only s2",
+      "C": "both s1 and s2",
+      "D": "neither s1 nor s2"
+    },
+    "answer": "C",
+    "explanation": "A DPDA needs both: at most one move per configuration, and no choice between a λ-move and an input move."
+  },
+  {
+    "id": 38,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "For every context free grammar (G) there exists an algorithm that passes any w ∈ L(G) in number of steps proportional to",
+    "options": {
+      "A": "ln|w|",
+      "B": "|w|",
+      "C": "|w|²",
+      "D": "|w|³"
+    },
+    "answer": "D",
+    "explanation": "The CYK algorithm parses any CFG (in CNF) in O(|w|³)."
+  },
+  {
+    "id": 39,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Match the following :\na. Context sensitive language\nb. Regular grammar\nc. Context free grammar\nd. Unrestricted grammar\ni. Deterministic finite automation\nii. Recursive enumerable\niii. Recursive language\niv. Pushdown automation",
+    "options": {
+      "A": "a-ii, b-i, c-iv, d-iii",
+      "B": "a-iii, b-iv, c-i, d-ii",
+      "C": "a-iii, b-i, c-iv, d-ii",
+      "D": "a-ii, b-iv, c-i, d-iii"
+    },
+    "answer": "C",
+    "explanation": "CSLs are recursive; regular grammars correspond to DFA; CFGs to PDA; unrestricted grammars to RE languages."
+  },
+  {
+    "id": 40,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The statements s1 and s2 are given as :\ns1 : Context sensitive languages are closed under intersection, concatenation, substitution and inverse homomorphism.\ns2 : Context free languages are closed under complementation, substitution and homomorphism.\nWhich of the following is correct statement ?",
+    "options": {
+      "A": "Both s1 and s2 are correct.",
+      "B": "s1 is correct and s2 is not correct.",
+      "C": "s1 is not correct and s2 is correct.",
+      "D": "Both s1 and s2 are not correct."
+    },
+    "answer": "B",
+    "explanation": "CFLs are not closed under complementation, so s2 is false; s1 is the standard key's answer (CSLs are closed under intersection, concatenation and inverse homomorphism; closure under arbitrary substitution is debatable)."
+  },
+  {
+    "id": 41,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Which one of the following is not an addressing mode ?",
+    "options": {
+      "A": "Register indirect",
+      "B": "Autoincrement",
+      "C": "Relative indexed",
+      "D": "Immediate operand"
+    },
+    "answer": "C",
+    "explanation": "Register indirect, autoincrement and immediate are standard modes; 'relative indexed' is not a standard addressing mode (key)."
+  },
+  {
+    "id": 42,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Computers can have instruction formats with",
+    "options": {
+      "A": "only two address and three address instructions",
+      "B": "only one address and two address instructions",
+      "C": "only one address, two address and three address instructions",
+      "D": "zero address, one address, two address and three address instructions"
+    },
+    "answer": "D",
+    "explanation": "Instruction formats can be zero (stack), one (accumulator), two- or three-address."
+  },
+  {
+    "id": 43,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Which is not a typical program control instruction ?",
+    "options": {
+      "A": "BR",
+      "B": "JMP",
+      "C": "SHL",
+      "D": "TST"
+    },
+    "answer": "C",
+    "explanation": "SHL (shift left) is a data manipulation instruction; branch, jump and test are program control instructions (Mano)."
+  },
+  {
+    "id": 44,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Interrupt which arises from illegal or erroneous use of an instruction or data is",
+    "options": {
+      "A": "Software interrupt",
+      "B": "Internal interrupt",
+      "C": "External interrupt",
+      "D": "All of the above"
+    },
+    "answer": "B",
+    "explanation": "Internal interrupts (traps) arise from illegal or erroneous use of instructions or data (e.g. overflow, divide by zero)."
+  },
+  {
+    "id": 45,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The simplified function in product of sums of Boolean function F(W, X, Y, Z) = Σ(0, 1, 2, 5, 8, 9, 10) is",
+    "options": {
+      "A": "(W' + X') (Y' + Z') (X' + Z)",
+      "B": "(W' + X') (Y' + Z') (X' + Z')",
+      "C": "(W' + X') (Y + Z') (X' + Z)",
+      "D": "(W' + X') (Y + Z') (X' + Z)"
+    },
+    "answer": "A",
+    "explanation": "Grouping the 0s (3, 4, 6, 7, 11–15) gives F = (W' + X')(Y' + Z')(X' + Z); checked against all 16 rows (Mano's example)."
+  },
+  {
+    "id": 46,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Match the following :\na. TTL\nb. ECL\nc. MOS\nd. CMOS\ni. High component density\nii. Low power consumption\niii. Evolution of “diode-transistor-logic”\niv. High speed digital circuits",
+    "options": {
+      "A": "a-iii, b-ii, c-i, d-iv",
+      "B": "a-i, b-iv, c-iii, d-ii",
+      "C": "a-iii, b-iv, c-i, d-ii",
+      "D": "a-i, b-ii, c-iii, d-iv"
+    },
+    "answer": "C",
+    "explanation": "TTL evolved from DTL; ECL is high speed; MOS gives high density; CMOS gives low power."
+  },
+  {
+    "id": 47,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Match the following :\na. Foreign keys\nb. Private key\nc. Event control action model\nd. Data security\ni. Domain constraint\nii. Referential integrity\niii. Encryption\niv. Trigger",
+    "options": {
+      "A": "a-iii, b-ii, c-i, d-iv",
+      "B": "a-ii, b-i, c-iv, d-iii",
+      "C": "a-iii, b-iv, c-i, d-ii",
+      "D": "a-i, b-ii, c-iii, d-iv"
+    },
+    "answer": "B",
+    "explanation": "Foreign key: referential integrity; ECA model: trigger; data security: encryption. That leaves private key with domain constraint (an odd pairing), so (B) is the only consistent option."
+  },
+  {
+    "id": 48,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "When an array is passed as a parameter to a function which of the following statements is correct ?",
+    "options": {
+      "A": "The function can change values in the original array.",
+      "B": "The function cannot change values in the original array.",
+      "C": "Results in compilation error.",
+      "D": "Results in runtime error."
+    },
+    "answer": "A",
+    "explanation": "In C an array argument decays to a pointer to its first element, so the function can modify the original array."
+  },
+  {
+    "id": 49,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Suppose you want to delete the name that occurs before “Vivek” in an alphabetical listing. Which of the following data structures shall be most efficient for this operation ?",
+    "options": {
+      "A": "Circular linked list",
+      "B": "Doubly linked list",
+      "C": "Linked list",
+      "D": "Dequeue"
+    },
+    "answer": "B",
+    "explanation": "With a doubly linked list you can step back from 'Vivek' to its predecessor and unlink it in O(1)."
+  },
+  {
+    "id": 50,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "What will be the output of the following segment of the program ?\nmain( )\n{\n char *s = “hello world”;\n int i = 7;\n printf(“%, *s”, i, s);\n}",
+    "options": {
+      "A": "Syntax error",
+      "B": "hello w",
+      "C": "hello",
+      "D": "o world"
+    },
+    "answer": "B",
+    "explanation": "The format is meant to be \"%.*s\" (printed as \"%, *s\"): precision i = 7 prints the first 7 characters, 'hello w'."
+  },
+  {
+    "id": 51,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Trace the error :\nvoid main( )\n{\n int *b, &a;\n *b = 20\n printf(“%d, %d”, a, *b)\n}",
+    "options": {
+      "A": "No error",
+      "B": "Logical error",
+      "C": "Syntax error",
+      "D": "Semantic error"
+    },
+    "answer": "C",
+    "explanation": "'&a' is not a valid C declaration and semicolons are missing, so this is a syntax (compile-time) error."
+  },
+  {
+    "id": 52,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Match the following :\na. calloc( )\nb. free( )\nc. malloc( )\nd. realloc( )\ni. Frees previously allocated space\nii. Modifies previously allocated space\niii. Allocates space for array\niv. Allocates requested size of space",
+    "options": {
+      "A": "a-iii, b-i, c-iv, d-ii",
+      "B": "a-iii, b-ii, c-i, d-iv",
+      "C": "a-iii, b-iv, c-i, d-ii",
+      "D": "a-iv, b-ii, c-iii, d-i"
+    },
+    "answer": "A",
+    "explanation": "calloc allocates (zeroed) space for an array; free releases; malloc allocates the requested bytes; realloc resizes."
+  },
+  {
+    "id": 53,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Binary symmetric channel uses",
+    "options": {
+      "A": "Half duplex protocol",
+      "B": "Full duplex protocol",
+      "C": "Bit oriented protocol",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "Read as BISYNC (Binary Synchronous Communication; 'symmetric' appears to be a misprint): a character-oriented, half-duplex protocol."
+  },
+  {
+    "id": 54,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Hamming distance between 100101000110 and 110111101101 is",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "D",
+    "explanation": "XOR = 010010101011, which has 6 ones."
+  },
+  {
+    "id": 55,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Given code word 1110001010 is to be transmitted with even parity check bit. The encoded word to be transmitted for this code is",
+    "options": {
+      "A": "11100010101",
+      "B": "11100010100",
+      "C": "1110001010",
+      "D": "111000101"
+    },
+    "answer": "A",
+    "explanation": "The word has five 1s, so the even-parity bit is 1: 11100010101."
+  },
+  {
+    "id": 56,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The number of distinct binary images which can be generated from a given binary image of right M × N are",
+    "options": {
+      "A": "M + N",
+      "B": "M × N",
+      "C": "2^(M + N)",
+      "D": "2^(MN)"
+    },
+    "answer": "D",
+    "explanation": "Each of the MN pixels can be 0 or 1, giving 2^(MN) images."
+  },
+  {
+    "id": 57,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "If f(x, y) is a digital image, then x, y and amplitude values of f are",
+    "options": {
+      "A": "Finite",
+      "B": "Infinite",
+      "C": "Neither finite nor infinite",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "A digital image has finite, discrete coordinates and intensity values (Gonzalez)."
+  },
+  {
+    "id": 58,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Consider the following processes with time slice of 4 milliseconds (I/O requests are ignored) :\nProcess A B C D\nArrival time 0 1 2 3\nCPU cycle 8 4 9 5\nThe average turn around time of these processes will be",
+    "options": {
+      "A": "19.25 milliseconds",
+      "B": "18.25 milliseconds",
+      "C": "19.5 milliseconds",
+      "D": "18.5 milliseconds"
+    },
+    "answer": "B",
+    "explanation": "Round robin (q = 4): B finishes at 8, A at 20, D at 25, C at 26. Turnaround times are 20, 7, 24, 22, which average 73/4 = 18.25 ms."
+  },
+  {
+    "id": 59,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "A job has four pages A, B, C, D and the main memory has two page frames only. The job needs to process its pages in following order :\nABACABDBACD\nAssuming that a page interrupt occurs when a new page is brought in the main memory, irrespective of whether the page is swapped out or not. The number of page interrupts in FIFO and LRU page replacement algorithms are",
+    "options": {
+      "A": "9 and 7",
+      "B": "7 and 6",
+      "C": "9 and 8",
+      "D": "8 and 6"
+    },
+    "answer": "C",
+    "explanation": "Simulating with 2 frames: FIFO gives 9 faults and LRU gives 8."
+  },
+  {
+    "id": 60,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Suppose S and Q are two semaphores initialized to 1. P1 and P2 are two processes which are sharing resources.\nP1 has statements: wait(S); wait(Q); critical-section 1; signal(S); signal(Q);\nP2 has statements: wait(Q); wait(S); critical-section 2; signal(Q); signal(S);\nTheir execution may sometimes lead to an undesirable situation called",
+    "options": {
+      "A": "Starvation",
+      "B": "Race condition",
+      "C": "Multithreading",
+      "D": "Deadlock"
+    },
+    "answer": "D",
+    "explanation": "If P1 takes S and P2 takes Q, each waits forever for the other: deadlock."
+  },
+  {
+    "id": 61,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "An operating system using banker's algorithm for deadlock avoidance has ten dedicated devices (of same type) and has three processes P1, P2 and P3 with maximum resource requirements of 4, 5 and 8 respectively. There are two states of allocation of devices as follows :\nState 1: Devices allocated P1 2, P2 3, P3 4\nState 2: Devices allocated P1 0, P2 2, P3 4\nWhich of the following is correct ?",
+    "options": {
+      "A": "State 1 is unsafe and state 2 is safe.",
+      "B": "State 1 is safe and state 2 is unsafe.",
+      "C": "Both, state 1 and state 2 are safe.",
+      "D": "Both, state 1 and state 2 are unsafe."
+    },
+    "answer": "A",
+    "explanation": "State 1: 1 device free, needs are 2, 2, 4, so no process can finish (unsafe). State 2: 4 free; P1 (needs 4) finishes, then P2 (needs 3), then P3 (needs 4), so it is safe."
+  },
+  {
+    "id": 62,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Let the time taken to switch between user mode and kernel mode of execution be T1 while time taken to switch between two user processes be T2. Which of the following is correct ?",
+    "options": {
+      "A": "T1 < T2",
+      "B": "T1 > T2",
+      "C": "T1 = T2",
+      "D": "Nothing can be said about the relation between T1 and T2."
+    },
+    "answer": "A",
+    "explanation": "A process switch includes mode switches plus saving/restoring the full context, so it takes longer: T1 < T2."
+  },
+  {
+    "id": 63,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Working set model is used in memory management to implement the concept of",
+    "options": {
+      "A": "Swapping",
+      "B": "Principal of Locality",
+      "C": "Segmentation",
+      "D": "Thrashing"
+    },
+    "answer": "B",
+    "explanation": "The working set model is based on the principle of locality (and is used to prevent thrashing)."
+  },
+  {
+    "id": 64,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "A UNIX file system has 1 KB block size and 4-byte disk addresses. What is the maximum file size if the inode contains ten direct block entries, one single indirect block entry, one double indirect block entry and one triple indirect block entry ?",
+    "options": {
+      "A": "30 GB",
+      "B": "64 GB",
+      "C": "16 GB",
+      "D": "1 GB"
+    },
+    "answer": "C",
+    "explanation": "256 addresses per block: 10 KB + 256 KB + 256² KB (64 MB) + 256³ KB (16 GB) ≈ 16 GB."
+  },
+  {
+    "id": 65,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "A thread is usually defined as a light weight process because an Operating System (OS) maintains smaller data structure for a thread than for a process. In relation to this, which of the following statement is correct ?",
+    "options": {
+      "A": "OS maintains only scheduling and accounting information for each thread.",
+      "B": "OS maintains only CPU registers for each thread.",
+      "C": "OS does not maintain a separate stack for each thread.",
+      "D": "OS does not maintain virtual memory state for each thread."
+    },
+    "answer": "D",
+    "explanation": "Threads share the process's address space, so no per-thread virtual memory state is kept; each thread does have its own registers, stack and scheduling info."
+  },
+  {
+    "id": 66,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The versions of windows operating system like windows XP and window Vista uses following file system :",
+    "options": {
+      "A": "FAT-16",
+      "B": "FAT-32",
+      "C": "NTFS (NT File System)",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "XP and Vista support FAT16, FAT32 and NTFS."
+  },
+  {
+    "id": 67,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Which one of the following is a correct implementation of the meta-predicate “not” in PROLOG (Here G represents a goal) ?",
+    "options": {
+      "A": "not(G):– !, call(G), fail. not(G).",
+      "B": "not(G):– call(G), !, fail. not(G).",
+      "C": "not(G):– call(G), fail, !. not(G).",
+      "D": "not(G):– call(G), fail. not(G):– !."
+    },
+    "answer": "B",
+    "explanation": "Negation as failure: if G succeeds, cut and fail; otherwise the second clause succeeds."
+  },
+  {
+    "id": 68,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Which one of the following is not an informed search technique ?",
+    "options": {
+      "A": "Hill climbing search",
+      "B": "Best first search",
+      "C": "A* search",
+      "D": "Depth first search"
+    },
+    "answer": "D",
+    "explanation": "DFS is uninformed (blind); the others use heuristics."
+  },
+  {
+    "id": 69,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "If we convert\n∃u ∀v ∀x ∃y (P(f(u),v, x, y) → Q(u,v,y)) to\n∀v ∀x (P(f(a),v, x, g(v,x)) → Q(a,v,g(v,x)))\nThis process is known as",
+    "options": {
+      "A": "Simplification",
+      "B": "Unification",
+      "C": "Skolemization",
+      "D": "Resolution"
+    },
+    "answer": "C",
+    "explanation": "Replacing existential variables with Skolem constants/functions is Skolemization."
+  },
+  {
+    "id": 70,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Given two jugs of capacities 5 litres and 3 litres with no measuring markers on them. Assume that there is endless supply of water. Then the minimum number of states to measure 4 litres water will be",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "5",
+      "D": "7"
+    },
+    "answer": "D",
+    "explanation": "(0,0) → (5,0) → (2,3) → (2,0) → (0,2) → (5,2) → (4,3): 7 states including the start."
+  },
+  {
+    "id": 71,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "The map colouring problem can be solved using which of the following technique ?",
+    "options": {
+      "A": "Means-end analysis",
+      "B": "Constraint satisfaction",
+      "C": "AO* search",
+      "D": "Breadth first search"
+    },
+    "answer": "B",
+    "explanation": "Map colouring is the classic constraint satisfaction problem."
+  },
+  {
+    "id": 72,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Which of the following is a knowledge representation technique used to represent knowledge about stereotype situation ?",
+    "options": {
+      "A": "Semantic network",
+      "B": "Frames",
+      "C": "Scripts",
+      "D": "Conceptual Dependency"
+    },
+    "answer": "C",
+    "explanation": "Scripts (Schank) represent stereotyped sequences of events such as a restaurant visit."
+  },
+  {
+    "id": 73,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "A fuzzy set A on R is ________ iff\nA(λx1 + (1 – λ)x2) ≥ min [A(x1), A(x2)]\nfor all x1, x2 ∈ R and all λ ∈ [0, 1], where min denotes the minimum operator.",
+    "options": {
+      "A": "Support",
+      "B": "α-cut",
+      "C": "Convex",
+      "D": "Concave"
+    },
+    "answer": "C",
+    "explanation": "This is the definition of a convex fuzzy set."
+  },
+  {
+    "id": 74,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "If A and B are two fuzzy sets with membership functions\nμA(x) = {0.6, 0.5, 0.1, 0.7, 0.8}\nμB(x) = {0.9, 0.2, 0.6, 0.8, 0.5}\nThen the value of μ(A∪B)‾(x) will be",
+    "options": {
+      "A": "{0.9, 0.5, 0.6, 0.8, 0.8}",
+      "B": "{0.6, 0.2, 0.1, 0.7, 0.5}",
+      "C": "{0.1, 0.5, 0.4, 0.2, 0.2}",
+      "D": "{0.1, 0.5, 0.4, 0.2, 0.3}"
+    },
+    "answer": "C",
+    "explanation": "Union = max = {0.9, 0.5, 0.6, 0.8, 0.8}; complement = 1 − value = {0.1, 0.5, 0.4, 0.2, 0.2}."
+  },
+  {
+    "id": 75,
+    "source_file": "J-87-13-III Computer Science and Applications",
+    "question": "Consider a single perception with weights as given in the following figure :\n[Inputs 1 (bias) with weight −1.5, x with weight 1, y with weight 1]\nand f(t) defined as f(t) = 1, t > 0; 0, t ≤ 0\nThe above perception can solve",
+    "options": {
+      "A": "OR problem",
+      "B": "AND problem",
+      "C": "XOR problem",
+      "D": "All of the above"
+    },
+    "answer": "B",
+    "explanation": "t = x + y − 1.5 > 0 only when x = y = 1, so the perceptron computes AND."
+  }
+]

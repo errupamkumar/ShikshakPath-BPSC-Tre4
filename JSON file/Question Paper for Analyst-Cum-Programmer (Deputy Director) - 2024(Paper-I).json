@@ -1,0 +1,782 @@
+[
+  {
+    "id": 1,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Consider a relation R(A, B, C, D) with the following set of functional dependencies :\nF = {A → B, C → D}\nWhich of the following is a candidate key for the relation R?",
+    "options": {
+      "A": "{C}",
+      "B": "{A, C}",
+      "C": "{B, D}",
+      "D": "{A}"
+    },
+    "answer": "B",
+    "explanation": "A and C appear on no right-hand side, so both must be in every key; {A,C}+ = {A,B,C,D}, so {A, C} is the candidate key."
+  },
+  {
+    "id": 2,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which relational algebra operation selects specific attributes from a relation?",
+    "options": {
+      "A": "Projection",
+      "B": "Join",
+      "C": "Selection",
+      "D": "Union"
+    },
+    "answer": "A",
+    "explanation": "Projection (π) picks columns (attributes); selection (σ) picks rows."
+  },
+  {
+    "id": 3,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which of the following is NOT a valid ER diagram component?",
+    "options": {
+      "A": "Attribute",
+      "B": "Entity",
+      "C": "Index",
+      "D": "Relationship"
+    },
+    "answer": "C",
+    "explanation": "ER diagrams have entities, attributes and relationships; an index is a physical storage structure."
+  },
+  {
+    "id": 4,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "A relation is in 3NF if it is in 2NF and -",
+    "options": {
+      "A": "all attributes are atomic.",
+      "B": "it has no partial dependencies.",
+      "C": "it has a unique primary key.",
+      "D": "no non-key attribute is transitively dependent on the primary key."
+    },
+    "answer": "D",
+    "explanation": "3NF = 2NF + no transitive dependency of non-key attributes on the key. Atomicity is 1NF and no partial dependency is 2NF."
+  },
+  {
+    "id": 5,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "In B+ tree index, leaf nodes store -",
+    "options": {
+      "A": "Pointers to child nodes",
+      "B": "Metadata about the tree",
+      "C": "Pointer to a file record",
+      "D": "Only key values"
+    },
+    "answer": "C",
+    "explanation": "In a B+ tree, internal nodes hold child pointers while leaf nodes hold keys with data pointers to the file records (plus a next-leaf pointer)."
+  },
+  {
+    "id": 6,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which of the following expression is true due to associativity?",
+    "options": {
+      "A": "R ∪ (S ∪ T) = (R ∪ S) ∪ T",
+      "B": "R ∩ (S ∪ T) = (R ∩ S) ∪ T",
+      "C": "R ∪ S = S ∩ R",
+      "D": "R − (S − T) = (R − S) − T"
+    },
+    "answer": "A",
+    "explanation": "Union is associative: R ∪ (S ∪ T) = (R ∪ S) ∪ T. Set difference is not associative."
+  },
+  {
+    "id": 7,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "When a foreign key attribute is updated, what must the DBMS ensure?",
+    "options": {
+      "A": "The new value is NULL or refers to an existing tuple in the referenced relation.",
+      "B": "The new value does not exist in any table.",
+      "C": "The new value is ignored.",
+      "D": "The new value must be a numeric."
+    },
+    "answer": "A",
+    "explanation": "Referential integrity requires a foreign key to be NULL or match a primary key value in the referenced relation."
+  },
+  {
+    "id": 8,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "What does the recovery manager do in DBMS transaction processing?",
+    "options": {
+      "A": "Manages transaction concurrency",
+      "B": "Allocates space on disk for data",
+      "C": "Handles user authentication",
+      "D": "Ensuring the atomicity and durability"
+    },
+    "answer": "D",
+    "explanation": "The recovery manager uses logs to undo/redo transactions, guaranteeing atomicity and durability after failures."
+  },
+  {
+    "id": 9,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "SELECT Name FROM Employees\nWHERE Department = 'IT'\nUNION\nSELECT Name FROM FormerEmployees\nWHERE ExitReason = 'Resigned';\nIn the above SQL query, which of the following statement is true about its result?",
+    "options": {
+      "A": "The result includes all names from both tables, including duplicates.",
+      "B": "The result throws an error if Name in Employees and FormerEmployees have different data types.",
+      "C": "The result includes only the names present in both Employees and FormerEmployees.",
+      "D": "The result includes unique names from both queries, removing duplicates automatically."
+    },
+    "answer": "D",
+    "explanation": "UNION combines the two result sets and removes duplicates (UNION ALL keeps them; INTERSECT gives common names)."
+  },
+  {
+    "id": 10,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Consider the following Assertion (A) and the Reason (R) -\nAssertion (A): \"In object-oriented databases, persistent objects can survive after program termination and can be retrieved in future sessions\".\nReason (R): Persistent objects are stored in volatile memory for faster access and cease to exist when program ends.\nWhich of the following is correct?",
+    "options": {
+      "A": "(A) is false but (R) is true",
+      "B": "(A) is true and (R) is true",
+      "C": "(A) is true but (R) is false",
+      "D": "(A) is false and (R) is false"
+    },
+    "answer": "C",
+    "explanation": "Persistent objects are stored in non-volatile storage and outlive the program, so A is true and R is false (R describes transient objects)."
+  },
+  {
+    "id": 11,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which property ensures that a transaction is either fully executed or not performed at all?",
+    "options": {
+      "A": "Atomicity",
+      "B": "Durability",
+      "C": "Isolation",
+      "D": "Consistency"
+    },
+    "answer": "A",
+    "explanation": "Atomicity is the all-or-nothing property of a transaction."
+  },
+  {
+    "id": 12,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "In ER diagrams, a 'weak entity' is characterized by which of the following?",
+    "options": {
+      "A": "Represents relationships only",
+      "B": "Has key attributes",
+      "C": "Has a primary key of its own",
+      "D": "Depends on an 'owner' entity for identification"
+    },
+    "answer": "D",
+    "explanation": "A weak entity has no key of its own and is identified through its owner (identifying) entity plus a partial key."
+  },
+  {
+    "id": 13,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "What is the primary goal of BCNF in database normalization?",
+    "options": {
+      "A": "To eliminate redundancy caused by functional dependencies.",
+      "B": "To reduce the size of the database.",
+      "C": "To remove multivalued dependencies.",
+      "D": "To improve query speed."
+    },
+    "answer": "A",
+    "explanation": "BCNF requires every determinant to be a superkey, removing redundancy due to functional dependencies. Multivalued dependencies are handled by 4NF."
+  },
+  {
+    "id": 14,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which SQL query retrieves all employees whose address contains the substring 'AJMER' from EMPLOYEE table?",
+    "options": {
+      "A": "SELECT * FROM EMPLOYEE WHERE Address = 'AJMER';",
+      "B": "SELECT * FROM EMPLOYEE WHERE Address LIKE '%AJMER';",
+      "C": "SELECT * FROM EMPLOYEE LIKE Address = 'AJMER';",
+      "D": "SELECT * FROM EMPLOYEE WHERE Address LIKE 'AJMER';"
+    },
+    "answer": "B",
+    "explanation": "Pattern matching needs LIKE with the % wildcard; option 2 is the only one using it. Note: strictly, 'contains' needs LIKE '%AJMER%'; '%AJMER' only matches addresses ending in AJMER, so the printed options are imperfect."
+  },
+  {
+    "id": 15,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Suppose we have two relations: R(A, B, C) and S(B, C, D). Consider the natural join operation: R ⋈ S\nWhich of the following could be the resulting schema of this operation?",
+    "options": {
+      "A": "(A, B, C, C, D)",
+      "B": "(A, B, C)",
+      "C": "(A, B, D)",
+      "D": "(A, B, C, D)"
+    },
+    "answer": "D",
+    "explanation": "A natural join keeps one copy of the common attributes B and C, giving (A, B, C, D)."
+  },
+  {
+    "id": 16,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which relational algebra expression selects all employees from the emp table whose salary is greater than 40000 and who work in the Delhi location?",
+    "options": {
+      "A": "σ salary>40000 ∧ location='Delhi' (emp)",
+      "B": "π salary>40000 ∧ location=Delhi (emp)",
+      "C": "π salary>40000 ∧ location='Delhi' (emp)",
+      "D": "σ salary<40000 ∧ location=Delhi (emp)"
+    },
+    "answer": "A",
+    "explanation": "Selecting rows by a condition uses σ with both conditions joined by ∧ (AND); π projects columns."
+  },
+  {
+    "id": 17,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "What is the primary purpose of the embedded SQL?",
+    "options": {
+      "A": "To provide a graphical interface for SQL scripting",
+      "B": "To convert SQL queries into natural language responses",
+      "C": "To optimize SQL query execution plans",
+      "D": "To allow SQL commands to be called from a programming language"
+    },
+    "answer": "D",
+    "explanation": "Embedded SQL places SQL statements inside a host-language program (C, Java, COBOL, etc.)."
+  },
+  {
+    "id": 18,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which statement best describes the goal of data abstraction in a DBMS?",
+    "options": {
+      "A": "To share database design to database users",
+      "B": "To minimize data redundancy",
+      "C": "To hide physical implementation details",
+      "D": "To optimize query performance"
+    },
+    "answer": "C",
+    "explanation": "Data abstraction (physical, logical and view levels) hides storage details from users."
+  },
+  {
+    "id": 19,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "A serializable schedule has 5 transactions, each with 2 operations. How many possible serial schedules exist?",
+    "options": {
+      "A": "10",
+      "B": "120",
+      "C": "5",
+      "D": "25"
+    },
+    "answer": "B",
+    "explanation": "The number of serial schedules of n transactions is n! = 5! = 120, whatever the number of operations."
+  },
+  {
+    "id": 20,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Consider the following Query -\nSELECT Course\nFROM STUDENT\nGROUP BY Course\nHAVING Count(*) > 10;\nwhere STUDENT is a relation with one of its attributes as 'Course'.\nWhat will be the result of the Query?",
+    "options": {
+      "A": "An error as WHERE clause is missing",
+      "B": "All courses",
+      "C": "All courses with more than 10 students",
+      "D": "All courses with exactly 10 students"
+    },
+    "answer": "C",
+    "explanation": "GROUP BY makes one group per course and HAVING keeps the groups with more than 10 rows. WHERE is optional."
+  },
+  {
+    "id": 21,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which collision resolution technique in hashing handles collisions by storing all keys that hash to the same index in a linked list?",
+    "options": {
+      "A": "Rehashing",
+      "B": "Chaining",
+      "C": "Quadratic probing",
+      "D": "Linear probing"
+    },
+    "answer": "B",
+    "explanation": "Separate chaining keeps a linked list of all keys at each bucket."
+  },
+  {
+    "id": 22,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "In query optimization, why is join order important when dealing with multiple joins?",
+    "options": {
+      "A": "Join order affects the size of intermediate results",
+      "B": "DBMS does not allow reordering of joins",
+      "C": "The final result changes with the join order",
+      "D": "Join order determines the physical location of the output"
+    },
+    "answer": "A",
+    "explanation": "Joins are commutative and associative, so the result is the same, but different orders produce different intermediate result sizes and costs."
+  },
+  {
+    "id": 23,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which amongst the following options is the correct match of the Names in Column-I with the Actions in the Column-II?\nColumn-I (Name): (i) Trigger (ii) Cursor (iii) Stored procedure (iv) View\nColumn-II (Action): (a) A virtual table derived from other tables (b) Automatically execute active rules on occurrence of events (c) Single tuple from a Query result that retrieves a collection of tuples (d) Precompiled SQL statements that are stored at the database server",
+    "options": {
+      "A": "(i)-(a), (ii)-(b), (iii)-(c), (iv)-(d)",
+      "B": "(i)-(b), (ii)-(d), (iii)-(c), (iv)-(a)",
+      "C": "(i)-(b), (ii)-(c), (iii)-(d), (iv)-(a)",
+      "D": "(i)-(d), (ii)-(c), (iii)-(b), (iv)-(a)"
+    },
+    "answer": "C",
+    "explanation": "Trigger = active rule fired on events; cursor = processes one tuple at a time from a multi-row result; stored procedure = precompiled SQL stored on the server; view = virtual table."
+  },
+  {
+    "id": 24,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "What is a common technique for concurrency control in DBMS?",
+    "options": {
+      "A": "Data aggregation",
+      "B": "Query optimization",
+      "C": "Primary indexing",
+      "D": "Two phase locking"
+    },
+    "answer": "D",
+    "explanation": "Two-phase locking (growing and shrinking phases) guarantees conflict-serializable schedules."
+  },
+  {
+    "id": 25,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which condition must be true for using MINUS between two relations?",
+    "options": {
+      "A": "They must use DISTINCT statement",
+      "B": "They must SELECT from the same table",
+      "C": "The two relations must have same number and types of columns",
+      "D": "They must have the same WHERE clause"
+    },
+    "answer": "C",
+    "explanation": "Set operations (UNION, INTERSECT, MINUS) need union-compatible operands: the same number of columns with compatible types."
+  },
+  {
+    "id": 26,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "In embedded SQL, which prefix allows the programmers to reference shared variables in SQL statements?",
+    "options": {
+      "A": ";",
+      "B": "#",
+      "C": "*",
+      "D": ":"
+    },
+    "answer": "D",
+    "explanation": "Host (shared) variables are prefixed with a colon, e.g. :emp_id, inside embedded SQL statements."
+  },
+  {
+    "id": 27,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which of the following statement is true with regards to candidate keys and super keys?",
+    "options": {
+      "A": "Every super key is a candidate key.",
+      "B": "Candidate keys must contain all attributes of the relation.",
+      "C": "Candidate keys are minimal super key with no redundant attributes.",
+      "D": "A candidate key must include a foreign key."
+    },
+    "answer": "C",
+    "explanation": "A candidate key is a minimal superkey; every candidate key is a superkey, but not every superkey is a candidate key."
+  },
+  {
+    "id": 28,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Under which of the following conditions, A SQL view is said to be updatable?\n(A) The FROM clause has more than one database relation.\n(B) The SELECT clause contains only attribute names (no expressions, aggregates or DISTINCT).\n(C) Any attribute not listed in SELECT clause can be set to NULL and is not part of primary key.\n(D) The query does not use GROUP BY or HAVING.\nSelect the correct combination using the code below -",
+    "options": {
+      "A": "(A), (B), (C) and (D)",
+      "B": "(A), (B) and (D) only",
+      "C": "(B), (C) and (D) only",
+      "D": "(A) and (B) only"
+    },
+    "answer": "C",
+    "explanation": "Per SQL rules (Korth), a view is updatable if its FROM has only one relation, SELECT has only attribute names, omitted attributes can be NULL, and there is no GROUP BY/HAVING. So (A) is wrong and (B), (C), (D) hold."
+  },
+  {
+    "id": 29,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Consider a database table -\nStudentcourses(Student_Id, Student_Name, Course_Id, Course_Name, Instructor_Name)\nIf a new course \"XYZ123\" is required to be introduced but none of the students have enrolled for it yet then which amongst the following problems will the database face?",
+    "options": {
+      "A": "Updation anomaly",
+      "B": "Deletion anomaly",
+      "C": "View anomaly",
+      "D": "Insertion anomaly"
+    },
+    "answer": "D",
+    "explanation": "A course cannot be inserted without a student (Student_Id is part of the key), which is an insertion anomaly."
+  },
+  {
+    "id": 30,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "What is the primary goal of query optimization in a DBMS?",
+    "options": {
+      "A": "To encrypt data during query execution",
+      "B": "To validate query syntax",
+      "C": "To normalize the database schema",
+      "D": "To find the most efficient and cost-effective way to execute a query"
+    },
+    "answer": "D",
+    "explanation": "The optimizer chooses the lowest-cost execution plan."
+  },
+  {
+    "id": 31,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which of the following is FALSE about ring topology?",
+    "options": {
+      "A": "A host or end system is connected to the repeater.",
+      "B": "Each device is connected to a central hub.",
+      "C": "A link in the ring is shared among multiple hosts; therefore, a medium access control is required.",
+      "D": "When a host transmits a frame to another host, the frame moves through the repeater and link."
+    },
+    "answer": "B",
+    "explanation": "A central hub is a feature of star topology; in a ring, each device connects to its two neighbours through repeaters."
+  },
+  {
+    "id": 32,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "What advantage does a spanning tree offer in broadcast communication?",
+    "options": {
+      "A": "Increases packet size",
+      "B": "Minimizes the number of packets used in a broadcast",
+      "C": "Decreases packet size",
+      "D": "Maximizes the number of packets used in a broadcast"
+    },
+    "answer": "B",
+    "explanation": "A spanning tree has no loops, so each router gets exactly one copy, using the minimum number of packets."
+  },
+  {
+    "id": 33,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "The TCP protocol............ when it detects congestion in the network.",
+    "options": {
+      "A": "aborts the connection",
+      "B": "repeats the packets from the current window",
+      "C": "encrypts the packets",
+      "D": "reduces the sending rate"
+    },
+    "answer": "D",
+    "explanation": "TCP congestion control shrinks the congestion window (multiplicative decrease), reducing the sending rate."
+  },
+  {
+    "id": 34,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "What are the data rates typically associated with classic Ethernet?",
+    "options": {
+      "A": "1 to 3 Mbps",
+      "B": "100 to 1000 Mbps",
+      "C": "10 to 1000 Mbps",
+      "D": "3 to 10 Mbps"
+    },
+    "answer": "D",
+    "explanation": "Tanenbaum: classic Ethernet ran at 3 to 10 Mbps; switched Ethernet goes to 100, 1000 Mbps and beyond."
+  },
+  {
+    "id": 35,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which of the following statement best describes the role of SNMP?",
+    "options": {
+      "A": "SNMP is a transport-layer protocol that ensures reliable communication between agents.",
+      "B": "SNMP is a network-layer protocol used to route packets efficiently.",
+      "C": "SNMP is an application-layer protocol that manages and monitors devices across heterogeneous networks.",
+      "D": "SNMP is a physical-layer protocol used for fast data transmission."
+    },
+    "answer": "C",
+    "explanation": "SNMP is an application-layer (UDP-based) protocol for managing and monitoring network devices."
+  },
+  {
+    "id": 36,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which of the following is FALSE about firewall?",
+    "options": {
+      "A": "A packet filter firewall, filters at the datalink layer.",
+      "B": "A firewall is a device installed between the internal network of an organization and the rest of the Internet.",
+      "C": "A firewall can be used to deny access to a specific host in the organization.",
+      "D": "A firewall can act as a proxy-based firewall."
+    },
+    "answer": "A",
+    "explanation": "Packet-filter firewalls work at the network and transport layers (IP addresses and ports), not the data link layer."
+  },
+  {
+    "id": 37,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "The DeMilitarized Zone (DMZ) is -",
+    "options": {
+      "A": "The part of the company network that lies inside of the security perimeter.",
+      "B": "The part of the company network that lies outside of the security perimeter.",
+      "C": "The overlay networks on top of public networks but with most of the properties of private networks.",
+      "D": "Create tunnels through the Internet between all pairs of offices."
+    },
+    "answer": "B",
+    "explanation": "Tanenbaum: the DMZ is the part of the company network that lies outside the security perimeter, e.g. for public web servers. C and D describe VPNs."
+  },
+  {
+    "id": 38,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "What does 'OSI' in OSI model stand for?",
+    "options": {
+      "A": "Operating System Interface",
+      "B": "Open Software Integration",
+      "C": "Open Systems Interface",
+      "D": "Open Systems Interconnection"
+    },
+    "answer": "D",
+    "explanation": "OSI = Open Systems Interconnection (ISO reference model)."
+  },
+  {
+    "id": 39,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Consider the following statements about TCP/IP transport layer -\n(A) Each socket has a socket number (address) consisting of the IP address of the host and a 16-bit number local to that host, called a port.\n(B) TCP service is obtained by both the sender and the receiver creating end points, called sockets.\n(C) A socket may be used for multiple connections at the same time.\nWhich of the above statements are correct?",
+    "options": {
+      "A": "(A), (B) and (C)",
+      "B": "Only (B) and (C)",
+      "C": "Only (A) and (C)",
+      "D": "Only (A) and (B)"
+    },
+    "answer": "A",
+    "explanation": "All three are from Tanenbaum's description of TCP: sockets = IP + 16-bit port, both ends create sockets, and a socket may be used for multiple connections at once (connections are identified by socket pairs)."
+  },
+  {
+    "id": 40,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which layers have similar addressing and flow control mechanisms?",
+    "options": {
+      "A": "Physical and data link layers",
+      "B": "Application and presentation layers",
+      "C": "Network and transport layers",
+      "D": "Session and presentation layers"
+    },
+    "answer": "C",
+    "explanation": "Both the network and transport layers handle addressing (IP addresses / ports) and flow and congestion control, so they are the best pair among the options. Strictly, transport-layer protocols most resemble data-link protocols, which is not offered."
+  },
+  {
+    "id": 41,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which of the following is NOT TRUE in the context of Domain Name Server (DNS)?",
+    "options": {
+      "A": "To map a name onto an IP address, an application program calls a library procedure called the resolver.",
+      "B": "The resolver sends a query containing the name to a local DNS server, which looks up the name.",
+      "C": "The local DNS server returns a response containing the IP address to the resolver, which then returns it to the caller.",
+      "D": "The query and response messages are sent as TCP packets."
+    },
+    "answer": "D",
+    "explanation": "DNS queries and responses are normally sent as UDP packets (port 53)."
+  },
+  {
+    "id": 42,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "What is the propagation time and transmission time for a 2.5-kbyte message (an e-mail), if the bandwidth of the network is 1 Gbps? Assume that the distance between the sender and the receiver is 12,000 km and that light travels at 2.4 x 10^8 m/s.",
+    "options": {
+      "A": "0.02 ms, 50 ms",
+      "B": "50 ms, 0.02 ms",
+      "C": "10 ms, 20 ms",
+      "D": "30 ms, 0.40 ms"
+    },
+    "answer": "B",
+    "explanation": "Propagation = 12×10^6 / 2.4×10^8 = 0.05 s = 50 ms; transmission = 2500×8 / 10^9 = 0.02 ms."
+  },
+  {
+    "id": 43,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which of the following is NOT a design objective of Honeypots?",
+    "options": {
+      "A": "Allow an attacker to access critical system.",
+      "B": "Encourage the attacker to stay on the system long enough for administrators to respond.",
+      "C": "Collect information about the attacker's activity.",
+      "D": "Divert an attacker from accessing critical systems."
+    },
+    "answer": "A",
+    "explanation": "Honeypots lure attackers away from critical systems, gather information and hold them for a response; they never give access to critical systems."
+  },
+  {
+    "id": 44,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "CIDR stands for -",
+    "options": {
+      "A": "Classful Intra-Distance Routing",
+      "B": "Classful Inter-Distance Routing",
+      "C": "Classless Intra-Domain Routing",
+      "D": "Classless Inter-Domain Routing"
+    },
+    "answer": "D",
+    "explanation": "CIDR = Classless Inter-Domain Routing."
+  },
+  {
+    "id": 45,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which IEEE 802 standard is most closely associated with Ethernet?",
+    "options": {
+      "A": "IEEE 802.3",
+      "B": "IEEE 802.11",
+      "C": "IEEE 802.16",
+      "D": "IEEE 802.15"
+    },
+    "answer": "A",
+    "explanation": "802.3 is Ethernet; 802.11 is Wi-Fi, 802.16 WiMAX and 802.15 Bluetooth/WPAN."
+  },
+  {
+    "id": 46,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Consider a single-stage switch (200 x 200) with number of input lines (N) as 200, the number of crossbars (k) in the middle stage is 4 and the N input lines are divided into groups, each of n lines, consider n=20. The total number of cross points in a three-stage switch for the given data is -",
+    "options": {
+      "A": "1000",
+      "B": "10000",
+      "C": "2000",
+      "D": "20000"
+    },
+    "answer": "C",
+    "explanation": "Crosspoints = 2kN + k(N/n)^2 = 2×4×200 + 4×(10)^2 = 1600 + 400 = 2000."
+  },
+  {
+    "id": 47,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "A block of addresses is granted to a small organization. We know that one of the addresses is 205.16.37.39/28. What is the first address in the block?",
+    "options": {
+      "A": "205.16.37.255",
+      "B": "205.16.37.1",
+      "C": "205.16.37.32",
+      "D": "205.16.37.0"
+    },
+    "answer": "C",
+    "explanation": "A /28 mask keeps the top 4 bits of the last octet: 39 = 00100111 → 00100000 = 32, so the first address is 205.16.37.32."
+  },
+  {
+    "id": 48,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "In a method of communication, if transmission happens in both directions but not simultaneously, then it is called ........",
+    "options": {
+      "A": "twisted pair",
+      "B": "simplex",
+      "C": "half duplex",
+      "D": "full duplex"
+    },
+    "answer": "C",
+    "explanation": "Half duplex allows two-way communication, one direction at a time."
+  },
+  {
+    "id": 49,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which of the following best describes the difference between bandwidth and throughput?",
+    "options": {
+      "A": "Bandwidth refers to packet size and throughput refers to latency.",
+      "B": "Bandwidth is a theoretical maximum while throughput is the actual achieved data rate.",
+      "C": "Throughput is measured in Hz while bandwidth is measured in bps.",
+      "D": "Bandwidth is affected by latency while throughput is not."
+    },
+    "answer": "B",
+    "explanation": "Bandwidth is the maximum possible rate; throughput is the rate actually achieved."
+  },
+  {
+    "id": 50,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Match the Service in Column-I with the corresponding relevant Example in Column-II -\nColumn-I (Service): (a) Reliable byte stream (b) Unreliable connection (c) Unreliable datagram (d) Acknowledged datagram\nColumn-II (Example): (i) Voice over IP (ii) Text messaging (iii) Movie download (iv) Electronic junk mail",
+    "options": {
+      "A": "(a)-(iv), (b)-(ii), (c)-(i), (d)-(iii)",
+      "B": "(a)-(iii), (b)-(ii), (c)-(iv), (d)-(i)",
+      "C": "(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)",
+      "D": "(a)-(ii), (b)-(i), (c)-(iii), (d)-(iv)"
+    },
+    "answer": "C",
+    "explanation": "Tanenbaum's examples: reliable byte stream = movie download, unreliable connection = VoIP, unreliable datagram = electronic junk mail, acknowledged datagram = text messaging."
+  },
+  {
+    "id": 51,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "What is the primary function of an Intrusion Detection System (IDS)?",
+    "options": {
+      "A": "To provide antivirus protection for a network.",
+      "B": "To monitor network traffic for malicious activity.",
+      "C": "To block all unauthorized access to a system.",
+      "D": "To perform routine maintenance on computer systems."
+    },
+    "answer": "B",
+    "explanation": "An IDS monitors traffic and raises alerts on suspicious activity; blocking is done by firewalls/IPS."
+  },
+  {
+    "id": 52,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Circuit switching takes place at the ................",
+    "options": {
+      "A": "Network Layer",
+      "B": "Application Layer",
+      "C": "Physical Layer",
+      "D": "Data Link Layer"
+    },
+    "answer": "C",
+    "explanation": "Forouzan: circuit switching takes place at the physical layer."
+  },
+  {
+    "id": 53,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "When data is encapsulated, which is the correct order?",
+    "options": {
+      "A": "Segment, frame, packet, bits",
+      "B": "Segment, packet, frame, bits",
+      "C": "Bits, segment, packet, frame",
+      "D": "Frame, packet, segment, bits"
+    },
+    "answer": "B",
+    "explanation": "Going down the stack: transport segment → network packet → data-link frame → physical bits."
+  },
+  {
+    "id": 54,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "In.........., the entire bandwidth is used as one single dedicated channel.",
+    "options": {
+      "A": "WAN",
+      "B": "LAN",
+      "C": "Satellite Network",
+      "D": "Wireless Sensor Network"
+    },
+    "answer": "B",
+    "explanation": "LANs typically use baseband transmission, where the whole bandwidth of the medium forms one channel used by one transmission at a time."
+  },
+  {
+    "id": 55,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "What is attenuation in the context of signal transmission?",
+    "options": {
+      "A": "The process of encoding a signal for secure transmission.",
+      "B": "The increase in signal strength due to amplification.",
+      "C": "The loss of signal energy as it travels through a medium.",
+      "D": "The conversion of a digital signal into an analog signal."
+    },
+    "answer": "C",
+    "explanation": "Attenuation is the loss of signal energy with distance through the medium."
+  },
+  {
+    "id": 56,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "In which topology, every device on the network must have n-1 input/output (I/O) ports to be connected to the other n-1 stations?",
+    "options": {
+      "A": "Mesh",
+      "B": "Star",
+      "C": "Ring",
+      "D": "Bus"
+    },
+    "answer": "A",
+    "explanation": "In a full mesh, each device has a dedicated link to each of the other n−1 devices."
+  },
+  {
+    "id": 57,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Consider the following statements -\n(A) Error correction in Stop-and-Wait ARQ is done by keeping a copy of the sent frame and retransmitting of the frame when the timer expires.\n(B) In Stop-and-Wait ARQ, we use sequence numbers to number the frames. The sequence numbers are based on modulo-8 arithmetic.\n(C) In Stop-and-Wait ARQ, the acknowledgment number always announces in the modulo-2 of the sequence number of the next frame expected.\nWhich of the above statements are correct?",
+    "options": {
+      "A": "Only (A) and (C)",
+      "B": "Only (B) and (C)",
+      "C": "(A), (B) and (C)",
+      "D": "Only (A) and (B)"
+    },
+    "answer": "A",
+    "explanation": "Stop-and-Wait ARQ uses modulo-2 sequence numbers (0 and 1), so (B) is false; (A) and (C) are true."
+  },
+  {
+    "id": 58,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Which of the following is broadcast destination Ethernet address?",
+    "options": {
+      "A": "4A:30:10:21:10:1A",
+      "B": "FC:31:11:31:10:1A",
+      "C": "FF:FF:FF:FF:FF:FF",
+      "D": "47:20:1B:2E:08:EE"
+    },
+    "answer": "C",
+    "explanation": "The Ethernet broadcast address is all 1s: FF:FF:FF:FF:FF:FF."
+  },
+  {
+    "id": 59,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "What is broadcasting in the context of networking?",
+    "options": {
+      "A": "Sending a packet based on the DNS server",
+      "B": "Sending a packet to a single host only",
+      "C": "Sending a packet to all destinations simultaneously",
+      "D": "Sending encrypted messages to selected hosts"
+    },
+    "answer": "C",
+    "explanation": "Broadcasting delivers a packet to all hosts; unicast goes to one and multicast to a group."
+  },
+  {
+    "id": 60,
+    "source_file": "Question Paper for Analyst-Cum-Programmer (Deputy Director) - 2024(Paper-I)",
+    "question": "Why do carrier sense protocols generally achieve better channel utilization than slotted ALOHA?",
+    "options": {
+      "A": "Because they assign fixed time slots to each station in a round-robin fashion.",
+      "B": "Because stations sense the channel before transmitting and avoid collisions.",
+      "C": "Because they reduce bandwidth by limiting the number of active stations.",
+      "D": "Because they allow multiple stations to transmit simultaneously."
+    },
+    "answer": "B",
+    "explanation": "CSMA stations listen before sending and don't transmit on a busy channel, so there are fewer collisions than in ALOHA."
+  }
+]

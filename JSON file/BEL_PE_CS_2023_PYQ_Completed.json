@@ -1,0 +1,1198 @@
+[
+  {
+    "id": 1,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "________ begins at the vortex of the spiral and concentrate on each component of the software as implemented in source code.",
+    "options": {
+      "A": "System testing",
+      "B": "Validation testing",
+      "C": "Unit testing",
+      "D": "Integration testing"
+    },
+    "answer": "C",
+    "explanation": "In the spiral view of testing (Pressman), unit testing starts at the vortex of the spiral and focuses on each component as implemented in source code; integration, validation and system testing follow moving outward."
+  },
+  {
+    "id": 2,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "In context of Relational Algebra of Database Management System, SELECT operation is used to select a subset of the tuples from a relation that satisfy a __________.",
+    "options": {
+      "A": "Relation Criteria",
+      "B": "Selection Criteria",
+      "C": "Block Criteria",
+      "D": "Attribute Criteria"
+    },
+    "answer": "B",
+    "explanation": "The SELECT (σ) operation picks the tuples of a relation that satisfy a selection condition (selection criteria)."
+  },
+  {
+    "id": 3,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Choose the CORRECT sequence of steps involved in machine learning cycle.",
+    "options": {
+      "A": "Data identification → Data preparation → Selection of machine learning algorithm → Evaluate the model → Train model → Deploy the model",
+      "B": "Data identification → Data preparation → Selection of machine learning algorithm → Train model → Evaluate the model → Deploy the model",
+      "C": "Data identification → Selection of machine learning algorithm → Data preparation → Train model → Evaluate the model → Deploy the model",
+      "D": "Data identification → Data preparation → Selection of machine learning algorithm → Train model → Deploy the model → Evaluate the model"
+    },
+    "answer": "B",
+    "explanation": "The ML cycle is: identify data → prepare data → choose an algorithm → train the model → evaluate it → deploy it. A model must be trained before it is evaluated, and evaluated before deployment."
+  },
+  {
+    "id": 4,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following pair of Application layer protocol of OSI model and its services is CORRECT?\nI. X.400 – Directory\nII. X.500 – Electronic Mail protocol",
+    "options": {
+      "A": "Only II",
+      "B": "Only I",
+      "C": "Both I and II",
+      "D": "Neither I nor II"
+    },
+    "answer": "D",
+    "explanation": "X.400 is the OSI e-mail (message handling) standard and X.500 is the directory service standard, so both pairs given are swapped and neither is correct."
+  },
+  {
+    "id": 5,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Given an array X = (22, 33, 55, 88, 96) and key = 88\nHow many iterations are required to find the key using binary search?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "1",
+      "D": "2"
+    },
+    "answer": "D",
+    "explanation": "Binary search: mid = 55 (index 2), 88 > 55 so search [88, 96]; mid = 88, found. That is 2 iterations."
+  },
+  {
+    "id": 6,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Match of the language with its machine format.\nI. Unrestricted language  II. Context sensitive language  III. Context free language  IV. Regular expression\n1. Finite automata  2. Push down automata  3. Linear bounded automata  4. Turing machine",
+    "options": {
+      "A": "I – 3; II – 4; III – 1; IV – 2",
+      "B": "I – 2; II – 3; III – 4; IV – 1",
+      "C": "I – 4; II – 2; III – 1; IV – 3",
+      "D": "I – 4; II – 3; III – 2; IV – 1"
+    },
+    "answer": "D",
+    "explanation": "Unrestricted (Type 0) → Turing machine, context-sensitive → linear bounded automaton, context-free → pushdown automaton, regular → finite automaton."
+  },
+  {
+    "id": 7,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following is the mostly used activation function in the area of deep learning?",
+    "options": {
+      "A": "Sigmoid function",
+      "B": "Step function",
+      "C": "Identity function",
+      "D": "Rectified linear unit function"
+    },
+    "answer": "D",
+    "explanation": "ReLU, f(x) = max(0, x), is the most widely used activation in deep networks because it is cheap and reduces the vanishing-gradient problem."
+  },
+  {
+    "id": 8,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Name the phase of the unified process model where customer communication and planning take place.",
+    "options": {
+      "A": "Inception phase",
+      "B": "Construction phase",
+      "C": "Elaboration phase",
+      "D": "Transition phase"
+    },
+    "answer": "A",
+    "explanation": "In the Unified Process, the inception phase covers customer communication and planning; elaboration refines requirements and architecture."
+  },
+  {
+    "id": 9,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following is NOT a process state?",
+    "options": {
+      "A": "Start",
+      "B": "New",
+      "C": "Running",
+      "D": "Ready"
+    },
+    "answer": "A",
+    "explanation": "The standard process states are new, ready, running, waiting/blocked and terminated; 'Start' is not one of them."
+  },
+  {
+    "id": 10,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which view of the quality argues that quality is something you immediately recognize but cannot explicitly define according to David Galvin of the Harvard Business school?",
+    "options": {
+      "A": "Transcendental view",
+      "B": "Product view",
+      "C": "Manufacturer’s view",
+      "D": "User view"
+    },
+    "answer": "A",
+    "explanation": "Garvin's transcendental view says quality is something you recognise immediately but cannot explicitly define."
+  },
+  {
+    "id": 11,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following formula is used to calculate the sensitivity of a model?",
+    "options": {
+      "A": "FN / (TP + FN)",
+      "B": "FP / (TP + FN)",
+      "C": "TN / (TP + FN)",
+      "D": "TP / (TP + FN)"
+    },
+    "answer": "D",
+    "explanation": "Sensitivity (recall, true-positive rate) = TP / (TP + FN)."
+  },
+  {
+    "id": 12,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following machine learning algorithm does NOT use clustering?",
+    "options": {
+      "A": "Linear Discriminant Analysis",
+      "B": "Expectation Maximization",
+      "C": "K-means",
+      "D": "K-Medians"
+    },
+    "answer": "A",
+    "explanation": "Linear Discriminant Analysis is a supervised classification/dimensionality-reduction method; EM, K-means and K-medians are clustering algorithms."
+  },
+  {
+    "id": 13,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following array representation is CORRECT for the max heap of the following data elements?\n20, 30, 70, 10, 5, 50, 80",
+    "options": {
+      "A": "80, 20, 70, 10, 5, 30, 50",
+      "B": "80, 70, 50, 30, 20, 10, 5",
+      "C": "5, 10, 20, 30, 50, 70, 80",
+      "D": "70, 20, 80, 10, 5, 30, 50"
+    },
+    "answer": "A",
+    "explanation": "Inserting 20, 30, 70, 10, 5, 50, 80 one by one into a max heap gives 80, 20, 70, 10, 5, 30, 50 (50 swaps with 30, then 80 bubbles up past 50 and 70)."
+  },
+  {
+    "id": 14,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following is NOT the action performed by a shift – reduce parser?",
+    "options": {
+      "A": "Error",
+      "B": "Debase",
+      "C": "Accept",
+      "D": "Shift"
+    },
+    "answer": "B",
+    "explanation": "A shift-reduce parser performs four actions: shift, reduce, accept and error. 'Debase' is not one of them."
+  },
+  {
+    "id": 15,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following is the single path shortest path algorithm?",
+    "options": {
+      "A": "Tree search",
+      "B": "Topological sort",
+      "C": "Binary search",
+      "D": "Dijkstra’s algorithm"
+    },
+    "answer": "D",
+    "explanation": "Dijkstra's algorithm solves the single-source shortest path problem (for non-negative weights)."
+  },
+  {
+    "id": 16,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "In context of Database, which of the following is the CORRECT order for creating a database?\nA → Defining its structure (scheme)\nB → Entering data into the database\nC → Designing forms (custom screens) for displaying and entering data",
+    "options": {
+      "A": "C → A → B",
+      "B": "A → C → B",
+      "C": "A → B → C",
+      "D": "B → A → C"
+    },
+    "answer": "B",
+    "explanation": "First define the database structure (schema), then design the forms/screens, and then enter data through them: A → C → B."
+  },
+  {
+    "id": 17,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Parser is categorized into which type of context-free grammar?",
+    "options": {
+      "A": "Two",
+      "B": "One",
+      "C": "Three",
+      "D": "Four"
+    },
+    "answer": "A",
+    "explanation": "Parsers are of two types: top-down and bottom-up."
+  },
+  {
+    "id": 18,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Consider the following queue of character, implemented using array of 7 memory, Front = 3 Rear = 4 Queue: –, –, A, B, __, __, __, where ‘–’, denote empty memory cell. What is the value of front and rear after the following operation?\nEnqueue C, D\nDequeue\nEnqueue E, F\nDequeue",
+    "options": {
+      "A": "Front = 5 Rear = 1",
+      "B": "Front = 3 Rear = 6",
+      "C": "Front = 4 Rear = 7",
+      "D": "Front = 1 Rear = 4"
+    },
+    "answer": "A",
+    "explanation": "Treating the 7-cell array as circular (positions 1–7): Enqueue C, D → rear = 6; Dequeue → front = 4; Enqueue E, F → rear = 7 then wraps to 1; Dequeue → front = 5. So Front = 5, Rear = 1."
+  },
+  {
+    "id": 19,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "10 + (1010)* [∧ + (1010)*] is equivalent to ______, where ∧ represent null.",
+    "options": {
+      "A": "10 + (1010)*",
+      "B": "(1100)*",
+      "C": "(1010)*",
+      "D": "(1010)* + 10"
+    },
+    "answer": "A",
+    "explanation": "∧ + (1010)* = (1010)* (since (1010)* already contains ∧), and (1010)*(1010)* = (1010)*. So the expression is 10 + (1010)*."
+  },
+  {
+    "id": 20,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "In the push down automata, transitional function δ is in the form ______.",
+    "options": {
+      "A": "Q × Σ → (Q, Γ)",
+      "B": "Q × Σ → Q",
+      "C": "Q × Σ × Γ → Q",
+      "D": "Q × (Σ ∪ {λ}) × Γ → (Q, Γ*)"
+    },
+    "answer": "D",
+    "explanation": "A PDA transition reads a state, an input symbol or λ, and the stack top, and gives a new state with a string to push: δ: Q × (Σ ∪ {λ}) × Γ → (Q, Γ*) (finite subsets)."
+  },
+  {
+    "id": 21,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Convert (1111)₂ into decimal equivalents.",
+    "options": {
+      "A": "20",
+      "B": "11",
+      "C": "16",
+      "D": "15"
+    },
+    "answer": "D",
+    "explanation": "(1111)₂ = 8 + 4 + 2 + 1 = 15."
+  },
+  {
+    "id": 22,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "In any computer network, a communication protocol normally perform, which of the following functions for efficient and error free transmission of data?\nI. Data Routing\nII. Procedure and order of Transmission\nIII. Data security\nIV. Data formatting",
+    "options": {
+      "A": "Only II, III and IV",
+      "B": "Only I, II and III",
+      "C": "Only I, III, IV",
+      "D": "I, II, III and IV"
+    },
+    "answer": "D",
+    "explanation": "Communication protocols handle data routing, the procedure and order of transmission, data security and data formatting, so all four."
+  },
+  {
+    "id": 23,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following statement is CORRECT?\nI. An input device is an electromechanical device that accepts data from the outside world and translates it into a form a computer can interpret.\nII. An output device is an electromechanical device that accepts data from a computer and translates them into a form suitable for use by outside world.",
+    "options": {
+      "A": "Only II",
+      "B": "Both I and II",
+      "C": "Only I",
+      "D": "Neither I nor II"
+    },
+    "answer": "B",
+    "explanation": "Both definitions are correct: input devices translate outside data into computer form, and output devices translate computer data into a form usable outside."
+  },
+  {
+    "id": 24,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following change brought about by the iterative waterfall model to the classical waterfall model?",
+    "options": {
+      "A": "Efficient error correction",
+      "B": "Easy to accommodate change request",
+      "C": "Overlapping of phases",
+      "D": "Addition of feedback paths"
+    },
+    "answer": "D",
+    "explanation": "The iterative waterfall model adds feedback paths from each phase to earlier phases so errors can be corrected where they were made."
+  },
+  {
+    "id": 25,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which derivation is also known as canonical derivations?",
+    "options": {
+      "A": "Left most derivation",
+      "B": "Left most derivation in reverse",
+      "C": "Right most derivations in reverse",
+      "D": "Right most derivation"
+    },
+    "answer": "D",
+    "explanation": "The rightmost derivation is called the canonical derivation (an LR parser traces it in reverse)."
+  },
+  {
+    "id": 26,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Sort the following list using radix sort:\n429, 557, 757, 939, 536, 820, 455\nWhat is the output of the algorithm after the first pass?",
+    "options": {
+      "A": "820, 429, 536, 939, 455, 557, 757",
+      "B": "820, 455, 536, 557, 757, 429, 939",
+      "C": "939, 820, 757, 557, 536, 455, 429",
+      "D": "429, 455, 557, 536, 757, 820, 939"
+    },
+    "answer": "B",
+    "explanation": "Radix sort, first pass on the units digit: 820(0), 455(5), 536(6), 557(7), 757(7), 429(9), 939(9), keeping the original order for ties."
+  },
+  {
+    "id": 27,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Match the following network diagram with the correct topology.\n[Diagram I: a central 'Host' node with four nodes each linked directly to it]\n[Diagram II: six nodes connected one after another in a closed loop]\n[Diagram III: several nodes all attached to a single communication line]\n1. Ring network  2. Bus network  3. Star network",
+    "options": {
+      "A": "I – 1; II – 3; III – 2",
+      "B": "I – 3; II – 2; III – 1",
+      "C": "I – 3; II – 1; III – 2",
+      "D": "I – 1; II – 2; III – 3"
+    },
+    "answer": "C",
+    "explanation": "Diagram I (all nodes linked to a central host) is a star, II (closed loop) is a ring, and III (all on one line) is a bus: I – 3; II – 1; III – 2."
+  },
+  {
+    "id": 28,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "What is the decimal conversion of (630.4)₈ ?",
+    "options": {
+      "A": "670",
+      "B": "640.4",
+      "C": "650",
+      "D": "408.5"
+    },
+    "answer": "D",
+    "explanation": "(630.4)₈ = 6×64 + 3×8 + 0 + 4/8 = 384 + 24 + 0.5 = 408.5."
+  },
+  {
+    "id": 29,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Full-Subtractor has ______ inputs and ______ outputs.",
+    "options": {
+      "A": "3; 3",
+      "B": "2; 2",
+      "C": "2; 3",
+      "D": "3; 2"
+    },
+    "answer": "D",
+    "explanation": "A full subtractor has three inputs (minuend, subtrahend, borrow-in) and two outputs (difference, borrow-out)."
+  },
+  {
+    "id": 30,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "K-Nearest Neighbours algorithm is a ________ classification algorithm that classifies new data point based on the nearest data point.",
+    "options": {
+      "A": "Unsupervised",
+      "B": "Reinforcement",
+      "C": "Supervised",
+      "D": "Deep learning"
+    },
+    "answer": "C",
+    "explanation": "K-NN is a supervised learning algorithm: it labels a new point using the labels of its nearest training points."
+  },
+  {
+    "id": 31,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following is NOT the part of the organization of C programming language Activation Record?",
+    "options": {
+      "A": "Return address",
+      "B": "Argument count",
+      "C": "Local data",
+      "D": "Formal parameters"
+    },
+    "answer": "D",
+    "explanation": "The official key marks 'Formal parameters'. Note: this is doubtful, since textbook activation records do hold the (actual) parameters; the key apparently distinguishes formal from actual parameters."
+  },
+  {
+    "id": 32,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "The following C function is an example of what type of recursion?\nint f(int n)\n{\n    if(n==1)\n    return 1;\n    else if(n==0)\n    return 0;\n    else\n    return(f(n-1)+f(n-2));\n}",
+    "options": {
+      "A": "Linear",
+      "B": "Binary",
+      "C": "Head",
+      "D": "Tail"
+    },
+    "answer": "B",
+    "explanation": "Each call makes two recursive calls, f(n-1) and f(n-2), so this is binary (tree) recursion."
+  },
+  {
+    "id": 33,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following statement is CORRECT about software testing?\nI. White box testing is performed early in the testing phase.\nII. Black box testing tends to be applied during later stages of testing.",
+    "options": {
+      "A": "Only II",
+      "B": "Both I and II",
+      "C": "Only I",
+      "D": "Neither I nor II"
+    },
+    "answer": "B",
+    "explanation": "Per the key, both statements are taken as correct. Note: Pressman actually says white-box tests are designed early (during coding/unit testing), while black-box testing is applied in later stages."
+  },
+  {
+    "id": 34,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following identities of regular expression is NOT correct?",
+    "options": {
+      "A": "ΛR = R",
+      "B": "φ + R = R",
+      "C": "R* R* = R*",
+      "D": "φR = R"
+    },
+    "answer": "D",
+    "explanation": "φR = φ, not R (concatenation with the empty set is empty). ΛR = R, φ + R = R and R*R* = R* are all correct."
+  },
+  {
+    "id": 35,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Match the component of software architecture with its roles.\nI. Control component  II. Problem domain component  III. Infrastructure component\n1. That implements a complete or partial function i.e. required by the customer\n2. Responsible for function that support the processing required in the problem domain\n3. Co-ordinate the invocation of all other problem domain components",
+    "options": {
+      "A": "I – 3; II – 2; III – 1",
+      "B": "I – 1; II – 3; III – 2",
+      "C": "I – 3; II – 1; III – 2",
+      "D": "I – 1; II – 2; III – 3"
+    },
+    "answer": "C",
+    "explanation": "The control component coordinates the other problem-domain components (3), problem-domain components implement the customer's functions (1), and infrastructure components support that processing (2)."
+  },
+  {
+    "id": 36,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "A process is ________, if it cannot affect or be affected by the other processes executing in the system.",
+    "options": {
+      "A": "independent",
+      "B": "self-supporting",
+      "C": "co-operating",
+      "D": "dependent"
+    },
+    "answer": "A",
+    "explanation": "An independent process cannot affect or be affected by other processes; a co-operating process can."
+  },
+  {
+    "id": 37,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "How many steps are required to construct a string abbbb from the grammar given by using right most derivation?\nS → aAB\nA → bBb\nB → A/∈",
+    "options": {
+      "A": "5",
+      "B": "7",
+      "C": "4",
+      "D": "6"
+    },
+    "answer": "A",
+    "explanation": "The official key is 5. Note: counting productions, S ⇒ aAB ⇒ aA (B→∈) ⇒ abBb ⇒ abAb ⇒ abbBbb ⇒ abbbb uses 6 production steps, so the key may be counting the derivation differently."
+  },
+  {
+    "id": 38,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Consider a hash table with 10 slots. What is the sequence of the following elements in a hash table if hash function is k mode 10 and the collision is resolved using liner probing?\n44, 26, 12, 93, 80, 57, 56, 23, 46, 36",
+    "options": {
+      "A": "12, 23, 26, 36, 44, 46, 56, 57, 80, 93",
+      "B": "80, 46, 12, 93, 44, 23, 26, 57, 56, 36",
+      "C": "80, 36, 12, 93, 44, 23, 26, 56, 46, 57",
+      "D": "80, 36, 12, 93, 44, 23, 26, 57, 56, 46"
+    },
+    "answer": "D",
+    "explanation": "h(k) = k mod 10 with linear probing: 80→0, 36→1 (6,7,8,9,0 taken), 12→2, 93→3, 44→4, 23→5, 26→6, 57→7, 56→8, 46→9."
+  },
+  {
+    "id": 39,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "How many distinct binary tress are constructed using 5 nodes?",
+    "options": {
+      "A": "42",
+      "B": "30",
+      "C": "5",
+      "D": "16"
+    },
+    "answer": "A",
+    "explanation": "The number of distinct binary trees with n unlabelled nodes is the Catalan number C(n) = (2n)!/((n+1)! n!); C(5) = 42."
+  },
+  {
+    "id": 40,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following statement is CORRECT regarding FLIP-FLOPS?\nI. A FLIP-FLOP circuit can maintain a binary state indefinitely (as long as power is applied) until directed by an input signal to switch states.\nII. The major differences among various types of FLIP-FLOPS are in the number of inputs they possess and in the manner in which the inputs affect the binary state.",
+    "options": {
+      "A": "Both I and II",
+      "B": "Only II",
+      "C": "Only I",
+      "D": "Neither I nor II"
+    },
+    "answer": "A",
+    "explanation": "Both statements are standard (Mano): a flip-flop holds its state until an input changes it, and flip-flop types differ in their inputs and how they affect the state."
+  },
+  {
+    "id": 41,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Identify the category of the multithreading which allow a program to continue running even if part of it is blocked or is performing a lengthy operation.",
+    "options": {
+      "A": "Responsiveness",
+      "B": "Economy",
+      "C": "Scalability",
+      "D": "Resource sharing"
+    },
+    "answer": "A",
+    "explanation": "Responsiveness: multithreading lets a program keep running even if part of it is blocked or doing a long operation."
+  },
+  {
+    "id": 42,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following is the type of parallel processor system as per Flynn's taxonomy?\nI. Single instruction, single data (SISD) stream\nII. Single instruction, multiple data (SIMD) stream",
+    "options": {
+      "A": "Only II",
+      "B": "Only I",
+      "C": "Neither I nor II",
+      "D": "Both I and II"
+    },
+    "answer": "D",
+    "explanation": "Flynn's taxonomy includes SISD and SIMD (as well as MISD and MIMD), so both are categories."
+  },
+  {
+    "id": 43,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "In First-Come-First-Served CPU scheduling algorithm when all the other processes wait for one big process to get off the CPU is known as ________.",
+    "options": {
+      "A": "Aging",
+      "B": "Starvation",
+      "C": "Convoy effect",
+      "D": "Belady’s Anomaly"
+    },
+    "answer": "C",
+    "explanation": "In FCFS, short processes waiting behind one long CPU-bound process is called the convoy effect."
+  },
+  {
+    "id": 44,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "In context of computer networks, based on data transmission speed which of the following are the bases categories of communication channels (paths)?\nI. Narrow band\nII. Voice band\nIII. Broad band",
+    "options": {
+      "A": "Only II and III",
+      "B": "Only I and II",
+      "C": "Only I and III",
+      "D": "I, II and III"
+    },
+    "answer": "D",
+    "explanation": "By speed, communication channels are classed as narrow band, voice band and broad band."
+  },
+  {
+    "id": 45,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Consider 2 dimensional array A[10][15]. Assume that each element takes one memory location and base address of array A is 100. Consider the lower bound of row and column as 0. What is the address of A[i][j] if array A is stored in row major from?",
+    "options": {
+      "A": "10i + j + 100",
+      "B": "i + 10j + 100",
+      "C": "15i + j + 100",
+      "D": "i + 15j + 100"
+    },
+    "answer": "C",
+    "explanation": "Row-major address = base + (i × number of columns + j) × size = 100 + 15i + j."
+  },
+  {
+    "id": 46,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "A ______ defines an action the database should take when same database-related event occurs that causes a change in the content of a table in a database.",
+    "options": {
+      "A": "Field",
+      "B": "Hit",
+      "C": "Trigger",
+      "D": "Relation"
+    },
+    "answer": "C",
+    "explanation": "A trigger specifies an action the DBMS performs automatically when a given event changes table contents."
+  },
+  {
+    "id": 47,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "What is the cyclomatic complexity of the given flow graph?\n[Flow graph: 1 → (2,3); (2,3) → 6 and (2,3) → (4,5); 6 → 7 and 6 → 8; 7 → 9; 8 → 9; 9 → 10; (4,5) → 10; 10 → 1; 1 → 11]",
+    "options": {
+      "A": "5",
+      "B": "3",
+      "C": "6",
+      "D": "4"
+    },
+    "answer": "D",
+    "explanation": "Cyclomatic complexity = number of regions = E − N + 2 = 4 (this is Pressman's standard example flow graph)."
+  },
+  {
+    "id": 48,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following is the external sorting?",
+    "options": {
+      "A": "Selection sort",
+      "B": "Quick sort",
+      "C": "Insertion sort",
+      "D": "Merge sort"
+    },
+    "answer": "D",
+    "explanation": "Merge sort is used for external sorting because it merges sorted runs sequentially from disk."
+  },
+  {
+    "id": 49,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "As per ISO 25010 quality model which of the following is not the characteristics which describe quality in use model?",
+    "options": {
+      "A": "Effectiveness",
+      "B": "Satisfaction",
+      "C": "Compatibility",
+      "D": "Efficiency"
+    },
+    "answer": "C",
+    "explanation": "ISO 25010 quality in use covers effectiveness, efficiency, satisfaction, freedom from risk and context coverage. Compatibility is a product-quality characteristic."
+  },
+  {
+    "id": 50,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following statement is CORRECT regarding Entropy of which is a measurement the uncertainty in data?\nI. Low entropy indicates that the data labels are quite uniform.\nII. High entropy means the labels are in chaos.",
+    "options": {
+      "A": "Only I",
+      "B": "Neither I nor II",
+      "C": "Only II",
+      "D": "Both I and II"
+    },
+    "answer": "D",
+    "explanation": "Low entropy means the labels are mostly the same (uniform/pure), and high entropy means they are mixed (disordered), so both are correct."
+  },
+  {
+    "id": 51,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "What is the output of the following postfix expression?\n5, 6, 2, +, *, 8, 4, /, –",
+    "options": {
+      "A": "38",
+      "B": "37",
+      "C": "36",
+      "D": "39"
+    },
+    "answer": "A",
+    "explanation": "5 6 2 + → 5 8; * → 40; 8 4 / → 2; − → 40 − 2 = 38."
+  },
+  {
+    "id": 52,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Match the following algorithms with the data structure it uses.\nI. Breadth first search  II. Heap sort  III. Depth first search\n1. Stacks  2. Queue  3. Arrays",
+    "options": {
+      "A": "I – 3; II – 2; III – 1",
+      "B": "I – 3; II – 1; III – 2",
+      "C": "I – 2; II – 3; III – 1",
+      "D": "I – 1; II – 2; III – 3"
+    },
+    "answer": "C",
+    "explanation": "BFS uses a queue (2), heap sort uses an array (3), and DFS uses a stack (1)."
+  },
+  {
+    "id": 53,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following statement is CORRECT regarding Referential Integrity Constants in Relational Database Management System?\nI. Referential Integrity Constants is a rule that maintains consistency among the rows of two tables (relations).\nII. Referential Integrity rule States that of there is a foreign key in one relation, either each foreign key value must match a primary key value in the other table or else the foreign key value must be null.",
+    "options": {
+      "A": "Neither I nor II",
+      "B": "Only II",
+      "C": "Only I",
+      "D": "Both I and II"
+    },
+    "answer": "D",
+    "explanation": "Both statements describe referential integrity: rows of two tables stay consistent, and each foreign key value must match a primary key value or be null."
+  },
+  {
+    "id": 54,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Match the following algorithm with its average complexity.\nI. Binary search  II. Quick sort  III. Linear search  IV. Selection sort\n1. O(n²)  2. O(log n)  3. O(n log n)  4. O(n)",
+    "options": {
+      "A": "I – 2; II – 3; III – 4; IV – 1",
+      "B": "I – 4; II – 3; III – 2; IV – 1",
+      "C": "I – 1; II – 4; III – 2; IV – 3",
+      "D": "I – 3; II – 1; III – 2; IV – 4"
+    },
+    "answer": "A",
+    "explanation": "Binary search O(log n) (2), quick sort O(n log n) (3), linear search O(n) (4), selection sort O(n²) (1)."
+  },
+  {
+    "id": 55,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "In context of OSI model of computer networks ________ layer provides services that directly support end users of networks and is a collection of miscellaneous protocols for various commonly used applications such as electronic mail, file transfer etc.",
+    "options": {
+      "A": "Session",
+      "B": "Transport",
+      "C": "Application",
+      "D": "Presentation"
+    },
+    "answer": "C",
+    "explanation": "The application layer supports end users directly with protocols such as e-mail and file transfer."
+  },
+  {
+    "id": 56,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Consider the following confusion matrix.\n[Actual Positive: Predicted Positive = 100, Predicted Negative = 50]\n[Actual Negative: Predicted Positive = 150, Predicted Negative = 9700]\nWhat is the value of False Negative in this confusion matrix?",
+    "options": {
+      "A": "50",
+      "B": "100",
+      "C": "150",
+      "D": "9700"
+    },
+    "answer": "A",
+    "explanation": "False negatives are actual positives predicted as negative: 50."
+  },
+  {
+    "id": 57,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Match the machine learning technique with its way of working.\nI. Supervised learning  II. Unsupervised learning  III. Reinforcement\n1. Utilizes data that is not labelled and attempts to find patterns by clustering similar objects together\n2. Work on the principle of reward and punishment\n3. Utilizes a labelled dataset",
+    "options": {
+      "A": "I – 3; II – 2; III – 1",
+      "B": "I – 1; II – 2; III – 3",
+      "C": "I – 3; II – 1; III – 2",
+      "D": "I – 1; II – 3; III – 2"
+    },
+    "answer": "C",
+    "explanation": "Supervised learning uses labelled data (3), unsupervised clusters unlabelled data (1), and reinforcement learning works by reward and punishment (2)."
+  },
+  {
+    "id": 58,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following is NOT the problems of synchronization?",
+    "options": {
+      "A": "The Dining-Philosophers problem",
+      "B": "The Knapsack problem",
+      "C": "The Bounded-Buffer problem",
+      "D": "The Readers-Writer problem"
+    },
+    "answer": "B",
+    "explanation": "Dining philosophers, bounded buffer and readers-writers are classic synchronization problems; knapsack is an optimisation problem."
+  },
+  {
+    "id": 59,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Match the following type of software maintenance to the situation where it carried out.\nI. Corrective  II. Perfective  III. Adaptive\n1. Carried out to improve the performance of the system or to enhance the functionalities of the system\n2. Usually required for porting the software to work in new environment\n3. Carried out to correct errors that were not discovered during the product development phase",
+    "options": {
+      "A": "I – 1; II – 2; III – 3",
+      "B": "I – 3; II – 2; III – 1",
+      "C": "I – 3; II – 1; III – 2",
+      "D": "I – 1; II – 3; III – 2"
+    },
+    "answer": "C",
+    "explanation": "Corrective fixes undiscovered errors (3), perfective improves performance/functionality (1), adaptive ports to a new environment (2)."
+  },
+  {
+    "id": 60,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "The time dispatcher takes and for the dispatcher to stop one process and start another running is known as ______.",
+    "options": {
+      "A": "dispatch turnaround time",
+      "B": "dispatch latency",
+      "C": "dispatch response time",
+      "D": "dispatch wasting time"
+    },
+    "answer": "B",
+    "explanation": "The time the dispatcher takes to stop one process and start another is the dispatch latency."
+  },
+  {
+    "id": 61,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "What is the total number of swaps performed to sort the following list of elements 18, 32, 17, 19, 41, 15, 23 in an ascending order, using bubble sort?",
+    "options": {
+      "A": "10",
+      "B": "13",
+      "C": "12",
+      "D": "11"
+    },
+    "answer": "A",
+    "explanation": "Bubble sort makes one swap per inversion. The list 18, 32, 17, 19, 41, 15, 23 has 10 inversions, so 10 swaps."
+  },
+  {
+    "id": 62,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following is the CORRECT for O- notation?",
+    "options": {
+      "A": "O(g(n)) = {f(n): there exist positive constant C and n₀ such that 0 ≤ f(n) ≤ cg(n) for all n ≥ n₀}",
+      "B": "O(g(n)) = {f(n): there exist positive constant C and n₀ such that 0 ≥ f(n) ≥ cg(n) for all n ≥ n₀}",
+      "C": "O(g(n)) = {f(n): there exist positive constant C₁, C₂ and n₀ such that 0 ≤ C₁g(n) ≤ f(n) ≤ C₂g(n) for all n ≥ n₀}",
+      "D": "O(g(n)) = {f(n): there exist positive constant C and n₀ such that 0 ≤ Cg(n) ≤ f(n) for all n ≥ n₀}"
+    },
+    "answer": "A",
+    "explanation": "Big-O: f(n) = O(g(n)) if there exist positive c and n₀ with 0 ≤ f(n) ≤ c·g(n) for all n ≥ n₀. Option 3 defines Θ and option 4 defines Ω."
+  },
+  {
+    "id": 63,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "In the context of Relational Algebra of Database Management System, which of the following is a symbol JOIN operation?",
+    "options": {
+      "A": "⋈ (bowtie)",
+      "B": "▶ (filled triangle)",
+      "C": "✥ (four-headed arrow)",
+      "D": "↔ (two-headed arrow)"
+    },
+    "answer": "A",
+    "explanation": "The bowtie symbol ⋈ denotes the (natural) join in relational algebra."
+  },
+  {
+    "id": 64,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Any address generated by the CPU is commonly referred to as a ______ where an address seen by the memory unit i.e. the one loaded into the memory address register is known as ______.",
+    "options": {
+      "A": "logical address; absolute address",
+      "B": "logical address; physical address",
+      "C": "absolute address; physical address",
+      "D": "physical address; relocatable address"
+    },
+    "answer": "B",
+    "explanation": "A CPU-generated address is a logical (virtual) address; the address loaded into the memory-address register is the physical address."
+  },
+  {
+    "id": 65,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "What is the decimal conversion of (1010.011)₂ ?",
+    "options": {
+      "A": "14",
+      "B": "10.375",
+      "C": "11.375",
+      "D": "12"
+    },
+    "answer": "B",
+    "explanation": "(1010.011)₂ = 8 + 2 + 0.25 + 0.125 = 10.375."
+  },
+  {
+    "id": 66,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "In context of data normalization in database management system, relation is in Boyce-Codd Normal Form if and only if every determinant is a ______.",
+    "options": {
+      "A": "Alternate key",
+      "B": "Foreign key",
+      "C": "Non-primary key",
+      "D": "Candiate key"
+    },
+    "answer": "D",
+    "explanation": "A relation is in BCNF if and only if every determinant is a candidate key."
+  },
+  {
+    "id": 67,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following pair is CORRECT?\nI. Associative law : (x*y)*z = x*(y*z)\nII. Distributive law : x*(y+z) = (x*y)+(x*z)",
+    "options": {
+      "A": "Only I",
+      "B": "Both I and II",
+      "C": "Neither I nor II",
+      "D": "Only II"
+    },
+    "answer": "B",
+    "explanation": "Both are the standard laws: associative (x*y)*z = x*(y*z) and distributive x*(y+z) = (x*y)+(x*z)."
+  },
+  {
+    "id": 68,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following is part of the hierarchical storage system?\nI. Cache memory\nII. Near-line mass storage devices",
+    "options": {
+      "A": "Only II",
+      "B": "Both I and II",
+      "C": "Only I",
+      "D": "Neither I nor II"
+    },
+    "answer": "B",
+    "explanation": "A storage hierarchy includes cache memory and near-line mass storage (e.g. tape libraries), along with main memory and online storage."
+  },
+  {
+    "id": 69,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following statement is CORRECT with reference to syntax-directed Translation Schemes?\nI. Synthesized translation defines the value of the translation of the nonterminal on the left side of the production as a function of the translations of the nonterminal on the right side.\nII. Translation of a non-terminal on the right side of the production is defined in terms of a translation of the non-terminal on left. Such translation is called inherited translation.",
+    "options": {
+      "A": "Neither I nor II",
+      "B": "Only I",
+      "C": "Only II",
+      "D": "Both I and II"
+    },
+    "answer": "D",
+    "explanation": "Both are the standard definitions: synthesized translations come from the right-side children, and inherited translations of a right-side nonterminal come from the left side (parent)."
+  },
+  {
+    "id": 70,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following pair is CORRECT?\nI. Half adder - A combinational circuit that performs the addition of two bits\nII. Full adder - A combinational circuit that performs the addition of three bits",
+    "options": {
+      "A": "Only II",
+      "B": "Both I and II",
+      "C": "Neither I nor II",
+      "D": "Only I"
+    },
+    "answer": "B",
+    "explanation": "A half adder adds two bits and a full adder adds three bits (two bits and a carry-in)."
+  },
+  {
+    "id": 71,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following is NOT part of the mechanical diagram of the Turing machine?",
+    "options": {
+      "A": "Queue",
+      "B": "Input tape",
+      "C": "Read-write head",
+      "D": "Finite control"
+    },
+    "answer": "A",
+    "explanation": "A Turing machine has an input tape, a read-write head and a finite control; there is no queue."
+  },
+  {
+    "id": 72,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following is the CORRECT sequence of the phases of a compiler?",
+    "options": {
+      "A": "Lexical analysis, intermediate code generation, syntax analysis, code generation, code optimization",
+      "B": "Lexical analysis, syntax analysis, intermediate code generation, code generation, code optimization",
+      "C": "Lexical analysis, intermediate code generation, syntax analysis, code optimization, code generation",
+      "D": "Lexical analysis, syntax analysis, intermediate code generation, code optimization, code generation"
+    },
+    "answer": "D",
+    "explanation": "The phases run lexical analysis, syntax analysis, intermediate code generation, code optimization, then code generation (semantic analysis comes after syntax analysis)."
+  },
+  {
+    "id": 73,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following is NOT the necessary condition for the deadlock?",
+    "options": {
+      "A": "Circular wait",
+      "B": "Preemption",
+      "C": "Hold and wait",
+      "D": "Mutual exclusion"
+    },
+    "answer": "B",
+    "explanation": "The necessary conditions are mutual exclusion, hold and wait, no preemption and circular wait. Preemption itself is not a condition; the condition is no preemption."
+  },
+  {
+    "id": 74,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "A ______ is a combinational circuit that selects binary information from one of many input lines and directs it to a single output line.",
+    "options": {
+      "A": "full adder",
+      "B": "half adder",
+      "C": "half subtractor",
+      "D": "digital multiplexer"
+    },
+    "answer": "D",
+    "explanation": "A (digital) multiplexer selects one of many inputs and routes it to a single output."
+  },
+  {
+    "id": 75,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following algorithms is an example of the divide and conquer approach?",
+    "options": {
+      "A": "Prim’s algorithm",
+      "B": "Matrix-chain multiplication",
+      "C": "Quick sort",
+      "D": "Longest common subsequence"
+    },
+    "answer": "C",
+    "explanation": "Quick sort is divide and conquer; Prim's is greedy, and matrix-chain multiplication and LCS are dynamic programming."
+  },
+  {
+    "id": 76,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Context free grammar is ______ grammar according to the Chomsky hierarchy.",
+    "options": {
+      "A": "Type 2",
+      "B": "Type 1",
+      "C": "Type 0",
+      "D": "Type 3"
+    },
+    "answer": "A",
+    "explanation": "In the Chomsky hierarchy, context-free grammars are Type 2."
+  },
+  {
+    "id": 77,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "In context of OSI model of computer networks, which of the following is a Transport Layer Protocol?\nI. Transport Control Protocol\nII. User Datagram Protocol",
+    "options": {
+      "A": "Neither I nor II",
+      "B": "Only I",
+      "C": "Both I and II",
+      "D": "Only II"
+    },
+    "answer": "C",
+    "explanation": "TCP (Transmission Control Protocol, printed here as 'Transport Control Protocol') and UDP are both transport-layer protocols."
+  },
+  {
+    "id": 78,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following statement is correct regarding complements?\nI. Complements are used in digital computers for simplifying the subtraction operation and for logical manipulations.\nII. There are two types of complements for each base-r system: the r’s complement and (r-1)’s complement.",
+    "options": {
+      "A": "Both I and II",
+      "B": "Neither I nor II",
+      "C": "Only I",
+      "D": "Only II"
+    },
+    "answer": "A",
+    "explanation": "Both are correct: complements simplify subtraction and logic operations, and base-r has r's and (r−1)'s complements."
+  },
+  {
+    "id": 79,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Name the phase of compiler, which separates characters of the source language into groups that logically belong together, these groups are called tokens.",
+    "options": {
+      "A": "Lexical analysis",
+      "B": "Code optimization",
+      "C": "Error handling",
+      "D": "Syntax analysis"
+    },
+    "answer": "A",
+    "explanation": "Lexical analysis groups source characters into tokens."
+  },
+  {
+    "id": 80,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "________ acts as a high-speed buffer between CPU and main memory and computer systems use it to store temporarily very active data and instructions during processing.",
+    "options": {
+      "A": "PROM",
+      "B": "Flash memory",
+      "C": "Cache memory",
+      "D": "EPROM"
+    },
+    "answer": "C",
+    "explanation": "Cache memory is the high-speed buffer between the CPU and main memory."
+  },
+  {
+    "id": 81,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "In context of computer networks which of the following is a data transmission mode?\nI. Simplex\nII. Half Simplex\nIII. Full Duplex",
+    "options": {
+      "A": "I, II and III",
+      "B": "Only II and III",
+      "C": "Only I and III",
+      "D": "Only I and II"
+    },
+    "answer": "C",
+    "explanation": "The transmission modes are simplex, half duplex and full duplex; 'Half Simplex' does not exist, so only I and III."
+  },
+  {
+    "id": 82,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "In context of OSI model of computer networks ________ layer provides means of establishing, maintaining and transmitting a dialogue between two end users.",
+    "options": {
+      "A": "Session",
+      "B": "Application",
+      "C": "Transport",
+      "D": "Presentation"
+    },
+    "answer": "A",
+    "explanation": "The session layer establishes, maintains and manages the dialogue between end users."
+  },
+  {
+    "id": 83,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Database designers use _________ to define the structure of a database (database scheme) which typically includes definition of all data elements of the database and organization of data elements into records, tables etc.",
+    "options": {
+      "A": "Query by example",
+      "B": "Data Definition Language",
+      "C": "Find Command Language",
+      "D": "Data Manipulation Language"
+    },
+    "answer": "B",
+    "explanation": "The Data Definition Language (DDL) defines the database schema."
+  },
+  {
+    "id": 84,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "According to memory hierarchy as one goes down the hierarchy what will NOT occur?",
+    "options": {
+      "A": "Increasing frequency of access of the memory by the processor",
+      "B": "Increasing capacity",
+      "C": "Increasing access time",
+      "D": "Decreasing cost per bit"
+    },
+    "answer": "A",
+    "explanation": "Going down the hierarchy capacity and access time increase and cost per bit decreases, but the processor accesses those levels less often, not more."
+  },
+  {
+    "id": 85,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "In context of computer Database, _________ language includes command to enable users to enter and manipulate data in a database.",
+    "options": {
+      "A": "Data Integrity",
+      "B": "Data Definition",
+      "C": "Data Security",
+      "D": "Data Manipulation"
+    },
+    "answer": "D",
+    "explanation": "The Data Manipulation Language (DML) provides commands to enter and manipulate data."
+  },
+  {
+    "id": 86,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Match the phases of compiler with its function.\nI. Intermediate code generator  II. Code generation  III. Table management\n1. Keeps track of the names used by the program\n2. Create a stream of simple instructions\n3. Produces the object code",
+    "options": {
+      "A": "I – 2; II – 3; III – 1",
+      "B": "I – 1; II – 2; III – 3",
+      "C": "I – 2; II – 1; III – 3",
+      "D": "I – 1; II – 3; III – 2"
+    },
+    "answer": "A",
+    "explanation": "The intermediate code generator creates a stream of simple instructions (2), the code generator produces object code (3), and table management tracks names used (1)."
+  },
+  {
+    "id": 87,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "The given finite automata is equivalent to which of the following regular expression?\n[FA: start q0; q0 –a→ q1, q1 –b→ q2 (final); q0 –a→ q4, q4 –a→ q3; q0 –b→ q5, q5 –b→ q3; q3 loops on a, b; q3 –b→ q2]",
+    "options": {
+      "A": "ab (aa + b) (a + b)* a",
+      "B": "ab (aa + bb)(a + b)* b",
+      "C": "(a + b)* (aa + bb) (a + b)*",
+      "D": "ab + (aa + bb) (a + b)* b"
+    },
+    "answer": "D",
+    "explanation": "Paths: q0–a→q1–b→q2 gives ab; q0–aa or bb→q3, any (a+b)* on q3, then b→q2 gives (aa + bb)(a + b)*b. Together: ab + (aa + bb)(a + b)*b."
+  },
+  {
+    "id": 88,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "What is the output function of the given XOR gate?\n[Diagram: XOR gate with inputs X and Y and output Z]",
+    "options": {
+      "A": "Z = (X + Y)′",
+      "B": "Z = X + Y",
+      "C": "Z = XY′ + X′Y",
+      "D": "Z = X.Y"
+    },
+    "answer": "C",
+    "explanation": "XOR outputs 1 when exactly one input is 1: Z = XY′ + X′Y."
+  },
+  {
+    "id": 89,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Which of the following is NOT an input device?",
+    "options": {
+      "A": "Voice response system",
+      "B": "Keyboard",
+      "C": "Point and draw devices",
+      "D": "Speech recognition devices"
+    },
+    "answer": "A",
+    "explanation": "A voice response system is an output device (it speaks); keyboards, pointing devices and speech recognition are input devices."
+  },
+  {
+    "id": 90,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "In context to Database management system which of the following is CORRECT regarding query by example?\nI. A Query by example form collects all information from a user for composing query language statements for search criterion.\nII. Query by example relieves users from remembering query language keywords and using them with correct syntax to form quires.",
+    "options": {
+      "A": "Both I and II",
+      "B": "Only I",
+      "C": "Neither I nor II",
+      "D": "Only II"
+    },
+    "answer": "A",
+    "explanation": "Both are correct: a QBE form collects the search criteria from the user, and QBE frees users from remembering query-language keywords and syntax."
+  },
+  {
+    "id": 91,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "What is the minimum cost of the spanning tree of the given graph?\n[Graph edges with weights: A–B 3, A–F 2, B–D 1, B–C 2, C–E 5, C–H 3, D–E 4, E–H 6, E–G 3, F–G 2, G–H 1]",
+    "options": {
+      "A": "12",
+      "B": "14",
+      "C": "13",
+      "D": "11"
+    },
+    "answer": "B",
+    "explanation": "Kruskal: B–D 1, G–H 1, A–F 2, B–C 2, F–G 2, A–B 3, E–G 3 (C–H 3 would form a cycle). Total = 1+1+2+2+2+3+3 = 14."
+  },
+  {
+    "id": 92,
+    "source_file": "BEL_PE_CS_2023_PYQ_Completed",
+    "question": "Dot-matrix printers are character printers that print _________ character at a time.",
+    "options": {
+      "A": "two",
+      "B": "one",
+      "C": "four",
+      "D": "three"
+    },
+    "answer": "B",
+    "explanation": "Dot-matrix printers are character printers that print one character at a time."
+  }
+]

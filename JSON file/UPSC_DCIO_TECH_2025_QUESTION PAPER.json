@@ -1,0 +1,548 @@
+[
+  {
+    "id": 1,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "The percentage of times that the page number of interest is found in the translation look-aside buffer (TLB), is called",
+    "options": {
+      "A": "Hit ratio",
+      "B": "Page ratio",
+      "C": "Fault ratio",
+      "D": "Access time ratio"
+    },
+    "answer": "A",
+    "explanation": "The fraction of references found in the TLB is the TLB hit ratio."
+  },
+  {
+    "id": 2,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following techniques is used to avoid the high rate of data loss in structuring RAID ?",
+    "options": {
+      "A": "Mirroring",
+      "B": "Boot strapping",
+      "C": "Mapping data",
+      "D": "Burping data"
+    },
+    "answer": "A",
+    "explanation": "Mirroring (RAID 1) keeps duplicate copies so that a disk failure loses no data."
+  },
+  {
+    "id": 3,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which of the following logging algorithms have been applied successfully to the problem of consistency checking ?",
+    "options": {
+      "A": "File-based transaction-oriented file systems",
+      "B": "Log-based transaction-oriented file systems",
+      "C": "Snapshot file systems",
+      "D": "File allocation systems"
+    },
+    "answer": "B",
+    "explanation": "Silberschatz notes that log-based recovery algorithms have been applied to consistency checking as log-based transaction-oriented (journaling) file systems."
+  },
+  {
+    "id": 4,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following statements is related to non-preemptive scheduling ?",
+    "options": {
+      "A": "It allows a process to be interrupted in the midst of its execution, taking the CPU away and allocating it to another process",
+      "B": "It ensures that a process relinquishes control of the CPU only when it finishes with its current CPU burst",
+      "C": "The system clock is updated at every clock interrupt. If interrupts were disabled particularly for a long period of time, it is possible the system clock could easily lose the correct time",
+      "D": "If clock interrupts were disabled, the scheduler could not accurately assign time quantums. This effect can be minimized by disabling clock interrupts for only very short periods"
+    },
+    "answer": "B",
+    "explanation": "In non-preemptive scheduling, a process keeps the CPU until it finishes its CPU burst (or blocks)."
+  },
+  {
+    "id": 5,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Consider a computing environment where a unique number is associated with each process and each object in the system. Suppose that we allow a process with number n to access an object with number m only if n > m. What type of protection structure do we have ?",
+    "options": {
+      "A": "Reference structure",
+      "B": "Hierarchical structure",
+      "C": "Parallel structure",
+      "D": "Vertical structure"
+    },
+    "answer": "B",
+    "explanation": "Higher-numbered processes can access every lower-numbered object, which forms a hierarchical (ring-like) protection structure (Silberschatz exercise)."
+  },
+  {
+    "id": 6,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following statements is the disadvantage of circuit switching ?",
+    "options": {
+      "A": "The network resources required for a transfer are reserved before the transmission takes place. This ensures that packets will not be dropped and their delivery would satisfy quality of service requirements",
+      "B": "It requires a round-trip message to set-up the reservations and it also might overprovision resources, thereby resulting in suboptimal use of the resources",
+      "C": "Viable strategy for applications that have constant demands regarding network resources and would require the resources for long periods of time, thereby amortizing the initial overheads",
+      "D": "The distributed file system appears to the user as a single file system but in reality it may be distributed across a network"
+    },
+    "answer": "B",
+    "explanation": "Circuit switching needs set-up round trips and reserves (possibly idle) capacity, which wastes resources. Options (a) and (c) are advantages."
+  },
+  {
+    "id": 7,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following layers is not available in the TCP/IP reference model compared to OSI reference model ?",
+    "options": {
+      "A": "Application, Network, and Data link",
+      "B": "Network, Data link, and Presentation",
+      "C": "Presentation, Physical, and Session",
+      "D": "Transport, Network, and Data link"
+    },
+    "answer": "C",
+    "explanation": "The 4-layer TCP/IP model (Application, Transport, Internet, Network Access) has no separate Session, Presentation or Physical layers."
+  },
+  {
+    "id": 8,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following methods is used to remove patterns from cipher text ?",
+    "options": {
+      "A": "Random key scheduling",
+      "B": "Cipher block chaining",
+      "C": "Bit masking",
+      "D": "Pseudorandom hashing"
+    },
+    "answer": "B",
+    "explanation": "CBC XORs each plaintext block with the previous ciphertext block, so identical plaintext blocks produce different ciphertext and patterns are hidden."
+  },
+  {
+    "id": 9,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following is the main goal of the fast-flux technique ?",
+    "options": {
+      "A": "To speed up DNS resolution for large enterprises",
+      "B": "To create a resilient and balanced network of compromised computers for malicious actions",
+      "C": "To increase website performance during high traffic",
+      "D": "To randomize IP addresses for better content distribution"
+    },
+    "answer": "B",
+    "explanation": "Fast-flux DNS rapidly rotates the IP addresses of botnet proxies, so malicious infrastructure stays resilient and hard to take down."
+  },
+  {
+    "id": 10,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following techniques is used to detect shell code behaviorally in IDS/IPS systems ?",
+    "options": {
+      "A": "IP spoofing",
+      "B": "Heuristic file scanning",
+      "C": "Libemu",
+      "D": "Manual packet filtering"
+    },
+    "answer": "C",
+    "explanation": "Libemu is an x86 emulation library that detects shellcode by emulating it (GetPC heuristics), and it is used in IDS/IPS such as Snort and Suricata."
+  },
+  {
+    "id": 11,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following models keeps track of the current state of the world, using an internal model, it then chooses an action in the same way as the reflex agent ?",
+    "options": {
+      "A": "Simple reflex agent",
+      "B": "Goal-based reflex agent",
+      "C": "Utility-based reflex agent",
+      "D": "Model-based reflex agent"
+    },
+    "answer": "D",
+    "explanation": "A model-based reflex agent maintains internal state about the world and then picks actions through condition–action rules, as a reflex agent does (Russell and Norvig)."
+  },
+  {
+    "id": 12,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following actions occurs in iterative deepening depth-first search if a goal is not found at the current depth limit ?",
+    "options": {
+      "A": "Stops and returns failure",
+      "B": "Switches to breadth-first search",
+      "C": "Increases the depth limit by 1",
+      "D": "Reverses the search direction"
+    },
+    "answer": "C",
+    "explanation": "IDDFS repeats depth-limited search with limits 0, 1, 2, …, increasing the limit by one after each failed iteration."
+  },
+  {
+    "id": 13,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following represents the time complexity of bidirectional search ?",
+    "options": {
+      "A": "O(b^(d/2))",
+      "B": "O(b^d)",
+      "C": "O(bd)",
+      "D": "O(b²)"
+    },
+    "answer": "A",
+    "explanation": "Two searches each go to depth d/2, so the time is O(b^(d/2)) + O(b^(d/2)) = O(b^(d/2))."
+  },
+  {
+    "id": 14,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following chaining methods is used in deductive databases, where it can be combined with relational database operations ?",
+    "options": {
+      "A": "Forward chaining",
+      "B": "Backward chaining",
+      "C": "Incremental forward chaining",
+      "D": "Decremental backward chaining"
+    },
+    "answer": "A",
+    "explanation": "Bottom-up evaluation (forward chaining) of Datalog rules can be carried out with relational operations such as join and project, which is why deductive databases use it."
+  },
+  {
+    "id": 15,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following IoT protocols is related to physical/device layer ?",
+    "options": {
+      "A": "Routing Protocol for Low Power and Lossy Networks (RPL)",
+      "B": "6LoWPAN (IPv6 over Low-Power Wireless Personal Area Networks)",
+      "C": "IEEE 802.15.4",
+      "D": "LTE-A (Long Term Evolution-Advanced)"
+    },
+    "answer": "C",
+    "explanation": "IEEE 802.15.4 defines the PHY and MAC layers for low-rate WPANs. RPL is a routing protocol and 6LoWPAN is an adaptation layer. Note: some IoT stack tables also place LTE-A at the physical/device layer, so (d) could be argued."
+  },
+  {
+    "id": 16,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following statements is related to Universal Plug and Play (UPnP) in IoT ?",
+    "options": {
+      "A": "Capability of UPnP device to join a network dynamically (automatically) and obtain IP addresses of other devices and at the same time convey its capabilities to other devices",
+      "B": "This protocol helps the clients to discover a set of desired services that are present in a network with the help of standard DNS messages",
+      "C": "This protocol helps to connect devices without any external administration or configuration",
+      "D": "No manual configuration or administration is required to manage devices"
+    },
+    "answer": "A",
+    "explanation": "UPnP lets a device dynamically join a network, get an IP address, announce its capabilities and learn about other devices. Option (b) describes DNS-SD."
+  },
+  {
+    "id": 17,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following key features is related to Calvin IoT programming framework ?",
+    "options": {
+      "A": "Edge processing support for latency sensitive applications, Python for macro-programming, URIs for nodes, RESTful APIs",
+      "B": "Actor model and dataflow-based development, Cloud support, and runtime multitenancy support for things",
+      "C": "RESTful API support, flow design and composition support with reusability",
+      "D": "Intent-based programming, cloud support for control and monitoring of tasks"
+    },
+    "answer": "B",
+    "explanation": "Calvin (Ericsson) combines the actor model with flow-based (dataflow) programming, and supports the cloud and multi-tenant runtimes."
+  },
+  {
+    "id": 18,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "[Stem partly cut off in the scan] ... following lists :\nList I (Protocols): P. MQTT  Q. XMPP  R. DDS  S. AMQP\nList II (Actions): 1. A queuing system designed to connect servers to each other (S2S)  2. A best protocol for connecting devices to people, a special case of the D2S pattern, since people are connected to the servers  3. A protocol for collecting device data and communicating it to servers (D2S)  4. A fast bus for integrating intelligent machines (D2D)\nSelect the correct answer using the code given below :\nP Q R S",
+    "options": {
+      "A": "3 2 4 1",
+      "B": "2 3 1 4",
+      "C": "1 4 2 3",
+      "D": "4 1 3 2"
+    },
+    "answer": "A",
+    "explanation": "MQTT is device-to-server (3) and XMPP connects devices to people (2). DDS is the device-to-device bus (4) and AMQP is the server-to-server queuing system (1)."
+  },
+  {
+    "id": 19,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Consider the de-synchronization attack in Transport Layer of IoT :\n1. The attacker replicates a single node and presents it with multiple identities to other nodes.\n2. The collision type DoS attack is initiated when two nodes simultaneously transmit data packets on the same frequency channel. It results in small changes in the packet identifying a mismatch at the receiving end.\n3. The fake messages are created at one or both endpoints requesting retransmissions for correction of non-existent error. This results in loss of energy in one or both the endpoints in carrying out the spoofed instructions.\nWhich of the above statements is/are correct ?",
+    "options": {
+      "A": "1 and 2 only",
+      "B": "2 only",
+      "C": "3 only",
+      "D": "1, 2 and 3"
+    },
+    "answer": "C",
+    "explanation": "Statement 3 describes de-synchronization. Statement 1 is a Sybil attack and statement 2 is a link-layer collision attack."
+  },
+  {
+    "id": 20,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following data rates is used by IEEE 802.15.4 to support data transmission using a direct sequence spread spectrum (DSSS) method ?",
+    "options": {
+      "A": "250 kbps at 2·4 GHz",
+      "B": "40 kbps at 3·6 MHz",
+      "C": "20 kbps at 512 MHz",
+      "D": "20 kbps at 256 MHz"
+    },
+    "answer": "A",
+    "explanation": "The IEEE 802.15.4 DSSS PHY gives 250 kbps in the 2.4 GHz band (with 40 kbps at 915 MHz and 20 kbps at 868 MHz)."
+  },
+  {
+    "id": 21,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following type of honeypots is more suitable for detailed analysis of post-compromise activity ?",
+    "options": {
+      "A": "Low-interaction honeypot",
+      "B": "Simulated honeypot",
+      "C": "High-interaction honeypot",
+      "D": "Emulated honeypot"
+    },
+    "answer": "C",
+    "explanation": "High-interaction honeypots expose real systems, so attackers' actions after a compromise can be observed in full."
+  },
+  {
+    "id": 22,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "What kind of information is commonly targeted by spyware ?",
+    "options": {
+      "A": "Browser cookies only",
+      "B": "Random file names only",
+      "C": "User credentials, typed keys, webcam images and documents",
+      "D": "Operating system updates only"
+    },
+    "answer": "C",
+    "explanation": "Spyware gathers sensitive data such as credentials, keystrokes, webcam images and documents."
+  },
+  {
+    "id": 23,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following modulation schemes is used for 2 Mbit/s transmissions in IEEE 802.11 direct sequence spread spectrum ?",
+    "options": {
+      "A": "Quadrature Phase Shift Keying (QPSK)",
+      "B": "Binary Phase Shift Keying (BPSK)",
+      "C": "Differential Quadrature Phase Shift Keying (DQPSK)",
+      "D": "Orthogonal Frequency Division Multiplexing (OFDM)"
+    },
+    "answer": "C",
+    "explanation": "802.11 DSSS uses DBPSK at 1 Mbit/s and DQPSK at 2 Mbit/s."
+  },
+  {
+    "id": 24,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following protocols is the on-demand counterpart of Destination Sequence Distance Vector (DSDV) in ad-hoc networks ?",
+    "options": {
+      "A": "Routing Information Protocol (RIP)",
+      "B": "Open Shortest Path First (OSPF)",
+      "C": "Ad-hoc On-Demand Distance Vector routing (AODV)",
+      "D": "Border Gateway Protocol (BGP)"
+    },
+    "answer": "C",
+    "explanation": "AODV is the reactive (on-demand) version of the proactive DSDV and uses destination sequence numbers in the same way."
+  },
+  {
+    "id": 25,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following security layers can be added to wireless session protocol (WSP) if required ?",
+    "options": {
+      "A": "Secure Sockets Layer (SSL)",
+      "B": "Internet Protocol Security (IPsec)",
+      "C": "Wireless Transport Layer Security (WTLS)",
+      "D": "Transport Layer Security (TLS)"
+    },
+    "answer": "C",
+    "explanation": "In the WAP stack, WTLS is the optional security layer beneath WSP/WTP."
+  },
+  {
+    "id": 26,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "A virtual-circuit network is normally implemented in which one of the following layers ?",
+    "options": {
+      "A": "Physical layer",
+      "B": "Network layer",
+      "C": "Application layer",
+      "D": "Data link layer"
+    },
+    "answer": "D",
+    "explanation": "Forouzan states that a virtual-circuit network is normally implemented in the data-link layer (circuit switching is in the physical layer and datagram networks in the network layer). Note: in the general OSI view, virtual-circuit service such as X.25 is a network-layer concept."
+  },
+  {
+    "id": 27,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "In a block of IP addresses, the IP address of one host is 25.34.12.56/16. What are the first address (network address) and the last address (limited broadcast address) in this block respectively ?",
+    "options": {
+      "A": "25.34.0.0 and 25.34.255.255",
+      "B": "25.34.4.0 and 25.34.0.255",
+      "C": "25.34.0.4 and 25.34.255.0",
+      "D": "25.34.4.4 and 25.34.0.255"
+    },
+    "answer": "A",
+    "explanation": "With a /16 mask, keeping the first 16 bits and zeroing the rest gives 25.34.0.0. Setting the host bits to 1 gives 25.34.255.255."
+  },
+  {
+    "id": 28,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "What is the protocol value set in the IPv4 header to indicate it is carrying an IPv6 packet ?",
+    "options": {
+      "A": "4",
+      "B": "6",
+      "C": "17",
+      "D": "41"
+    },
+    "answer": "D",
+    "explanation": "IP protocol number 41 means IPv6 encapsulated in IPv4 (6in4 tunnelling). 6 is TCP, 17 is UDP and 4 is IP-in-IP."
+  },
+  {
+    "id": 29,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following methods is the combination of probability theory with utility theory that provides a formal and complete framework for decisions made under uncertainty ?",
+    "options": {
+      "A": "Decision theory",
+      "B": "Cognitive theory",
+      "C": "Psychology theory",
+      "D": "Knowledge-based systems"
+    },
+    "answer": "A",
+    "explanation": "Decision theory = probability theory + utility theory (Russell and Norvig)."
+  },
+  {
+    "id": 30,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following statements is related to deterministic task environment in artificial intelligence ?",
+    "options": {
+      "A": "If the next state of the environment is completely determined by the current state and the action executed by the agent",
+      "B": "Actions are characterized by their possible outcomes, but no probabilities are attached to them",
+      "C": "The agent's experience is divided into atomic episodes. In each episode the agent receives a percept and then performs a single action",
+      "D": "Deterministic environment descriptions are usually associated with performance measures that require the agent to succeed for all possible outcomes of its actions"
+    },
+    "answer": "A",
+    "explanation": "An environment is deterministic if the next state is completely determined by the current state and the agent's action. (b) and (d) describe nondeterministic environments and (c) describes episodic ones."
+  },
+  {
+    "id": 31,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Error detection and correction code provides 't' error correction plus detection of 's' additional errors if and only if which one of the following inequality is satisfied (if the code is having minimum distance 'd_min') ?",
+    "options": {
+      "A": "t + s + 1 ≤ d_min",
+      "B": "2t + s + 1 ≤ d_min",
+      "C": "t + s – 1 ≤ d_min",
+      "D": "2t + s – 1 ≤ d_min"
+    },
+    "answer": "B",
+    "explanation": "Correcting t errors and also detecting s further errors requires d_min ≥ 2t + s + 1."
+  },
+  {
+    "id": 32,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Consider the following statements regarding counters :\n1. An n-stage Johnson counter will produce a modulus of 2 × n, where n is the number of stages in the counter.\n2. Ring counter is referred to as a divided-by-N-counter or an N : 1 scalar.\nWhich of the above statements is/are correct ?",
+    "options": {
+      "A": "1 only",
+      "B": "2 only",
+      "C": "Both 1 and 2",
+      "D": "Neither 1 nor 2"
+    },
+    "answer": "C",
+    "explanation": "An n-stage Johnson (twisted-ring) counter has 2n states. An N-stage ring counter divides the clock by N (an N:1 scaler)."
+  },
+  {
+    "id": 33,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Assume k parity bits p₁, p₂, ..., pₖ are added to the n-bit message to form an (n + k) bit code. The value of k must be chosen in such a way so as to be able to describe the location of any of the n + k possible error bit locations and also \"no error\" condition. On which one of the following conditions, k must satisfy the inequality ?",
+    "options": {
+      "A": "n – k + 1 ≥ 2ᵏ",
+      "B": "n – k + 1 ≤ 2ᵏ",
+      "C": "2ᵏ ≥ n + k + 1",
+      "D": "2ᵏ ≤ n + k + 1"
+    },
+    "answer": "C",
+    "explanation": "k check bits must identify n + k error positions plus the no-error case, so 2ᵏ ≥ n + k + 1."
+  },
+  {
+    "id": 34,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "By using Hamming code, how many number of parity bits must be appended to the code to make it an error-correcting code ? (The parity bits p₁, p₂, ...., pₖ are placed in locations 1, 2, 4, ....., 2ᵏ⁻¹)",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "B",
+    "explanation": "The printed question does not give the data-word length. For the standard 4-bit data word, 2ᵏ ≥ 4 + k + 1 gives k = 3 (Hamming(7,4)). Treat this key as an assumption."
+  },
+  {
+    "id": 35,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Simplify the following expression using Boolean Theorems :\n(B + BC)(B + B̄C)(B + D)",
+    "options": {
+      "A": "B",
+      "B": "B + C",
+      "C": "B(C + D)",
+      "D": "BC"
+    },
+    "answer": "A",
+    "explanation": "B + BC = B (absorption) and B + B̄C = B + C. Then B(B + C)(B + D) = B·(B + D) = B."
+  },
+  {
+    "id": 36,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Simplify the following expression using Karnaugh map :\nf(A, B, C, D) = Σm(0, 1, 4, 5, 9, 11, 14, 15) + d(2, 10, 13) is",
+    "options": {
+      "A": "ĀC̄ + C̄D + AC",
+      "B": "(AC)‾ + C̄D + B̄C(D̄ + AC)‾",
+      "C": "(AC)‾ + C̄D + AD + AC",
+      "D": "C̄D + AD + AC"
+    },
+    "answer": "A",
+    "explanation": "ĀC̄ covers 0, 1, 4 and 5. C̄D covers 1, 5, 9 and 13 (13 is a don't-care). AC covers 10, 11, 14 and 15 (10 is a don't-care). Every minterm is covered with three prime implicants."
+  },
+  {
+    "id": 37,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following statements is not relevant to the call by reference in C ?",
+    "options": {
+      "A": "The addresses of the variables are passed by the calling function to the called function",
+      "B": "The values of the variables are passed by the calling function to the called function",
+      "C": "Since arguments are not copied into the new variables, it provides greater time and space efficiency",
+      "D": "If inadvertent changes are caused to variables in called function then these changes would be reflected in calling function as original values would have been overwritten"
+    },
+    "answer": "B",
+    "explanation": "Passing values describes call by value. Call by reference passes addresses."
+  },
+  {
+    "id": 38,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following statements is correct regarding the rules to pass an array to a function ?",
+    "options": {
+      "A": "The actual arguments must be addresses of variables that are local to the calling function",
+      "B": "The formal arguments in the function header must be prefixed by the indirection operator",
+      "C": "The function prototype must show that the arguments are a pointer",
+      "D": "The formal parameter must be an array type; the size of the array does not need to be specified"
+    },
+    "answer": "D",
+    "explanation": "Balagurusamy's rules: pass only the array name, declare the formal parameter as an array type (size optional), and show the argument as an array in the prototype. Options (a) to (c) are the rules for passing pointers."
+  },
+  {
+    "id": 39,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following notations provides a strict upper bound for f(n) ?",
+    "options": {
+      "A": "Omega notation",
+      "B": "Big O notation",
+      "C": "Small o notation",
+      "D": "Theta notation"
+    },
+    "answer": "C",
+    "explanation": "Little-o gives a strict (non-tight) upper bound: f = o(g) means f grows strictly slower than g. Big-O may be tight."
+  },
+  {
+    "id": 40,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following statements is not correct regarding sparse matrix ?",
+    "options": {
+      "A": "Sparse matrix is a matrix that has large number of elements with a zero value",
+      "B": "In the sparse matrix, all the elements above the main diagonal have a zero value",
+      "C": "In the sparse matrix, elements with a non-zero value can appear only on the diagonal or immediately above or below the diagonal",
+      "D": "In the sparse matrix, arrays can be stored in either row major order or column major order"
+    },
+    "answer": "B",
+    "explanation": "A sparse matrix is defined only by having mostly zero entries. 'All elements above the main diagonal are zero' describes one type (lower-triangular), not sparse matrices in general. Note: option (c) likewise describes only the tridiagonal type, so the question is ambiguous and the official key may differ."
+  },
+  {
+    "id": 41,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following data structures is widely used in operating systems for task maintenance ?",
+    "options": {
+      "A": "Stack",
+      "B": "Queue",
+      "C": "Circular linked list",
+      "D": "Tree"
+    },
+    "answer": "C",
+    "explanation": "Circular linked lists are used to keep the list of running tasks (for example, round-robin cycling through processes)."
+  },
+  {
+    "id": 42,
+    "source_file": "UPSC_DCIO_TECH_2025_QUESTION PAPER",
+    "question": "Which one of the following data structures is used to implement Huffman algorithm ?",
+    "options": {
+      "A": "De-queue",
+      "B": "Queue",
+      "C": "Priority queue",
+      "D": "Circular queue"
+    },
+    "answer": "C",
+    "explanation": "Huffman coding repeatedly extracts the two lowest-frequency nodes, which needs a min-priority queue."
+  }
+]

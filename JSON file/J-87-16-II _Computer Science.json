@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "How many different equivalence relations with exactly three different equivalence classes are there on a set with five elements ?",
+    "options": {
+      "A": "10",
+      "B": "15",
+      "C": "25",
+      "D": "30"
+    },
+    "answer": "C",
+    "explanation": "This is the Stirling number of the second kind S(5,3) = 25."
+  },
+  {
+    "id": 2,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "The number of different spanning trees in complete graph, K4 and bipartite graph, K2, 2 have ______ and _______ respectively.",
+    "options": {
+      "A": "14, 14",
+      "B": "16, 14",
+      "C": "16, 4",
+      "D": "14, 4"
+    },
+    "answer": "C",
+    "explanation": "Cayley: K4 has 4^(4−2) = 16 spanning trees. K2,2 is a 4-cycle, which has 4."
+  },
+  {
+    "id": 3,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Suppose that R1 and R2 are reflexive relations on a set A.\nWhich of the following statements is correct ?",
+    "options": {
+      "A": "R1 ∩ R2 is reflexive and R1 ∪ R2 is irreflexive.",
+      "B": "R1 ∩ R2 is irreflexive and R1 ∪ R2 is reflexive.",
+      "C": "Both R1 ∩ R2 and R1 ∪ R2 are reflexive.",
+      "D": "Both R1 ∩ R2 and R1 ∪ R2 are irreflexive."
+    },
+    "answer": "C",
+    "explanation": "Every (a, a) is in both relations, so it is in their intersection and their union."
+  },
+  {
+    "id": 4,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "There are three cards in a box. Both sides of one card are black, both sides of one card are red, and the third card has one black side and one red side. We pick a card at random and observe only one side.\nWhat is the probability that the opposite side is the same colour as the one side we observed ?",
+    "options": {
+      "A": "3/4",
+      "B": "2/3",
+      "C": "1/2",
+      "D": "1/3"
+    },
+    "answer": "B",
+    "explanation": "Of the 6 equally likely visible sides, 4 belong to same-coloured cards, so 4/6 = 2/3."
+  },
+  {
+    "id": 5,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "A clique in a simple undirected graph is a complete subgraph that is not contained in any larger complete subgraph. How many cliques are there in the graph shown below ?\n[Graph: a–b–c on top, d–e–f at bottom, centre vertex g; edges ab, bc, ad, de, ef, cf, be, bf, ce, ag, bg, dg, eg]",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "C",
+    "explanation": "The maximal cliques are {a,b,g}, {a,d,g}, {d,e,g}, {b,e,g} and the K4 {b,c,e,f}, five in all."
+  },
+  {
+    "id": 6,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Which of the following logic expressions is incorrect ?",
+    "options": {
+      "A": "1⊕0=1",
+      "B": "1⊕1⊕1=1",
+      "C": "1⊕1⊕0=1",
+      "D": "1⊕1=0"
+    },
+    "answer": "C",
+    "explanation": "1 ⊕ 1 ⊕ 0 = 0 ⊕ 0 = 0, so (3) is incorrect."
+  },
+  {
+    "id": 7,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "The IEEE-754 double-precision format to represent floating point numbers, has a length of _____ bits.",
+    "options": {
+      "A": "16",
+      "B": "32",
+      "C": "48",
+      "D": "64"
+    },
+    "answer": "D",
+    "explanation": "Double precision is 64 bits (1 sign, 11 exponent, 52 fraction)."
+  },
+  {
+    "id": 8,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Simplified Boolean equation for the following truth table is :\nx y z F\n0 0 0 0\n0 0 1 1\n0 1 0 0\n0 1 1 1\n1 0 0 1\n1 0 1 0\n1 1 0 1\n1 1 1 0",
+    "options": {
+      "A": "F = yz̄ + ȳz",
+      "B": "F = xȳ + x̄y",
+      "C": "F = x̄z + xz̄",
+      "D": "F = x̄z + xz̄ + xyz"
+    },
+    "answer": "C",
+    "explanation": "F = 1 exactly when x ≠ z, so F = x̄z + xz̄ = x ⊕ z."
+  },
+  {
+    "id": 9,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "The simplified form of a Boolean equation (AB̄ + AB̄C + AC) (ĀC̄ + B̄) is :",
+    "options": {
+      "A": "AB̄",
+      "B": "AB̄C",
+      "C": "ĀB",
+      "D": "ABC"
+    },
+    "answer": "A",
+    "explanation": "The first factor is AB̄ + AC. Multiplying by (ĀC̄ + B̄) gives AB̄ + AB̄C = AB̄."
+  },
+  {
+    "id": 10,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "In a positive-edge-triggered JK flip-flop, if J and K both are high then the output will be _____ on the rising edge of the clock.",
+    "options": {
+      "A": "No change",
+      "B": "Set",
+      "C": "Reset",
+      "D": "Toggle"
+    },
+    "answer": "D",
+    "explanation": "J = K = 1 toggles the output."
+  },
+  {
+    "id": 11,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Given i = 0, j = 1, k = –1\nx = 0.5, y = 0.0\nWhat is the output of the following expression in C language ?\nx * y < i + j || k",
+    "options": {
+      "A": "–1",
+      "B": "0",
+      "C": "1",
+      "D": "2"
+    },
+    "answer": "C",
+    "explanation": "x*y = 0.0 < 1 is 1 (true), and 1 || k = 1."
+  },
+  {
+    "id": 12,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "The following statement in ‘C’\nint (*f())[ ];\ndeclares",
+    "options": {
+      "A": "a function returning a pointer to an array of integers.",
+      "B": "a function returning an array of pointers to integers.",
+      "C": "array of functions returning pointers to integers.",
+      "D": "an illegal statement."
+    },
+    "answer": "A",
+    "explanation": "f() is a function returning a pointer (*) to an array [] of int."
+  },
+  {
+    "id": 13,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Which one of the following is correct, when a class grants friend status to another class ?",
+    "options": {
+      "A": "The member functions of the class generating friendship can access the members of the friend class.",
+      "B": "All member functions of the class granted friendship have unrestricted access to the members of the class granting the friendship.",
+      "C": "Class friendship is reciprocal to each other.",
+      "D": "There is no such concept."
+    },
+    "answer": "B",
+    "explanation": "A friend class's member functions can access all members of the granting class; friendship is not reciprocal."
+  },
+  {
+    "id": 14,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "When a method in a subclass has the same name and type signatures as a method in the superclass, then the method in the subclass _____ the method in the superclass.",
+    "options": {
+      "A": "Overloads",
+      "B": "Friendships",
+      "C": "Inherits",
+      "D": "Overrides"
+    },
+    "answer": "D",
+    "explanation": "Same name and signature means overriding."
+  },
+  {
+    "id": 15,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "What is the value returned by the function f given below when n = 100 ?\nint f (int n)\n{ if (n = = 0) then return n;\n else\n return n + f(n-2);\n}",
+    "options": {
+      "A": "2550",
+      "B": "2556",
+      "C": "5220",
+      "D": "5520"
+    },
+    "answer": "A",
+    "explanation": "100 + 98 + ... + 2 + 0 = 2 × (1 + ... + 50) = 2550."
+  },
+  {
+    "id": 16,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "In RDBMS, the constraint that no key attribute (column) may be NULL is referred to as :",
+    "options": {
+      "A": "Referential integrity",
+      "B": "Multi-valued dependency",
+      "C": "Entity Integrity",
+      "D": "Functional dependency"
+    },
+    "answer": "C",
+    "explanation": "The entity integrity constraint says primary key attributes cannot be NULL."
+  },
+  {
+    "id": 17,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Which of the following statement(s) is/are FALSE in the context of Relational DBMS ?\nI. Views in a database system are important because they help with access control by allowing users to see only a particular subset of the data in the database.\nII. E-R diagrams are useful to logically model concepts.\nIII. An update anomaly is when it is not possible to store information unless some other, unrelated information is stored as well.\nIV. SQL is a procedural language.",
+    "options": {
+      "A": "I and IV only",
+      "B": "III and IV only",
+      "C": "I, II and III only",
+      "D": "II, III and IV only"
+    },
+    "answer": "B",
+    "explanation": "III describes an insertion anomaly, not an update anomaly, and SQL is declarative (non-procedural). Both are false."
+  },
+  {
+    "id": 18,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "In a relational database model, NULL values can be used for all but which one of the following ?",
+    "options": {
+      "A": "To allow duplicate tuples in the table by filling the primary key column(s) with NULL.",
+      "B": "To avoid confusion with actual legitimate data values like 0 (zero) for integer columns and '' (the empty string) for string columns.",
+      "C": "To leave columns in a tuple marked as ''unknown'' when the actual value is unknown.",
+      "D": "To fill a column in a tuple when that column does not really ”exist” for that particular tuple."
+    },
+    "answer": "A",
+    "explanation": "Primary key columns can never be NULL (entity integrity)."
+  },
+  {
+    "id": 19,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Consider the following two commands C1 and C2 on the relation R from an SQL database :\nC1 : drop table R;\nC2 : delete from R;\nWhich of the following statements is TRUE ?\nI. Both C1 and C2 delete the schema for R.\nII. C2 retains relation R, but deletes all tuples in R.\nIII. C1 deletes not only all tuples of R, but also the schema for R.",
+    "options": {
+      "A": "I only",
+      "B": "I and II only",
+      "C": "II and III only",
+      "D": "I, II and III"
+    },
+    "answer": "C",
+    "explanation": "DELETE removes the rows but keeps the table; DROP removes both data and schema."
+  },
+  {
+    "id": 20,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Consider the following database table having A, B, C and D as its four attributes and four possible candidate keys (I, II, III and IV) for this table :\nA B C D\na1 b1 c1 d1\na2 b3 c3 d1\na1 b2 c1 d2\nI : {B} II : {B, C} III : {A, D} IV : {C, D}\nIf different symbols stand for different values in the table (e.g., d1 is definitely not equal to d2), then which of the above could not be the candidate key for the database table ?",
+    "options": {
+      "A": "I and III only",
+      "B": "III and IV only",
+      "C": "II only",
+      "D": "I only"
+    },
+    "answer": "C",
+    "explanation": "{B}, {A, D} and {C, D} are all unique in this instance. {B, C} contains the unique {B}, so it is not minimal and cannot be a candidate key."
+  },
+  {
+    "id": 21,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Consider the following binary search tree :\n[BST: root 24; left child 12 (left 11, right 16 whose left child is 13); right child 26]\nIf we remove the root node, which of the node from the left subtree will be the new root ?",
+    "options": {
+      "A": "11",
+      "B": "12",
+      "C": "13",
+      "D": "16"
+    },
+    "answer": "D",
+    "explanation": "The in-order predecessor (the largest key in the left subtree), 16, replaces the root."
+  },
+  {
+    "id": 22,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Consider the following operations performed on a stack of size 5 :\nPush (a); Pop() ; Push(b); Push(c); Pop();\nPush(d); Pop();Pop(); Push (e)\nWhich of the following statements is correct ?",
+    "options": {
+      "A": "Underflow occurs",
+      "B": "Stack operations are performed smoothly",
+      "C": "Overflow occurs",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "The stack never exceeds 2 elements and is never popped when empty."
+  },
+  {
+    "id": 23,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Suppose you are given a binary tree with n nodes, such that each node has exactly either zero or two children. The maximum height of the tree will be",
+    "options": {
+      "A": "n/2 – 1",
+      "B": "n/2 + 1",
+      "C": "(n – 1)/2",
+      "D": "(n + 1)/2"
+    },
+    "answer": "C",
+    "explanation": "A full binary tree has (n − 1)/2 internal nodes; in the most skewed case each level adds one internal node, so height = (n − 1)/2."
+  },
+  {
+    "id": 24,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Which of the following is not an inherent application of stack ?",
+    "options": {
+      "A": "Implementation of recursion",
+      "B": "Evaluation of a postfix expression",
+      "C": "Job scheduling",
+      "D": "Reverse a string"
+    },
+    "answer": "C",
+    "explanation": "Job scheduling uses queues; the others are stack applications."
+  },
+  {
+    "id": 25,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "In how many ways can the string\nA∩B–A∩B–A\nbe fully parenthesized to yield an infix expression ?",
+    "options": {
+      "A": "15",
+      "B": "14",
+      "C": "13",
+      "D": "12"
+    },
+    "answer": "B",
+    "explanation": "There are 5 operands and 4 binary operators: Catalan number C4 = 14."
+  },
+  {
+    "id": 26,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "A multiplexer combines four 100-Kbps channels using a time slot of 2 bits. What is the bit rate ?",
+    "options": {
+      "A": "100 Kbps",
+      "B": "200 Kbps",
+      "C": "400 Kbps",
+      "D": "1000 Kbps"
+    },
+    "answer": "C",
+    "explanation": "4 × 100 Kbps = 400 Kbps (Forouzan)."
+  },
+  {
+    "id": 27,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "In a fully-connected mesh network with 10 computers, total ______ number of cables are required and ______ number of ports are required for each device.",
+    "options": {
+      "A": "40, 9",
+      "B": "45, 10",
+      "C": "45, 9",
+      "D": "50, 10"
+    },
+    "answer": "C",
+    "explanation": "Cables: 10 × 9/2 = 45. Ports per device: 9."
+  },
+  {
+    "id": 28,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "In TCP/IP Reference model, the job of _______ layer is to permit hosts to inject packets into any network and travel them independently to the destination.",
+    "options": {
+      "A": "Physical",
+      "B": "Transport",
+      "C": "Application",
+      "D": "Host-to-network"
+    },
+    "answer": "D",
+    "explanation": "Doubtful question: Tanenbaum assigns this job to the internet layer, which is not among the options. Of those offered, the host-to-network layer is the lowest layer that carries the packets; the official key's choice is uncertain."
+  },
+  {
+    "id": 29,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "If there are N people in the world and are using secret key encryption/decryption for privacy purpose, then number of secret keys required will be :",
+    "options": {
+      "A": "N",
+      "B": "(N – 1)",
+      "C": "N(N – 1)/2",
+      "D": "N(N + 1)/2"
+    },
+    "answer": "C",
+    "explanation": "Each pair needs its own key: N(N − 1)/2."
+  },
+  {
+    "id": 30,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Optical fiber uses reflection to guide light through a channel, in which angle of incidence is ________ the critical angle.",
+    "options": {
+      "A": "equal to",
+      "B": "less than",
+      "C": "greater than",
+      "D": "less than or equal to"
+    },
+    "answer": "C",
+    "explanation": "Total internal reflection needs the angle of incidence to be greater than the critical angle."
+  },
+  {
+    "id": 31,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "The number of strings of length 4 that are generated by the regular expression (0|∈)1+2* (3|∈), where | is an alternation character, {+, *} are quantification characters, and ∈ is the null string, is :",
+    "options": {
+      "A": "08",
+      "B": "10",
+      "C": "11",
+      "D": "12"
+    },
+    "answer": "D",
+    "explanation": "Middle part 1ᵃ2ᵇ (a ≥ 1) of length L has L choices. No 0 and no 3: L = 4 gives 4. Exactly one of 0/3: L = 3 gives 3 × 2 = 6. Both: L = 2 gives 2. Total 12."
+  },
+  {
+    "id": 32,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "The content of the accumulator after the execution of the following 8085 assembly language program, is :\nMVI A, 42H\nMVI B, 05H\nUGC: ADD B\nDCR B\nJNZ UGC\nADI 25H\nHLT",
+    "options": {
+      "A": "82 H",
+      "B": "78 H",
+      "C": "76 H",
+      "D": "47 H"
+    },
+    "answer": "C",
+    "explanation": "The loop adds 5 + 4 + 3 + 2 + 1 = 15 = 0FH: 42H + 0FH = 51H. Then 51H + 25H = 76H."
+  },
+  {
+    "id": 33,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "In _______, the bodies of the two loops are merged together to form a single loop provided that they do not make any references to each other.",
+    "options": {
+      "A": "Loop unrolling",
+      "B": "Strength reduction",
+      "C": "Loop concatenation",
+      "D": "Loop jamming"
+    },
+    "answer": "D",
+    "explanation": "Loop jamming (fusion) merges adjacent loop bodies."
+  },
+  {
+    "id": 34,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Which of the following is not typically a benefit of dynamic linking ?\nI. Reduction in overall program execution time.\nII. Reduction in overall space consumption in memory.\nIII. Reduction in overall space consumption on disk.\nIV. Reduction in the cost of software updates.",
+    "options": {
+      "A": "I and IV",
+      "B": "I only",
+      "C": "II and III",
+      "D": "IV only"
+    },
+    "answer": "B",
+    "explanation": "Dynamic linking saves memory and disk space and eases updates, but adds run-time overhead, so it does not reduce execution time."
+  },
+  {
+    "id": 35,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Which of the following is FALSE ?",
+    "options": {
+      "A": "The grammar S → a Sb |bSa|SS|∈, where S is the only non-terminal symbol and ∈ is the null string, is ambiguous.",
+      "B": "SLR is powerful than LALR.",
+      "C": "An LL(1) parser is a top-down parser.",
+      "D": "YACC tool is an LALR(1) parser generator."
+    },
+    "answer": "B",
+    "explanation": "LALR is more powerful than SLR, so (2) is false."
+  },
+  {
+    "id": 36,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Consider the reference string\n0 1 2 3 0 1 4 0 1 2 3 4\nIf FIFO page replacement algorithm is used, then the number of page faults with three page frames and four page frames are _______ and ______ respectively.",
+    "options": {
+      "A": "10, 9",
+      "B": "9, 9",
+      "C": "10, 10",
+      "D": "9, 10"
+    },
+    "answer": "D",
+    "explanation": "Belady's anomaly example: 9 faults with 3 frames and 10 with 4."
+  },
+  {
+    "id": 37,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Suppose there are four processes in execution with 12 instances of a Resource R in a system.\nThe maximum need of each process and current allocation are given below :\nProcess Max. Need Current Allocation\nP1 8 3\nP2 9 4\nP3 5 2\nP4 3 1\nWith reference to current allocation, is system safe ? If so, what is the safe sequence ?",
+    "options": {
+      "A": "No",
+      "B": "Yes, P1P2P3P4",
+      "C": "Yes, P4P3P1P2",
+      "D": "Yes, P2P1P3P4"
+    },
+    "answer": "C",
+    "explanation": "Available = 12 − 10 = 2. P4 (needs 2) runs, leaving 3 free; P3 (needs 3) runs, leaving 5; P1 (needs 5) runs, leaving 8; P2 (needs 5) runs. Safe sequence P4 P3 P1 P2."
+  },
+  {
+    "id": 38,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "If the Disk head is located initially at track 32, find the number of disk moves required with FCFS scheduling criteria if the disk queue of I/O blocks requests are :\n98, 37, 14, 124, 65, 67",
+    "options": {
+      "A": "320",
+      "B": "322",
+      "C": "321",
+      "D": "319"
+    },
+    "answer": "C",
+    "explanation": "66 + 61 + 23 + 110 + 59 + 2 = 321."
+  },
+  {
+    "id": 39,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "In UNIX, _________ creates three subdirectories : ‘PIS’ and two subdirectories ‘progs’ and ‘data’ from just created subdirectory ‘PIS’.",
+    "options": {
+      "A": "mkdir PIS/progs PIS/data PIS",
+      "B": "mkdir PIS progs data",
+      "C": "mkdir PIS PIS/progs PIS/data",
+      "D": "mkdir PIS/progs data"
+    },
+    "answer": "C",
+    "explanation": "The parent PIS must be created before PIS/progs and PIS/data in the same command."
+  },
+  {
+    "id": 40,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "A scheduling Algorithm assigns priority proportional to the waiting time of a process. Every process starts with priority zero (lowest priority). The scheduler reevaluates the process priority for every ‘T’ time units and decides next process to be scheduled. If the process have no I/O operations and all arrive at time zero, then the scheduler implements _________ criteria.",
+    "options": {
+      "A": "Priority scheduling",
+      "B": "Round Robin Scheduling",
+      "C": "Shortest Job First",
+      "D": "FCFS"
+    },
+    "answer": "B",
+    "explanation": "The waiting processes' priority grows while the running one's does not, so every T units the CPU rotates among processes: round robin."
+  },
+  {
+    "id": 41,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "If S1 is total number of modules defined in the program architecture, S3 is the number of modules whose correct function depends on prior processing then the number of modules not dependent on prior processing is :",
+    "options": {
+      "A": "1 + S3/S1",
+      "B": "1 – S3/S1",
+      "C": "1 + S1/S3",
+      "D": "1 – S1/S3"
+    },
+    "answer": "B",
+    "explanation": "In the Design Structure Quality Index, D2 = 1 − (S3/S1)."
+  },
+  {
+    "id": 42,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "The ________ model is preferred for software development when the requirements are not clear.",
+    "options": {
+      "A": "Rapid Application Development",
+      "B": "Rational Unified Process",
+      "C": "Evolutionary Model",
+      "D": "Waterfall Model"
+    },
+    "answer": "C",
+    "explanation": "Evolutionary (prototyping/spiral) models suit unclear requirements."
+  },
+  {
+    "id": 43,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Which of the following is not included in waterfall model ?",
+    "options": {
+      "A": "Requirement analysis",
+      "B": "Risk analysis",
+      "C": "Design",
+      "D": "Coding"
+    },
+    "answer": "B",
+    "explanation": "Explicit risk analysis is a feature of the spiral model."
+  },
+  {
+    "id": 44,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "The cyclomatic complexity of a flow graph V(G), in terms of predicate nodes is :\nWhere P is number of predicate nodes in flow graph V(G).",
+    "options": {
+      "A": "P+1",
+      "B": "P–1",
+      "C": "P–2",
+      "D": "P+2"
+    },
+    "answer": "A",
+    "explanation": "V(G) = P + 1."
+  },
+  {
+    "id": 45,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "The extent to which a software tolerates the unexpected problems, is termed as :",
+    "options": {
+      "A": "Accuracy",
+      "B": "Reliability",
+      "C": "Correctness",
+      "D": "Robustness"
+    },
+    "answer": "D",
+    "explanation": "Robustness is tolerance of unexpected inputs or conditions."
+  },
+  {
+    "id": 46,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "An attacker sits between customer and Banker, and captures the information from the customer and retransmits to the banker by altering the information. This attack is called as ______.",
+    "options": {
+      "A": "Masquerade Attack",
+      "B": "Replay Attack",
+      "C": "Passive Attack",
+      "D": "Denial of Service Attack"
+    },
+    "answer": "A",
+    "explanation": "The attacker pretends to be the customer to the bank (an active, man-in-the-middle style masquerade). A replay resends data unaltered, and a passive attack does not alter anything."
+  },
+  {
+    "id": 47,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Consider the following two statements :\n(A) Business intelligence and Data warehousing is used for forecasting and Data mining.\n(B) Business intelligence and Data warehousing is used for analysis of large volumes of sales data.\nWhich one of the following options is correct ?",
+    "options": {
+      "A": "(A) is true, (B) is false.",
+      "B": "Both (A) and (B) are true.",
+      "C": "(A) is false, (B) is true.",
+      "D": "Both (A) and (B) are false."
+    },
+    "answer": "B",
+    "explanation": "BI and data warehousing support both forecasting/data mining and large-scale sales analysis."
+  },
+  {
+    "id": 48,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Pipelining improves performance by :",
+    "options": {
+      "A": "decreasing instruction latency",
+      "B": "eliminating data hazards",
+      "C": "exploiting instruction level parallelism",
+      "D": "decreasing the cache miss rate"
+    },
+    "answer": "C",
+    "explanation": "Pipelining overlaps instructions (ILP), raising throughput; it does not reduce the latency of a single instruction."
+  },
+  {
+    "id": 49,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Consider the following two statements :\n(A) Data scrubling is a process to upgrade the quality of data, before it is moved into Data warehouse.\n(B) Data scrubling is a process of rejecting data from data warehouse to create indexes.\nWhich one of the following options is correct ?",
+    "options": {
+      "A": "(A) is true, (B) is false.",
+      "B": "(A) is false, (B) is true.",
+      "C": "Both (A) and (B) are false.",
+      "D": "Both (A) and (B) are true."
+    },
+    "answer": "A",
+    "explanation": "Data scrubbing (cleansing) improves data quality before loading; (B) is not what it means."
+  },
+  {
+    "id": 50,
+    "source_file": "J-87-16-II _Computer Science",
+    "question": "Given the following statements :\n(A) Strategic value of data mining is timestamping.\n(B) Information collection is an expensive process in building an expert system.\nWhich of the following options is correct ?",
+    "options": {
+      "A": "Both (A) and (B) are false.",
+      "B": "Both (A) and (B) are true.",
+      "C": "(A) is true, (B) is false.",
+      "D": "(A) is false, (B) is true."
+    },
+    "answer": "D",
+    "explanation": "The strategic value of data mining is time-sensitive (not 'timestamping'), so (A) is false. Knowledge acquisition is costly, so (B) is true."
+  }
+]

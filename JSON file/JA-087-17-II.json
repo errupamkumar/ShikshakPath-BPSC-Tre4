@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "source_file": "JA-087-17-II",
+    "question": "Consider a sequence F00 defined as :\nF00(0) = 1, F00(1) = 1\nF00(n) = [10 ∗ F00(n – 1) + 100] / F00(n – 2) for n ≥ 2\nThen what shall be the set of values of the sequence F00 ?",
+    "options": {
+      "A": "(1, 110, 1200)",
+      "B": "(1, 110, 600, 1200)",
+      "C": "(1, 2, 55, 110, 600, 1200)",
+      "D": "(1, 55, 110, 600, 1200)"
+    },
+    "answer": "A",
+    "explanation": "F(2) = 110/1 = 110, F(3) = 1200/1 = 1200, F(4) = 12100/110 = 110, F(5) = 1200/1200 = 1, F(6) = 110/110 = 1, and then it repeats. So the set of values is {1, 110, 1200}."
+  },
+  {
+    "id": 2,
+    "source_file": "JA-087-17-II",
+    "question": "Match the following :\nList – I\na. Absurd\nb. Ambiguous\nc. Axiom\nd. Conjecture\nList – II\ni. Clearly impossible being contrary to some evident truth.\nii. Capable of more than one interpretation or meaning.\niii. An assertion that is accepted and used without a proof.\niv. An opinion preferably based on some experience or wisdom.",
+    "options": {
+      "A": "a-i, b-ii, c-iii, d-iv",
+      "B": "a-i, b-iii, c-iv, d-ii",
+      "C": "a-ii, b-iii, c-iv, d-i",
+      "D": "a-ii, b-i, c-iii, d-iv"
+    },
+    "answer": "A",
+    "explanation": "These are the dictionary meanings: absurd = impossible, ambiguous = more than one meaning, axiom = accepted without proof, conjecture = an opinion."
+  },
+  {
+    "id": 3,
+    "source_file": "JA-087-17-II",
+    "question": "The functions mapping R into R are defined as :\nf(x) = x³ – 4x, g(x) = 1/(x² + 1) and h(x) = x⁴.\nThen find the value of the following composite functions :\nhog(x) and hogof(x)",
+    "options": {
+      "A": "(x² + 1)⁴ and [(x³ – 4x)² + 1]⁴",
+      "B": "(x² + 1)⁴ and [(x³ – 4x)² + 1]⁻⁴",
+      "C": "(x² + 1)⁻⁴ and [(x² – 4x)² + 1]⁴",
+      "D": "(x² + 1)⁻⁴ and [(x³ – 4x)² + 1]⁻⁴"
+    },
+    "answer": "D",
+    "explanation": "h(g(x)) = (1/(x²+1))⁴ = (x²+1)⁻⁴, and h(g(f(x))) = [(x³−4x)² + 1]⁻⁴."
+  },
+  {
+    "id": 4,
+    "source_file": "JA-087-17-II",
+    "question": "How many multiples of 6 are there between the following pairs of numbers ?\n0 and 100 and –6 and 34",
+    "options": {
+      "A": "16 and 6",
+      "B": "17 and 6",
+      "C": "17 and 7",
+      "D": "16 and 7"
+    },
+    "answer": "C",
+    "explanation": "Counting the end points: 0, 6, …, 96 gives 17; −6, 0, …, 30 gives 7."
+  },
+  {
+    "id": 5,
+    "source_file": "JA-087-17-II",
+    "question": "Consider a Hamiltonian Graph G with no loops or parallel edges and with |V(G)| = n ≥ 3. Then which of the following is true ?",
+    "options": {
+      "A": "deg(v) ≥ n/2 for each vertex v.",
+      "B": "|E(G)| ≥ 1/2 (n – 1) (n – 2) + 2",
+      "C": "deg (v) + deg(w) ≥ n whenever v and w are not connected by an edge.",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "The key takes all three (Dirac's, the edge-count and Ore's conditions). Strictly, these are sufficient conditions for a graph to be Hamiltonian, not consequences of it (a cycle Cₙ is Hamiltonian but fails them all), so the question is flawed."
+  },
+  {
+    "id": 6,
+    "source_file": "JA-087-17-II",
+    "question": "In propositional logic if (P → Q) ∧ (R → S) and (P ∨ R) are two premises such that\n(P → Q) ∧ (R → S)\nP ∨ R\n∴ Y\nY is the premise :",
+    "options": {
+      "A": "P∨R",
+      "B": "P∨S",
+      "C": "Q∨R",
+      "D": "Q∨S"
+    },
+    "answer": "D",
+    "explanation": "Constructive dilemma gives Q ∨ S."
+  },
+  {
+    "id": 7,
+    "source_file": "JA-087-17-II",
+    "question": "ECL is the fastest of all logic families. High speed in ECL is possible because transistors are used in difference amplifier configuration, in which they are never driven into ____.",
+    "options": {
+      "A": "Race condition",
+      "B": "Saturation",
+      "C": "Delay",
+      "D": "High impedance"
+    },
+    "answer": "B",
+    "explanation": "ECL is non-saturating logic, so it avoids the storage-time delay of saturation."
+  },
+  {
+    "id": 8,
+    "source_file": "JA-087-17-II",
+    "question": "A binary 3-bit down counter uses J-K flip-flops, FFi with inputs Ji, Ki and outputs Qi, i = 0, 1, 2 respectively. The minimized expression for the input from following, is\nI. J0 = K0 = 0\nII. J0 = K0 = 1\nIII. J1 = K1 = Q0\nIV. J1 = K1 = Q̄0\nV. J2 = K2 = Q1 Q0\nVI. J2 = K2 = Q̄1 Q̄0",
+    "options": {
+      "A": "I, III, V",
+      "B": "I, IV, VI",
+      "C": "II, III, V",
+      "D": "II, IV, VI"
+    },
+    "answer": "D",
+    "explanation": "In a down counter the LSB always toggles. Each higher bit toggles when all lower bits are 0: J1 = K1 = Q̄0 and J2 = K2 = Q̄1Q̄0."
+  },
+  {
+    "id": 9,
+    "source_file": "JA-087-17-II",
+    "question": "Convert the octal number 0.4051 into its equivalent decimal number.",
+    "options": {
+      "A": "0.5100098",
+      "B": "0.2096",
+      "C": "0.52",
+      "D": "0.4192"
+    },
+    "answer": "A",
+    "explanation": "4/8 + 0/64 + 5/512 + 1/4096 = 0.5 + 0.009765625 + 0.000244140625 ≈ 0.5100098."
+  },
+  {
+    "id": 10,
+    "source_file": "JA-087-17-II",
+    "question": "The hexadecimal equivalent of the octal number 2357 is :",
+    "options": {
+      "A": "2EE",
+      "B": "2FF",
+      "C": "4EF",
+      "D": "4FE"
+    },
+    "answer": "C",
+    "explanation": "2357₈ = 010 011 101 111 = 0100 1110 1111 = 4EF₁₆."
+  },
+  {
+    "id": 11,
+    "source_file": "JA-087-17-II",
+    "question": "Which of the following cannot be passed to a function in C++ ?",
+    "options": {
+      "A": "Constant",
+      "B": "Structure",
+      "C": "Array",
+      "D": "Header file"
+    },
+    "answer": "D",
+    "explanation": "A header file is a preprocessor include, not a value that can be passed."
+  },
+  {
+    "id": 12,
+    "source_file": "JA-087-17-II",
+    "question": "Which one of the following is correct for overloaded functions in C++ ?",
+    "options": {
+      "A": "Compiler sets up a separate function for every definition of function.",
+      "B": "Compiler does not set up a separate function for every definition of function.",
+      "C": "Overloaded functions cannot handle different types of objects.",
+      "D": "Overloaded functions cannot have same number of arguments."
+    },
+    "answer": "A",
+    "explanation": "Each overloaded definition is compiled as a separate function (with a mangled name)."
+  },
+  {
+    "id": 13,
+    "source_file": "JA-087-17-II",
+    "question": "Which of the following storage classes have global visibility in C/C++ ?",
+    "options": {
+      "A": "Auto",
+      "B": "Extern",
+      "C": "Static",
+      "D": "Register"
+    },
+    "answer": "B",
+    "explanation": "extern variables are visible globally across files."
+  },
+  {
+    "id": 14,
+    "source_file": "JA-087-17-II",
+    "question": "Which of the following operators cannot be overloaded in C/C++ ?",
+    "options": {
+      "A": "Bitwise right shift assignment",
+      "B": "Address of",
+      "C": "Indirection",
+      "D": "Structure reference"
+    },
+    "answer": "D",
+    "explanation": "The member-access (structure reference) operator '.' cannot be overloaded; >>=, unary & and * can."
+  },
+  {
+    "id": 15,
+    "source_file": "JA-087-17-II",
+    "question": "If X is a binary number which is power of 2, then the value of\nX & (X – 1) is :",
+    "options": {
+      "A": "11….11",
+      "B": "00…..00",
+      "C": "100…..0",
+      "D": "000……1"
+    },
+    "answer": "B",
+    "explanation": "A power of 2 has a single 1 bit and X − 1 has 1s only below it, so the AND is 0."
+  },
+  {
+    "id": 16,
+    "source_file": "JA-087-17-II",
+    "question": "An attribute A of datatype varchar (20) has value ‘Ram’ and the attribute B of datatype char (20) has value ‘Sita’ in oracle. The attribute A has _______ memory spaces and B has _______ memory spaces.",
+    "options": {
+      "A": "20, 20",
+      "B": "3, 20",
+      "C": "3, 4",
+      "D": "20, 4"
+    },
+    "answer": "B",
+    "explanation": "VARCHAR stores only the actual length (3); CHAR(20) is blank-padded to 20."
+  },
+  {
+    "id": 17,
+    "source_file": "JA-087-17-II",
+    "question": "Integrity constraints ensure that changes made to the database by authorized users do not result into loss of data consistency. Which of the following statement(s) is (are) true w.r.t. the examples of integrity constraints ?\n(A) An instructor Id. No. cannot be null, provided Intructor Id No. being primary key.\n(B) No two citizens have same Adhar-Id.\n(C) Budget of a company must be zero.",
+    "options": {
+      "A": "(A), (B) and (C) are true.",
+      "B": "(A) false, (B) and (C) are true.",
+      "C": "(A) and (B) are true; (C) false.",
+      "D": "(A), (B) and (C) are false."
+    },
+    "answer": "C",
+    "explanation": "(A) is entity integrity and (B) is a uniqueness constraint. (C) is not a sensible constraint (the budget should be non-negative, not zero)."
+  },
+  {
+    "id": 18,
+    "source_file": "JA-087-17-II",
+    "question": "Let M and N be two entities in an E-R diagram with simple single value attributes. R1 and R2 are two relationship between M and N, where as\nR1 is one-to-many and R2 is many-to-many.\nThe minimum number of tables required to represent M, N, R1 and R2 in the relational model are _______.",
+    "options": {
+      "A": "4",
+      "B": "6",
+      "C": "7",
+      "D": "3"
+    },
+    "answer": "D",
+    "explanation": "Tables for M and N, with R1 (1:N) folded into the 'many'-side table as a foreign key, plus one table for R2 (M:N): 3 tables."
+  },
+  {
+    "id": 19,
+    "source_file": "JA-087-17-II",
+    "question": "Consider a schema R(MNPQ) and functional dependencies M → N, P → Q. Then the decomposition of R into R1(MN) and R2(PQ) is ________.",
+    "options": {
+      "A": "Dependency preserving but not lossless join",
+      "B": "Dependency preserving and lossless join",
+      "C": "Lossless join but not dependency preserving",
+      "D": "Neither dependency preserving nor lossless join."
+    },
+    "answer": "A",
+    "explanation": "Each FD lies within one fragment, so dependencies are preserved. But R1 ∩ R2 = ∅, so the join is lossy."
+  },
+  {
+    "id": 20,
+    "source_file": "JA-087-17-II",
+    "question": "The order of a leaf node in a B⁺ tree is the maximum number of children it can have. Suppose that block size is 1 kilobytes, the child pointer takes 7 bytes long and search field value takes 14 bytes long. The order of the leaf node is ________.",
+    "options": {
+      "A": "16",
+      "B": "63",
+      "C": "64",
+      "D": "65"
+    },
+    "answer": "A",
+    "explanation": "Flawed question: 21p + 7 ≤ 1024 gives p = 48 (or 49 by the internal-node formula), which is not offered. Only 16 does not exceed that bound, so solutions (e.g. GATE Overflow) choose (1)."
+  },
+  {
+    "id": 21,
+    "source_file": "JA-087-17-II",
+    "question": "Which of the following is true for computation time in insertion, deletion and finding maximum and minimum element in a sorted array ?",
+    "options": {
+      "A": "Insertion – 0(1), Deletion – 0(1), Maximum – 0(1), Minimum – 0(l)",
+      "B": "Insertion – 0(1), Deletion – 0(1), Maximum – 0(n), Minimum – 0(n)",
+      "C": "Insertion – 0(n), Deletion – 0(n), Maximum – 0(1), Minimum – 0(1)",
+      "D": "Insertion – 0(n), Deletion – 0(n), Maximum – 0(n), Minimum – 0(n)"
+    },
+    "answer": "C",
+    "explanation": "Insert/delete need shifting (O(n)); max and min are at the ends (O(1))."
+  },
+  {
+    "id": 22,
+    "source_file": "JA-087-17-II",
+    "question": "The seven elements A, B, C, D, E, F and G are pushed onto a stack in reverse order, i.e., starting from G. The stack is popped five times and each element is inserted into a queue. Two elements are deleted from the queue and pushed back onto the stack. Now, one element is popped from the stack. The popped item is ________.",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "F",
+      "D": "G"
+    },
+    "answer": "B",
+    "explanation": "Five pops A, B, C, D, E go into the queue, leaving F and G on the stack. Dequeue A then B and push them, so B is on top and is popped."
+  },
+  {
+    "id": 23,
+    "source_file": "JA-087-17-II",
+    "question": "Which of the following is a valid heap ?\n[Four binary trees, each with root 16]",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "explanation": "Tree B (16; 14, 10; 8, 7, 9, 3; 2, 4, 1) satisfies the max-heap property. A has 4 above 8, C has 1 above 7, and D has 3 above 9 and 10."
+  },
+  {
+    "id": 24,
+    "source_file": "JA-087-17-II",
+    "question": "If h is chosen from a universal collection of hash functions and is used to hash n keys into a table of size m, where n ≤ m, the expected number of collisions involving a particular key x is less than _______.",
+    "options": {
+      "A": "1",
+      "B": "1/n",
+      "C": "1/m",
+      "D": "n/m"
+    },
+    "answer": "A",
+    "explanation": "CLRS: the expected number of collisions is at most (n − 1)/m < 1 when n ≤ m."
+  },
+  {
+    "id": 25,
+    "source_file": "JA-087-17-II",
+    "question": "Which of the following statements is false ?\n(A) Optimal binary search tree construction can be performed efficiently using dynamic programming.\n(B) Breadth-first search cannot be used to find connected components of a graph.\n(C) Given the prefix and postfix walks of a binary tree, the tree cannot be re-constructed uniquely.\n(D) Depth-first-search can be used to find the connected components of a graph.",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "B",
+    "explanation": "BFS can find connected components just as DFS can."
+  },
+  {
+    "id": 26,
+    "source_file": "JA-087-17-II",
+    "question": "Match the following Layers and Protocols for a user browsing with SSL :\na. Application of layer\nb. Transport layer\nc. Network layer\nd. Datalink layer\ni. TCP\nii. IP\niii. PPP\niv. HTTP",
+    "options": {
+      "A": "a-iv, b-i, c-ii, d-iii",
+      "B": "a-iii, b-ii, c-i, d-iv",
+      "C": "a-ii, b-iii, c-iv, d-i",
+      "D": "a-iii, b-i, c-iv, d-ii"
+    },
+    "answer": "A",
+    "explanation": "HTTP (application), TCP (transport), IP (network), PPP (data link)."
+  },
+  {
+    "id": 27,
+    "source_file": "JA-087-17-II",
+    "question": "The maximum size of the data that the application layer can pass on to the TCP layer below is __________.",
+    "options": {
+      "A": "2¹⁶ bytes",
+      "B": "2¹⁶ bytes + TCP header length",
+      "C": "2¹⁶ bytes – TCP header length",
+      "D": "2¹⁵ bytes"
+    },
+    "answer": "C",
+    "explanation": "Doubtful question. TCP is a byte stream, so strictly any amount can be passed. The usual answer limits a segment's data to 2¹⁶ bytes minus the TCP header, since the IP datagram is limited to 65,535 bytes."
+  },
+  {
+    "id": 28,
+    "source_file": "JA-087-17-II",
+    "question": "A packet whose destination is outside the local TCP/IP network segment is sent to _____.",
+    "options": {
+      "A": "File server",
+      "B": "DNS server",
+      "C": "DHCP server",
+      "D": "Default gateway"
+    },
+    "answer": "D",
+    "explanation": "Off-subnet traffic goes to the default gateway (router)."
+  },
+  {
+    "id": 29,
+    "source_file": "JA-087-17-II",
+    "question": "Distance vector routing algorithm is a dynamic routing algorithm. The routing tables in distance vector routing algorithm are updated _____.",
+    "options": {
+      "A": "automatically",
+      "B": "by server",
+      "C": "by exchanging information with neighbour nodes",
+      "D": "with back up database"
+    },
+    "answer": "C",
+    "explanation": "Each router periodically exchanges its distance vector with its neighbours."
+  },
+  {
+    "id": 30,
+    "source_file": "JA-087-17-II",
+    "question": "In link state routing algorithm after construction of link state packets, new routes are computed using :",
+    "options": {
+      "A": "DES algorithm",
+      "B": "Dijkstra's algorithm",
+      "C": "RSA algorithm",
+      "D": "Packets"
+    },
+    "answer": "B",
+    "explanation": "Each router runs Dijkstra's shortest-path algorithm on the link-state database."
+  },
+  {
+    "id": 31,
+    "source_file": "JA-087-17-II",
+    "question": "Which of the following strings would match the regular expression : p+ [3 – 5]∗ [xyz] ?\nI. p443y II. p6y\nIII. 3xyz IV. p35z\nV. p353535x VI. ppp5",
+    "options": {
+      "A": "I, III and VI only",
+      "B": "IV, V and VI only",
+      "C": "II, IV and V only",
+      "D": "I, IV and V only"
+    },
+    "answer": "D",
+    "explanation": "The string must be one or more p's, then digits from 3 to 5, then exactly one of x/y/z: I, IV and V match. II has a 6, III has no p, and VI does not end in x/y/z."
+  },
+  {
+    "id": 32,
+    "source_file": "JA-087-17-II",
+    "question": "Consider the following assembly language instructions :\nmov al, 15\nmov ah, 15\nxor al, al\nmov cl, 3\nshr ax, cl\nadd al, 90H\nadc ah, 0\nWhat is the value in ax register after execution of above instructions ?",
+    "options": {
+      "A": "0270H",
+      "B": "0170H",
+      "C": "01E0H",
+      "D": "0370H"
+    },
+    "answer": "A",
+    "explanation": "AX = 0F0FH, and xor al gives 0F00H. Shifting right by 3 gives 01E0H. Then E0H + 90H = 170H, so AL = 70H with CF = 1, and adc makes AH = 02H. AX = 0270H."
+  },
+  {
+    "id": 33,
+    "source_file": "JA-087-17-II",
+    "question": "Consider the following statements related to compiler construction :\nI. Lexical Analysis is specified by context-free grammars and implemented by pushdown automata.\nII. Syntax Analysis is specified by regular expressions and implemented by finite-state machine.\nWhich of the above statement(s) is/are correct ?",
+    "options": {
+      "A": "Only I",
+      "B": "Only II",
+      "C": "Both I and II",
+      "D": "Neither I nor II"
+    },
+    "answer": "D",
+    "explanation": "They are swapped: lexical analysis uses regular expressions/FSMs, and syntax analysis uses CFGs/PDAs."
+  },
+  {
+    "id": 34,
+    "source_file": "JA-087-17-II",
+    "question": "The contents of Register (BL) and Register (AL) of 8085 microprocessor are 49H and 3AH respectively. The contents of AL, the status of carry flag (CF) and sign flag (SF) after executing ‘SUB AL, BL’ assembly language instruction, are",
+    "options": {
+      "A": "AL = 0FH; CF = 1; SF = 1",
+      "B": "AL = F0H; CF = 0; SF = 0",
+      "C": "AL = F1H; CF = 1; SF = 1",
+      "D": "AL = 1FH; CF = 1; SF = 1"
+    },
+    "answer": "C",
+    "explanation": "3AH − 49H = −0FH = F1H; a borrow gives CF = 1 and the MSB of 1 gives SF = 1. (The registers named are 8086 style, though the question says 8085.)"
+  },
+  {
+    "id": 35,
+    "source_file": "JA-087-17-II",
+    "question": "Which of the following statement(s) regarding a linker software is/are true ?\nI. A function of a linker is to combine several object modules into a single load module.\nII A function of a linker is to replace absolute references in an object module by symbolic references to locations in other modules.",
+    "options": {
+      "A": "Only I",
+      "B": "Only II",
+      "C": "Both I and II",
+      "D": "Neither I nor II"
+    },
+    "answer": "A",
+    "explanation": "A linker replaces symbolic references with addresses, not the reverse, so II is false."
+  },
+  {
+    "id": 36,
+    "source_file": "JA-087-17-II",
+    "question": "There are three processes P1, P2 and P3 sharing a semaphore for synchronizing a variable. Initial value of semaphore is one. Assume that negative value of semaphore tells us how many processes are waiting in queue. Processes access the semaphore in following order :\n(a) P2 needs to access\n(b) P1 needs to access\n(c) P3 needs to access\n(d) P2 exits critical section\n(e) P1 exits critical section\nThe final value of semaphore will be :",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "–1",
+      "D": "–2"
+    },
+    "answer": "A",
+    "explanation": "The value goes 1 → 0 (P2 enters) → −1 (P1 waits) → −2 (P3 waits) → −1 (P2 signals, P1 enters) → 0 (P1 signals, P3 enters)."
+  },
+  {
+    "id": 37,
+    "source_file": "JA-087-17-II",
+    "question": "In a paging system, it takes 30 ns to search translation Look-a-side Buffer (TLB) and 90 ns to access the main memory. If the TLB hit ratio is 70%, the effective memory access time is :",
+    "options": {
+      "A": "48ns",
+      "B": "147ns",
+      "C": "120ns",
+      "D": "84ns"
+    },
+    "answer": "B",
+    "explanation": "0.7 × (30 + 90) + 0.3 × (30 + 90 + 90) = 84 + 63 = 147 ns."
+  },
+  {
+    "id": 38,
+    "source_file": "JA-087-17-II",
+    "question": "Match the following w.r.t. Input/Output management :\na. Device controller\nb. Device driver\nc. Interrupt handler\nd. Kernel I/O subsystem\ni. Extracts information from the controller register and store it in data buffer\nii. I/O scheduling\niii. Performs data transfer\niv. Processing of I/O request",
+    "options": {
+      "A": "a-iii, b-iv, c-i, d-ii",
+      "B": "a-ii, b-i, c-iv, d-iii",
+      "C": "a-iv, b-i, c-ii, d-iii",
+      "D": "a-i, b-iii, c-iv, d-ii"
+    },
+    "answer": "A",
+    "explanation": "The controller transfers data; the driver processes I/O requests; the interrupt handler copies data from the controller registers; the kernel I/O subsystem does scheduling."
+  },
+  {
+    "id": 39,
+    "source_file": "JA-087-17-II",
+    "question": "Which of the following scheduling algorithms may cause starvation ?\na. First-come-first-served\nb. Round Robin\nc. Priority\nd. Shortest process next\ne. Shortest remaining time first",
+    "options": {
+      "A": "a, c and e",
+      "B": "c, d and e",
+      "C": "b, d and e",
+      "D": "b, c and d"
+    },
+    "answer": "B",
+    "explanation": "Priority, SPN and SRTF can starve long or low-priority jobs; FCFS and RR cannot."
+  },
+  {
+    "id": 40,
+    "source_file": "JA-087-17-II",
+    "question": "Distributed operating systems consist of :",
+    "options": {
+      "A": "Loosely coupled O.S. software on a loosely coupled hardware.",
+      "B": "Loosely coupled O.S. software on a tightly coupled hardware.",
+      "C": "Tightly coupled O.S. software on a loosely coupled hardware.",
+      "D": "Tightly coupled O.S. software on a tightly coupled hardware."
+    },
+    "answer": "C",
+    "explanation": "A distributed OS is tightly coupled software (a single system image) running on loosely coupled hardware (separate machines)."
+  },
+  {
+    "id": 41,
+    "source_file": "JA-087-17-II",
+    "question": "Software Engineering is an engineering discipline that is concerned with :",
+    "options": {
+      "A": "how computer systems work.",
+      "B": "theories and methods that underlie computers and software systems.",
+      "C": "all aspects of software production",
+      "D": "all aspects of computer-based systems development, including hardware, software and process engineering."
+    },
+    "answer": "C",
+    "explanation": "Sommerville: 'Software engineering is concerned with all aspects of software production'. (4) defines systems engineering and (2) computer science."
+  },
+  {
+    "id": 42,
+    "source_file": "JA-087-17-II",
+    "question": "Which of the following is not one of three software product aspects addressed by McCall's software quality factors ?",
+    "options": {
+      "A": "Ability to undergo change",
+      "B": "Adaptiability to new environments",
+      "C": "Operational characteristics",
+      "D": "Production costs and scheduling"
+    },
+    "answer": "D",
+    "explanation": "McCall's three aspects are product operation, product revision (ability to change) and product transition (adaptability)."
+  },
+  {
+    "id": 43,
+    "source_file": "JA-087-17-II",
+    "question": "Which of the following statement(s) is/are true with respect to software architecture ?\nS1 : Coupling is a measure of how well the things grouped together in a module belong together logically.\nS2 : Cohesion is a measure of the degree of interaction between software modules.\nS3 : If coupling is low and cohesion is high then it is easier to change one module without affecting others.",
+    "options": {
+      "A": "Only S1 and S2",
+      "B": "Only S3",
+      "C": "All of S1, S2 and S3",
+      "D": "Only S1"
+    },
+    "answer": "B",
+    "explanation": "S1 and S2 swap the definitions of cohesion and coupling; only S3 is true."
+  },
+  {
+    "id": 44,
+    "source_file": "JA-087-17-II",
+    "question": "The prototyping model of software development is :",
+    "options": {
+      "A": "a reasonable approach when requirements are well-defined.",
+      "B": "a useful approach when a customer cannot define requirements clearly.",
+      "C": "the best approach to use for projects with large development teams.",
+      "D": "a risky model that rarely produces a meaningful product."
+    },
+    "answer": "B",
+    "explanation": "Prototyping helps when requirements are unclear."
+  },
+  {
+    "id": 45,
+    "source_file": "JA-087-17-II",
+    "question": "A software design pattern used to enhance the functionality of an object at run-time is :",
+    "options": {
+      "A": "Adapter",
+      "B": "Decorator",
+      "C": "Delegation",
+      "D": "Proxy"
+    },
+    "answer": "B",
+    "explanation": "Decorator attaches responsibilities to an object dynamically."
+  },
+  {
+    "id": 46,
+    "source_file": "JA-087-17-II",
+    "question": "Match the following :\na. Affiliate Marketing\nb. Viral Marketing\nc. Group Purchasing\nd. Bartering Online\ni. Vendors ask partners to place logos on partner's site. If customers click, come to vendors and buy.\nii. Spread your brand on the net by word-of-mouth. Receivers will send your information to their friends.\niii. Aggregating the demands of small buyers to get a large volume. Then negotiate a price.\niv. Exchanging surplus products and services with the process administered completely online by an intermediary. Company receives “points” for its contribution.",
+    "options": {
+      "A": "a-i, b-ii, c-iii, d-iv",
+      "B": "a-i, b-iii, c-ii, d-iv",
+      "C": "a-iii, b-ii, c-iv, d-i",
+      "D": "a-ii, b-iii, c-i, d-iv"
+    },
+    "answer": "A",
+    "explanation": "Each definition matches its term in order."
+  },
+  {
+    "id": 47,
+    "source_file": "JA-087-17-II",
+    "question": "________ refers loosely to the process of semi-automatically analyzing large databases to find useful patterns.",
+    "options": {
+      "A": "Datamining",
+      "B": "Data warehousing",
+      "C": "DBMS",
+      "D": "Data mirroring"
+    },
+    "answer": "A",
+    "explanation": "This is Korth's definition of data mining."
+  },
+  {
+    "id": 48,
+    "source_file": "JA-087-17-II",
+    "question": "Which of the following is/are true w.r.t. applications of mobile computing ?\n(A) Travelling of salesman\n(B) Location awareness services",
+    "options": {
+      "A": "(A) true; (B) false.",
+      "B": "Both (A) and (B) are true.",
+      "C": "Both (A) and (B) are false.",
+      "D": "(A) false; (B) true."
+    },
+    "answer": "B",
+    "explanation": "Both are standard mobile computing applications."
+  },
+  {
+    "id": 49,
+    "source_file": "JA-087-17-II",
+    "question": "In 3G network, W-CDMA is also known as UMTS. The minimum spectrum allocation required for W-CDMA is _______.",
+    "options": {
+      "A": "2 MHz",
+      "B": "20 KHz",
+      "C": "5 KHz",
+      "D": "5 MHz"
+    },
+    "answer": "D",
+    "explanation": "W-CDMA uses 5 MHz carriers."
+  },
+  {
+    "id": 50,
+    "source_file": "JA-087-17-II",
+    "question": "Which of the following statements is/are true w.r.t. Enterprise Resource Planning (ERP) ?\n(A) ERP automates and integrates majority of business processes.\n(B) ERP provides access to information in a Real Time Environment.\n(C) ERP is inexpensive to implement.",
+    "options": {
+      "A": "(A), (B) and (C) are false.",
+      "B": "(A) and (B) false; (C) true.",
+      "C": "(A) and (B) true; (C) false.",
+      "D": "(A) true ; (B) and (C) are false."
+    },
+    "answer": "C",
+    "explanation": "ERP integrates processes and gives real-time information, but it is expensive to implement."
+  }
+]

@@ -1,0 +1,1562 @@
+[
+  {
+    "id": 1,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "If a CPU takes 10 ms to decide to execute a process of 100 ms, approximately what percentage of time will be wasted by CPU in scheduling work?",
+    "options": {
+      "A": "9",
+      "B": "10",
+      "C": "11",
+      "D": "8"
+    },
+    "answer": "A",
+    "explanation": "Wasted fraction = 10 / (10 + 100) = 0.0909, which is about 9%."
+  },
+  {
+    "id": 2,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Every monotonic grammar is a ______ grammar.",
+    "options": {
+      "A": "Type 2",
+      "B": "Type 0",
+      "C": "Type 3",
+      "D": "Type 1"
+    },
+    "answer": "D",
+    "explanation": "Monotonic (non-contracting, |α| ≤ |β|) grammars are equivalent to context-sensitive, i.e. Type 1, grammars."
+  },
+  {
+    "id": 3,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Array is a(n) ______ data structure.",
+    "options": {
+      "A": "Non-homogeneous",
+      "B": "Primitive",
+      "C": "Homogeneous",
+      "D": "Non-linear"
+    },
+    "answer": "C",
+    "explanation": "An array stores elements of the same type (homogeneous) in contiguous memory."
+  },
+  {
+    "id": 4,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "With respect to the organisation of elements in a data structure, identify the odd one out from the given options.",
+    "options": {
+      "A": "Linked list",
+      "B": "Array",
+      "C": "Stack",
+      "D": "Graph"
+    },
+    "answer": "D",
+    "explanation": "Linked list, array and stack are linear data structures; a graph is non-linear."
+  },
+  {
+    "id": 5,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "A 4 - stage pipeline has stage delays of 150, 120, 160 and 140ns, respectively. Registers that are used between the stages have a delay of 5ns. Assuming constant locking rate, the total time required to process 1000 data items on this pipeline is:",
+    "options": {
+      "A": "590 µs",
+      "B": "120.5 µs",
+      "C": "165.5 µs",
+      "D": "160.5 µs"
+    },
+    "answer": "C",
+    "explanation": "Clock = max stage + latch = 160 + 5 = 165 ns. Time = (k + n − 1) × 165 = (4 + 999) × 165 ns = 165.495 µs ≈ 165.5 µs."
+  },
+  {
+    "id": 6,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following is maintained by a DBMS to keep track of all transactions that update the database?",
+    "options": {
+      "A": "Log",
+      "B": "Index",
+      "C": "Block",
+      "D": "Table"
+    },
+    "answer": "A",
+    "explanation": "The system log (journal) records every update operation of transactions for recovery."
+  },
+  {
+    "id": 7,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Consider the 'C' language variables x and y with initial values as 100 and 500, respectively. What will be the value of y after executing the following expression?\n((x>=100) || (y+=100));",
+    "options": {
+      "A": "600",
+      "B": "200",
+      "C": "500",
+      "D": "100"
+    },
+    "answer": "C",
+    "explanation": "x>=100 is true, so || short-circuits and y+=100 is never evaluated; y stays 500."
+  },
+  {
+    "id": 8,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "A grammar that produces more than one leftmost derivation or more than one rightmost derivation for same sentence is known as ______.",
+    "options": {
+      "A": "ambiguous",
+      "B": "regular",
+      "C": "unambiguous",
+      "D": "context-sensitive"
+    },
+    "answer": "A",
+    "explanation": "A grammar is ambiguous if some string has more than one leftmost (or rightmost) derivation / parse tree."
+  },
+  {
+    "id": 9,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "In a multithreaded process, threads CANNOT share:",
+    "options": {
+      "A": "stack",
+      "B": "files",
+      "C": "code section",
+      "D": "data section"
+    },
+    "answer": "A",
+    "explanation": "Threads share code, data and open files, but each thread has its own stack, registers and program counter."
+  },
+  {
+    "id": 10,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "How many 64K × 1 RAM chips are needed to provide 512K × 8 bytes memory capacity?",
+    "options": {
+      "A": "128",
+      "B": "32",
+      "C": "64",
+      "D": "8"
+    },
+    "answer": "C",
+    "explanation": "(512K × 8) / (64K × 1) = 8 × 8 = 64 chips."
+  },
+  {
+    "id": 11,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "A process is a ______.",
+    "options": {
+      "A": "program stored on disk",
+      "B": "program in execution",
+      "C": "passive entity",
+      "D": "list of instructions"
+    },
+    "answer": "B",
+    "explanation": "A process is a program in execution (an active entity); a program on disk is passive."
+  },
+  {
+    "id": 12,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "State whether the following statements are true or false.\n(i) Excess-3 code is a form of BCD code, in which each decimal digit is coded into a 4-bit binary code.\n(ii) A K-map of n-variables contains 2^n cells.",
+    "options": {
+      "A": "(i) False (ii) False",
+      "B": "(i) True (ii) False",
+      "C": "(i) False (ii) True",
+      "D": "(i) True (ii) True"
+    },
+    "answer": "D",
+    "explanation": "Excess-3 codes each decimal digit as its 4-bit BCD value plus 3, and an n-variable K-map has 2^n cells. Both are true."
+  },
+  {
+    "id": 13,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following statements is/are true?\n(i) Encryption/Decryption and compression are the functions of presentation layer.\n(ii) TCP handles both congestion and flow control.\n(iii) Data link layer provides error control but not flow control.\n(iv) Service point addressing is the job of network layer.",
+    "options": {
+      "A": "Only (ii) and (iii)",
+      "B": "Only (i) and (ii)",
+      "C": "Only (ii) and (iv)",
+      "D": "Only (i), (iii) and (iv)"
+    },
+    "answer": "B",
+    "explanation": "(i) and (ii) are true. The data link layer provides both error and flow control, and service-point (port) addressing belongs to the transport layer."
+  },
+  {
+    "id": 14,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "A 10 KBps satellite link has a propagation time of 500 ms. The transmitter employs go-back-5 ARQ scheme. Assuming each frame of 200 bytes, what is the possible throughput?",
+    "options": {
+      "A": "5.22 KBps",
+      "B": "6.89 KBps",
+      "C": "4 KBps",
+      "D": "7.23 KBps"
+    },
+    "answer": "B",
+    "explanation": "Official answer key: 6.89 KBps. Note: the standard formula (frame time 20 ms; 5 frames per 20 + 1000 ms cycle) gives only about 0.98 KBps, so the question/options appear inconsistent."
+  },
+  {
+    "id": 15,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Consider the height of a tree as the number of edges in the longest path from root to a leaf node. If T is a binary tree of height 3, then what is the largest number of nodes in T?",
+    "options": {
+      "A": "3",
+      "B": "15",
+      "C": "7",
+      "D": "31"
+    },
+    "answer": "B",
+    "explanation": "Maximum nodes in a binary tree of height h = 2^(h+1) − 1 = 2^4 − 1 = 15."
+  },
+  {
+    "id": 16,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Match the columns.\nLIST-1: (i) Breach of confidentiality (ii) Breach of integrity (iii) Breach of availability\nLIST-2: (a) Unauthorised modification of data (b) Theft of information (c) Unauthorised destruction of data",
+    "options": {
+      "A": "(i) – (c), (ii) – (b), (iii) – (a)",
+      "B": "(i) – (c), (ii) – (a), (iii) – (b)",
+      "C": "(i) – (b), (ii) – (a), (iii) – (c)",
+      "D": "(i) – (a), (ii) – (b), (iii) – (c)"
+    },
+    "answer": "C",
+    "explanation": "Confidentiality breach = theft of information, integrity breach = unauthorised modification, availability breach = unauthorised destruction."
+  },
+  {
+    "id": 17,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following SQL commands (statements) can be used to add new data in a database?",
+    "options": {
+      "A": "Append",
+      "B": "Update",
+      "C": "Add",
+      "D": "Insert"
+    },
+    "answer": "D",
+    "explanation": "INSERT adds new rows; UPDATE modifies existing rows."
+  },
+  {
+    "id": 18,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following probing methods suffers from the problem of secondary clustering?",
+    "options": {
+      "A": "Linear probing",
+      "B": "Double hashing",
+      "C": "Both quadratic and double hashing",
+      "D": "Quadratic probing"
+    },
+    "answer": "D",
+    "explanation": "Quadratic probing causes secondary clustering (keys with the same home slot follow the same probe sequence); linear probing causes primary clustering; double hashing avoids both."
+  },
+  {
+    "id": 19,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "What is the solution of the following recurrence relation?\nT(n) = 4T(n/2) + n^2",
+    "options": {
+      "A": "n",
+      "B": "nlogn",
+      "C": "n^2logn",
+      "D": "logn"
+    },
+    "answer": "C",
+    "explanation": "Master theorem: a = 4, b = 2, n^(log_2 4) = n^2 = f(n), so case 2 gives T(n) = Θ(n^2 log n)."
+  },
+  {
+    "id": 20,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "What will be the value of the following arithmetic expression in 'C'?\n125 % -4",
+    "options": {
+      "A": "+1",
+      "B": "−31.25",
+      "C": "+31.25",
+      "D": "−1"
+    },
+    "answer": "A",
+    "explanation": "In C the result of % takes the sign of the dividend: 125 = (−4)(−31) + 1, so 125 % −4 = 1."
+  },
+  {
+    "id": 21,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Consider the height of a tree as the number of edges in the longest paths from root to a leaf node. If T is a binary tree of height 4, then what is the smallest number of nodes in T?",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "3",
+      "D": "1"
+    },
+    "answer": "B",
+    "explanation": "Minimum nodes for height h = h + 1 (a skewed chain) = 5."
+  },
+  {
+    "id": 22,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "The concatenation of two regular expressions R1 and R2 are represented using:",
+    "options": {
+      "A": "R1∩R2",
+      "B": "R1R2",
+      "C": "R1+R2",
+      "D": "R1∪R2"
+    },
+    "answer": "B",
+    "explanation": "Concatenation is written by juxtaposition, R1R2; + or ∪ denotes union."
+  },
+  {
+    "id": 23,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Preemptive scheduling was introduced in ______.",
+    "options": {
+      "A": "Windows 95",
+      "B": "Windows 3.0",
+      "C": "Windows 98",
+      "D": "Windows NT"
+    },
+    "answer": "A",
+    "explanation": "Per the official key, Windows 95 introduced preemptive multitasking to consumer Windows (Windows 3.x used cooperative scheduling)."
+  },
+  {
+    "id": 24,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "State whether the following statements are true or false with respect to relational database?\n(i) \"Intension\" represents the number of tuples presented in a database relation (table) at any instance.\n(ii) \"Extension\" gives the name, structure and constraint of a database relation (table).",
+    "options": {
+      "A": "(i) False (ii) False",
+      "B": "(i) True (ii) True",
+      "C": "(i) False (ii) True",
+      "D": "(i) True (ii) False"
+    },
+    "answer": "A",
+    "explanation": "The definitions are swapped: intension is the schema (name, structure, constraints) and extension is the set of tuples at an instant. Both statements are false."
+  },
+  {
+    "id": 25,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Let f(A, B) = A' + B, then which of the given options is the simplified form of the function f(f(x + y, y), z)?",
+    "options": {
+      "A": "xyz",
+      "B": "x' + z",
+      "C": "x + z'",
+      "D": "xy' + z"
+    },
+    "answer": "D",
+    "explanation": "f(x+y, y) = (x+y)' + y = x'y' + y = x' + y. Then f(x'+y, z) = (x'+y)' + z = xy' + z."
+  },
+  {
+    "id": 26,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following statements is/are FALSE?\n(i) Device controllers raise an interrupt by asserting a signal on the interrupt request line.\n(ii) Interrupt vector contains the memory addresses of specialized interrupt handlers.",
+    "options": {
+      "A": "Neither (i) nor (ii)",
+      "B": "Only (i)",
+      "C": "Only (ii)",
+      "D": "Both (i) and (ii)"
+    },
+    "answer": "A",
+    "explanation": "Both statements are true (Silberschatz), so neither is false."
+  },
+  {
+    "id": 27,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "In 'C' language, the scope of the ______ variable extends from the point of definition throughout the remainder of the program.",
+    "options": {
+      "A": "Register",
+      "B": "External",
+      "C": "Static",
+      "D": "Automatic"
+    },
+    "answer": "B",
+    "explanation": "External (global) variables are visible from their point of definition to the end of the program/file."
+  },
+  {
+    "id": 28,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "A machine needs a minimum of 100 s to sort 1000 names by quick sort. What is minimum time needed to sort 100 names?",
+    "options": {
+      "A": "7.1 s",
+      "B": "8.0 s",
+      "C": "6.7 s",
+      "D": "5.0 s"
+    },
+    "answer": "C",
+    "explanation": "T ∝ n log n: 100 × (100 log 100)/(1000 log 1000) = 100 × 200/3000 ≈ 6.7 s."
+  },
+  {
+    "id": 29,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "In IPv4 datagram header, which field signifies the number of hops allowed before a packet reaches the destination?",
+    "options": {
+      "A": "Fragment offset",
+      "B": "Time to live",
+      "C": "Identification",
+      "D": "Type of service"
+    },
+    "answer": "B",
+    "explanation": "TTL is decremented at each router; the packet is discarded when it reaches 0."
+  },
+  {
+    "id": 30,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following is NOT a valid decimal integer constant in 'C'?",
+    "options": {
+      "A": "9999",
+      "B": "2019",
+      "C": "10001",
+      "D": "02019"
+    },
+    "answer": "D",
+    "explanation": "A leading 0 makes it an octal constant, and 9 is not a valid octal digit, so 02019 is invalid."
+  },
+  {
+    "id": 31,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "In 'C' language, an unsigned long integer constant can be specified by appending the letters ______ to the ______ of the constant.",
+    "options": {
+      "A": "LU, End",
+      "B": "UL, Beginning",
+      "C": "UL, End",
+      "D": "LU, Beginning"
+    },
+    "answer": "C",
+    "explanation": "Suffix UL (e.g. 1234UL) at the end of the constant makes it unsigned long."
+  },
+  {
+    "id": 32,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following is NOT an error control technique?",
+    "options": {
+      "A": "Go-Back-N ARQ",
+      "B": "Stop-and-Wait ARQ",
+      "C": "Selective Repeat ARQ",
+      "D": "Sliding Window"
+    },
+    "answer": "D",
+    "explanation": "The three ARQ schemes are error-control protocols; sliding window is a flow-control mechanism."
+  },
+  {
+    "id": 33,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following statements is true?",
+    "options": {
+      "A": "In Type 2 production rule, left hand side has no left or right context.",
+      "B": "In Type 2 production rule, left hand side has only right context.",
+      "C": "In Type 2 production rule, left hand side has only left context.",
+      "D": "A Type 2 production is of the form A→a or A→aB, where A, B are variables and a is a terminal."
+    },
+    "answer": "A",
+    "explanation": "Type 2 (context-free) rules have a single variable on the left with no context. Option 4 describes Type 3 (regular) rules."
+  },
+  {
+    "id": 34,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "The analysis part of a compiler is also called ______.",
+    "options": {
+      "A": "Machine code",
+      "B": "Symbol table",
+      "C": "Back end",
+      "D": "Front end"
+    },
+    "answer": "D",
+    "explanation": "Analysis (lexical, syntax, semantic) is the front end; synthesis is the back end."
+  },
+  {
+    "id": 35,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which type of address is 255.255.255.255 according to IPv4 addressing?",
+    "options": {
+      "A": "Multicast address",
+      "B": "Loopback address",
+      "C": "Direct broadcast address",
+      "D": "Limited broadcast address"
+    },
+    "answer": "D",
+    "explanation": "All 1s is the limited broadcast address (local network only)."
+  },
+  {
+    "id": 36,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "State whether the following statements are true or false.\n(i) In Bellman Ford shortest path algorithm, the edge weight can be negative but no negative cycle exists.\n(ii) Spanning tree will always have n−1 edges, where n is total nodes of a graph.",
+    "options": {
+      "A": "(i) True (ii) True",
+      "B": "(i) False (ii) True",
+      "C": "(i) False (ii) False",
+      "D": "(i) True (ii) False"
+    },
+    "answer": "A",
+    "explanation": "Bellman-Ford allows negative weights as long as there is no negative cycle, and any spanning tree of n nodes has n−1 edges."
+  },
+  {
+    "id": 37,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following is done by attaching rules or program fragments to productions in a grammar?",
+    "options": {
+      "A": "Syntax-directed translation",
+      "B": "Lexical analysis",
+      "C": "Non-terminal symbols",
+      "D": "Terminal symbols"
+    },
+    "answer": "A",
+    "explanation": "Syntax-directed translation attaches semantic rules/actions to grammar productions."
+  },
+  {
+    "id": 38,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Match the columns.\nLIST-1: (i) Indirect addressing mode (ii) Immediate addressing mode (iii) Base addressing mode (iv) Index addressing mode\nLIST-2: (a) Constant operands (b) Relocatable program (c) Arrays (d) Pointers",
+    "options": {
+      "A": "(i) – (b), (ii) – (a), (iii) – (d), (iv) – c",
+      "B": "(i) – (a), (ii) – (b), (iii) – (c), (iv) – d",
+      "C": "(i) – (d), (ii) – (a), (iii) – (b), (iv) – c",
+      "D": "(i) – (c), (ii) – (b), (iii) – (a), (iv) – d"
+    },
+    "answer": "C",
+    "explanation": "Indirect = pointers, immediate = constants, base register = relocation, index = arrays."
+  },
+  {
+    "id": 39,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following SQL \"LIKE\" expressions can be used to find any string containing \"ch\"?",
+    "options": {
+      "A": "LIKE ch%",
+      "B": "LIKE ch%ch",
+      "C": "LIKE %ch%",
+      "D": "LIKE %ch"
+    },
+    "answer": "C",
+    "explanation": "%ch% matches 'ch' anywhere; ch% means starts with and %ch means ends with."
+  },
+  {
+    "id": 40,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "The language {a^n b^n c^n | n≥1} is:",
+    "options": {
+      "A": "context-sensitive but not context-free",
+      "B": "recursive but not context sensitive",
+      "C": "regular",
+      "D": "context-free but not regular"
+    },
+    "answer": "A",
+    "explanation": "a^n b^n c^n needs to match three counts; it is the classic context-sensitive, non-context-free language."
+  },
+  {
+    "id": 41,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following is NOT an aggregate function in SQL?",
+    "options": {
+      "A": "ROUND()",
+      "B": "AVG()",
+      "C": "SUM()",
+      "D": "MAX()"
+    },
+    "answer": "A",
+    "explanation": "ROUND() is a scalar (single-row) function; AVG, SUM and MAX are aggregates."
+  },
+  {
+    "id": 42,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Each 'C' program consists of one or more functions, one of which must be named as:",
+    "options": {
+      "A": "primary",
+      "B": "head",
+      "C": "start",
+      "D": "main"
+    },
+    "answer": "D",
+    "explanation": "Execution of a C program begins at main()."
+  },
+  {
+    "id": 43,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following statements is FALSE?",
+    "options": {
+      "A": "CPU can directly access main memory and registers.",
+      "B": "Illegal memory access results in trap interrupt.",
+      "C": "Memory-address register stores the logical address.",
+      "D": "Memory protection among processes is implemented using base and limit registers."
+    },
+    "answer": "C",
+    "explanation": "The memory-address register holds the physical address sent to memory; logical addresses are translated by the MMU."
+  },
+  {
+    "id": 44,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "State whether the following statements are true or false.\n(i) DRAM stores information using capacitors.\n(ii) Program Status Word (PSW) contains status bits that reflect the current CPU state.",
+    "options": {
+      "A": "(i) True (ii) False",
+      "B": "(i) False (ii) True",
+      "C": "(i) True (ii) True",
+      "D": "(i) False (ii) False"
+    },
+    "answer": "C",
+    "explanation": "DRAM stores bits as charge on capacitors, and the PSW holds status/condition bits of the CPU. Both are true."
+  },
+  {
+    "id": 45,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the options represents the postfix of the given infix expression?\nL-M/(N*O/P)",
+    "options": {
+      "A": "LMNO*/P/-",
+      "B": "LMN*O-P//-",
+      "C": "LMNO*P//-",
+      "D": "LM-NO*P//"
+    },
+    "answer": "C",
+    "explanation": "N*O/P → NO*P/; M/(…) → MNO*P//; L−(…) → LMNO*P//-."
+  },
+  {
+    "id": 46,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following is the correct representation of decimal number (13)10 in Excess-3 code?",
+    "options": {
+      "A": "01100110",
+      "B": "10011001",
+      "C": "01000110",
+      "D": "00010011"
+    },
+    "answer": "C",
+    "explanation": "Digit 1 → 1+3 = 4 = 0100, digit 3 → 3+3 = 6 = 0110, giving 0100 0110."
+  },
+  {
+    "id": 47,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "When no more elements can be added into a stack, the status of stack is known as ______ and the \"top\" index rests at the ______ position.",
+    "options": {
+      "A": "Stack underflow, Highest",
+      "B": "Stack underflow, Lowest",
+      "C": "Stack overflow, Highest",
+      "D": "Stack overflow, Lowest"
+    },
+    "answer": "C",
+    "explanation": "A full stack is in overflow state with top at the highest index (MAX−1)."
+  },
+  {
+    "id": 48,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "When a transaction is abnormally terminated then which of the following commands is executed by the DBMS?",
+    "options": {
+      "A": "Rollback",
+      "B": "Logout",
+      "C": "Commit",
+      "D": "Exit"
+    },
+    "answer": "A",
+    "explanation": "An aborted transaction is rolled back to undo its effects."
+  },
+  {
+    "id": 49,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following is equivalent to the decimal number (0.6875)10?",
+    "options": {
+      "A": "(0.542)8",
+      "B": "(0.54)8",
+      "C": "(0.654)8",
+      "D": "(0.45)8"
+    },
+    "answer": "B",
+    "explanation": "0.6875 × 8 = 5.5 → 5; 0.5 × 8 = 4.0 → 4, so (0.54)8."
+  },
+  {
+    "id": 50,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "What is the port number for HTTP protocol?",
+    "options": {
+      "A": "110",
+      "B": "25",
+      "C": "80",
+      "D": "20"
+    },
+    "answer": "C",
+    "explanation": "HTTP uses port 80. POP3 uses 110, SMTP 25 and FTP data 20."
+  },
+  {
+    "id": 51,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the given options best matches the items of LIST-1 with the items of LIST-2?\nLIST-A: (i) Regular language (ii) Context-free language (iii) Context-sensitive language\nLIST-2: (a) Type-1 grammar (b) Type-2 grammar (c) Type-3 grammar",
+    "options": {
+      "A": "(i) – (b), (ii) – (a), (iii) – (c)",
+      "B": "(i) – (a), (ii) – (c), (iii) – (b)",
+      "C": "(i) – (c), (ii) – (a), (iii) – (b)",
+      "D": "(i) – (c), (ii) – (b), (iii) – (a)"
+    },
+    "answer": "D",
+    "explanation": "Chomsky hierarchy: regular = Type 3, context-free = Type 2, context-sensitive = Type 1."
+  },
+  {
+    "id": 52,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Given an input of burst data at a rate 18 MBps for 3 s. After a halt of 5 s, again data flows at the rate of 10 MBps for 2 s. For efficient working of a leaky bucket algorithm, what should be the rate of flow of output data provided that the bucket functions for 6 s.",
+    "options": {
+      "A": "7.4 MBps",
+      "B": "44.4 MBps",
+      "C": "6.75 MBps",
+      "D": "14.8 MBps"
+    },
+    "answer": "B",
+    "explanation": "Official answer key: 44.4 MBps. Note: total input = 18×3 + 10×2 = 74 MB; spreading it over 6 s gives ≈12.3 MBps, so the keyed value seems doubtful."
+  },
+  {
+    "id": 53,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following statements is/are true?\n(i) Secondary index may be created on a key field.\n(ii) Secondary index may be created on non-key field.",
+    "options": {
+      "A": "Only (ii)",
+      "B": "Neither (i) nor (ii)",
+      "C": "Only (i)",
+      "D": "Both (i) and (ii)"
+    },
+    "answer": "D",
+    "explanation": "A secondary index can be built on a candidate (key) field or on a non-key field with duplicates."
+  },
+  {
+    "id": 54,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following statements is/are true?\n(i) In 'C', a character array always ends with null character (\\0).\n(ii) The \"base address\" of an array means the address of the second element.",
+    "options": {
+      "A": "Neither (i) nor (ii)",
+      "B": "Only (ii)",
+      "C": "Both (i) and (ii)",
+      "D": "Only (i)"
+    },
+    "answer": "D",
+    "explanation": "Per the official key only (i) is true: the base address is the address of the first element. (Strictly, only strings are null-terminated, not every char array.)"
+  },
+  {
+    "id": 55,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "In 'C' language, an unsigned integer constant can be specified by appending the letter ______ to the ______ of the constant.",
+    "options": {
+      "A": "U, Beginning",
+      "B": "I, Beginning",
+      "C": "I, End",
+      "D": "U, End"
+    },
+    "answer": "D",
+    "explanation": "The suffix U (or u) at the end, e.g. 100U, makes the constant unsigned."
+  },
+  {
+    "id": 56,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following implementations uses UDP as its transport layer protocol?",
+    "options": {
+      "A": "HTTP",
+      "B": "IMAP",
+      "C": "DNS",
+      "D": "FTP"
+    },
+    "answer": "C",
+    "explanation": "DNS queries normally use UDP port 53; HTTP, IMAP and FTP use TCP."
+  },
+  {
+    "id": 57,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Using which of the following decimal digits can be converted into the binary format?",
+    "options": {
+      "A": "Demultiplexer",
+      "B": "Multiplexer",
+      "C": "Decoder",
+      "D": "Encoder"
+    },
+    "answer": "D",
+    "explanation": "An encoder (e.g. decimal-to-BCD) converts an active input line into a binary code."
+  },
+  {
+    "id": 58,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following is a virtual relation (table) that is derived from the base relation (table) and does NOT really exist? It is,",
+    "options": {
+      "A": "Primary key",
+      "B": "Index",
+      "C": "Foreign key",
+      "D": "View"
+    },
+    "answer": "D",
+    "explanation": "A view is a virtual table defined by a query on base tables."
+  },
+  {
+    "id": 59,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Consider a relation schema R(A, B, C) with (A, B) as the primary key and F = {A→B, B→C} as the set of functional dependencies. What is the highest normal form satisfied by R?",
+    "options": {
+      "A": "2NF",
+      "B": "BCNF",
+      "C": "3NF",
+      "D": "1NF"
+    },
+    "answer": "D",
+    "explanation": "B→C makes the non-prime attribute C depend on part of the key (A,B), which is a partial dependency, so R is not in 2NF. Highest is 1NF."
+  },
+  {
+    "id": 60,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Suppose in a demand paging environment, the page service time is 10 ms if the page to be replaced is NOT modified, whereas it is 15 ms if the page to be replaced is modified. The main memory access time is 300 ms. What will be the effective access time if page fault rate is 5% and the page to be replaced is modified 60% of the time?",
+    "options": {
+      "A": "6502.85 µs",
+      "B": "650.285 µs",
+      "C": "65.0285 µs",
+      "D": "650.285 ms"
+    },
+    "answer": "B",
+    "explanation": "Taking memory access as 300 ns (the 'ms' is a typo): fault service = 0.4×10 + 0.6×15 = 13 ms. EAT = 0.95×300 ns + 0.05×13 ms = 285 ns + 650 µs = 650.285 µs."
+  },
+  {
+    "id": 61,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Assume a seven-stage instruction pipeline and also that every instruction has to go through all these stages.\n→F→D→I→E→E→E→W\nF: Instruction Fetch\nD: Decode\nI: Operand Fetch or Issue\nE: Execute\nW: Write Back\nConsider the following code:\nCode:\nR1 ← Mem(X)\nR2 ← Mem(Y)\nR4 ← Mem(A)\nR5 ← Mem(B)\nR3 ← (R1) + (R2)\nR6 ← (R4) + (R5)\nMem(Z) ← (R3)\nMem(C) ← (R6)\nFind the number of cycles required for complete execution of above code.",
+    "options": {
+      "A": "23",
+      "B": "21",
+      "C": "16",
+      "D": "19"
+    },
+    "answer": "C",
+    "explanation": "Official key: 16 cycles. Ideally 7 + (8 − 1) = 14 cycles; the RAW dependencies (the adds need the loaded registers, and the stores need R3/R6) add 2 stall cycles."
+  },
+  {
+    "id": 62,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Consider the 'C' language variables a and b with initial values as 0 and 1, respectively. What will be the value of b after executing the following expression?\n((a>0)&&(b=b+1));",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "0",
+      "D": "3"
+    },
+    "answer": "A",
+    "explanation": "a>0 is false, so && short-circuits and b=b+1 is not executed; b remains 1."
+  },
+  {
+    "id": 63,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "In Automata Theory, a production without any restriction is called ______ production.",
+    "options": {
+      "A": "Type 0",
+      "B": "Type 3",
+      "C": "Type 2",
+      "D": "Type 1"
+    },
+    "answer": "A",
+    "explanation": "Unrestricted grammars (phrase-structure) are Type 0."
+  },
+  {
+    "id": 64,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "What is the \"postorder\" traversal of the following tree?\n[Tree: root L has children K, I, H; K has children A and J; J has children B and C; H has children E, F and G; E has child D]",
+    "options": {
+      "A": "I, A, B, C, J, K, D, E, F, G, L, H",
+      "B": "B, C, A, J, K, I, D, E, F, G, H, L",
+      "C": "A, B, C, J, K, D, E, F, G, H, L, I",
+      "D": "A, B, C, J, K, I, D, E, F, G, H, L"
+    },
+    "answer": "D",
+    "explanation": "Postorder visits children left to right, then the node: K subtree → A, B, C, J, K; then I; H subtree → D, E, F, G, H; finally L."
+  },
+  {
+    "id": 65,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "With respect to database transaction, what is the full-form of 'C' in ACID?",
+    "options": {
+      "A": "Complexity",
+      "B": "Coexisting",
+      "C": "Consistency",
+      "D": "Complementary"
+    },
+    "answer": "C",
+    "explanation": "ACID = Atomicity, Consistency, Isolation, Durability."
+  },
+  {
+    "id": 66,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following is a valid 'C' structure to represent process control block in Linux operating system?",
+    "options": {
+      "A": "job_struct",
+      "B": "program_struct",
+      "C": "process_struct",
+      "D": "task_struct"
+    },
+    "answer": "D",
+    "explanation": "Linux represents each process by struct task_struct."
+  },
+  {
+    "id": 67,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "In ER model, identifying relationship, which connects a weak entity with its identifying owner, is represented by:",
+    "options": {
+      "A": "rectangle",
+      "B": "double-lined oval",
+      "C": "dashed oval",
+      "D": "double-lined diamond"
+    },
+    "answer": "D",
+    "explanation": "Identifying relationships are drawn as double diamonds; weak entities as double rectangles."
+  },
+  {
+    "id": 68,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "In the given diagram, if link V2-V4 is removed, how does the routing table for distance vector routing protocol vary for the node V2?\n[Graph edges with costs: V1–V2 = 4, V2–V5 = 3, V1–V3 = 5, V2–V4 = 2, V3–V4 = 3, V4–V6 = 1; table lists costs from V2 to V1, V2, V3, V4, V5, V6]",
+    "options": {
+      "A": "(4, 0, 9, ∞, 3, 13)",
+      "B": "(4, 0, 5, 2, 3, 3)",
+      "C": "(4, 0, 5, ∞, 3, 3)",
+      "D": "(4, 0, 9, 12, 3, 13)"
+    },
+    "answer": "D",
+    "explanation": "Without V2–V4, V2 reaches V1 = 4, V3 = 4+5 = 9, V4 = 9+3 = 12, V5 = 3, V6 = 12+1 = 13."
+  },
+  {
+    "id": 69,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "What is the CORRECT production rule for the language L = {a^m b^n | m<n, m, n≥1}?",
+    "options": {
+      "A": "S-->Sa|Bb, B-->aBb, B-->ab",
+      "B": "S-->SB|ab, B-->aBb, B-->ab",
+      "C": "S-->aS|aA, A-->aAb, A-->ab",
+      "D": "S-->Sb|Bb, B-->aBb, B-->ab"
+    },
+    "answer": "D",
+    "explanation": "B generates a^k b^k (k ≥ 1) and S → Sb | Bb appends at least one extra b, giving more b's than a's."
+  },
+  {
+    "id": 70,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following normal forms ensures that non-prime attributes of a relation are not functionally dependent on subset of any candidate key?",
+    "options": {
+      "A": "2NF",
+      "B": "1NF",
+      "C": "3NF",
+      "D": "BCNF"
+    },
+    "answer": "A",
+    "explanation": "2NF removes partial dependencies of non-prime attributes on part of a candidate key."
+  },
+  {
+    "id": 71,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "In 'C' language, an identifier name CANNOT start with:",
+    "options": {
+      "A": "uppercase letter",
+      "B": "lowercase letter",
+      "C": "numeric digit",
+      "D": "underscore (_)"
+    },
+    "answer": "C",
+    "explanation": "Identifiers must begin with a letter or underscore, not a digit."
+  },
+  {
+    "id": 72,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following statements is/are true?\n(i) A linear bounded automaton is a deterministic Turing machine.\n(ii) Every language accepted by linear bounded automaton need not to be context-sensitive.",
+    "options": {
+      "A": "Only (ii)",
+      "B": "Only (i)",
+      "C": "Both (i) and (ii)",
+      "D": "Neither (i) nor (ii)"
+    },
+    "answer": "D",
+    "explanation": "An LBA is a nondeterministic TM with tape bounded by the input, and every LBA language is context-sensitive. Both statements are false."
+  },
+  {
+    "id": 73,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following statements is/are FALSE?\n(i) Breadth first search algorithm can be implemented using the queue data structure.\n(ii) Depth first search algorithm can be implemented using the stack data structure.",
+    "options": {
+      "A": "Only (ii)",
+      "B": "Both (i) and (ii)",
+      "C": "Neither (i) nor (ii)",
+      "D": "Only (i)"
+    },
+    "answer": "C",
+    "explanation": "BFS uses a queue and DFS a stack, so both statements are true and neither is false."
+  },
+  {
+    "id": 74,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Consider a JK flip-flop with J = Q' and K = 1. Assuming that the flip-flop was initially cleared and then clocked for 6 pulses, what will be the sequence of bits at the output Q?",
+    "options": {
+      "A": "011001",
+      "B": "010000",
+      "C": "010101",
+      "D": "010010"
+    },
+    "answer": "C",
+    "explanation": "With Q=0, J=1 and K=1 the flip-flop toggles to 1; with Q=1, J=0 and K=1 it resets to 0. So Q alternates 0,1,0,1,0,1 (official key: 010101)."
+  },
+  {
+    "id": 75,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "With respect to database, what is the full-form of ER model?",
+    "options": {
+      "A": "Extended Relationship model",
+      "B": "Entity Representation model",
+      "C": "Extended Representation model",
+      "D": "Entity Relationship model"
+    },
+    "answer": "D",
+    "explanation": "ER = Entity-Relationship model (Chen)."
+  },
+  {
+    "id": 76,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "______ takes a string of tokens from the lexer and constructs a syntax tree for the string by finding a derivation of the string from the start symbol of the grammar.",
+    "options": {
+      "A": "Code generator",
+      "B": "Lexical analysis",
+      "C": "Predictive parsing",
+      "D": "Syntax analysis"
+    },
+    "answer": "D",
+    "explanation": "Syntax analysis (parsing) builds the parse/syntax tree from the token stream."
+  },
+  {
+    "id": 77,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "According to Chomsky classification, the language of Finite Automata is:",
+    "options": {
+      "A": "Type 1",
+      "B": "Type 2",
+      "C": "Type 3",
+      "D": "Type 0"
+    },
+    "answer": "C",
+    "explanation": "Finite automata accept regular languages, i.e. Type 3."
+  },
+  {
+    "id": 78,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following statements is FALSE?",
+    "options": {
+      "A": "In Mealy machine, output depends on both the present state and current input symbol.",
+      "B": "An NFA can also have NULL moves (i.e., moves without input symbol)",
+      "C": "In Moore machine, output depends only on the present state of the machine.",
+      "D": "Mealy machine is infinite state machine."
+    },
+    "answer": "D",
+    "explanation": "A Mealy machine is a finite state machine (transducer)."
+  },
+  {
+    "id": 79,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following is the correct value of x, if (211)x = (152)8?",
+    "options": {
+      "A": "7",
+      "B": "9",
+      "C": "8",
+      "D": "6"
+    },
+    "answer": "A",
+    "explanation": "(152)8 = 106. 2x² + x + 1 = 106 → 2x² + x − 105 = 0 → x = 7."
+  },
+  {
+    "id": 80,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following is NOT a valid model to represent relationship between user threads and kernel threads?",
+    "options": {
+      "A": "Many-to-One model",
+      "B": "One-to-Many model",
+      "C": "Many-to-Many model",
+      "D": "One-to-One model"
+    },
+    "answer": "B",
+    "explanation": "The multithreading models are many-to-one, one-to-one and many-to-many (and two-level)."
+  },
+  {
+    "id": 81,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following statements is true?",
+    "options": {
+      "A": "Kernel level threads are managed by operating system.",
+      "B": "A heavy weight process has multiple threads of execution.",
+      "C": "There are three types of threads: user, kernel, and system level threads.",
+      "D": "User level threads are managed by kernel."
+    },
+    "answer": "A",
+    "explanation": "Kernel threads are created and scheduled by the OS. User threads are managed by a library, and a heavyweight process has a single thread."
+  },
+  {
+    "id": 82,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following layers of the OSI model maintains the synchronisation in the data and dialog control between the data end points?",
+    "options": {
+      "A": "Network Layer",
+      "B": "Transport Layer",
+      "C": "Session Layer",
+      "D": "Data Link Layer"
+    },
+    "answer": "C",
+    "explanation": "The session layer handles dialog control and synchronization (checkpoints)."
+  },
+  {
+    "id": 83,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "With respect to 'C' language, the collection of characters, digits and symbols enclosed within quotation marks is called:",
+    "options": {
+      "A": "Ragged array",
+      "B": "String",
+      "C": "Union",
+      "D": "Structure"
+    },
+    "answer": "B",
+    "explanation": "Characters within double quotes form a string literal."
+  },
+  {
+    "id": 84,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "The 'C' language was originally developed at:",
+    "options": {
+      "A": "IBM",
+      "B": "Intel",
+      "C": "Microsoft",
+      "D": "Bell Labs"
+    },
+    "answer": "D",
+    "explanation": "Dennis Ritchie developed C at AT&T Bell Labs (1972)."
+  },
+  {
+    "id": 85,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the given options is the simplified product of sum of the Boolean function F(x, y, z) = π(0, 1, 4, 5)?",
+    "options": {
+      "A": "x",
+      "B": "xyz",
+      "C": "z",
+      "D": "y"
+    },
+    "answer": "D",
+    "explanation": "Maxterms 0, 1, 4, 5 are exactly the cells where y = 0, so F = y."
+  },
+  {
+    "id": 86,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "With respect to relational database language, what is the full-form of SQL?",
+    "options": {
+      "A": "Selective Query Language",
+      "B": "Secondary Query Language",
+      "C": "Structured Query Language",
+      "D": "Semi-structured Query Language"
+    },
+    "answer": "C",
+    "explanation": "SQL = Structured Query Language."
+  },
+  {
+    "id": 87,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "What is the purpose of the \"Select\" statement of SQL?",
+    "options": {
+      "A": "To delete tuples from a relation",
+      "B": "To insert tuples in a relation",
+      "C": "To define foreign key between two relations",
+      "D": "To retrieve tuples from a relation"
+    },
+    "answer": "D",
+    "explanation": "SELECT queries (retrieves) data."
+  },
+  {
+    "id": 88,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Deterministic context-free language is closed under ______.",
+    "options": {
+      "A": "union",
+      "B": "complementation",
+      "C": "intersection",
+      "D": "addition"
+    },
+    "answer": "B",
+    "explanation": "DCFLs are closed under complement but not under union or intersection."
+  },
+  {
+    "id": 89,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "State whether the following statements are true or false.\n(iii) Recursion requires extra storage space.\n(iv) Using recursion, the length (size) of the program can be reduced.",
+    "options": {
+      "A": "(i) False (ii) True",
+      "B": "(i) True (ii) False",
+      "C": "(i) False (ii) False",
+      "D": "(i) True (ii) True"
+    },
+    "answer": "D",
+    "explanation": "Recursion uses extra stack space for each call, and it usually makes code shorter. Both statements are true (the paper labels them iii/iv)."
+  },
+  {
+    "id": 90,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Comments can be placed anywhere in a 'C' program, as long as they are placed within the delimiters:",
+    "options": {
+      "A": "*/ and */",
+      "B": "/* and */",
+      "C": "/* and /*",
+      "D": "/* and //"
+    },
+    "answer": "B",
+    "explanation": "C block comments start with /* and end with */."
+  },
+  {
+    "id": 91,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "In 'C' language, the gets() function reads string from keyboard and terminates reading after encountering a ______ character.",
+    "options": {
+      "A": "Tab",
+      "B": "Newline",
+      "C": "Space",
+      "D": "Carriage return"
+    },
+    "answer": "B",
+    "explanation": "gets() reads until a newline (which it replaces with '\\0'); scanf(\"%s\") stops at whitespace."
+  },
+  {
+    "id": 92,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following holds information about identifiers?",
+    "options": {
+      "A": "Symbol table",
+      "B": "Intermediate code",
+      "C": "Lexical analyzer",
+      "D": "Context-free grammar"
+    },
+    "answer": "A",
+    "explanation": "The symbol table stores identifiers with their attributes (type, scope, location)."
+  },
+  {
+    "id": 93,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "What is the associativity of the comma operator in 'C'?",
+    "options": {
+      "A": "Bottom-to-top",
+      "B": "Right-to-left",
+      "C": "Top-to-bottom",
+      "D": "Left-to-right"
+    },
+    "answer": "D",
+    "explanation": "The comma operator has the lowest precedence and associates left to right."
+  },
+  {
+    "id": 94,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following statements is/are true?\n(i) Execution-time address binding generates different logical and physical addresses.\n(ii) The user program can access the physical address.",
+    "options": {
+      "A": "Both (i) and (ii)",
+      "B": "Only (i)",
+      "C": "Neither (i) nor (ii)",
+      "D": "Only (ii)"
+    },
+    "answer": "B",
+    "explanation": "With execution-time binding, logical and physical addresses differ; user programs only see logical addresses."
+  },
+  {
+    "id": 95,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "The CPU fetches instructions from memory according to the value of ______.",
+    "options": {
+      "A": "program counter",
+      "B": "status register",
+      "C": "data register",
+      "D": "instruction register"
+    },
+    "answer": "A",
+    "explanation": "The PC holds the address of the next instruction to fetch."
+  },
+  {
+    "id": 96,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Consider a relation schema R(A, B, C, D). What would be the maximum size (number of attributes) of a candidate key of R?",
+    "options": {
+      "A": "4",
+      "B": "12",
+      "C": "1",
+      "D": "2"
+    },
+    "answer": "A",
+    "explanation": "A candidate key can be at most all attributes of the relation, i.e. 4."
+  },
+  {
+    "id": 97,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "In a database, a primary index is an ______ file whose records are of ______ length.",
+    "options": {
+      "A": "ordered, variable",
+      "B": "ordered, fixed",
+      "C": "unordered, fixed",
+      "D": "unordered, variable"
+    },
+    "answer": "B",
+    "explanation": "Elmasri: a primary index is an ordered file with fixed-length records of two fields (key, block pointer)."
+  },
+  {
+    "id": 98,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "How many distinct binary search trees can be created from 4 distinct keys?",
+    "options": {
+      "A": "14",
+      "B": "5",
+      "C": "24",
+      "D": "35"
+    },
+    "answer": "A",
+    "explanation": "Catalan number C4 = (1/5)·C(8,4) = 14."
+  },
+  {
+    "id": 99,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the given options represents the complement of the following Boolean function, x', y', and z' represent the compliments of x, y, and z, respectively?\nF = x (y'z' + yz)",
+    "options": {
+      "A": "xy + z'",
+      "B": "x' + y'z'",
+      "C": "x' + yz' + y'z",
+      "D": "x' + y' + z'"
+    },
+    "answer": "C",
+    "explanation": "F' = x' + (y'z' + yz)' = x' + (y ⊕ z) = x' + yz' + y'z."
+  },
+  {
+    "id": 100,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following is a valid hexadecimal constant in 'C'?",
+    "options": {
+      "A": "0abcA",
+      "B": "0x1234G",
+      "C": "0X1234",
+      "D": "0ADF"
+    },
+    "answer": "C",
+    "explanation": "Hex constants need a 0x/0X prefix and digits 0–9, A–F. G is invalid, and without the x prefix it's octal."
+  },
+  {
+    "id": 101,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following statements related to compiler design is/are TRUE?\n(i) Code optimization within a basic block is called local code optimization.\n(ii) Code motion finds the expression outside a loop that yields the different results and evaluates it inside the loop.",
+    "options": {
+      "A": "Only (i)",
+      "B": "Only (ii)",
+      "C": "Both (i) and (ii)",
+      "D": "Neither (i) nor (ii)"
+    },
+    "answer": "A",
+    "explanation": "Code motion moves loop-invariant expressions (same result every iteration) out of the loop, so (ii) is false."
+  },
+  {
+    "id": 102,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Match the columns.\nLIST-1: (i) Logical Link Control (ii) Ethernet (iii) Token Bus (iv) Token Ring\nLIST-2: (a) 802.3 (b) 802.4 (c) 802.5 (d) 802.2",
+    "options": {
+      "A": "(i) – (a), (ii) – (d), (iii) – (b), (iv) – (c)",
+      "B": "(i) – (a), (ii) – (d), (iii) – (c), (iv) – (b)",
+      "C": "(i) – (d), (ii) – (a), (iii) – (c), (iv) – (b)",
+      "D": "(i) – (d), (ii) – (a), (iii) – (b), (iv) – (c)"
+    },
+    "answer": "D",
+    "explanation": "LLC = 802.2, Ethernet = 802.3, Token Bus = 802.4, Token Ring = 802.5."
+  },
+  {
+    "id": 103,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following converts lexemes into tokens?",
+    "options": {
+      "A": "Code optimizer",
+      "B": "Lexical analyzer",
+      "C": "Code generator",
+      "D": "Syntax directed translation"
+    },
+    "answer": "B",
+    "explanation": "The lexical analyzer groups characters into lexemes and emits tokens."
+  },
+  {
+    "id": 104,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "If there is a single router between a source S and a destination D, then how many times will a packet visit the application layer, network layer and data link layer, respectively?",
+    "options": {
+      "A": "3, 3, 3",
+      "B": "2, 3, 4",
+      "C": "2, 4, 4",
+      "D": "3, 4, 3"
+    },
+    "answer": "B",
+    "explanation": "Application layer at S and D only (2); network layer at S, router and D (3); data link at S, twice at the router (in and out), and D (4)."
+  },
+  {
+    "id": 105,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which order of multiplication for the matrices P, Q, R and S having dimensions as 20 × 30, 30 × 5, 5 × 15, and 15 × 10, respectively would give the least number of multiplications for P × Q × R × S?",
+    "options": {
+      "A": "P × ((Q × R) × S)",
+      "B": "((P × Q) × R) × S",
+      "C": "(P × (Q × (R × S)))",
+      "D": "(P × Q) × (R × S)"
+    },
+    "answer": "D",
+    "explanation": "(PQ) = 3000, (RS) = 750, then 20×5×10 = 1000, total 4750. That is the least (the others give 12750, 7500 and 8250)."
+  },
+  {
+    "id": 106,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Consider a graph G with v vertices. If the depth first traversal tree of G contains m edges then which of the following options gives the number of connected components in G?",
+    "options": {
+      "A": "v − m",
+      "B": "v − m − 1",
+      "C": "m + 1",
+      "D": "m"
+    },
+    "answer": "A",
+    "explanation": "A DFS forest with c trees over v vertices has v − c edges, so c = v − m."
+  },
+  {
+    "id": 107,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following statements is/are true?\n(i) An RS latch is a type of flip-flop with a 1-bit memory.\n(ii) An encoder has n input lines and 2n output lines.",
+    "options": {
+      "A": "Only (i)",
+      "B": "Only (ii)",
+      "C": "Both (i) and (ii)",
+      "D": "Neither (i) nor (ii)"
+    },
+    "answer": "A",
+    "explanation": "An encoder has 2^n inputs and n outputs (a decoder is the reverse), so (ii) is false. (i) is true per the key."
+  },
+  {
+    "id": 108,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "What is the range of 2's complement of a k-digit number?",
+    "options": {
+      "A": "- (2^(k-1) -1) to (2^(k-1) -1)",
+      "B": "-(2^(k-1) 1) to (2^(k-1))",
+      "C": "-(2^(k-1) -1) to (2^(k-1))",
+      "D": "-(2^(k-1)) to (2^(k-1) -1)"
+    },
+    "answer": "D",
+    "explanation": "A k-bit 2's complement number ranges from −2^(k−1) to 2^(k−1) − 1."
+  },
+  {
+    "id": 109,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Consider a memory chip with 20 address pins and 16 data pins. How many locations will it accommodate?",
+    "options": {
+      "A": "2^20",
+      "B": "2^16",
+      "C": "2^4",
+      "D": "2^20 * 2^16"
+    },
+    "answer": "A",
+    "explanation": "Locations = 2^(address lines) = 2^20; the data pins give the word size (16 bits)."
+  },
+  {
+    "id": 110,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Match the columns.\nLIST-1: (i) Hubs (ii) Gateways (iii) Switches (iv) Bridges\nLIST-2: (a) Data link layer device with functionality of filtering content and forwarding data. (b) Physical layer device having multiple ports to forward data. (c) Data link layer device that performs error checking before forwarding data. (d) A device connecting two networks functioning on two different network models.",
+    "options": {
+      "A": "(i) – (b), (ii) – (d), (iii) – (c), (iv) – (a)",
+      "B": "(i) – (a), (ii) – (b), (iii) – (c), (iv) – (d)",
+      "C": "(i) – (b), (ii) – (d), (iii) – (a), (iv) – (c)",
+      "D": "(i) – (a), (ii) – (b), (iii) – (d), (iv) – (c)"
+    },
+    "answer": "A",
+    "explanation": "Hub = physical-layer multiport repeater, gateway = connects different network models, switch = error-checks before forwarding, bridge = filters and forwards."
+  },
+  {
+    "id": 111,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following is NOT a valid metric to compare different CPU scheduling algorithms?",
+    "options": {
+      "A": "Turnaround time",
+      "B": "Dispatch latency",
+      "C": "Throughput",
+      "D": "Response time"
+    },
+    "answer": "B",
+    "explanation": "Scheduling criteria are CPU utilization, throughput, turnaround, waiting and response time; dispatch latency is a dispatcher overhead."
+  },
+  {
+    "id": 112,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "State whether the following statements are true or false.\n(i) The union of two regular expression R1 and R2 is not always regular.\n(ii) The concatenation of two regular expressions R1 and R2 is also a regular.",
+    "options": {
+      "A": "(i) False (ii) True",
+      "B": "(i) True (ii) False",
+      "C": "(i) True (ii) True",
+      "D": "(i) False (ii) False"
+    },
+    "answer": "A",
+    "explanation": "Regular sets are closed under union and concatenation, so (i) is false and (ii) is true."
+  },
+  {
+    "id": 113,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "The operation of displaying or listing all elements of an array is usually called:",
+    "options": {
+      "A": "Traversing",
+      "B": "Binning",
+      "C": "Searching",
+      "D": "Browsing"
+    },
+    "answer": "A",
+    "explanation": "Visiting every element (e.g. to print it) is traversal."
+  },
+  {
+    "id": 114,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "A user opens a website www.abc.com which pings a particular IP address using (i), then sends an email using (ii) and finally transfers a file to another system using (iii). What could (i), (ii), (iii) possibly be?",
+    "options": {
+      "A": "DNS, SMTP, FTP",
+      "B": "HTTP, SMTP, FTP",
+      "C": "DNS, FTP, SMTP",
+      "D": "HTTP, SMTP, TFTP"
+    },
+    "answer": "A",
+    "explanation": "DNS resolves the name to an IP, SMTP sends mail and FTP transfers files."
+  },
+  {
+    "id": 115,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following sorting algorithms has the minimum worst-case time complexity?",
+    "options": {
+      "A": "Quick sort",
+      "B": "Selection sort",
+      "C": "Bubble sort",
+      "D": "Merge sort"
+    },
+    "answer": "D",
+    "explanation": "Merge sort is O(n log n) in the worst case; the others are O(n²)."
+  },
+  {
+    "id": 116,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following is used to represent \"total\" participation in ER diagram?",
+    "options": {
+      "A": "Dashed line",
+      "B": "Single line",
+      "C": "Double-lined rectangle",
+      "D": "Double lines"
+    },
+    "answer": "D",
+    "explanation": "Total participation is shown by a double line between entity and relationship."
+  },
+  {
+    "id": 117,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Which of the following SQL functions does NOT ignore NULL, by default?",
+    "options": {
+      "A": "COUNT()",
+      "B": "MAX()",
+      "C": "MIN()",
+      "D": "SUM()"
+    },
+    "answer": "A",
+    "explanation": "COUNT(*) counts all rows including NULLs; MAX, MIN and SUM ignore NULLs."
+  },
+  {
+    "id": 118,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Match the columns.\nLIST-1: (i) Shift register (ii) Multiplexer (iii) Decoder\nLIST-2: (a) To transmit large number of information units over a smaller number of channels (b) To design seven segment display (c) To convert parallel data to serial data",
+    "options": {
+      "A": "(i) – (c), (ii) – (a), (iii) – (b)",
+      "B": "(i) – (b), (ii) – (a), (iii) – (c)",
+      "C": "(i) – (c), (ii) – (b), (iii) – (a)",
+      "D": "(i) – (a), (ii) – (b), (iii) – (c)"
+    },
+    "answer": "A",
+    "explanation": "A shift register converts parallel to serial, a MUX sends many inputs over fewer lines, and a decoder drives seven-segment displays."
+  },
+  {
+    "id": 119,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "State whether the following statements are true or false.\n(i) Type checking analyses the syntax tree to determine if the program violates certain consistency requirements.\n(ii) Details of the source language is confined to the front end.",
+    "options": {
+      "A": "(i) True (ii) True",
+      "B": "(i) False (ii) True",
+      "C": "(i) False (ii) False",
+      "D": "(i) True (ii) False"
+    },
+    "answer": "A",
+    "explanation": "Type checking is a semantic check on the syntax tree, and source-language details are handled in the front end. Both are true."
+  },
+  {
+    "id": 120,
+    "source_file": "SJVNL_1569050019_1258O1990S2D67E1_250719_220550_251111_181936",
+    "question": "Level-order traversal of a rooted tree can be done by starting from the root and then performing:",
+    "options": {
+      "A": "Inorder traversal",
+      "B": "Preorder traversal",
+      "C": "Depth first search",
+      "D": "Breadth first search"
+    },
+    "answer": "D",
+    "explanation": "Level order is breadth-first traversal."
+  }
+]

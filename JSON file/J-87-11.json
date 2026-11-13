@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "source_file": "J-87-11",
+    "question": "Any integer composed of 3ⁿ identical digits divisible by",
+    "options": {
+      "A": "2ⁿ",
+      "B": "3ⁿ",
+      "C": "5ⁿ",
+      "D": "7ⁿ"
+    },
+    "answer": "B",
+    "explanation": "A number of 3ⁿ identical digits d equals d·(10^(3ⁿ)−1)/9, which is divisible by 3ⁿ (by induction: 111 = 3·37, and each tripling of length multiplies by a factor whose digit sum is divisible by 3)."
+  },
+  {
+    "id": 2,
+    "source_file": "J-87-11",
+    "question": "The circumference of the two concentric disks are divided into 100 sections each. For the outer disk, 100 of the sections are painted red and 100 of the sections are painted blue. For the inner disk, the sections are painted red and blue in an arbitrary manner. It is possible to align the two disks so that\n(A) 100 or more\n(B) 125 or more\n(C) 150 or more\n(D) 175 or more\nof the sections on the inner disks have their colours matched with the corresponding section on outer disk.",
+    "options": {
+      "A": "100 or more",
+      "B": "125 or more",
+      "C": "150 or more",
+      "D": "175 or more"
+    },
+    "answer": "A",
+    "explanation": "The outer disk is effectively 200 sections (100 red, 100 blue). Over all 200 rotations each inner section matches exactly 100 times, so the total is 200 × 100 and the average per rotation is 100. Some rotation therefore gives at least 100 matches (pigeonhole/averaging)."
+  },
+  {
+    "id": 3,
+    "source_file": "J-87-11",
+    "question": "The proposition ~ p ∨ q is equivalent to",
+    "options": {
+      "A": "p → q",
+      "B": "q → p",
+      "C": "p ↔ q",
+      "D": "p ∨ q"
+    },
+    "answer": "A",
+    "explanation": "p → q ≡ ¬p ∨ q."
+  },
+  {
+    "id": 4,
+    "source_file": "J-87-11",
+    "question": "The absorption law in Boolean algebra say that",
+    "options": {
+      "A": "X + X = X",
+      "B": "X . X = X",
+      "C": "x + x . y = x",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "Absorption: x + xy = x (and x(x + y) = x). (A) and (B) are idempotent laws."
+  },
+  {
+    "id": 5,
+    "source_file": "J-87-11",
+    "question": "The number of 1's present in the binary representation of\n10 × 256 + 5 × 16 + 5 is",
+    "options": {
+      "A": "5",
+      "B": "6",
+      "C": "7",
+      "D": "8"
+    },
+    "answer": "B",
+    "explanation": "2560 + 80 + 5 = 2645 = 0xA55 = 1010 0101 0101₂, which has 6 ones."
+  },
+  {
+    "id": 6,
+    "source_file": "J-87-11",
+    "question": "The hexadecimal number equivalent to (1762.46)₈ is",
+    "options": {
+      "A": "3F2.89",
+      "B": "3F2.98",
+      "C": "2F3.89",
+      "D": "2F3.98"
+    },
+    "answer": "B",
+    "explanation": "Octal to binary: 001 111 110 010 . 100 110. Regroup in fours: 0011 1111 0010 . 1001 1000 = 3F2.98."
+  },
+  {
+    "id": 7,
+    "source_file": "J-87-11",
+    "question": "(A + B) (AB)‾ is equivalent to",
+    "options": {
+      "A": "A ⊕ B",
+      "B": "A ⊙ B",
+      "C": "(A ⊕ B) ⊙ A",
+      "D": "(A ⊙ B) ⊕ A"
+    },
+    "answer": "A",
+    "explanation": "(A + B)(A̅ + B̅) = AB̅ + A̅B = A ⊕ B."
+  },
+  {
+    "id": 8,
+    "source_file": "J-87-11",
+    "question": "A latch is constructed using two cross-coupled",
+    "options": {
+      "A": "AND and OR gates",
+      "B": "AND gates",
+      "C": "NAND and NOR gates",
+      "D": "NAND gates"
+    },
+    "answer": "D",
+    "explanation": "An SR latch is two cross-coupled NAND (or two NOR) gates."
+  },
+  {
+    "id": 9,
+    "source_file": "J-87-11",
+    "question": "A multiplexer is a logic circuit that",
+    "options": {
+      "A": "accepts one input and gives several output",
+      "B": "accepts many inputs and gives many output",
+      "C": "accepts many inputs and gives one output",
+      "D": "accepts one input and gives one output"
+    },
+    "answer": "C",
+    "explanation": "A MUX selects one of many inputs onto a single output; a demultiplexer does the reverse."
+  },
+  {
+    "id": 10,
+    "source_file": "J-87-11",
+    "question": "8-bit 1's complement form of –77.25 is",
+    "options": {
+      "A": "01001101.0100",
+      "B": "01001101.0010",
+      "C": "10110010.1011",
+      "D": "10110010.1101"
+    },
+    "answer": "C",
+    "explanation": "+77.25 = 01001101.0100; inverting every bit gives 10110010.1011."
+  },
+  {
+    "id": 11,
+    "source_file": "J-87-11",
+    "question": "From the point of view of the programmer, what are the major advantages of using a high-level language rather than internal machine code or assembly language ?",
+    "options": {
+      "A": "Program portability",
+      "B": "Easy development",
+      "C": "Efficiency",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "For the programmer the main gain is easier, faster development. Portability is also an advantage, so (A) is arguable; machine/assembly code is the more efficient."
+  },
+  {
+    "id": 12,
+    "source_file": "J-87-11",
+    "question": "What features make C++ so powerful ?",
+    "options": {
+      "A": "Easy implementation",
+      "B": "Reusing old code",
+      "C": "Easy memory management",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "The commonly accepted answer is all of the above (OOP reuse via inheritance, easy implementation, memory management through new/delete and constructors/destructors)."
+  },
+  {
+    "id": 13,
+    "source_file": "J-87-11",
+    "question": "The goal of operator overloading is",
+    "options": {
+      "A": "to help the user of a class",
+      "B": "to help the developer of a class",
+      "C": "to help define friend function",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "Operator overloading lets users of a class write natural expressions (a + b) with class objects."
+  },
+  {
+    "id": 14,
+    "source_file": "J-87-11",
+    "question": "The scheme of which interpreter translates the source program is known as",
+    "options": {
+      "A": "Paragraph by paragraph",
+      "B": "Instruction by instruction",
+      "C": "Line by line",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "An interpreter translates and executes the source line by line (statement by statement)."
+  },
+  {
+    "id": 15,
+    "source_file": "J-87-11",
+    "question": "Portable program means",
+    "options": {
+      "A": "Program with wheels",
+      "B": "Independent from its authors",
+      "C": "Independent of platform",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "A portable program runs on different hardware/OS platforms with little or no change."
+  },
+  {
+    "id": 16,
+    "source_file": "J-87-11",
+    "question": "Which of the following is the recovery management technique in DDBMS ?",
+    "options": {
+      "A": "2PC (Two Phase Commit)",
+      "B": "Backup",
+      "C": "Immediate update",
+      "D": "All of the above"
+    },
+    "answer": "A",
+    "explanation": "Two-phase commit is the distributed recovery/commit protocol that keeps all sites consistent. Doubtful: backup and immediate update are also general recovery techniques, so some keys give (D)."
+  },
+  {
+    "id": 17,
+    "source_file": "J-87-11",
+    "question": "Which of the following is the process by which a user's privileges ascertained ?",
+    "options": {
+      "A": "Authorization",
+      "B": "Authentication",
+      "C": "Access Control",
+      "D": "None of these"
+    },
+    "answer": "A",
+    "explanation": "Authorization determines what a (verified) user is allowed to do; authentication verifies identity."
+  },
+  {
+    "id": 18,
+    "source_file": "J-87-11",
+    "question": "The basic variants of time-stamp-based method of concurrency control are",
+    "options": {
+      "A": "Total time stamp-ordering",
+      "B": "Partial time stamp ordering",
+      "C": "Multiversion Time stamp ordering",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "Total, partial and multiversion timestamp ordering are the basic variants."
+  },
+  {
+    "id": 19,
+    "source_file": "J-87-11",
+    "question": "A transaction can include following basic database access operations :",
+    "options": {
+      "A": "Read_item(X)",
+      "B": "Write_item(X)",
+      "C": "Both (A) and (B)",
+      "D": "None of these"
+    },
+    "answer": "C",
+    "explanation": "The basic operations are read_item(X) and write_item(X)."
+  },
+  {
+    "id": 20,
+    "source_file": "J-87-11",
+    "question": "Decomposition help in eliminating some of the problems of bad design",
+    "options": {
+      "A": "Redundancy",
+      "B": "Inconsistencies",
+      "C": "Anomalies",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "Normalization by decomposition removes redundancy, and with it inconsistencies and update anomalies."
+  },
+  {
+    "id": 21,
+    "source_file": "J-87-11",
+    "question": "The number of different trees with 8 nodes is",
+    "options": {
+      "A": "256",
+      "B": "255",
+      "C": "248",
+      "D": "None of these"
+    },
+    "answer": "C",
+    "explanation": "Doubtful: the key appears to use the formula 2ⁿ − n = 2⁸ − 8 = 248. True counts are 23 unlabelled trees, 8⁶ labelled trees (Cayley) and 1430 binary trees (Catalan), none of which is offered."
+  },
+  {
+    "id": 22,
+    "source_file": "J-87-11",
+    "question": "Given a binary tree whose inorder and preorder traversal are given by\nInorder : EICFBGDJHK\nPreorder : BCEIFDGHJK\nThe post order traversal of the above binary tree is",
+    "options": {
+      "A": "I E F C G J K H D B",
+      "B": "I E F C J G K H D B",
+      "C": "I E F C G K J H D B",
+      "D": "I E F C G J K D B H"
+    },
+    "answer": "A",
+    "explanation": "Root B. Left subtree (EICF, preorder CEIF): C with left E (right child I) and right F. Right subtree (GDJHK, preorder DGHJK): D with left G and right H (children J, K). Postorder: I E F C G J K H D B."
+  },
+  {
+    "id": 23,
+    "source_file": "J-87-11",
+    "question": "The number of disk accesses performed by insertion operation in B-tree of height h is",
+    "options": {
+      "A": "0(1)",
+      "B": "0(1gh)",
+      "C": "0(h)",
+      "D": "None of these"
+    },
+    "answer": "C",
+    "explanation": "Insertion descends one path (h reads) and may split back up (O(h) writes), so O(h)."
+  },
+  {
+    "id": 24,
+    "source_file": "J-87-11",
+    "question": "Consider a hash table of size m = 10000 and the hash function h(k) = ⌊m (kA mod 1)⌋ for A = (√5 – 1)/2. The location to the key k = 123456 is",
+    "options": {
+      "A": "46",
+      "B": "47",
+      "C": "41",
+      "D": "43"
+    },
+    "answer": "C",
+    "explanation": "kA = 123456 × 0.6180339887 = 76300.0041151; the fractional part 0.0041151 × 10000 = 41.15, so the location is 41."
+  },
+  {
+    "id": 25,
+    "source_file": "J-87-11",
+    "question": "When the priority queue is represented by max heap, the insertion and deletion of an element can be performed in (queue containing n elements)",
+    "options": {
+      "A": "θ(n) and θ(1) respectively",
+      "B": "θ(n) and θ(n) respectively",
+      "C": "θ(1) and θ(1) respectively",
+      "D": "None of the above"
+    },
+    "answer": "D",
+    "explanation": "Both insert and delete-max take Θ(log n) in a binary heap."
+  },
+  {
+    "id": 26,
+    "source_file": "J-87-11",
+    "question": "A comparison of frequency division and time division multiplexing system shows that",
+    "options": {
+      "A": "FDM requires a lower bandwidth, but TDM has greater noise immunity.",
+      "B": "FDM has greater noise immunity and requires lower bandwidth than TDM.",
+      "C": "FDM requires channel synchronization, while TDM has greater noise immunity.",
+      "D": "FDM requires more multiplex while TDM requires band pass filter."
+    },
+    "answer": "A",
+    "explanation": "Standard comparison: FDM (analog) needs less bandwidth, while TDM (digital pulses) has better noise immunity but needs synchronization."
+  },
+  {
+    "id": 27,
+    "source_file": "J-87-11",
+    "question": "If carrier modulated by a digital bit stream, has one one of the possible phase of 0, 90, 180 and 270 degrees, then modulation called",
+    "options": {
+      "A": "BPSK",
+      "B": "QPSK",
+      "C": "QAM",
+      "D": "MSK"
+    },
+    "answer": "B",
+    "explanation": "Four phases (2 bits per symbol) is quadrature PSK."
+  },
+  {
+    "id": 28,
+    "source_file": "J-87-11",
+    "question": "Consider the following statement :\n(i) The bandwidth of the A.M., wave depends on the band width of the modulating signal.\n(ii) The bandwidth of the A.M., wave depends on the modulation index.\n(iii) The bandwidth of the F.M, wave for all practical purpose depends on the amplitude of the carrier.\nOf these statements the correct statements are",
+    "options": {
+      "A": "(i, ii)",
+      "B": "(i, iii)",
+      "C": "(ii, iii)",
+      "D": "All of the above"
+    },
+    "answer": "B",
+    "explanation": "AM bandwidth = 2fm, independent of the modulation index, so (i) is true and (ii) false. FM bandwidth (Carson's rule) depends on the frequency deviation, i.e. the modulating-signal amplitude, not the carrier amplitude. (iii) is true only if read that way, so the question is doubtful; (B) is the intended answer."
+  },
+  {
+    "id": 29,
+    "source_file": "J-87-11",
+    "question": "A smart modem can dial, hangup and answer incoming calls automatically. Can you tell who provides the appropriate instructions to the modem for this purpose ?",
+    "options": {
+      "A": "Communication software",
+      "B": "Error detection protocols",
+      "C": "Link access procedure (LAP)",
+      "D": "Telecommunications"
+    },
+    "answer": "A",
+    "explanation": "Communication software sends the (AT) commands that make a smart modem dial, answer and hang up."
+  },
+  {
+    "id": 30,
+    "source_file": "J-87-11",
+    "question": "Which of the following switching techniques is most suitable for interactive traffic ?",
+    "options": {
+      "A": "Circuit switching",
+      "B": "Message switching",
+      "C": "Packet switching",
+      "D": "All of the above"
+    },
+    "answer": "C",
+    "explanation": "Packet switching gives low delay for short bursty interactive messages; message switching has long store-and-forward delays."
+  },
+  {
+    "id": 31,
+    "source_file": "J-87-11",
+    "question": "Object modules generated by assembler that contains unresolved external references are resolved for two or more object module by a/an",
+    "options": {
+      "A": "Operating system",
+      "B": "Loader",
+      "C": "Linker",
+      "D": "Compiler"
+    },
+    "answer": "C",
+    "explanation": "The linker resolves external references between object modules."
+  },
+  {
+    "id": 32,
+    "source_file": "J-87-11",
+    "question": "A special software that is used to create a job queue is called",
+    "options": {
+      "A": "Drive",
+      "B": "Spooler",
+      "C": "Interpreter",
+      "D": "Linkage editor"
+    },
+    "answer": "B",
+    "explanation": "A spooler queues jobs (e.g. print jobs) for a slow device."
+  },
+  {
+    "id": 33,
+    "source_file": "J-87-11",
+    "question": "Which of the following permanent database that has an entry for each terminal symbol ?",
+    "options": {
+      "A": "Literal table",
+      "B": "Identifier table",
+      "C": "Terminal table",
+      "D": "Source table"
+    },
+    "answer": "C",
+    "explanation": "In the compiler model (Donovan), the terminal table is a permanent database with an entry for each terminal symbol."
+  },
+  {
+    "id": 34,
+    "source_file": "J-87-11",
+    "question": "In which way(s) a macroprocessor for assembly language can be implemented ?",
+    "options": {
+      "A": "Independent two-pass processor",
+      "B": "Independent one-pass processor",
+      "C": "Expand macrocalls and substitute arguments",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "A macro processor can be a two-pass or one-pass independent processor, or be incorporated in pass 1 of the assembler; all of them expand calls and substitute arguments."
+  },
+  {
+    "id": 35,
+    "source_file": "J-87-11",
+    "question": "Which of the following can be accessed by transfer vector approach of linking ?",
+    "options": {
+      "A": "External data segments",
+      "B": "External subroutine",
+      "C": "Data located in other procedure",
+      "D": "All of the above"
+    },
+    "answer": "B",
+    "explanation": "A transfer vector holds branch addresses, so it gives access only to external subroutines, not external data."
+  },
+  {
+    "id": 36,
+    "source_file": "J-87-11",
+    "question": "Block or Buffer caches are used to",
+    "options": {
+      "A": "improve disk performance",
+      "B": "handle interrupts",
+      "C": "increase the capacity of main memory",
+      "D": "speed up main memory Read operations"
+    },
+    "answer": "A",
+    "explanation": "The buffer cache keeps disk blocks in memory to reduce disk I/O."
+  },
+  {
+    "id": 37,
+    "source_file": "J-87-11",
+    "question": "A file organization component VSAM file is",
+    "options": {
+      "A": "Relative records data set",
+      "B": "Keyed sequential data set",
+      "C": "Entry sequential data set",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "VSAM supports KSDS, ESDS and RRDS (and linear) data sets."
+  },
+  {
+    "id": 38,
+    "source_file": "J-87-11",
+    "question": "A relationship between processes such that each has some part (critical section) which must not be executed while the critical section of another is being executed, is known as",
+    "options": {
+      "A": "Semaphore",
+      "B": "Mutual exclusion",
+      "C": "Multiprogramming",
+      "D": "Message passing"
+    },
+    "answer": "B",
+    "explanation": "This is the definition of mutual exclusion."
+  },
+  {
+    "id": 39,
+    "source_file": "J-87-11",
+    "question": "How many states can a process be in ?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "2",
+      "D": "5"
+    },
+    "answer": "D",
+    "explanation": "The standard five-state model: new, ready, running, waiting (blocked), terminated. (A 3-state model also exists, so this is somewhat ambiguous.)"
+  },
+  {
+    "id": 40,
+    "source_file": "J-87-11",
+    "question": "Which command allows you to view your file 24 lines at a time ?",
+    "options": {
+      "A": "More",
+      "B": "Cat",
+      "C": "Pg",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "more displays a file one screen (24 lines on a standard terminal) at a time. (pg also pages output, so this is slightly ambiguous.)"
+  },
+  {
+    "id": 41,
+    "source_file": "J-87-11",
+    "question": "Which one of the items listed below is not one of the software engineering layers ?",
+    "options": {
+      "A": "Process",
+      "B": "Manufacturing",
+      "C": "Method",
+      "D": "Tools"
+    },
+    "answer": "B",
+    "explanation": "Pressman's layers: quality focus, process, methods, tools."
+  },
+  {
+    "id": 42,
+    "source_file": "J-87-11",
+    "question": "What is the first stage in program development ?",
+    "options": {
+      "A": "Specification and design",
+      "B": "System Analysis",
+      "C": "Testing",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "Development starts by analysing the problem/system; specification and design follow."
+  },
+  {
+    "id": 43,
+    "source_file": "J-87-11",
+    "question": "By means of a data flow diagram, the analyst can detect",
+    "options": {
+      "A": "Task duplication",
+      "B": "Unnecessary delays",
+      "C": "Task overlapping",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "DFDs reveal duplicated, overlapping and delaying processes."
+  },
+  {
+    "id": 44,
+    "source_file": "J-87-11",
+    "question": "Which of these are the 5 generic software engineering framework activities ?",
+    "options": {
+      "A": "Communication, planning, modelling, construction, deployment",
+      "B": "Communication, risk management, measurement, production, reviewing",
+      "C": "Analysis, designing, programming, Debugging, maintenance",
+      "D": "Analysis, planning, designing, programming, testing"
+    },
+    "answer": "A",
+    "explanation": "Pressman's generic framework activities."
+  },
+  {
+    "id": 45,
+    "source_file": "J-87-11",
+    "question": "Many causes of the software crisis can be traced to mythology based on",
+    "options": {
+      "A": "Management Myths",
+      "B": "Customer Myths",
+      "C": "Practitioner Myths",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "Pressman lists management, customer and practitioner myths."
+  },
+  {
+    "id": 46,
+    "source_file": "J-87-11",
+    "question": "Data warehousing refers to",
+    "options": {
+      "A": "storing data offline at a separate site",
+      "B": "backing up data regularly",
+      "C": "is related to data mining",
+      "D": "uses tape as opposed to disk"
+    },
+    "answer": "C",
+    "explanation": "A data warehouse stores integrated historical data for analysis and mining."
+  },
+  {
+    "id": 47,
+    "source_file": "J-87-11",
+    "question": "Virtual memory is",
+    "options": {
+      "A": "related to virtual reality",
+      "B": "a form of ROM",
+      "C": "a form of RAM",
+      "D": "None of the above"
+    },
+    "answer": "D",
+    "explanation": "Virtual memory is a memory-management technique using secondary storage to extend the address space, not a type of RAM or ROM."
+  },
+  {
+    "id": 48,
+    "source_file": "J-87-11",
+    "question": "“M-Commerce” refers to",
+    "options": {
+      "A": "a myth which does not exist in reality",
+      "B": "the ability of business to reach potential customers wherever they are",
+      "C": "the ability to have large capacity of memory storage dealing trade and commerce",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "Mobile commerce lets businesses reach customers anywhere through mobile devices."
+  },
+  {
+    "id": 49,
+    "source_file": "J-87-11",
+    "question": "The principal electronic payment systems for electronic commerce is",
+    "options": {
+      "A": "Credit Card",
+      "B": "Digital Wallet",
+      "C": "Electronic Cheque",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "All of these are e-commerce payment systems."
+  },
+  {
+    "id": 50,
+    "source_file": "J-87-11",
+    "question": "Which is the most valuable electronic commerce to the individual customer in long run ?",
+    "options": {
+      "A": "Business to Customer",
+      "B": "Business to Business",
+      "C": "Customer to Customer",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "B2C directly serves individual customers."
+  }
+]

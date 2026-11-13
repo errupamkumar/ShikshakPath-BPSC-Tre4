@@ -1,0 +1,1211 @@
+[
+  {
+    "id": 1,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "How many 3-digit numbers can be obtained from {1, 2, 3, 6, 7} given that a digit can be repeated no more than two times.",
+    "options": {
+      "A": "5! 3!",
+      "B": "5^3",
+      "C": "120",
+      "D": "3^5"
+    },
+    "answer": "C",
+    "explanation": "With repetition there are 5^3 = 125 numbers. Taking away the 5 numbers with one digit used three times (111, 222, ...) leaves 120."
+  },
+  {
+    "id": 2,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "How many triangles can be constructed from 5 points in space. It is given that 3 of these points are collinear.",
+    "options": {
+      "A": "3 + 3 x 2 = 9",
+      "B": "5 x 3 = 15",
+      "C": "5C3 = 10",
+      "D": "5 x 5 x 5 = 125"
+    },
+    "answer": "A",
+    "explanation": "5C3 = 10 triples, minus the 1 collinear triple = 9. Equivalently: 3 (two collinear points plus... one from the other 2 pairs) — 3C2×2 + 3C1×2C2 = 6 + 3 = 9."
+  },
+  {
+    "id": 3,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Boolean function [∼(∼p∧q)∧∼(∼p∧∼q)] ∨ (p∧r) is equal to the Boolean function",
+    "options": {
+      "A": "q",
+      "B": "p ∧ r",
+      "C": "p ∨ q",
+      "D": "p"
+    },
+    "answer": "D",
+    "explanation": "∼(∼p∧q) = p∨∼q and ∼(∼p∧∼q) = p∨q; their AND is p∨(∼q∧q) = p. Then p ∨ (p∧r) = p by absorption."
+  },
+  {
+    "id": 4,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which statement is incorrect",
+    "options": {
+      "A": "A - B = A + (the 2's-complement of B)",
+      "B": "A - B = 1 + A + (the 1's-complement of B)",
+      "C": "A - B = A + (the 2's-complement of B) + 1",
+      "D": "A - B = (the 1's-complement of B) + A + 1"
+    },
+    "answer": "C",
+    "explanation": "Subtraction is A + 2's complement of B, and 2's complement = 1's complement + 1, so options 1, 2 and 4 are equivalent. Adding a further 1 (option 3) gives A − B + 1, which is wrong."
+  },
+  {
+    "id": 5,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "How many ways to order a 5 distinct card deck",
+    "options": {
+      "A": "120",
+      "B": "5",
+      "C": "10",
+      "D": "15"
+    },
+    "answer": "A",
+    "explanation": "The number of orderings (permutations) of 5 distinct items is 5! = 120."
+  },
+  {
+    "id": 6,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Let m = \"Juan is a math major\",\nc = \"Juan is a computer science major\",\ng = \"Juan's girlfriend is a literature major\",\nh = \"Juan's girlfriend has read Hamlet\" and\nt = \"Juan's girlfriend has read The Tempest.\"\nWhich of the following expresses the statement \"Juan is a computer science major and a math major, but his girlfriend is a literature major who hasn't read both The Tempest and Hamlet.\"",
+    "options": {
+      "A": "c ∧ m ∧ (g ∨ (∼h ∨ ∼t))",
+      "B": "c ∧ m ∧ g ∧ (∼h ∧ ∼t)",
+      "C": "c ∧ m ∧ g ∧ (∼h ∨ ∼t)",
+      "D": "c ∧ m ∧ (g ∨ (∼h ∧ ∼t))"
+    },
+    "answer": "C",
+    "explanation": "'But' means AND. 'Hasn't read both' is ∼(h ∧ t) = ∼h ∨ ∼t, giving c ∧ m ∧ g ∧ (∼h ∨ ∼t)."
+  },
+  {
+    "id": 7,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Three persons enter a railway compartment. If there are 5 seats vacant, in how many ways can they take these seats?",
+    "options": {
+      "A": "60",
+      "B": "20",
+      "C": "15",
+      "D": "125"
+    },
+    "answer": "A",
+    "explanation": "Arranging 3 distinct people in 5 seats: 5P3 = 5 × 4 × 3 = 60."
+  },
+  {
+    "id": 8,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "If f(x) and g(x) are defined on domains A, B respectively then the domain of f(x) + g (x) is",
+    "options": {
+      "A": "A⋂B",
+      "B": "A –B",
+      "C": "A⋃B",
+      "D": "None of these"
+    },
+    "answer": "A",
+    "explanation": "f + g is defined only where both f and g are defined, i.e. on A ∩ B."
+  },
+  {
+    "id": 9,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Negative numbers can be represented in",
+    "options": {
+      "A": "Signed magnitude form",
+      "B": "1's complement form",
+      "C": "2's complement form",
+      "D": "All of these"
+    },
+    "answer": "D",
+    "explanation": "Signed-magnitude, 1's complement and 2's complement are all ways to represent negative binary numbers."
+  },
+  {
+    "id": 10,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "If every non-key attribute is fully functionally dependent on the primary key, then the relation will be in",
+    "options": {
+      "A": "First normal form",
+      "B": "Second normal form",
+      "C": "Third normal form",
+      "D": "Fourth normal form"
+    },
+    "answer": "B",
+    "explanation": "2NF requires that no non-prime attribute is partially dependent on a candidate key, i.e. full functional dependency on the key."
+  },
+  {
+    "id": 11,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is the correct hierarchy of a database?",
+    "options": {
+      "A": "rows->tablespace->table->database",
+      "B": "rows->table->tablespace->database",
+      "C": "database->table->tablespace->rows",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "explanation": "Rows make up tables, tables are stored in tablespaces, and tablespaces make up the database (Oracle storage hierarchy)."
+  },
+  {
+    "id": 12,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Consider the following set of functional dependencies on the scheme (A, B, C)\nA → BC\nB → C\nA → B\nAB → C\nThe canonical cover for this set is",
+    "options": {
+      "A": "A → BC and B → C",
+      "B": "A → BC and AB → C",
+      "C": "A → BC and A → B",
+      "D": "A → B and B → C"
+    },
+    "answer": "D",
+    "explanation": "A → C is implied by A → B and B → C, so A → BC reduces to A → B. In AB → C, A is extraneous (B → C already holds). The canonical cover is {A → B, B → C}."
+  },
+  {
+    "id": 13,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Tables derived from the ER-Diagram",
+    "options": {
+      "A": "Are totally normalised",
+      "B": "Can be further denormalised",
+      "C": "May have multi-valued attributes",
+      "D": "Are always in 1NF"
+    },
+    "answer": "D",
+    "explanation": "Mapping an ER diagram produces relations with atomic attributes (multivalued attributes become separate tables), so they are always at least in 1NF, but not necessarily fully normalised."
+  },
+  {
+    "id": 14,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The relationship of DEPARTMENT to the EMPLOYEES is a",
+    "options": {
+      "A": "One-to-one relationship",
+      "B": "One-to-many relationship",
+      "C": "Many-to-many relationship",
+      "D": "Many-to-one relationship"
+    },
+    "answer": "B",
+    "explanation": "One department has many employees, and each employee belongs to one department."
+  },
+  {
+    "id": 15,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which of the following scheme is used to ensure atomicity of transactions in database systems",
+    "options": {
+      "A": "Time-stamp based Protocol",
+      "B": "Log File",
+      "C": "Two-phase Locking",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "explanation": "The recovery manager uses the log to undo incomplete transactions, guaranteeing all-or-nothing atomicity. Timestamps and 2PL deal with isolation."
+  },
+  {
+    "id": 16,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "In SQL, which command is used to display data from two or multiple tables",
+    "options": {
+      "A": "LIST",
+      "B": "SELECT",
+      "C": "SHOW",
+      "D": "MULTIPLY"
+    },
+    "answer": "B",
+    "explanation": "SELECT (with joins) retrieves data from one or more tables."
+  },
+  {
+    "id": 17,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The two-phase locking protocol ensures",
+    "options": {
+      "A": "Both serializability and recoverabilty",
+      "B": "Serializability only",
+      "C": "Recoverability only",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "explanation": "Basic 2PL guarantees conflict serializability but not recoverability or freedom from cascading rollback (strict 2PL is needed for that)."
+  },
+  {
+    "id": 18,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Assume transaction A holds a shared lock R. If transaction B also requests for a shared lock on R.",
+    "options": {
+      "A": "It will result in a deadlock situation",
+      "B": "It will immediately be rejected",
+      "C": "It will immediately be granted",
+      "D": "It will be granted as soon as it is released by A"
+    },
+    "answer": "C",
+    "explanation": "Shared (read) locks are compatible with each other, so B's request is granted at once."
+  },
+  {
+    "id": 19,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is an invalid transactional ACID property",
+    "options": {
+      "A": "Atomicity",
+      "B": "Consistency",
+      "C": "Isolation",
+      "D": "Duality"
+    },
+    "answer": "D",
+    "explanation": "ACID stands for Atomicity, Consistency, Isolation and Durability; 'Duality' is not one of them."
+  },
+  {
+    "id": 20,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "In which normal form decomposition of a relationship is lossless join but may not be dependency preserving",
+    "options": {
+      "A": "PJNF",
+      "B": "BCNF",
+      "C": "3NF",
+      "D": "all of these"
+    },
+    "answer": "B",
+    "explanation": "A BCNF decomposition can always be made lossless but may not preserve all dependencies; 3NF can always be both lossless and dependency preserving."
+  },
+  {
+    "id": 21,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is the correct property of B Tree",
+    "options": {
+      "A": "Number of keys in each node must be equal number of its children nodes",
+      "B": "Number of keys in each node must be one less than the number of its children nodes",
+      "C": "Number of keys in each node must be greater than number of its children nodes",
+      "D": "Number of keys in each node must be half number of its children nodes"
+    },
+    "answer": "B",
+    "explanation": "In a B-tree, an internal node with k keys has k + 1 children."
+  },
+  {
+    "id": 22,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "In any relation with the functional dependency (FD) is A → B , DB → C which of the following holds",
+    "options": {
+      "A": "B → A",
+      "B": "DA → C",
+      "C": "DB → A",
+      "D": "C → A"
+    },
+    "answer": "B",
+    "explanation": "By pseudotransitivity: A → B gives DA → DB, and DB → C, so DA → C."
+  },
+  {
+    "id": 23,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The relational algebra expression is equivalent to the following tuple calculus\nExpression: {t | t ∈ r ∧ (t[A] = 10 ∧ t[B] = 20)}",
+    "options": {
+      "A": "σ(A=10 ∨ B=20)(r)",
+      "B": "σ(A=10)(r) ∪ σ(B=20)(r)",
+      "C": "σ(A=10)(r) ∩ σ(B=20)(r)",
+      "D": "σ(A=10)(r) − σ(B=20)(r)"
+    },
+    "answer": "C",
+    "explanation": "Tuples satisfying both conditions = σ(A=10 ∧ B=20)(r) = σ(A=10)(r) ∩ σ(B=20)(r)."
+  },
+  {
+    "id": 24,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Consider a schema R(A, B, C, D) and functional dependencies A→B and C→D. Then the decomposition of R into R1(AB) and R2(CD) is",
+    "options": {
+      "A": "dependency preserving and lossless join",
+      "B": "lossless join but not dependency preserving",
+      "C": "dependency preserving but not lossless join",
+      "D": "not dependency preserving and not lossless join"
+    },
+    "answer": "C",
+    "explanation": "Each FD lies inside one relation (dependency preserving), but R1 ∩ R2 = ∅ is not a key of either, so the join is lossy."
+  },
+  {
+    "id": 25,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "What is the valid sequence of processing a DBMS query?",
+    "options": {
+      "A": "SQL statement->parse->optimize->generate execution",
+      "B": "SQL statement->validate->parse->optimize->generate execution",
+      "C": "SQL statement->parse->validate->optimize->generate execution",
+      "D": "None of these"
+    },
+    "answer": "C",
+    "explanation": "The query is first parsed (syntax), then validated (semantics: names, privileges), then optimized, and finally an execution plan is generated."
+  },
+  {
+    "id": 26,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The SQL statement select * from R, Q is equivalent to",
+    "options": {
+      "A": "Select * from R natural join Q",
+      "B": "Select * from R cross join Q",
+      "C": "Select * from R union join Q",
+      "D": "Select * from R inner join Q"
+    },
+    "answer": "B",
+    "explanation": "Listing tables with commas and no WHERE clause gives the Cartesian product, i.e. a CROSS JOIN."
+  },
+  {
+    "id": 27,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is a DCL command?",
+    "options": {
+      "A": "Grant",
+      "B": "Commit",
+      "C": "Update",
+      "D": "Rollback"
+    },
+    "answer": "A",
+    "explanation": "GRANT and REVOKE are Data Control Language; COMMIT/ROLLBACK are TCL and UPDATE is DML."
+  },
+  {
+    "id": 28,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which one will generate an error?",
+    "options": {
+      "A": "SELECT * FROM emp WHERE empid = 493945;",
+      "B": "SELECT empid FROM emp WHERE empid= 493945;",
+      "C": "SELECT empid FROM emp;",
+      "D": "SELECT empid WHERE empid = 56949 AND lastname = 'SMITH';"
+    },
+    "answer": "D",
+    "explanation": "The last query has no FROM clause, so the database does not know which table to read."
+  },
+  {
+    "id": 29,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which statement is incorrect",
+    "options": {
+      "A": "A weak entity doesn't have a primary key",
+      "B": "A relation can have multiple number of unique keys",
+      "C": "Relational algebra is more expressive than relational calculus",
+      "D": "In a relation ordering of tuples is not substantial"
+    },
+    "answer": "C",
+    "explanation": "Relational algebra and (safe) relational calculus have the same expressive power (Codd's theorem)."
+  },
+  {
+    "id": 30,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is correct syntax of ALTER TABLE?",
+    "options": {
+      "A": "ALTER TABLE Customer-details\nDROP (Contact_Phone);",
+      "B": "ALTER TABLE Customer-Details\nADD Contact_Phone Char (10);",
+      "C": "ALTER TABLE Customer-details\nMODIFY Contact_Phone Char (12);",
+      "D": "All of these"
+    },
+    "answer": "D",
+    "explanation": "ALTER TABLE supports DROP, ADD and MODIFY (Oracle syntax) clauses, so all three forms are valid."
+  },
+  {
+    "id": 31,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is correct statement for Triggers?",
+    "options": {
+      "A": "To maintain views",
+      "B": "To execute action automatically whenever an event occurs.",
+      "C": "To implement business rules",
+      "D": "All of these"
+    },
+    "answer": "D",
+    "explanation": "Triggers fire automatically on events and are used to enforce business rules, maintain derived data/views and audit changes."
+  },
+  {
+    "id": 32,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is NOT the purpose of normalization of schema",
+    "options": {
+      "A": "Conversion of data to a canonical form to promote schema integration",
+      "B": "Reduction of the number of anomalies that can occur during inserts, deletes, and updates",
+      "C": "Elimination of redundant data stored in the database",
+      "D": "none of these"
+    },
+    "answer": "D",
+    "explanation": "All three listed items are purposes of normalization, so 'none of these' is correct."
+  },
+  {
+    "id": 33,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The transactional concurrency leads to increase",
+    "options": {
+      "A": "Integrity",
+      "B": "Consistency",
+      "C": "Mutual execution",
+      "D": "Throughput"
+    },
+    "answer": "D",
+    "explanation": "Running transactions concurrently improves resource use and throughput and reduces waiting time."
+  },
+  {
+    "id": 34,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The database schema is written in",
+    "options": {
+      "A": "Data Definition Language",
+      "B": "Data Manipulation Language",
+      "C": "Data Control Language",
+      "D": "Tool Command Language"
+    },
+    "answer": "A",
+    "explanation": "Schemas (tables, constraints) are defined with DDL statements such as CREATE and ALTER."
+  },
+  {
+    "id": 35,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which ER Symbol is used to represent weak entity\n(a) Double rectangle  (b) Rectangle  (c) Diamond inside a rectangle  (d) Parallelogram",
+    "options": {
+      "A": "a",
+      "B": "b",
+      "C": "c",
+      "D": "d"
+    },
+    "answer": "A",
+    "explanation": "A weak entity set is drawn as a double rectangle; a plain rectangle is a strong entity."
+  },
+  {
+    "id": 36,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is the correct method to physically store the records in a specified order according to the key field in each record",
+    "options": {
+      "A": "Hash",
+      "B": "Direct",
+      "C": "Sequential",
+      "D": "All of these"
+    },
+    "answer": "C",
+    "explanation": "In sequential file organisation, records are stored physically in key order."
+  },
+  {
+    "id": 37,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The example of derived attribute is",
+    "options": {
+      "A": "Name if age is given as other attribute",
+      "B": "Age if date of birth is given as other attribute",
+      "C": "1 and 2 both",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "explanation": "Age can be computed from date of birth, so it is a derived attribute."
+  },
+  {
+    "id": 38,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "This operation is used when a user is interested in only certain columns of a table",
+    "options": {
+      "A": "Selection",
+      "B": "Union",
+      "C": "Join",
+      "D": "Projection"
+    },
+    "answer": "D",
+    "explanation": "Projection (π) picks columns; selection (σ) picks rows."
+  },
+  {
+    "id": 39,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which level of database is closest to the user",
+    "options": {
+      "A": "Physical",
+      "B": "Conceptual",
+      "C": "Internal",
+      "D": "External or View based"
+    },
+    "answer": "D",
+    "explanation": "In the three-schema architecture, the external (view) level is what users see."
+  },
+  {
+    "id": 40,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is correct statement for updating in a table instructor salary by 10 percentages?",
+    "options": {
+      "A": "Update instructor Set salary=salary*1.10;",
+      "B": "Update instructor Set salary=110;",
+      "C": "Update instructor where salary=salary*1.10;",
+      "D": "Update instructor In salary=salary*1.10;"
+    },
+    "answer": "A",
+    "explanation": "UPDATE table SET column = expression; multiplying by 1.10 raises every salary by 10%."
+  },
+  {
+    "id": 41,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "In a relational algebra, the Cartesian product is",
+    "options": {
+      "A": "Unary operator",
+      "B": "Binary operator",
+      "C": "Ternary operator",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "explanation": "The Cartesian product takes two relations as operands, so it is binary."
+  },
+  {
+    "id": 42,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "In a stored procedure, when specifying a string parameter you should use which one of these data types?",
+    "options": {
+      "A": "CHAR",
+      "B": "VARCHAR2",
+      "C": "TEXT",
+      "D": "REAL"
+    },
+    "answer": "B",
+    "explanation": "In Oracle PL/SQL, VARCHAR2 is the recommended variable-length string type for parameters."
+  },
+  {
+    "id": 43,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which statement correctly differentiates between the Relational database (RDB) and Object Oriented database (OODB) models",
+    "options": {
+      "A": "OODB supports multiple objects in the same database while RDB only supports a single table per database",
+      "B": "OODB incorporates methods in which the definition of the data structure is given, while RDB does not",
+      "C": "RDB allows the definition of the relationships between the different tables, while OODB does not allow the relationships to be defined between objects",
+      "D": "RDB supports indexes, while OODB does not support indexes"
+    },
+    "answer": "B",
+    "explanation": "OODB objects encapsulate both data structure and methods (behaviour); relational tables hold only data."
+  },
+  {
+    "id": 44,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which statement is correct for SQL?",
+    "options": {
+      "A": "SQL stands for Standard Query language",
+      "B": "SQL is procedural language",
+      "C": "SQL is non-procedural language",
+      "D": "None of these"
+    },
+    "answer": "C",
+    "explanation": "SQL is declarative (non-procedural): you state what data you want, not how to get it. It stands for Structured Query Language."
+  },
+  {
+    "id": 45,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which of the following statement is correct for ER and relational models?",
+    "options": {
+      "A": "An attribute of an entity can be composite",
+      "B": "An attribute of an entity can have more than one value",
+      "C": "In a row of a relational table, an attribute can have exactly one value or a NULL value",
+      "D": "All of these"
+    },
+    "answer": "D",
+    "explanation": "ER attributes may be composite or multivalued, while relational attributes are atomic (one value or NULL), so all statements are correct."
+  },
+  {
+    "id": 46,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "In ER diagram a relationship is represented through.",
+    "options": {
+      "A": "Rectangle",
+      "B": "Diamond",
+      "C": "Oval",
+      "D": "Line"
+    },
+    "answer": "B",
+    "explanation": "Relationships are diamonds, entities rectangles and attributes ovals."
+  },
+  {
+    "id": 47,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Meta data is the",
+    "options": {
+      "A": "Collection of data",
+      "B": "Data about data",
+      "C": "Medical data",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "explanation": "Metadata describes other data (e.g. the data dictionary)."
+  },
+  {
+    "id": 48,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is containing a list of blocks that have been updated in the database buffer?",
+    "options": {
+      "A": "Latches",
+      "B": "Swap space",
+      "C": "Dirty block",
+      "D": "All of these"
+    },
+    "answer": "C",
+    "explanation": "Buffer blocks that were changed but not yet written to disk are dirty blocks, tracked in the dirty list."
+  },
+  {
+    "id": 49,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which command is used to delete all the tuples of a table along with structure?",
+    "options": {
+      "A": "Truncate",
+      "B": "Drop",
+      "C": "Delete",
+      "D": "Alter"
+    },
+    "answer": "B",
+    "explanation": "DROP TABLE removes both the data and the table definition; TRUNCATE removes only the rows."
+  },
+  {
+    "id": 50,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which one of the join operation does not preserve non matched tuples?",
+    "options": {
+      "A": "Natural join",
+      "B": "Left outer join",
+      "C": "Right outer join",
+      "D": "Inner join"
+    },
+    "answer": "D",
+    "explanation": "An inner join returns only matching tuples; outer joins keep unmatched tuples padded with NULLs. (A natural join is also a kind of inner join; the expected key is inner join.)"
+  },
+  {
+    "id": 51,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The IEEE standard for Token Bus Protocol is",
+    "options": {
+      "A": "IEEE 802.2",
+      "B": "IEEE 802.3",
+      "C": "IEEE 802.4",
+      "D": "IEEE 802.5"
+    },
+    "answer": "C",
+    "explanation": "802.4 is Token Bus; 802.3 is Ethernet, 802.5 Token Ring and 802.2 LLC."
+  },
+  {
+    "id": 52,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which protocol is not correspond to Application layer",
+    "options": {
+      "A": "DNS",
+      "B": "FTP",
+      "C": "SMTP",
+      "D": "RPC"
+    },
+    "answer": "D",
+    "explanation": "DNS, FTP and SMTP are application-layer protocols; RPC belongs to the session layer in the OSI model."
+  },
+  {
+    "id": 53,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which protocol is contention based protocol",
+    "options": {
+      "A": "CSMA",
+      "B": "Ethernet",
+      "C": "ALOHA",
+      "D": "All of these"
+    },
+    "answer": "D",
+    "explanation": "ALOHA, CSMA and Ethernet (CSMA/CD) are all random-access contention protocols."
+  },
+  {
+    "id": 54,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which of the following pairs is incorrect",
+    "options": {
+      "A": "Application layer- Error detection",
+      "B": "Transport layer- Reliability",
+      "C": "Network layer- Address Resolution",
+      "D": "Data link layer- Framing"
+    },
+    "answer": "A",
+    "explanation": "Error detection is mainly a data link (and transport) function, not an application-layer one."
+  },
+  {
+    "id": 55,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which of the following is NOT a basic element of Ethernet?",
+    "options": {
+      "A": "An Ethernet packet or frame",
+      "B": "Media access control protocols",
+      "C": "A router",
+      "D": "Physical media used to carry the signal"
+    },
+    "answer": "C",
+    "explanation": "Ethernet consists of frames, the MAC protocol (CSMA/CD) and physical media; a router is a network-layer device."
+  },
+  {
+    "id": 56,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Maximum throughput of Pure Aloha is",
+    "options": {
+      "A": "36.8% of a given load",
+      "B": "26.8% of a given load",
+      "C": "18.4% of a given load",
+      "D": "46.6% of a given load"
+    },
+    "answer": "C",
+    "explanation": "Pure ALOHA peaks at S = 1/(2e) ≈ 0.184 when G = 0.5; slotted ALOHA peaks at 36.8%."
+  },
+  {
+    "id": 57,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Identify the class of IPv4 address 191.1.2.3.",
+    "options": {
+      "A": "Class A",
+      "B": "Class B",
+      "C": "Class C",
+      "D": "Class D"
+    },
+    "answer": "B",
+    "explanation": "The first octet 191 lies in 128–191, which is Class B."
+  },
+  {
+    "id": 58,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Connection less service in packet switched networks is most suitable for",
+    "options": {
+      "A": "File transfer operation",
+      "B": "Electronic Mail",
+      "C": "DNS queries",
+      "D": "HTTP"
+    },
+    "answer": "C",
+    "explanation": "DNS queries are short request/response exchanges that use connectionless UDP; FTP, e-mail and HTTP use TCP."
+  },
+  {
+    "id": 59,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which Project 802 standard provides for a collision-free protocol?",
+    "options": {
+      "A": "IEEE 802.3",
+      "B": "IEEE 802.4",
+      "C": "IEEE 802.5",
+      "D": "Both (2) and (3)"
+    },
+    "answer": "D",
+    "explanation": "Token Bus (802.4) and Token Ring (802.5) use token passing, so collisions cannot happen."
+  },
+  {
+    "id": 60,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "When data and acknowledgment are sent on the same frame, this is called",
+    "options": {
+      "A": "piggybacking",
+      "B": "backpacking",
+      "C": "piggypacking",
+      "D": "a good idea"
+    },
+    "answer": "A",
+    "explanation": "Piggybacking carries an ACK inside an outgoing data frame."
+  },
+  {
+    "id": 61,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "10Base2 and 10Base5 have different______________",
+    "options": {
+      "A": "signal band types",
+      "B": "fields on the 802.3 frame",
+      "C": "maximum segment lengths",
+      "D": "maximum data rates"
+    },
+    "answer": "C",
+    "explanation": "Both run at 10 Mbps baseband, but 10Base2 (thin coax) allows 185 m segments while 10Base5 (thick coax) allows 500 m."
+  },
+  {
+    "id": 62,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which IPv4 address class has few Net-ID per network?",
+    "options": {
+      "A": "Class A",
+      "B": "Class B",
+      "C": "Class C",
+      "D": "Class D"
+    },
+    "answer": "A",
+    "explanation": "Class A has only 126 usable network IDs (8-bit net ID), each with a very large number of hosts."
+  },
+  {
+    "id": 63,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "In CRC there is no error if the remainder at the receiver is_________",
+    "options": {
+      "A": "equal to the remainder at the sender",
+      "B": "zero",
+      "C": "nonzero",
+      "D": "the quotient at the sender"
+    },
+    "answer": "B",
+    "explanation": "The receiver divides the codeword by the generator; a zero remainder means no error was detected."
+  },
+  {
+    "id": 64,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is correct statement for need of Time to Live (TTL) field in an IP datagram?",
+    "options": {
+      "A": "It can be used to prioritize packets",
+      "B": "It can be used to reduce delays",
+      "C": "It can be used to optimize throughput",
+      "D": "It can be used to prevent packet looping"
+    },
+    "answer": "D",
+    "explanation": "TTL is decremented at each hop and the packet is discarded at 0, so it cannot circulate forever in a routing loop."
+  },
+  {
+    "id": 65,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "A timer is set when__________is sent out",
+    "options": {
+      "A": "a packet",
+      "B": "an ACK",
+      "C": "a NAK",
+      "D": "all of these"
+    },
+    "answer": "A",
+    "explanation": "The sender starts a retransmission timer for each data packet sent; ACKs and NAKs are not timed."
+  },
+  {
+    "id": 66,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The shortest frame in HDLC protocol is usually the_________frame.",
+    "options": {
+      "A": "management",
+      "B": "supervisory",
+      "C": "information",
+      "D": "none of the these"
+    },
+    "answer": "B",
+    "explanation": "Supervisory (S) frames carry only control information (ACK/flow control) and no data, so they are the shortest."
+  },
+  {
+    "id": 67,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The purpose of Reverse ARP on a network is to find the ________given the___________.",
+    "options": {
+      "A": "Internet address, domain name",
+      "B": "Internet address, netid",
+      "C": "Internet address, station MAC address",
+      "D": "Station MAC address, Internet address"
+    },
+    "answer": "C",
+    "explanation": "RARP lets a station find its IP (Internet) address from its known MAC address."
+  },
+  {
+    "id": 68,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Ideally the maximum segment length that can be supported by the UTP cable is",
+    "options": {
+      "A": "100 meters",
+      "B": "200 meters",
+      "C": "500 meters",
+      "D": "600 meters"
+    },
+    "answer": "A",
+    "explanation": "Ethernet over UTP (10BASE-T/100BASE-TX/1000BASE-T) supports segments up to 100 m."
+  },
+  {
+    "id": 69,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The size of the congestion Window in the slow start phase of the TCP congestion control algorithm",
+    "options": {
+      "A": "Does not increase",
+      "B": "Increases linearly",
+      "C": "Increases quadratically",
+      "D": "Increases exponentially"
+    },
+    "answer": "D",
+    "explanation": "In slow start, cwnd doubles every RTT (exponential growth) until it reaches ssthresh."
+  },
+  {
+    "id": 70,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "A television broadcast is an example of _______ transmission.",
+    "options": {
+      "A": "Half-duplex",
+      "B": "Full-duplex",
+      "C": "Simplex",
+      "D": "Automatic"
+    },
+    "answer": "C",
+    "explanation": "TV broadcast goes in one direction only, from station to receivers, which is simplex."
+  },
+  {
+    "id": 71,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "For Stop-and-Wait ARQ, for 10 data packets sent, _______ acknowledgments are needed.",
+    "options": {
+      "A": "9",
+      "B": "10",
+      "C": "11",
+      "D": "20"
+    },
+    "answer": "B",
+    "explanation": "Every frame is acknowledged individually, so 10 ACKs."
+  },
+  {
+    "id": 72,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Number of bit used for host id in IPv4 Class A addressing is",
+    "options": {
+      "A": "8 bits",
+      "B": "12 bits",
+      "C": "16 bits",
+      "D": "24 bits"
+    },
+    "answer": "D",
+    "explanation": "Class A uses 8 bits for the network and 24 bits for the host."
+  },
+  {
+    "id": 73,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is a correct statement related to IPv6 addressing",
+    "options": {
+      "A": "IPv6 increases the size of the IP address from 32 to 128 bits",
+      "B": "IPv6 has 40-byte fixed-length header",
+      "C": "In addition to unicast and multicast addresses IPv6 support anycast addressing",
+      "D": "All of these"
+    },
+    "answer": "D",
+    "explanation": "IPv6 uses 128-bit addresses, a 40-byte fixed base header, and unicast, multicast and anycast addressing."
+  },
+  {
+    "id": 74,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Match the following\nIEEE standard: A) IEEE 802.3  B) IEEE 802.4  C) IEEE 802.5  D) IEEE 802.2\nTopology: 1. Link State  2. Token Bus  3. FDDI  4. Ethernet  5. Token ring",
+    "options": {
+      "A": "A-1, B-2, C-4, D-3",
+      "B": "A-4, B-2, C-5, D-1",
+      "C": "A-4, B-2, C-3, D-5",
+      "D": "A-1, B-4, C-2, D-3"
+    },
+    "answer": "B",
+    "explanation": "802.3 is Ethernet (4), 802.4 Token Bus (2) and 802.5 Token Ring (5). Only option 2 has these three right (802.2 is actually LLC, which is not listed)."
+  },
+  {
+    "id": 75,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The final routing table at node A for the network given is, when each link cost is 1\n(Network links: A–B, A–C, A–E, A–F, B–C, C–D, D–G, F–G)",
+    "options": {
+      "A": "Destination/Cost/NextHop: B 1 B; C 1 C; D 2 C; E 1 E; F 1 F; G 2 F",
+      "B": "Destination/Cost/NextHop: B 1 B; C 1 C; D 4 C; E 1 E; F 1 F; G 4 F",
+      "C": "Destination/Cost/NextHop: B 1 B; C 1 C; D 2 C; E 1 E; F 1 F; G 2 F",
+      "D": "Destination/Cost/NextHop: B 0 B; C 0 C; D 3 C; E 0 E; F 0 F; G 3 F"
+    },
+    "answer": "A",
+    "explanation": "B, C, E and F are direct neighbours (cost 1). D is reached via C (A–C–D, cost 2) and G via F (A–F–G, cost 2). Note: options 1 and 3 are printed identically in the paper."
+  },
+  {
+    "id": 76,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "In a Go-Back-N ARQ, if the window size is 63, what is the range of sequence numbers?",
+    "options": {
+      "A": "0 to 63",
+      "B": "1 to 63",
+      "C": "0 to 64",
+      "D": "1 to 64"
+    },
+    "answer": "A",
+    "explanation": "For Go-Back-N, window ≤ 2^m − 1. Window 63 means m = 6, so sequence numbers run from 0 to 2^6 − 1 = 63."
+  },
+  {
+    "id": 77,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The IEEE 802.3 LAN standards support",
+    "options": {
+      "A": "IEEE 802.3u",
+      "B": "Fast Ethernet 100BASE-TX",
+      "C": "Ethernet 10BASE-T",
+      "D": "All of these"
+    },
+    "answer": "D",
+    "explanation": "The 802.3 family includes 10BASE-T and 802.3u Fast Ethernet (100BASE-TX)."
+  },
+  {
+    "id": 78,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "A digital signal system is required to operate at 9600bps, if the signal element encodes a 4 bit word, what is the minimum required bandwidth of the channel?",
+    "options": {
+      "A": "2000Hz",
+      "B": "2200Hz",
+      "C": "2300Hz",
+      "D": "2400Hz"
+    },
+    "answer": "D",
+    "explanation": "Baud rate = 9600/4 = 2400 signal elements per second; taking bandwidth equal to the baud rate gives 2400 Hz."
+  },
+  {
+    "id": 79,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "For an ALOHA system using a 9600-bps channel for sending 120-bit-long packets the possible throughput is",
+    "options": {
+      "A": "10 pkts per second",
+      "B": "14 pkts per second",
+      "C": "20 pkts per second",
+      "D": "24 pkts per second"
+    },
+    "answer": "B",
+    "explanation": "Channel capacity = 9600/120 = 80 packets/s. Pure ALOHA's maximum efficiency is 18.4%: 0.184 × 80 ≈ 14.7, so about 14 packets/s."
+  },
+  {
+    "id": 80,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "A specially programmed router that sits between a site (intranet) and the rest of the network to control the flow of traffic between the Internet and internal networks and systems and works like a guard post in the lobby of a building is referred to as",
+    "options": {
+      "A": "Proxy",
+      "B": "PIX",
+      "C": "Firewall",
+      "D": "All of these"
+    },
+    "answer": "C",
+    "explanation": "A firewall filters traffic between the internal network and the Internet according to security rules."
+  },
+  {
+    "id": 81,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "An advantage of packet switching is",
+    "options": {
+      "A": "Better utilization of network links",
+      "B": "Lower propagation delay",
+      "C": "Less electro-magnetic interference",
+      "D": "Delay guarantees in voice communications"
+    },
+    "answer": "A",
+    "explanation": "Packets from many users share links dynamically (statistical multiplexing), so link utilisation improves; packet switching gives no delay guarantees."
+  },
+  {
+    "id": 82,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Consider an ARQ protocol running over a 20 km point to point fiber link. Assume a propagation speed of 2 x 10^8 m/s. a suitable timeout value for the ARQ protocol may be:",
+    "options": {
+      "A": "0.4 ms.",
+      "B": "0.3 ms.",
+      "C": "0.2 ms.",
+      "D": "0.1 ms."
+    },
+    "answer": "A",
+    "explanation": "One-way delay = 20,000/(2 × 10^8) = 0.1 ms, so RTT = 0.2 ms. The timeout must be safely larger than the RTT; 0.4 ms (about 2 × RTT) is suitable."
+  },
+  {
+    "id": 83,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The X.25 protocol encapsulates the following layers",
+    "options": {
+      "A": "Data Link Layer",
+      "B": "Network Layer",
+      "C": "Both (1) and (2)",
+      "D": "None of these"
+    },
+    "answer": "C",
+    "explanation": "X.25 defines the physical, data link (LAPB) and network (PLP) layers."
+  },
+  {
+    "id": 84,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "This layer in the OSI model handles terminal emulation",
+    "options": {
+      "A": "Session",
+      "B": "Presentation",
+      "C": "Transport",
+      "D": "Application"
+    },
+    "answer": "D",
+    "explanation": "Terminal emulation (e.g. Telnet, virtual terminal) is an application-layer service."
+  },
+  {
+    "id": 85,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is untrue for the RPC",
+    "options": {
+      "A": "Allow programs to call procedures located on other machines",
+      "B": "Avoids the overhead of multiple system calls",
+      "C": "Allows communication through global variables",
+      "D": "Provides programmers with a familiar procedural interface"
+    },
+    "answer": "C",
+    "explanation": "Caller and callee run in different address spaces, so RPC cannot share global variables; parameters must be passed explicitly."
+  },
+  {
+    "id": 86,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is the correct matching of protocol given below with their layer of abstraction\nProtocol: A. CIDR  B. RIP  C. FTP  D. CSMA/CD\nLayer: 1. Data Link Layer  2. Network layer  3. Transport layer  4. Application layer",
+    "options": {
+      "A": "A-1, B-2, C-2, D-3",
+      "B": "A-2, B-2, C-4, D-1",
+      "C": "A-2, B-1, C-4, D-2",
+      "D": "A-3, B-2, C-4, D-1"
+    },
+    "answer": "B",
+    "explanation": "CIDR (addressing) and RIP (routing) are network-layer, FTP is application-layer, and CSMA/CD is data link (MAC)."
+  },
+  {
+    "id": 87,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which of the following is the bit oriented protocol",
+    "options": {
+      "A": "Link Access Protocol Balanced (LAPB)",
+      "B": "Synchronous Data link Control Protocol (SDLC)",
+      "C": "Link Access Protocol for D channel (LAP-D)",
+      "D": "All of these"
+    },
+    "answer": "D",
+    "explanation": "LAPB, SDLC and LAP-D all derive from HDLC, which is bit-oriented."
+  },
+  {
+    "id": 88,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which is the correct statement related to Ethernet based network",
+    "options": {
+      "A": "Ethernet packet should be at least 64 bytes long for longest allowed segment and Max packet size can be 1500 bytes",
+      "B": "Ethernet packet should be at least 32 bytes long for longest allowed segment and Max packet size can be 1024 bytes",
+      "C": "Ethernet packet should be at least 16 bytes long for longest allowed segment and Max packet size can be 64 bytes",
+      "D": "Ethernet packet should be at least 48 bytes long for longest allowed segment and Max packet size can be 1482 bytes"
+    },
+    "answer": "A",
+    "explanation": "The minimum Ethernet frame is 64 bytes (so collisions are detected over the longest segment), and the maximum payload (MTU) is 1500 bytes."
+  },
+  {
+    "id": 89,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The Hamming code is used to perform",
+    "options": {
+      "A": "Error detection",
+      "B": "Error correction",
+      "C": "Error encapsulation",
+      "D": "both (1) and (2)"
+    },
+    "answer": "D",
+    "explanation": "Hamming codes detect errors (up to 2-bit with SEC-DED) and correct single-bit errors."
+  },
+  {
+    "id": 90,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which layer of TCP/IP is responsible for end to end delivery of entire message in a network?",
+    "options": {
+      "A": "Application layer",
+      "B": "Presentation layer",
+      "C": "Transport layer",
+      "D": "Network layer"
+    },
+    "answer": "C",
+    "explanation": "The transport layer gives process-to-process delivery of the whole message; the network layer delivers individual packets host to host."
+  },
+  {
+    "id": 91,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The process that dynamically assigns an IP address to a network device is called?",
+    "options": {
+      "A": "DNS",
+      "B": "DHCP",
+      "C": "NAT",
+      "D": "MAC"
+    },
+    "answer": "B",
+    "explanation": "DHCP leases IP addresses (and other settings) to hosts automatically."
+  },
+  {
+    "id": 92,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "The modem is used to converts",
+    "options": {
+      "A": "Analog , Digital",
+      "B": "Digital, Analog",
+      "C": "PSK,FSK",
+      "D": "Both (1) and (2)"
+    },
+    "answer": "D",
+    "explanation": "A modem modulates digital data into analog signals and demodulates analog signals back to digital."
+  },
+  {
+    "id": 93,
+    "source_file": "Question Paper for Analyst-Cum-Programmer - 2014 Paper - I",
+    "question": "Which of the following is correct for Sliding Window ARQ protocol",
+    "options": {
+      "A": "Source Window= N Destination Window = N",
+      "B": "Source Window = 1, Destination Window = N",
+      "C": "Source Window = 1 Destination Window = 1",
+      "D": "Source Window = N, Destination Window = 1"
+    },
+    "answer": "D",
+    "explanation": "In sliding-window (Go-Back-N) ARQ, the sender may have N outstanding frames while the receiver window is 1 (it accepts only the next expected frame). (Selective repeat would use N and N.)"
+  }
+]

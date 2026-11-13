@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Convert the octal number (7356.47)₈ into its binary and decimal equivalent, and identify which of the following decimal values is correct.",
+    "options": {
+      "A": "(3814.609375)₁₀",
+      "B": "(3774.59375)₁₀",
+      "C": "(3846.59375)₁₀",
+      "D": "(3822.609375)₁₀"
+    },
+    "answer": "D",
+    "explanation": "7356₈ = 7×512 + 3×64 + 5×8 + 6 = 3822, and .47₈ = 4/8 + 7/64 = 0.609375, so the value is 3822.609375. In binary it is 111 011 101 110 . 100 111."
+  },
+  {
+    "id": 2,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Consider the following pseudo-code:\nAlgorithm TestComplexity(A[1..n])\n1. sum ← 0\n2. for i ← 1 to n do\n3. for j ← 1 to i do\n4. for k ← 1 to j do\n5. sum ← sum + 1\n6. return sum\nWhat is the asymptotic time complexity of the above algorithm?",
+    "options": {
+      "A": "O(n4)",
+      "B": "O(n3)",
+      "C": "O(n log n)",
+      "D": "O(n2)"
+    },
+    "answer": "B",
+    "explanation": "The innermost statement runs Σ(i=1..n) Σ(j=1..i) j = Σ i(i+1)/2 ≈ n³/6 times, which is O(n³). (Exponents appear as 'n4', 'n3', 'n2' in the paper.)"
+  },
+  {
+    "id": 3,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A data analyst is using supervised machine learning to study the relationship between advertising budget (in ₹) and sales revenue (in ₹) for a retail company.\nHe uses linear regression to predict sales based on the advertising budget. Later, he wants to predict whether a customer will make a purchase (Yes/No) based on features like age, income and browsing time.\nWhich of the following statements correctly distinguishes regression from classification in these contexts?",
+    "options": {
+      "A": "Regression models cannot be used for numerical data, whereas classification models can.",
+      "B": "Regression minimises the difference between predicted and actual class labels, while classification minimises the mean squared error.",
+      "C": "Regression uses continuous dependent variables, while classification uses discrete dependent variables.",
+      "D": "Regression predicts categorical outputs, while classification predicts numerical values."
+    },
+    "answer": "C",
+    "explanation": "Regression predicts a continuous target (sales revenue); classification predicts a discrete class label (purchase Yes/No)."
+  },
+  {
+    "id": 4,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "For the grammar below, what is FIRST(S)?\nS→aA|bB",
+    "options": {
+      "A": "{a}",
+      "B": "{b}",
+      "C": "{a, b}",
+      "D": "{ε}"
+    },
+    "answer": "C",
+    "explanation": "Each alternative of S starts with a terminal: aA gives a and bB gives b, so FIRST(S) = {a, b}."
+  },
+  {
+    "id": 5,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "During lexical analysis, which component is primarily responsible for recognising tokens from the input stream of characters?",
+    "options": {
+      "A": "Parser, using syntax-directed translation rules",
+      "B": "Finite automaton, driven by regular expressions for token patterns",
+      "C": "Semantic analyzer, based on attribute grammars",
+      "D": "Symbol table manager, by assigning identifiers unique addresses"
+    },
+    "answer": "B",
+    "explanation": "Token patterns are specified as regular expressions and recognised by a finite automaton (DFA) built from them, as in tools like Lex."
+  },
+  {
+    "id": 6,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "During the design and analysis process of an algorithm to find the kth smallest element in an unsorted array, a researcher proposes using a modified divide-and-conquer approach that always divides the array into five nearly equal parts, recursively selects the median of each part, and then finds the median of those medians to use as a pivot for partitioning.\nWhich of the following best describes the time complexity and design implication of this algorithm?",
+    "options": {
+      "A": "O(n); because the median-of-medians approach ensures balanced partitions and linear-time selection.",
+      "B": "O(nlogn); because the algorithm behaves like mergesort.",
+      "C": "O(logn)O(\\log n)O(logn); because the recursion depth reduces logarithmically.",
+      "D": "O(n2); because repeated partitioning leads to quadratic comparisons."
+    },
+    "answer": "A",
+    "explanation": "Median-of-medians guarantees a pivot that discards a constant fraction of elements, giving T(n) ≤ T(n/5) + T(7n/10) + O(n) = O(n) worst-case selection. (Option C contains a rendering glitch 'O(logn)O(\\log n)O(logn)' in the original.)"
+  },
+  {
+    "id": 7,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A computer uses an instruction code format with a total of 16 bits. The operation code (opcode) occupies 5 bits, and the remaining bits are used to specify either:\nOne direct memory address, or\nTwo register addresses (each of equal length)\nIf the system supports 32 general-purpose registers, determine how many distinct instruction formats are possible in this computer.",
+    "options": {
+      "A": "4",
+      "B": "2",
+      "C": "16",
+      "D": "8"
+    },
+    "answer": "B",
+    "explanation": "The 11 bits after the opcode are used either as one memory address or as two register fields (32 registers need 5 bits each), so there are two instruction formats: memory-reference and register-reference."
+  },
+  {
+    "id": 8,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Even though Multilayer Feed-Forward Neural Networks are widely used in various fields, they have inherent limitations.\nMatch the listed limitations in Column A with their corresponding implications or effects in Column B.\nColumn A (Limitation) | Column B (Implication / Effect)\n1. Absence of cycles (no feedback connections) | a. The network cannot correct earlier-stage errors through back propagation\n2. Information about neighborhood may be lost | b. Causes repetitive reprocessing of all computation steps\n3. Lack of support for back propagation | c. Prevents the model from retaining temporal or contextual dependencies\n4. Need to recompute all steps when data changes | d. Leads to inefficiency in iterative learning or dynamic input updates",
+    "options": {
+      "A": "1-c, 2-d, 3-a, 4-b",
+      "B": "1-a, 2-c, 3-b, 4-d",
+      "C": "1-c, 2-a, 3-b, 4-d",
+      "D": "1-b, 2-a, 3-d, 4-c"
+    },
+    "answer": "A",
+    "explanation": "Official key: 1-c (no feedback, so no memory of temporal context), 3-a (no back-propagated correction of earlier errors), 4-b (whole computation repeated on change), 2-d. The 2-d/4-b pairing is debatable; 4-d/2-b would also read sensibly, but no option offers it."
+  },
+  {
+    "id": 9,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In the context of digital imaging, resolution mainly refers to which measurement?",
+    "options": {
+      "A": "File compression ratio",
+      "B": "Colour harmony per inches",
+      "C": "Number of pixels per dimension",
+      "D": "Screen brightness per inches"
+    },
+    "answer": "C",
+    "explanation": "Image resolution is the number of pixels along each dimension (e.g. 1920×1080) or pixels per inch."
+  },
+  {
+    "id": 10,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which situation best demonstrates the importance of atomicity in transaction management?",
+    "options": {
+      "A": "A transaction reads data modified by another transaction before it is committed.",
+      "B": "A bank transfer deducts money from one account but fails to credit the other due to a crash.",
+      "C": "A transaction ensures that all integrity constraints are satisfied after execution.",
+      "D": "A committed transaction's updates remain intact even after a power failure."
+    },
+    "answer": "B",
+    "explanation": "Atomicity means all-or-nothing; a half-done transfer must be rolled back. A illustrates isolation (dirty read), C consistency, D durability."
+  },
+  {
+    "id": 11,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Two systems have identical functionality but differ in architecture. System A uses a layered architecture, while System B uses a microservices architecture. Which of the following statements most accurately reflects the architectural trade-off between them?",
+    "options": {
+      "A": "System B boosts modularity and deployability, at the cost of higher inter-service communication overhead.",
+      "B": "System A is easier to scale horizontally than System B.",
+      "C": "Both architectures ensure identical runtime performance under equal workloads.",
+      "D": "System A has lower cohesion and higher coupling compared to System B."
+    },
+    "answer": "A",
+    "explanation": "Microservices give independent deployment and modularity but add network/inter-service communication overhead; they are also easier, not harder, to scale horizontally."
+  },
+  {
+    "id": 12,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "How is a multivalued attribute represented in an ER diagram?",
+    "options": {
+      "A": "Bold ellipse",
+      "B": "Double rectangle",
+      "C": "Double ellipse",
+      "D": "Dashed ellipse"
+    },
+    "answer": "C",
+    "explanation": "Multivalued attributes use a double ellipse; a double rectangle is a weak entity and a dashed ellipse a derived attribute."
+  },
+  {
+    "id": 13,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Consider the following given grammar:\nS → L = R R\nL → *R id\nR → L\nWhich of the following statements is true about this grammar with respect to LR parsing techniques?",
+    "options": {
+      "A": "The grammar contains a shift-reduce conflict in simple LR parsing and is not LR(0) or SLR(1).",
+      "B": "The grammar is SLR(1) and can be parsed without shift-reduce conflicts.",
+      "C": "The grammar is LR(0) and can be parsed by an LR(0) parser without conflicts.",
+      "D": "The grammar is ambiguous and cannot be parsed by any LR parser."
+    },
+    "answer": "A",
+    "explanation": "This is the classic grammar S → L = R | R, L → *R | id, R → L (the '|' symbols are missing in the paper). In the state containing S → L·=R and R → L·, '=' ∈ FOLLOW(R), causing a shift-reduce conflict in SLR(1); the grammar is LALR(1)/LR(1) but not LR(0) or SLR(1)."
+  },
+  {
+    "id": 14,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which operator is used to perform bitwise exclusive OR in C?",
+    "options": {
+      "A": "~",
+      "B": "|",
+      "C": "&",
+      "D": "^"
+    },
+    "answer": "D",
+    "explanation": "^ is bitwise XOR; ~ is complement, | is OR and & is AND."
+  },
+  {
+    "id": 15,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In multimedia communication, what does synchronisation mean?",
+    "options": {
+      "A": "Compressing files",
+      "B": "Aligning audio and video to play together correctly",
+      "C": "Encrypting messages",
+      "D": "Sending data at random times"
+    },
+    "answer": "B",
+    "explanation": "Synchronisation keeps related media streams (e.g. audio and video, lip-sync) aligned in time during playback."
+  },
+  {
+    "id": 16,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following is the output of a compiler?",
+    "options": {
+      "A": "Binary code",
+      "B": "Source code",
+      "C": "Object code",
+      "D": "High-level language"
+    },
+    "answer": "C",
+    "explanation": "A compiler translates source code into object code (machine/target code), which the linker then turns into an executable."
+  },
+  {
+    "id": 17,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following DMA signals is sent from the CPU or the system's bus controller to give the DMA controller permission to use the system bus for transferring data?",
+    "options": {
+      "A": "Bus Request (BR)",
+      "B": "Bus Grant (BG)",
+      "C": "DMA Request (DRQ)",
+      "D": "DMA Acknowledge (DACK)"
+    },
+    "answer": "B",
+    "explanation": "The DMA controller asserts BR (HOLD); the CPU replies with BG (HLDA) granting the bus. DRQ comes from the device and DACK goes from the DMA controller to the device."
+  },
+  {
+    "id": 18,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Let Σ = {a, b}. Define:\nR₁ = (a + b) b (a + b)\nR₂ = (a + b) a (a + b)\nR₃ = (a + b) b (a + b)**\nR₄ = (a + b) (aa + bb) (a + b)*\nDefine F(R) as the language denoted by R using the usual recursive rules:\nF(a) = {a}, F(b) = {b}, F(ε) = {ε}\nF(R1 + R2) = F(R1) ∪ F(R2)\nF(R1R2) = F(R1) · F(R2)\nF(R)* = (F(R))*\nWhich of the following statements about the equivalence of these regular expressions is true?",
+    "options": {
+      "A": "F(R₁) ∪ F(R₂) = Σ².",
+      "B": "F(R₄) ⊆ F(R₃).",
+      "C": "F(R₃) = Σ* \\ a*",
+      "D": "F(R₁) = F(R₂)"
+    },
+    "answer": "C",
+    "explanation": "Stars were evidently lost in printing; the intended R₃ is (a+b)* b (a+b)*, i.e. all strings containing at least one b, which equals Σ* minus a*. (As printed, the expressions are garbled; answer follows the official key.)"
+  },
+  {
+    "id": 19,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A digital circuit uses three inputs A, B and C connected to a combination of XOR gates as follows:\nThe output expression is given by:\nY=(A⊕B)⊕(B⊕C)\nWhich of the following Boolean expressions correctly represents the simplified output (Y) in terms of A, B and C?",
+    "options": {
+      "A": "Y=A⊕C⊕B",
+      "B": "Y=A⊕C",
+      "C": "Y=A'B+AB'+BC'+B'C",
+      "D": "Y=A+B+C"
+    },
+    "answer": "B",
+    "explanation": "XOR is associative and B⊕B = 0, so Y = A⊕B⊕B⊕C = A⊕0⊕C = A⊕C."
+  },
+  {
+    "id": 20,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following correctly accesses the element in the 2nd row and 3rd column of a 2D array intarr[3][4]?",
+    "options": {
+      "A": "*(*(arr + 1) + 2)",
+      "B": "*(arr[1][2])",
+      "C": "arr + 1 + 2",
+      "D": "*(arr + 2 + 3)"
+    },
+    "answer": "A",
+    "explanation": "Second row is index 1 and third column index 2: arr[1][2] ≡ *(*(arr+1)+2). ('intarr' is a misprint for 'int arr'.)"
+  },
+  {
+    "id": 21,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In user interface (UI) design, which of the following principles best prevents cognitive overload and enhances usability during task execution?",
+    "options": {
+      "A": "Maximising information density on every screen to minimise navigation",
+      "B": "Using diverse visual styles to maintain user engagement",
+      "C": "Applying consistent layout patterns and progressive disclosure of information",
+      "D": "Reducing feedback messages to avoid distraction"
+    },
+    "answer": "C",
+    "explanation": "Consistency reduces learning effort and progressive disclosure shows only what is needed at each step, lowering cognitive load."
+  },
+  {
+    "id": 22,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "What is the complement of (A+B)?",
+    "options": {
+      "A": "A'+B'",
+      "B": "A'B'",
+      "C": "A+B",
+      "D": "AB"
+    },
+    "answer": "B",
+    "explanation": "By De Morgan's law, (A+B)' = A'·B'."
+  },
+  {
+    "id": 23,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Match each data type category with its default value when initialised by the default constructor in Java.\nColumn A (Data Type) | Column B (Default Value)\n1. Numeric types (int, long, double) | a. false\n2. Reference types (objects, arrays) | b. 0\n3. Boolean type | c. null",
+    "options": {
+      "A": "1-c, 2-b, 3-a",
+      "B": "1-a, 2-b, 3-c",
+      "C": "1-b, 2-c, 3-a",
+      "D": "1-b, 2-a, 3-c"
+    },
+    "answer": "C",
+    "explanation": "Default field values in Java: numeric 0 (0.0), references null, boolean false."
+  },
+  {
+    "id": 24,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A lexical analyzer uses the following regular expressions to recognise tokens in a programming language:\nIdentifier (ID): (letter)(letter digit)*\nNumber (NUM): (digit)+(\\.(digit)+)?\nRelational Operator (REL_OP): < <= > >= == !=\nWhitespace: (blank tab newline)+\nConsider the input string:\ncount<=total1\nIf the lexical analyzer applies maximal munch (longest match rule) and priority-based resolution (in the order: REL_OP > NUM > ID > WHITESPACE), what will be the correct sequence of tokens recognised?",
+    "options": {
+      "A": "⟨ID, count⟩ ⟨REL_OP, <=⟩ ⟨ID, total1⟩",
+      "B": "⟨ID, count⟩ ⟨REL_OP, <=⟩ ⟨ID, total⟩ ⟨NUM, 1⟩",
+      "C": "⟨ID, count⟩ ⟨REL_OP, <⟩ ⟨=, invalid⟩ ⟨ID, total1⟩",
+      "D": "⟨ID, count⟩ ⟨REL_OP, <=⟩ ⟨NUM, total1⟩"
+    },
+    "answer": "A",
+    "explanation": "Longest match takes 'count', then '<=' (longer than '<'), then 'total1' as one identifier since letters followed by digits match (letter)(letter|digit)*. (The '|' symbols are missing in the printed regexes.)"
+  },
+  {
+    "id": 25,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A network provides a connectionless service. Which of the following statements must hold true?",
+    "options": {
+      "A": "Reliability is guaranteed at the transport layer.",
+      "B": "Packets always follow the same route between source and destination.",
+      "C": "Each packet is treated independently and may arrive out of order.",
+      "D": "The network layer maintains state information for each session."
+    },
+    "answer": "C",
+    "explanation": "In a connectionless (datagram) service each packet is routed independently with no per-flow state, so packets may take different paths and arrive out of order."
+  },
+  {
+    "id": 26,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "When a browser sends a GET request and the server responds with the status code 304 (Not Modified), what does this imply?",
+    "options": {
+      "A": "The client used an incorrect URL.",
+      "B": "The file was modified and re-sent.",
+      "C": "The requested file was deleted from the server.",
+      "D": "The file has not changed since the client's cached copy."
+    },
+    "answer": "D",
+    "explanation": "304 Not Modified answers a conditional GET: the resource is unchanged, so the client uses its cached copy and no body is sent."
+  },
+  {
+    "id": 27,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following statements is most accurate about the learning process in a feedforward neural network that is trained using backpropagation?",
+    "options": {
+      "A": "Hidden layer weights remain constant during training to maintain stability.",
+      "B": "The output layer weights are updated randomly to prevent overfitting.",
+      "C": "Weight updates depend only on the current input vector.",
+      "D": "Error gradients are propagated backward layer by layer to adjust weights."
+    },
+    "answer": "D",
+    "explanation": "Backpropagation computes the output error and propagates its gradient backward through each layer (chain rule) to update all weights."
+  },
+  {
+    "id": 28,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A researcher applies a density-based clustering algorithm to detect patterns in a dataset containing noise and arbitrarily shaped clusters. The results show that the algorithm successfully identifies clusters of varying shapes but struggles when the dataset contains clusters with varying densities.\nWhich of the following best explains the reason for this limitation?",
+    "options": {
+      "A": "Density-based methods require clusters to be spherical and well-separated.",
+      "B": "The algorithm assumes a global density threshold, making it difficult to detect clusters with different densities.",
+      "C": "The algorithm cannot distinguish between core points and border points in dense regions.",
+      "D": "Density-based methods merge all data points into one cluster when noise is present."
+    },
+    "answer": "B",
+    "explanation": "DBSCAN uses one global ε and MinPts, so a single density threshold cannot fit both sparse and dense clusters."
+  },
+  {
+    "id": 29,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "To write data to the end of a file using WriteFile() without truncating its contents, the file should be opened with which configuration?",
+    "options": {
+      "A": "TRUNCATE_EXISTING | GENERIC_WRITE",
+      "B": "OPEN_EXISTING | GENERIC_WRITE, then move pointer to end",
+      "C": "OPEN_ALWAYS | GENERIC_READ",
+      "D": "CREATE_ALWAYS | GENERIC_WRITE, then move the pointer to start"
+    },
+    "answer": "B",
+    "explanation": "Open the existing file with write access (CreateFile with OPEN_EXISTING, GENERIC_WRITE), then SetFilePointer(…, FILE_END) and call WriteFile(); TRUNCATE_EXISTING/CREATE_ALWAYS erase contents and GENERIC_READ cannot write."
+  },
+  {
+    "id": 30,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "What will be the output of the following C program segment?\n#include <stdio.h>\nint main() {\nint i = 1, sum = 0;\ndo {\nif (i % 2 == 0)\nsum += i;\ni++;\n} while (i <= 5);\nprintf(\"%d\", sum);\nreturn 0;\n}",
+    "options": {
+      "A": "6",
+      "B": "4",
+      "C": "10",
+      "D": "8"
+    },
+    "answer": "A",
+    "explanation": "Even values of i from 1 to 5 are 2 and 4, so sum = 6."
+  },
+  {
+    "id": 31,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which option most clearly highlights why the Software Engineering discipline is essential for large software projects development?",
+    "options": {
+      "A": "It eliminates the need for documentation and design reviews to reduce the overall software cost.",
+      "B": "It ensures faster coding irrespective of complexity using the automated tools.",
+      "C": "It guarantees zero defects through automated testing.",
+      "D": "It provides structured processes that improve reliability, maintainability and scalability."
+    },
+    "answer": "D",
+    "explanation": "Software engineering applies systematic, disciplined processes so large systems are reliable, maintainable and scalable; it cannot guarantee zero defects or remove documentation."
+  },
+  {
+    "id": 32,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following binary-to-decimal conversions is INCORRECT?",
+    "options": {
+      "A": "(01101101)₂ = (127)₁₀",
+      "B": "(1101)₂ = (13)₁₀",
+      "C": "(1111 1111)₂ = (255)₁₀",
+      "D": "(10101010)₂ = (170)₁₀"
+    },
+    "answer": "A",
+    "explanation": "01101101₂ = 64+32+8+4+1 = 109, not 127. The others are correct."
+  },
+  {
+    "id": 33,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A system uses variable partition memory management with the following free memory blocks (in KB):\nBlock | Size (KB)\n1 | 100\n2 | 500\n3 | 200\n4 | 300\n5 | 600\nFour processes arrive in the following order with their memory requirements (in KB):\nProcess | Size (KB)\nP1 | 212\nP2 | 417\nP3 | 112\nP4 | 426\nUsing the Best Fit allocation strategy, determine which block each process is allocated to and how much total internal fragmentation remains at the end of all allocations.",
+    "options": {
+      "A": "P1 → Block 3, P2 → Block 2, P3 → Block 1, P4 → Block 5; Total internal fragmentation = 159 KB",
+      "B": "P1 → Block 2, P2 → Block 4, P3 → Block 1, P4 → Block 5; Total internal fragmentation = 171 KB",
+      "C": "P1 → Block 4, P2 → Block 2, P3 → Block 3, P4 → Block 5; Total internal fragmentation = 433 KB",
+      "D": "P1 → Block 4, P2 → Block 5, P3 → Block 1, P4 → Block 2; Total internal fragmentation = 169 KB"
+    },
+    "answer": "C",
+    "explanation": "Best fit: P1 (212) → 300 KB block 4 (88 left); P2 (417) → 500 KB block 2 (83); P3 (112) → 200 KB block 3 (88); P4 (426) → 600 KB block 5 (174). Leftover 88+83+88+174 = 433 KB."
+  },
+  {
+    "id": 34,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following Big-O notations represents the best time complexity?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n log n)",
+      "C": "O(n²)",
+      "D": "O(n)"
+    },
+    "answer": "A",
+    "explanation": "Constant time O(1) grows slowest of the listed functions."
+  },
+  {
+    "id": 35,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following is represented as 'Software Crisis'?",
+    "options": {
+      "A": "Software piracy",
+      "B": "Hardware failure",
+      "C": "Lack of computers",
+      "D": "High cost and poor quality of early software projects"
+    },
+    "answer": "D",
+    "explanation": "The 'software crisis' (1960s–70s) referred to projects running over budget and schedule and delivering unreliable, low-quality software."
+  },
+  {
+    "id": 36,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following is NOT a limitation of DBSCAN?",
+    "options": {
+      "A": "High sensitivity to noise",
+      "B": "Requirement to predefine number of clusters",
+      "C": "Poor performance on varying density datasets",
+      "D": "Difficulty in finding optimal ε and minPts"
+    },
+    "answer": "B",
+    "explanation": "DBSCAN does not need the number of clusters in advance (unlike k-means). Note: DBSCAN is in fact robust to noise, so option A is also not a real limitation; the official key gives B."
+  },
+  {
+    "id": 37,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "What is the relation violates when two tuples have identical values for all attributes?",
+    "options": {
+      "A": "Referential integrity",
+      "B": "Domain integrity",
+      "C": "Entity integrity",
+      "D": "Functional dependency"
+    },
+    "answer": "C",
+    "explanation": "A relation is a set; identical tuples violate the uniqueness of the primary key, i.e. entity integrity. (The question's grammar is garbled in the original.)"
+  },
+  {
+    "id": 38,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A multimedia production team is working on a cross-software project where assets are created in Adobe Illustrator, edited in Adobe Photoshop and then integrated into a 3D visualisation environment using Autodesk Maya. During the asset pipeline, they experience colour mismatch, layer flattening and loss of transparency when moving files between software applications.\nWhich of the following best represents an optimised import/export workflow that minimises such data loss and preserves design fidelity across the tools?",
+    "options": {
+      "A": "Export all files as JPEG for compatibility and small file size before importing them into each software.",
+      "B": "Export all graphics into PDF format since it universally supports both raster and vector elements without any compatibility issues.",
+      "C": "Convert all assets into BMP format to ensure uncompressed data transfer across the applications.",
+      "D": "Use EPS or SVG for vector graphics from Illustrator, maintain transparency with PNG or PSD in Photoshop and import into Maya using layered PSD or TIFF with embedded alpha channels."
+    },
+    "answer": "D",
+    "explanation": "Keeping native/lossless formats with vector data, layers and alpha channels (SVG/EPS, PSD/PNG, TIFF with alpha) preserves fidelity; JPEG and BMP lose layers and transparency."
+  },
+  {
+    "id": 39,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following applications makes the greatest use of polymorphism?",
+    "options": {
+      "A": "Game development",
+      "B": "Text editing",
+      "C": "Data entry forms",
+      "D": "Spreadsheet calculations"
+    },
+    "answer": "A",
+    "explanation": "Games manage many object types (characters, enemies, items) through common interfaces like update()/draw(), which is heavy use of polymorphism."
+  },
+  {
+    "id": 40,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which is a major design criticism of the OSI model?",
+    "options": {
+      "A": "Overlapping functionality across layers",
+      "B": "Lack of session management",
+      "C": "Under-specification of services",
+      "D": "Over-specification of protocols"
+    },
+    "answer": "A",
+    "explanation": "A standard criticism (Tanenbaum) is that functions such as addressing, flow control and error control are repeated in several layers, while session and presentation layers are nearly empty."
+  },
+  {
+    "id": 41,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following best reflects the primary responsibility of the Internet Layer in the TCP/IP suite?",
+    "options": {
+      "A": "Providing logical addressing and best-effort packet delivery across interconnected networks",
+      "B": "Establishing reliable virtual circuits between source and destination hosts",
+      "C": "Managing application-level session recovery in case of failure",
+      "D": "Defining the physical transmission characteristics of network signals"
+    },
+    "answer": "A",
+    "explanation": "The Internet layer (IP) handles logical (IP) addressing and routing of datagrams with connectionless best-effort delivery."
+  },
+  {
+    "id": 42,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A developer implements the following code to sort a singly linked list using bubble sort by swapping data instead of links:\nvoid sort(struct Node *head) {\nstruct Node *i, *j;\nint temp;\nfor (i = head; i != NULL; i = i->next) {\nfor (j = i->next; j != NULL; j = j->next) {\nif (i->data > j->data) {\ntemp = i->data;\ni->data = j->data;\nj->data = temp;\n}\n}\n}\n}\nAfter sorting, the program prints the list, but the last element sometimes remains unsorted when the list contains duplicate values. What is the most likely conceptual issue?",
+    "options": {
+      "A": "The inner loop should compare j->next instead of j to avoid null dereferencing.",
+      "B": "Swapping node data breaks pointer consistency in linked lists with duplicate values.",
+      "C": "The outer loop must run until no swaps occur, not just until i == NULL.",
+      "D": "The issue arises because swapping data does not rearrange links, so duplicates are skipped."
+    },
+    "answer": "C",
+    "explanation": "Official key C (a bubble sort should repeat passes until no swap occurs). Note: the code shown is actually an exchange (selection-style) sort that sorts correctly even with duplicates, so the premise of the question is doubtful."
+  },
+  {
+    "id": 43,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In Kruchten's 4+1 view model of software architecture, which view shows the key abstractions in the system as objects or object classes?",
+    "options": {
+      "A": "Logical view",
+      "B": "Development view",
+      "C": "Process view",
+      "D": "Physical view"
+    },
+    "answer": "A",
+    "explanation": "The logical view shows the key abstractions (objects/classes) of the system; development shows modules, process shows run-time interaction, physical shows hardware mapping."
+  },
+  {
+    "id": 44,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Identify the option in which both statements perform the same operation for any numeric variable a.",
+    "options": {
+      "A": "a = a - 5;  and  a =- 5;",
+      "B": "a = a + 5;  and  a += 5;",
+      "C": "a = a * 5;  and  a += 5;",
+      "D": "a = a + 5;  and  a *= 5;"
+    },
+    "answer": "B",
+    "explanation": "a += 5 is shorthand for a = a + 5. Note that 'a =- 5' assigns -5, not a-5."
+  },
+  {
+    "id": 45,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In a CPU with a 16-bit instruction word, the opcode field occupies 6 bits, and the instruction format supports two register operands and one immediate operand. If the system has 32 general-purpose registers, what is the maximum size (in bits) of the immediate operand that can be accommodated?",
+    "options": {
+      "A": "4",
+      "B": "6",
+      "C": "0",
+      "D": "8"
+    },
+    "answer": "C",
+    "explanation": "32 registers need 5 bits each, so two register fields take 10 bits; 16 − 6 − 10 = 0 bits remain for the immediate."
+  },
+  {
+    "id": 46,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A system uses fixed partitioning with the following memory blocks and process allocations:\nBlock Size (MB) | Process Size (MB)\n4 | 1\n8 | 7\n8 | 7\n16 | 14\nWhich statement is true about internal and external fragmentation?",
+    "options": {
+      "A": "Internal fragmentation = 7 MB; External fragmentation = 0 MB",
+      "B": "Internal fragmentation = 7 MB; External fragmentation = 4 MB",
+      "C": "Internal fragmentation = 4 MB; External fragmentation = 3 MB",
+      "D": "Internal fragmentation = 0 MB; External fragmentation = 7 MB"
+    },
+    "answer": "A",
+    "explanation": "Internal waste = (4−1)+(8−7)+(8−7)+(16−14) = 3+1+1+2 = 7 MB. Every partition is occupied, so there is no external fragmentation."
+  },
+  {
+    "id": 47,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following correctly distinguishes a constant from a variable in Object-Oriented Programming using Java semantics?",
+    "options": {
+      "A": "A variable stores fixed data throughout program execution, while a constant's value may change dynamically.",
+      "B": "Both constants and variables can be modified freely within the same class.",
+      "C": "Constants are automatically public and static in all contexts.",
+      "D": "A constant is declared using the final keyword, ensuring its value cannot be altered once initialised."
+    },
+    "answer": "D",
+    "explanation": "In Java a constant is a final variable (often static final); once initialised it cannot be reassigned."
+  },
+  {
+    "id": 48,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In the Internet Multimedia Protocol Stack, which of the following correctly matches the protocol with its primary function in supporting multimedia communication?\nProtocol | Function\n1. RTP | a. Manages multimedia call setup, control and teardown\n2. RTCP | b. Provides feedback on quality of data delivery and synchronisation between streams\n3. SIP | c. Handles real-time delivery of audio/video streams\n4. RSVP | d. Reserves network resources and provides QoS guarantees",
+    "options": {
+      "A": "1-c, 2-b, 3-a, 4-d",
+      "B": "1-b, 2-a, 3-d, 4-c",
+      "C": "1-a, 2-c, 3-b, 4-d",
+      "D": "1-c, 2-a, 3-b, 4-d"
+    },
+    "answer": "A",
+    "explanation": "RTP carries real-time media, RTCP gives QoS feedback and synchronisation, SIP sets up/tears down sessions, RSVP reserves resources."
+  },
+  {
+    "id": 49,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A computer system has an 8-bit address bus. Addresses from 00000000 to 01111111 are used for memory, and addresses from 10000000 to 11111111 are used for I/O devices.\nIf each memory location stores one 8-bit word, which of the following statements is true?",
+    "options": {
+      "A": "The system can address 256 bytes of memory and 128 I/O ports.",
+      "B": "The system can address 128 words of memory and 256 I/O ports.",
+      "C": "The system can address 256 words of memory, all reserved for memory operations.",
+      "D": "The system can address a total of 128 bytes of memory and 128 I/O ports."
+    },
+    "answer": "D",
+    "explanation": "256 total addresses are split in half: 00–7F gives 128 one-byte memory locations and 80–FF gives 128 I/O port addresses."
+  },
+  {
+    "id": 50,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In one's complement form, what does the MSB (Most Significant Bit) indicate?",
+    "options": {
+      "A": "The number of bits in the binary number",
+      "B": "The parity of the number",
+      "C": "Whether the number is even or odd",
+      "D": "The sign of the number"
+    },
+    "answer": "D",
+    "explanation": "In signed representations such as one's complement, the MSB is the sign bit (0 positive, 1 negative)."
+  },
+  {
+    "id": 51,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In SQL, what does the command ALTER TABLE r ADD A D; do?",
+    "options": {
+      "A": "Adds a new attribute A of data type D to table r.",
+      "B": "Deletes attribute A from table r.",
+      "C": "Renames the attribute A in table r.",
+      "D": "Adds a new tuple named A to table r."
+    },
+    "answer": "A",
+    "explanation": "ALTER TABLE r ADD A D adds a column (attribute) A with domain/data type D to relation r; existing tuples get NULL for it."
+  },
+  {
+    "id": 52,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following shows the correct order of the four main activities in the Requirements Engineering process?",
+    "options": {
+      "A": "Requirements validation → Requirements elicitation → Feasibility study → Requirements specification",
+      "B": "Requirements specification → Requirements elicitation → Feasibility study → Requirements validation",
+      "C": "Feasibility study → Requirements elicitation and analysis → Requirements specification → Requirements validation",
+      "D": "Requirements elicitation → Requirements validation → Feasibility study → Requirements specification"
+    },
+    "answer": "C",
+    "explanation": "Sommerville's RE process: feasibility study, then elicitation and analysis, then specification, then validation."
+  },
+  {
+    "id": 53,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Consider the array [5, 1, 4, 2, 8]. After the first pass of Bubble Sort to sort array elements in ascending order, what is the state of the array?",
+    "options": {
+      "A": "[1, 2, 5, 4, 8]",
+      "B": "[1, 4, 2, 5, 8]",
+      "C": "[1, 2, 4, 5, 8]",
+      "D": "[5, 4, 2, 1, 8]"
+    },
+    "answer": "B",
+    "explanation": "Pass 1: swap 5,1 → [1,5,4,2,8]; swap 5,4 → [1,4,5,2,8]; swap 5,2 → [1,4,2,5,8]; 5<8 no swap. Result [1,4,2,5,8]."
+  },
+  {
+    "id": 54,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which statement correctly reads a string from a text file into a character array str?",
+    "options": {
+      "A": "read(fp, str, sizeof(str));",
+      "B": "fscanf(fp, \"%s\", &str);",
+      "C": "fgetc(fp, str);",
+      "D": "fgets(str, sizeof(str), fp);"
+    },
+    "answer": "D",
+    "explanation": "fgets(buffer, size, FILE*) reads a line safely into a char array. read() needs a file descriptor, fgetc takes only the stream, and fscanf should be passed str, not &str."
+  },
+  {
+    "id": 55,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following is a use of Compiler technology in embedded systems?",
+    "options": {
+      "A": "Generate efficient machine code for hardware constraints",
+      "B": "Manage power supply",
+      "C": "Handle database transactions",
+      "D": "Control user interface"
+    },
+    "answer": "A",
+    "explanation": "Embedded compilers generate compact, optimised code for limited memory, power and specific processors."
+  },
+  {
+    "id": 56,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "If SetConsoleMode() is called with an input handle (STD_INPUT_HANDLE), which of the following mode flags CANNOT be used?",
+    "options": {
+      "A": "ENABLE_LINE_INPUT",
+      "B": "ENABLE_WRAP_AT_EOL_OUTPUT",
+      "C": "ENABLE_PROCESSED_INPUT",
+      "D": "ENABLE_ECHO_INPUT"
+    },
+    "answer": "B",
+    "explanation": "ENABLE_WRAP_AT_EOL_OUTPUT is an output-mode flag meant for a screen buffer (output) handle; the others are input-mode flags."
+  },
+  {
+    "id": 57,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In an FCFS-scheduled system, five processes arrive at time 0:\nP1 (CPU-bound, 20 ms) and P2-P5 (I/O-bound, 2-5 ms).\nWhich outcome is most likely under FCFS?",
+    "options": {
+      "A": "CPU utilization improves because short processes preempt the long one.",
+      "B": "Average waiting time becomes minimal for all processes.",
+      "C": "Context switching increases as I/O-bound processes repeatedly interrupt P1.",
+      "D": "I/O-bound processes face starvation due to the convoy effect caused by P1."
+    },
+    "answer": "D",
+    "explanation": "FCFS is non-preemptive; short I/O-bound jobs queue behind the long CPU-bound P1 (convoy effect), raising waiting times. Strictly they are delayed rather than starved indefinitely."
+  },
+  {
+    "id": 58,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Consider the following binary tree:\nA\n/ \\\nB C\n/ \\ \\\nD E F\nIf an in-order traversal is performed on this tree, what will be the correct order of visiting nodes?",
+    "options": {
+      "A": "D B E A C F",
+      "B": "A D B E C F",
+      "C": "A B D E C F",
+      "D": "D E B A F C"
+    },
+    "answer": "A",
+    "explanation": "Tree: A has children B and C; B has D and E; C has right child F. In-order (left, root, right): D B E A C F."
+  },
+  {
+    "id": 59,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "When borrow = 1 in binary subtraction, what happens to the next higher bit position?",
+    "options": {
+      "A": "It increases by 1.",
+      "B": "It decreases by 1.",
+      "C": "It remains unchanged.",
+      "D": "It becomes 0."
+    },
+    "answer": "B",
+    "explanation": "A borrow takes 1 from the next higher bit, so that bit's value is effectively reduced by 1."
+  },
+  {
+    "id": 60,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A Mealy Machine outputs '1' when the current input bit is different from the previous input bit, otherwise it outputs '0'. Assume the previous input is 0 before the first symbol. What is the output sequence for the input string 'x = 10011'?",
+    "options": {
+      "A": "01011",
+      "B": "10101",
+      "C": "11010",
+      "D": "11100"
+    },
+    "answer": "C",
+    "explanation": "Compare each bit with the previous one (start 0): 1 vs 0 → 1; 0 vs 1 → 1; 0 vs 0 → 0; 1 vs 0 → 1; 1 vs 1 → 0. Output 11010."
+  },
+  {
+    "id": 61,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "The equivalent hexadecimal representation for the binary number 1011101.1101 is ______.",
+    "options": {
+      "A": "2E.D",
+      "B": "5D.D",
+      "C": "5B.B",
+      "D": "5D.E"
+    },
+    "answer": "B",
+    "explanation": "Group in fours from the point: 0101 1101 . 1101 = 5D.D."
+  },
+  {
+    "id": 62,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "If an NFA has 4 states, what is the maximum number of states possible in the equivalent DFA?",
+    "options": {
+      "A": "8",
+      "B": "32",
+      "C": "16",
+      "D": "4"
+    },
+    "answer": "C",
+    "explanation": "Subset construction can produce up to 2ⁿ = 2⁴ = 16 DFA states."
+  },
+  {
+    "id": 63,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A computer system has a 16-bit address bus and uses byte-addressable memory. The main memory consists of two memory chips, each of size 32 KB. If the address space begins at 0000H, which of the following represents the correct address range for the second memory chip?",
+    "options": {
+      "A": "0000H – FFFFH",
+      "B": "4000H – 7FFFH",
+      "C": "0000H – 7FFFH",
+      "D": "8000H – FFFFH"
+    },
+    "answer": "D",
+    "explanation": "32 KB = 8000H bytes. Chip 1 covers 0000H–7FFFH and chip 2 covers 8000H–FFFFH."
+  },
+  {
+    "id": 64,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following criteria does the KNN algorithm use to make decisions?",
+    "options": {
+      "A": "Gradient updates",
+      "B": "Random selection",
+      "C": "Majority vote among nearest neighbors",
+      "D": "Training model parameters"
+    },
+    "answer": "C",
+    "explanation": "k-NN classifies a point by the majority class among its k nearest neighbours (or averages them for regression); it has no trained parameters."
+  },
+  {
+    "id": 65,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which statement about assertions in a relational database is true regarding data validity?",
+    "options": {
+      "A": "They ensure only data type consistency.",
+      "B": "They are used only for referential integrity.",
+      "C": "They maintain data validity through complex or cross-table rules.",
+      "D": "They prevent duplicate primary keys."
+    },
+    "answer": "C",
+    "explanation": "SQL ASSERTIONs (CREATE ASSERTION … CHECK) express general constraints that can span multiple tables, beyond domain, key or referential constraints."
+  },
+  {
+    "id": 66,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In the Post Office Protocol (POP3), which of the following statements is true regarding message storage and retrieval?",
+    "options": {
+      "A": "POP3 allows selective message retrieval without downloading.",
+      "B": "Messages are permanently stored on the server even after retrieval by default.",
+      "C": "Once downloaded, messages are typically deleted from the server.",
+      "D": "POP3 requires a continuous connection for all message operations."
+    },
+    "answer": "C",
+    "explanation": "POP3 normally uses download-and-delete mode: mail is moved to the client and removed from the server (unlike IMAP)."
+  },
+  {
+    "id": 67,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In non-preemptive scheduling, when does context switching occur?",
+    "options": {
+      "A": "When a process is blocked",
+      "B": "Only when the process finishes",
+      "C": "Whenever a new process arrives",
+      "D": "On time slice expiry"
+    },
+    "answer": "B",
+    "explanation": "Official key B. Strictly, a non-preemptive scheduler switches when the running process terminates or voluntarily blocks (e.g. for I/O), so A is also a valid trigger; the key takes the textbook simplification."
+  },
+  {
+    "id": 68,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which data structure is most useful for implementing the symbol table during lexical analysis?",
+    "options": {
+      "A": "Linked List",
+      "B": "Hash Table",
+      "C": "Queue",
+      "D": "Stack"
+    },
+    "answer": "B",
+    "explanation": "Hash tables give near O(1) insert and lookup of identifiers, which is why symbol tables are usually hashed."
+  },
+  {
+    "id": 69,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In a banking system, a transaction T1 transfers ₹300 from Account A to Account B. Balances are stored in a table Accounts(AccNo, Balance) with the constraint:\nCHECK (Balance >= 0)\nSuppose the following sequence occurs:\n1. T1 deducts ₹300 from Account A.\n2. System crashes before adding ₹300 to Account B.\n3. The system restarts without recovery.\nWhich component of ACID has been compromised to the greatest extent in this case?",
+    "options": {
+      "A": "Durability",
+      "B": "Atomicity",
+      "C": "Isolation",
+      "D": "Consistency"
+    },
+    "answer": "B",
+    "explanation": "Only part of the transaction took effect and was not rolled back, which violates atomicity (all or nothing)."
+  },
+  {
+    "id": 70,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A data scientist is developing a predictive model for loan default detection using a dataset that contains labelled examples of previous loan applications marked as 'defaulted' or 'not defaulted'. However, during model training, the algorithm shows very high accuracy on training data but performs poorly on new unseen test data. Despite adding more labelled data, the issue persists.\nWhich of the following best explains the underlying problem in the supervised learning process?",
+    "options": {
+      "A": "The model suffers from overfitting due to poor generalisation.",
+      "B": "The dataset lacks sufficient labelling for supervised learning.",
+      "C": "The model applies an unsupervised clustering technique instead of classification.",
+      "D": "The algorithm fails due to lack of a defined loss function."
+    },
+    "answer": "A",
+    "explanation": "High training accuracy with poor test accuracy is the classic sign of overfitting (high variance, poor generalisation)."
+  },
+  {
+    "id": 71,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Consider the following Java code:\nclass Parent {\nint x = 10;\nvoid show() { System.out.println(\"Parent: \" + x); }\n}\nclass Child extends Parent {\nint x = 20;\nvoid show() { System.out.println(\"Child: \" + x); }\n}\npublic class Test {\npublic static void main(String[] args) {\nParent obj = new Child();\nSystem.out.println(obj.x);\nobj.show();\n}\n}\nWhat will be the output of this program?",
+    "options": {
+      "A": "10 Parent: 10",
+      "B": "20 Child: 20",
+      "C": "20 Parent: 10",
+      "D": "10 Child: 20"
+    },
+    "answer": "D",
+    "explanation": "Fields are not polymorphic: obj.x uses the reference type Parent, printing 10. Methods are overridden at run time, so obj.show() calls Child.show(), printing 'Child: 20'."
+  },
+  {
+    "id": 72,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following algorithms correctly traverses all elements of a one-dimensional array A from index lower_bound to upper_bound?",
+    "options": {
+      "A": "Step 1: SET I = upper_bound Step 2: Repeat Steps 3 to 4 while I >= lower_bound Step 3: Apply process to A[I+1] Step 4: SET I = I - 1 Step 5: EXIT",
+      "B": "Step 1: SET I = lower_bound Step 2: Repeat Steps 3 to 4 while I <= upper_bound Step 3: Apply process to A[I] Step 4: SET I = I + 1 Step 5: EXIT",
+      "C": "Step 1: SET I = lower_bound Step 2: Repeat Steps 3 to 4 while I < upper_bound Step 3: Apply process to A[I] Step 4: SET I = I + 1 Step 5: EXIT",
+      "D": "Step 1: SET I = lower_bound + 1 Step 2: Repeat Steps 3 to 4 while I <= upper_bound Step 3: Apply process to A[I] Step 4: SET I = I + 1 Step 5: EXIT"
+    },
+    "answer": "B",
+    "explanation": "Start at lower_bound and process A[I] while I <= upper_bound, incrementing I. C misses the last element, D the first, and A accesses the wrong indices."
+  },
+  {
+    "id": 73,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Analyse the following C program and predict its output.\n#include <stdio.h>\nint main() {\nFILE *fp;\nif ((fp = fopen(\"temp.txt\", \"r\")) == NULL)\nprintf(\"Error\");\nelse\nfclose(fp);\nfclose(fp);\nreturn 0;\n}",
+    "options": {
+      "A": "Closes file safely twice",
+      "B": "Compilation error",
+      "C": "Prints 'Error'",
+      "D": "Undefined behavior"
+    },
+    "answer": "D",
+    "explanation": "The second fclose(fp) runs unconditionally: it either closes an already-closed stream or is called with NULL. Both are undefined behaviour in C."
+  },
+  {
+    "id": 74,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "During an SMTP session, a client communicates with a mail server to send an email.\nConsider the following sequence of SMTP commands and responses observed in a network trace:\nS: 220 mail.example.com ESMTP Postfix\nC: HELO client.host.com\nS: 250 mail.example.com Hello client.host.com\nC: MAIL FROM:<alice@example.com>\nS: 250 OK\nC: RCPT TO:<bob@example.net>\nS: 550 No such user here\nC: RCPT TO:<carol@example.net>\nS: 250 OK\nC: DATA\nS: 354 End data with <CR><LF>.<CR><LF>\nC: [message body]\nS: 250 Message accepted for delivery\nC: QUIT\nS: 221 Bye\nBased on the SMTP protocol rules, which of the following statements is most accurate about this interaction?",
+    "options": {
+      "A": "The client successfully delivered the message to all recipients, including Bob and Carol.",
+      "B": "The server rejected the entire message because one recipient was invalid.",
+      "C": "The SMTP session was invalid because the client did not issue the EHLO command.",
+      "D": "The client successfully sent the message, but it will only be delivered to Carol, since Bob's address was rejected."
+    },
+    "answer": "D",
+    "explanation": "RCPT TO for Bob got 550 (rejected) while Carol got 250, and DATA was accepted, so the message goes only to Carol. HELO is a valid greeting."
+  },
+  {
+    "id": 75,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following is a default port number for FTP?",
+    "options": {
+      "A": "23",
+      "B": "24",
+      "C": "22",
+      "D": "21"
+    },
+    "answer": "D",
+    "explanation": "FTP uses port 21 for control (20 for active-mode data). 22 is SSH and 23 is Telnet."
+  },
+  {
+    "id": 76,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In the ID3 (Iterative Dichotomiser 3) algorithm used for building Decision Trees, which of the following statements is correct?",
+    "options": {
+      "A": "ID3 selects the feature with the lowest information gain at each node to maximise entropy.",
+      "B": "ID3 selects the feature with the highest information gain at each node to reduce uncertainty.",
+      "C": "ID3 splits the data randomly without considering entropy or information gain.",
+      "D": "ID3 can only be used for regression problems, not classification."
+    },
+    "answer": "B",
+    "explanation": "ID3 greedily splits on the attribute with the highest information gain (largest entropy reduction); it is a classification algorithm."
+  },
+  {
+    "id": 77,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following statements in Java will compile and execute successfully without violating keyword usage rules?",
+    "options": {
+      "A": "boolean null = false; System.out.println(null);",
+      "B": "int static = 10; System.out.println(static);",
+      "C": "float goto = 2.5f; System.out.println(goto);",
+      "D": "int _for = 5; System.out.println(_for);"
+    },
+    "answer": "D",
+    "explanation": "null is a literal, static is a keyword and goto is a reserved word, so they cannot be identifiers. _for is a valid identifier."
+  },
+  {
+    "id": 78,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following statements best characterises unsupervised learning in contrast to supervised learning?",
+    "options": {
+      "A": "It predicts output variables based on training with known labels.",
+      "B": "It discovers inherent patterns in unlabeled data without predefined outputs.",
+      "C": "It requires labeled data to group similar observations.",
+      "D": "It adjusts weight using error values between predicted and actual outputs."
+    },
+    "answer": "B",
+    "explanation": "Unsupervised learning (clustering, association, dimensionality reduction) finds structure in unlabeled data; A, C and D describe supervised learning."
+  },
+  {
+    "id": 79,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In a multimedia operating system, which of the following functionalities is most critical to ensure continuous playback of audio and video streams without jitter or frame drops?",
+    "options": {
+      "A": "File system encryption and access control",
+      "B": "Support for multiple user logins with access control",
+      "C": "Real-time process scheduling with deadline constraints",
+      "D": "Batch processing for background tasks"
+    },
+    "answer": "C",
+    "explanation": "Continuous media need real-time scheduling (e.g. EDF, rate-monotonic) so each frame/sample is processed before its deadline."
+  },
+  {
+    "id": 80,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Consider the following Java program:\nclass Demo {\nint x = 5;\nstatic int y = 10;\nvoid display() {\nint x = 20;\nSystem.out.println(x + \" \" + this.x + \" \" + y);\n}\n}\nclass Test {\nstatic int y = 50;\npublic static void main(String[] args) {\nDemo d = new Demo();\nd.display();\nSystem.out.println(d.y + \" \" + y);\n}\n}\nWhat will be the output of the program?",
+    "options": {
+      "A": "20 20 10 and 10 10",
+      "B": "20 5 50 and 10 10",
+      "C": "20 5 10 and 50 50",
+      "D": "20 5 10 and 10 50"
+    },
+    "answer": "D",
+    "explanation": "In display(), x is the local 20, this.x is the field 5 and y is Demo.y = 10, printing '20 5 10'. In main, d.y is Demo.y = 10 and y is Test.y = 50, printing '10 50'."
+  },
+  {
+    "id": 81,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In the process of converting a Moore machine to an equivalent Mealy machine, which of the following statements is true?",
+    "options": {
+      "A": "The number of states in the Mealy machine is always greater than that in the Moore machine.",
+      "B": "Mealy machine can produce outputs one input symbol earlier than the equivalent Moore machine.",
+      "C": "The Moore machine requires outputs to depend on both current state and input symbol.",
+      "D": "The conversion is not possible unless the Moore machine is deterministic."
+    },
+    "answer": "B",
+    "explanation": "Mealy outputs depend on state and current input, so they are produced on the transition, one step earlier than Moore outputs that depend on the state reached. Moore→Mealy never needs more states."
+  },
+  {
+    "id": 82,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In a neural network, which function introduces non-linearity?",
+    "options": {
+      "A": "Activation function",
+      "B": "Loss function",
+      "C": "Gradient function",
+      "D": "Cost function"
+    },
+    "answer": "A",
+    "explanation": "Activation functions such as ReLU, sigmoid and tanh introduce non-linearity; without them stacked layers collapse to a linear map."
+  },
+  {
+    "id": 83,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In an AND gate with two inputs A and B, the output Y is defined as Y=AB. Which of the following truth table entries correctly represents this logic?",
+    "options": {
+      "A": "A=0, B=0 → Y=1",
+      "B": "A=1, B=0 → Y=1",
+      "C": "A=1, B=1 → Y=1",
+      "D": "A=0, B=1 → Y=1"
+    },
+    "answer": "C",
+    "explanation": "An AND gate outputs 1 only when both inputs are 1."
+  },
+  {
+    "id": 84,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "What is called a textual, language-independent description of an algorithm used to plan and understand a solution?",
+    "options": {
+      "A": "Program",
+      "B": "Pseudocode",
+      "C": "Flowchart",
+      "D": "Compiler"
+    },
+    "answer": "B",
+    "explanation": "Pseudocode describes an algorithm in structured plain text, independent of any programming language; a flowchart is graphical."
+  },
+  {
+    "id": 85,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following assertions most accurately characterises the semantics of primitive data types as defined by the Java Language Specification?",
+    "options": {
+      "A": "The boolean data type can be implicitly converted to an integer type during arithmetic operations.",
+      "B": "The float and double types store decimal values using exact binary representation.",
+      "C": "All numeric data types in Java are unsigned.",
+      "D": "The char data type in Java is a 16-bit unsigned integer representing Unicode characters."
+    },
+    "answer": "D",
+    "explanation": "char is a 16-bit unsigned UTF-16 code unit (0–65535). boolean cannot convert to int, float/double are approximate IEEE 754, and byte/short/int/long are signed."
+  },
+  {
+    "id": 86,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A multimedia production team is developing an educational documentary that integrates narration, ambient sound, synchronised animations and live-action footage. The final output must maintain lip synchronisation, balanced audio mixing and seamless video transitions for both web streaming and broadcast-quality formats.\nWhich of the following production workflows ensures maximum synchronisation accuracy, audiovisual consistency and cross-platform compatibility?",
+    "options": {
+      "A": "Use only compressed streaming formats (like FLV or WMV) during editing to ensure real-time playback, and later convert to broadcast formats through transcoding.",
+      "B": "Record video and audio separately, use a clapperboard or timecode for synchronisation, perform multi-track audio mixing and colour grading, then export using broadcast-safe codecs (e.g., MXF or ProRes) and adaptive web formats (e.g., MP4/H.264).",
+      "C": "Focus on editing audio first, then align video clips visually using waveform approximation; export all content in uncompressed AVI format for highest fidelity.",
+      "D": "Capture all audio and video simultaneously using a single camera microphone, then edit directly on the timeline to minimise post-production steps."
+    },
+    "answer": "B",
+    "explanation": "Professional practice: dual-system recording synced by clapperboard/timecode, multitrack mixing and grading, then mastering in broadcast codecs plus web-friendly H.264 deliverables."
+  },
+  {
+    "id": 87,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which Unix System call is equivalent to Windows System call CreateFile()?",
+    "options": {
+      "A": "fopen()",
+      "B": "open()",
+      "C": "read()",
+      "D": "write()"
+    },
+    "answer": "B",
+    "explanation": "CreateFile() opens or creates a file and returns a handle, like the Unix system call open(). fopen() is a C library function, not a system call."
+  },
+  {
+    "id": 88,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Consider a DFS on a graph with vertices {A, B, C, D, E}.\nIf the traversal starts at A and discovers vertices in order A → B → C → D → E,\nwhat is the DFS finishing order?",
+    "options": {
+      "A": "Random order",
+      "B": "E, D, C, B, A",
+      "C": "A, B, C, D, E",
+      "D": "D, E, C, B, A"
+    },
+    "answer": "B",
+    "explanation": "Assuming each vertex is discovered from the previous one (a single chain), the deepest vertex E finishes first and the recursion unwinds back to A: E, D, C, B, A."
+  },
+  {
+    "id": 89,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following regular expressions defines an infinite language over the alphabet Σ = { , }?",
+    "options": {
+      "A": "aa",
+      "B": "(a+b)*",
+      "C": "a(a+b)a",
+      "D": "aa+bb"
+    },
+    "answer": "B",
+    "explanation": "Only the Kleene star generates strings of unbounded length, so (a+b)* is infinite; the others denote finite sets. (The alphabet symbols are missing in the paper; it should read Σ = {a, b}.)"
+  },
+  {
+    "id": 90,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "In the context of multimedia compositing, which of the following best describes the primary function of chroma keying used in live-action and post-production integration?",
+    "options": {
+      "A": "It isolates and removes a specific colour background to merge live-action footage with another visual element.",
+      "B": "It synchronises the motion paths of animated and static elements within a composition.",
+      "C": "It adjusts the brightness and contrast levels of multiple image layers.",
+      "D": "It enhances the texture mapping of 3D models to blend them with background scenes."
+    },
+    "answer": "A",
+    "explanation": "Chroma keying (green/blue screen) makes a chosen colour transparent so the subject can be composited over another background."
+  },
+  {
+    "id": 91,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following is NOT a valid location for source or result operands in a computer system?",
+    "options": {
+      "A": "Processor register",
+      "B": "Control Unit buffer",
+      "C": "Main or virtual memory",
+      "D": "Immediate value within the instruction"
+    },
+    "answer": "B",
+    "explanation": "Operands can be in registers, memory (main/virtual), the instruction itself (immediate) or I/O; the control unit has no programmer-visible operand buffer."
+  },
+  {
+    "id": 92,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following statements about domain constraints in a relational database is most accurate?",
+    "options": {
+      "A": "Domain constraints automatically enforce referential integrity between primary and foreign keys.",
+      "B": "Domain constraints ensure that each attribute's value belongs to a predefined set or type, and may restrict NULL values if specified.",
+      "C": "Domain constraints apply only to numeric attributes and are ignored for character or date types.",
+      "D": "Domain constraints define relationships between multiple attributes across different tables."
+    },
+    "answer": "B",
+    "explanation": "A domain constraint restricts an attribute to a data type/range/set of allowed values (and NOT NULL if declared). Referential integrity and cross-table rules are separate constraints."
+  },
+  {
+    "id": 93,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "The instruction STA 3000H performs which of the following operations?",
+    "options": {
+      "A": "Stores accumulator data into memory location 3000H",
+      "B": "Adds data from 3000H to accumulator",
+      "C": "Loads accumulator from memory location 3000H",
+      "D": "Moves data to register A"
+    },
+    "answer": "A",
+    "explanation": "In the 8085, STA addr (Store Accumulator Direct) copies the accumulator into the given memory address. LDA loads it."
+  },
+  {
+    "id": 94,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following correctly matches a grammar type with its corresponding language and accepting device in the Chomsky Hierarchy?",
+    "options": {
+      "A": "Type 0 — Recursively Enumerable Grammar — Linear Bounded Automaton",
+      "B": "Type 2 — Context-Free Grammar — Turing Machine",
+      "C": "Type 3 — Regular Grammar — Finite Automaton",
+      "D": "Type 1 — Context-Sensitive Grammar — Pushdown Automaton"
+    },
+    "answer": "C",
+    "explanation": "Type 0 ↔ Turing machine, Type 1 ↔ linear bounded automaton, Type 2 ↔ pushdown automaton, Type 3 ↔ finite automaton."
+  },
+  {
+    "id": 95,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "A table Account is defined as:\nCREATE TABLE Account (\nAccNo INT PRIMARY KEY,\nBalance DECIMAL(10,2) CHECK (Balance >= 500)\n);\nWhich sequence of operations violates data integrity without violating entity integrity?",
+    "options": {
+      "A": "Deleting an existing record",
+      "B": "Updating balance to 200",
+      "C": "Inserting a NULL value into AccNo",
+      "D": "Inserting a duplicate AccNo value"
+    },
+    "answer": "B",
+    "explanation": "Setting Balance to 200 breaks the CHECK (domain) constraint while the primary key is untouched. NULL or duplicate AccNo would violate entity integrity."
+  },
+  {
+    "id": 96,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "What is the function of the control bus in a computer system?",
+    "options": {
+      "A": "To connect peripheral devices",
+      "B": "To carry data between components",
+      "C": "To carry memory addresses",
+      "D": "To carry control signals"
+    },
+    "answer": "D",
+    "explanation": "The control bus carries control and timing signals (read/write, interrupt, clock, bus request/grant); data and address buses carry data and addresses."
+  },
+  {
+    "id": 97,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following identifiers is invalid in Java according to language rules?",
+    "options": {
+      "A": "String",
+      "B": "$_value123",
+      "C": "_main_",
+      "D": "3DModel"
+    },
+    "answer": "D",
+    "explanation": "A Java identifier cannot begin with a digit. String (a class name, not a keyword), $_value123 and _main_ are legal."
+  },
+  {
+    "id": 98,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Consider the following C program that creates and traverses a singly linked list. What will be the output?\n#include <stdio.h>\n#include <stdlib.h>\nstruct Node {\nint data;\nstruct Node *next;\n};\nint main() {\nstruct Node *head, *second, *third;\nhead = (struct Node*)malloc(sizeof(struct Node));\nsecond = (struct Node*)malloc(sizeof(struct Node));\nthird = (struct Node*)malloc(sizeof(struct Node));\nhead->data = 5;\nhead->next = second;\nsecond->data = 10;\nsecond->next = third;\nthird->data = 15;\nthird->next = NULL;\nstruct Node *ptr = head;\nwhile (ptr != NULL) {\nprintf(\"%d \", ptr->data);\nptr = ptr->next->next;\n}\nreturn 0;\n}",
+    "options": {
+      "A": "5 15",
+      "B": "5 10 15",
+      "C": "5 10",
+      "D": "Segmentation fault (runtime error)"
+    },
+    "answer": "D",
+    "explanation": "Prints 5, jumps to third and prints 15, then evaluates third->next->next = NULL->next, dereferencing NULL, which crashes. ('5 15' may appear before the crash if output is flushed, but the program ends in a segmentation fault.)"
+  },
+  {
+    "id": 99,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following statements about Software Engineering is most accurate according to its core principles?",
+    "options": {
+      "A": "Software Engineering emphasises systematic, disciplined and quantifiable approaches to software development, operation and maintenance.",
+      "B": "Software Engineering is concerned only with hardware-software integration during system design.",
+      "C": "Software Engineering principles apply only to large-scale industrial projects, not small software systems.",
+      "D": "Software Engineering focuses mainly on programming efficiency rather than maintenance and scalability."
+    },
+    "answer": "A",
+    "explanation": "This is the IEEE definition: the application of a systematic, disciplined, quantifiable approach to the development, operation and maintenance of software."
+  },
+  {
+    "id": 100,
+    "source_file": "BEL_PE_CS_2025_Question Response key",
+    "question": "Which of the following elements of graphic design primarily helps in creating depth, contrast and emphasis by controlling how light or dark an area appears?",
+    "options": {
+      "A": "Value",
+      "B": "Space",
+      "C": "Texture",
+      "D": "Colour"
+    },
+    "answer": "A",
+    "explanation": "In design, 'value' is the lightness or darkness of a tone, used to create contrast, depth and emphasis."
+  }
+]

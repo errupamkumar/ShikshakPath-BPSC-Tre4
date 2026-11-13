@@ -1,0 +1,1562 @@
+[
+  {
+    "id": 1,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "The possibility of errors is maximum in which of the following phase of SDLC ?",
+    "options": {
+      "A": "Design",
+      "B": "Coding",
+      "C": "Specification",
+      "D": "Installation and Maintenance"
+    },
+    "answer": "C",
+    "explanation": "Most defects originate in the requirements/specification phase, because ambiguous or incomplete specifications spread errors into every later phase."
+  },
+  {
+    "id": 2,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Cardinality in an Entity-Relationship diagram",
+    "options": {
+      "A": "refers to the number of higher level entities that are used in the ER model",
+      "B": "is used to show the ratio of one entity in relationship to another entity",
+      "C": "is used to show the order of the relationships between two entities",
+      "D": "gives the count of the number of entities involved in a single relationship"
+    },
+    "answer": "B",
+    "explanation": "Cardinality (cardinality ratio) gives how many instances of one entity relate to instances of another, e.g. 1:1, 1:N, M:N."
+  },
+  {
+    "id": 3,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "The ISO Quality Assurance Standard that applies to Software Engineering is",
+    "options": {
+      "A": "ISO 9000",
+      "B": "ISO 9001",
+      "C": "ISO 9002",
+      "D": "ISO 9003"
+    },
+    "answer": "B",
+    "explanation": "ISO 9001 covers design, development, production, installation and servicing, so it applies to software engineering (with guidance in ISO 9000-3)."
+  },
+  {
+    "id": 4,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Software engineering primarily aims on",
+    "options": {
+      "A": "reliable software",
+      "B": "cost effective software",
+      "C": "reliable and cost effective software",
+      "D": "none of the above"
+    },
+    "answer": "C",
+    "explanation": "Software engineering aims to produce reliable, high-quality software within budget and schedule, i.e. reliable and cost-effective software."
+  },
+  {
+    "id": 5,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Software feasibility is based on which of the following :",
+    "options": {
+      "A": "Business and marketing concerns",
+      "B": "Scope, constraints, market",
+      "C": "Technology, finance, time, resources",
+      "D": "Technical process of the developers"
+    },
+    "answer": "C",
+    "explanation": "Feasibility studies assess technical, economic (financial), schedule (time) and resource feasibility."
+  },
+  {
+    "id": 6,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "The division of system into components, processes and sub system is called",
+    "options": {
+      "A": "System Analysis",
+      "B": "System Design",
+      "C": "Programming",
+      "D": "Functional Decomposition"
+    },
+    "answer": "D",
+    "explanation": "Breaking a system into components, processes and subsystems is called functional decomposition."
+  },
+  {
+    "id": 7,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "A turnkey project includes",
+    "options": {
+      "A": "Hardware",
+      "B": "Software",
+      "C": "Training",
+      "D": "All the above"
+    },
+    "answer": "D",
+    "explanation": "A turnkey project delivers a complete ready-to-use system: hardware, software, installation and training."
+  },
+  {
+    "id": 8,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "The worst type of coupling is",
+    "options": {
+      "A": "Control coupling",
+      "B": "Data coupling",
+      "C": "Content coupling",
+      "D": "Stamp coupling"
+    },
+    "answer": "C",
+    "explanation": "Content coupling, where one module directly modifies or depends on another module's internals, is the highest and worst form of coupling."
+  },
+  {
+    "id": 9,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "CASE Tool is",
+    "options": {
+      "A": "Computer Aided Software Engineering",
+      "B": "Component Aided Software Engineering",
+      "C": "Constructive Aided Software Engineering",
+      "D": "Computer Analysis Software Engineering"
+    },
+    "answer": "A",
+    "explanation": "CASE stands for Computer Aided Software Engineering."
+  },
+  {
+    "id": 10,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Pseudocode can replace",
+    "options": {
+      "A": "Flowcharts",
+      "B": "Structure charts",
+      "C": "Cause-effect graphs Decision tables",
+      "D": "None of these"
+    },
+    "answer": "A",
+    "explanation": "Pseudocode and flowcharts both describe program logic, so pseudocode can be used instead of a flowchart."
+  },
+  {
+    "id": 11,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Project Indicator enables a software project manager to",
+    "options": {
+      "A": "Assess the status of ongoing project",
+      "B": "Track potential risks",
+      "C": "Uncover potential areas before they go critical",
+      "D": "All the above"
+    },
+    "answer": "D",
+    "explanation": "Project indicators help assess project status, track risks, find problem areas before they become critical, and adjust work flow."
+  },
+  {
+    "id": 12,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Site for Alpha testing is",
+    "options": {
+      "A": "Software Company",
+      "B": "Installation Place",
+      "C": "Anywhere",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "Alpha testing is done by users at the developer's site; beta testing is done at the customer's site."
+  },
+  {
+    "id": 13,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Cohesion and Coupling can be represented using",
+    "options": {
+      "A": "Cause Effect Graph",
+      "B": "Dependence Matrix",
+      "C": "SRS",
+      "D": "Structure Charts"
+    },
+    "answer": "D",
+    "explanation": "Structure charts show modules and the data/control passed between them, which shows cohesion and coupling."
+  },
+  {
+    "id": 14,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Black box testing is some time called ?",
+    "options": {
+      "A": "Data Flow Testing",
+      "B": "Behavioral testing",
+      "C": "Loop testing",
+      "D": "Graph based testing"
+    },
+    "answer": "B",
+    "explanation": "Black-box testing checks functional behaviour against requirements without looking at code, so it is also called behavioural testing."
+  },
+  {
+    "id": 15,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "The most important feature of spiral model is",
+    "options": {
+      "A": "Requirement analysis",
+      "B": "Risk management",
+      "C": "Quality management",
+      "D": "Configuration management"
+    },
+    "answer": "B",
+    "explanation": "Boehm's spiral model is risk-driven: each loop includes explicit risk analysis."
+  },
+  {
+    "id": 16,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "A COCOMO model is",
+    "options": {
+      "A": "Common Cost Estimation Model",
+      "B": "Constructive Cost Estimation Model",
+      "C": "Complete Cost Estimation Model",
+      "D": "Comprehensive Cost Estimation Model"
+    },
+    "answer": "B",
+    "explanation": "COCOMO is Boehm's COnstructive COst MOdel for estimating effort and schedule."
+  },
+  {
+    "id": 17,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "The term HIPO is",
+    "options": {
+      "A": "Hierarchical Input Process Output",
+      "B": "System Analysis and Design Aid",
+      "C": "Documentation Technique",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "HIPO (Hierarchical Input Process Output) is both a system analysis/design aid and a documentation technique."
+  },
+  {
+    "id": 18,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Key process areas of CMM level 4 are also classified by a process which is",
+    "options": {
+      "A": "CMM level 2",
+      "B": "CMM level 3",
+      "C": "CMM level 5",
+      "D": "All of the above"
+    },
+    "answer": "C",
+    "explanation": "CMM levels are cumulative: an organisation at level 5 must satisfy all KPAs of level 4 (and lower), so level 4 KPAs also belong to level 5."
+  },
+  {
+    "id": 19,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which is not a Software Life Cycle Model ?",
+    "options": {
+      "A": "Spiral model",
+      "B": "Waterfall model",
+      "C": "Prototyping model",
+      "D": "Capability maturity model"
+    },
+    "answer": "D",
+    "explanation": "CMM is a process maturity framework, not a life-cycle model."
+  },
+  {
+    "id": 20,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "By metadata we mean",
+    "options": {
+      "A": "very large data",
+      "B": "data about data",
+      "C": "data dictionary",
+      "D": "meaningful data"
+    },
+    "answer": "B",
+    "explanation": "Metadata is data that describes other data."
+  },
+  {
+    "id": 21,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "A data dictionary has information about",
+    "options": {
+      "A": "every data element in a data flow",
+      "B": "only key data element, in a data flow",
+      "C": "only important data elements in a data flow",
+      "D": "only numeric data elements in a data flow"
+    },
+    "answer": "A",
+    "explanation": "A data dictionary defines every data element, data flow and data store in the system."
+  },
+  {
+    "id": 22,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "The term parallel run refers to",
+    "options": {
+      "A": "The same job run on two computers to test their speeds",
+      "B": "The processing of two different jobs initiated from two terminals",
+      "C": "The concurrent operations of existing system and the new system",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "In parallel conversion, the old and new systems run at the same time until the new one is shown to be reliable."
+  },
+  {
+    "id": 23,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Tracing of any input record or process chronologically that has been performed on a system is an",
+    "options": {
+      "A": "Audit trail",
+      "B": "Report generation",
+      "C": "Batch processing",
+      "D": "Conversion"
+    },
+    "answer": "A",
+    "explanation": "An audit trail is a chronological record that lets each transaction be traced through the system."
+  },
+  {
+    "id": 24,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Good system design prevents data entry errors by\n(i) Designing good forms with plenty of space to write in block capitals\n(ii) By giving clear instructions to a user on how to fill a form\n(iii) Reducing keystrokes of an operator\n(iv) Designing good keyboard",
+    "options": {
+      "A": "(i)",
+      "B": "(i), (ii), (iv)",
+      "C": "(i), (ii)",
+      "D": "(iii) and (iv)"
+    },
+    "answer": "C",
+    "explanation": "Well-designed source forms with enough space and clear filling instructions prevent errors at the data-capture stage; keyboard design is not part of system design."
+  },
+  {
+    "id": 25,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "In interactive data input a menu is used to",
+    "options": {
+      "A": "enter new data",
+      "B": "add/delete data",
+      "C": "select one out of many alternatives often by a mouse click",
+      "D": "detect errors in data input"
+    },
+    "answer": "C",
+    "explanation": "A menu presents a list of options so the user can pick one, often with a mouse click."
+  },
+  {
+    "id": 26,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "In a system flowchart, the manual data input is expressed by symbol of",
+    "options": {
+      "A": "Online storage",
+      "B": "Keyboard symbol for input",
+      "C": "Rectangle",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "Manual input is drawn with the slanted-top quadrilateral called the manual input (keyboard) symbol."
+  },
+  {
+    "id": 27,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Decision tree uses",
+    "options": {
+      "A": "Pictorial depiction of alternate conditions",
+      "B": "Nodes and branches",
+      "C": "Consequences of various depicted alternatives",
+      "D": "All the above"
+    },
+    "answer": "D",
+    "explanation": "A decision tree uses nodes and branches to show alternative conditions and their resulting actions."
+  },
+  {
+    "id": 28,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "In interactive data input terminal commands are normally used to",
+    "options": {
+      "A": "enter new data",
+      "B": "add/delete data",
+      "C": "select one out of many alternatives often by a mouse click",
+      "D": "detect errors in data input"
+    },
+    "answer": "B",
+    "explanation": "Terminal commands (such as ADD, DELETE) are typed to change records, i.e. to add or delete data."
+  },
+  {
+    "id": 29,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "A code is useful to represent a key field because",
+    "options": {
+      "A": "it is a concise representation of the field",
+      "B": "it is usually done by all",
+      "C": "it is generally a good idea",
+      "D": "it is needed in database design"
+    },
+    "answer": "A",
+    "explanation": "Codes give a short, unique, unambiguous representation of key fields, saving space and reducing entry errors."
+  },
+  {
+    "id": 30,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Modularity",
+    "options": {
+      "A": "is a feature of all programming languages",
+      "B": "helps make large programmes more understandable",
+      "C": "both (1) and (2)",
+      "D": "none of these"
+    },
+    "answer": "B",
+    "explanation": "Modularity splits a large program into independent units, making it easier to understand; not all languages support it directly."
+  },
+  {
+    "id": 31,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which of the following is a tool in design phase ?",
+    "options": {
+      "A": "Abstraction",
+      "B": "Refinement",
+      "C": "Information hiding",
+      "D": "All of these"
+    },
+    "answer": "D",
+    "explanation": "Abstraction, stepwise refinement and information hiding are all basic design concepts."
+  },
+  {
+    "id": 32,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Top-down design does not require",
+    "options": {
+      "A": "step wise refinement",
+      "B": "loop invariants",
+      "C": "flow charting",
+      "D": "modularity"
+    },
+    "answer": "B",
+    "explanation": "Top-down design uses stepwise refinement and modularity; loop invariants belong to program verification, not design."
+  },
+  {
+    "id": 33,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "In a decision table if there are 3 variables and 3 rules, it implies",
+    "options": {
+      "A": "specifications may not be complete",
+      "B": "design could be faulty",
+      "C": "coding will be incorrect",
+      "D": "all of these"
+    },
+    "answer": "A",
+    "explanation": "Three binary conditions need 2^3 = 8 rules for completeness; having only 3 rules suggests the specification is incomplete."
+  },
+  {
+    "id": 34,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "A structured program",
+    "options": {
+      "A": "can be reduced to control structures",
+      "B": "is generally more complicated than nonstructured program",
+      "C": "can only be modified by the person who wrote it",
+      "D": "all of these"
+    },
+    "answer": "A",
+    "explanation": "By the Böhm–Jacopini theorem, a structured program can be expressed using only sequence, selection and iteration control structures."
+  },
+  {
+    "id": 35,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Use of recursion",
+    "options": {
+      "A": "enhances logical clarity and reduces code size",
+      "B": "makes debugging easier",
+      "C": "reduces execution time",
+      "D": "makes software bug free"
+    },
+    "answer": "A",
+    "explanation": "Recursion often gives clearer and shorter code, but it usually costs execution time and stack space."
+  },
+  {
+    "id": 36,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "A desirable property of module is",
+    "options": {
+      "A": "independency",
+      "B": "low cohesiveness",
+      "C": "high coupling",
+      "D": "multi-functional"
+    },
+    "answer": "A",
+    "explanation": "Good modules are independent (high cohesion, low coupling)."
+  },
+  {
+    "id": 37,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "The graph theoretic concept will be useful in software testing is",
+    "options": {
+      "A": "Cyclomatic number",
+      "B": "Hamiltonian circuit",
+      "C": "Euclidean cycle",
+      "D": "None of these"
+    },
+    "answer": "A",
+    "explanation": "McCabe's cyclomatic number V(G) = E − N + 2 of the control-flow graph gives the number of independent paths to test."
+  },
+  {
+    "id": 38,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "When the ERASE command is used",
+    "options": {
+      "A": "the file content is erased",
+      "B": "the file name is deleted from the directories on the disk",
+      "C": "both (1) and (2)",
+      "D": "none of these"
+    },
+    "answer": "B",
+    "explanation": "ERASE/DEL removes the directory entry and frees the space, but the data stays on the disk until it is overwritten."
+  },
+  {
+    "id": 39,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Control structures include",
+    "options": {
+      "A": "iteration",
+      "B": "rendezvous statements",
+      "C": "exception statements",
+      "D": "all of these"
+    },
+    "answer": "D",
+    "explanation": "Control structures cover iteration and selection, and in languages such as Ada also rendezvous (task synchronisation) and exception handling."
+  },
+  {
+    "id": 40,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "All programming languages",
+    "options": {
+      "A": "are compatible with each other",
+      "B": "can be supported by any operating system",
+      "C": "have the same syntax",
+      "D": "none of these"
+    },
+    "answer": "D",
+    "explanation": "Languages differ in syntax and compatibility and are not supported by every OS, so none of the statements is true."
+  },
+  {
+    "id": 41,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "TCP/IP is a:",
+    "options": {
+      "A": "Network Hardware",
+      "B": "Network Software",
+      "C": "Protocol",
+      "D": "None of these"
+    },
+    "answer": "C",
+    "explanation": "TCP/IP is a suite of communication protocols."
+  },
+  {
+    "id": 42,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which is the lowest layer of TCP/IP model ?",
+    "options": {
+      "A": "Host to Host Layer",
+      "B": "Network Access Layers",
+      "C": "Internet Layer",
+      "D": "Application Layer"
+    },
+    "answer": "B",
+    "explanation": "The TCP/IP layers from bottom up are Network Access (Link), Internet, Host-to-Host (Transport) and Application."
+  },
+  {
+    "id": 43,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which IEEE standard is developed for CSMA/CD ?",
+    "options": {
+      "A": "IEEE 802.1",
+      "B": "IEEE 802.2",
+      "C": "IEEE 802.3",
+      "D": "IEEE 802.4"
+    },
+    "answer": "C",
+    "explanation": "IEEE 802.3 (Ethernet) uses CSMA/CD; 802.4 is token bus."
+  },
+  {
+    "id": 44,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "HTTP stands for",
+    "options": {
+      "A": "Hyper Test Transfer Protocol",
+      "B": "High Tension Transmission Protocol",
+      "C": "Hyper-text Transfer Protocol",
+      "D": "Hyper Top Text Protocol"
+    },
+    "answer": "C",
+    "explanation": "HTTP is HyperText Transfer Protocol."
+  },
+  {
+    "id": 45,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "What loads and executes at client side in Internet ?",
+    "options": {
+      "A": "Object",
+      "B": "Class",
+      "C": "JSP",
+      "D": "Applet"
+    },
+    "answer": "D",
+    "explanation": "A Java applet is downloaded and run in the client's browser; JSP runs on the server."
+  },
+  {
+    "id": 46,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Keyword used for dynamic method resolution ?",
+    "options": {
+      "A": "abstract",
+      "B": "dynamic",
+      "C": "virtual",
+      "D": "typeid"
+    },
+    "answer": "C",
+    "explanation": "In C++, declaring a function virtual makes calls to it resolve at run time (dynamic binding)."
+  },
+  {
+    "id": 47,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Class is",
+    "options": {
+      "A": "Collection of objects",
+      "B": "Return type",
+      "C": "A parameter",
+      "D": "A template of object to be created"
+    },
+    "answer": "D",
+    "explanation": "A class is a blueprint/template from which objects are created."
+  },
+  {
+    "id": 48,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which is the fastest port for data transfer ?",
+    "options": {
+      "A": "USB",
+      "B": "Serial",
+      "C": "Parallel",
+      "D": "FireWire"
+    },
+    "answer": "D",
+    "explanation": "Among these, FireWire (IEEE 1394, up to 400/800 Mbps sustained) is fastest; serial and parallel ports are far slower."
+  },
+  {
+    "id": 49,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which IP address is reserved for loop back or local host ?",
+    "options": {
+      "A": "192.168.0.0",
+      "B": "127.0.0.0",
+      "C": "127.0.0.1",
+      "D": "None of these"
+    },
+    "answer": "C",
+    "explanation": "127.0.0.1 is the standard loopback (localhost) address."
+  },
+  {
+    "id": 50,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "The size of the IPv4 is :",
+    "options": {
+      "A": "16 Bits",
+      "B": "32 Bits",
+      "C": "64 Bits",
+      "D": "128 Bits"
+    },
+    "answer": "B",
+    "explanation": "An IPv4 address is 32 bits; IPv6 is 128 bits."
+  },
+  {
+    "id": 51,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Object oriented programming tends to achieve",
+    "options": {
+      "A": "High coupling, Low cohesion",
+      "B": "High coupling, High cohesion",
+      "C": "Low coupling, High cohesion",
+      "D": "Low coupling, Low cohesion"
+    },
+    "answer": "C",
+    "explanation": "Good OO design aims for highly cohesive classes with low coupling between them."
+  },
+  {
+    "id": 52,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Signature of a method specifies",
+    "options": {
+      "A": "Authentication process",
+      "B": "Return type, name and number of arguments",
+      "C": "Inheritance",
+      "D": "About method body"
+    },
+    "answer": "B",
+    "explanation": "A method signature describes the method's name and parameter list (and, in the broader sense used here, its return type), not its body."
+  },
+  {
+    "id": 53,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Polymorphism is achieved using",
+    "options": {
+      "A": "Method overloading",
+      "B": "Method passing",
+      "C": "Aliasing",
+      "D": "All of the above"
+    },
+    "answer": "A",
+    "explanation": "Method overloading gives compile-time polymorphism (overriding gives run-time polymorphism)."
+  },
+  {
+    "id": 54,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "A condition that is caused by run-time error in program is known as",
+    "options": {
+      "A": "Syntax Error",
+      "B": "Semantic Error",
+      "C": "Fault",
+      "D": "Exception"
+    },
+    "answer": "D",
+    "explanation": "An exception is an abnormal condition raised during program execution."
+  },
+  {
+    "id": 55,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Java applets are used to create ______ applications.",
+    "options": {
+      "A": "Graphical",
+      "B": "User interactive",
+      "C": "Both (1) and (2)",
+      "D": "None of these"
+    },
+    "answer": "C",
+    "explanation": "Applets give graphical and interactive content inside web pages."
+  },
+  {
+    "id": 56,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which of the following is not a primitive data type?",
+    "options": {
+      "A": "Boolean",
+      "B": "byte",
+      "C": "string",
+      "D": "double"
+    },
+    "answer": "C",
+    "explanation": "String is a class (reference type) in Java; byte, double and boolean are primitives."
+  },
+  {
+    "id": 57,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Tool used to compile java code is",
+    "options": {
+      "A": "java",
+      "B": "javac",
+      "C": "jar",
+      "D": "javadoc"
+    },
+    "answer": "B",
+    "explanation": "javac compiles .java source into .class bytecode; java runs it."
+  },
+  {
+    "id": 58,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Superclass of all classes in java",
+    "options": {
+      "A": "Instance class",
+      "B": "Super",
+      "C": "Object",
+      "D": "Power"
+    },
+    "answer": "C",
+    "explanation": "java.lang.Object is the root of the Java class hierarchy."
+  },
+  {
+    "id": 59,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "What common technique attempts to save time and energy by reducing redundant work in object-oriented programming ?",
+    "options": {
+      "A": "Reduce lines of programming",
+      "B": "Reuse of code",
+      "C": "Reduce size of systems being developed",
+      "D": "Merging different systems together"
+    },
+    "answer": "B",
+    "explanation": "Code reuse (through inheritance, composition and libraries) avoids rewriting existing work."
+  },
+  {
+    "id": 60,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "What term is used to describe the internal representation of an object that is hidden from view outside the object's definition?",
+    "options": {
+      "A": "Encapsulation",
+      "B": "Expandable",
+      "C": "Polymorphism",
+      "D": "Inheritance"
+    },
+    "answer": "A",
+    "explanation": "Encapsulation bundles data with methods and hides the internal representation from outside code."
+  },
+  {
+    "id": 61,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "What part of object-oriented technology defines superclass and subclass relationships?",
+    "options": {
+      "A": "Inheritance",
+      "B": "Scalability",
+      "C": "Encapsulation",
+      "D": "Polymorphism"
+    },
+    "answer": "A",
+    "explanation": "Inheritance creates the is-a relationship between a superclass and its subclasses."
+  },
+  {
+    "id": 62,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "JVM is able to access class having main method without creating any object because",
+    "options": {
+      "A": "main method is the first method to be declared",
+      "B": "that is its inherent property",
+      "C": "it makes explicit call to main method",
+      "D": "main method is declared as public and static"
+    },
+    "answer": "D",
+    "explanation": "main is public (accessible to the JVM) and static (callable on the class without an instance)."
+  },
+  {
+    "id": 63,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Unicode character set in java contains",
+    "options": {
+      "A": "20 bits",
+      "B": "32 bits",
+      "C": "64 bits",
+      "D": "16 bits"
+    },
+    "answer": "D",
+    "explanation": "A Java char is a 16-bit Unicode (UTF-16) code unit."
+  },
+  {
+    "id": 64,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which of the statements is true in a protected derivation of a derived class from a base class ?",
+    "options": {
+      "A": "Private members of the base class become protected members of the derived class",
+      "B": "Protected members of the base class become public members of the derived class",
+      "C": "Public members of the base class become protected members of the derived class",
+      "D": "Protected derivation does not affect private and protected members of the derived class"
+    },
+    "answer": "C",
+    "explanation": "In C++ protected inheritance, public and protected base members become protected in the derived class; private members stay inaccessible."
+  },
+  {
+    "id": 65,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "The keyword friend does not appear in",
+    "options": {
+      "A": "The class allowing access to another class",
+      "B": "The class desiring access to another class",
+      "C": "The private section of a class",
+      "D": "The public section of a class"
+    },
+    "answer": "B",
+    "explanation": "The friend declaration is written inside the class that grants access; the class receiving access does not use the keyword."
+  },
+  {
+    "id": 66,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "In which case is it mandatory to provide a destructor in a class ?",
+    "options": {
+      "A": "Almost in every class",
+      "B": "Class for which two or more than two objects will be created",
+      "C": "Class for which copy constructor is defined",
+      "D": "Class whose objects will be created dynamically"
+    },
+    "answer": "D",
+    "explanation": "When objects (or their members) are allocated dynamically, a destructor is needed to free that memory and avoid leaks."
+  },
+  {
+    "id": 67,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Match the appropriate columns :\nColumns I: a. Check style  b. JVM  c. Javadoc  d. Jdb\nColumns II: I. declarations and documentation parser  II. debugger for java  III. coding standard  IV. abstract computer for java programs",
+    "options": {
+      "A": "a-I, b-II, c-III, d-IV",
+      "B": "a-III, b-II, c-I, d-IV",
+      "C": "a-IV, b-III, c-II, d-I",
+      "D": "a-III, b-IV, c-I, d-II"
+    },
+    "answer": "D",
+    "explanation": "Checkstyle enforces coding standards, the JVM is an abstract computer for Java programs, Javadoc parses declarations and doc comments, and jdb is the Java debugger."
+  },
+  {
+    "id": 68,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "In a switch block, each case statement is terminated by",
+    "options": {
+      "A": "goto",
+      "B": "continue",
+      "C": "exit()",
+      "D": "break"
+    },
+    "answer": "D",
+    "explanation": "break ends a case so control does not fall through to the next case."
+  },
+  {
+    "id": 69,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Maximum number of template arguments in a function template is",
+    "options": {
+      "A": "One",
+      "B": "Two",
+      "C": "Three",
+      "D": "Many"
+    },
+    "answer": "D",
+    "explanation": "A C++ template can take any number of template parameters."
+  },
+  {
+    "id": 70,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which of the following is example of encapsulation ?",
+    "options": {
+      "A": "Steering wheel of the car",
+      "B": "Car",
+      "C": "Color of the car",
+      "D": "Music system of the car"
+    },
+    "answer": "B",
+    "explanation": "A car as a whole bundles its components and hides their internal working behind a simple interface, which is encapsulation."
+  },
+  {
+    "id": 71,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "What is the difference between virtual functions and pure virtual functions ?",
+    "options": {
+      "A": "A virtual function must have a definition in the class in which it is declared. A pure virtual function does not provide a definition.",
+      "B": "A virtual function does not provide a definition. A pure virtual function must have a definition in the class in which it is declared.",
+      "C": "Both are same",
+      "D": "None of these"
+    },
+    "answer": "A",
+    "explanation": "A virtual function has a body that derived classes may override; a pure virtual function (= 0) has no definition there and makes the class abstract."
+  },
+  {
+    "id": 72,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "An unconditional control structure is",
+    "options": {
+      "A": "do-while",
+      "B": "if",
+      "C": "goto",
+      "D": "switch-case"
+    },
+    "answer": "C",
+    "explanation": "goto transfers control without testing any condition."
+  },
+  {
+    "id": 73,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "What is NOT true about interfaces ?",
+    "options": {
+      "A": "Interfaces can be instantiated",
+      "B": "There are no method bodies in interfaces",
+      "C": "An interface is a reference type",
+      "D": "Interfaces can be extended by other interfaces"
+    },
+    "answer": "A",
+    "explanation": "An interface cannot be instantiated directly; it must be implemented by a class."
+  },
+  {
+    "id": 74,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which statements about the C# language are true ?",
+    "options": {
+      "A": "C# supports both procedural and object-oriented programming.",
+      "B": "C# is only a procedural language.",
+      "C": "C# is only an object-oriented.",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "C# supports procedural code (static methods, structured control flow) as well as full object-oriented programming."
+  },
+  {
+    "id": 75,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "______ is a blueprint or prototype that defines the variables and the methods common to all objects of a certain kind.\nSelect the best word to complete this sentence.",
+    "options": {
+      "A": "Class",
+      "B": "Inheritance",
+      "C": "Polymorphism",
+      "D": "Aggregation"
+    },
+    "answer": "A",
+    "explanation": "A class defines the variables and methods common to all its objects."
+  },
+  {
+    "id": 76,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Given\nclass A {\nint a;\nint subtract(int a) {\n\\\\a?\nWhich key word is used to address the conflict occurring between instance variable (a) and parameter (a) ?",
+    "options": {
+      "A": "super",
+      "B": "that",
+      "C": "inline",
+      "D": "this"
+    },
+    "answer": "D",
+    "explanation": "this.a refers to the instance variable when a parameter or local variable shadows it."
+  },
+  {
+    "id": 77,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "In Java, 'new' keyword is used to",
+    "options": {
+      "A": "Allocate memory corresponding to object",
+      "B": "Create a new class variable",
+      "C": "Create a new instance variable",
+      "D": "Calling default constructor"
+    },
+    "answer": "A",
+    "explanation": "new allocates heap memory for an object and calls its constructor."
+  },
+  {
+    "id": 78,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "What is garbage collection in the context of Java?",
+    "options": {
+      "A": "The operating system periodically deletes all of the java files available on the system.",
+      "B": "Any package imported in a program and not used is automatically deleted.",
+      "C": "When all references to an object are gone, the memory used by the object is automatically reclaimed.",
+      "D": "The JVM checks the output of any Java program and deletes anything that doesn't make sense."
+    },
+    "answer": "C",
+    "explanation": "The garbage collector automatically frees memory of objects that are no longer reachable."
+  },
+  {
+    "id": 79,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Everything needs to be incorporated in classes in Java. So primitive variables (int, float) can be directly defined because",
+    "options": {
+      "A": "it is explicit",
+      "B": "of Wrapper Classes",
+      "C": "of Inner classes",
+      "D": "All of these"
+    },
+    "answer": "B",
+    "explanation": "Each primitive has a wrapper class (Integer, Float, ...) that lets it be treated as an object when needed."
+  },
+  {
+    "id": 80,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "int occupies ______ bytes in java.",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "8",
+      "D": "10"
+    },
+    "answer": "B",
+    "explanation": "A Java int is always 32 bits (4 bytes), whatever the platform."
+  },
+  {
+    "id": 81,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which of these field declarations are legal within the body of an interface?",
+    "options": {
+      "A": "private final static int answer = 42",
+      "B": "public static int answer = 42",
+      "C": "final static answer = 42",
+      "D": "int answer"
+    },
+    "answer": "B",
+    "explanation": "Interface fields are implicitly public static final and must be initialised; private is not allowed, (3) has no type, and (4) is not initialised."
+  },
+  {
+    "id": 82,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "A package is a collection of",
+    "options": {
+      "A": "Classes",
+      "B": "Interfaces",
+      "C": "Classes and interfaces",
+      "D": "Editing tools and interfaces"
+    },
+    "answer": "C",
+    "explanation": "A Java package groups related classes and interfaces."
+  },
+  {
+    "id": 83,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "<< is a",
+    "options": {
+      "A": "Special operator",
+      "B": "Arithmetic operator",
+      "C": "Bitwise operator",
+      "D": "Conditional operator"
+    },
+    "answer": "C",
+    "explanation": "<< is the bitwise left-shift operator."
+  },
+  {
+    "id": 84,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which of the following variable declarations would NOT compile in a java program ?",
+    "options": {
+      "A": "int var;",
+      "B": "int VAR;",
+      "C": "int 1_var;",
+      "D": "int var_1"
+    },
+    "answer": "C",
+    "explanation": "Java identifiers cannot begin with a digit, so 1_var is illegal. (Option 4 as printed also lacks a semicolon; the intended answer is option 3.)"
+  },
+  {
+    "id": 85,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "All exception types are subclasses of the built-in class",
+    "options": {
+      "A": "Exception",
+      "B": "RuntimeException",
+      "C": "Throwable",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "Throwable is the root of all exceptions and errors in Java."
+  },
+  {
+    "id": 86,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Autoboxing is the term used for",
+    "options": {
+      "A": "Automatic conversion of primitive value to wrapper object",
+      "B": "Automatic conversion of wrapper object to primitive value",
+      "C": "Wrapping a variable in class",
+      "D": "Packing a class in package"
+    },
+    "answer": "A",
+    "explanation": "Autoboxing automatically converts a primitive (e.g. int) into its wrapper object (Integer); the reverse is unboxing."
+  },
+  {
+    "id": 87,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which of these classes provide methods for writing binary representations of Java primitive values",
+    "options": {
+      "A": "DataOutputStream",
+      "B": "FileOutputStream",
+      "C": "ObjectOutputStream",
+      "D": "PrintStream"
+    },
+    "answer": "A",
+    "explanation": "DataOutputStream provides writeInt(), writeDouble() and similar methods that write primitives in binary form."
+  },
+  {
+    "id": 88,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "How many methods are defined in the Serializable interface ?",
+    "options": {
+      "A": "One",
+      "B": "Two",
+      "C": "None",
+      "D": "Four"
+    },
+    "answer": "C",
+    "explanation": "Serializable is a marker interface with no methods."
+  },
+  {
+    "id": 89,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "What is byte code in the context of Java?",
+    "options": {
+      "A": "The type of code generated by a Java compiler.",
+      "B": "The type of code generated by a Java Virtual Machine.",
+      "C": "It is another name for a Java source file.",
+      "D": "It is the code written within the instance methods of a class."
+    },
+    "answer": "A",
+    "explanation": "javac compiles source code into platform-independent bytecode that the JVM executes."
+  },
+  {
+    "id": 90,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which of the following JSP variables are not available within a JSP expression ?\nSelect the one correct answer.",
+    "options": {
+      "A": "out",
+      "B": "session",
+      "C": "request",
+      "D": "httpsession"
+    },
+    "answer": "D",
+    "explanation": "JSP implicit objects include out, session and request; there is no implicit object named httpsession."
+  },
+  {
+    "id": 91,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which of the following is incorrect ?",
+    "options": {
+      "A": "Private variable will only be accessible in class",
+      "B": "Protected can be accessible in non sub-class of another package",
+      "C": "Protected member is accessible in sub-class of another package",
+      "D": "Default can be used in another class of same package"
+    },
+    "answer": "B",
+    "explanation": "Protected members are visible in the same package and in subclasses in other packages, but not in non-subclasses of other packages."
+  },
+  {
+    "id": 92,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which expression will extract the substring \"cde\" given the following declaration String str = \"abcdef\"",
+    "options": {
+      "A": "str.substring(2,2)",
+      "B": "str.substring(2,3)",
+      "C": "str.substring(2,4)",
+      "D": "str.substring(2,5)"
+    },
+    "answer": "D",
+    "explanation": "substring(begin, end) returns the characters from index begin to end − 1; indices 2 to 4 give \"cde\"."
+  },
+  {
+    "id": 93,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which of the following is not true about Applet class ?",
+    "options": {
+      "A": "Package java.awt contains some superclass of applet",
+      "B": "It can be viewed in browser",
+      "C": "Using applet we cannot process graphics",
+      "D": "Event handling can be used in applet"
+    },
+    "answer": "C",
+    "explanation": "Applets can draw graphics (e.g. in paint(Graphics g)), so statement 3 is false."
+  },
+  {
+    "id": 94,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which of the following statements about Generics is correct ?",
+    "options": {
+      "A": "Generics are typed subclasses of the classes from the Collections framework.",
+      "B": "Generics are used to parameterize the collections in order to allow for static type checking.",
+      "C": "Generics can be used to perform type checking of the objects in a collection at runtime.",
+      "D": "Generics can be used to iterate over a complete collection in an easy way, using the 'enhanced for' loop."
+    },
+    "answer": "B",
+    "explanation": "Generics parameterise types so the compiler can check types statically; type information is erased at runtime."
+  },
+  {
+    "id": 95,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which of the following define the rules for .Net Languages?",
+    "options": {
+      "A": "GAC",
+      "B": "CLS",
+      "C": "CLI",
+      "D": "CLR"
+    },
+    "answer": "B",
+    "explanation": "The Common Language Specification (CLS) defines the rules .NET languages must follow to interoperate."
+  },
+  {
+    "id": 96,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "To get an object of the PrintWriter class, we use the getWriter( ) method of the ______ class.",
+    "options": {
+      "A": "HttpServletRequest",
+      "B": "HttpServletResponse",
+      "C": "SessionContext",
+      "D": "HttpSession"
+    },
+    "answer": "B",
+    "explanation": "response.getWriter() on HttpServletResponse returns a PrintWriter for sending text output."
+  },
+  {
+    "id": 97,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which of the following is faster and consume lesser memory?",
+    "options": {
+      "A": "SQLDataReader",
+      "B": "Data Set",
+      "C": "Both (1) and (2)",
+      "D": "None"
+    },
+    "answer": "A",
+    "explanation": "SqlDataReader is a forward-only, read-only connected stream, so it is faster and lighter than a disconnected DataSet."
+  },
+  {
+    "id": 98,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which of the following authentications is best suited for a corporate network ?",
+    "options": {
+      "A": "Windows",
+      "B": "Form",
+      "C": "User",
+      "D": "All"
+    },
+    "answer": "A",
+    "explanation": "Windows authentication uses the existing domain (Active Directory) accounts, which suits intranets/corporate networks."
+  },
+  {
+    "id": 99,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "An example of a Network layer is",
+    "options": {
+      "A": "Internet Protocol (IP) - ARPANET",
+      "B": "X.25 Packet Level Protocol (PLP) - ISO",
+      "C": "Source routing and domain naming - USENET",
+      "D": "All of these"
+    },
+    "answer": "D",
+    "explanation": "IP, X.25 PLP and source routing are all network-layer protocols/mechanisms in their respective networks."
+  },
+  {
+    "id": 100,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "ICMP (Internet Control Message Protocol) is :",
+    "options": {
+      "A": "A Protocol that handles error and control messages",
+      "B": "A Protocol used to monitor computers",
+      "C": "Both (1) and (2)",
+      "D": "None of these"
+    },
+    "answer": "A",
+    "explanation": "ICMP carries error reports and control/diagnostic messages for IP."
+  },
+  {
+    "id": 101,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which is a reserved word in the Java programming language?",
+    "options": {
+      "A": "method",
+      "B": "native",
+      "C": "subedar",
+      "D": "reference"
+    },
+    "answer": "B",
+    "explanation": "native is a Java keyword marking methods implemented in platform-specific code."
+  },
+  {
+    "id": 102,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which is valid declaration of a float ?",
+    "options": {
+      "A": "float f = 1F;",
+      "B": "float f = 1.0;",
+      "C": "float f = \"1\";",
+      "D": "float f = 1.0d;"
+    },
+    "answer": "A",
+    "explanation": "1F is a float literal. 1.0 and 1.0d are double literals and need a cast; a String cannot be assigned to a float."
+  },
+  {
+    "id": 103,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "What is numerical range of char ?",
+    "options": {
+      "A": "0 to 32767",
+      "B": "0 to 65535",
+      "C": "-256 to 255",
+      "D": "-32768 to 32767"
+    },
+    "answer": "B",
+    "explanation": "char is an unsigned 16-bit type, from 0 to 65535."
+  },
+  {
+    "id": 104,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Functions and procedures are :",
+    "options": {
+      "A": "not useful in designing computer systems",
+      "B": "old fashioned and they are not useful",
+      "C": "useful in designing computer systems",
+      "D": "have side effects which require special care if they are used as subsystems"
+    },
+    "answer": "C",
+    "explanation": "Functions and procedures support modular decomposition and reuse, so they are useful in system design."
+  },
+  {
+    "id": 105,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "By polymorphism of a subsystem we mean",
+    "options": {
+      "A": "it should be reusable",
+      "B": "it should have polymorphic data types",
+      "C": "it should accept generic commands and interpret appropriately",
+      "D": "it should morph polygons"
+    },
+    "answer": "C",
+    "explanation": "A polymorphic subsystem responds to generic commands and interprets them suitably for the object involved."
+  },
+  {
+    "id": 106,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "In UML diagram of a class",
+    "options": {
+      "A": "state of object can not be represented",
+      "B": "state is irrelevant",
+      "C": "state is represented as an attribute",
+      "D": "state is represented as a result of an operation"
+    },
+    "answer": "C",
+    "explanation": "In a UML class diagram, the state of an object is held in its attributes."
+  },
+  {
+    "id": 107,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "A query operation on a object",
+    "options": {
+      "A": "has side effects",
+      "B": "has no side effects",
+      "C": "changes the state of an object",
+      "D": "is not allowed"
+    },
+    "answer": "B",
+    "explanation": "A query operation only returns information and does not change the object's state."
+  },
+  {
+    "id": 108,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "An exception thrown from outside try block will",
+    "options": {
+      "A": "call function return",
+      "B": "be ignored",
+      "C": "hang the machine",
+      "D": "call function terminate"
+    },
+    "answer": "D",
+    "explanation": "In C++, an exception that is not caught by any handler causes std::terminate() to be called."
+  },
+  {
+    "id": 109,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "An exception is caused by",
+    "options": {
+      "A": "A hardware problem",
+      "B": "A problem in the operating system",
+      "C": "A run time error",
+      "D": "A syntax error"
+    },
+    "answer": "C",
+    "explanation": "Exceptions are raised by abnormal conditions at run time; syntax errors are caught at compile time."
+  },
+  {
+    "id": 110,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "In object oriented design",
+    "options": {
+      "A": "operations and methods are identical",
+      "B": "methods specify algorithm whereas operations only state what is to be done",
+      "C": "methods do not change values of attributes",
+      "D": "methods and constructor are same"
+    },
+    "answer": "B",
+    "explanation": "An operation is the specification (what is done); a method is its implementation (how, the algorithm)."
+  },
+  {
+    "id": 111,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "By encapsulation in object oriented modeling we mean",
+    "options": {
+      "A": "encapsulating data and programs",
+      "B": "hiding attributes of an object from users",
+      "C": "hiding operations on object from users",
+      "D": "hiding implementation details of methods from users of objects"
+    },
+    "answer": "D",
+    "explanation": "Encapsulation hides how methods are implemented; users interact only through the public interface."
+  },
+  {
+    "id": 112,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Inheritance in object oriented modeling can be used to",
+    "options": {
+      "A": "generalize classes",
+      "B": "specialize classes",
+      "C": "generalize and specialize classes",
+      "D": "create new classes"
+    },
+    "answer": "C",
+    "explanation": "Inheritance supports generalisation (common superclass) and specialisation (subclasses)."
+  },
+  {
+    "id": 113,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "By polymorphism in object oriented modeling we mean",
+    "options": {
+      "A": "the ability to manipulate objects of different distinct classes",
+      "B": "the ability to manipulate objects of different distinct classes knowing only their common properties",
+      "C": "use of polymorphic operations",
+      "D": "use of similar operations to do similar things"
+    },
+    "answer": "B",
+    "explanation": "Polymorphism lets code work with objects of different classes through their common interface/superclass."
+  },
+  {
+    "id": 114,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Which is not an attribute of cookie property ?",
+    "options": {
+      "A": "path",
+      "B": "host",
+      "C": "secure",
+      "D": "domain"
+    },
+    "answer": "B",
+    "explanation": "Cookie attributes include path, domain, secure, expires/max-age and HttpOnly; host is not one of them."
+  },
+  {
+    "id": 115,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Overloading the function operator",
+    "options": {
+      "A": "requires a class with an overloaded operator",
+      "B": "requires a class with an overloaded( ) operator",
+      "C": "allow you to create objects that act syntactically like functions",
+      "D": "usually make use of a constructor that takes arguments"
+    },
+    "answer": "C",
+    "explanation": "Overloading operator() creates function objects (functors) that can be called like functions."
+  },
+  {
+    "id": 116,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "Run time polymorphism is achieved by",
+    "options": {
+      "A": "friend function",
+      "B": "virtual function",
+      "C": "operator overloading",
+      "D": "function overloading"
+    },
+    "answer": "B",
+    "explanation": "Virtual functions give dynamic binding (run-time polymorphism); overloading is resolved at compile time."
+  },
+  {
+    "id": 117,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "The members of a class, by default are",
+    "options": {
+      "A": "public",
+      "B": "protected",
+      "C": "private",
+      "D": "mandatory to specify"
+    },
+    "answer": "C",
+    "explanation": "In C++, class members are private by default (struct members are public)."
+  },
+  {
+    "id": 118,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "A copy constructor takes",
+    "options": {
+      "A": "no argument",
+      "B": "one argument",
+      "C": "two arguments",
+      "D": "arbitrary no. of arguments"
+    },
+    "answer": "B",
+    "explanation": "A copy constructor takes one argument, a reference to an object of the same class."
+  },
+  {
+    "id": 119,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "A pointer is",
+    "options": {
+      "A": "A keyword used to create variables",
+      "B": "A variable that stores address of an instruction",
+      "C": "A variable that stores address of other variable",
+      "D": "All of the above"
+    },
+    "answer": "C",
+    "explanation": "A pointer is a variable that holds the memory address of another variable."
+  },
+  {
+    "id": 120,
+    "source_file": "Programmer Exam 2013 - Paper-II",
+    "question": "In visual programming, the icons are the ______ image of an object.",
+    "options": {
+      "A": "physical",
+      "B": "logical",
+      "C": "both (1) and (2)",
+      "D": "none of these"
+    },
+    "answer": "C",
+    "explanation": "In visual programming, an icon represents an object both physically (its picture) and logically (its meaning/function)."
+  }
+]

@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which one of the following problems can occur due to introducing locks in a concurrent transaction scenario?",
+    "options": {
+      "A": "Information overwrite",
+      "B": "Loss of information",
+      "C": "Deadlock",
+      "D": "Lack of integrity"
+    },
+    "answer": "C",
+    "explanation": "Locks make transactions wait for each other; if two or more transactions each hold a lock the other needs, they wait forever, which is a deadlock."
+  },
+  {
+    "id": 2,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which one of the following techniques is sometimes used to solve problems in a concurrent transaction scenario?",
+    "options": {
+      "A": "First-come first-served",
+      "B": "Greedy algorithms",
+      "C": "Strassens's algorithm",
+      "D": "Two-phase locking"
+    },
+    "answer": "D",
+    "explanation": "Two-phase locking (2PL) is a concurrency-control protocol that guarantees conflict-serializable schedules."
+  },
+  {
+    "id": 3,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In transaction, cascade rollback",
+    "options": {
+      "A": "Can occur in systems which use deferred writeback",
+      "B": "Can occur in systems which use immediate writeback",
+      "C": "Occurs in systems which use the \"waterfall\" transaction management system",
+      "D": "Is a result of simultaneous transaction commits."
+    },
+    "answer": "B",
+    "explanation": "With immediate writeback (immediate update), uncommitted values reach the database and can be read by other transactions; if the writer aborts, those readers must also roll back, causing cascading rollback."
+  },
+  {
+    "id": 4,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Given a relation country(name, continent, population) which of the following is a valid SQL statement?",
+    "options": {
+      "A": "SELECT continent, population FROM country GROUP BY continent",
+      "B": "SELECT continent, SUM(population) FROM country GROUP BY continent",
+      "C": "SELECT name, population FROM country GROUP BY continent",
+      "D": "SELECT name, SUM(population) FROM country GROUP BY continent"
+    },
+    "answer": "B",
+    "explanation": "With GROUP BY, every selected column must be either a grouping column or inside an aggregate function; only option (2) satisfies this."
+  },
+  {
+    "id": 5,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "An athletics meeting involves several competitors who participate in a number of events. The database is intended to record who is to take part in which event and to record the outcome of each event. As results become available the winner attribute will be updated with the cid of the appropriate competitor.\nCompetitor(cid, name, nationality)\nEvent(eid, description, winner)\nCompetes(cid, eid)\n\nCompetitor: (01, Pat, British), (02, Hilary, British), (03, Sven, Swedish), (04, Pierre, French)\nEvent: (01, running, -), (02, jumping, -), (03, throwing, -)\nCompetes (cid, eid): (01, 01), (02, 01), (03, 02), (04, 02), (04, 03)\n\nSelect the true statement :",
+    "options": {
+      "A": "There is a British competitor in every event.",
+      "B": "Pierre does not compete in any event",
+      "C": "Sven has been entered in two events",
+      "D": "Hilary has entered only the running event"
+    },
+    "answer": "D",
+    "explanation": "Hilary (cid 02) appears in Competes only with eid 01 (running). Event 03 has only Pierre (French), Pierre competes in 02 and 03, and Sven only in 02."
+  },
+  {
+    "id": 6,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "An athletics meeting involves several competitors who participate in a number of events. The database is intended to record who is to take part in which event and to record the outcome of each event. As results become available the winner attribute will be updated with the cid of the appropriate competitor.\nCompetes(cid, eid)\nCompetitor(cid, name, nationality)\nEvent(eid, description, winner)\n\nCompetitor: (01, Pat, British), (02, Hilary, British), (03, Sven, Swedish), (04, Pierre, French)\nEvent: (01, running, -), (02, jumping, -), (03, throwing, -)\nCompetes (cid, eid): (01, 01), (02, 01), (03, 02), (04, 02), (04, 03)\n\nIdentify the result of the following SQL statement :\nSELECT eid FROM Competes, Competitor\nWHERE Competes.cid=Competitor.cid\nAND nationality = 'Swedish'",
+    "options": {
+      "A": "01",
+      "B": "02",
+      "C": "03",
+      "D": "04"
+    },
+    "answer": "B",
+    "explanation": "The only Swedish competitor is Sven (cid 03), who appears in Competes with eid 02."
+  },
+  {
+    "id": 7,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Relation C is a projection of relation A. Which of the following statements must be true in all cases where relation C is different from relation A?",
+    "options": {
+      "A": "The cardinality of C is greater than the cardinality of A",
+      "B": "The cardinality of C is less than the cardinality of A",
+      "C": "The arity of C is greater than the arity of A",
+      "D": "The arity of C is less than the arity of A"
+    },
+    "answer": "D",
+    "explanation": "A projection that differs from the original must drop at least one attribute, so its arity (number of attributes) is smaller; its cardinality may stay the same or shrink."
+  },
+  {
+    "id": 8,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "When the referential integrity rule is enforced, which one is usually not a valid action in response to the deletion of a row that contains a primary key value referenced elsewhere?",
+    "options": {
+      "A": "Do not allow the deletion",
+      "B": "Accept the deletion without any other action",
+      "C": "Delete the related rows",
+      "D": "Set the foreign keys of related rows to null"
+    },
+    "answer": "B",
+    "explanation": "Deleting the referenced row without any action would leave dangling foreign keys, violating referential integrity. Restrict, cascade and set-null are the valid actions."
+  },
+  {
+    "id": 9,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "When an equi-join is performed on a table of N rows and a table of M rows, the resulting table has the following number of rows :",
+    "options": {
+      "A": "M",
+      "B": "N",
+      "C": "The smaller of M or N",
+      "D": "A number in the range 0 to M*N"
+    },
+    "answer": "D",
+    "explanation": "An equi-join can match no rows (0) or, if every row matches every row, produce the full Cartesian product (M*N)."
+  },
+  {
+    "id": 10,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In an SQL query that gets its data from two tables, and where the keywords WHERE, GROUP, ORDER and HAVING appear, which operation is performed before the other ones?",
+    "options": {
+      "A": "Restriction on WHERE conditions",
+      "B": "Restrictions on HAVING conditions",
+      "C": "ORDER BY",
+      "D": "Sort on GROUP BY"
+    },
+    "answer": "A",
+    "explanation": "Logical order of evaluation is FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY, so the WHERE restriction is applied first."
+  },
+  {
+    "id": 11,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "A Trigger is",
+    "options": {
+      "A": "A statement that enables to start any DBMS",
+      "B": "A statement that is executed by the user when debugging an application program",
+      "C": "A condition the system tests for the validity of the database user",
+      "D": "A statement that is executed automatically by the system as a side effect of modification to the database"
+    },
+    "answer": "D",
+    "explanation": "A trigger is an ECA rule that the DBMS executes automatically when a specified modification (INSERT/UPDATE/DELETE) occurs."
+  },
+  {
+    "id": 12,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "With regard to the expressive power of the formal relational Query Languages which of the following statements is TRUE ?",
+    "options": {
+      "A": "Relational algebra is more powerful than relational calculus.",
+      "B": "Relational algebra has the same power as relational calculus.",
+      "C": "Relational algebra has the same power as safe relational calculus.",
+      "D": "None of these"
+    },
+    "answer": "C",
+    "explanation": "Codd's theorem: relational algebra is equivalent in expressive power to safe (domain-independent) relational calculus; unsafe calculus can express infinite results."
+  },
+  {
+    "id": 13,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In SQL, relation can contain null values, and comparisons with null values are treated as unknown suppose all comparisons with a null value are treated as false.\nWhich of the following pairs is not equivalent?",
+    "options": {
+      "A": "x = 5 ; not (not (x = 5))",
+      "B": "x = 5 ; x > 4 and x < 6, where x is an integer",
+      "C": "x ≠ 5 ; not (x = 5)",
+      "D": "none of these"
+    },
+    "answer": "C",
+    "explanation": "If x is null, x ≠ 5 is false, but x = 5 is false so not(x = 5) is true. The two expressions then differ."
+  },
+  {
+    "id": 14,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "The SQL expression\nSelect distinct T. branchname from branch T, branch S where T. assets > S. assets and S. branchcity = \"XYZ\"\nFinds the names of",
+    "options": {
+      "A": "All branches that have greater assets than some branch located in XYZ",
+      "B": "All branches that have greater assets than all branches located in XYZ",
+      "C": "The branch that has the greatest asset in XYZ",
+      "D": "Any branch that has greater asset than any branch located in XYZ"
+    },
+    "answer": "A",
+    "explanation": "A row of T qualifies if there exists at least one S in XYZ with smaller assets, i.e. greater than some branch in XYZ."
+  },
+  {
+    "id": 15,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Let R = (A, B, C, D, E, F) be a relation scheme with the following dependencies :\nC → F, E → A, EC → D, A → B\nWhich of the following is a key for R?",
+    "options": {
+      "A": "CD",
+      "B": "EC",
+      "C": "AE",
+      "D": "AC"
+    },
+    "answer": "B",
+    "explanation": "(EC)+ = {E, C, A, D, F, B} = all attributes; C and E never appear on any right side, so EC is the key."
+  },
+  {
+    "id": 16,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Consider the schema R = (S T U V) and the dependencies S → T, T → U, U → V and V → S. Let R = (R1 and R2) be a decomposition such that R1 ∩ R2 = ϕ. The decomposition is",
+    "options": {
+      "A": "not in 2 NF",
+      "B": "in 2 NF but not in 3 NF",
+      "C": "in 3 NF but not in 2 NF",
+      "D": "in both 2 NF and 3 NF"
+    },
+    "answer": "D",
+    "explanation": "The dependencies form a cycle, so every single attribute is a candidate key. Any resulting relation has only key attributes with FDs from keys, so it is in BCNF and hence in both 2NF and 3NF (the decomposition is, however, lossy)."
+  },
+  {
+    "id": 17,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "A functional dependency of the form x → y is trivial if",
+    "options": {
+      "A": "y ⊆ x",
+      "B": "y ⊂ x",
+      "C": "x ⊆ y",
+      "D": "x ⊂ y and y ⊂ x"
+    },
+    "answer": "A",
+    "explanation": "An FD X → Y is trivial when Y is a subset of X, since it holds in every relation."
+  },
+  {
+    "id": 18,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Given the functional dependencies.\nx → w; x → y; y → z and z → pq\nWhich of the following does not hold good?",
+    "options": {
+      "A": "x → z",
+      "B": "w → z",
+      "C": "x → wy",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "explanation": "x → z follows by transitivity and x → wy by union, but nothing determines z from w, so w → z cannot be derived."
+  },
+  {
+    "id": 19,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Consider Join of a relation R with a relation S. If R has m tuples and S has n tuples, then maximum and minimum sizes of the Join respectively are",
+    "options": {
+      "A": "m + n and 0",
+      "B": "m n and 0",
+      "C": "m + n and |m-n|",
+      "D": "m n and m + n"
+    },
+    "answer": "B",
+    "explanation": "At most every tuple joins with every tuple (m×n); at least, no tuples match (0)."
+  },
+  {
+    "id": 20,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "For two union compatible relations R1 (A, B) and R2 (C, D), what is the result of the operation R1 ⋈ A=C ∧ B=D R2 ?",
+    "options": {
+      "A": "R1∪R2",
+      "B": "R1×R2",
+      "C": "R1−R2",
+      "D": "R1∩R2"
+    },
+    "answer": "D",
+    "explanation": "Joining on equality of all corresponding attributes keeps only tuples present in both relations, which is the intersection."
+  },
+  {
+    "id": 21,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "A primary key, if combined with a foreign key creates",
+    "options": {
+      "A": "Parent child relationship between the tables that connect them.",
+      "B": "Many-to-many relationship between the tables that connect them",
+      "C": "Network model between the tables connect them",
+      "D": "None of these"
+    },
+    "answer": "A",
+    "explanation": "A foreign key referencing a primary key links a child table to its parent table, creating a parent-child (one-to-many) relationship."
+  },
+  {
+    "id": 22,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "The employee's salary should not be more than Rs. 6000. This is",
+    "options": {
+      "A": "Integrity constraint",
+      "B": "Referential constraint",
+      "C": "Over-defined constraint",
+      "D": "Feasible constraint"
+    },
+    "answer": "A",
+    "explanation": "A rule restricting allowable attribute values is an integrity (domain/check) constraint."
+  },
+  {
+    "id": 23,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "A relational model which allows non-atomic domains is",
+    "options": {
+      "A": "Nested relational data model",
+      "B": "Non-atomic data model",
+      "C": "Hierarchical data model",
+      "D": "None of these"
+    },
+    "answer": "A",
+    "explanation": "The nested relational model relaxes 1NF and allows attributes whose values are relations (non-atomic domains)."
+  },
+  {
+    "id": 24,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "If adjacency relation of vertices in a graph is represented in a table Adj(x,y), then which of the following Queries cannot be expressed by a relational algebra expression of constant length ?",
+    "options": {
+      "A": "List all vertices adjacent to given vertex",
+      "B": "List all vertices which have self-loops",
+      "C": "List all vertices which belong to cycle of less than three vertices",
+      "D": "List all vertices reachable from a given vertex"
+    },
+    "answer": "D",
+    "explanation": "Reachability needs transitive closure, which needs recursion; relational algebra expressions of fixed length cannot compute it."
+  },
+  {
+    "id": 25,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which of the following is true of the data manipulation language (DML) ?",
+    "options": {
+      "A": "It refers to data using physical addresses",
+      "B": "It cannot interface with high-level programming language",
+      "C": "It is used to define the physical characteristics of each record",
+      "D": "None of these"
+    },
+    "answer": "D",
+    "explanation": "DML refers to data logically, can be embedded in host languages, and does not define physical structure (that is DDL/storage definition), so none apply."
+  },
+  {
+    "id": 26,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Using relational algebra, the query that finds customers, who have a balance of over 3000 is",
+    "options": {
+      "A": "π customer_name (σ balance>3000 (Deposit))",
+      "B": "σ customer_name (σ balance>3000 (Deposit))",
+      "C": "π customer_name (σ balance>3000 (Borrow))",
+      "D": "σ customer_name (π balance>3000 (Borrow))"
+    },
+    "answer": "A",
+    "explanation": "Select (σ) the Deposit tuples with balance > 3000, then project (π) the customer_name attribute."
+  },
+  {
+    "id": 27,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Embedded pointer provides a/an",
+    "options": {
+      "A": "Secondary access path",
+      "B": "Physical record key",
+      "C": "Inverted index",
+      "D": "All of these"
+    },
+    "answer": "A",
+    "explanation": "Pointers embedded in records link related records, giving an additional (secondary) access path besides the primary organisation."
+  },
+  {
+    "id": 28,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "The physical locations of a record is determined by a mathematical formula that transforms file key into a record location in a/an",
+    "options": {
+      "A": "B-tree file",
+      "B": "Indexed file",
+      "C": "Hashed file",
+      "D": "All these"
+    },
+    "answer": "C",
+    "explanation": "In hashed (direct) files a hash function computes the record address from the key."
+  },
+  {
+    "id": 29,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Minimum number of record movements required to merge five files A (with 10 records), B (with 20 records), C (with 15 records), D (with 5 records) and E (with 25 records) is",
+    "options": {
+      "A": "165",
+      "B": "90",
+      "C": "75",
+      "D": "65"
+    },
+    "answer": "A",
+    "explanation": "Optimal merge pattern (Huffman style): 5+10=15, 15+15=30, 20+25=45, 30+45=75; total = 15+30+45+75 = 165."
+  },
+  {
+    "id": 30,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which command allows us to add to our database file ?",
+    "options": {
+      "A": "CLEAR",
+      "B": "CREATE",
+      "C": "APPEND",
+      "D": "APPEND BLANK"
+    },
+    "answer": "C",
+    "explanation": "In dBASE/FoxPro, APPEND adds new records to the open database file."
+  },
+  {
+    "id": 31,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which of the following commands permanently delete the record marked for deletion from the data base field?",
+    "options": {
+      "A": "PACK",
+      "B": "ZAP",
+      "C": "SEEK",
+      "D": "SKIP"
+    },
+    "answer": "A",
+    "explanation": "In dBASE, PACK permanently removes records marked with DELETE; ZAP removes all records regardless of marks."
+  },
+  {
+    "id": 32,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "A relational database which is in 3NF may still have undesirable data redundancy because there may exist",
+    "options": {
+      "A": "Transitive functional dependencies.",
+      "B": "Non-trivial functional dependencies involving prime attributes and the right side.",
+      "C": "Non-trivial functional dependencies involving prime attributes only on the left side.",
+      "D": "Trivial functional dependencies involving number of attributes."
+    },
+    "answer": "B",
+    "explanation": "3NF allows X → A where X is not a superkey if A is a prime attribute (prime attribute on the right side); BCNF removes this remaining redundancy."
+  },
+  {
+    "id": 33,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Data security threats include",
+    "options": {
+      "A": "Privacy invasion",
+      "B": "Hardware failure",
+      "C": "Fraudlent manipulation of data",
+      "D": "All of these"
+    },
+    "answer": "D",
+    "explanation": "Privacy invasion, hardware failure (loss of availability) and fraudulent manipulation are all threats to data security."
+  },
+  {
+    "id": 34,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which of the following queries finds the clients of banker xyz and the city they live in ?",
+    "options": {
+      "A": "π client.customer_name, customer_city (σ client.customer-name=customer.customer_name (σ Banker_name=\"xyz\" (Client × Customer)))",
+      "B": "π customer_name, customer_city (σ Banker_name=\"xyz\" (Client × Customer))",
+      "C": "π client.customer_name, customer_city (σ Banker_name=\"xyz\" (σ client.customer-name=customer.customer_name (Client × Customer)))",
+      "D": "π Customer_name, Customer_city (σ Banker_name=\"xyz\" (Client × Customer))"
+    },
+    "answer": "A",
+    "explanation": "The Cartesian product must be restricted by the join condition client.customer_name = customer.customer_name and by Banker_name = 'xyz' before projecting. (Option 3 is logically equivalent since selections commute; the usual key gives option 1.)"
+  },
+  {
+    "id": 35,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "If P and Q are predicates and P is the relational algebra expression, then which of the following equivalence are valid ?",
+    "options": {
+      "A": "(σP(σQ(e)) = σQ(σP(e)))",
+      "B": "(σP(σQ(e)) = σP∪Q(e))",
+      "C": "(σP(σP(e)) = σP(e))",
+      "D": "None of these"
+    },
+    "answer": "A",
+    "explanation": "Selections are commutative: σP(σQ(e)) = σQ(σP(e)). Cascaded selections combine with AND, not union, so (2) is wrong. (σP is also idempotent, as in (3); the standard key is (1).)"
+  },
+  {
+    "id": 36,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Find the correct match for terms in Column I to those in Column II :\nColumn I: a. Roll back  b. Atomicity  c. Entity  d. Domain\nColumn II: P. Relationship  Q. Checkpoint  R. Attribute  S. Transaction",
+    "options": {
+      "A": "a-S, b-P, c-R, d-Q",
+      "B": "a-Q, b-S, c-P, d-R",
+      "C": "a-S, b-Q, c-R, d-P",
+      "D": "a-Q, b-P, c-R, d-S"
+    },
+    "answer": "B",
+    "explanation": "Rollback uses checkpoints, atomicity is a transaction property, entities participate in relationships, and a domain is the value set of an attribute."
+  },
+  {
+    "id": 37,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Consider a weak entity set W and its identifying (owner) entity set O. Primary key of W is composed of",
+    "options": {
+      "A": "Discriminator of W and primary key of O",
+      "B": "Superkey of W and primary key of O",
+      "C": "Discriminator of W and foreign key of O",
+      "D": "Superkey of W and foreign key of O"
+    },
+    "answer": "A",
+    "explanation": "A weak entity's primary key = primary key of its identifying (owner) entity set + its own discriminator (partial key)."
+  },
+  {
+    "id": 38,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which of the following is an assertion in DBMS?",
+    "options": {
+      "A": "Domain Constraint",
+      "B": "Generalization",
+      "C": "Trigger",
+      "D": "View"
+    },
+    "answer": "A",
+    "explanation": "An assertion is a predicate the database must always satisfy; domain constraints (and referential integrity) are special forms of assertions."
+  },
+  {
+    "id": 39,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Find the correct match for terms in Column I to those in Column II :\nColumn I: a. Audit Trail  b. Row  c. Revoke  d. Trigger\nColumn II: P. Tuple  Q. Privileges  R. Event-Condition-Action  S. Security",
+    "options": {
+      "A": "a-S, b-P, c-R, d-Q",
+      "B": "a-P, b-S, c-Q, d-R",
+      "C": "a-S, b-Q, c-R, d-P",
+      "D": "a-S, b-P, c-Q, d-R"
+    },
+    "answer": "D",
+    "explanation": "Audit trail is a security mechanism, a row is a tuple, REVOKE removes privileges, and a trigger follows the Event-Condition-Action model."
+  },
+  {
+    "id": 40,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Consider the statement, \"Either −2 ≤ x < −1 or 1 ≤ x ≤ 2.\"\nThe negation of this statement is",
+    "options": {
+      "A": "x < −2 or 2 ≤ x or −1 < x < 1",
+      "B": "x < −2 or 2 < x or −1 ≤ x < 1",
+      "C": "x ≤ −2 or 2 < x or −1 ≤ x < 1",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "explanation": "The statement covers [−2, −1) ∪ [1, 2]. Its complement is x < −2, or −1 ≤ x < 1, or x > 2."
+  },
+  {
+    "id": 41,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Let A={0, 1}×{0, 1}×{0, 1} and B={a, b, c}×{a, b, c}×{a, b, c}. Suppose A is listed in lexicographic order based on 0 < 1 and B is listed in lexicographic order based on a < b < c. If A×B×A is listed in lexicographic order, then the next element after ((1, 0, 0), (c, c, c), (1, 1, 1)) is",
+    "options": {
+      "A": "((1, 0, 1), (a, a, b), (0, 0, 0))",
+      "B": "((1, 0, 1), (b, a, a), (0, 0, 1))",
+      "C": "((1, 0, 1), (a, a, a), (0, 0, 0))",
+      "D": "((1, 0, 0), (a, a, b), (0, 0, 1))"
+    },
+    "answer": "C",
+    "explanation": "The last two components are at their maximum ((c,c,c) and (1,1,1)), so they roll over to their minimums and the first component increments: (1,0,0) → (1,0,1)."
+  },
+  {
+    "id": 42,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which normal form is considered adequate for database design?",
+    "options": {
+      "A": "2NF",
+      "B": "3NF",
+      "C": "4NF",
+      "D": "5NF"
+    },
+    "answer": "B",
+    "explanation": "3NF is generally considered adequate for practical relational design: it removes most anomalies while always allowing lossless, dependency-preserving decomposition."
+  },
+  {
+    "id": 43,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which of the following statements is FALSE?",
+    "options": {
+      "A": "{2, 3, 4} ∈ A and {2, 3} ∈ B implies that {4} ⊆ A − B.",
+      "B": "{2, 3, 4} ⊆ A implies that 2 ∈ A and {3, 4} ⊆ A.",
+      "C": "A ∩ B ⊇ {2, 3, 4} implies that {2, 3, 4} ⊆ A and {2, 3, 4} ⊆ B.",
+      "D": "A − B ⊇ {3, 4} and {1, 2} ⊆ B implies that {1, 2, 3, 4} ⊆ A ∪ B."
+    },
+    "answer": "A",
+    "explanation": "In (1) the sets {2,3,4} and {2,3} are elements of A and B, which says nothing about 4 being an element of A; so {4} ⊆ A − B does not follow."
+  },
+  {
+    "id": 44,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Find the correct match for terms in Column I to those in Column II :\nColumn I: a. topological sorting  b. privileges  c. multivalued dependency  d. improved throughput\nColumn II: P. grant  Q. concurrency  R. 4NF  S. serializable order",
+    "options": {
+      "A": "a-P, b-Q, c-R, d-S",
+      "B": "a-Q, b-S, c-P, d-R",
+      "C": "a-S, b-Q, c-R, d-P",
+      "D": "a-S, b-P, c-R, d-Q"
+    },
+    "answer": "D",
+    "explanation": "Topological sort of the precedence graph gives a serializable order, privileges are given by GRANT, MVDs are handled by 4NF, and concurrency improves throughput."
+  },
+  {
+    "id": 45,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Two concurrent transactions T1 and T2 are in conflict when",
+    "options": {
+      "A": "T1 reads from x, T2 reads from y",
+      "B": "T1 reads from x, T2 writes to x",
+      "C": "T1 reads from x, T2 writes to y",
+      "D": "T1 writes to x, T2 writes to y"
+    },
+    "answer": "B",
+    "explanation": "Two operations conflict when they belong to different transactions, access the same item, and at least one is a write."
+  },
+  {
+    "id": 46,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Identify correct matching of the following sets :\na. Transaction  b. Natural join  c. B-tree  d. Concurrency control\n1. index  2. relational algebra  3. two phase locking  4. ACID",
+    "options": {
+      "A": "a-4, b-2, c-3, d-1",
+      "B": "a-4, b-1, c-3, d-2",
+      "C": "a-3, b-2, c-1, d-4",
+      "D": "a-4, b-2, c-1, d-3"
+    },
+    "answer": "D",
+    "explanation": "Transactions have ACID properties, natural join is a relational algebra operator, B-tree is an index structure, and two-phase locking is a concurrency-control protocol."
+  },
+  {
+    "id": 47,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In context of two phase locking protocol, which of the following statements is correct ?",
+    "options": {
+      "A": "Growing phase occurs after shrinking phase.",
+      "B": "In shrinking phase, transaction can obtain as well as release locks but in growing phase, it can only obtain locks.",
+      "C": "In growing phase, transaction can obtain as well as release locks but in shrinking phase, it can only release locks.",
+      "D": "In growing phase, transaction can only obtain locks and in shrinking phase, it can only release locks."
+    },
+    "answer": "D",
+    "explanation": "In 2PL, locks are only acquired in the growing phase and only released in the shrinking phase, which follows it."
+  },
+  {
+    "id": 48,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which one of the following is not related to Normal Forms (Normalization) rule with regards to the Relational Model?",
+    "options": {
+      "A": "All fields within a table must relate to or directly describe the Primary Key.",
+      "B": "Repeating Groups must be eliminated from tables.",
+      "C": "Fields that can contain non-numeric data are to be removed and placed within their own tables with an associated Primary key.",
+      "D": "Redundant data is to be eliminated by placing the offending fields in another table."
+    },
+    "answer": "C",
+    "explanation": "Normalization is based on dependencies and redundancy, not on whether data is numeric or non-numeric."
+  },
+  {
+    "id": 49,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which of the following SQL query shall output names of all customers ending with \"Smith\" ?",
+    "options": {
+      "A": "Select name from customer where name like '_Smith'",
+      "B": "Select name from customer where name like '%Smith'",
+      "C": "Select name from customer where name like 'Smith%'",
+      "D": "Select name from customer where name like '%Smith%'"
+    },
+    "answer": "B",
+    "explanation": "'%' matches any sequence of characters, so '%Smith' matches strings that end with Smith."
+  },
+  {
+    "id": 50,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which of the following is correct ?",
+    "options": {
+      "A": "An SQL query automatically eliminates duplicates.",
+      "B": "An SQL query will not work if there are no indexes on the relations.",
+      "C": "SQL queries can be nested.",
+      "D": "SQL permits attribute names to be repeated in the same relation."
+    },
+    "answer": "C",
+    "explanation": "SQL supports subqueries (nested queries). Duplicates are kept unless DISTINCT is used, indexes are optional, and attribute names must be unique in a relation."
+  },
+  {
+    "id": 51,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "172.17.225.125 IP address belong to",
+    "options": {
+      "A": "Public IP address",
+      "B": "Private IP address",
+      "C": "Both",
+      "D": "None"
+    },
+    "answer": "B",
+    "explanation": "172.16.0.0 – 172.31.255.255 is a private range under RFC 1918, so 172.17.x.x is private."
+  },
+  {
+    "id": 52,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Wired Equivalent Privacy (WEP) and Wi-Fi Protected Access (WPA) are examples of",
+    "options": {
+      "A": "packet filtering services.",
+      "B": "network address translation protocols.",
+      "C": "security protocols.",
+      "D": "service set identifiers."
+    },
+    "answer": "C",
+    "explanation": "WEP and WPA are wireless LAN security (encryption/authentication) protocols."
+  },
+  {
+    "id": 53,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Match the following acronyms to their definitions :\nI. HTTP  II. SMTP  III. NAT  IV. WAP\na. protects IP addresses from hackers  b. a protocol associated with Web pages  c. a protocol used for e-mail  d. an access point on a wireless network",
+    "options": {
+      "A": "I-b, II-a, III-d, IV-c",
+      "B": "I-b, II-c, III-a, IV-d",
+      "C": "I-c, II-a, III-d, IV-b",
+      "D": "I-c, II-d, III-a, IV-b"
+    },
+    "answer": "B",
+    "explanation": "HTTP serves web pages, SMTP is the e-mail protocol, NAT hides internal IP addresses, and WAP here means wireless access point."
+  },
+  {
+    "id": 54,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In the p-persistent approach of CSMA protocol, when a station finds an idle line, it ______.",
+    "options": {
+      "A": "Waits 1 sec before sending",
+      "B": "Sends with probability 1 − p",
+      "C": "Sends with probability p",
+      "D": "Sends immediately"
+    },
+    "answer": "C",
+    "explanation": "In p-persistent CSMA, a station that senses an idle channel transmits with probability p and defers with probability 1 − p."
+  },
+  {
+    "id": 55,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "You have a network ID of 131.107.0.0 and you need to divide it into multiple subnets. You need 600 host IDs for each subnet with the largest amount of subnets available. Which subnet mask should you assign ?",
+    "options": {
+      "A": "255.255.224.0",
+      "B": "255.255.240.0",
+      "C": "255.255.248.0",
+      "D": "255.255.252.0"
+    },
+    "answer": "D",
+    "explanation": "600 hosts need 10 host bits (2^10 − 2 = 1022). Using /22 leaves 10 host bits and the most subnet bits: 255.255.252.0."
+  },
+  {
+    "id": 56,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "What protocol is used to convert IP addresses to MAC addresses?",
+    "options": {
+      "A": "IP",
+      "B": "ARP",
+      "C": "RARP",
+      "D": "ICMP"
+    },
+    "answer": "B",
+    "explanation": "Address Resolution Protocol (ARP) maps an IPv4 address to a hardware (MAC) address; RARP does the reverse."
+  },
+  {
+    "id": 57,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "A system has an n-layer protocol hierarchy. Applications generate messages of length M bytes. At each of the layers. An h-byte header is added. What fractions of the network bandwidth is filled with headers?",
+    "options": {
+      "A": "h/M",
+      "B": "hn/(M+nh)",
+      "C": "nh/M",
+      "D": "1 − nh/M"
+    },
+    "answer": "B",
+    "explanation": "Total header bytes = nh, total transmitted bytes = M + nh, so the header fraction is nh/(M + nh)."
+  },
+  {
+    "id": 58,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "The ABC Corporation of XYZ has a fully connected mesh network consisting of 99 devices. Calculate the number of ports for each device.",
+    "options": {
+      "A": "4950",
+      "B": "4851",
+      "C": "100",
+      "D": "98"
+    },
+    "answer": "D",
+    "explanation": "In a full mesh of n devices, each device connects to the other n − 1 devices, so it needs 99 − 1 = 98 ports."
+  },
+  {
+    "id": 59,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "FDDI is a",
+    "options": {
+      "A": "Ring network",
+      "B": "Star network",
+      "C": "Mesh network",
+      "D": "Bus based network"
+    },
+    "answer": "A",
+    "explanation": "FDDI (Fiber Distributed Data Interface) uses a dual counter-rotating token ring."
+  },
+  {
+    "id": 60,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In networking terminology UTP means",
+    "options": {
+      "A": "Unshielded Twisted pair",
+      "B": "Unshielded Teflon port",
+      "C": "Uniformly terminating port",
+      "D": "Unshielded T-connector port"
+    },
+    "answer": "A",
+    "explanation": "UTP stands for Unshielded Twisted Pair cable."
+  },
+  {
+    "id": 61,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Four bits are used for packed sequence numbering in a sliding window protocol used in a computer network. What is the maximum window size?",
+    "options": {
+      "A": "4",
+      "B": "8",
+      "C": "15",
+      "D": "16"
+    },
+    "answer": "C",
+    "explanation": "With 4-bit sequence numbers (16 numbers), the maximum sender window for Go-Back-N is 2^4 − 1 = 15."
+  },
+  {
+    "id": 62,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "IP address can be used to specify a broadcast and map to hardware broadcast if available. By conversion broadcast address has hosted with all bits",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "Both (1) and (2)",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "explanation": "By convention, a directed broadcast address has all host bits set to 1."
+  },
+  {
+    "id": 63,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "ICMP (internet control message protocol) is",
+    "options": {
+      "A": "A protocol that handles error and control messages",
+      "B": "A protocol used to monitor computers",
+      "C": "Both (1) and (2)",
+      "D": "None of these"
+    },
+    "answer": "A",
+    "explanation": "ICMP is used by hosts and routers to report errors and send control/diagnostic messages (e.g. echo, destination unreachable)."
+  },
+  {
+    "id": 64,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Error detection at the data link level is achieved by",
+    "options": {
+      "A": "Bit stuffing",
+      "B": "Cyclic redundancy codes",
+      "C": "Hamming codes",
+      "D": "Equalization"
+    },
+    "answer": "B",
+    "explanation": "The data link layer typically detects errors using a CRC (frame check sequence). Hamming codes are for correction; bit stuffing is for framing."
+  },
+  {
+    "id": 65,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "The topology with highest reliability is",
+    "options": {
+      "A": "Bus topology",
+      "B": "Star topology",
+      "C": "Ring topology",
+      "D": "Mesh topology"
+    },
+    "answer": "D",
+    "explanation": "Mesh provides multiple redundant paths between nodes, so one link failure does not isolate any node."
+  },
+  {
+    "id": 66,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "How many characters per sec (7 bits + 1 parity) can be transmitted over a 2400 bps line if the transfer is synchronous (1 start and 1 stop bit)?",
+    "options": {
+      "A": "300",
+      "B": "240",
+      "C": "250",
+      "D": "275"
+    },
+    "answer": "A",
+    "explanation": "Synchronous transmission does not use start/stop bits, so each character is 8 bits: 2400/8 = 300 characters per second. (With asynchronous framing it would be 2400/10 = 240.)"
+  },
+  {
+    "id": 67,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In Ethernet CSMA/CD, the special bit sequence transmitted by media access management collision handing is called",
+    "options": {
+      "A": "Preamble",
+      "B": "Postamble",
+      "C": "Jam",
+      "D": "None of these"
+    },
+    "answer": "C",
+    "explanation": "When a collision is detected, a station sends a 32-bit jam signal so all stations notice the collision."
+  },
+  {
+    "id": 68,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "A terminal multiplexer has six 1200 bps terminals and 'n' 300 bps terminals connected to it. If outgoing line is 9600 bps, then maximum value of n is",
+    "options": {
+      "A": "4",
+      "B": "16",
+      "C": "8",
+      "D": "28"
+    },
+    "answer": "C",
+    "explanation": "6 × 1200 = 7200 bps, which leaves 9600 − 7200 = 2400 bps; 2400/300 = 8 terminals."
+  },
+  {
+    "id": 69,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In time division switches, if each memory access takes 100 ms and one frame period is 125 ms, then maximum number of lines that can be supported is",
+    "options": {
+      "A": "625",
+      "B": "1250",
+      "C": "2300",
+      "D": "318"
+    },
+    "answer": "A",
+    "explanation": "Each line needs two memory accesses (write and read) per frame: lines = frame time/(2 × access time) = 125/(2 × 0.1) = 625 (taking the standard 100 ns access and 125 µs frame)."
+  },
+  {
+    "id": 70,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "If data rate of ring is 20 Mbps, signal propagation speed is 200 b/ms, then number of bits that can be placed on the channel of 200 km is",
+    "options": {
+      "A": "2,000 bits",
+      "B": "20,000 bits",
+      "C": "1,000 bits",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "explanation": "Propagation delay = 200 km/(200 m/µs) = 1 ms; bits on the channel = 20 Mbps × 1 ms = 20,000 bits."
+  },
+  {
+    "id": 71,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Decryption and encryption of data are responsibilities of",
+    "options": {
+      "A": "Physical layer",
+      "B": "Data link layer",
+      "C": "Presentation layer",
+      "D": "Session layer"
+    },
+    "answer": "C",
+    "explanation": "The OSI presentation layer handles translation, compression and encryption/decryption."
+  },
+  {
+    "id": 72,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Router function in which layers",
+    "options": {
+      "A": "Physical and data link layer",
+      "B": "Physical, data link layer and network",
+      "C": "Data link and network",
+      "D": "Network and transport"
+    },
+    "answer": "B",
+    "explanation": "A router implements the lower three OSI layers: physical, data link and network."
+  },
+  {
+    "id": 73,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "A channel has a bit rate of 4 kbps and one-way propagation delay of 20 ms. The channel uses stop and wait protocol. The transmission time of the acknowledgement frame is negligible. To get a channel efficiency of at least 50%, the minimum frame size should be",
+    "options": {
+      "A": "80 bytes",
+      "B": "80 bits",
+      "C": "160 bytes",
+      "D": "160 bits"
+    },
+    "answer": "D",
+    "explanation": "Efficiency = Tt/(Tt + 2Tp) ≥ 0.5 means Tt ≥ 2Tp = 40 ms. Frame size = 4000 bps × 0.04 s = 160 bits."
+  },
+  {
+    "id": 74,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In IEEE 802.11, a BSS without an AP is called",
+    "options": {
+      "A": "an ad hoc architecture",
+      "B": "an infrastructure network",
+      "C": "either an ad hoc architecture or an infrastructure network",
+      "D": "None of the choices is correct"
+    },
+    "answer": "A",
+    "explanation": "A Basic Service Set without an access point is an independent BSS, i.e. an ad hoc network."
+  },
+  {
+    "id": 75,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In a network of LANs connected by bridges, packets are sent from one LAN to another through intermediate bridges. Since more than one path may exist between two LANs, packets may have to be routed through multiple bridges. Why is the spanning tree algorithm used for bridge-routing?",
+    "options": {
+      "A": "For shortest path routing between LANs",
+      "B": "For avoiding loops in the routing paths",
+      "C": "For fault tolerance",
+      "D": "For minimizing collisions"
+    },
+    "answer": "B",
+    "explanation": "The spanning tree protocol disables redundant links so the bridged topology is loop-free, preventing broadcast storms and endless frame circulation."
+  },
+  {
+    "id": 76,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "The ______ layer is responsible for moving frames from one hop (node) to the next.",
+    "options": {
+      "A": "physical",
+      "B": "data link",
+      "C": "transport",
+      "D": "none of the above"
+    },
+    "answer": "B",
+    "explanation": "The data link layer provides hop-to-hop (node-to-node) delivery of frames."
+  },
+  {
+    "id": 77,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "A port address in TCP/IP is ______ bits long.",
+    "options": {
+      "A": "32",
+      "B": "48",
+      "C": "16",
+      "D": "none of the above"
+    },
+    "answer": "C",
+    "explanation": "TCP/UDP port numbers are 16-bit values (0–65535)."
+  },
+  {
+    "id": 78,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which of the following IP address class is",
+    "options": {
+      "A": "Class-A",
+      "B": "Class-B",
+      "C": "Class-C",
+      "D": "Class-D"
+    },
+    "answer": "D",
+    "explanation": "The question is incomplete in the source paper. It is usually asked as 'Which IP address class is used for multicasting?', and the answer is Class D (224.0.0.0 – 239.255.255.255)."
+  },
+  {
+    "id": 79,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which of the following layer of OSI model also called end-to-end layer ?",
+    "options": {
+      "A": "Presentation layer",
+      "B": "Network layer",
+      "C": "Session layer",
+      "D": "Transport layer"
+    },
+    "answer": "D",
+    "explanation": "The transport layer provides end-to-end (process-to-process) delivery, so it is called the end-to-end layer."
+  },
+  {
+    "id": 80,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "For a sliding window of size (n−1) (n sequence numbers), there can be maximum of how many frames sent but yet to be acknowledged",
+    "options": {
+      "A": "0",
+      "B": "n − 1",
+      "C": "n",
+      "D": "n + 1"
+    },
+    "answer": "B",
+    "explanation": "The window size bounds the number of outstanding (unacknowledged) frames, so at most n − 1 frames."
+  },
+  {
+    "id": 81,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Pick the incorrect statement in error retransmission used in continuous ARQ method",
+    "options": {
+      "A": "Go back N method requires more storage at the receiving side",
+      "B": "Selected repeat involves complex logging than Go back N",
+      "C": "Go back N has better line utilisation",
+      "D": "Selective repeat has better line utilisation"
+    },
+    "answer": "A",
+    "explanation": "Go-Back-N discards out-of-order frames and needs a buffer of only one frame at the receiver; selective repeat is the one that needs more receiver storage. (Option 3 is also false, since selective repeat has better line utilisation; the usual key gives option 1.)"
+  },
+  {
+    "id": 82,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "An IP Network subnet has been assigned a subnet mask of 255.255.255.192. What is the maximum number of hosts that can belong to this subnet?",
+    "options": {
+      "A": "14",
+      "B": "30",
+      "C": "62",
+      "D": "126"
+    },
+    "answer": "C",
+    "explanation": "255.255.255.192 leaves 6 host bits: 2^6 − 2 = 62 usable hosts."
+  },
+  {
+    "id": 83,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "An organization having IP Network has a class B network and wishes to form subnets for 64 departments. The subnet mask would be",
+    "options": {
+      "A": "255.255.0.0",
+      "B": "255.255.64.0",
+      "C": "255.255.128.0",
+      "D": "255.255.252.0"
+    },
+    "answer": "D",
+    "explanation": "64 subnets need 6 subnet bits borrowed from the third octet: 11111100 = 252, so the mask is 255.255.252.0."
+  },
+  {
+    "id": 84,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "A local area network operates Ethernet with CSMA/CD mechanism and runs at a transmission rate of 8 Mbps and a one-way signal propagation time of 25 µs. How long (µs) has a station to wait before trying to access the channel again, after experiencing 5 successively collisions?",
+    "options": {
+      "A": "125",
+      "B": "625",
+      "C": "300",
+      "D": "1600"
+    },
+    "answer": "D",
+    "explanation": "Slot time = 2 × 25 = 50 µs. After the 5th collision, binary exponential backoff picks from up to 2^5 = 32 slots, so the maximum wait is 32 × 50 = 1600 µs."
+  },
+  {
+    "id": 85,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "What is the term for two modems establishing communications with each other ?",
+    "options": {
+      "A": "Handshaking",
+      "B": "Syncing",
+      "C": "Pinging",
+      "D": "Linking"
+    },
+    "answer": "A",
+    "explanation": "Modems negotiate speed and protocol through an initial exchange called handshaking."
+  },
+  {
+    "id": 86,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In computer network terminology, RTS is :",
+    "options": {
+      "A": "Ready to Sequence",
+      "B": "Ready Task Set",
+      "C": "Request to Send",
+      "D": "Ready Time Status"
+    },
+    "answer": "C",
+    "explanation": "RTS means Request to Send, used with CTS (Clear to Send) for flow control and in 802.11 collision avoidance."
+  },
+  {
+    "id": 87,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "RS-232 is a standard that is for :",
+    "options": {
+      "A": "RAM checksum",
+      "B": "Serial ports",
+      "C": "BIOS error checking",
+      "D": "Parallel ports"
+    },
+    "answer": "B",
+    "explanation": "RS-232 defines serial communication between DTE and DCE (serial ports)."
+  },
+  {
+    "id": 88,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "The first section of a URL identifier is the",
+    "options": {
+      "A": "protocol",
+      "B": "path",
+      "C": "host",
+      "D": "port"
+    },
+    "answer": "A",
+    "explanation": "A URL starts with the scheme/protocol (e.g. http://), followed by host, port and path."
+  },
+  {
+    "id": 89,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In HTTP, ______ server is a computer that keeps copies of responses to recent requests.",
+    "options": {
+      "A": "a regular",
+      "B": "a proxy",
+      "C": "an auxiliary",
+      "D": "a remote"
+    },
+    "answer": "B",
+    "explanation": "A proxy (cache) server stores copies of recent responses and serves repeat requests locally."
+  },
+  {
+    "id": 90,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "During an FTP session the data connection may be opened",
+    "options": {
+      "A": "only once",
+      "B": "only two times",
+      "C": "as many times as needed",
+      "D": "none of the choices is correct"
+    },
+    "answer": "C",
+    "explanation": "FTP keeps one control connection for the whole session and opens a new data connection for each file transfer or listing, as many times as needed."
+  },
+  {
+    "id": 91,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In FTP, there are three types of ______: stream, block, and compressed.",
+    "options": {
+      "A": "file types",
+      "B": "data types",
+      "C": "transmission modes",
+      "D": "none of the choices is correct"
+    },
+    "answer": "C",
+    "explanation": "FTP defines three transmission modes: stream, block and compressed."
+  },
+  {
+    "id": 92,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "The formal protocol that defines the MTA client and server in the Internet is called",
+    "options": {
+      "A": "SMTP",
+      "B": "SNMP",
+      "C": "TELNET",
+      "D": "SSH"
+    },
+    "answer": "A",
+    "explanation": "SMTP is the protocol used between Message Transfer Agent clients and servers."
+  },
+  {
+    "id": 93,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In the stop-and-wait protocol, the maximum send window size is ______ and the maximum receive window size is ______ where m is the number of bits in the sequence.",
+    "options": {
+      "A": "1; 1",
+      "B": "2^m − 1; 1",
+      "C": "1; 2^m",
+      "D": "2^m; 2^m"
+    },
+    "answer": "A",
+    "explanation": "Stop-and-wait sends one frame and waits for its ACK, so both send and receive windows are 1."
+  },
+  {
+    "id": 94,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In TCP, a SYN segment consumes ______ sequence number(s).",
+    "options": {
+      "A": "No",
+      "B": "One",
+      "C": "Two",
+      "D": "None of the choices is correct"
+    },
+    "answer": "B",
+    "explanation": "A SYN segment carries no data but consumes one sequence number."
+  },
+  {
+    "id": 95,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "A serious problem can arise in the sliding window operation when either the sending application program creates data slowly or the receiving application program consumes data slowly, or both. This problem is called the",
+    "options": {
+      "A": "silly window syndrome",
+      "B": "unexpected syndrome window",
+      "C": "bug",
+      "D": "None of the choices is correct"
+    },
+    "answer": "A",
+    "explanation": "Silly window syndrome happens when tiny segments are sent because of a slow sender or slow receiver; Nagle's and Clark's algorithms address it."
+  },
+  {
+    "id": 96,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "In TCP's ______ algorithm the size of the congestion window increases exponentially until it reaches a threshold.",
+    "options": {
+      "A": "congestion avoidance",
+      "B": "congestion detection",
+      "C": "slow start",
+      "D": "None of the choices is correct"
+    },
+    "answer": "C",
+    "explanation": "In slow start, cwnd doubles every RTT (exponential growth) until it reaches ssthresh, after which congestion avoidance grows it linearly."
+  },
+  {
+    "id": 97,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "The number of addresses assigned to an organization in classless addressing can be :",
+    "options": {
+      "A": "any number",
+      "B": "must be a multiple of 256",
+      "C": "must be a power of 2",
+      "D": "None of the choices is correct"
+    },
+    "answer": "C",
+    "explanation": "In CIDR, a block has 2^(32−n) addresses, so its size must be a power of 2."
+  },
+  {
+    "id": 98,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "______ allows a site to use a set of private addresses for internal communication and a set of global Internet addresses for communication with the rest of the world.",
+    "options": {
+      "A": "DHCP",
+      "B": "NAT",
+      "C": "IMCP",
+      "D": "None of the choices is correct"
+    },
+    "answer": "B",
+    "explanation": "Network Address Translation maps private internal addresses to global public addresses."
+  },
+  {
+    "id": 99,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "Which of the following is true about ICMP messages?",
+    "options": {
+      "A": "An ICMP error message may be generated for an ICMP error message.",
+      "B": "An ICMP error message may be generated for a fragmented datagram.",
+      "C": "An ICMP error message may be generated for a multicast datagram.",
+      "D": "None of the choices is correct"
+    },
+    "answer": "D",
+    "explanation": "ICMP error messages are not generated for ICMP error messages, for non-first fragments, or for multicast datagrams, so none of the statements is true."
+  },
+  {
+    "id": 100,
+    "source_file": "Programmer Exam 2013 - Paper-I",
+    "question": "The Open Shortest Path First (OSPF) protocol is an intradomain routing protocol based on ______ routing.",
+    "options": {
+      "A": "distance vector",
+      "B": "link state",
+      "C": "path vector",
+      "D": "None of the choices is correct"
+    },
+    "answer": "B",
+    "explanation": "OSPF is a link-state protocol: each router floods LSAs and computes shortest paths with Dijkstra's algorithm."
+  }
+]

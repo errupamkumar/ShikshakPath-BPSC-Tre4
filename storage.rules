@@ -1,0 +1,21 @@
+rules_version = '2';
+
+// Cloud Storage for the admin's PDFs (Notes / Strategy guides).
+// - Only an admin (custom claim set by /api/admin/resources/token) may upload,
+//   and only PDFs up to 50 MB into resources/.
+// - Nobody reads directly: students get a short-lived signed link from the server
+//   after it has checked their access.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /resources/{file} {
+      allow read: if false;
+      allow create: if request.auth != null
+                    && request.auth.token.admin == true
+                    && request.resource.size < 50 * 1024 * 1024
+                    && request.resource.contentType == 'application/pdf';
+    }
+    match /{all=**} {
+      allow read, write: if false;
+    }
+  }
+}

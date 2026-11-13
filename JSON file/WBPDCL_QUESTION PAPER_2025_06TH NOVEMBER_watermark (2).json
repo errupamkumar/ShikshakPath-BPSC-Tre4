@@ -1,0 +1,912 @@
+[
+  {
+    "id": 1,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "A key constraint in a relational database ensures that:",
+    "options": {
+      "A": "foreign keys match primary keys",
+      "B": "every attribute value is non-null",
+      "C": "no two relations share the same name",
+      "D": "each tuple in a relation can be uniquely identified by a key"
+    },
+    "answer": "D",
+    "explanation": "A key constraint requires that the key attribute(s) uniquely identify every tuple; no two tuples share the same key value."
+  },
+  {
+    "id": 2,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In fixed partitioning memory management, which of the following problems commonly occurs?",
+    "options": {
+      "A": "External fragmentation only",
+      "B": "Thrashing",
+      "C": "Both internal and external fragmentation",
+      "D": "Internal fragmentation only"
+    },
+    "answer": "D",
+    "explanation": "In fixed partitions a process seldom fills its partition exactly, so space inside the partition is wasted (internal fragmentation). The partitions are fixed, so there is no external fragmentation."
+  },
+  {
+    "id": 3,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "What is the lower bound on the time complexity of any comparison-based sorting algorithm in the worst case?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n²)",
+      "C": "O(log n)",
+      "D": "O(n log n)"
+    },
+    "answer": "D",
+    "explanation": "The decision-tree argument gives at least log2(n!) = Ω(n log n) comparisons in the worst case for any comparison sort."
+  },
+  {
+    "id": 4,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is a disadvantage of using AJAX in web applications?",
+    "options": {
+      "A": "Lack of support for JSON",
+      "B": "Difficulty in bookmarking dynamic states",
+      "C": "Increased server load",
+      "D": "Reduced interactivity"
+    },
+    "answer": "B",
+    "explanation": "AJAX updates the page without changing the URL, so the dynamic states are hard to bookmark or reach with the browser's back button."
+  },
+  {
+    "id": 5,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In a Binary Search Tree (BST), the time complexity for a successful search is:",
+    "options": {
+      "A": "O(log n) on average",
+      "B": "O(n log n)",
+      "C": "O(1)",
+      "D": "O(n)"
+    },
+    "answer": "A",
+    "explanation": "A randomly built BST has height O(log n), so the average search takes O(log n). A skewed tree can take O(n) in the worst case."
+  },
+  {
+    "id": 6,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is an example of a packet-switched network that uses the TCP/IP protocol stack?",
+    "options": {
+      "A": "PSTN (Public Switched Telephone Network)",
+      "B": "Internet",
+      "C": "Traditional TV Broadcast Network",
+      "D": "Telegraph Network"
+    },
+    "answer": "B",
+    "explanation": "The Internet is a packet-switched network built on TCP/IP. The PSTN is circuit-switched."
+  },
+  {
+    "id": 7,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "The data bus in a computer system is primarily used to:",
+    "options": {
+      "A": "synchronise the CPU clock",
+      "B": "carry memory addresses only",
+      "C": "transfer control signals between CPU and I/O devices",
+      "D": "transfer data between CPU, memory, and peripherals"
+    },
+    "answer": "D",
+    "explanation": "The data bus carries data. The address bus carries addresses and the control bus carries control signals."
+  },
+  {
+    "id": 8,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following regular expressions represent an infinite language over the alphabet {a}?",
+    "options": {
+      "A": "aa",
+      "B": "ε",
+      "C": "a*",
+      "D": "a"
+    },
+    "answer": "C",
+    "explanation": "a* denotes {ε, a, aa, aaa, …}, which is infinite. Each of the other expressions denotes a single string."
+  },
+  {
+    "id": 9,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following BCD representations violate valid BCD coding rules?",
+    "options": {
+      "A": "0101 1110",
+      "B": "0011 0100",
+      "C": "0001 1000",
+      "D": "0101 1001"
+    },
+    "answer": "A",
+    "explanation": "A BCD digit can only be 0000 to 1001 (0 to 9). 1110 (14) is not a valid BCD digit."
+  },
+  {
+    "id": 10,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "When deleting a node from a singly linked list, what is the most crucial step to maintain list integrity?",
+    "options": {
+      "A": "Update the previous node’s link to point to the next node of the deleted node",
+      "B": "Allocate memory for the deleted node",
+      "C": "Free all nodes after the deleted node",
+      "D": "Reset all links to NULL"
+    },
+    "answer": "A",
+    "explanation": "The predecessor's next pointer must bypass the deleted node (prev->next = del->next), or the list breaks."
+  },
+  {
+    "id": 11,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following sequences correctly represents the typical cache memory hierarchy?",
+    "options": {
+      "A": "L2 → L3 → Main Memory",
+      "B": "L3 → L2 → L1",
+      "C": "L1 → L2 → L3",
+      "D": "Main Memory → L1 → L2"
+    },
+    "answer": "C",
+    "explanation": "The CPU checks L1 (smallest and fastest) first, then L2, then L3, and then main memory."
+  },
+  {
+    "id": 12,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "A domain constraint in a relational database ensures that:",
+    "options": {
+      "A": "values of an attribute must come from a predefined set",
+      "B": "every attribute has a unique value",
+      "C": "foreign keys reference primary keys in another table",
+      "D": "tuples satisfy all key constraints"
+    },
+    "answer": "A",
+    "explanation": "A domain constraint restricts each attribute's values to its domain (data type or range of permitted values)."
+  },
+  {
+    "id": 13,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In the First Fit memory allocation algorithm:",
+    "options": {
+      "A": "memory is allocated in round-robin order",
+      "B": "the largest available hole is allocated first",
+      "C": "the smallest available hole is allocated first",
+      "D": "the first hole that is big enough is allocated"
+    },
+    "answer": "D",
+    "explanation": "First Fit scans from the start and takes the first hole that is large enough. Best Fit takes the smallest adequate hole and Worst Fit the largest."
+  },
+  {
+    "id": 14,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "A relation schema is best described as:",
+    "options": {
+      "A": "a collection of tuples in a relation",
+      "B": "a set of attributes and their domains",
+      "C": "a set of keys and indexes",
+      "D": "the physical storage layout of a table"
+    },
+    "answer": "B",
+    "explanation": "A relation schema R(A1, …, An) is the relation name with its attributes and their domains. The set of tuples is the relation instance."
+  },
+  {
+    "id": 15,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following statements is true about Abstract Data Types (ADTs) and Data Structures?",
+    "options": {
+      "A": "Arrays are always considered ADTs.",
+      "B": "ADTs define operations and behaviour, while data structures define implementation.",
+      "C": "Graphs are always a data structure, not an ADT.",
+      "D": "ADTs define how data is stored, while data structures define operations on data."
+    },
+    "answer": "B",
+    "explanation": "An ADT is a logical specification (what operations do), while a data structure is a concrete implementation (how data is stored)."
+  },
+  {
+    "id": 16,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following correctly initialises a 2D integer array of size 2×3 in C?",
+    "options": {
+      "A": "int a[2] = {{1, 2}, {3, 4, 5, 6}};",
+      "B": "int a[2][3] = {1, 2, 3, 4, 5, 6};",
+      "C": "int a[2,3] = {{1, 2, 3}, {4, 5, 6}};",
+      "D": "int a[][] = {1, 2, 3, 4, 5, 6};"
+    },
+    "answer": "B",
+    "explanation": "C allows a flat initialiser list for a 2D array, filled in row-major order. a[2,3] is not valid C syntax, and only the first dimension may be omitted."
+  },
+  {
+    "id": 17,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following best describes the scope of a local variable in Java?",
+    "options": {
+      "A": "It is accessible throughout the entire class.",
+      "B": "It is accessible from anywhere in the package.",
+      "C": "It is globally accessible throughout the program.",
+      "D": "It is accessible only within the block or method in which it is declared."
+    },
+    "answer": "D",
+    "explanation": "A local variable is visible only inside the method or block where it is declared."
+  },
+  {
+    "id": 18,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following CPU scheduling algorithms necessarily involves preemption as part of its operation?",
+    "options": {
+      "A": "First-Come, First-Served (FCFS)",
+      "B": "Round Robin (RR)",
+      "C": "Shortest Remaining Time First (SRTF)",
+      "D": "Priority Scheduling"
+    },
+    "answer": "B",
+    "explanation": "Round Robin preempts a process when its time quantum expires, so preemption is built into it. Note: SRTF is also inherently preemptive (it is the preemptive form of SJF), so C is arguable, but the official key is B."
+  },
+  {
+    "id": 19,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following statements about classes in Java is true?",
+    "options": {
+      "A": "Classes are created at runtime automatically.",
+      "B": "A class defines the structure and behaviour that objects will have.",
+      "C": "A class is an instance of an object.",
+      "D": "A class cannot contain methods."
+    },
+    "answer": "B",
+    "explanation": "A class is a blueprint that defines fields (structure) and methods (behaviour). Objects are instances of a class."
+  },
+  {
+    "id": 20,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is a valid Java identifier?",
+    "options": {
+      "A": "_myVar2",
+      "B": "2value",
+      "C": "class",
+      "D": "my-Var"
+    },
+    "answer": "A",
+    "explanation": "Identifiers may start with a letter, _ or $, and may not start with a digit, contain '-', or be a keyword such as class."
+  },
+  {
+    "id": 21,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is a limitation of Top-Down Parsing techniques such as recursive descent?",
+    "options": {
+      "A": "Cannot handle left-recursive grammars",
+      "B": "Cannot parse regular languages",
+      "C": "Cannot handle ambiguous grammars",
+      "D": "Cannot construct parse trees"
+    },
+    "answer": "A",
+    "explanation": "Left recursion (A → Aα) makes a recursive-descent parser call itself forever, so left recursion must be eliminated first."
+  },
+  {
+    "id": 22,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is an example of a non-linear data structure?",
+    "options": {
+      "A": "Array",
+      "B": "Stack",
+      "C": "Queue",
+      "D": "Tree"
+    },
+    "answer": "D",
+    "explanation": "A tree is hierarchical (non-linear). Arrays, stacks and queues are linear."
+  },
+  {
+    "id": 23,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "The CreateProcess() system call in Windows is primarily used to:",
+    "options": {
+      "A": "create a new process and its primary thread",
+      "B": "terminate an existing process",
+      "C": "allocate memory for a process",
+      "D": "switch between processes"
+    },
+    "answer": "A",
+    "explanation": "The Win32 CreateProcess() creates a new process together with its primary thread. TerminateProcess() ends one."
+  },
+  {
+    "id": 24,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which Boolean expression correctly represents the output of a 3-input OR gate?",
+    "options": {
+      "A": "Y=A·B·C",
+      "B": "Y=A+B+C",
+      "C": "Y=A⊕B⊕C",
+      "D": "Y=(A+B)·C"
+    },
+    "answer": "B",
+    "explanation": "The OR operation is written with '+', so a 3-input OR gives Y = A + B + C."
+  },
+  {
+    "id": 25,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In an ER diagram, the mapping cardinality between two entities determines:",
+    "options": {
+      "A": "how many attributes an entity has",
+      "B": "how many relationships can exist between instances of the entities",
+      "C": "how many weak entities can be generated",
+      "D": "how many derived attributes exist"
+    },
+    "answer": "B",
+    "explanation": "Mapping cardinality (1:1, 1:N, M:N) states how many entity instances can be associated with instances of the other entity through a relationship."
+  },
+  {
+    "id": 26,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "The primary role of DNS name servers is to:",
+    "options": {
+      "A": "resolve human-readable domain names to IP addresses",
+      "B": "manage routing tables in networks",
+      "C": "store web pages for clients",
+      "D": "authenticate users for mail services"
+    },
+    "answer": "A",
+    "explanation": "DNS translates domain names into IP addresses."
+  },
+  {
+    "id": 27,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is true about converting a Mealy machine to an equivalent Moore machine?",
+    "options": {
+      "A": "Conversion is not possible for some machines.",
+      "B": "The Moore machine may require more states than the Mealy machine.",
+      "C": "The number of states always remains the same.",
+      "D": "Moore machines always have fewer states than Mealy machines."
+    },
+    "answer": "B",
+    "explanation": "Each Mealy state may need to be split per distinct output, so the Moore machine can need up to (states × outputs) states."
+  },
+  {
+    "id": 28,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is a key design issue for network layers?",
+    "options": {
+      "A": "Process scheduling",
+      "B": "Error control and flow control",
+      "C": "Compiler optimisation",
+      "D": "Database normalisation"
+    },
+    "answer": "B",
+    "explanation": "Layer design issues include addressing, error control, flow control, multiplexing and routing (Tanenbaum)."
+  },
+  {
+    "id": 29,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Data abstraction in OOP refers to:",
+    "options": {
+      "A": "overriding methods in subclasses",
+      "B": "deriving new classes from base classes",
+      "C": "allocating memory dynamically for objects",
+      "D": "hiding internal details and showing only essential features"
+    },
+    "answer": "D",
+    "explanation": "Abstraction exposes only essential features and hides implementation details. Option B is inheritance and option A is polymorphism through overriding."
+  },
+  {
+    "id": 30,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In Insertion Sort, the number of comparisons in the worst case for n elements is:",
+    "options": {
+      "A": "n log n",
+      "B": "n/2",
+      "C": "n²",
+      "D": "n"
+    },
+    "answer": "C",
+    "explanation": "With reverse-sorted input, insertion sort makes n(n−1)/2 comparisons, which is O(n²). The official key gives n²."
+  },
+  {
+    "id": 31,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In a Mealy machine, the output depends on:",
+    "options": {
+      "A": "the next state",
+      "B": "the current input only",
+      "C": "the current state and current input",
+      "D": "the current state only"
+    },
+    "answer": "C",
+    "explanation": "Mealy output is a function of (state, input). Moore output depends on the state only."
+  },
+  {
+    "id": 32,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In Java, dynamic binding occurs when:",
+    "options": {
+      "A": "the compiler determines the method to call at compile time",
+      "B": "the method call is resolved at runtime based on the actual object",
+      "C": "the static methods are executed",
+      "D": "the variables are bound to values at compile time"
+    },
+    "answer": "B",
+    "explanation": "Dynamic (late) binding resolves overridden method calls at runtime based on the actual object type."
+  },
+  {
+    "id": 33,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "The SetConsoleMode() system call is used to:",
+    "options": {
+      "A": "change CPU scheduling mode",
+      "B": "terminate the console",
+      "C": "allocate memory for a console application",
+      "D": "set input/output modes for a console"
+    },
+    "answer": "D",
+    "explanation": "The Win32 SetConsoleMode() sets the input or output mode of a console's buffer, such as echo or line input."
+  },
+  {
+    "id": 34,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following correctly defines a function in JavaScript?",
+    "options": {
+      "A": "fn myFunc() { }",
+      "B": "function myFunc() { }",
+      "C": "def myFunc():",
+      "D": "function: myFunc() { }"
+    },
+    "answer": "B",
+    "explanation": "JavaScript function declarations use the keyword function. def is Python and fn is Rust."
+  },
+  {
+    "id": 35,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is a Java keyword?",
+    "options": {
+      "A": "Integer",
+      "B": "String",
+      "C": "main",
+      "D": "goto"
+    },
+    "answer": "D",
+    "explanation": "goto is a reserved keyword in Java, even though it is unused. Integer and String are class names and main is a method name."
+  },
+  {
+    "id": 36,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In associative memory (content-addressable memory), data is accessed:",
+    "options": {
+      "A": "sequentially from first to last address",
+      "B": "by index computation",
+      "C": "by matching a portion of the data content",
+      "D": "by specifying the memory address"
+    },
+    "answer": "C",
+    "explanation": "CAM is searched by content: all words are compared with a key (in parallel) instead of being addressed."
+  },
+  {
+    "id": 37,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "If R has m tuples and S has n tuples, then R × S (Cartesian product) will have:",
+    "options": {
+      "A": "m × n tuples",
+      "B": "m + n tuples",
+      "C": "max(m, n) tuples",
+      "D": "m − n tuples"
+    },
+    "answer": "A",
+    "explanation": "The Cartesian product pairs every tuple of R with every tuple of S, which gives m × n tuples."
+  },
+  {
+    "id": 38,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is true about JavaScript?",
+    "options": {
+      "A": "It replaces HTML structure.",
+      "B": "It runs only on the server.",
+      "C": "It is a compiled, strongly typed language.",
+      "D": "It is primarily a client-side scripting language."
+    },
+    "answer": "D",
+    "explanation": "JavaScript is mainly a client-side scripting language run by browsers, although Node.js also runs it on servers. It is dynamically typed."
+  },
+  {
+    "id": 39,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "The time complexity of Linear Search in the average case is:",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n²)",
+      "D": "O(n)"
+    },
+    "answer": "D",
+    "explanation": "On average about n/2 comparisons are needed, which is O(n)."
+  },
+  {
+    "id": 40,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In direct addressing mode, the operand’s address is:",
+    "options": {
+      "A": "stored in a register",
+      "B": "given directly in the instruction",
+      "C": "computed using an index",
+      "D": "stored in a memory location pointed by another address"
+    },
+    "answer": "B",
+    "explanation": "In direct addressing the instruction's address field holds the effective address of the operand."
+  },
+  {
+    "id": 41,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In neural network optimisation, ill-conditioning of the gradient becomes problematic when:",
+    "options": {
+      "A": "∇J = 0 and the Hessian H is positive definite",
+      "B": "the first-order term εgᵀg dominates the second-order term ½ε²gᵀHg",
+      "C": "the second-order term ½ε²gᵀHg exceeds the first-order term εgᵀg, making gradient steps unstable",
+      "D": "the eigenvalues of the Hessian H are all equal, leading to uniform curvature"
+    },
+    "answer": "C",
+    "explanation": "By the second-order Taylor expansion, a gradient step changes the cost by −εgᵀg + ½ε²gᵀHg. Ill-conditioning hurts when ½ε²gᵀHg > εgᵀg, so even small steps can increase the cost (Goodfellow et al., Deep Learning)."
+  },
+  {
+    "id": 42,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Dynamic HTML (DHTML) refers to:",
+    "options": {
+      "A": "static HTML pages with no interactivity",
+      "B": "a server-side scripting language",
+      "C": "the combination of HTML, CSS, and JavaScript to create interactive web pages",
+      "D": "a new HTML version"
+    },
+    "answer": "C",
+    "explanation": "DHTML combines HTML, CSS, JavaScript and the DOM to make pages interactive on the client."
+  },
+  {
+    "id": 43,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is the primary difference between regression and classification in machine learning?",
+    "options": {
+      "A": "Regression is supervised, classification is unsupervised.",
+      "B": "Regression predicts continuous values, classification predicts discrete labels.",
+      "C": "Regression does not require data.",
+      "D": "Classification uses only decision trees, regression uses neural networks."
+    },
+    "answer": "B",
+    "explanation": "Both are supervised. Regression outputs continuous values and classification outputs discrete classes."
+  },
+  {
+    "id": 44,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Bubble sort repeatedly:",
+    "options": {
+      "A": "inserts elements into their correct positions",
+      "B": "compares adjacent elements and swaps if needed",
+      "C": "selects the smallest element and places it first",
+      "D": "divides the array into subarrays and merges them"
+    },
+    "answer": "B",
+    "explanation": "Bubble sort compares adjacent pairs and swaps them when they are out of order. A is insertion sort, C is selection sort and D is merge sort."
+  },
+  {
+    "id": 45,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In an instruction code, the opcode specifies which of the following?",
+    "options": {
+      "A": "The number of registers used",
+      "B": "The data to be processed",
+      "C": "The address of the operand",
+      "D": "The type of operation to be performed"
+    },
+    "answer": "D",
+    "explanation": "The opcode says which operation to perform (ADD, LOAD and so on). The address field locates the operand."
+  },
+  {
+    "id": 46,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is an application of compiler technology outside of traditional language compilation?",
+    "options": {
+      "A": "Text formatting",
+      "B": "Program analysis and optimisation in IDEs",
+      "C": "Image compression",
+      "D": "Binary addition"
+    },
+    "answer": "B",
+    "explanation": "Compiler techniques such as parsing and data-flow analysis are reused in IDEs, static analysers and optimisers."
+  },
+  {
+    "id": 47,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In a computer with 48-bit words, where one bit is reserved for the sign, what is the range of fixed-point integer numbers that can be represented?",
+    "options": {
+      "A": "±(2^46 − 1)",
+      "B": "±(2^48 − 1)",
+      "C": "±2^47",
+      "D": "±(2^47 − 1)"
+    },
+    "answer": "D",
+    "explanation": "47 magnitude bits remain, so the magnitude range is 0 to 2^47 − 1, which gives ±(2^47 − 1) in sign-magnitude (Mano)."
+  },
+  {
+    "id": 48,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In IPv4, the Time to Live (TTL) field is primarily used to:",
+    "options": {
+      "A": "limit the packet's lifetime to avoid looping",
+      "B": "specify the total packet size",
+      "C": "specify the destination port",
+      "D": "indicate packet priority"
+    },
+    "answer": "A",
+    "explanation": "Each router decrements TTL and discards the packet at 0, so packets cannot loop forever."
+  },
+  {
+    "id": 49,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following best describes a linked list?",
+    "options": {
+      "A": "A stack that uses LIFO order",
+      "B": "A fixed-size array with indexed elements",
+      "C": "A collection of nodes where each node contains data and a pointer to the next node",
+      "D": "A collection of elements stored in contiguous memory locations"
+    },
+    "answer": "C",
+    "explanation": "A linked list is a chain of nodes, each holding data and a link to the next node. Its nodes need not be contiguous."
+  },
+  {
+    "id": 50,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is commonly used by lexical analyzers to recognise tokens?",
+    "options": {
+      "A": "Context-free grammars",
+      "B": "Semantic rules",
+      "C": "Regular expressions and finite automata",
+      "D": "Machine learning classifiers"
+    },
+    "answer": "C",
+    "explanation": "Token patterns are specified with regular expressions and recognised by finite automata, as in lex/flex. Context-free grammars are used by the parser."
+  },
+  {
+    "id": 51,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is the correct syntax of a for loop in JavaScript?",
+    "options": {
+      "A": "for i = 0 to 10 { ... }",
+      "B": "for (i = 0; i < 10; i++) { ... }",
+      "C": "foreach (i in 10) { ... }",
+      "D": "loop(i = 0; i < 10) { ... }"
+    },
+    "answer": "B",
+    "explanation": "JavaScript uses the C-style for (init; condition; update) { … }."
+  },
+  {
+    "id": 52,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is the correct order of phases in a typical compiler?",
+    "options": {
+      "A": "Code Generation → Semantic Analysis → Parsing → Lexical Analysis",
+      "B": "Parsing → Lexical Analysis → Code Generation → Optimization",
+      "C": "Lexical Analysis → Parsing → Semantic Analysis → Optimization → Code Generation",
+      "D": "Semantic Analysis → Lexical Analysis → Parsing → Code Generation"
+    },
+    "answer": "C",
+    "explanation": "The phases run lexical analysis, syntax analysis (parsing), semantic analysis, (intermediate code and) optimisation, then code generation."
+  },
+  {
+    "id": 53,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "The goal of unsupervised learning is to:",
+    "options": {
+      "A": "train using labeled examples",
+      "B": "learn patterns and structures from unlabeled data",
+      "C": "map inputs to known outputs",
+      "D": "optimise performance based on rewards"
+    },
+    "answer": "B",
+    "explanation": "Unsupervised learning finds structure (clusters, associations) in unlabeled data. D describes reinforcement learning."
+  },
+  {
+    "id": 54,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is Microsoft's cloud platform?",
+    "options": {
+      "A": "Google Cloud",
+      "B": "Azure",
+      "C": "AWS",
+      "D": "Oracle Cloud"
+    },
+    "answer": "B",
+    "explanation": "Microsoft Azure is Microsoft's cloud. AWS belongs to Amazon."
+  },
+  {
+    "id": 55,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following best describes Software as a Service (SaaS)?",
+    "options": {
+      "A": "Users manage the underlying infrastructure but not applications",
+      "B": "Users build their own virtual machines for development",
+      "C": "Users deploy and control their own applications and OS",
+      "D": "Users access applications hosted by providers over the internet"
+    },
+    "answer": "D",
+    "explanation": "With SaaS the provider hosts and manages the application, and users use it over the internet (for example Gmail or Office 365)."
+  },
+  {
+    "id": 56,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following statements about constructors in Java is true?",
+    "options": {
+      "A": "A constructor initialises objects and has no return type.",
+      "B": "Constructors can be explicitly invoked using the object name.",
+      "C": "A constructor must have a return type of void.",
+      "D": "Every class must have a parameterised constructor."
+    },
+    "answer": "A",
+    "explanation": "A constructor has the class name and no return type (not even void), and it initialises new objects. A default constructor is supplied when none is written."
+  },
+  {
+    "id": 57,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following best describes supervised learning?",
+    "options": {
+      "A": "Learning without labeled data",
+      "B": "Learning by receiving feedback on actions",
+      "C": "Learning by clustering similar inputs",
+      "D": "Learning from labeled input-output pairs"
+    },
+    "answer": "D",
+    "explanation": "Supervised learning trains on labeled (input, output) pairs."
+  },
+  {
+    "id": 58,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is a valid primitive data type in Java?",
+    "options": {
+      "A": "array",
+      "B": "String",
+      "C": "Class",
+      "D": "int"
+    },
+    "answer": "D",
+    "explanation": "Java's primitives are byte, short, int, long, float, double, char and boolean. String, arrays and Class are reference types."
+  },
+  {
+    "id": 59,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In IEEE 754 single-precision floating-point format, how many bits are allocated to the exponent field?",
+    "options": {
+      "A": "11",
+      "B": "12",
+      "C": "10",
+      "D": "8"
+    },
+    "answer": "D",
+    "explanation": "Single precision uses 1 sign bit, 8 exponent bits and 23 fraction bits. Double precision uses an 11-bit exponent."
+  },
+  {
+    "id": 60,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following correctly represents the 1’s complement of the binary number 101100?",
+    "options": {
+      "A": "010011",
+      "B": "111111",
+      "C": "101011",
+      "D": "000000"
+    },
+    "answer": "A",
+    "explanation": "Inverting every bit of 101100 gives 010011."
+  },
+  {
+    "id": 61,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following correctly declares a constant in Java?",
+    "options": {
+      "A": "final int MAX = 100;",
+      "B": "constant int MAX = 100;",
+      "C": "MAX = 100;",
+      "D": "const int MAX = 100;"
+    },
+    "answer": "A",
+    "explanation": "Java constants are declared with final. const is reserved but unused."
+  },
+  {
+    "id": 62,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In the context of Artificial Intelligence, the Traveling Salesperson Problem (TSP) is best described as:",
+    "options": {
+      "A": "a planning and optimisation problem where the objective is to visit each city exactly once with the shortest possible tour",
+      "B": "a probabilistic reasoning problem used in Bayesian networks",
+      "C": "a deterministic problem used to test logical inference in AI systems",
+      "D": "a supervised learning problem used for classifying travel routes"
+    },
+    "answer": "A",
+    "explanation": "TSP is a combinatorial optimisation (search) problem: find the shortest tour that visits every city exactly once and returns to the start."
+  },
+  {
+    "id": 63,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "In the CIA triad of information security, availability ensures that:",
+    "options": {
+      "A": "Data is protected from unauthorized access",
+      "B": "Authorized users can access resources when needed",
+      "C": "Data remains accurate and unchanged",
+      "D": "Data is encrypted during transmission"
+    },
+    "answer": "B",
+    "explanation": "Availability means authorised users get timely access. A is confidentiality and C is integrity."
+  },
+  {
+    "id": 64,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "The primary task of the lexical analyser is to:",
+    "options": {
+      "A": "optimise code for performance",
+      "B": "group characters into tokens",
+      "C": "generate intermediate code",
+      "D": "construct parse trees"
+    },
+    "answer": "B",
+    "explanation": "The lexer reads the character stream and groups it into lexemes, which it outputs as tokens."
+  },
+  {
+    "id": 65,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "A hybrid cloud is best defined as:",
+    "options": {
+      "A": "A peer-to-peer cloud model",
+      "B": "A combination of public and private clouds, integrated to share data and applications",
+      "C": "A single private cloud used by one organization",
+      "D": "Multiple public clouds managed by a third party"
+    },
+    "answer": "B",
+    "explanation": "A hybrid cloud combines private and public clouds that share data and applications (NIST)."
+  },
+  {
+    "id": 66,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "A Finite State Machine (FSM) simulator typically consists of:",
+    "options": {
+      "A": "a finite set of states, an input string, and a transition function",
+      "B": "a list of productions and parsing table",
+      "C": "a tape, head, and infinite memory",
+      "D": "a stack and a set of grammar rules"
+    },
+    "answer": "A",
+    "explanation": "An FSM is defined by states, an input alphabet or string, a transition function, a start state and final states. C describes a Turing machine and D a PDA."
+  },
+  {
+    "id": 67,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "What happens when you perform narrowing type casting in Java (e.g., from double to int)?",
+    "options": {
+      "A": "The fractional part is rounded.",
+      "B": "A compilation error occurs.",
+      "C": "The fractional part is truncated.",
+      "D": "The value is converted without any loss."
+    },
+    "answer": "C",
+    "explanation": "An explicit (int) cast on a double truncates toward zero: (int) 3.9 is 3."
+  },
+  {
+    "id": 68,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following statements about POP3 (Post Office Protocol) is correct?",
+    "options": {
+      "A": "POP3 is used to send emails to other servers.",
+      "B": "POP3 supports folder management on the server.",
+      "C": "POP3 typically downloads messages and deletes them from the server.",
+      "D": "POP3 allows messages to remain on the server by default."
+    },
+    "answer": "C",
+    "explanation": "By default POP3 uses download-and-delete. IMAP provides server-side folders and SMTP sends mail."
+  },
+  {
+    "id": 69,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is a key benefit of Cloud Computing?",
+    "options": {
+      "A": "On-demand resource provisioning and scalability",
+      "B": "Manual software updates",
+      "C": "Fixed capacity planning",
+      "D": "High upfront capital investment"
+    },
+    "answer": "A",
+    "explanation": "Cloud computing offers on-demand self-service, elastic scaling and pay-as-you-go pricing."
+  },
+  {
+    "id": 70,
+    "source_file": "WBPDCL_QUESTION PAPER_2025_06TH NOVEMBER_watermark (2)",
+    "question": "Which of the following is the correct hierarchy of language classes in the Chomsky Hierarchy?",
+    "options": {
+      "A": "Regular ⊆ Context-Free ⊆ Context-Sensitive ⊆ Recursively Enumerable",
+      "B": "Regular = Context-Free = Context-Sensitive",
+      "C": "Regular ⊆ Context-Sensitive ⊆ Context-Free ⊆ Recursively Enumerable",
+      "D": "Context-Free ⊆ Regular ⊆ Context-Sensitive ⊆ Recursively Enumerable"
+    },
+    "answer": "A",
+    "explanation": "The hierarchy is Type 3 (Regular) ⊂ Type 2 (CFL) ⊂ Type 1 (CSL) ⊂ Type 0 (RE)."
+  }
+]

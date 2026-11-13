@@ -1,0 +1,626 @@
+[
+  {
+    "id": 1,
+    "source_file": "D-87-10",
+    "question": "The number of integers between 1 and 250 that are divisible by 2, 5 and 7 is",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "5",
+      "D": "8"
+    },
+    "answer": "B",
+    "explanation": "Divisible by 2, 5 and 7 means divisible by LCM 70: 70, 140, 210, so 3 integers."
+  },
+  {
+    "id": 2,
+    "source_file": "D-87-10",
+    "question": "An undirected graph possesses an eulerian circuit if and only if it is connected and its vertices are",
+    "options": {
+      "A": "all of even degree",
+      "B": "all of odd degree",
+      "C": "of any degree",
+      "D": "even in number"
+    },
+    "answer": "A",
+    "explanation": "Euler's theorem: a connected graph has an Euler circuit iff every vertex has even degree."
+  },
+  {
+    "id": 3,
+    "source_file": "D-87-10",
+    "question": "A partially ordered set is said to be a lattice if every two elements in the set have",
+    "options": {
+      "A": "a unique least upper bound",
+      "B": "a unique greatest lower bound",
+      "C": "both (A) and (B)",
+      "D": "none of the above"
+    },
+    "answer": "C",
+    "explanation": "A lattice is a poset in which every pair has both a least upper bound (join) and a greatest lower bound (meet)."
+  },
+  {
+    "id": 4,
+    "source_file": "D-87-10",
+    "question": "The minimum number of edges in a connected graph with 'n' vertices is equal to",
+    "options": {
+      "A": "n (n – 1)",
+      "B": "n (n – 1)/2",
+      "C": "n²",
+      "D": "n – 1"
+    },
+    "answer": "D",
+    "explanation": "A connected graph needs at least n − 1 edges; a spanning tree achieves this minimum."
+  },
+  {
+    "id": 5,
+    "source_file": "D-87-10",
+    "question": "Consider the problem of connecting 19 lamps to a single electric outlet by using extension cords each of which has four outlets. The number of extension cords required is",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7"
+    },
+    "answer": "C",
+    "explanation": "Each cord uses one outlet and gives four, a net gain of 3. Starting from 1 outlet, 1 + 3k ≥ 19 gives k = 6 (a rooted 4-ary tree with 19 leaves has (19−1)/3 = 6 internal nodes)."
+  },
+  {
+    "id": 6,
+    "source_file": "D-87-10",
+    "question": "The decimal number equivalent of (4057.06)₈ is",
+    "options": {
+      "A": "2095.75",
+      "B": "2095.075",
+      "C": "2095.937",
+      "D": "2095.0937"
+    },
+    "answer": "D",
+    "explanation": "4×512 + 0×64 + 5×8 + 7 = 2095 and .06₈ = 6/64 = 0.09375, so ≈ 2095.0937."
+  },
+  {
+    "id": 7,
+    "source_file": "D-87-10",
+    "question": "AB + (A + B)' is equivalent to\n[(A + B) is overlined in the paper, i.e. complemented]",
+    "options": {
+      "A": "A ⊕ B",
+      "B": "A ⊙ B",
+      "C": "(A ⊕ B) ⊙ A",
+      "D": "(A ⊙ B) ⊕ A"
+    },
+    "answer": "B",
+    "explanation": "(A + B)' = A'B' by De Morgan, so AB + A'B' is XNOR, A ⊙ B."
+  },
+  {
+    "id": 8,
+    "source_file": "D-87-10",
+    "question": "12-bit 2's complement of –73.75 is",
+    "options": {
+      "A": "01001001.1100",
+      "B": "11001001.1100",
+      "C": "10110110.0100",
+      "D": "10110110.1100"
+    },
+    "answer": "C",
+    "explanation": "+73.75 = 01001001.1100 (8 integer + 4 fraction bits). Invert to 10110110.0011 and add 1 at the LSB: 10110110.0100."
+  },
+  {
+    "id": 9,
+    "source_file": "D-87-10",
+    "question": "Encoding of data bits 0011 into 7-bit even Parity Hamming Code is",
+    "options": {
+      "A": "0011110",
+      "B": "0101110",
+      "C": "0010110",
+      "D": "0011100"
+    },
+    "answer": "D",
+    "explanation": "Doubtful question. With the common systematic form d1d2d3d4p1p2p3 (p1 = d1⊕d2⊕d4 = 1, p2 = d1⊕d3⊕d4 = 0, p3 = d2⊕d3⊕d4 = 0) the codeword is 0011100. With the positional layout p1p2d1p4d2d3d4 it would be 1000011, which is not offered. Some keys give (A); verify with your source."
+  },
+  {
+    "id": 10,
+    "source_file": "D-87-10",
+    "question": "How many of the following declarations are correct ?\nint z = 7.0;\ndouble void = 0.000;\nshort array [2] = {0, 1, 2};\nchar c = \"\\n\";",
+    "options": {
+      "A": "None",
+      "B": "One is correct",
+      "C": "Two are correct",
+      "D": "All four are correct"
+    },
+    "answer": "B",
+    "explanation": "Only int z = 7.0; is valid (7.0 is converted to 7). void is a keyword, the array has more initializers than elements, and a string literal \"\\n\" cannot initialise a char."
+  },
+  {
+    "id": 11,
+    "source_file": "D-87-10",
+    "question": "The value of the following expression (13 / 4 * 3) % 5 + 1 is",
+    "options": {
+      "A": "5.75",
+      "B": "2.95",
+      "C": "1.4875",
+      "D": "5"
+    },
+    "answer": "D",
+    "explanation": "Integer arithmetic: 13/4 = 3, ×3 = 9, 9 % 5 = 4, +1 = 5."
+  },
+  {
+    "id": 12,
+    "source_file": "D-87-10",
+    "question": "Which one of the following will set the value of y to 5 if x has the value 3, but not otherwise ?",
+    "options": {
+      "A": "if (x = 3) y = 5",
+      "B": "if x = = 3 (y = 5)",
+      "C": "if (x = = 3); y = 5",
+      "D": "if (x = = 3) y = 5"
+    },
+    "answer": "D",
+    "explanation": "(A) assigns 3 (always true), (B) is a syntax error, and (C)'s stray semicolon makes y = 5 run unconditionally."
+  },
+  {
+    "id": 13,
+    "source_file": "D-87-10",
+    "question": "Which one of the following sentences is true ?",
+    "options": {
+      "A": "The body of a while loop is executed at least once.",
+      "B": "The body of a do … while loop is executed at least once.",
+      "C": "The body of a do … while loop is executed zero or more times.",
+      "D": "A for loop can never be used in place of a while loop."
+    },
+    "answer": "B",
+    "explanation": "do…while tests its condition after the body, so the body runs at least once; a while loop may run zero times."
+  },
+  {
+    "id": 14,
+    "source_file": "D-87-10",
+    "question": "\"Black\" refers in the \"Black-box\" testing means",
+    "options": {
+      "A": "Characters of the movie \"Black\"",
+      "B": "I – O is hidden",
+      "C": "Design is hidden",
+      "D": "Users are hidden"
+    },
+    "answer": "C",
+    "explanation": "In black-box testing the internal design/code is hidden; tests are based only on inputs and outputs (which are visible)."
+  },
+  {
+    "id": 15,
+    "source_file": "D-87-10",
+    "question": "In generalisation, the differences between members of an entity is",
+    "options": {
+      "A": "maximized",
+      "B": "minimized",
+      "C": "both (A) & (B)",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "explanation": "Generalisation suppresses differences and emphasises common features to form a superclass; specialisation maximises differences."
+  },
+  {
+    "id": 16,
+    "source_file": "D-87-10",
+    "question": "The dependency preservation decomposition is a property to decompose database schema D, in which each functional dependency X → Y specified in F,",
+    "options": {
+      "A": "appeared directly in one of the relation schemas Ri in the decomposed D.",
+      "B": "could be inferred from dependencies that appear in some Ri.",
+      "C": "both (A) and (B)",
+      "D": "None of these"
+    },
+    "answer": "C",
+    "explanation": "A decomposition preserves dependencies if every FD in F either appears in some Ri or can be inferred from the union of the projected dependencies (Elmasri–Navathe)."
+  },
+  {
+    "id": 17,
+    "source_file": "D-87-10",
+    "question": "Which of the following is an optimistic concurrency control method ?",
+    "options": {
+      "A": "Validation based",
+      "B": "Time stamp ordering",
+      "C": "Lock-based",
+      "D": "None of these"
+    },
+    "answer": "A",
+    "explanation": "Validation-based (optimistic) protocols run transactions without locks and validate them before commit."
+  },
+  {
+    "id": 18,
+    "source_file": "D-87-10",
+    "question": "Optical storage is a",
+    "options": {
+      "A": "high-speed direct access storage device.",
+      "B": "low-speed direct access storage device.",
+      "C": "medium-speed direct access storage device.",
+      "D": "high-speed sequential access storage device."
+    },
+    "answer": "B",
+    "explanation": "Optical discs (CD/DVD) allow direct access but are slower than magnetic hard disks, so they are classed as low-speed direct access storage."
+  },
+  {
+    "id": 19,
+    "source_file": "D-87-10",
+    "question": "Which of the following is the process by which a user's access to physical data in the application is limited, based on his privileges ?",
+    "options": {
+      "A": "Authorization",
+      "B": "Authentication",
+      "C": "Access Control",
+      "D": "All of these"
+    },
+    "answer": "A",
+    "explanation": "Authorization grants or limits access rights based on a user's privileges; authentication only verifies identity. (Some keys give Access Control, which is closely related.)"
+  },
+  {
+    "id": 20,
+    "source_file": "D-87-10",
+    "question": "What is the maximum number of nodes in a B-tree of order 10 of depth 3 (root at depth 0) ?",
+    "options": {
+      "A": "111",
+      "B": "999",
+      "C": "9999",
+      "D": "None of the above"
+    },
+    "answer": "D",
+    "explanation": "Order 10 means at most 10 children per node: 1 + 10 + 100 + 1000 = 1111 nodes, which is not listed. (9999 would be the maximum number of keys.)"
+  },
+  {
+    "id": 21,
+    "source_file": "D-87-10",
+    "question": "A binary tree with 27 nodes has _______ null branches.",
+    "options": {
+      "A": "54",
+      "B": "27",
+      "C": "26",
+      "D": "None of the above"
+    },
+    "answer": "D",
+    "explanation": "A binary tree with n nodes has 2n pointers and n − 1 edges, so there are n + 1 = 28 null branches."
+  },
+  {
+    "id": 22,
+    "source_file": "D-87-10",
+    "question": "The time complexity to build a heap of n elements is",
+    "options": {
+      "A": "0(1)",
+      "B": "0(lgn)",
+      "C": "0(n)",
+      "D": "0(nlgn)"
+    },
+    "answer": "C",
+    "explanation": "Bottom-up heap construction (BUILD-HEAP) runs in O(n). (The paper prints '0' for O.)"
+  },
+  {
+    "id": 23,
+    "source_file": "D-87-10",
+    "question": "Linear probing suffers from a problem known as",
+    "options": {
+      "A": "Secondary clustering",
+      "B": "Primary clustering",
+      "C": "Both (A) and (B)",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "explanation": "Linear probing creates long runs of occupied slots (primary clustering); quadratic probing suffers from secondary clustering."
+  },
+  {
+    "id": 24,
+    "source_file": "D-87-10",
+    "question": "Which of the following can be the sequence of nodes examined in binary search tree while searching for key 88 ?",
+    "options": {
+      "A": "90, 40, 65, 50, 88",
+      "B": "90, 110, 80, 85, 88",
+      "C": "190, 60, 90, 85, 88",
+      "D": "65, 140, 80, 70, 88"
+    },
+    "answer": "C",
+    "explanation": "190 (go left), 60 (go right), 90 (go left), 85 (go right), 88: consistent. A goes right from 65 to 50, B goes right from 90, and D reaches 70 after going right from 80."
+  },
+  {
+    "id": 25,
+    "source_file": "D-87-10",
+    "question": "Frequency shift keying is used mostly in",
+    "options": {
+      "A": "Radio transmission",
+      "B": "Telegraphy",
+      "C": "Telephone",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "explanation": "FSK was used chiefly in telegraphy (radio-teletype) and low-speed data transmission."
+  },
+  {
+    "id": 26,
+    "source_file": "D-87-10",
+    "question": "The baud rate is",
+    "options": {
+      "A": "always equal to the bit transfer rate",
+      "B": "equal to twice the bandwidth of an ideal channel",
+      "C": "not equal to the signalling rate",
+      "D": "equal to half of the bandwidth of an ideal channel"
+    },
+    "answer": "B",
+    "explanation": "By Nyquist, a noiseless channel of bandwidth B supports at most 2B symbols (baud) per second. Baud equals bit rate only for binary signalling."
+  },
+  {
+    "id": 27,
+    "source_file": "D-87-10",
+    "question": "How much bandwidth is there in 1 micron of spectrum at a wavelength of 1 micron ?",
+    "options": {
+      "A": "300 MHz",
+      "B": "3 GHz",
+      "C": "300 THz",
+      "D": "30 KHz"
+    },
+    "answer": "C",
+    "explanation": "Δf = cΔλ/λ² = (3×10⁸ × 10⁻⁶)/(10⁻⁶)² = 3×10¹⁴ Hz = 300 THz (Tanenbaum)."
+  },
+  {
+    "id": 28,
+    "source_file": "D-87-10",
+    "question": "Which of the following file transfer protocols use TCP and establishes two virtual circuits between the local and remote server ?",
+    "options": {
+      "A": "FTP",
+      "B": "TFTP",
+      "C": "TELNET",
+      "D": "NFS"
+    },
+    "answer": "A",
+    "explanation": "FTP uses TCP with two connections: control (port 21) and data (port 20). TFTP uses UDP."
+  },
+  {
+    "id": 29,
+    "source_file": "D-87-10",
+    "question": "Object code is the output of ______.",
+    "options": {
+      "A": "Operating System",
+      "B": "Compiler or Assembler",
+      "C": "only Assembler",
+      "D": "only Compiler"
+    },
+    "answer": "B",
+    "explanation": "Both compilers and assemblers translate source into object code."
+  },
+  {
+    "id": 30,
+    "source_file": "D-87-10",
+    "question": "'Macro' in an assembly level program is _______.",
+    "options": {
+      "A": "sub program",
+      "B": "a complete program",
+      "C": "a hardware portion",
+      "D": "relative coding"
+    },
+    "answer": "A",
+    "explanation": "A macro is a named block of instructions (an in-line 'sub program') that is expanded wherever it is invoked."
+  },
+  {
+    "id": 31,
+    "source_file": "D-87-10",
+    "question": "Grammar of the programming is checked at ________ phase of compiler.",
+    "options": {
+      "A": "semantic analysis",
+      "B": "code generation",
+      "C": "syntax analysis",
+      "D": "code optimization"
+    },
+    "answer": "C",
+    "explanation": "The parser (syntax analysis) checks the token stream against the language grammar."
+  },
+  {
+    "id": 32,
+    "source_file": "D-87-10",
+    "question": "The register or main memory location which contains the effective address of the operand is known as",
+    "options": {
+      "A": "pointer",
+      "B": "special location",
+      "C": "indexed register",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "In indirect addressing, the register/memory word holding the operand's effective address acts as a pointer."
+  },
+  {
+    "id": 33,
+    "source_file": "D-87-10",
+    "question": "Macro-processors are ______.",
+    "options": {
+      "A": "Hardware",
+      "B": "Compiler",
+      "C": "Registers",
+      "D": "None of the above"
+    },
+    "answer": "D",
+    "explanation": "A macro-processor is system software that expands macros; it is not hardware, a register or a compiler."
+  },
+  {
+    "id": 34,
+    "source_file": "D-87-10",
+    "question": "The dynamic allocation of storage areas with VSAM files is accomplished by",
+    "options": {
+      "A": "Hashing",
+      "B": "Control splits",
+      "C": "Overflow areas",
+      "D": "Relative recoding"
+    },
+    "answer": "B",
+    "explanation": "VSAM handles growth by control-interval and control-area splits rather than overflow areas."
+  },
+  {
+    "id": 35,
+    "source_file": "D-87-10",
+    "question": "Which of the following command the file names in multiple columns ?",
+    "options": {
+      "A": "IS – X",
+      "B": "IS",
+      "C": "IS – 1",
+      "D": "IS – f – X"
+    },
+    "answer": "A",
+    "explanation": "'IS' is the paper's rendering of ls. ls -x lists names in multiple columns (sorted across); ls -1 lists one per line. The question omits a verb ('lists')."
+  },
+  {
+    "id": 36,
+    "source_file": "D-87-10",
+    "question": "WINDOWS is a _________ operating.",
+    "options": {
+      "A": "Real time",
+      "B": "Multi-user",
+      "C": "Preemptive",
+      "D": "Non-preemptive"
+    },
+    "answer": "C",
+    "explanation": "Modern Windows (NT family) uses preemptive multitasking. ('operating' should read 'operating system'.)"
+  },
+  {
+    "id": 37,
+    "source_file": "D-87-10",
+    "question": "Page making process from main memory to disk is called",
+    "options": {
+      "A": "Interruption",
+      "B": "Termination",
+      "C": "Swapping",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "Moving pages or processes between main memory and disk is swapping (paging out)."
+  },
+  {
+    "id": 38,
+    "source_file": "D-87-10",
+    "question": "A Dead-lock in an Operating System is",
+    "options": {
+      "A": "Desirable process",
+      "B": "Undesirable process",
+      "C": "Definite waiting process",
+      "D": "All of the above"
+    },
+    "answer": "B",
+    "explanation": "Deadlock is an undesirable state in which processes wait forever for each other's resources."
+  },
+  {
+    "id": 39,
+    "source_file": "D-87-10",
+    "question": "Prototyping is used to",
+    "options": {
+      "A": "test the software as an end product",
+      "B": "expand design details",
+      "C": "refine and establish requirements gathering",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "Prototypes help users and developers clarify and refine requirements."
+  },
+  {
+    "id": 40,
+    "source_file": "D-87-10",
+    "question": "Which one of these are not software maintenance activity ?",
+    "options": {
+      "A": "Error correction",
+      "B": "Adaptation",
+      "C": "Implementation of Enhancement",
+      "D": "Establishing scope"
+    },
+    "answer": "D",
+    "explanation": "Maintenance is corrective, adaptive and perfective (enhancement); establishing scope is a project-planning activity."
+  },
+  {
+    "id": 41,
+    "source_file": "D-87-10",
+    "question": "The system specification is the first deliverable in the computer system engineering process which does not include",
+    "options": {
+      "A": "Functional Description",
+      "B": "Cost",
+      "C": "Schedule",
+      "D": "Technical Analysis"
+    },
+    "answer": "D",
+    "explanation": "Pressman: the system specification describes function, performance, constraints, cost and schedule; detailed technical analysis is not part of it."
+  },
+  {
+    "id": 42,
+    "source_file": "D-87-10",
+    "question": "The COCOMO model was introduced in the book title \"Software Engineering Economics\" authored by",
+    "options": {
+      "A": "Abraham Silberschatz",
+      "B": "Barry Boehm",
+      "C": "C.J. Date",
+      "D": "D.E. Knuth"
+    },
+    "answer": "B",
+    "explanation": "Barry Boehm introduced COCOMO in Software Engineering Economics (1981)."
+  },
+  {
+    "id": 43,
+    "source_file": "D-87-10",
+    "question": "The Warnier diagram enables analyst",
+    "options": {
+      "A": "to represent information hierarchy in a compact manner",
+      "B": "to further identify requirement",
+      "C": "to estimate the total cost involved",
+      "D": "None of the above"
+    },
+    "answer": "A",
+    "explanation": "Warnier(-Orr) diagrams use nested brackets to show the hierarchy of information/data compactly."
+  },
+  {
+    "id": 44,
+    "source_file": "D-87-10",
+    "question": "A data mart may contain",
+    "options": {
+      "A": "summarised data",
+      "B": "de-normalized data",
+      "C": "aggregate departmental data",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "A data mart is a departmental subset of the warehouse and typically holds summarised, aggregated and denormalised data."
+  },
+  {
+    "id": 45,
+    "source_file": "D-87-10",
+    "question": "Data mining is",
+    "options": {
+      "A": "the process of extracting valid, previously unknown, comprehensible and actionable information from large databases and using it to make crucial business decisions.",
+      "B": "a tool that allows end users direct access and manipulation of data from within data-warehousing environment without the intervention of customised programming activity.",
+      "C": "a tool that helps end users extract useful business information from large database.",
+      "D": "All of the above"
+    },
+    "answer": "A",
+    "explanation": "This is the standard definition (Connolly & Begg). Option B describes end-user access/OLAP tools rather than data mining."
+  },
+  {
+    "id": 46,
+    "source_file": "D-87-10",
+    "question": "E-Choupal refers to",
+    "options": {
+      "A": "calling meeting of Surpanches electronically.",
+      "B": "conducting Panchayat meeting using latest electronic gadgets.",
+      "C": "providing window of information to villagers and farmers in NIC network.",
+      "D": "None of the above"
+    },
+    "answer": "C",
+    "explanation": "e-Choupal is an ICT initiative giving farmers/villagers access to market and farming information through internet kiosks (keyed as C in the exam)."
+  },
+  {
+    "id": 47,
+    "source_file": "D-87-10",
+    "question": "The basic concepts of ethics in information society is/are",
+    "options": {
+      "A": "Responsibility",
+      "B": "Accountability",
+      "C": "Liability",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "Responsibility, accountability and liability are the basic concepts of information ethics (Laudon)."
+  },
+  {
+    "id": 48,
+    "source_file": "D-87-10",
+    "question": "One of the distinguished features of super-computer over other category of computer is",
+    "options": {
+      "A": "parallel processing",
+      "B": "highest accuracy level",
+      "C": "more speed",
+      "D": "more capacity"
+    },
+    "answer": "A",
+    "explanation": "Supercomputers achieve their performance through massive parallel processing."
+  }
+]

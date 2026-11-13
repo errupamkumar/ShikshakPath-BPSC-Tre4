@@ -1,0 +1,1192 @@
+[
+  {
+    "id": 1,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A file system uses a block size of 1024 bytes. A file of size 3500 bytes is to be stored on the disk. Assuming that blocks are allocated in whole units. Which of the following correctly specifies the number of blocks allocated and the resulting memory wastage due to internal fragmentation ?",
+    "options": {
+      "A": "4 blocks; 596 bytes wasted",
+      "B": "3 blocks; 0 bytes wasted",
+      "C": "4 blocks; 1024 bytes wasted",
+      "D": "5 blocks; 1620 bytes wasted",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "⌈3500/1024⌉ = 4 blocks = 4096 bytes; 4096 − 3500 = 596 bytes wasted."
+  },
+  {
+    "id": 2,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following NoSQL databases follows the key-value data model ?",
+    "options": {
+      "A": "MongoDB",
+      "B": "Cassandra",
+      "C": "Redis",
+      "D": "CouchDB",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Redis is an in-memory key-value store. MongoDB and CouchDB are document stores; Cassandra is wide-column."
+  },
+  {
+    "id": 3,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following is NOT a basic operation performed on a Binary Search Tree ?",
+    "options": {
+      "A": "Insertion",
+      "B": "Encryption",
+      "C": "Searching",
+      "D": "Deletion",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "BST operations are insert, search, delete and traversal; encryption is unrelated."
+  },
+  {
+    "id": 4,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In MS Excel, the function that returns the largest value in a range A1:A20 is :",
+    "options": {
+      "A": "LARGEST()",
+      "B": "TOP()",
+      "C": "HIGH()",
+      "D": "MAX()",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "=MAX(A1:A20) returns the largest value (LARGE(range,k) returns the k-th largest)."
+  },
+  {
+    "id": 5,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Convert the hexadecimal number 0xABC to its decimal equivalent :",
+    "options": {
+      "A": "2748",
+      "B": "2358",
+      "C": "2952",
+      "D": "3072",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "A·256 + B·16 + C = 10·256 + 11·16 + 12 = 2560 + 176 + 12 = 2748."
+  },
+  {
+    "id": 6,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A host sends data using UDP instead of TCP. Which of the following features provided by TCP will NOT be available ?",
+    "options": {
+      "A": "Logical addressing",
+      "B": "Error detection using checksum",
+      "C": "Flow control and retransmission",
+      "D": "Packet routing",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "UDP has a checksum but no flow control, acknowledgements or retransmission. Addressing and routing are done by IP for both."
+  },
+  {
+    "id": 7,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "The instruction CMP R1, R2 compares the contents of registers R1 and R2 and updates the processor status flags accordingly. Which one of the following correctly identifies the hardware unit responsible for executing this instruction and the type of operation involved ?",
+    "options": {
+      "A": "Control Unit; control operation",
+      "B": "Instruction Decoder; instruction decoding operation",
+      "C": "Memory Unit; data storage operation",
+      "D": "Arithmetic Logic Unit (ALU); arithmetic operation",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "CMP is executed by the ALU as a subtraction (R1 − R2) whose result is discarded; only the flags are updated."
+  },
+  {
+    "id": 8,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In an 8-bit two's complement system, the sum of (01111111)₂ and (00000001)₂ results in :",
+    "options": {
+      "A": "Overflow",
+      "B": "Underflow",
+      "C": "No overflow because carry is generated",
+      "D": "Zero",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "127 + 1 = 128 exceeds the 8-bit signed range (−128…127); the result 10000000 has the wrong sign, so this is overflow."
+  },
+  {
+    "id": 9,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Consider a singly linked list containing n nodes in which only the head pointer is maintained. What is the worst-case time complexity of inserting a new node at the end of the list ?",
+    "options": {
+      "A": "O(l)",
+      "B": "O(log n)",
+      "C": "O(n log n)",
+      "D": "O(n)",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Without a tail pointer you must traverse all n nodes to reach the end: O(n). ('O(l)' is printed for O(1).)"
+  },
+  {
+    "id": 10,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A Data Dictionary in Structured Analysis is primarily used to :",
+    "options": {
+      "A": "Generate source code automatically",
+      "B": "Store test cases and results",
+      "C": "Define and document data elements and their relationships",
+      "D": "Represent object interactions",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "The data dictionary defines every data element, data flow and store used in DFDs, along with their composition."
+  },
+  {
+    "id": 11,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In Java, which keyword is used to call a parent class constructor from a subclass constructor ?",
+    "options": {
+      "A": "this",
+      "B": "parent",
+      "C": "super",
+      "D": "base",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "super(...) invokes the superclass constructor and must be the first statement in the subclass constructor."
+  },
+  {
+    "id": 12,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "If a quantum computer has 5 qubits, the maximum number of basis states that can be represented simultaneously is :",
+    "options": {
+      "A": "5",
+      "B": "10",
+      "C": "16",
+      "D": "32",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "n qubits can be in a superposition of 2ⁿ basis states: 2⁵ = 32."
+  },
+  {
+    "id": 13,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "The near-far problem is predominantly associated with which multiple access technique ?",
+    "options": {
+      "A": "FDMA",
+      "B": "TDMA",
+      "C": "CDMA",
+      "D": "OFDMA",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "In CDMA all users share the same band; a strong nearby transmitter can drown out a distant one, so power control is needed."
+  },
+  {
+    "id": 14,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following activities is least likely to be performed during a feasibility study ?",
+    "options": {
+      "A": "Evaluating the availability of technical resources",
+      "B": "Performing cost–benefit analysis",
+      "C": "Assessing compliance with legal requirements",
+      "D": "Optimizing the time complexity of algorithms",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Feasibility covers technical, economic, legal and operational aspects; algorithm optimisation happens much later, in design and implementation."
+  },
+  {
+    "id": 15,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A user saves a PowerPoint file as a PowerPoint Show so that it opens directly in Slide Show mode when double-clicked. Which file extension is associated with this format in PowerPoint 2007 and later versions ?",
+    "options": {
+      "A": ".pptx",
+      "B": ".pptm",
+      "C": ".ppsx",
+      "D": ".potx",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": ".ppsx is a PowerPoint Show; .pptx is a presentation, .pptm is macro-enabled and .potx is a template."
+  },
+  {
+    "id": 16,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Suppose a database system supports physical but not logical data independence. Which of the following changes can be made without modifying application programs ?",
+    "options": {
+      "A": "Splitting a Relation into Two Relations at the Conceptual Level",
+      "B": "Adding a New Entity Set to the Conceptual Schema",
+      "C": "Changing the Storage Structure of Records on Disk",
+      "D": "Modifying Attributes of an Existing Relation in the Conceptual Schema",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Physical data independence allows changes to internal storage without affecting programs. All the other options are conceptual-schema changes, which need logical independence."
+  },
+  {
+    "id": 17,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which computing paradigm extends cloud-like processing capabilities to the edge of the network, near IoT sensors, to reduce latency and bandwidth usage ?",
+    "options": {
+      "A": "Cloud computing",
+      "B": "Utility computing",
+      "C": "Grid computing",
+      "D": "Edge computing",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Edge computing processes data close to where it is produced, reducing latency and backhaul bandwidth."
+  },
+  {
+    "id": 18,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following is NOT a feature of object-oriented programming ?",
+    "options": {
+      "A": "Encapsulation",
+      "B": "Inheritance",
+      "C": "Polymorphism",
+      "D": "Pointer arithmetic",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Encapsulation, inheritance and polymorphism are OOP pillars; pointer arithmetic is a low-level language feature."
+  },
+  {
+    "id": 19,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "What is the value obtained by evaluating the following postfix expression ?\n6 2 3 + * 4 −",
+    "options": {
+      "A": "26",
+      "B": "28",
+      "C": "30",
+      "D": "22",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "2 3 + → 5; 6 5 * → 30; 30 4 − → 26."
+  },
+  {
+    "id": 20,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In the fetch-decode-execute cycle, the contents of the Program Counter are first transferred to the :",
+    "options": {
+      "A": "Instruction Register (IR)",
+      "B": "Memory Address Register (MAR)",
+      "C": "Memory Data Register (MDR)",
+      "D": "Accumulator",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Fetch step 1: MAR ← PC; then the instruction is read into MDR and copied to IR."
+  },
+  {
+    "id": 21,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A company has developed a website and uploaded its files to a hosting service. However, users can access the website only by entering the server's IP address and not through a human-readable name. Which additional service is required ?",
+    "options": {
+      "A": "FTP",
+      "B": "SMTP",
+      "C": "DNS",
+      "D": "DHCP",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "DNS maps domain names to IP addresses."
+  },
+  {
+    "id": 22,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "An application stores highly interconnected data representing friendships and followers in a social network. Which database model is most appropriate ?",
+    "options": {
+      "A": "Relational database",
+      "B": "Graph database",
+      "C": "Column-family database",
+      "D": "Key-value database",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Graph databases (e.g. Neo4j) store nodes and relationships natively and handle multi-hop relationship queries efficiently."
+  },
+  {
+    "id": 23,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A differential backup contains :",
+    "options": {
+      "A": "Only the files modified since the last full backup.",
+      "B": "Only the files modified since the last backup of any type.",
+      "C": "An exact copy of the operating system only.",
+      "D": "Only deleted files.",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Differential backups hold all changes since the last full backup; incremental backups hold changes since the last backup of any type."
+  },
+  {
+    "id": 24,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Consider the relation R(A, B, C, D, E) with the set of functional dependencies\nF={A → B, B → D, A → C, CD → E}.\nWhich one of the following correctly represents the closure of the attribute set {A, C} and the corresponding key property ?",
+    "options": {
+      "A": "The closure (AC)⁺ is {A, B, C, D}; therefore, {A, C} is not a superkey.",
+      "B": "The closure (AC)⁺ is {A, C, E}; therefore, {A, C} is not a superkey.",
+      "C": "The closure (AC)⁺ is {A, B, C, D, E}; therefore, {A, C} is a superkey.",
+      "D": "The closure (AC)⁺ is {A, B, C, E}; therefore, {A, C} is not a superkey.",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "AC → B (A→B) → D (B→D) → E (CD→E), so (AC)⁺ = ABCDE and {A, C} is a superkey (A alone is in fact a key)."
+  },
+  {
+    "id": 25,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In which routing algorithm does a router periodically exchange its routing table with only its immediate neighbors to determine the shortest path to each destination ?",
+    "options": {
+      "A": "Link State Routing",
+      "B": "Distance Vector Routing",
+      "C": "Flooding Routing",
+      "D": "Path Vector Routing",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Distance-vector routing (Bellman-Ford, e.g. RIP) shares the whole table with neighbours only; link-state floods link information to all routers."
+  },
+  {
+    "id": 26,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A process currently executing on the CPU requests data from the disk. While waiting for the I/O operation to complete, the process transitions to which state ?",
+    "options": {
+      "A": "Running",
+      "B": "Ready",
+      "C": "Blocked (Waiting)",
+      "D": "Terminated",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "A process waiting for I/O moves from Running to Blocked/Waiting until the I/O completes."
+  },
+  {
+    "id": 27,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following statements regarding communication services is FALSE ?",
+    "options": {
+      "A": "Voice mail requires sender and receiver to be online simultaneously.",
+      "B": "E-mail supports delayed message delivery.",
+      "C": "Instant messaging can provide real-time communication.",
+      "D": "Video conferencing supports synchronous communication.",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Voice mail is asynchronous; the receiver listens later."
+  },
+  {
+    "id": 28,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In the CIA triad of information security, the letter 'A' represents :",
+    "options": {
+      "A": "Authentication",
+      "B": "Authorization",
+      "C": "Accountability",
+      "D": "Availability",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "CIA = Confidentiality, Integrity, Availability."
+  },
+  {
+    "id": 29,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "An Order object progresses through the states Created, Submitted, Approved, and Shipped during its lifecycle. Which UML diagram is most appropriate for modelling these state changes and the transitions between them ?",
+    "options": {
+      "A": "Class Diagram",
+      "B": "Sequence Diagram",
+      "C": "State Machine Diagram",
+      "D": "Use Case Diagram",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "A state machine diagram models an object's states and the events/transitions between them."
+  },
+  {
+    "id": 30,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which transaction isolation level prevents dirty reads and non-repeatable reads, but may still allow phantom reads ?",
+    "options": {
+      "A": "READ UNCOMMITTED",
+      "B": "READ COMMITTED",
+      "C": "REPEATABLE READ",
+      "D": "SERIALIZABLE",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "REPEATABLE READ locks the rows read but not ranges, so phantoms are possible; SERIALIZABLE prevents all three."
+  },
+  {
+    "id": 31,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which generation of mobile communication systems introduced packet-switched data services and multimedia support ?",
+    "options": {
+      "A": "2G",
+      "B": "1G",
+      "C": "4G",
+      "D": "3G",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Keyed answer 3G, which brought packet-switched broadband data and multimedia. (2.5G GPRS first added packet data, but 3G is the standard answer.)"
+  },
+  {
+    "id": 32,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A direct-mapped cache system has a main memory size of 1 MB, a cache size of 8 KB, and a block size of 32 bytes. How many bits are required for the Tag, Line, and Offset fields in a memory address ?",
+    "options": {
+      "A": "Tag = 7 bits, Line = 8 bits, Offset = 5 bits",
+      "B": "Tag = 8 bits, Line = 7 bits, Offset = 5 bits",
+      "C": "Tag = 9 bits, Line = 6 bits, Offset = 5 bits",
+      "D": "Tag = 5 bits, Line = 8 bits, Offset = 7 bits",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "1 MB needs a 20-bit address. Offset = log₂32 = 5, lines = 8 KB/32 B = 256 (8 bits), tag = 20 − 8 − 5 = 7."
+  },
+  {
+    "id": 33,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A file stores information for 5,000 employees using fixed-length records with no padding. Each record consists of the following fields :\n• Employee ID : 6 characters\n• Employee Name : 30 characters\n• Salary : 4-byte integer\n• Department Code : 1 byte\nAssuming that each character occupies 1 byte, the approximate size of the file is ________ KB.",
+    "options": {
+      "A": "195 KB",
+      "B": "200 KB",
+      "C": "205 KB",
+      "D": "210 KB",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Record = 6 + 30 + 4 + 1 = 41 bytes; 41 × 5000 = 205,000 bytes ≈ 200.2 KB (1 KB = 1024 bytes). With 1 KB = 1000 bytes it would be 205 KB; the key uses 1024."
+  },
+  {
+    "id": 34,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which feasibility determines whether a proposed system will be used effectively after it has been developed ?",
+    "options": {
+      "A": "Economic feasibility",
+      "B": "Operational feasibility",
+      "C": "Schedule feasibility",
+      "D": "Technical feasibility",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Operational feasibility checks whether users and the organisation will actually use the system effectively."
+  },
+  {
+    "id": 35,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In MS Excel, the formula =CONCATENATE(A1,\" \",B1) is entered.\nWhich one of the following expressions available in modern versions of Excel (Excel 2019 and later) produces the same result ?",
+    "options": {
+      "A": "=A1&\" \"&B1",
+      "B": "=JOIN(A1,B1)",
+      "C": "=ADD(A1,B1)",
+      "D": "=MERGE(A1,B1)",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "The & operator concatenates text; JOIN, ADD and MERGE are not Excel functions."
+  },
+  {
+    "id": 36,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Consider a doubly linked list consisting of 4 nodes, where each node contains two pointer fields : prev and next. Assuming that the list is linear, how many pointer fields contain NULL values in total ?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "2",
+      "D": "4",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Only the first node's prev and the last node's next are NULL: 2."
+  },
+  {
+    "id": 37,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In TCP, which control flag is set in the first segment transmitted by a host to initiate an orderly connection termination ?",
+    "options": {
+      "A": "SYN",
+      "B": "ACK",
+      "C": "RST",
+      "D": "FIN",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "FIN starts graceful termination; RST aborts the connection abruptly; SYN opens one."
+  },
+  {
+    "id": 38,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which one of the following machine learning tasks is an example of supervised learning ?",
+    "options": {
+      "A": "Grouping customers into clusters based on purchasing behavior without prior labels",
+      "B": "Reducing the dimensionality of data using Principal Component Analysis",
+      "C": "Predicting house prices using historical data with known prices",
+      "D": "Discovering frequent item sets in transaction data",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Predicting prices from labelled examples is supervised regression; the others are unsupervised tasks."
+  },
+  {
+    "id": 39,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In MS Access, a one-to-many relationship is established between the Customers table and the Orders table, where CustomerID is the primary key in the Customers table and a foreign key in the Orders table. The \"Cascade Delete Related Records\" option is enabled. If the record corresponding to CustomerID = 1005 is deleted from the Customers table, which one of the following correctly describes the effect on the Orders table ?",
+    "options": {
+      "A": "The deletion affects only the Customers table; the records in the Orders table remain unchanged.",
+      "B": "All records in the Orders table corresponding to CustomerID = 1005 are automatically deleted.",
+      "C": "The value of CustomerID in all related records of the Orders table is automatically set to NULL.",
+      "D": "The deletion of the customer record is prevented because matching records exist in the Orders table.",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Cascade delete removes all child records that reference the deleted parent."
+  },
+  {
+    "id": 40,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In MS Excel, the following formula is entered in cell D2 :\n=IF(AND(B2>=40,C2>=40),IF(B2+C2>=90,\"Distinction\",\"Pass\"),\"Fail\")\nIf the values in cells B2 and C2 are 45 and 42, respectively, what will be the result returned by the formula ?",
+    "options": {
+      "A": "Distinction",
+      "B": "Fail",
+      "C": "#VALUE!",
+      "D": "Pass",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Both values are ≥ 40, so the inner IF runs; 45 + 42 = 87 < 90, giving \"Pass\"."
+  },
+  {
+    "id": 41,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In UML notation, a dashed arrow between two classes typically represents :",
+    "options": {
+      "A": "Composition",
+      "B": "Aggregation",
+      "C": "Generalization",
+      "D": "Dependency",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "A dashed arrow is a dependency; a solid line with a hollow triangle is generalization and diamonds mark aggregation/composition."
+  },
+  {
+    "id": 42,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A Layer-2 switch makes forwarding decisions using :",
+    "options": {
+      "A": "IP addresses",
+      "B": "Port numbers",
+      "C": "MAC addresses",
+      "D": "Sequence numbers",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Layer-2 switches forward frames using MAC address tables."
+  },
+  {
+    "id": 43,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following characteristics is common to both voice mail and video conferencing services ?",
+    "options": {
+      "A": "Both require sender and receiver to be online simultaneously.",
+      "B": "Both are examples of asynchronous communication.",
+      "C": "Both support transmission of multimedia information.",
+      "D": "Both operate exclusively through e-mail protocols.",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Both carry multimedia (audio, and video for conferencing). Voice mail is asynchronous while video conferencing is synchronous."
+  },
+  {
+    "id": 44,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Consider a relation R(A, B, C) with the functional dependencies A → B and B → C. If A is the only candidate key of R, what is the highest normal form satisfied by the relation ?",
+    "options": {
+      "A": "First Normal Form (1NF)",
+      "B": "Second Normal Form (2NF)",
+      "C": "Third Normal Form (3NF)",
+      "D": "Boyce–Codd Normal Form (BCNF)",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "The key is a single attribute, so there are no partial dependencies (2NF holds), but A → B → C is a transitive dependency, which violates 3NF."
+  },
+  {
+    "id": 45,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A hacker who gains unauthorized access to computer systems with malicious intent for personal benefit or causing damage is known as a :",
+    "options": {
+      "A": "White Hat Hacker",
+      "B": "Green Hat Hacker",
+      "C": "Black Hat Hacker",
+      "D": "Blue Hat Hacker",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Black-hat hackers break in maliciously; white-hat hackers are authorised ethical testers."
+  },
+  {
+    "id": 46,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following data types in Python is immutable ?",
+    "options": {
+      "A": "List",
+      "B": "Dictionary",
+      "C": "Set",
+      "D": "Tuple",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Tuples cannot be changed after creation; lists, dicts and sets are mutable."
+  },
+  {
+    "id": 47,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following is BEST classified as a pointing device used for direct manipulation on a touch-sensitive surface ?",
+    "options": {
+      "A": "OMR (Optical Mark Reader)",
+      "B": "Stylus",
+      "C": "MICR Reader",
+      "D": "Bar-code Scanner",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "A stylus is a pen-like pointing device used directly on touch screens/tablets; the others are data-capture readers."
+  },
+  {
+    "id": 48,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following situations best illustrates an update anomaly ?",
+    "options": {
+      "A": "Information about a new course cannot be inserted until a student enrolls in it.",
+      "B": "Deleting the last employee of a department removes department information.",
+      "C": "Changing a customer's phone number requires updating several tuples containing the same customer information.",
+      "D": "A foreign key value does not match any primary key value.",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Redundant copies must all be updated, or the data becomes inconsistent. A is an insertion anomaly and B a deletion anomaly."
+  },
+  {
+    "id": 49,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Belady's anomaly can occur in which page replacement algorithm ?",
+    "options": {
+      "A": "LRU (Least Recently Used)",
+      "B": "Optimal Page Replacement",
+      "C": "LFU (Least Frequently Used)",
+      "D": "FIFO (First-In, First-Out)",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "With FIFO, adding frames can increase page faults; stack algorithms like LRU and Optimal never show this."
+  },
+  {
+    "id": 50,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Consider a complete binary tree in which the root node is at height 0 and the tree has an overall height of 4. What are the minimum and maximum possible numbers of nodes in the tree ?",
+    "options": {
+      "A": "Minimum = 15, Maximum = 31",
+      "B": "Minimum = 16, Maximum = 32",
+      "C": "Minimum = 8, Maximum = 31",
+      "D": "Minimum = 16, Maximum = 31",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Levels 0–3 full (15 nodes) plus at least one node on level 4 gives 16 minimum; all levels full gives 2⁵ − 1 = 31 maximum."
+  },
+  {
+    "id": 51,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following testing techniques is classified as a black-box testing technique ?",
+    "options": {
+      "A": "Statement coverage",
+      "B": "Branch coverage",
+      "C": "Equivalence class partitioning",
+      "D": "Path coverage",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Equivalence partitioning uses only the specification; statement, branch and path coverage are white-box."
+  },
+  {
+    "id": 52,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Consider a graph with V vertices and E edges. The graph is represented using an adjacency matrix, where a matrix entry is maintained for every pair of vertices regardless of whether an edge exists between them.\nWhat is the asymptotic space complexity of this representation ?",
+    "options": {
+      "A": "O(V)",
+      "B": "O(E)",
+      "C": "O(V + E)",
+      "D": "O(V²)",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "A V × V matrix needs O(V²) space; adjacency lists need O(V + E)."
+  },
+  {
+    "id": 53,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In a typical search engine architecture, the component that organizes collected web pages to enable efficient retrieval is called :",
+    "options": {
+      "A": "Browser",
+      "B": "Indexer",
+      "C": "Web server",
+      "D": "Web Crawler",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "The crawler collects pages; the indexer builds the (inverted) index used for fast retrieval."
+  },
+  {
+    "id": 54,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A circular queue is implemented using an array of size 6. Initially, the values of front and rear are 2 and 5, respectively. Assuming that the queue is not full, two ENQUEUE operations are performed consecutively without any DEQUEUE operation. What will be the values of front and rear after these operations ?",
+    "options": {
+      "A": "front = 2, rear = 1",
+      "B": "front = 2, rear = 0",
+      "C": "front = 4, rear = 1",
+      "D": "front = 4, rear = 5",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Enqueue only moves rear: (5+1) mod 6 = 0, then 1. Front stays 2."
+  },
+  {
+    "id": 55,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following is an example of digital data ?",
+    "options": {
+      "A": "Human voice transmitted through a traditional telephone line",
+      "B": "Mercury level in a thermometer",
+      "C": "A text document stored on a computer",
+      "D": "Temperature measured continuously by a sensor",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "A stored text file is discrete binary data; the other examples are continuous (analog) signals."
+  },
+  {
+    "id": 56,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following systems uses Artificial Intelligence to recognize speech and respond to user commands ?",
+    "options": {
+      "A": "Voice Assistant",
+      "B": "Spreadsheet Software",
+      "C": "File Explorer",
+      "D": "Word Processor",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Voice assistants (Siri, Alexa, Google Assistant) use speech recognition and NLP."
+  },
+  {
+    "id": 57,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which one of the following is a reserved keyword in the C programming language ?",
+    "options": {
+      "A": "data",
+      "B": "total",
+      "C": "value",
+      "D": "return",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "return is one of C's keywords; the others are ordinary identifiers."
+  },
+  {
+    "id": 58,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "The 8-bit two's complement representation of the decimal number −37 is :",
+    "options": {
+      "A": "11011010",
+      "B": "11011011",
+      "C": "11100110",
+      "D": "10111001",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "+37 = 00100101; invert → 11011010; add 1 → 11011011."
+  },
+  {
+    "id": 59,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A user revisits a recently accessed webpage and notices that it loads much faster without downloading all resources again. This improvement is primarily due to :",
+    "options": {
+      "A": "DNS resolution",
+      "B": "Browser caching",
+      "C": "Packet fragmentation",
+      "D": "URL encoding",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "The browser cache serves stored copies of resources instead of downloading them again."
+  },
+  {
+    "id": 60,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which layer of the OSI model is responsible for logical addressing and routing packets between networks ?",
+    "options": {
+      "A": "Data Link Layer",
+      "B": "Network Layer",
+      "C": "Transport Layer",
+      "D": "Session Layer",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "The network layer (IP) handles logical addressing and routing."
+  },
+  {
+    "id": 61,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In MS Access, which object is PRIMARILY used to extract specific records from one or more tables based on conditions ?",
+    "options": {
+      "A": "Form",
+      "B": "Report",
+      "C": "Query",
+      "D": "Macro",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "A query selects records matching criteria from one or more tables. Note: the PDF highlights (D) Macro here, which appears to be a mistake in the highlighted key; Query is correct."
+  },
+  {
+    "id": 62,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which attack exploits insufficient validation of user input to execute unintended database commands ?",
+    "options": {
+      "A": "Cross-Site Request Forgery (CSRF)",
+      "B": "SQL Injection Attack",
+      "C": "Buffer Overflow Attack",
+      "D": "Dictionary Attack",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "SQL injection inserts malicious SQL through unvalidated input fields."
+  },
+  {
+    "id": 63,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which type of firewall filters packets solely based on source and destination IP addresses, port numbers, and protocol information, without maintaining the state of network connections ?",
+    "options": {
+      "A": "Stateful Inspection Firewall",
+      "B": "Application-Level Gateway",
+      "C": "Packet-Filtering Firewall",
+      "D": "Circuit-Level Gateway",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "A stateless packet filter checks each packet's header fields independently."
+  },
+  {
+    "id": 64,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Consider the following requirement specification :\n\"The system shall respond within a reasonable amount of time.\"\nWhich quality attribute of a well-defined requirement is primarily lacking in this specification ?",
+    "options": {
+      "A": "Completeness",
+      "B": "Measurability",
+      "C": "Traceability",
+      "D": "Modifiability",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "'Reasonable time' cannot be measured or tested; it should state a number (e.g. ≤ 2 seconds)."
+  },
+  {
+    "id": 65,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following is a benefit of 5G mobile communication technology ?",
+    "options": {
+      "A": "Increased paper storage capacity",
+      "B": "Higher data speeds and lower latency",
+      "C": "Reduced screen brightness",
+      "D": "Sending fax messages only",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "5G offers multi-gigabit speeds and very low latency."
+  },
+  {
+    "id": 66,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which CPU scheduling algorithm results in the minimum average waiting time when all processes arrive simultaneously (at time 0) ?",
+    "options": {
+      "A": "Non-preemptive Shortest Job First (SJF)",
+      "B": "First-Come First-Served (FCFS)",
+      "C": "Round Robin with any time quantum",
+      "D": "Priority scheduling with random priorities",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "SJF is provably optimal for average waiting time when all jobs are available together."
+  },
+  {
+    "id": 67,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A software system is modified to remain compatible with a new operating system and updated hardware environment. This activity is classified as :",
+    "options": {
+      "A": "Corrective maintenance",
+      "B": "Adaptive maintenance",
+      "C": "Perfective maintenance",
+      "D": "Preventive maintenance",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "Adapting software to a changed environment (OS, hardware) is adaptive maintenance."
+  },
+  {
+    "id": 68,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following statements about polymorphism is correct ?",
+    "options": {
+      "A": "Runtime polymorphism is commonly achieved through inheritance and method overriding.",
+      "B": "Compile-time polymorphism is achieved through method overriding.",
+      "C": "Method overloading and method overriding both support only runtime polymorphism.",
+      "D": "Polymorphism eliminates the need for inheritance.",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Overriding plus dynamic dispatch gives runtime polymorphism; overloading gives compile-time polymorphism."
+  },
+  {
+    "id": 69,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which component of an Integrated Development Environment (IDE) helps programmers identify and correct errors by executing a program step by step ?",
+    "options": {
+      "A": "Compiler",
+      "B": "Debugger",
+      "C": "Linker",
+      "D": "Code Formatter",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "A debugger supports breakpoints, stepping and inspecting variables."
+  },
+  {
+    "id": 70,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In Transmission Control Protocol (TCP) congestion control, after the congestion window (cwnd) reaches the slow-start threshold (ssthresh), TCP enters the Congestion Avoidance phase. How does the congestion window grow during this phase for each Round-Trip Time (RTT) ?",
+    "options": {
+      "A": "Doubles per RTT.",
+      "B": "Decreases by one Maximum Segment Size (MSS) per RTT.",
+      "C": "Stays constant.",
+      "D": "Increases by one Maximum Segment Size (MSS) per RTT.",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "Congestion avoidance is additive increase: +1 MSS per RTT (slow start doubles per RTT)."
+  },
+  {
+    "id": 71,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following is a core principle of the Agile software development methodology ?",
+    "options": {
+      "A": "Customer collaboration over contract negotiation",
+      "B": "Following a fixed plan over responding to change",
+      "C": "Comprehensive documentation over working software",
+      "D": "Sequential execution of development phases",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "This is one of the four Agile Manifesto values; B and C reverse the manifesto, and D describes waterfall."
+  },
+  {
+    "id": 72,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which type of malware hides its presence by modifying the operating system and providing unauthorized privileged access to an attacker ?",
+    "options": {
+      "A": "Spyware",
+      "B": "Rootkit",
+      "C": "Adware",
+      "D": "Worm",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "A rootkit gives stealthy root/administrator-level access and hides itself by altering the OS."
+  },
+  {
+    "id": 73,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following statements regarding XML documents is FALSE ?",
+    "options": {
+      "A": "XML tags are case-sensitive.",
+      "B": "XML allows user-defined tags.",
+      "C": "XML is designed for storing and transporting data.",
+      "D": "XML documents may contain multiple root elements.",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "A well-formed XML document must have exactly one root element."
+  },
+  {
+    "id": 74,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which one of the following is the binary equivalent of the decimal number 93.93, correct up to four digits after the binary point ?",
+    "options": {
+      "A": "1011101.1100",
+      "B": "1011101.1000",
+      "C": "1011101.1110",
+      "D": "1011101.1111",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "93 = 1011101. Repeatedly doubling 0.93 gives 1.86, 1.72, 1.44, 0.88, so the bits are 1, 1, 1, 0: 1011101.1110."
+  },
+  {
+    "id": 75,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "An initially empty stack receives the elements 1, 2, 3, 4, 5 in that order, with each element pushed exactly once. No POP operation is permitted until at least three elements have been pushed onto the stack. Thereafter, PUSH and POP operations may be interleaved arbitrarily, subject to the LIFO property of the stack.\nWhich one of the following output sequences cannot be generated ?",
+    "options": {
+      "A": "3, 2, 1, 5, 4",
+      "B": "3, 4, 5, 1, 2",
+      "C": "4, 3, 5, 2, 1",
+      "D": "5, 4, 3, 2, 1",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "After 3, 4 and 5 are popped, the stack holds 1 (bottom) and 2 (top), so 2 must come out before 1. The order '1, 2' is impossible."
+  },
+  {
+    "id": 76,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which file allocation method supports efficient direct access without suffering from fragmentation or sequential traversal overhead ?",
+    "options": {
+      "A": "Contiguous Allocation",
+      "B": "Linked Allocation",
+      "C": "Indexed Allocation",
+      "D": "FAT-based Linked Allocation",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Indexed allocation gives direct access through the index block, with no external fragmentation and no chain traversal."
+  },
+  {
+    "id": 77,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which SQL clause is used to restrict rows before they are grouped in a GROUP BY query ?",
+    "options": {
+      "A": "WHERE",
+      "B": "HAVING",
+      "C": "FILTER",
+      "D": "LIMIT",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "WHERE filters rows before grouping; HAVING filters groups after aggregation."
+  },
+  {
+    "id": 78,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Relation R contains 200 tuples and relation S contains 100 tuples. Attribute A is the primary key of relation S. What is the maximum possible number of tuples in the result of the equi-join R ⋈(R.A=S.A) S ?",
+    "options": {
+      "A": "200",
+      "B": "100",
+      "C": "20,000",
+      "D": "Cannot be determined",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Since A is a key of S, each R tuple matches at most one S tuple, so the result has at most 200 tuples."
+  },
+  {
+    "id": 79,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In MS Word 2019, which keyboard shortcut applies italic formatting to selected text ?",
+    "options": {
+      "A": "Ctrl + I",
+      "B": "Alt + B",
+      "C": "Ctrl + U",
+      "D": "Alt + I",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Ctrl+I is italic, Ctrl+B is bold and Ctrl+U is underline."
+  },
+  {
+    "id": 80,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following image formats supports lossless compression and transparency ?",
+    "options": {
+      "A": "JPEG",
+      "B": "PNG",
+      "C": "MPEG",
+      "D": "MP3",
+      "E": "Question not attempted"
+    },
+    "answer": "B",
+    "explanation": "PNG is lossless and supports an alpha channel. JPEG is lossy with no transparency, and MPEG/MP3 are video/audio formats."
+  },
+  {
+    "id": 81,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which of the following cryptosystems is based on asymmetric-key cryptography ?",
+    "options": {
+      "A": "RSA",
+      "B": "AES",
+      "C": "DES",
+      "D": "3DES",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "RSA uses public/private key pairs; AES, DES and 3DES are symmetric ciphers."
+  },
+  {
+    "id": 82,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Consider the page reference string 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3 and assume that the system has 3 page frames. How many page faults occur when the LRU (Least Recently Used) page replacement algorithm is used ?",
+    "options": {
+      "A": "9",
+      "B": "8",
+      "C": "7",
+      "D": "10",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Faults occur on 7, 0, 1, 2, 3, 4, 2, 3, 0; the hits are 0, 0 and 3. Total 9."
+  },
+  {
+    "id": 83,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "A LAN contains 20 nodes, connected to a central hub (the hub itself is not one of the 20 nodes) in a star topology. If the same 20 nodes are reconfigured into a fully connected mesh network, the number of additional physical links required is :",
+    "options": {
+      "A": "19",
+      "B": "190",
+      "C": "170",
+      "D": "171",
+      "E": "Question not attempted"
+    },
+    "answer": "C",
+    "explanation": "Mesh needs 20·19/2 = 190 links; the star already has 20 cables, so 190 − 20 = 170 additional links (as keyed)."
+  },
+  {
+    "id": 84,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "Which one of the following statements correctly distinguishes the HLOOKUP and VLOOKUP functions in MS Excel with respect to the direction in which they search for the lookup value ?",
+    "options": {
+      "A": "HLOOKUP searches vertically down a column, whereas VLOOKUP searches horizontally across a row.",
+      "B": "HLOOKUP and VLOOKUP perform identical operations and differ only in their names.",
+      "C": "HLOOKUP is used for retrieving data for horizontal charts, whereas is VLOOKUP used for retrieving data for vertical charts.",
+      "D": "HLOOKUP searches across the first row of a table, whereas VLOOKUP searches down the first column of a table.",
+      "E": "Question not attempted"
+    },
+    "answer": "D",
+    "explanation": "H = horizontal: it searches the first row. V = vertical: it searches the first column."
+  },
+  {
+    "id": 85,
+    "source_file": "Master question paper paper-2 (answers highlighted)",
+    "question": "In the ethical hacking lifecycle, port scanning and operating system fingerprinting of a live target system are carried out during which phase ?",
+    "options": {
+      "A": "Active Reconnaissance",
+      "B": "Passive Reconnaissance",
+      "C": "Exploitation",
+      "D": "Reporting",
+      "E": "Question not attempted"
+    },
+    "answer": "A",
+    "explanation": "Directly probing the target (scanning, fingerprinting) is active reconnaissance; passive recon uses public information without touching the target."
+  }
+]

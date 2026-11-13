@@ -1,0 +1,27 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+.next-*/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# generated question bank (rebuilt by `npm run build:bank` before dev/build)
+src/data/generated/
+
+# env files: never commit keys
+.env
+.env.local
+.env.*.local
+
+# Firebase: local emulator data, and service-account key files (SECRET)
+.emulator-data/
+*firebase-adminsdk*.json
+service-account*.json
+
+# misc
+.DS_Store
+*.log
+.vercel

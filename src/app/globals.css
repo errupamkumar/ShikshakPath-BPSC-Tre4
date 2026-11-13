@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+/* Dark mode is toggled by adding the "dark" class on <html>. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Design tokens inspired by the "Nova" template (WebScale, distributed by ThemeWagon):
+ * warm cream paper, near-black ink, copper accent, Satoshi type, pill buttons.
+ */
+@theme {
+  --font-sans: "Satoshi", "Noto Sans Devanagari", "Nirmala UI", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* copper accent */
+  --color-brand-50: #fbf6f1;
+  --color-brand-100: #f4e9de;
+  --color-brand-200: #e8d2bf;
+  --color-brand-300: #d9b69c;
+  --color-brand-400: #c79d80;
+  --color-brand-500: #b3856a;
+  --color-brand-600: #93684e;
+  --color-brand-700: #7a5641;
+  --color-brand-800: #5f4334;
+  --color-brand-900: #45322a;
+  --color-brand-950: #2a1f19;
+
+  /* warm neutrals ("ink"); 50 is the cream page colour */
+  --color-ink-50: #fffdf9;
+  --color-ink-100: #f6f2ec;
+  --color-ink-200: #eae5de;
+  --color-ink-300: #d6cfc6;
+  --color-ink-400: #a39b92;
+  --color-ink-500: #736c65;
+  --color-ink-600: #59534d;
+  --color-ink-700: #45403b;
+  --color-ink-800: #2d2a27;
+  --color-ink-900: #1b1a18;
+  --color-ink-950: #121110;
+
+  --animate-fade-up: fade-up 0.6s ease-out both;
+  --animate-pop: pop 0.16s ease-out both;
+  @keyframes pop {
+    from {
+      opacity: 0;
+      transform: translateY(-4px) scale(0.99);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+/* Wide letter-spacing (small caps labels) breaks up Devanagari words: keep it tight in Hindi. */
+html[lang="hi"] :is(.eyebrow, [class*="tracking-[0."]) {
+  letter-spacing: 0.01em;
+}
+
+/* Landing carousel: progress bar of the current slide while autoplaying. */
+@keyframes carousel-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ink-50 text-ink-900 antialiased dark:bg-ink-950 dark:text-ink-100;
+    font-feature-settings: "ss01";
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-500;
+  }
+  ::selection {
+    @apply bg-brand-200 text-ink-900;
+  }
+}
+
+/* Full-width sections: content uses the screen width (max 1760px) with padding that grows with it. */
+@utility container-page {
+  @apply mx-auto w-full max-w-[1760px] px-4 sm:px-6 lg:px-10 2xl:px-16;
+}
+
+@utility card {
+  @apply rounded-[20px] border border-ink-200/80 bg-white shadow-[0_1px_2px_rgba(27,26,24,0.04)] dark:border-ink-800 dark:bg-ink-900;
+}
+
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold tracking-[0.01em] transition duration-200 select-none disabled:cursor-not-allowed disabled:opacity-55;
+}
+
+@utility btn-primary {
+  @apply bg-ink-900 text-ink-50 shadow-[0_12px_24px_-12px_rgba(27,26,24,0.6)] hover:-translate-y-px hover:bg-ink-800 dark:bg-brand-300 dark:text-ink-950 dark:hover:bg-brand-200;
+}
+
+@utility btn-secondary {
+  @apply border border-ink-300 bg-transparent text-ink-900 hover:border-ink-900 hover:bg-white dark:border-ink-600 dark:text-ink-50 dark:hover:border-ink-300 dark:hover:bg-ink-900;
+}
+
+@utility btn-ghost {
+  @apply text-ink-700 hover:bg-ink-100 dark:text-ink-200 dark:hover:bg-ink-800;
+}
+
+@utility btn-accent {
+  @apply bg-brand-400 text-ink-950 shadow-[0_12px_24px_-12px_rgba(179,133,106,0.8)] hover:-translate-y-px hover:bg-brand-300;
+}
+
+@utility btn-light {
+  @apply border border-white/30 text-white hover:border-white hover:bg-white/10;
+}
+
+@utility input {
+  @apply w-full rounded-2xl border border-ink-300 bg-white px-4 py-3 text-base text-ink-900 placeholder:text-ink-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/25 focus:outline-none dark:border-ink-700 dark:bg-ink-900 dark:text-ink-50;
+}
+
+/* Small uppercase label above headings (Nova's "STRATEGY / DESIGN / TECHNOLOGY"). */
+@utility eyebrow {
+  @apply text-xs font-bold tracking-[0.2em] text-brand-600 uppercase dark:text-brand-300;
+}
+
+/* Big tight display headings. */
+@utility display {
+  @apply font-bold tracking-[-0.045em] text-balance;
+}
+
+/* Question text keeps the line breaks from the JSON (code snippets etc.). */
+@utility q-text {
+  @apply break-words whitespace-pre-wrap;
+}

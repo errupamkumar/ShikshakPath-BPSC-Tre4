@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "source_file": "D-87-11",
+    "question": "Which of the following data structure is Non-linear type ?",
+    "options": {
+      "A": "Strings",
+      "B": "Lists",
+      "C": "Stacks",
+      "D": "None of the above"
+    },
+    "answer": "D",
+    "explanation": "Strings, (linear) lists and stacks are all linear structures; non-linear ones are trees and graphs, which are not listed."
+  },
+  {
+    "id": 2,
+    "source_file": "D-87-11",
+    "question": "The total number of comparisons in a bubble sort is",
+    "options": {
+      "A": "0(log n)",
+      "B": "0(n log n)",
+      "C": "0(n)",
+      "D": "None of the above"
+    },
+    "answer": "D",
+    "explanation": "Bubble sort makes n(n−1)/2 comparisons, i.e. O(n²), which is not among A–C. ('0' is printed for O.)"
+  },
+  {
+    "id": 3,
+    "source_file": "D-87-11",
+    "question": "Which of the following is a bad example of recursion ?",
+    "options": {
+      "A": "Factorial",
+      "B": "Fibonacci numbers",
+      "C": "Tower of Hanai",
+      "D": "Tree traversal"
+    },
+    "answer": "B",
+    "explanation": "Naive recursive Fibonacci recomputes the same subproblems repeatedly, giving exponential time; iteration is far better. ('Hanai' is a misprint of Hanoi.)"
+  },
+  {
+    "id": 4,
+    "source_file": "D-87-11",
+    "question": "Domain and Range of the function\nY = – √(–2x + 3) is",
+    "options": {
+      "A": "x ≥ 3/2, y ≥ 0",
+      "B": "x > 3/2, y ≤ 0",
+      "C": "x ≥ 3/2, y ≤ 0",
+      "D": "x ≤ 3/2, y ≤ 0"
+    },
+    "answer": "D",
+    "explanation": "The square root needs −2x + 3 ≥ 0, so x ≤ 3/2. The root is ≥ 0 and is negated, so y ≤ 0."
+  },
+  {
+    "id": 5,
+    "source_file": "D-87-11",
+    "question": "Maximum number of edges in a n-Node undirected graph without self loop is",
+    "options": {
+      "A": "n²",
+      "B": "n(n – 1)",
+      "C": "n(n + 1)",
+      "D": "n(n – 1)/2"
+    },
+    "answer": "D",
+    "explanation": "A simple undirected graph has at most one edge per pair of vertices: C(n, 2) = n(n−1)/2."
+  },
+  {
+    "id": 6,
+    "source_file": "D-87-11",
+    "question": "A hash table has space for 75 records, then the probability of collision before the table is 6% full.",
+    "options": {
+      "A": ".25",
+      "B": ".20",
+      "C": ".35",
+      "D": ".30"
+    },
+    "answer": "D",
+    "explanation": "Doubtful question. A birthday-style calculation (about 4–5 insertions into 75 slots) gives a collision probability of roughly 0.08–0.13, which matches no option. The answer letter here is a best guess, not a verified key; please check it against the official key."
+  },
+  {
+    "id": 7,
+    "source_file": "D-87-11",
+    "question": "BCC in the internet refers to",
+    "options": {
+      "A": "Black carbon copy",
+      "B": "Blind carbon copy",
+      "C": "Blank carbon copy",
+      "D": "Beautiful carbon copy"
+    },
+    "answer": "B",
+    "explanation": "BCC (blind carbon copy) recipients are hidden from the other recipients."
+  },
+  {
+    "id": 8,
+    "source_file": "D-87-11",
+    "question": "Hub is a term used with",
+    "options": {
+      "A": "A Star Networks",
+      "B": "A Ring Networks",
+      "C": "A Router",
+      "D": "A Bridge"
+    },
+    "answer": "A",
+    "explanation": "In a star topology every node connects to a central hub."
+  },
+  {
+    "id": 9,
+    "source_file": "D-87-11",
+    "question": "The amount of uncertainty in a system of symbol is called",
+    "options": {
+      "A": "Bandwidth",
+      "B": "Entropy",
+      "C": "Loss",
+      "D": "Quantum"
+    },
+    "answer": "B",
+    "explanation": "Shannon entropy H = −Σ p log p measures the average uncertainty (information) per symbol."
+  },
+  {
+    "id": 10,
+    "source_file": "D-87-11",
+    "question": "Which of the following network access standard disassembler is used for connection station to a packet switched network ?",
+    "options": {
+      "A": "X.3",
+      "B": "X.21",
+      "C": "X.25",
+      "D": "X.75"
+    },
+    "answer": "C",
+    "explanation": "X.25 is the standard interface between a station (DTE) and a packet-switched network. (X.3 defines the PAD, the packet assembler/disassembler; X.75 links networks.)"
+  },
+  {
+    "id": 11,
+    "source_file": "D-87-11",
+    "question": "A station in a network in a network forward incoming packets by placing them on its shortest output queue. What routing algorithm is being used ?",
+    "options": {
+      "A": "Hot potato routing",
+      "B": "Flooding",
+      "C": "Static routing",
+      "D": "Delta routing"
+    },
+    "answer": "A",
+    "explanation": "Hot-potato routing gets rid of a packet as quickly as possible by putting it on the shortest output queue. ('in a network' is printed twice in the original.)"
+  },
+  {
+    "id": 12,
+    "source_file": "D-87-11",
+    "question": "Start and stop bits are used in serial communications for",
+    "options": {
+      "A": "Error detection",
+      "B": "Error correction",
+      "C": "Synchronization",
+      "D": "Slowing down the communication"
+    },
+    "answer": "C",
+    "explanation": "In asynchronous serial transmission, start/stop bits frame each character so the receiver can synchronise."
+  },
+  {
+    "id": 13,
+    "source_file": "D-87-11",
+    "question": "For a data entry project for office staff who have never used computers before (user interface and user-friendliness are extremely important), one will use",
+    "options": {
+      "A": "Spiral model",
+      "B": "Component based model",
+      "C": "Prototyping",
+      "D": "Waterfall model"
+    },
+    "answer": "C",
+    "explanation": "Prototyping lets inexperienced users try the interface early and refine requirements."
+  },
+  {
+    "id": 14,
+    "source_file": "D-87-11",
+    "question": "An SRS",
+    "options": {
+      "A": "establishes the basis for agreement between client and the supplier.",
+      "B": "provides a reference for validation of the final product.",
+      "C": "is a prerequisite to high quality software.",
+      "D": "all of the above."
+    },
+    "answer": "D",
+    "explanation": "A Software Requirements Specification serves as the contract basis, the validation reference and a prerequisite for quality software."
+  },
+  {
+    "id": 15,
+    "source_file": "D-87-11",
+    "question": "McCabe's cyclomatic metric V(G) of a graph G with n vertices, e edges and p connected component is",
+    "options": {
+      "A": "e",
+      "B": "n",
+      "C": "e–n+p",
+      "D": "e – n + 2p"
+    },
+    "answer": "D",
+    "explanation": "V(G) = e − n + 2p (for a single connected component, e − n + 2)."
+  },
+  {
+    "id": 16,
+    "source_file": "D-87-11",
+    "question": "Emergency fixes known as patches are result of",
+    "options": {
+      "A": "adaptive maintenance",
+      "B": "perfective maintenance",
+      "C": "corrective maintenance",
+      "D": "none of the above"
+    },
+    "answer": "C",
+    "explanation": "Patches fix faults found in use, which is corrective maintenance."
+  },
+  {
+    "id": 17,
+    "source_file": "D-87-11",
+    "question": "Design recovery from source code is done during",
+    "options": {
+      "A": "reverse engineering",
+      "B": "re-engineering",
+      "C": "reuse",
+      "D": "all of the above"
+    },
+    "answer": "A",
+    "explanation": "Reverse engineering analyses existing code to recover its design and specifications."
+  },
+  {
+    "id": 18,
+    "source_file": "D-87-11",
+    "question": "Following is used to demonstrate that the new release of software still performs the old one did by rerunning the old tests :",
+    "options": {
+      "A": "Functional testing",
+      "B": "Path testing",
+      "C": "Stress testing",
+      "D": "Regression testing"
+    },
+    "answer": "D",
+    "explanation": "Regression testing reruns earlier tests to make sure changes have not broken existing behaviour."
+  },
+  {
+    "id": 19,
+    "source_file": "D-87-11",
+    "question": "The post order traversal of a binary tree is DEBFCA. Find out the pre-order traversal.",
+    "options": {
+      "A": "ABFCDE",
+      "B": "ADBFEC",
+      "C": "ABDECF",
+      "D": "ABDCEF"
+    },
+    "answer": "C",
+    "explanation": "Root A; its left subtree is B with children D, E (postorder D E B) and right subtree C with child F (F C). Preorder: A B D E C F."
+  },
+  {
+    "id": 20,
+    "source_file": "D-87-11",
+    "question": "B + tree are preferred to binary tree in database because",
+    "options": {
+      "A": "Disk capacities are greater than memory capacities",
+      "B": "Disk access much slower than memory access",
+      "C": "Disk data transfer rates are much less than memory data transfer rate",
+      "D": "Disk are more reliable than memory"
+    },
+    "answer": "B",
+    "explanation": "Because each disk access is slow, B+ trees use high fan-out nodes (one per block) to minimise the number of disk accesses (tree height)."
+  },
+  {
+    "id": 21,
+    "source_file": "D-87-11",
+    "question": "What deletes the entire file except the file structure ?",
+    "options": {
+      "A": "ERASE",
+      "B": "DELETE",
+      "C": "ZAP",
+      "D": "PACK"
+    },
+    "answer": "C",
+    "explanation": "In dBASE, ZAP removes all records but keeps the file structure; DELETE only marks records and PACK removes marked ones."
+  },
+  {
+    "id": 22,
+    "source_file": "D-87-11",
+    "question": "Which command classes text file, which has been created using \"SET ALTERNATIVE\" <FILE NAME> \"Command\" ?",
+    "options": {
+      "A": "SET ALTERNATE OFF",
+      "B": "CLOSE DATABASE",
+      "C": "CLOSE ALTERNATE",
+      "D": "CLEAR ALL"
+    },
+    "answer": "C",
+    "explanation": "In dBASE, CLOSE ALTERNATE closes the text file opened by SET ALTERNATE TO <file>. ('classes' is a misprint of 'closes' and 'ALTERNATIVE' of 'ALTERNATE'.)"
+  },
+  {
+    "id": 23,
+    "source_file": "D-87-11",
+    "question": "Data security threats include",
+    "options": {
+      "A": "privacy invasion",
+      "B": "hardware failure",
+      "C": "fraudulent manipulation of data",
+      "D": "encryption and decryption"
+    },
+    "answer": "C",
+    "explanation": "Fraudulent manipulation of data is a direct data-security threat. Privacy invasion and hardware failure are also arguably threats, so the question is ambiguous; encryption is a protection, not a threat."
+  },
+  {
+    "id": 24,
+    "source_file": "D-87-11",
+    "question": "Which of the following statements is true, when structure of database file with 20 records is modified ?",
+    "options": {
+      "A": "? EOF ( ) Prints. T",
+      "B": "? BOF ( ) Prints F",
+      "C": "? BOF ( ) Prints T",
+      "D": "? EOF ( ) Prints F"
+    },
+    "answer": "D",
+    "explanation": "Doubtful question. After MODIFY STRUCTURE in dBASE the file is reopened with the pointer at record 1, so EOF() returns .F. (and BOF() also .F.), which makes both B and D true. The answer letter is a best guess; please check it against the official key."
+  },
+  {
+    "id": 25,
+    "source_file": "D-87-11",
+    "question": "The SQL Expression\nSelect distinct T. branch name from branch T, branch S where T. assets > S. assets and S. branch-city = DELHI, finds the name of",
+    "options": {
+      "A": "all branches that have greater asset than any branch located in DELHI.",
+      "B": "all branches that have greater assets than allocated in DELHI.",
+      "C": "the branch that has the greatest asset in DELHI.",
+      "D": "any branch that has greater asset than any branch located in DELHI."
+    },
+    "answer": "A",
+    "explanation": "The self-join keeps T whenever some Delhi branch S has smaller assets, i.e. branches with assets greater than at least one (some/any) Delhi branch (Korth's example)."
+  },
+  {
+    "id": 26,
+    "source_file": "D-87-11",
+    "question": "Dijkestra banking algorithm in an operating system, solves the problem of",
+    "options": {
+      "A": "deadlock avoidance",
+      "B": "deadlock recovery",
+      "C": "mutual exclusion",
+      "D": "context switching"
+    },
+    "answer": "A",
+    "explanation": "Dijkstra's Banker's algorithm grants requests only if the system stays in a safe state, i.e. deadlock avoidance."
+  },
+  {
+    "id": 27,
+    "source_file": "D-87-11",
+    "question": "The multiuser operating system, 20 requests are made to use a particular resource per hour, on an average the probability that no request are made in 45 minutes is",
+    "options": {
+      "A": "e–15",
+      "B": "e–5",
+      "C": "1 – e–5",
+      "D": "1 – e–10"
+    },
+    "answer": "A",
+    "explanation": "Poisson arrivals with mean λt = 20 × 0.75 = 15 give P(0) = e⁻¹⁵. (Printed as 'e–15'.)"
+  },
+  {
+    "id": 28,
+    "source_file": "D-87-11",
+    "question": "On receiving an interrupt from an I/O device, the CPU",
+    "options": {
+      "A": "halts for predetermined time.",
+      "B": "branches off to the interrupt service routine after completion of the current instruction.",
+      "C": "branches off to the interrupt service routine immediately.",
+      "D": "hands over control of address bus and data bus to the interrupting device."
+    },
+    "answer": "B",
+    "explanation": "Interrupts are checked at the end of each instruction cycle; the CPU then saves state and jumps to the ISR. Handing over the bus describes DMA."
+  },
+  {
+    "id": 29,
+    "source_file": "D-87-11",
+    "question": "The maximum amount of information that is available in one portion of the disk access arm for a removal disk pack (without further movement of the arm with multiple heads)",
+    "options": {
+      "A": "a plate of data",
+      "B": "a cylinder of data",
+      "C": "a track of data",
+      "D": "a block of data"
+    },
+    "answer": "B",
+    "explanation": "With the arm fixed, all heads together access the same track on every surface, i.e. one cylinder."
+  },
+  {
+    "id": 30,
+    "source_file": "D-87-11",
+    "question": "Consider a logical address space of 8 pages of 1024 words mapped with memory of 32 frames. How many bits are there in the physical address ?",
+    "options": {
+      "A": "9 bits",
+      "B": "11 bits",
+      "C": "13 bits",
+      "D": "15 bits"
+    },
+    "answer": "D",
+    "explanation": "32 frames need 5 bits and 1024-word offset needs 10 bits: 15-bit physical address (logical address is 3 + 10 = 13 bits)."
+  },
+  {
+    "id": 31,
+    "source_file": "D-87-11",
+    "question": "CPU does not perform the operation",
+    "options": {
+      "A": "data transfer",
+      "B": "logic operation",
+      "C": "arithmetic operation",
+      "D": "all of the above"
+    },
+    "answer": "D",
+    "explanation": "Flawed question: a CPU performs data transfer, logic and arithmetic operations alike. (D) is the option usually keyed, but the wording is self-contradictory; treat this item with caution."
+  },
+  {
+    "id": 32,
+    "source_file": "D-87-11",
+    "question": "A chip having 150 gates will be classified as",
+    "options": {
+      "A": "SSI",
+      "B": "MSI",
+      "C": "LSI",
+      "D": "VLSI"
+    },
+    "answer": "C",
+    "explanation": "Typical ranges: SSI < 12 gates, MSI 12–99, LSI 100–9,999, VLSI ≥ 10,000. So 150 gates is LSI."
+  },
+  {
+    "id": 33,
+    "source_file": "D-87-11",
+    "question": "If an integer needs two bytes of storage, then the maximum value of unsigned integer is",
+    "options": {
+      "A": "2¹⁶ – 1",
+      "B": "2¹⁵ – 1",
+      "C": "2¹⁶",
+      "D": "2¹⁵"
+    },
+    "answer": "A",
+    "explanation": "16 unsigned bits represent 0 to 2¹⁶ − 1 = 65535."
+  },
+  {
+    "id": 34,
+    "source_file": "D-87-11",
+    "question": "Negative numbers cannot be represented in",
+    "options": {
+      "A": "signed magnitude form",
+      "B": "1's complement form",
+      "C": "2's complement form",
+      "D": "none of the above"
+    },
+    "answer": "D",
+    "explanation": "All three forms can represent negative numbers."
+  },
+  {
+    "id": 35,
+    "source_file": "D-87-11",
+    "question": "The cellular frequency reuse factor for the cluster size N is",
+    "options": {
+      "A": "N",
+      "B": "N²",
+      "C": "1/N",
+      "D": "1/N²"
+    },
+    "answer": "C",
+    "explanation": "Each cell in an N-cell cluster gets 1/N of the channels, so the frequency reuse factor is 1/N."
+  },
+  {
+    "id": 36,
+    "source_file": "D-87-11",
+    "question": "X – = Y + 1 means",
+    "options": {
+      "A": "X = X – Y + 1",
+      "B": "X = –X – Y – 1",
+      "C": "X = –X + Y + 1",
+      "D": "= X – Y – 1"
+    },
+    "answer": "D",
+    "explanation": "X -= Y + 1 is X = X − (Y + 1) = X − Y − 1. Option D is misprinted (missing 'X' before '=') but is the intended answer."
+  },
+  {
+    "id": 37,
+    "source_file": "D-87-11",
+    "question": "Handoff is the mechanism that",
+    "options": {
+      "A": "transfer an ongoing call from one base station to another",
+      "B": "initiating a new call",
+      "C": "dropping an ongoing call",
+      "D": "none of above"
+    },
+    "answer": "A",
+    "explanation": "Handoff (handover) transfers an active call to another base station/channel as the user moves."
+  },
+  {
+    "id": 38,
+    "source_file": "D-87-11",
+    "question": "Which one of the following statement is false ?",
+    "options": {
+      "A": "Context-free languages are closed under union.",
+      "B": "Context-free languages are closed under concatenation.",
+      "C": "Context-free languages are closed under intersection.",
+      "D": "Context-free languages are closed under Kleene closure."
+    },
+    "answer": "C",
+    "explanation": "CFLs are not closed under intersection: {aⁿbⁿcᵐ} ∩ {aᵐbⁿcⁿ} = {aⁿbⁿcⁿ}, which is not context-free."
+  },
+  {
+    "id": 39,
+    "source_file": "D-87-11",
+    "question": "All of the following are examples of real security and privacy risks except",
+    "options": {
+      "A": "Hackers",
+      "B": "Spam",
+      "C": "Viruses",
+      "D": "Identify theft"
+    },
+    "answer": "B",
+    "explanation": "Spam is a nuisance rather than a real security/privacy risk in this classic MCQ. ('Identify theft' is a misprint of identity theft.)"
+  },
+  {
+    "id": 40,
+    "source_file": "D-87-11",
+    "question": "Identify the incorrect statement :",
+    "options": {
+      "A": "The ATM adoption layer is not service dependent.",
+      "B": "Logical connections in ATM are referred to as virtual channel connections.",
+      "C": "ATM is streamlined protocol with minimal error and flow control capabilities",
+      "D": "ATM is also known as cell delays."
+    },
+    "answer": "A",
+    "explanation": "The ATM Adaptation Layer is service dependent (AAL1–AAL5 serve different service classes), so A is incorrect. D is a misprint of 'cell relay', which is true. ('adoption' should read 'adaptation'.)"
+  },
+  {
+    "id": 41,
+    "source_file": "D-87-11",
+    "question": "Software risk estimation involves following two tasks :",
+    "options": {
+      "A": "Risk magnitude and risk impact",
+      "B": "Risk probability and risk impact",
+      "C": "Risk maintenance and risk impact",
+      "D": "Risk development and risk impact"
+    },
+    "answer": "B",
+    "explanation": "Risk projection/estimation rates each risk by its likelihood (probability) and the consequences (impact)."
+  },
+  {
+    "id": 42,
+    "source_file": "D-87-11",
+    "question": "The number of bits required for an IPV6 address is",
+    "options": {
+      "A": "16",
+      "B": "32",
+      "C": "64",
+      "D": "128"
+    },
+    "answer": "D",
+    "explanation": "IPv6 addresses are 128 bits (IPv4 is 32)."
+  },
+  {
+    "id": 43,
+    "source_file": "D-87-11",
+    "question": "The proposition ~ q̲ v p is equivalent to\n[the underlined q denotes q̄, i.e. ¬q]",
+    "options": {
+      "A": "p → q̲",
+      "B": "q̲ → p",
+      "C": "p ↔ q̲",
+      "D": "p ∨ q̲"
+    },
+    "answer": "B",
+    "explanation": "q̄ → p ≡ ¬q̄ ∨ p ≡ ~q̄ ∨ p, which is exactly the given proposition."
+  },
+  {
+    "id": 44,
+    "source_file": "D-87-11",
+    "question": "Enterprise Resource Planning (ERP)",
+    "options": {
+      "A": "has existed for over a decade.",
+      "B": "does not integrate well with the functional areas other than operations.",
+      "C": "is inexpensive to implement.",
+      "D": "automate and integrates the majority of business processes."
+    },
+    "answer": "D",
+    "explanation": "ERP automates and integrates most business processes across functions; it is expensive to implement."
+  },
+  {
+    "id": 45,
+    "source_file": "D-87-11",
+    "question": "Which of the following is false concerning Enterprise Resource Planning (ERP) ?",
+    "options": {
+      "A": "It attempts to automate and integrate the majority of business processes.",
+      "B": "It shares common data and practices across the enterprise.",
+      "C": "It is inexpensive to implement.",
+      "D": "It provides and access information in a real-time environment."
+    },
+    "answer": "C",
+    "explanation": "ERP implementations are notoriously expensive and time-consuming."
+  },
+  {
+    "id": 46,
+    "source_file": "D-87-11",
+    "question": "To compare, overlay or cross analyze to maps in GIS",
+    "options": {
+      "A": "both maps must be in digital form",
+      "B": "both maps must be at the same equivalent scale.",
+      "C": "both maps must be on the same coordinate system",
+      "D": "All of the above"
+    },
+    "answer": "D",
+    "explanation": "Overlay analysis requires digital layers with the same scale and the same coordinate/projection system."
+  },
+  {
+    "id": 47,
+    "source_file": "D-87-11",
+    "question": "Web Mining is not used in which of the following areas ?",
+    "options": {
+      "A": "Information filtering",
+      "B": "Crime fighting on the internet",
+      "C": "Online transaction processing",
+      "D": "Click stream analysis."
+    },
+    "answer": "C",
+    "explanation": "OLTP is routine transaction processing, not a web-mining application; the others are typical uses."
+  },
+  {
+    "id": 48,
+    "source_file": "D-87-11",
+    "question": "A telephone conference call is an example of which type of communications ?",
+    "options": {
+      "A": "same time / same place",
+      "B": "same time / different place",
+      "C": "different time / different place",
+      "D": "different time / same place"
+    },
+    "answer": "B",
+    "explanation": "A conference call is synchronous (same time) with participants in different places."
+  },
+  {
+    "id": 49,
+    "source_file": "D-87-11",
+    "question": "What is the probability of choosing correctly an unknown integer between 0 and 9 with 3 chances ?",
+    "options": {
+      "A": "963/1000",
+      "B": "973/1000",
+      "C": "983/1000",
+      "D": "953/1000"
+    },
+    "answer": "B",
+    "explanation": "Doubtful question. With 3 guesses among 10 digits the probability is 3/10 (no repeats) or 1 − 0.9³ = 0.271 (with repeats); neither matches. Option B equals 1 − (3/10)³. The answer letter is a best guess; please check it against the official key."
+  },
+  {
+    "id": 50,
+    "source_file": "D-87-11",
+    "question": "The number of nodes in a complete binary tree of height h (with roots at level 0) is equal to",
+    "options": {
+      "A": "2⁰ + 2¹ + ….. 2ʰ",
+      "B": "2⁰ + 2¹ + ….. 2ʰ⁻¹",
+      "C": "2⁰ + 2¹ + ….. 2ʰ⁺¹",
+      "D": "2¹ + ….. 2ʰ⁺¹"
+    },
+    "answer": "A",
+    "explanation": "Levels 0 to h contain 2⁰, 2¹, …, 2ʰ nodes: total 2ʰ⁺¹ − 1."
+  }
+]
