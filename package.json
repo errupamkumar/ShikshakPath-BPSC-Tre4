@@ -20,7 +20,8 @@
   },
   "overrides": {
     "@firebase/app": "0.16.2",
-    "@firebase/app-compat": "0.5.18"
+    "@firebase/app-compat": "0.5.18",
+    "jose": "4.15.9"
   },
   "dependencies": {
     "firebase": "^12.19.0",
