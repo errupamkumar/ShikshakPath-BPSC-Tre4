@@ -346,9 +346,11 @@ export async function finalizeAttempt(
     const board = await readBoard(tx, a.testId, uid);
     const now = Date.now();
     const late = isExpired(a, now);
-    const answers = !late && payload ? sanitizeAnswers(cat, a, payload.answers) : (a.answers ?? {});
-    const marked = !late && payload ? sanitizeIds(a, payload.marked) : (a.marked ?? []);
-    const auto = late || !payload || payload.auto === true;
+    // No answers in the payload (e.g. "Submit now" from the test page): grade what is already saved.
+    const fromClient = !late && payload && payload.answers !== undefined;
+    const answers = fromClient ? sanitizeAnswers(cat, a, payload.answers) : (a.answers ?? {});
+    const marked = fromClient ? sanitizeIds(a, payload.marked) : (a.marked ?? []);
+    const auto = late || !payload || (payload.answers !== undefined && payload.auto === true);
     const s = submission(cat, a, answers, auto, now);
     tx.update(ref, { ...s, marked, pausedAt: FieldValue.delete(), remainingMs: FieldValue.delete() });
     writeBoard(tx, board, s);

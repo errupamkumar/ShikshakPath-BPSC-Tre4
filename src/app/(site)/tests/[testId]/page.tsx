@@ -6,6 +6,7 @@ import { subjectName } from "@config/subjects";
 import { LockIcon } from "@/components/icons";
 import { PaletteLegend } from "@/components/palette";
 import { StartTestButton } from "@/components/start-test-button";
+import { SubmitSavedButton } from "@/components/submit-saved-button";
 import { UnlockButton } from "@/components/unlock-button";
 import { canAccessTest } from "@/lib/access";
 import { getRunningAttempt, patternOfTest, remainingMsOf } from "@/lib/attempts";
@@ -137,6 +138,7 @@ export default async function TestPage({ params }: Props) {
           label={running ? (running.pausedAt ? t("inst.resumePaused", { m: minutesLeft }) : t("inst.resume", { m: minutesLeft })) : t("inst.start")}
           className="w-full py-3.5 text-base sm:w-auto sm:px-10"
         />
+        {running && <SubmitSavedButton attemptId={running.id} />}
         {test.kind === "paper" && (
           <Link href={`/pyq/${test.id}`} className="text-sm font-semibold text-brand-600 dark:text-brand-300">
             {t("inst.readPyq")}
