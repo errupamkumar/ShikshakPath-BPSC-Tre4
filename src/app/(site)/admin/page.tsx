@@ -3,22 +3,24 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AggregateField } from "firebase-admin/firestore";
 import { buildConfig, libraryConfig, patternFor, questionsPerTest } from "@config/test-series.config";
-import { exams } from "@config/exams";
-import { subjectName, subjects } from "@config/subjects";
-import { AccessToggle, PriceForm } from "@/components/admin-controls";
-import { ResourceControls, ResourceUploader } from "@/components/admin-library";
+import { examByKey, exams } from "@config/exams";
+import { subjectByKey, subjectName, subjects } from "@config/subjects";
+import { AccessToggle, PriceForm, SeriesAccess } from "@/components/admin-controls";
 import { ExamToggle } from "@/components/admin-exams";
-import { CreateMockButton, TestControls, UploadForm } from "@/components/admin-papers";
+import { ResourceControls, ResourceUploader } from "@/components/admin-library";
+import { CreateMockButton, TestControls, UploadForm, UploadKindSwitch } from "@/components/admin-papers";
 import { ExamLogo } from "@/components/exam-logo";
+import { ArrowRight, BookIcon, ChartIcon, LayersIcon, SearchIcon, ShieldIcon, TargetIcon, UnlockIcon, UploadIcon } from "@/components/icons";
+import { accessIsActive, activePasses, type UserDoc } from "@/lib/access";
+import { examShort, getCatalog, isExamLive, liveExams, seriesLabel } from "@/lib/catalog";
 import { EBOOK_META } from "@/lib/ebook-types";
-import { formatSize, listResources } from "@/lib/resources";
-import { accessIsActive, type UserDoc } from "@/lib/access";
-import { examShort, getCatalog, isExamLive } from "@/lib/catalog";
 import { dateTime, prettyPhone, rupees } from "@/lib/format";
 import { db, isStorageConfigured } from "@/lib/firebase-admin";
 import type { PaymentDoc } from "@/lib/payments";
+import { formatSize, listResources } from "@/lib/resources";
 import { getSessionUser, normalizePhone } from "@/lib/session";
 import { getPriceInPaise } from "@/lib/settings";
+import type { TestDef } from "@/lib/types";
 
 export const metadata: Metadata = { title: "Admin", robots: { index: false } };
 
@@ -29,54 +31,93 @@ const statusCls: Record<PaymentDoc["status"], string> = {
 };
 
 const TABS = [
-  { key: "overview", label: "Overview" },
-  { key: "papers", label: "Papers & tests" },
-  { key: "exams", label: "Exams" },
-  { key: "library", label: "eBooks" },
-  { key: "users", label: "Users" },
-  { key: "payments", label: "Payments" },
+  { key: "overview", label: "Overview", Icon: ChartIcon, text: "Key numbers, quick actions and the price." },
+  { key: "upload", label: "Upload", Icon: UploadIcon, text: "Add a mock test or a previous-year paper from a JSON file." },
+  { key: "tests", label: "Tests", Icon: LayersIcon, text: "Every test: free/paid, hide, rename, delete." },
+  { key: "exams", label: "Exams", Icon: TargetIcon, text: "Which exams students see." },
+  { key: "library", label: "eBooks", Icon: BookIcon, text: "PDF notes, PYQs, strategy guides and more." },
+  { key: "users", label: "Students", Icon: ShieldIcon, text: "Find a student and grant or revoke test series." },
+  { key: "payments", label: "Payments", Icon: UnlockIcon, text: "Razorpay orders and their status." },
 ] as const;
 type Tab = (typeof TABS)[number]["key"];
 
-type Props = { searchParams: Promise<{ tab?: string | string[]; phone?: string | string[] }> };
+type Props = { searchParams: Promise<Record<string, string | string[] | undefined>> };
+
+const th = "px-3 py-2.5 text-left text-[11px] font-bold tracking-wide text-ink-500 uppercase dark:text-ink-400";
+const td = "px-3 py-3 align-middle";
+const pill = (cls: string) => `inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-bold ${cls}`;
 
 export default async function AdminPage({ searchParams }: Props) {
   const admin = await getSessionUser(true);
   if (!admin?.isAdmin) notFound(); // don't reveal that this page exists
 
   const sp = await searchParams;
-  const tab: Tab = TABS.some((t) => t.key === sp.tab) ? (sp.tab as Tab) : "overview";
-  const phone = typeof sp.phone === "string" ? sp.phone : "";
+  const str = (k: string) => (typeof sp[k] === "string" ? (sp[k] as string) : "");
+  const rawTab = str("tab") === "papers" ? "tests" : str("tab"); // old links
+  const tab: Tab = TABS.some((t) => t.key === rawTab) ? (rawTab as Tab) : "overview";
+  const phone = str("phone");
   const search = phone.trim() ? normalizePhone(phone) : "";
   const cat = await getCatalog();
   const s = cat.stats;
-  const pools = Object.entries(cat.pool).filter(([, ids]) => ids.length > 0);
-  const poolTotal = pools.reduce((n, [, ids]) => n + ids.length, 0);
+  const current = TABS.find((t) => t.key === tab)!;
+  const counts: Partial<Record<Tab, number>> = { tests: cat.allTests.length, exams: cat.enabledExams.length, upload: cat.uploads.length };
+  const poolMock = (t: TestDef) => t.kind === "mock" && t.origin === "uploaded" && !t.id.startsWith("u-");
 
   return (
-    <div className="container-page py-8 sm:py-12">
-      <p className="eyebrow">Admin</p>
-      <h1 className="display mt-2 text-3xl sm:text-5xl">Control panel</h1>
-      <p className="mt-2 text-sm text-ink-500 dark:text-ink-400">
-        {s.totalQuestions.toLocaleString("en-IN")} questions · {s.mockTests} mock tests · {s.paperTests} papers · bundled bank built{" "}
-        {dateTime(Date.parse(s.generatedAt))}
-      </p>
+    <div className="container-page py-6 sm:py-10">
+      <div className="grid gap-6 lg:grid-cols-[250px_minmax(0,1fr)] xl:gap-8">
+        {/* Sidebar (phones: a scrolling tab row) */}
+        <aside className="lg:sticky lg:top-24 lg:self-start">
+          <div className="lg:card lg:p-3">
+            <div className="hidden px-3 pt-2 pb-4 lg:block">
+              <p className="eyebrow">Admin</p>
+              <p className="mt-1 text-lg font-black tracking-tight">Control panel</p>
+              <p className="mt-0.5 text-xs text-ink-500 dark:text-ink-400">{prettyPhone(admin.phone)}</p>
+            </div>
+            <nav className="-mx-4 flex gap-1.5 overflow-x-auto px-4 pb-1 lg:mx-0 lg:grid lg:gap-0.5 lg:overflow-visible lg:px-0 lg:pb-0" aria-label="Admin sections">
+              {TABS.map((t) => {
+                const active = t.key === tab;
+                return (
+                  <Link
+                    key={t.key}
+                    href={`/admin?tab=${t.key}`}
+                    aria-current={active ? "page" : undefined}
+                    className={`flex shrink-0 items-center gap-2.5 rounded-xl px-3 py-2 text-sm font-semibold transition ${
+                      active ? "bg-ink-900 text-white dark:bg-brand-300 dark:text-ink-950" : "border border-ink-200 bg-white text-ink-700 hover:bg-ink-100 lg:border-0 lg:bg-transparent dark:border-ink-700 dark:bg-ink-900 dark:text-ink-200 dark:hover:bg-ink-800 lg:dark:bg-transparent"
+                    }`}
+                  >
+                    <t.Icon width={16} height={16} className={active ? "" : "text-ink-400"} />
+                    {t.label}
+                    {counts[t.key] !== undefined && <span className={`ml-auto rounded-full px-1.5 text-[10px] font-bold ${active ? "bg-white/20" : "bg-ink-100 text-ink-500 dark:bg-ink-800"}`}>{counts[t.key]}</span>}
+                  </Link>
+                );
+              })}
+            </nav>
+            <Link href="/" className="mt-3 hidden items-center gap-1 px-3 pb-2 text-xs font-bold text-brand-600 lg:flex dark:text-brand-300">
+              View the website <ArrowRight width={13} height={13} />
+            </Link>
+          </div>
+        </aside>
 
-      <nav className="-mx-4 mt-6 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:px-0" aria-label="Admin sections">
-        {TABS.map((t) => (
-          <Link key={t.key} href={`/admin?tab=${t.key}`} className={`btn shrink-0 px-5 py-2 ${tab === t.key ? "btn-primary" : "btn-secondary"}`}>
-            {t.label}
-          </Link>
-        ))}
-      </nav>
-
-      <div className="mt-8">
-        {tab === "overview" && <Overview />}
-        {tab === "papers" && <Papers />}
-        {tab === "exams" && <Exams />}
-        {tab === "library" && <Library />}
-        {tab === "users" && <Users search={search} phone={phone} />}
-        {tab === "payments" && <Payments search={search} phone={phone} />}
+        {/* Content */}
+        <main className="min-w-0">
+          <header className="mb-6 flex flex-wrap items-end justify-between gap-3 border-b border-ink-200 pb-5 dark:border-ink-800">
+            <div>
+              <h1 className="text-2xl font-black tracking-tight sm:text-3xl">{current.label}</h1>
+              <p className="mt-1 text-sm text-ink-500 dark:text-ink-400">{current.text}</p>
+            </div>
+            <p className="text-xs text-ink-500 dark:text-ink-400">
+              {s.totalQuestions.toLocaleString("en-IN")} questions · {s.mockTests} mocks · {s.paperTests} papers
+            </p>
+          </header>
+          {tab === "overview" && <Overview />}
+          {tab === "upload" && <Upload />}
+          {tab === "tests" && <Tests />}
+          {tab === "exams" && <Exams />}
+          {tab === "library" && <Library />}
+          {tab === "users" && <Users />}
+          {tab === "payments" && <Payments />}
+        </main>
       </div>
     </div>
   );
@@ -84,7 +125,7 @@ export default async function AdminPage({ searchParams }: Props) {
   // ── Overview ──
   async function Overview() {
     const users = db().collection("users");
-    const [userCount, paidCount, revenue, pricePaise] = await Promise.all([
+    const [userCount, allAccess, revenue, pricePaise] = await Promise.all([
       users.count().get(),
       users.where("paid", "==", true).count().get(),
       // Needs the (status, amount) index from firestore.indexes.json; shows "–" until it exists.
@@ -100,140 +141,303 @@ export default async function AdminPage({ searchParams }: Props) {
         }),
       getPriceInPaise(),
     ]);
+    const kpis = [
+      { k: "Students", v: userCount.data().count.toLocaleString("en-IN"), Icon: ShieldIcon },
+      { k: "Successful payments", v: revenue ? (revenue.n ?? 0).toLocaleString("en-IN") : "–", Icon: UnlockIcon },
+      { k: "Revenue", v: revenue ? rupees(revenue.total ?? 0) : "– (index needed)", Icon: ChartIcon },
+      { k: "All-access students", v: allAccess.data().count.toLocaleString("en-IN"), Icon: ShieldIcon },
+      { k: "Tests live", v: String(s.totalTests), Icon: LayersIcon },
+      { k: "Questions", v: s.totalQuestions.toLocaleString("en-IN"), Icon: BookIcon },
+    ];
+    const actions = [
+      { href: "/admin?tab=upload", label: "Upload a test", text: "Mock test or previous paper (JSON)", Icon: UploadIcon },
+      { href: "/admin?tab=library", label: "Add an eBook", text: "PDF notes, PYQs, guides", Icon: BookIcon },
+      { href: "/admin?tab=exams", label: "Exams on the site", text: "Switch exams on or off", Icon: TargetIcon },
+      { href: "/admin?tab=users", label: "Find a student", text: "Grant or revoke access", Icon: ShieldIcon },
+    ];
     return (
       <div className="grid gap-6">
-        <dl className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-          {[
-            { k: "Users", v: userCount.data().count.toLocaleString("en-IN") },
-            { k: "Paid users", v: paidCount.data().count.toLocaleString("en-IN") },
-            { k: "Successful payments", v: revenue ? (revenue.n ?? 0).toLocaleString("en-IN") : "–" },
-            { k: "Revenue", v: revenue ? rupees(revenue.total ?? 0) : "– (index needed)" },
-            { k: "Mock tests", v: String(s.mockTests) },
-            { k: "Previous-year papers", v: String(s.paperTests) },
-            { k: "Uploaded papers", v: String(cat.uploads.length) },
-            { k: "New questions waiting", v: String(poolTotal) },
-          ].map((x) => (
+        <dl className="grid grid-cols-2 gap-3 md:grid-cols-3 2xl:grid-cols-6">
+          {kpis.map((x) => (
             <div key={x.k} className="card p-4">
-              <dt className="text-xs text-ink-500 dark:text-ink-400">{x.k}</dt>
-              <dd className="text-2xl font-bold">{x.v}</dd>
+              <dt className="flex items-center gap-2 text-xs font-semibold text-ink-500 dark:text-ink-400">
+                <x.Icon width={14} height={14} /> {x.k}
+              </dt>
+              <dd className="mt-1 text-2xl font-black tracking-tight">{x.v}</dd>
             </div>
           ))}
         </dl>
-        <section className="card p-5">
-          <h2 className="font-bold">Price</h2>
-          <p className="mb-4 text-sm text-ink-500">Current: {rupees(pricePaise)}. Changes apply to new orders within a minute.</p>
-          <PriceForm currentRupees={pricePaise / 100} />
+
+        <section>
+          <h2 className="mb-3 text-sm font-bold tracking-wide text-ink-500 uppercase dark:text-ink-400">Quick actions</h2>
+          <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+            {actions.map((a) => (
+              <Link key={a.href} href={a.href} className="card group flex items-center gap-3 p-4 transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-ink-900/5">
+                <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-ink-900 text-brand-300 dark:bg-brand-300 dark:text-ink-950">
+                  <a.Icon width={18} height={18} />
+                </span>
+                <span className="min-w-0">
+                  <span className="block font-bold group-hover:text-brand-700 dark:group-hover:text-brand-300">{a.label}</span>
+                  <span className="block truncate text-xs text-ink-500 dark:text-ink-400">{a.text}</span>
+                </span>
+              </Link>
+            ))}
+          </div>
         </section>
+
+        <div className="grid gap-6 xl:grid-cols-[1.4fr_1fr]">
+          <section className="card overflow-hidden">
+            <h2 className="px-5 pt-5 font-bold">Content by exam (on the site)</h2>
+            <div className="overflow-x-auto">
+              <table className="mt-3 w-full min-w-[520px] text-sm">
+                <thead className="border-y border-ink-200 bg-ink-50 dark:border-ink-800 dark:bg-ink-900/60">
+                  <tr>
+                    <th className={`${th} pl-5`}>Exam</th>
+                    <th className={th}>Live subjects</th>
+                    <th className={`${th} text-right`}>Mocks</th>
+                    <th className={`${th} pr-5 text-right`}>Papers</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-ink-100 dark:divide-ink-800">
+                  {liveExams(cat).map((e) => {
+                    const m = s.byExamSubject[e.key] ?? {};
+                    const sum = (f: "mockTests" | "paperTests") => Object.values(m).reduce((n, x) => n + x[f], 0);
+                    return (
+                      <tr key={e.key}>
+                        <td className={`${td} pl-5`}>
+                          <span className="flex items-center gap-2.5">
+                            <ExamLogo exam={e} size={30} />
+                            <span className="font-semibold">{e.short}</span>
+                          </span>
+                        </td>
+                        <td className={`${td} text-ink-600 dark:text-ink-300`}>{(s.liveByExam[e.key] ?? []).map((k) => subjectName(k)).join(", ") || "None yet"}</td>
+                        <td className={`${td} text-right tabular-nums`}>{sum("mockTests")}</td>
+                        <td className={`${td} pr-5 text-right tabular-nums`}>{sum("paperTests")}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section className="card p-5">
+            <h2 className="font-bold">Price per test series</h2>
+            <p className="mt-1 mb-4 text-sm text-ink-500">
+              One test series = one exam + one subject. Current: <strong>{rupees(pricePaise)}</strong>. Changes apply to new orders within a minute.
+            </p>
+            <PriceForm currentRupees={pricePaise / 100} />
+          </section>
+        </div>
       </div>
     );
   }
 
-  // ── Papers & tests ──
-  function Papers() {
-    const uploadIdOf = (testId: string) => (testId.startsWith("u-") ? testId.slice(2) : undefined);
-    const rows = cat.allTests;
+  // ── Upload ──
+  function Upload() {
+    const pools = Object.entries(cat.pool).filter(([, ids]) => ids.length > 0);
     return (
-      <div className="grid gap-6">
-        <div className="grid gap-6 xl:grid-cols-[1.1fr_1fr]">
-          <section className="card p-5 sm:p-6">
-            <h2 className="text-lg font-bold">Upload a question paper</h2>
-            <p className="mt-1 mb-5 text-sm text-ink-600 dark:text-ink-300">
-              The paper becomes a <strong>previous-year paper test</strong> of the chosen exam right away. Its new questions (not already in
-              that exam&apos;s bank) go to the exam + subject pool, and as soon as there are enough for every section of the exam&apos;s pattern
-              they automatically become a new <strong>mock test</strong> of that exam. Each exam is independent. Existing tests are never
-              reshuffled. Put a question in a section with <code>&quot;section&quot;: &quot;aptitude&quot;</code> in the JSON.
-            </p>
-            <UploadForm
-              subjects={subjects.map((x) => ({ key: x.key, name: x.name }))}
-              exams={exams.map((e) => ({ key: e.key, short: e.short, on: isExamLive(cat, e.key), subjects: e.subjects }))}
-              minutesPerQuestion={buildConfig.paperMinutesPerQuestion}
-            />
-          </section>
-          <section className="card p-5 sm:p-6">
-            <h2 className="text-lg font-bold">New-question pool (per exam + subject)</h2>
-            <p className="mt-1 text-sm text-ink-600 dark:text-ink-300">
-              Uploaded questions that are not in any mock test yet. A mock is created automatically when every section of the exam&apos;s
-              pattern can be filled; you can also create a shorter one now (minimum {buildConfig.minQuestionsForLastTest}).
-            </p>
-            {pools.length === 0 ? (
-              <p className="mt-4 rounded-2xl bg-ink-100 px-3 py-2 text-sm dark:bg-ink-800">No new questions waiting.</p>
+      <div className="grid gap-6 xl:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]">
+        <section className="card p-5 sm:p-6">
+          <h2 className="text-lg font-bold">Upload a JSON file</h2>
+          <p className="mt-1 mb-6 text-sm text-ink-600 dark:text-ink-300">
+            Each file becomes <strong>one</strong> test of the chosen exam and subject: a <strong>mock test</strong> (Mock tests tab) or a{" "}
+            <strong>previous-year paper</strong> (Previous papers tab and PYQs). Each exam is independent.
+          </p>
+          <UploadForm
+            subjects={subjects.map((x) => ({ key: x.key, name: x.name }))}
+            exams={exams.map((e) => {
+              const p = patternFor(e.key);
+              return { key: e.key, short: e.short, on: isExamLive(cat, e.key), subjects: e.subjects, perMock: questionsPerTest(p), mockMinutes: p.durationMinutes };
+            })}
+            minutesPerQuestion={buildConfig.paperMinutesPerQuestion}
+          />
+        </section>
+
+        <div className="grid content-start gap-6">
+          <section className="card overflow-hidden">
+            <div className="flex items-center justify-between px-5 pt-5">
+              <h2 className="font-bold">Uploaded files ({cat.uploads.length})</h2>
+            </div>
+            {cat.uploads.length === 0 ? (
+              <p className="px-5 py-6 text-sm text-ink-500">None yet. The bundled tests come from the JSON files in the project.</p>
             ) : (
+              <ul className="mt-3 max-h-[70dvh] divide-y divide-ink-100 overflow-y-auto dark:divide-ink-800">
+                {[...cat.uploads].reverse().map((u) => {
+                  const test = cat.testById.get(`u-${u.id}`);
+                  return (
+                    <li key={u.id} className="px-5 py-3">
+                      <div className="flex flex-wrap items-start justify-between gap-2">
+                        <div className="min-w-0">
+                          <p className="font-semibold">
+                            {test ? (
+                              <Link href={`/tests/${test.id}`} className="hover:text-brand-600">
+                                {test.title}
+                              </Link>
+                            ) : (
+                              u.title
+                            )}
+                          </p>
+                          <p className="mt-0.5 text-xs text-ink-500 dark:text-ink-400">
+                            {examShort(u.examKey)} · {subjectName(u.subject)} · {u.questionCount} Qs · {dateTime(u.createdAt)}
+                          </p>
+                        </div>
+                        <span className={pill(u.kind === "mock" ? "bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-300" : "bg-sky-100 text-sky-700 dark:bg-sky-900/50 dark:text-sky-300")}>
+                          {u.kind === "mock" ? `Mock Test ${test?.number ?? ""}` : "Previous paper"}
+                        </span>
+                      </div>
+                      <div className="mt-2 flex flex-wrap gap-1.5">
+                        <UploadKindSwitch uploadId={u.id} kind={u.kind} title={test?.title ?? u.title} />
+                        {test && <TestControls testId={test.id} free={test.free} hidden={!!test.hidden} title={test.title} uploadId={u.id} />}
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </section>
+
+          {pools.length > 0 && (
+            <section className="card p-5">
+              <h2 className="font-bold">Mixed mocks from previous papers (optional)</h2>
+              <p className="mt-1 text-sm text-ink-600 dark:text-ink-300">
+                Questions of previous-year papers that are in no mock test. You can build a mixed mock from them; students will then see those questions in
+                both the papers and the mock.
+              </p>
               <ul className="mt-4 grid gap-2">
                 {pools.map(([key, ids]) => {
                   const [examKey, subject] = key.split("|");
-                  const per = questionsPerTest(patternFor(examKey));
                   return (
                     <li key={key} className="flex flex-wrap items-center justify-between gap-2 rounded-2xl bg-ink-100 px-3 py-2 text-sm dark:bg-ink-800">
                       <span>
-                        <strong>
-                          {examShort(examKey)} · {subjectName(subject)}
-                        </strong>
-                        : {ids.length} waiting <span className="text-ink-500">(a mock needs {per})</span>
+                        <strong>{seriesLabel(examKey, subject)}</strong>: {ids.length} questions{" "}
+                        <span className="text-ink-500">(a full mock needs {questionsPerTest(patternFor(examKey))})</span>
                       </span>
                       <CreateMockButton examKey={examKey} subject={subject} pool={ids.length} min={buildConfig.minQuestionsForLastTest} />
                     </li>
                   );
                 })}
               </ul>
-            )}
-            <h3 className="mt-8 font-bold">Uploaded papers</h3>
-            {cat.uploads.length === 0 ? (
-              <p className="mt-2 text-sm text-ink-500">None yet. The {s.paperTests} papers listed below come from the bundled JSON files.</p>
-            ) : (
-              <ul className="mt-3 grid gap-2 text-sm">
-                {[...cat.uploads].reverse().map((u) => (
-                  <li key={u.id} className="flex flex-wrap justify-between gap-2 rounded-2xl bg-ink-100 px-3 py-2 dark:bg-ink-800">
-                    <span className="font-semibold">{cat.testById.get(`u-${u.id}`)?.title ?? u.title}</span>
-                    <span className="text-ink-500 dark:text-ink-400">
-                      {examShort(u.examKey)} · {subjectName(u.subject)} · {u.questionCount} Qs ({u.newQuestions} new) · {dateTime(u.createdAt)}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </section>
+            </section>
+          )}
         </div>
+      </div>
+    );
+  }
+
+  // ── Tests (filterable) ──
+  function Tests() {
+    const fExam = examByKey.has(str("exam")) ? str("exam") : "";
+    const fSubject = subjectByKey.has(str("subject")) ? str("subject") : "";
+    const fType = str("type") === "mock" || str("type") === "paper" ? str("type") : "";
+    const q = str("q").trim().toLowerCase();
+    const rows = cat.allTests.filter(
+      (t) => (!fExam || t.examKey === fExam) && (!fSubject || t.subject === fSubject) && (!fType || t.kind === fType) && (!q || t.title.toLowerCase().includes(q) || t.id.includes(q)),
+    );
+    const usedExams = exams.filter((e) => cat.allTests.some((t) => t.examKey === e.key));
+    const usedSubjects = subjects.filter((x) => cat.allTests.some((t) => t.subject === x.key));
+    return (
+      <div className="grid gap-4">
+        <form action="/admin" className="card flex flex-wrap items-end gap-3 p-4">
+          <input type="hidden" name="tab" value="tests" />
+          <label className="grid gap-1 text-xs font-semibold text-ink-500">
+            Exam
+            <select name="exam" defaultValue={fExam} className="input py-2 text-sm">
+              <option value="">All exams</option>
+              {usedExams.map((e) => (
+                <option key={e.key} value={e.key}>
+                  {e.short}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="grid gap-1 text-xs font-semibold text-ink-500">
+            Subject
+            <select name="subject" defaultValue={fSubject} className="input py-2 text-sm">
+              <option value="">All subjects</option>
+              {usedSubjects.map((x) => (
+                <option key={x.key} value={x.key}>
+                  {x.name}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="grid gap-1 text-xs font-semibold text-ink-500">
+            Type
+            <select name="type" defaultValue={fType} className="input py-2 text-sm">
+              <option value="">Mocks and papers</option>
+              <option value="mock">Mock tests</option>
+              <option value="paper">Previous papers</option>
+            </select>
+          </label>
+          <label className="grid min-w-48 flex-1 gap-1 text-xs font-semibold text-ink-500">
+            Search
+            <span className="relative">
+              <SearchIcon width={15} height={15} className="absolute top-1/2 left-3 -translate-y-1/2 text-ink-400" />
+              <input name="q" defaultValue={str("q")} placeholder="Test name or id" className="input py-2 pl-9 text-sm" />
+            </span>
+          </label>
+          <button className="btn btn-primary px-5 py-2.5">Filter</button>
+          {(fExam || fSubject || fType || q) && (
+            <Link href="/admin?tab=tests" className="btn btn-ghost px-3 py-2.5">
+              Clear
+            </Link>
+          )}
+        </form>
 
         <section className="card overflow-hidden">
-          <h2 className="px-5 pt-5 font-bold">All tests ({rows.length})</h2>
-          <p className="px-5 text-sm text-ink-500">Hidden tests (and papers of exams switched off in the Exams tab) are invisible to students; their past results still work.</p>
+          <p className="px-5 pt-4 text-sm text-ink-500">
+            {rows.length} of {cat.allTests.length} tests. Hidden tests, and tests of exams that are switched off, are invisible to students; past results still work.
+          </p>
           <div className="overflow-x-auto">
-            <table className="mt-3 w-full min-w-[820px] text-sm">
-              <thead className="bg-ink-50 text-left text-xs text-ink-500 dark:bg-ink-800/60 dark:text-ink-400">
+            <table className="mt-3 w-full min-w-[900px] text-sm">
+              <thead className="border-y border-ink-200 bg-ink-50 dark:border-ink-800 dark:bg-ink-900/60">
                 <tr>
-                  <th className="px-5 py-2 font-medium">Test</th>
-                  <th className="px-3 py-2 font-medium">Type</th>
-                  <th className="px-3 py-2 text-right font-medium">Qs</th>
-                  <th className="px-3 py-2 text-right font-medium">Min</th>
-                  <th className="px-3 py-2 font-medium">Status</th>
-                  <th className="px-5 py-2 text-right font-medium">Actions</th>
+                  <th className={`${th} pl-5`}>Test</th>
+                  <th className={th}>Exam · subject</th>
+                  <th className={th}>Type</th>
+                  <th className={`${th} text-right`}>Qs</th>
+                  <th className={`${th} text-right`}>Min</th>
+                  <th className={th}>Status</th>
+                  <th className={`${th} pr-5 text-right`}>Actions</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-ink-100 dark:divide-ink-800">
-                {rows.map((t) => (
-                  <tr key={t.id} className={t.hidden || t.examOff ? "opacity-55" : ""}>
-                    <td className="px-5 py-2">
+                {rows.slice(0, 400).map((t) => (
+                  <tr key={t.id} className={`transition hover:bg-ink-50/70 dark:hover:bg-ink-900/40 ${t.hidden || t.examOff ? "opacity-55" : ""}`}>
+                    <td className={`${td} pl-5`}>
                       <Link href={`/tests/${t.id}`} className="font-semibold hover:text-brand-600">
                         {t.title}
                       </Link>
-                      <span className="ml-2 font-mono text-[11px] text-ink-400">{t.id}</span>
+                      <span className="block font-mono text-[11px] text-ink-400">{t.id}</span>
                     </td>
-                    <td className="px-3 py-2 whitespace-nowrap text-ink-600 dark:text-ink-300">
-                      {examShort(t.examKey)} · {subjectName(t.subject)} · {t.kind === "mock" ? "Mock" : `Paper${t.sourceExam ? ` (asked in ${examShort(t.sourceExam)})` : ""}`}
-                      {t.origin === "uploaded" ? " · uploaded" : ""}
+                    <td className={`${td} whitespace-nowrap text-ink-600 dark:text-ink-300`}>{seriesLabel(t.examKey, t.subject)}</td>
+                    <td className={`${td} whitespace-nowrap`}>
+                      {t.kind === "mock" ? (
+                        <span className={pill("bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-300")}>Mock {t.number}</span>
+                      ) : (
+                        <span className={pill("bg-sky-100 text-sky-700 dark:bg-sky-900/50 dark:text-sky-300")}>Paper{t.sourceExam ? ` · asked in ${examShort(t.sourceExam)}` : ""}</span>
+                      )}
+                      {t.origin === "uploaded" && <span className="ml-1.5 text-[11px] text-ink-400">uploaded</span>}
                     </td>
-                    <td className="px-3 py-2 text-right tabular-nums">{t.questionCount}</td>
-                    <td className="px-3 py-2 text-right tabular-nums">{t.durationMinutes}</td>
-                    <td className="px-3 py-2 whitespace-nowrap">
-                      {t.free ? <span className="font-semibold text-emerald-600">Free</span> : <span className="text-ink-500">Paid</span>}
-                      {t.hidden && <span className="ml-2 font-semibold text-amber-600">Hidden</span>}
-                      {t.examOff && <span className="ml-2 font-semibold text-ink-500">Exam off</span>}
+                    <td className={`${td} text-right tabular-nums`}>{t.questionCount}</td>
+                    <td className={`${td} text-right tabular-nums`}>{t.durationMinutes}</td>
+                    <td className={`${td} whitespace-nowrap`}>
+                      {t.free ? <span className={pill("bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-300")}>Free</span> : <span className={pill("bg-ink-100 text-ink-600 dark:bg-ink-800 dark:text-ink-300")}>Paid</span>}
+                      {t.hidden && <span className={`ml-1 ${pill("bg-amber-100 text-amber-700 dark:bg-amber-900/50 dark:text-amber-300")}`}>Hidden</span>}
+                      {t.examOff && <span className={`ml-1 ${pill("bg-ink-100 text-ink-500 dark:bg-ink-800")}`}>Exam off</span>}
                     </td>
-                    <td className="px-5 py-2">
-                      <TestControls testId={t.id} free={t.free} hidden={!!t.hidden} title={t.title} uploadId={uploadIdOf(t.id)} />
+                    <td className={`${td} pr-5`}>
+                      <TestControls testId={t.id} free={t.free} hidden={!!t.hidden} title={t.title} uploadId={t.id.startsWith("u-") ? t.id.slice(2) : undefined} poolMock={poolMock(t)} />
                     </td>
                   </tr>
                 ))}
+                {rows.length === 0 && (
+                  <tr>
+                    <td colSpan={7} className="px-5 py-8 text-center text-ink-500">
+                      No tests match.
+                    </td>
+                  </tr>
+                )}
               </tbody>
             </table>
           </div>
@@ -244,34 +448,32 @@ export default async function AdminPage({ searchParams }: Props) {
 
   // ── Exams shown to students ──
   function Exams() {
-    const papersOf = (key: string) => cat.allTests.filter((x) => x.kind === "paper" && x.examKey === key).length;
+    const testsOf = (key: string) => cat.allTests.filter((x) => x.examKey === key).length;
     const list = [...exams].sort((a, b) => Number(isExamLive(cat, b.key)) - Number(isExamLive(cat, a.key)));
     return (
       <section className="card overflow-hidden">
-        <div className="p-5 sm:p-6">
-          <h2 className="text-lg font-bold">Exams shown to students</h2>
-          <p className="mt-1 max-w-3xl text-sm text-ink-600 dark:text-ink-300">
-            Switched-on exams appear in the header menu, on the home page (Exam → Subject picker), on <Link href="/exams" className="underline">/exams</Link>{" "}
-            and in the footer. Switching an exam <strong>off</strong> hides it and its previous-year papers from students. Its questions stay in the mock
-            tests, and past results keep working. You can still upload papers for an exam that is off.
-          </p>
-        </div>
+        <p className="max-w-3xl p-5 text-sm text-ink-600 dark:text-ink-300">
+          Switched-on exams appear in the header menu, the home page (Exam → Subject picker), <Link href="/exams" className="underline">/exams</Link> and the footer.
+          Switching an exam <strong>off</strong> hides it and all its tests from students; past results keep working. You can still upload tests for an exam that is
+          off. Each exam has its own pattern (config <code>examPatterns</code>).
+        </p>
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[720px] text-sm">
-            <thead className="bg-ink-50 text-left text-xs text-ink-500 dark:bg-ink-800/60 dark:text-ink-400">
+          <table className="w-full min-w-[760px] text-sm">
+            <thead className="border-y border-ink-200 bg-ink-50 dark:border-ink-800 dark:bg-ink-900/60">
               <tr>
-                <th className="px-5 py-2 font-medium">Exam</th>
-                <th className="px-3 py-2 font-medium">Posts</th>
-                <th className="px-3 py-2 text-right font-medium">Papers</th>
-                <th className="px-5 py-2 text-right font-medium">Shown to students</th>
+                <th className={`${th} pl-5`}>Exam</th>
+                <th className={th}>Pattern</th>
+                <th className={`${th} text-right`}>Tests</th>
+                <th className={`${th} pr-5 text-right`}>Shown to students</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-ink-100 dark:divide-ink-800">
               {list.map((e) => {
                 const on = isExamLive(cat, e.key);
+                const p = patternFor(e.key);
                 return (
                   <tr key={e.key} className={on ? "" : "opacity-70"}>
-                    <td className="px-5 py-2.5">
+                    <td className={`${td} pl-5`}>
                       <span className="flex items-center gap-3">
                         <ExamLogo exam={e} size={34} />
                         <span>
@@ -282,9 +484,12 @@ export default async function AdminPage({ searchParams }: Props) {
                         </span>
                       </span>
                     </td>
-                    <td className="max-w-sm px-3 py-2.5 text-ink-600 dark:text-ink-300">{e.posts}</td>
-                    <td className="px-3 py-2.5 text-right tabular-nums">{papersOf(e.key)}</td>
-                    <td className="px-5 py-2.5 text-right">
+                    <td className={`${td} text-xs text-ink-600 dark:text-ink-300`}>
+                      {questionsPerTest(p)} Qs · {p.durationMinutes} min · {p.negativeMarksPerWrong ? `−${Math.round(p.negativeMarksPerWrong * 100) / 100}` : "no negative"}
+                      {p.sections.length > 1 ? ` · ${p.sections.length} sections` : ""}
+                    </td>
+                    <td className={`${td} text-right tabular-nums`}>{testsOf(e.key)}</td>
+                    <td className={`${td} pr-5 text-right`}>
                       <ExamToggle examKey={e.key} on={on} name={e.short} />
                     </td>
                   </tr>
@@ -306,15 +511,11 @@ export default async function AdminPage({ searchParams }: Props) {
         <section className="card p-5 sm:p-6">
           <h2 className="text-lg font-bold">Upload a PDF</h2>
           <p className="mt-1 mb-5 text-sm text-ink-600 dark:text-ink-300">
-            Each PDF appears under <strong>eBooks</strong> in its type: Notes, PYQ, Strategy guides or Others. Paid PDFs open for students with the
-            full pass; free ones for every logged-in student. Admins can open everything.
+            Each PDF appears under <strong>eBooks</strong> in its type: Notes, PYQ, Strategy guides or Others. A paid PDF of an exam + subject opens for
+            students who unlocked that test series; free ones for every logged-in student. Admins can open everything.
           </p>
           {storageReady ? (
-            <ResourceUploader
-              subjects={subjects.map((x) => ({ key: x.key, name: x.name }))}
-              exams={exams.map((e) => ({ key: e.key, name: e.short }))}
-              maxMb={libraryConfig.maxPdfMb}
-            />
+            <ResourceUploader subjects={subjects.map((x) => ({ key: x.key, name: x.name }))} exams={exams.map((e) => ({ key: e.key, name: e.short }))} maxMb={libraryConfig.maxPdfMb} />
           ) : (
             <p className="rounded-2xl bg-amber-50 p-3 text-sm text-amber-800 dark:bg-amber-950/40 dark:text-amber-200">
               File storage isn&apos;t configured. Set <code>FIREBASE_STORAGE_BUCKET</code> and <code>NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET</code> (README → Storage).
@@ -325,40 +526,42 @@ export default async function AdminPage({ searchParams }: Props) {
           <h2 className="px-5 pt-5 font-bold">Published PDFs ({items.length})</h2>
           <div className="overflow-x-auto">
             <table className="mt-3 w-full min-w-[640px] text-sm">
-              <thead className="bg-ink-50 text-left text-xs text-ink-500 dark:bg-ink-800/60 dark:text-ink-400">
+              <thead className="border-y border-ink-200 bg-ink-50 dark:border-ink-800 dark:bg-ink-900/60">
                 <tr>
-                  <th className="px-5 py-2 font-medium">Title</th>
-                  <th className="px-3 py-2 font-medium">Type</th>
-                  <th className="px-3 py-2 font-medium">Size</th>
-                  <th className="px-3 py-2 font-medium">Status</th>
-                  <th className="px-5 py-2 text-right font-medium">Actions</th>
+                  <th className={`${th} pl-5`}>Title</th>
+                  <th className={th}>Type</th>
+                  <th className={th}>Size</th>
+                  <th className={th}>Status</th>
+                  <th className={`${th} pr-5 text-right`}>Actions</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-ink-100 dark:divide-ink-800">
                 {items.map((r) => (
                   <tr key={r.id} className={r.hidden ? "opacity-55" : ""}>
-                    <td className="px-5 py-2">
+                    <td className={`${td} pl-5`}>
                       <Link href={`/resources/${r.id}`} className="font-semibold hover:text-brand-600">
                         {r.title}
                       </Link>
                       <span className="block text-xs text-ink-500">
-                        {[r.subject && subjectName(r.subject), r.author, dateTime(r.createdAt)].filter(Boolean).join(" · ")}
+                        {[r.examKey && examShort(r.examKey), r.subject && subjectName(r.subject), r.author, dateTime(r.createdAt)].filter(Boolean).join(" · ")}
                       </span>
                     </td>
-                    <td className="px-3 py-2 whitespace-nowrap">{(EBOOK_META[r.type] ?? EBOOK_META.others).admin.replace(/ (.*)$/, "")}</td>
-                    <td className="px-3 py-2 whitespace-nowrap">{formatSize(r.size)}</td>
-                    <td className="px-3 py-2 whitespace-nowrap">
-                      {r.free ? <span className="font-semibold text-emerald-600">Free</span> : <span className="text-ink-500">Paid</span>}
-                      {r.hidden && <span className="ml-2 font-semibold text-amber-600">Hidden</span>}
+                    <td className={`${td} whitespace-nowrap`}>{(EBOOK_META[r.type] ?? EBOOK_META.others).admin.replace(/ \(.*\)$/, "")}</td>
+                    <td className={`${td} whitespace-nowrap`}>{formatSize(r.size)}</td>
+                    <td className={`${td} whitespace-nowrap`}>
+                      {r.free ? <span className={pill("bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-300")}>Free</span> : <span className={pill("bg-ink-100 text-ink-600 dark:bg-ink-800 dark:text-ink-300")}>Paid</span>}
+                      {r.hidden && <span className={`ml-1 ${pill("bg-amber-100 text-amber-700")}`}>Hidden</span>}
                     </td>
-                    <td className="px-5 py-2">
+                    <td className={`${td} pr-5`}>
                       <ResourceControls id={r.id} free={r.free} hidden={r.hidden} title={r.title} />
                     </td>
                   </tr>
                 ))}
                 {items.length === 0 && (
                   <tr>
-                    <td colSpan={5} className="px-5 py-6 text-center text-ink-500">No PDFs yet.</td>
+                    <td colSpan={5} className="px-5 py-6 text-center text-ink-500">
+                      No PDFs yet.
+                    </td>
                   </tr>
                 )}
               </tbody>
@@ -369,44 +572,58 @@ export default async function AdminPage({ searchParams }: Props) {
     );
   }
 
-  // ── Users ──
-  async function Users({ search, phone }: { search: string; phone: string }) {
+  // ── Students ──
+  async function Users() {
     const users = db().collection("users");
     const snap = search ? await users.where("phone", "==", search).limit(20).get() : await users.orderBy("createdAt", "desc").limit(100).get();
-    const rows = snap.docs.map((d) => ({ uid: d.id, ...(d.data() as UserDoc & { grantedBy?: string }) }));
+    const rows = snap.docs.map((d) => ({ uid: d.id, ...(d.data() as UserDoc) }));
+    const options = liveExams(cat).flatMap((e) => (s.liveByExam[e.key] ?? []).map((subject) => ({ exam: e.key, subject, label: seriesLabel(e.key, subject) })));
     return (
       <div className="grid gap-4">
-        <SearchBox tab="users" phone={phone} search={search} />
+        <SearchBox tab="users" />
         <section className="card overflow-hidden">
-          <h2 className="px-5 pt-5 font-bold">{search ? `Users matching ${prettyPhone(search)}` : "Latest users"}</h2>
+          <h2 className="px-5 pt-5 font-bold">{search ? `Students matching ${prettyPhone(search)}` : "Latest students"}</h2>
           <div className="overflow-x-auto">
-            <table className="mt-3 w-full min-w-[640px] text-sm">
-              <thead className="bg-ink-50 text-left text-xs text-ink-500 dark:bg-ink-800/60 dark:text-ink-400">
+            <table className="mt-3 w-full min-w-[920px] text-sm">
+              <thead className="border-y border-ink-200 bg-ink-50 dark:border-ink-800 dark:bg-ink-900/60">
                 <tr>
-                  <th className="px-5 py-2 font-medium">Phone</th>
-                  <th className="px-3 py-2 font-medium">Joined</th>
-                  <th className="px-3 py-2 font-medium">Last login</th>
-                  <th className="px-3 py-2 font-medium">Access</th>
-                  <th className="px-5 py-2 font-medium" />
+                  <th className={`${th} pl-5`}>Phone</th>
+                  <th className={th}>Preparing for</th>
+                  <th className={th}>Joined / last login</th>
+                  <th className={th}>Unlocked test series</th>
+                  <th className={`${th} pr-5 text-right`}>All access</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-ink-100 dark:divide-ink-800">
                 {rows.map((u) => (
                   <tr key={u.uid}>
-                    <td className="px-5 py-2 font-medium whitespace-nowrap">{prettyPhone(u.phone)}</td>
-                    <td className="px-3 py-2 whitespace-nowrap text-ink-500">{u.createdAt ? dateTime(u.createdAt) : "–"}</td>
-                    <td className="px-3 py-2 whitespace-nowrap text-ink-500">{u.lastLoginAt ? dateTime(u.lastLoginAt) : "–"}</td>
-                    <td className="px-3 py-2 whitespace-nowrap">
-                      {accessIsActive(u) ? <span className="font-semibold text-emerald-600">Full{u.grantedBy ? " (granted)" : ""}</span> : <span className="text-ink-500">Free</span>}
+                    <td className={`${td} pl-5 font-semibold whitespace-nowrap`}>{prettyPhone(u.phone)}</td>
+                    <td className={`${td} max-w-56 text-xs text-ink-600 dark:text-ink-300`}>{(u.interests ?? []).map((i) => seriesLabel(i.exam, i.subject)).join(", ") || "–"}</td>
+                    <td className={`${td} text-xs whitespace-nowrap text-ink-500`}>
+                      {u.createdAt ? dateTime(u.createdAt) : "–"}
+                      <span className="block">{u.lastLoginAt ? dateTime(u.lastLoginAt) : "–"}</span>
                     </td>
-                    <td className="px-5 py-2 text-right">
+                    <td className={td}>
+                      {accessIsActive(u) ? (
+                        <span className={pill("bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-300")}>All test series{u.grantedBy ? " (granted)" : ""}</span>
+                      ) : (
+                        <SeriesAccess
+                          uid={u.uid}
+                          passes={activePasses(u).map((p) => ({ exam: p.exam, subject: p.subject, label: seriesLabel(p.exam, p.subject), granted: !!p.grantedBy }))}
+                          options={options}
+                        />
+                      )}
+                    </td>
+                    <td className={`${td} pr-5 text-right`}>
                       <AccessToggle uid={u.uid} paid={!!u.paid} />
                     </td>
                   </tr>
                 ))}
                 {rows.length === 0 && (
                   <tr>
-                    <td colSpan={5} className="px-5 py-6 text-center text-ink-500">No users.</td>
+                    <td colSpan={5} className="px-5 py-6 text-center text-ink-500">
+                      No students.
+                    </td>
                   </tr>
                 )}
               </tbody>
@@ -418,46 +635,50 @@ export default async function AdminPage({ searchParams }: Props) {
   }
 
   // ── Payments ──
-  async function Payments({ search, phone }: { search: string; phone: string }) {
+  async function Payments() {
     const payments = db().collection("payments");
     const snap = search ? await payments.where("phone", "==", search).limit(50).get() : await payments.orderBy("createdAt", "desc").limit(100).get();
     const rows = snap.docs.map((d) => ({ orderId: d.id, ...(d.data() as PaymentDoc) })).sort((a, b) => b.createdAt - a.createdAt);
     return (
       <div className="grid gap-4">
-        <SearchBox tab="payments" phone={phone} search={search} />
+        <SearchBox tab="payments" />
         <section className="card overflow-hidden">
           <h2 className="px-5 pt-5 font-bold">{search ? "Payments for this number" : "Latest payments"}</h2>
           <div className="overflow-x-auto">
-            <table className="mt-3 w-full min-w-[760px] text-sm">
-              <thead className="bg-ink-50 text-left text-xs text-ink-500 dark:bg-ink-800/60 dark:text-ink-400">
+            <table className="mt-3 w-full min-w-[860px] text-sm">
+              <thead className="border-y border-ink-200 bg-ink-50 dark:border-ink-800 dark:bg-ink-900/60">
                 <tr>
-                  <th className="px-5 py-2 font-medium">Created</th>
-                  <th className="px-3 py-2 font-medium">Phone</th>
-                  <th className="px-3 py-2 text-right font-medium">Amount</th>
-                  <th className="px-3 py-2 font-medium">Status</th>
-                  <th className="px-3 py-2 font-medium">Order id</th>
-                  <th className="px-5 py-2 font-medium">Payment id</th>
+                  <th className={`${th} pl-5`}>Created</th>
+                  <th className={th}>Phone</th>
+                  <th className={th}>Test series</th>
+                  <th className={`${th} text-right`}>Amount</th>
+                  <th className={th}>Status</th>
+                  <th className={th}>Order id</th>
+                  <th className={`${th} pr-5`}>Payment id</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-ink-100 dark:divide-ink-800">
                 {rows.map((p) => (
                   <tr key={p.orderId}>
-                    <td className="px-5 py-2 whitespace-nowrap text-ink-500">{dateTime(p.createdAt)}</td>
-                    <td className="px-3 py-2 whitespace-nowrap">{prettyPhone(p.phone)}</td>
-                    <td className="px-3 py-2 text-right whitespace-nowrap tabular-nums">{rupees(p.amount)}</td>
-                    <td className="px-3 py-2">
-                      <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${statusCls[p.status]}`}>
+                    <td className={`${td} pl-5 whitespace-nowrap text-ink-500`}>{dateTime(p.createdAt)}</td>
+                    <td className={`${td} whitespace-nowrap`}>{prettyPhone(p.phone)}</td>
+                    <td className={`${td} whitespace-nowrap`}>{p.exam && p.subject ? seriesLabel(p.exam, p.subject) : "All (older order)"}</td>
+                    <td className={`${td} text-right whitespace-nowrap tabular-nums`}>{rupees(p.amount)}</td>
+                    <td className={td}>
+                      <span className={pill(statusCls[p.status])}>
                         {p.status}
                         {p.verifiedVia ? ` · ${p.verifiedVia}` : ""}
                       </span>
                     </td>
-                    <td className="px-3 py-2 font-mono text-xs">{p.orderId}</td>
-                    <td className="px-5 py-2 font-mono text-xs">{p.paymentId ?? "–"}</td>
+                    <td className={`${td} font-mono text-xs`}>{p.orderId}</td>
+                    <td className={`${td} pr-5 font-mono text-xs`}>{p.paymentId ?? "–"}</td>
                   </tr>
                 ))}
                 {rows.length === 0 && (
                   <tr>
-                    <td colSpan={6} className="px-5 py-6 text-center text-ink-500">No payments yet.</td>
+                    <td colSpan={7} className="px-5 py-6 text-center text-ink-500">
+                      No payments yet.
+                    </td>
                   </tr>
                 )}
               </tbody>
@@ -467,19 +688,22 @@ export default async function AdminPage({ searchParams }: Props) {
       </div>
     );
   }
-}
 
-function SearchBox({ tab, phone, search }: { tab: string; phone: string; search: string }) {
-  return (
-    <form className="flex flex-wrap gap-2" action="/admin">
-      <input type="hidden" name="tab" value={tab} />
-      <input name="phone" defaultValue={phone} placeholder="Search by mobile number" className="input max-w-xs" inputMode="numeric" />
-      <button className="btn btn-secondary">Search</button>
-      {search && (
-        <Link href={`/admin?tab=${tab}`} className="btn btn-ghost">
-          Clear
-        </Link>
-      )}
-    </form>
-  );
+  function SearchBox({ tab: t }: { tab: string }) {
+    return (
+      <form className="card flex flex-wrap items-center gap-2 p-3" action="/admin">
+        <input type="hidden" name="tab" value={t} />
+        <span className="relative min-w-56 flex-1">
+          <SearchIcon width={15} height={15} className="absolute top-1/2 left-3 -translate-y-1/2 text-ink-400" />
+          <input name="phone" defaultValue={phone} placeholder="Search by mobile number" className="input py-2 pl-9" inputMode="numeric" />
+        </span>
+        <button className="btn btn-primary px-5 py-2.5">Search</button>
+        {search && (
+          <Link href={`/admin?tab=${t}`} className="btn btn-ghost px-3 py-2.5">
+            Clear
+          </Link>
+        )}
+      </form>
+    );
+  }
 }

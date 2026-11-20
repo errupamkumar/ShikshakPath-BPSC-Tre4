@@ -86,11 +86,12 @@ export function LoginForm({ next }: { next: string }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ idToken }),
       });
-      const data = (await res.json().catch(() => ({}))) as { error?: string };
+      const data = (await res.json().catch(() => ({}))) as { error?: string; onboarded?: boolean };
       if (!res.ok) throw new Error(data.error || "Login failed.");
       // The server cookie is now the source of truth; drop the browser-side Firebase session.
       await signOut(firebaseAuth()).catch(() => {});
-      router.replace(next);
+      // First login: choose exams and subjects first, then continue.
+      router.replace(data.onboarded === false ? `/onboarding?next=${encodeURIComponent(next)}` : next);
       router.refresh();
     } catch (e) {
       setError(message(e));

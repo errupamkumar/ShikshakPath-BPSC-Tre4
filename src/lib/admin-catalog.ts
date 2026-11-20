@@ -16,6 +16,7 @@ import {
   type QuestionEdit,
   type TestOverride,
   type UploadDoc,
+  type UploadKind,
   type UploadQuestion,
 } from "./catalog";
 import { db } from "./firebase-admin";
@@ -38,6 +39,7 @@ const MAX_DOC_BYTES = 900_000; // Firestore documents are limited to 1 MiB
 
 export type UploadInput = {
   fileName?: unknown;
+  kind?: unknown;
   title?: unknown;
   examKey?: unknown;
   subject?: unknown;
@@ -49,6 +51,9 @@ export type UploadInput = {
 
 export type UploadReport = {
   testId: string;
+  kind: UploadKind;
+  /** Mock tests: the number it got (Mock Test N). */
+  number?: number;
   title: string;
   examKey: string;
   subject: string;
@@ -57,6 +62,10 @@ export type UploadReport = {
   invalid: { index: number; reason: string }[];
   duplicatesInFile: number;
   withHindi: number;
+  /** Whether students can take it without paying. */
+  free: boolean;
+  /** True when it became free because it is the first mock test of its exam + subject. */
+  madeFreeAsFirstMock: boolean;
   alreadyInBank: number;
   newQuestions: number;
   mocksCreated: number[];
@@ -194,6 +203,8 @@ async function createMocksFromPool(exam: string, subject: string, allowPartial: 
 
 export async function uploadPaper(input: UploadInput, adminPhone: string): Promise<UploadReport> {
   // ── Validate the form fields ──
+  const kind: UploadKind | null = input.kind === "mock" || input.kind === "paper" ? input.kind : null;
+  if (!kind) throw new UploadError("Choose what this file is: a mock test or a previous-year paper.");
   const title = typeof input.title === "string" ? input.title.trim().replace(/\s+/g, " ") : "";
   if (title.length < 3 || title.length > 120) throw new UploadError("Enter a paper name (3–120 characters).");
   const examKey = typeof input.examKey === "string" ? input.examKey : "";
@@ -254,14 +265,24 @@ export async function uploadPaper(input: UploadInput, adminPhone: string): Promi
 
   const durIn = Number(input.durationMinutes);
   const durationMinutes =
-    Number.isFinite(durIn) && durIn >= 1 && durIn <= 600 ? Math.round(durIn) : Math.max(1, Math.round(questions.length * buildConfig.paperMinutesPerQuestion));
+    Number.isFinite(durIn) && durIn >= 1 && durIn <= 600
+      ? Math.round(durIn)
+      : kind === "mock"
+        ? mockMinutes(questions.length, pattern)
+        : Math.max(1, Math.round(questions.length * buildConfig.paperMinutesPerQuestion));
+
+  // The first mock test of a brand-new exam + subject is free, so students can try the series
+  // ("first mock free in every subject"). The admin can make it paid later (Admin → Tests).
+  const firstMockOfSeries =
+    kind === "mock" && !(await freshCatalog()).cat.allTests.some((t) => t.kind === "mock" && (t.examKey ?? BUNDLED_EXAM) === examKey && t.subject === subject);
 
   const doc: UploadDoc = {
     title,
+    kind,
     examKey,
     subject,
     year,
-    free: input.free === true,
+    free: input.free === true || firstMockOfSeries,
     durationMinutes,
     fileName,
     createdAt: Date.now(),
@@ -272,15 +293,18 @@ export async function uploadPaper(input: UploadInput, adminPhone: string): Promi
     throw new UploadError("This file is too large to store as one paper (over ~900 KB). Split it into two files.");
   }
 
-  // ── Save, then build new mock tests if enough new questions are waiting ──
+  // ── Save. The file becomes exactly ONE test (no automatic extra mock tests, so nothing appears twice). ──
   const ref = await db().collection("uploads").add(JSON.parse(JSON.stringify(doc)));
   const { cat } = await freshCatalog();
   const info = cat.uploads.find((u) => u.id === ref.id);
-  const { created, poolRemaining } = await createMocksFromPool(examKey, subject, false);
+  const created: number[] = [];
+  const poolRemaining = 0;
   await bumpCatalogVersion();
 
   return {
     testId: `u-${ref.id}`,
+    kind,
+    number: kind === "mock" ? cat.testById.get(`u-${ref.id}`)?.number : undefined,
     title,
     examKey,
     subject,
@@ -293,7 +317,54 @@ export async function uploadPaper(input: UploadInput, adminPhone: string): Promi
     mocksCreated: created,
     poolRemaining,
     withHindi: questions.filter((q) => q.hi).length,
+    free: doc.free === true,
+    madeFreeAsFirstMock: firstMockOfSeries && input.free !== true,
   };
+}
+
+/**
+ * Change what an upload is: mock test ↔ previous-year paper. When it becomes a mock test, mock tests
+ * that were built automatically from its questions (older versions did that) are removed, so the
+ * same questions don't appear twice.
+ */
+export async function setUploadKind(docId: string, kind: UploadKind): Promise<{ removedMocks: number[] }> {
+  const ref = db().collection("uploads").doc(docId);
+  if (!(await ref.get()).exists) throw new UploadError("Upload not found.");
+  await ref.update({ kind });
+  const removedMocks: number[] = [];
+  if (kind === "mock") {
+    const { cat } = await freshCatalog();
+    const label = `upload:${docId}`;
+    const own = new Set([...cat.questions.values()].filter((q) => q.sources.includes(label)).map((q) => q.id));
+    const mocksRef = db().doc("catalog/mocks");
+    await db().runTransaction(async (tx) => {
+      const snap = await tx.get(mocksRef);
+      const existing = (snap.get("tests") as AppendedMock[] | undefined) ?? [];
+      const keep = existing.filter((m) => {
+        const dup = m.questionIds.some((id) => own.has(id));
+        if (dup) removedMocks.push(m.number);
+        return !dup;
+      });
+      if (keep.length !== existing.length) tx.set(mocksRef, { tests: keep }, { merge: true });
+    });
+  }
+  await bumpCatalogVersion();
+  return { removedMocks };
+}
+
+/** Delete a mock test that was built from the question pool (catalog/mocks). Uploaded mock tests are deleted with their upload. */
+export async function deleteMock(mockId: string): Promise<boolean> {
+  const ref = db().doc("catalog/mocks");
+  const removed = await db().runTransaction(async (tx) => {
+    const snap = await tx.get(ref);
+    const existing = (snap.get("tests") as AppendedMock[] | undefined) ?? [];
+    const keep = existing.filter((m) => m.id !== mockId);
+    if (keep.length === existing.length) return false;
+    tx.set(ref, { tests: keep }, { merge: true });
+    return true;
+  });
+  if (removed) await bumpCatalogVersion();
+  return removed;
 }
 
 /** Admin button: make mock test(s) now from the questions of one exam + subject waiting in the pool. */
@@ -329,7 +400,7 @@ export async function deleteUpload(docId: string): Promise<{ ok: true } | { ok: 
   const onlyFromThis = new Set([...cat.questions.values()].filter((q) => q.sources.length === 1 && q.sources[0] === label).map((q) => q.id));
   const usedIn = mocks.filter((m) => m.questionIds.some((id) => onlyFromThis.has(id))).map((m) => m.number);
   if (usedIn.length) {
-    return { ok: false, reason: `Its questions are used in Mock Test ${usedIn.join(", ")}. Hide the paper instead.` };
+    return { ok: false, reason: `Its questions are used in Mock Test ${usedIn.join(", ")}. Delete that mock test first, or hide this one instead.` };
   }
   await db().collection("uploads").doc(docId).delete();
   await bumpCatalogVersion();

@@ -10,7 +10,7 @@ import { RememberSeries } from "@/components/remember-series";
 import { PriceCard } from "@/components/sections";
 import { TestRow } from "@/components/test-row";
 import { UnlockButton } from "@/components/unlock-button";
-import { fullAccess } from "@/lib/access";
+import { accessFor, canOpenSeries } from "@/lib/access";
 import { getCatalog, isExamLive, isSeriesLive, subjectsForExam, testsFor } from "@/lib/catalog";
 import { isFirebaseAdminConfigured } from "@/lib/firebase-admin";
 import { rupees } from "@/lib/format";
@@ -51,7 +51,7 @@ export default async function ExamSubjectPage({ params, searchParams }: Props) {
   const { exam, subject } = r;
 
   const user = await getSessionUser();
-  const [cat, paid, pricePaise, progress, { lang, t }] = await Promise.all([getCatalog(), fullAccess(user), getPriceInPaise(), getTestProgress(user?.uid), getT()]);
+  const [cat, paid, pricePaise, progress, { lang, t }] = await Promise.all([getCatalog(), accessFor(user).then((a) => canOpenSeries(a, exam.key, subject.key)), getPriceInPaise(), getTestProgress(user?.uid), getT()]);
   if (!isExamLive(cat, exam.key) && !user?.isAdmin) notFound();
   const s = cat.stats;
   // Each exam is independent: only this exam's tests and counts.
@@ -216,6 +216,8 @@ export default async function ExamSubjectPage({ params, searchParams }: Props) {
                   price={price}
                   paid={paid}
                   loggedIn={!!user}
+                  series={{ exam: exam.key, subject: subject.key }}
+                  seriesLabel={`${exam.short} · ${sName}`}
                   freeHref={freeTests[0] ? `/tests/${freeTests[0].id}` : base}
                   features={[
                     t("pc.f.mocks", { n: mocks.length, subject: sName }),
@@ -251,9 +253,9 @@ export default async function ExamSubjectPage({ params, searchParams }: Props) {
           <div className="mx-auto flex max-w-2xl items-center justify-between gap-3">
             <div>
               <p className="text-lg leading-none font-black">{price}</p>
-              <p className="text-xs text-ink-500 dark:text-ink-400">{t("tp.oneTime", { n: s.totalTests })}</p>
+              <p className="text-xs text-ink-500 dark:text-ink-400">{t("tp.oneTime", { n: mocks.length + papers.length })}</p>
             </div>
-            <UnlockButton priceLabel={price} loggedIn={!!user} className="btn-primary" label={t("common.unlockAll")} />
+            <UnlockButton series={{ exam: exam.key, subject: subject.key }} priceLabel={price} loggedIn={!!user} className="btn-primary" label={t("common.unlock")} />
           </div>
         </div>
       )}

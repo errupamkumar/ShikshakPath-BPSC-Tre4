@@ -24,12 +24,15 @@ function loadCheckout(): Promise<boolean> {
   });
 }
 
+/** Buy ONE test series (exam + subject) with Razorpay; access is checked again on the server. */
 export function UnlockButton({
+  series,
   priceLabel,
   loggedIn,
   className = "btn-accent",
   label,
 }: {
+  series: { exam: string; subject: string };
   priceLabel: string;
   loggedIn: boolean;
   className?: string;
@@ -51,7 +54,11 @@ export function UnlockButton({
     setError("");
     try {
       if (!(await loadCheckout())) throw new Error("Could not load Razorpay. Check your internet connection.");
-      const res = await fetch("/api/payments/create-order", { method: "POST" });
+      const res = await fetch("/api/payments/create-order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(series),
+      });
       const order = (await res.json().catch(() => ({}))) as {
         orderId?: string;
         amount?: number;
@@ -77,7 +84,7 @@ export function UnlockButton({
         name: order.name,
         description: order.description,
         prefill: { contact: order.phone },
-        theme: { color: "#4f46e5" },
+        theme: { color: "#93684e" },
         handler: async (resp: RazorpayResponse) => {
           try {
             const v = await fetch("/api/payments/verify", {
@@ -115,7 +122,7 @@ export function UnlockButton({
     <div className="grid gap-2">
       <button type="button" onClick={unlock} disabled={busy} className={`btn ${className} px-5 py-3`}>
         <UnlockIcon width={18} height={18} />
-        {busy ? t("common.openingPayment") : (label ?? t("common.unlockAllFor", { price: priceLabel }))}
+        {busy ? t("common.openingPayment") : (label ?? t("common.unlockFor", { price: priceLabel }))}
       </button>
       {error && <p className="max-w-md text-sm text-rose-600 dark:text-rose-400">{error}</p>}
     </div>

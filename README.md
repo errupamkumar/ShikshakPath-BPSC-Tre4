@@ -4,9 +4,9 @@
 
 **Stack:** Next.js 16 (App Router) · Tailwind CSS 4 · Firebase Phone Auth (OTP) · Firestore · Firebase Storage (PDFs) · Razorpay · Vercel
 
-**What students get:** a landing page with an **Exam → Subject picker** and a **carousel of the real test screens** · BPSC-pattern **mock tests** (mixed from all exams) + **previous-year papers** (one test per real paper, grouped by exam) · real exam interface (timer, palette, mark for review, auto-save, auto-submit, **Exit & resume later**) · score, accuracy, **rank, percentile, topper & average** · answers with explanations · **PYQs with answers & explanations** to read (study mode) · **eBooks** (PDFs: Notes, PYQ, Strategy guides, Others) · **English / हिंदी** switch · exam pages with the official exam logos.
+**What students get:** a landing page with an **Exam → Subject picker**, a **carousel of the real test screens** and a **"prepared by serving teachers"** section · after sign-up they choose **their exams and subjects** and see those test series on their dashboard · they **pay per test series (one exam + one subject)** · BPSC-pattern **mock tests** (mixed from all exams) + **previous-year papers** (one test per real paper, grouped by exam) · real exam interface (timer, palette, mark for review, auto-save, auto-submit, **Exit & resume later**) · score, accuracy, **rank, percentile, topper & average** · answers with explanations · **PYQs with answers & explanations** to read (study mode) · **eBooks** (PDFs: Notes, PYQ, Strategy guides, Others) · **English / हिंदी** switch · exam pages with the official exam logos.
 
-**What the admin gets:** **everything unlocked** (all tests, papers and PDFs, no payment needed) · upload a paper's JSON → it becomes a test automatically (and new mock tests are built from its new questions) · **edit any question** (text, options, answer key, explanation, Hindi version) · **upload eBooks** (PDFs) · **switch exams on/off** (which exams students see) · free/paid, hide, rename, delete tests · price · users (grant/revoke access) · payments.
+**What the admin gets:** a control panel with a sidebar (**Overview · Upload · Tests · Exams · eBooks · Students · Payments**) · **everything unlocked** (all tests, papers and PDFs, no payment needed) · upload a JSON file → it becomes **one** test: a **mock test** or a **previous-year paper**, as chosen · **edit any question** (text, options, answer key, explanation, Hindi version) · **upload eBooks** (PDFs) · **switch exams on/off** (which exams students see) · free/paid, hide, rename, delete tests (filter by exam, subject, type) · price per test series · students (grant/revoke one test series, or all) · payments.
 
 **Design:** based on the free "Nova" template by [WebScale](https://webscale.pl/), distributed by [ThemeWagon](https://themewagon.com/): cream/ink/copper palette, Satoshi font, pill buttons. The footer keeps a credit line (`siteConfig.themeCredit`), since ThemeWagon's free licence may require it.
 
@@ -102,7 +102,7 @@ Each exam has its **own questions, mock tests, previous papers and pattern**. No
 - **All current content belongs to BPSC TRE 4.0** (`buildConfig.exam = "bpsc"`): the 2,950 questions, 37 Computer Science mock tests and 39 previous-year papers. Each paper keeps the exam it was originally asked in, shown as **"Asked in NTA UGC NET"** and so on. Bihar STET (and every other exam) shows **Coming soon** until you upload its papers.
 - **Pattern per exam** (`examPatterns` in `config/test-series.config.ts`): time, marks, negative marking, Option E and **sections** with their number of questions. BPSC TRE 4.0: 80 questions / 80 min / −⅓ / Option E (the subject section). Bihar STET: 150 questions / 150 min / no negative marking, in two sections (Subject 100 + Teaching Aptitude & General Studies 50). All values are marked ⚠ CONFIRM. Exams without an entry use `defaultPattern`.
 - **Sections:** put a question in a section with `"section": "aptitude"` (the section key or its name) in the JSON. Questions without one go to the first section; an unknown section is reported as invalid. In a test, multi-section papers show **section tabs** above the question and a palette grouped by section; the result shows **performance by section**. A section can have its own `marks` / `negative`.
-- **Mock tests** of an exam are built automatically once **every** section of its pattern has enough new questions (e.g. STET: 100 subject + 50 aptitude). **Create mock now** makes a shorter one from whatever is waiting. The first mock of a new exam + subject is free.
+- **Mock tests** come from uploads marked **Mock test** (one file = one mock, numbered after the existing mocks of that exam + subject). Optionally, **Build mixed mock** (Admin → Upload) makes mocks from previous-paper questions that are in no mock yet, following the exam's sections (e.g. STET: 100 subject + 50 aptitude). The first mock of a new exam + subject is free.
 - Marking, Option E and sections are **saved with each attempt** when it starts, so changing a pattern later never changes old results.
 - To add full-length BPSC mocks later (Language 30 + General Studies 40 + Subject 80): upload those questions with `"section": "gs"` / `"section": "language"`, add the sections to `examPatterns.bpsc` and set its `durationMinutes` to 150.
 
@@ -117,22 +117,26 @@ Put a logo in `public/exams/` and set `logo: "/exams/<file>"` on the exam in `co
 - A subject becomes **live** as soon as it has a test. Until then it shows **Coming soon**, and its pages are hidden from search engines.
 - Exams that only test some subjects (ISRO, BEL, Programmer… = Computer Science only) list them in `subjects` in `config/exams.ts`; the upload form enforces it.
 - Every question, paper and mock belongs to one exam and one subject. Duplicates are matched within the same exam + subject only, and mock tests never mix subjects or exams.
-- One payment unlocks every subject.
+- One payment unlocks **one test series = one exam + one subject** (see 3f).
 
 ## 3b. Adding question papers
 
 ### Recommended: upload from the Admin page (no code, no redeploy)
-**Admin → Papers & tests → Upload a question paper**
-1. Choose the `.json` file (same format as your files: an array of `question`, `options` A–D, `answer`, `explanation`).
-2. Check the paper name (filled in from `source_file`), pick the **exam** (BPSC TRE 4.0, Bihar STET, …; exams that are switched off are listed separately) and the **subject** (Computer Science, Mathematics, …), then year, time limit and free/paid.
-3. Click **Upload & create test**. Then:
-   - the paper becomes a **previous-year paper test** at once, listed under its exam;
+**Admin → Upload**
+1. **What is this file?** **Mock test / practice set** (shown only under *Mock tests*) or **Previous-year paper (PYQ)** (shown only under *Previous papers* and on the PYQ pages). A file name with "practice", "mock", "model" or "set 1" suggests *Mock test*.
+2. Pick the **exam** (BPSC TRE 4.0, Bihar STET, …; exams that are switched off are listed separately) and the **subject**.
+3. Choose the `.json` file (an array of `question`, `options` A–D, `answer`, `explanation`), check the name (filled in from `source_file`), year (papers only), time limit (mocks: the exam pattern's time by default) and free/paid. Click **Upload & create**. Then:
+   - the file becomes **exactly one test**, at once. Nothing is created twice;
    - questions already in the bank are recognised (same text + ≥50% same options) and linked, not duplicated;
-   - **new** questions go into that exam + subject's pool, and as soon as every section of the exam's pattern can be filled they automatically become a new **mock test** (BPSC TRE Computer Science: every 80 → Mock Test 38, 39, …). You can also press **Create mock now** for a shorter one (min. 20).
-   - Existing tests are **never reshuffled**.
-4. The report shows how many questions were accepted, skipped (with the reason), already known or new, and which mocks were created.
+   - the **first mock test** of a new exam + subject is made **free** automatically, so students can try the series (make it paid under Tests if you want);
+   - existing tests are **never reshuffled**.
+4. The report shows how many questions were accepted, skipped (with the reason), already known or new, and whether the test is free.
 
-Each test in the admin table has **Make free / Make paid**, **Hide / Show**, **Rename** and, for uploads, **Delete**. A delete is refused if the paper's questions are already used in a mock; hide it instead. Uploads are stored in Firestore, so they work on Vercel (whose disk is read-only). One file can hold up to ~900 KB (≈1,000 questions).
+The **Uploaded files** list shows each upload with its type (**Mock Test N** / **Previous paper**), a **Make it a mock test / Make it a previous paper** switch, and the test buttons. **Mixed mocks (optional):** previous-paper questions that are in no mock are listed per exam + subject; **Build mixed mock** turns them into mocks (students then see those questions both in the paper and in the mock).
+
+**Fixing older uploads that appeared twice.** Before this version every upload became a previous paper **and** its new questions were put into an automatic mock, so practice sets showed up in both tabs. For each such upload click **Make it a mock test** (or keep it a paper and delete the extra mock under **Tests**). *Make it a mock test* also removes the automatic mocks that contain its questions.
+
+**Admin → Tests** lists every test with filters (exam, subject, type, search) and **Make free / Make paid**, **Hide / Show**, **Rename**, **Delete** (uploads and mixed mocks). Deleting a paper is refused while its questions are used in a mixed mock; delete that mock first, or hide the paper. Uploads are stored in Firestore, so they work on Vercel (whose disk is read-only). One file can hold up to ~900 KB (≈1,000 questions).
 
 ### Hindi version of questions (optional)
 Any question, in a bundled file or an upload, can carry its Hindi text next to the English:
@@ -196,7 +200,7 @@ The header has **Exams ▾ · Test Series · PYQs · eBooks ▾**. The eBooks me
 
 **Uploading a PDF:** Admin → **eBooks** → **Choose a PDF** (max 50 MB), pick the type (**Notes**, **PYQ (PDF)**, **Strategy guide** or **Others**), enter a title, and optionally an author/expert (shown as "By …"), subject, exam and short description. Tick **Free for every logged-in student** or leave it paid → **Upload PDF**. The table below the form has **Make free / Make paid**, **Hide / Show** and **Delete** (removes the file too).
 
-**Who can open a PDF:** free PDFs → anyone logged in; paid PDFs → students with the full pass and the admin. The file is never public: the server checks access and then hands out a link that expires after 10 minutes, so a shared link stops working.
+**Who can open a PDF:** free PDFs → anyone logged in; paid PDFs with an exam + subject → students who unlocked that test series; paid PDFs with only a subject → students who unlocked any series of that subject; paid PDFs with neither → students who unlocked any series. The admin can open all. The file is never public: the server checks access and then hands out a link that expires after 10 minutes, so a shared link stops working.
 
 PDF uploads need Firebase Storage (step 4.1, items 12–14). In local test mode (`npm run dev:local`) they work without it.
 
@@ -204,7 +208,7 @@ PDF uploads need Firebase Storage (step 4.1, items 12–14). In local test mode 
 The home page shows real screenshots of the test screens (`public/screens/*.webp`): the desktop player, the same question in Hindi, the mobile player, the result with rank, the answers with explanations, and the Exit dialog. Captions (English + Hindi) and the order are in `carouselConfig`. After a redesign, take new screenshots (desktop 1440 × 900, phone 390 × 844, e.g. with the browser's device toolbar), save them as WebP under the same names, and redeploy.
 
 ### Welcome pop-up
-Visitors who haven't bought the pass get a pop-up on the home page a second after it opens: a greeting (good morning / afternoon / evening, *Namaste! Welcome to ShikshakPath*), **Attempt the free mock test** (opens the first free mock) and the case for the full pass with **Unlock everything for ₹…** (goes to the pricing section). It shows once; after it is closed it comes back after 3 days at most. Students with the pass never see it. Texts: `wm.*` in `src/lib/i18n.ts`; timing: `src/components/welcome-modal.tsx`.
+Visitors who haven't unlocked any test series get a pop-up on the home page a second after it opens: a greeting (good morning / afternoon / evening, *Namaste! Welcome to ShikshakPath*), **Attempt the free mock test** (opens the first free mock) and the case for buying with **Choose exam & subject · ₹… each** (visitors: the exam picker; logged-in students: their dashboard). It shows once; after it is closed it comes back after 3 days at most. Students who unlocked a series never see it. Texts: `wm.*` in `src/lib/i18n.ts`; timing: `src/components/welcome-modal.tsx`.
 
 ## 3d. Exit & resume, and English / हिंदी
 
@@ -222,14 +226,28 @@ It creates five demo students (running it again changes nothing). Log in at `/lo
 
 | Mobile number | Account |
 |---|---|
-| 9000000001 | New student: free plan, nothing attempted yet |
-| 9000000002 | Free student: took the free Mock Test 1 (result, rank, explanations) |
-| 9000000003 | Paid student (full access): Mock Tests 1 and 2 and a PYQ paper done |
-| 9000000004 | Paid student: Mock Test 2 paused half-way (shows **Resume**) |
-| 9000000005 | Paid student, topper: high score in Mock Test 1 |
+| 9000000001 | Brand-new student: is asked for exams & subjects right after login |
+| 9000000002 | Free student (BPSC TRE 4.0 · Computer Science): took the free Mock Test 1 |
+| 9000000003 | Paid student: unlocked BPSC TRE 4.0 · Computer Science (Bihar STET · CS shown locked); Mock Tests 1 and 2 and a PYQ paper done |
+| 9000000004 | Paid student (BPSC TRE 4.0 · Computer Science): Mock Test 2 paused half-way (shows **Resume**) |
+| 9000000005 | All-access student, topper: high score in Mock Test 1 |
 | 9999999999 | Admin (from `ADMIN_PHONES`) |
 
-The demo data is kept only if you stop `npm run dev:local` with **Ctrl+C**; otherwise run `npm run seed:demo` again. On the real site there is no seed script: add the numbers in Firebase → Authentication → Phone → **Phone numbers for testing** with fixed codes, log in with them, and give access with Admin → Users → **Grant**.
+The demo data is kept only if you stop `npm run dev:local` with **Ctrl+C**; otherwise run `npm run seed:demo` again. Accounts seeded by an older version keep their tests and full access; running `npm run seed:demo` again sets their exams & subjects so they skip the onboarding screen. On the real site there is no seed script: add the numbers in Firebase → Authentication → Phone → **Phone numbers for testing** with fixed codes, log in with them, and give access with Admin → Students (**+ series… → Grant**, or **Grant all**).
+
+## 3f. Exams & subjects after sign-up, and paying per test series
+
+- **Onboarding:** right after the first login a student is asked **which exams and subjects they are preparing for** (`/onboarding`; several can be ticked). They can change it any time (Dashboard → **Edit exams & subjects**, or the account menu → **My exams & subjects**).
+- **Dashboard → My test series** shows a card per chosen exam + subject: mocks, papers, questions, **Unlocked / Locked**, and an **Unlock for ₹…** button on each locked one. Everything stays visible; paid tests open only after paying.
+- **One payment = one test series** (one exam + one subject), at the price set in Admin → Overview. It unlocks that series' mock tests, previous papers, PYQ pages and paid eBooks. Several series are bought separately and each opens on its own. The first mock of every series is free.
+- Orders from older versions (before per-series pricing) and **Grant all** in Admin → Students still give access to everything.
+- Admin → Students shows each student's chosen exams & subjects and unlocked series, with **+ series… → Grant**, **×** (revoke one) and **Grant all / Revoke all**. Admin → Payments shows the series of each order.
+
+## 3g. "Prepared by serving teachers" (home page)
+
+The home page has a badge in the hero, a section and a pricing line saying that every mock test and question is prepared by **10 teachers already serving in Bihar's schools, as per the BPSC standard**, with four steps (written by subject teachers, matched to the BPSC syllabus, cross-checked before going live, explained answers). Settings: `expertsConfig` in `config/test-series.config.ts` (`teacherCount`, `enabled`, and optional `members`: name, subject, school, years, shown as cards). Texts: `home.exp*`, `home.trustExperts`, `pc.f.experts`, `wm.bExperts` in `src/lib/i18n.ts`.
+
+**⚠ This must be true.** Set `teacherCount` to the real size of your panel, change the four steps to what your teachers actually do, or set `enabled: false`. A false claim in an advertisement breaks the Consumer Protection Act 2019 (misleading advertisement) and the ASCI code. Add real names or photos only with each teacher's written consent, and check whether a government teacher's service rules allow paid outside work before naming them.
 
 ## 4. Accounts and keys you need
 
@@ -316,7 +334,7 @@ Set `ADMIN_PHONES` to your own mobile number(s), comma-separated (e.g. `+9198765
 ## 6. How the security works
 
 - **Answers never reach the browser before submission.** The question bank (`bank.json` and uploaded papers in Firestore) is read only by server code marked `server-only`; the build fails if browser code imports it. During a test the browser receives only question text and options. Answers and explanations are sent only by the result page, after submission.
-- **The PYQ reading pages are separate from tests.** A paper's PYQ page shows answers by design, so a student could read a paper before taking it as a test. To keep a paper "unseen", leave it paid: then only the 5-question preview is open to students without the pass.
+- **The PYQ reading pages are separate from tests.** A paper's PYQ page shows answers by design, so a student could read a paper before taking it as a test. To keep a paper "unseen", leave it paid: then only the 5-question preview is open to students who have not unlocked its test series.
 - **Admin actions** (upload, question edits, PDFs, test settings, price, access) check the admin's phone against `ADMIN_PHONES` on the server, including a check that the session wasn't revoked. To everyone else `/admin` is a 404.
 - **PDFs:** the Storage bucket allows no direct reads. Uploads are allowed only with a short-lived admin-only sign-in the server issues, and only for PDF files under 50 MB. Downloads go through `/api/resources/{id}/file`, which checks access and then redirects to a signed link that expires after 10 minutes.
 - **Exit & resume:** the remaining time is stored on the server when a test is paused, and the deadline is reset on the server when it is resumed. The browser can't add time.
@@ -328,16 +346,18 @@ Set `ADMIN_PHONES` to your own mobile number(s), comma-separated (e.g. `+9198765
 ## 7. Data model (Firestore)
 
 ```
-users/{uid}                   phone, createdAt, lastLoginAt, paid, paidAt, paidOrderId
+users/{uid}                   phone, createdAt, lastLoginAt, interests [{exam, subject}], onboardedAt,
+                              passes { "<exam>__<subject>": {exam, subject, paidAt, orderId | grantedBy} },
+                              paid, paidAt, paidOrderId (older all-access orders and "Grant all")
 users/{uid}/attempts/{id}     testId, status, questionIds, startedAt, deadlineAt, answers, marked,
                               visited, current, savedAt, submittedAt, timeTakenSec, result, graded,
                               pausedAt + remainingMs (only while paused with Exit),
                               examKey, pattern (marking, Option E and sections when it started)
 users/{uid}/active/{testId}   attemptId of the running attempt (prevents duplicates)
-payments/{razorpayOrderId}    uid, phone, amount (paise), status created|paid|failed, paymentId, verifiedVia
-settings/app                  priceInPaise
-uploads/{id}                  one uploaded paper: title, examKey, subject, year, free, durationMinutes, questions[]
-catalog/mocks                 mock tests created from uploaded questions, per exam + subject, with their sections
+payments/{razorpayOrderId}    uid, phone, exam, subject, amount (paise), status created|paid|failed, paymentId, verifiedVia
+settings/app                  priceInPaise (price of one test series)
+uploads/{id}                  one uploaded file = one test: title, kind mock|paper (older: paper), examKey, subject, year, free, durationMinutes, questions[]
+catalog/mocks                 mixed mocks built from previous-paper questions ("Build mixed mock"), per exam + subject, with their sections
                               (BPSC TRE CS: "38", "39"…; BPSC TRE other subjects: "m-mathematics-1"…; other exams: "m-bseb-stet-computer-science-1"…)
 catalog/overrides             { [testId]: { free, hidden, title } } set from the admin table
 catalog/exams                 { enabled: [examKey…] } exams shown to students (Admin → Exams)

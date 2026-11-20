@@ -20,12 +20,14 @@ const ADMIN_PHONE = process.env.ADMIN_PHONE || "+919999999999";
 const J = { "Content-Type": "application/json" };
 
 export const DEMO_USERS = [
-  { phone: "+919000000001", role: "New student (free plan, nothing attempted yet)" },
-  { phone: "+919000000002", role: "Free student: took the free Mock Test 1 (result, rank, explanations)" },
-  { phone: "+919000000003", role: "Paid student (full access): 2 mock tests + 1 PYQ paper done" },
-  { phone: "+919000000004", role: "Paid student: Mock Test 2 PAUSED half-way (shows Resume)" },
-  { phone: "+919000000005", role: "Paid student, topper: high score in Mock Test 1 (rank 1)" },
+  { phone: "+919000000001", role: "Brand-new student: not onboarded yet (is asked for exams & subjects after login)" },
+  { phone: "+919000000002", role: "Free student: chose BPSC TRE 4.0 · Computer Science, took the free Mock Test 1" },
+  { phone: "+919000000003", role: "Paid student: unlocked BPSC TRE 4.0 · Computer Science (STET · CS still locked); 2 mocks + 1 PYQ done" },
+  { phone: "+919000000004", role: "Paid student (BPSC TRE 4.0 · Computer Science): Mock Test 2 PAUSED half-way (shows Resume)" },
+  { phone: "+919000000005", role: "All-access student, topper: high score in Mock Test 1 (rank 1)" },
 ];
+const BPSC_CS = { exam: "bpsc", subject: "computer-science" };
+const STET_CS = { exam: "bseb-stet", subject: "computer-science" };
 
 const root = process.cwd();
 const bank = JSON.parse(fs.readFileSync(path.join(root, "src/data/generated/bank.json"), "utf8"));
@@ -104,18 +106,29 @@ await check(APP, "The site");
 await check(`${AUTH}/`, "The Auth emulator");
 
 const admin = await login(ADMIN_PHONE);
-const grant = (uid) => post(`/api/admin/users/${uid}/access`, admin.cookie, { paid: true });
+const grantAll = (uid) => post(`/api/admin/users/${uid}/access`, admin.cookie, { paid: true });
+const grantSeries = (uid, s) => post(`/api/admin/users/${uid}/access`, admin.cookie, { ...s, grant: true });
+const interests = (user, list) => post("/api/me/interests", user.cookie, { interests: list });
 
 for (const [i, d] of DEMO_USERS.entries()) {
   const user = await login(d.phone);
   console.log(`${d.phone}: ${d.role}`);
+  // Exams & subjects (onboarding): set every run, so older demo accounts skip the onboarding screen too.
+  if (i >= 1) {
+    const r = await interests(user, i === 2 ? [BPSC_CS, STET_CS] : [BPSC_CS]);
+    console.log(r.ok ? "  ✓ exams & subjects chosen" : `  ✗ could not save exams & subjects (${r.status})`);
+  }
   if ((await attemptCount(user.uid)) > 0) {
-    console.log("  already has data, left unchanged");
+    console.log("  already has tests, left unchanged");
     continue;
   }
-  if (i >= 2) {
-    const r = await grant(user.uid);
-    console.log(r.ok ? "  ✓ full access granted (as if paid)" : `  ✗ could not grant access (${r.status})`);
+  if (i === 2 || i === 3) {
+    const r = await grantSeries(user.uid, BPSC_CS);
+    console.log(r.ok ? "  ✓ BPSC TRE 4.0 · Computer Science unlocked (as if paid)" : `  ✗ could not unlock the series (${r.status})`);
+  }
+  if (i === 4) {
+    const r = await grantAll(user.uid);
+    console.log(r.ok ? "  ✓ all test series unlocked (as if paid)" : `  ✗ could not grant access (${r.status})`);
   }
   if (i === 1) await takeTest(user, "1", 0.58, 71);
   if (i === 2) {

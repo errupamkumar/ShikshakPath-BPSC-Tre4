@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { UploadError, uploadPaper, type UploadInput } from "@/lib/admin-catalog";
 import { getSessionUser } from "@/lib/session";
 
-/** Upload one question paper (JSON) → new paper test (+ new mock tests when enough new questions). */
+/** Upload one JSON file → ONE new test: a mock test or a previous-year paper (body.kind). */
 export async function POST(req: Request) {
   const admin = await getSessionUser(true);
   if (!admin?.isAdmin) return NextResponse.json({ error: "Not found" }, { status: 404 });

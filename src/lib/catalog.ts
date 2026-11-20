@@ -41,8 +41,11 @@ export type QuestionEdit = {
   updatedAt?: number;
   updatedBy?: string;
 };
+/** What an uploaded file becomes: a mock test, or a previous-year paper (older uploads: paper). */
+export type UploadKind = "mock" | "paper";
 export type UploadDoc = {
   title: string;
+  kind?: UploadKind;
   examKey: string;
   subject?: string; // older uploads (before subjects existed) are Computer Science
   year?: number;
@@ -111,7 +114,7 @@ export type Catalog = {
   uploadLabels: Map<string, { name: string; examKey: string; subject: string }>;
   /** Per exam + subject (key: poolKey): questions not yet in any mock test. */
   pool: Record<string, string[]>;
-  uploads: { id: string; title: string; examKey: string; subject: string; questionCount: number; newQuestions: number; createdAt: number; fileName: string }[];
+  uploads: { id: string; title: string; kind: UploadKind; examKey: string; subject: string; questionCount: number; newQuestions: number; createdAt: number; fileName: string }[];
   stats: CatalogStats;
 };
 
@@ -189,21 +192,24 @@ export function buildCatalog(input: {
       ids.push(id);
       fresh++;
     }
-    uploads.push({ id: docId, title: up.title, examKey: exam, subject, questionCount: ids.length, newQuestions: fresh, createdAt: up.createdAt, fileName: up.fileName });
+    const kind: UploadKind = up.kind === "mock" ? "mock" : "paper";
+    uploads.push({ id: docId, title: up.title, kind, examKey: exam, subject, questionCount: ids.length, newQuestions: fresh, createdAt: up.createdAt, fileName: up.fileName });
     if (ids.length === 0) continue;
+    // One upload = ONE test: a mock test (Mock tests tab) or a previous-year paper (Previous papers tab + PYQs).
     tests.push({
       id: `u-${docId}`,
-      kind: "paper",
+      kind,
       subject,
-      number: 0,
+      number: 0, // mocks are numbered below, after the existing mock tests of this exam + subject
       title: up.title,
       free: !!up.free,
       questionIds: ids,
       questionCount: ids.length,
-      durationMinutes: up.durationMinutes || Math.max(1, Math.round(ids.length * buildConfig.paperMinutesPerQuestion)),
+      durationMinutes:
+        up.durationMinutes || (kind === "mock" ? mockMinutes(ids.length, patternFor(exam)) : Math.max(1, Math.round(ids.length * buildConfig.paperMinutesPerQuestion))),
       paperCount: 1,
       examKey: exam,
-      year: up.year,
+      ...(kind === "paper" ? { year: up.year } : {}),
       origin: "uploaded",
       createdAt: up.createdAt,
     });
@@ -228,6 +234,17 @@ export function buildCatalog(input: {
       origin: "uploaded",
       createdAt: m.createdAt,
     });
+  }
+
+  // Uploaded mock tests get the next numbers of their exam + subject, in upload order.
+  {
+    const next = new Map<string, number>();
+    for (const t of tests) if (t.kind === "mock" && t.number) next.set(poolKey(t.examKey ?? BUNDLED_EXAM, t.subject), Math.max(next.get(poolKey(t.examKey ?? BUNDLED_EXAM, t.subject)) ?? 0, t.number));
+    for (const t of tests.filter((x) => x.kind === "mock" && !x.number).sort((a, b) => (a.createdAt ?? 0) - (b.createdAt ?? 0))) {
+      const k = poolKey(t.examKey ?? BUNDLED_EXAM, t.subject);
+      t.number = (next.get(k) ?? 0) + 1;
+      next.set(k, t.number);
+    }
   }
 
   // Admin question corrections (text, options, answer key, explanation, Hindi).
@@ -370,7 +387,7 @@ function sourceInfo(source: string, labels: Catalog["uploadLabels"]) {
 
 const CHECK_MS = 30_000;
 /** Bump when the Catalog shape changes, so a cached copy from older code is never reused (dev hot reload). */
-const SCHEMA = 5;
+const SCHEMA = 6;
 const g = globalThis as unknown as {
   __csCatalog?: { cat: Catalog; checkedAt: number; schema: number };
   __csCatalogLoading?: Promise<Catalog>;
@@ -543,6 +560,21 @@ export function sectionsOf(t: Pick<TestDef, "examKey" | "subject" | "sections" |
       negative: sp.negative ?? p.negativeMarksPerWrong,
     };
   });
+}
+
+/** Counts of one test series (exam + subject). */
+export function seriesStats(cat: Catalog, exam: string | undefined, subject: string): SubjectStats {
+  return cat.stats.byExamSubject[exam ?? BUNDLED_EXAM]?.[subject] ?? EMPTY;
+}
+
+/** "BPSC TRE 4.0 · Computer Science" */
+export function seriesLabel(exam: string | undefined, subject: string, lang: "en" | "hi" = "en"): string {
+  return `${examShort(exam ?? BUNDLED_EXAM)} · ${subjectName(subject, lang)}`;
+}
+
+/** The series a test belongs to, for the unlock button. */
+export function seriesOf(t: Pick<TestDef, "examKey" | "subject">): { exam: string; subject: string } {
+  return { exam: t.examKey ?? BUNDLED_EXAM, subject: t.subject };
 }
 
 /** The exam a paper was originally asked in (falls back to the series exam). */

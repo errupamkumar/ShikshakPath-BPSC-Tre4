@@ -68,7 +68,10 @@ export function FaqList({ faqs }: { faqs: { q: string; a: string }[] }) {
   );
 }
 
-/** Dark price card: "Unlock all" (Adda247-style buy box). */
+/**
+ * Dark price card (Adda247-style buy box). Prices are per test series = one exam + one subject.
+ * With `series`: unlock that series. Without (home page): send the visitor to choose exam + subject.
+ */
 export function PriceCard({
   price,
   compareAt,
@@ -76,25 +79,31 @@ export function PriceCard({
   paid,
   loggedIn,
   freeHref = "/exams",
+  series,
+  seriesLabel,
 }: {
   price: string;
   compareAt?: string;
   features: string[];
+  /** This series is unlocked for the visitor. */
   paid: boolean;
   loggedIn: boolean;
   /** Where "Try a free mock test" goes (a subject's free test, or the exam picker). */
   freeHref?: string;
+  series?: { exam: string; subject: string };
+  /** e.g. "BPSC TRE 4.0 · Computer Science" */
+  seriesLabel?: string;
 }) {
   const { t } = useLang();
   return (
     <div className="relative overflow-hidden rounded-[28px] bg-ink-950 p-6 text-ink-100 shadow-2xl shadow-ink-900/20 sm:p-8">
       <div aria-hidden className="pointer-events-none absolute -top-24 -right-24 size-64 rounded-full bg-brand-500/25 blur-3xl" />
-      <p className="relative text-xs font-bold tracking-[0.2em] text-brand-300 uppercase">{t("pc.eyebrow")}</p>
+      <p className="relative text-xs font-bold tracking-[0.2em] text-brand-300 uppercase">{seriesLabel ?? t("pc.eyebrow")}</p>
       <p className="relative mt-4 flex items-end gap-3">
         <span className="display text-6xl leading-none text-white">{price}</span>
         {compareAt && <span className="pb-1 text-lg text-ink-400 line-through">{compareAt}</span>}
       </p>
-      <p className="relative mt-1 text-sm text-ink-300">{t("pc.oneTime")}</p>
+      <p className="relative mt-1 text-sm text-ink-300">{series ? t("pc.oneTimeSeries") : t("pc.perSeries")}</p>
       <ul className="relative mt-6 grid gap-3 text-sm">
         {features.map((f) => (
           <li key={f} className="flex gap-2.5">
@@ -104,13 +113,19 @@ export function PriceCard({
       </ul>
       <div className="relative mt-7 grid gap-3">
         {paid ? (
-          <p className="rounded-full bg-emerald-500/15 px-4 py-3 text-center text-sm font-bold text-emerald-300">✓ {t("common.fullAccess")}</p>
+          <p className="rounded-full bg-emerald-500/15 px-4 py-3 text-center text-sm font-bold text-emerald-300">✓ {t("common.seriesUnlocked")}</p>
+        ) : series ? (
+          <UnlockButton series={series} priceLabel={price} loggedIn={loggedIn} className="btn-accent w-full" />
         ) : (
-          <UnlockButton priceLabel={price} loggedIn={loggedIn} className="btn-accent w-full" />
+          <Link href="/#choose" className="btn btn-accent w-full py-3">
+            {t("pc.chooseSeries")}
+          </Link>
         )}
-        <Link href={paid ? "/tests" : freeHref} className="btn btn-light w-full py-3">
-          {paid ? t("pc.goSeries") : t("pc.tryFree")}
-        </Link>
+        {!paid && (
+          <Link href={freeHref} className="btn btn-light w-full py-3">
+            {t("pc.tryFree")}
+          </Link>
+        )}
       </div>
       <p className="relative mt-4 text-center text-xs text-ink-400">{t("pc.secure")}</p>
     </div>

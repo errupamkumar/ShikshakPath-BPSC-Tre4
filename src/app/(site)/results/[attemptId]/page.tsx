@@ -5,9 +5,9 @@ import { subjectName } from "@config/subjects";
 import { ResultReview, type ReviewItem } from "@/components/result-review";
 import { StartTestButton } from "@/components/start-test-button";
 import { UnlockButton } from "@/components/unlock-button";
-import { fullAccess } from "@/lib/access";
+import { accessFor, canOpenSeries } from "@/lib/access";
 import { attemptPattern, finalizeAttempt, getAttempt, getRankInfo, isExpired } from "@/lib/attempts";
-import { examShort, getCatalog, primaryExamKey, seriesPath, sourceNames } from "@/lib/catalog";
+import { examShort, getCatalog, primaryExamKey, seriesLabel, seriesOf, seriesPath, seriesStats, sourceNames } from "@/lib/catalog";
 import { dateTime, duration, marks, rupees } from "@/lib/format";
 import { getT } from "@/lib/lang";
 import { getSessionUser } from "@/lib/session";
@@ -62,7 +62,8 @@ export default async function ResultPage({ params }: { params: Promise<{ attempt
   });
 
   const pct = r.maxScore ? Math.max(0, (r.score / r.maxScore) * 100) : 0;
-  const paid = await fullAccess(user);
+  const access = await accessFor(user);
+  const paid = test ? canOpenSeries(access, test.examKey, test.subject) : access.all;
   const price = paid ? "" : rupees(await getPriceInPaise());
   const ap = attemptPattern(cat, attempt);
   const optionELabel = ap.optionE ? ap.optionELabel : null;
@@ -217,9 +218,16 @@ export default async function ResultPage({ params }: { params: Promise<{ attempt
         <section className="mt-6 flex flex-col gap-4 rounded-2xl bg-brand-600 p-5 text-white sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="font-bold">{t("res.upsellTitle")}</p>
-            <p className="text-sm text-brand-100">{t("res.upsellText", { t: stats.totalTests, q: stats.totalQuestions.toLocaleString("en-IN"), price })}</p>
+            <p className="text-sm text-brand-100">{test
+                ? t("res.upsellSeries", {
+                    series: seriesLabel(test.examKey, test.subject, lang),
+                    t: seriesStats(cat, test.examKey, test.subject).mockTests + seriesStats(cat, test.examKey, test.subject).paperTests,
+                    q: seriesStats(cat, test.examKey, test.subject).questions.toLocaleString("en-IN"),
+                    price,
+                  })
+                : t("res.upsellText", { t: stats.totalTests, q: stats.totalQuestions.toLocaleString("en-IN"), price })}</p>
           </div>
-          <UnlockButton priceLabel={price} loggedIn />
+          {test && <UnlockButton series={seriesOf(test)} priceLabel={price} loggedIn />}
         </section>
       )}
 

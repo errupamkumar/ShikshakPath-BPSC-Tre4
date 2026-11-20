@@ -9,7 +9,7 @@ import { StartTestButton } from "@/components/start-test-button";
 import { UnlockButton } from "@/components/unlock-button";
 import { canAccessTest } from "@/lib/access";
 import { getRunningAttempt, patternOfTest, remainingMsOf } from "@/lib/attempts";
-import { examShort, getCatalog, isOpenToStudents, paperSource, seriesPath } from "@/lib/catalog";
+import { examShort, getCatalog, isOpenToStudents, paperSource, seriesLabel, seriesOf, seriesPath, seriesStats } from "@/lib/catalog";
 import { fractionLabel, rupees } from "@/lib/format";
 import { getT } from "@/lib/lang";
 import { getSessionUser } from "@/lib/session";
@@ -25,7 +25,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function TestPage({ params }: Props) {
   const { testId } = await params;
   const [cat, { lang, t }] = await Promise.all([getCatalog(), getT()]);
-  const stats = cat.stats;
   const test = cat.testById.get(testId);
   const user = await getSessionUser();
   if (!test || (!isOpenToStudents(test) && !user?.isAdmin)) notFound();
@@ -44,10 +43,15 @@ export default async function TestPage({ params }: Props) {
           </span>
           <h1 className="mt-4 text-2xl font-bold">{t("inst.locked", { title: test.title })}</h1>
           <p className="mt-2 text-ink-600 dark:text-ink-400">
-            {t("inst.lockedText", { n: stats.totalTests, q: stats.totalQuestions.toLocaleString("en-IN"), price })}
+            {t("inst.lockedText", {
+              n: seriesStats(cat, test.examKey, test.subject).mockTests + seriesStats(cat, test.examKey, test.subject).paperTests,
+              q: seriesStats(cat, test.examKey, test.subject).questions.toLocaleString("en-IN"),
+              series: seriesLabel(test.examKey, test.subject, lang),
+              price,
+            })}
           </p>
           <div className="mt-6 flex flex-col items-center gap-3">
-            <UnlockButton priceLabel={price} loggedIn />
+            <UnlockButton series={seriesOf(test)} priceLabel={price} loggedIn />
             {freeTest && (
               <Link href={`/tests/${freeTest.id}`} className="text-sm font-semibold text-brand-600 dark:text-brand-400">
                 {t("inst.freeFirst")}

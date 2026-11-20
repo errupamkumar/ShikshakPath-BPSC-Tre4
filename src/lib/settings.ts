@@ -6,7 +6,7 @@ import { db, isFirebaseAdminConfigured } from "./firebase-admin";
 const CACHE_MS = 60_000;
 const g = globalThis as unknown as { __csPriceCache?: { priceInPaise: number; at: number } };
 
-/** Current price of "Unlock all", in paise. Admin value from Firestore, else config default. */
+/** Current price of one test series (exam + subject), in paise. Admin value from Firestore, else config default. */
 export async function getPriceInPaise(): Promise<number> {
   const fallback = Math.round(pricingConfig.defaultPriceInRupees * 100);
   if (!isFirebaseAdminConfigured()) return fallback;

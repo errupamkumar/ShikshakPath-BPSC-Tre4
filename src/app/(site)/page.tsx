@@ -1,15 +1,15 @@
 import Link from "next/link";
 import { cookies } from "next/headers";
-import { carouselConfig, examPattern, landingConfig, patternFor, siteConfig } from "@config/test-series.config";
+import { carouselConfig, examPattern, expertsConfig, landingConfig, patternFor, siteConfig } from "@config/test-series.config";
 import { ExamLogo } from "@/components/exam-logo";
 import { ExamPicker } from "@/components/exam-picker";
-import { ArrowUpRight, BookIcon, ChartIcon, CheckIcon, ClockIcon, DeviceIcon, LayersIcon, TargetIcon, TrophyIcon } from "@/components/icons";
+import { ArrowUpRight, BookIcon, ChartIcon, CheckIcon, ClockIcon, DeviceIcon, LayersIcon, ShieldIcon, TargetIcon, TrophyIcon } from "@/components/icons";
 import { SampleQuiz } from "@/components/sample-quiz";
 import { ScreenCarousel } from "@/components/screen-carousel";
 import { FaqList, PriceCard, SectionHeading } from "@/components/sections";
 import { SubjectCard } from "@/components/subject-card";
 import { WelcomeModal } from "@/components/welcome-modal";
-import { fullAccess } from "@/lib/access";
+import { accessFor } from "@/lib/access";
 import { getCatalog, liveExams, seriesPath, subjectsForExam, toPublicQuestion } from "@/lib/catalog";
 import { menuExams } from "@/lib/exam-menu";
 import { fractionLabel, rupees } from "@/lib/format";
@@ -21,7 +21,9 @@ import { getPriceInPaise } from "@/lib/settings";
 
 export default async function HomePage() {
   const [cat, pricePaise, user, { lang, t }, jar] = await Promise.all([getCatalog(), getPriceInPaise(), getSessionUser(), getT(), cookies()]);
-  const paid = await fullAccess(user);
+  const access = await accessFor(user);
+  const paid = access.all;
+  const experts = expertsConfig.enabled && expertsConfig.teacherCount > 0 ? expertsConfig.teacherCount : 0;
   const s = cat.stats;
   const fmt = (n: number) => n.toLocaleString("en-IN");
   const price = rupees(pricePaise);
@@ -57,12 +59,13 @@ export default async function HomePage() {
 
   return (
     <>
-      {!paid && (
+      {!access.any && (
         <WelcomeModal
           freeHref={freeMock ? `/tests/${freeMock.id}` : "/exams"}
+          buyHref={user ? "/dashboard" : "/#choose"}
           price={price}
           compareAt={`₹${fmt(bookTotal)}`}
-          stats={{ mocks: s.mockTests, papers: s.paperTests, questions: fmt(s.totalQuestions) }}
+          experts={experts}
           loggedIn={!!user}
         />
       )}
@@ -83,7 +86,15 @@ export default async function HomePage() {
           </div>
           <div className="animate-fade-up lg:col-start-1 lg:row-start-2 lg:self-start">
             <p className="max-w-xl text-lg leading-relaxed text-ink-600 dark:text-ink-300">{t("home.text")}</p>
-            <ul className="mt-7 flex flex-wrap gap-2 text-sm font-semibold">
+            {experts > 0 && (
+              <a href="#experts" className="mt-6 inline-flex items-center gap-2.5 rounded-2xl bg-ink-900 py-2 pr-4 pl-2 text-sm font-bold text-ink-50 shadow-lg shadow-ink-900/10 transition hover:-translate-y-0.5 dark:bg-brand-300 dark:text-ink-950">
+                <span className="grid size-8 place-items-center rounded-xl bg-brand-300 text-ink-950 dark:bg-ink-950 dark:text-brand-300">
+                  <ShieldIcon width={16} height={16} />
+                </span>
+                {t("home.trustExperts", { n: experts })}
+              </a>
+            )}
+            <ul className="mt-5 flex flex-wrap gap-2 text-sm font-semibold">
               {[t("home.trust1"), t("home.trust2"), t("home.trust3")].map((x) => (
                 <li key={x} className="inline-flex items-center gap-1.5 rounded-full border border-ink-200 bg-white px-3 py-1.5 dark:border-ink-700 dark:bg-ink-900">
                   <CheckIcon width={14} height={14} className="text-emerald-600 dark:text-emerald-400" /> {x}
@@ -138,6 +149,63 @@ export default async function HomePage() {
           ))}
         </dl>
       </section>
+
+      {/* ── Prepared by serving teachers (expertsConfig: must be true) ── */}
+      {experts > 0 && (
+        <section id="experts" className="container-page scroll-mt-28 pt-20 sm:pt-28">
+          <div className="grid gap-8 lg:grid-cols-[1fr_1.15fr] lg:items-center xl:gap-14">
+            <div>
+              <p className="eyebrow">{t("home.expEyebrow")}</p>
+              <h2 className="display mt-3 text-3xl leading-[1.05] sm:text-5xl">{t("home.expTitle", { n: experts })}</h2>
+              <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink-600 dark:text-ink-300">{t("home.expText", { n: experts })}</p>
+              <div className="mt-8 grid max-w-xl grid-cols-2 gap-3">
+                <div className="relative overflow-hidden rounded-[24px] bg-ink-950 p-5 text-ink-50">
+                  <div aria-hidden className="pointer-events-none absolute -top-10 -right-10 size-32 rounded-full bg-brand-500/30 blur-2xl" />
+                  <p className="display relative text-5xl text-brand-300 sm:text-6xl">{experts}</p>
+                  <p className="relative mt-1 text-sm text-ink-200">{t("home.expCount")}</p>
+                </div>
+                <div className="rounded-[24px] border-2 border-brand-300 bg-brand-50 p-5 dark:border-brand-700 dark:bg-brand-900/30">
+                  <ShieldIcon width={34} height={34} className="text-brand-600 dark:text-brand-300" />
+                  <p className="mt-3 text-lg font-black">{t("home.expStd")}</p>
+                  <p className="text-sm text-ink-600 dark:text-ink-300">{t("home.expStdD")}</p>
+                </div>
+              </div>
+            </div>
+            <ol className="grid gap-3 sm:grid-cols-2">
+              {[1, 2, 3, 4].map((i) => (
+                <li key={i} className="card relative p-6">
+                  <span className="grid size-10 place-items-center rounded-full bg-brand-50 font-mono text-sm font-bold text-brand-700 ring-1 ring-brand-200 dark:bg-brand-900/40 dark:text-brand-300 dark:ring-brand-800">
+                    {String(i).padStart(2, "0")}
+                  </span>
+                  <h3 className="mt-4 text-lg font-bold">{t(`home.exp${i}t` as "home.exp1t")}</h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-ink-600 dark:text-ink-300">{t(`home.exp${i}d` as "home.exp1d")}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+          {expertsConfig.members.length > 0 && (
+            <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+              {expertsConfig.members.map((m) => (
+                <li key={m.name} className="card p-4">
+                  <span className="grid size-11 place-items-center rounded-full bg-ink-900 text-sm font-black text-brand-300 dark:bg-brand-300 dark:text-ink-950">
+                    {m.name
+                      .split(/\s+/)
+                      .map((w) => w[0])
+                      .slice(0, 2)
+                      .join("")
+                      .toUpperCase()}
+                  </span>
+                  <p className="mt-3 font-bold">{m.name}</p>
+                  <p className="text-sm text-brand-700 dark:text-brand-300">{m.subject}</p>
+                  {(m.school || m.years) && (
+                    <p className="mt-1 text-xs text-ink-500 dark:text-ink-400">{[m.school, m.years ? t("home.expYears", { y: m.years }) : ""].filter(Boolean).join(" · ")}</p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
+      )}
 
       {/* ── Study material (portal) ── */}
       <section className="container-page pt-20 sm:pt-28">
@@ -218,11 +286,11 @@ export default async function HomePage() {
             paid={paid}
             loggedIn={!!user}
             features={[
-              s.paperTests > 0 ? t("pc.f.tests", { t: s.totalTests, m: s.mockTests, p: s.paperTests }) : t("pc.f.testsMocks", { t: s.totalTests }),
-              t("pc.f.questions", { q: fmt(s.totalQuestions) }),
+              t("pc.f.seriesAll"),
+              ...(experts > 0 ? [t("pc.f.experts", { n: experts })] : []),
               t("pc.f.study"),
               t("pc.f.rank"),
-              t("pc.f.allSubjects"),
+              t("pc.f.multi"),
               t("pc.f.devices"),
             ]}
           />

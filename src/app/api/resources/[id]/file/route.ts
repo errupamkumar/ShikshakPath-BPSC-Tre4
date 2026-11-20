@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { fullAccess } from "@/lib/access";
+import { accessFor, canOpenResource } from "@/lib/access";
 import { bucket, usingStorageEmulator } from "@/lib/firebase-admin";
 import { getResource } from "@/lib/resources";
 import { getSessionUser } from "@/lib/session";
@@ -15,7 +15,7 @@ export async function GET(req: Request, { params }: { params: Promise<{ id: stri
   if (!user) return NextResponse.redirect(new URL(`/login?next=/resources/${id}`, req.url));
   const r = await getResource(id);
   if (!r || (r.hidden && !user.isAdmin)) return NextResponse.json({ error: "Not found" }, { status: 404 });
-  if (!r.free && !(await fullAccess(user))) return NextResponse.json({ error: "Locked" }, { status: 403 });
+  if (!r.free && !canOpenResource(await accessFor(user), r)) return NextResponse.json({ error: "Locked" }, { status: 403 });
 
   const file = bucket().file(r.storagePath);
   const download = new URL(req.url).searchParams.get("download") === "1";

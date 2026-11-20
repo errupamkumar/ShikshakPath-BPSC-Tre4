@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { examByKey } from "@config/exams";
 import { subjectByKey, subjectName } from "@config/subjects";
-import { fullAccess } from "@/lib/access";
+import { accessFor, canOpenResource } from "@/lib/access";
 import { EBOOK_META, EBOOK_TYPES, type EbookType } from "@/lib/ebook-types";
 import { isFirebaseAdminConfigured } from "@/lib/firebase-admin";
 import { getT } from "@/lib/lang";
@@ -21,7 +21,7 @@ const COVER: Record<EbookType, string> = {
 /** eBooks: PDFs uploaded by the admin (Notes, PYQ, Strategy guides, Others). `type` undefined = all. */
 export async function EbooksPage({ type, subject }: { type?: EbookType; subject?: string }) {
   const [{ lang, t }, user] = await Promise.all([getT(), getSessionUser()]);
-  const paid = await fullAccess(user);
+  const access = await accessFor(user);
   const all = isFirebaseAdminConfigured() ? await listResources() : [];
   const ofType = all.filter((r) => !type || r.type === type);
   const subjectFilter = subject && subjectByKey.has(subject) ? subject : "";
@@ -81,7 +81,7 @@ export async function EbooksPage({ type, subject }: { type?: EbookType; subject?
           <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
             {items.map((r) => {
               const kind = (r.type in EBOOK_META ? r.type : "others") as EbookType;
-              const open = r.free || paid;
+              const open = r.free || canOpenResource(access, r);
               return (
                 <Link key={r.id} href={`/resources/${r.id}`} className="group flex flex-col">
                   {/* book cover */}

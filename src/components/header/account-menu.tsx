@@ -57,6 +57,7 @@ export function AccountMenu({ phoneLabel, isAdmin }: { phoneLabel: string; isAdm
           {[
             { href: "/dashboard", label: t("nav.myDashboard") },
             { href: "/tests", label: t("nav.myTests") },
+            { href: "/onboarding", label: t("nav.mySeries") },
             ...(isAdmin ? [{ href: "/admin", label: t("nav.admin") }] : []),
           ].map((l) => (
             <Link key={l.href} href={l.href} role="menuitem" className="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-ink-100 dark:hover:bg-ink-800">

@@ -60,8 +60,9 @@ export const siteConfig = {
  *     (e.g. "section": "aptitude"); questions without one go to the FIRST section.
  *     A section `name` may contain {subject}, replaced by the subject the student chose.
  *     A section can override the marking with `marks` / `negative`.
- *   - New mock tests are built automatically once EVERY section has enough new questions
- *     (Admin → "Create mock now" makes one from whatever is waiting).
+ *   - Each uploaded JSON file becomes ONE test: a mock test or a previous-year paper (the
+ *     admin chooses). Mock uploads get this pattern's time by default. Optionally, Admin →
+ *     Upload → "Build mixed mock" makes mocks from previous-paper questions in no mock yet.
  *   - Marking, time and Option E are saved with each attempt, so changing them later
  *     never changes old results.
  * Exams without an entry here use `defaultPattern`.
@@ -209,6 +210,19 @@ export const pricingConfig = {
   accessValidityDays: null as number | null,
 };
 
+/**
+ * Home page "Prepared by serving teachers" section and hero badge.
+ * ⚠ MUST BE TRUE. Set `teacherCount` to the real number of teachers on your panel (or
+ *   `enabled: false` to hide the section). Advertising a false claim is illegal under the
+ *   Consumer Protection Act 2019 and the ASCI code. Add names/photos only with each teacher's consent.
+ */
+export const expertsConfig = {
+  enabled: true,
+  teacherCount: 10,
+  /** Optional: real panel members, shown as cards. Leave empty to show only the process. */
+  members: [] as { name: string; subject: string; school?: string; years?: number }[],
+};
+
 export const landingConfig = {
   // ⚠ Approximate prices of buying separate solved-paper books. Update with the
   //   prices you actually see on Amazon / Flipkart / local shops.
@@ -235,6 +249,14 @@ export const landingConfig = {
     {
       q: "How do I log in?",
       a: "Only with your mobile number and a one-time password (OTP). No email or password needed.",
+    },
+    {
+      q: "Who prepares the tests?",
+      a: "A panel of teachers who are already serving in Bihar's schools prepares and cross-checks every mock test and question as per the BPSC standard: syllabus, difficulty, language and the official pattern.",
+    },
+    {
+      q: "What exactly do I pay for?",
+      a: "You pay once per test series: one exam + one subject (for example BPSC TRE 4.0 · Computer Science). It unlocks all mock tests, previous-year papers and paid eBooks of that exam and subject. Preparing for more than one? Unlock each one you need; they all appear on your dashboard.",
     },
     {
       q: "How do I pay? Is it safe?",
@@ -266,6 +288,14 @@ export const landingConfig = {
     {
       q: "लॉग इन कैसे करें?",
       a: "केवल अपने मोबाइल नंबर और OTP से। ईमेल या पासवर्ड की ज़रूरत नहीं।",
+    },
+    {
+      q: "टेस्ट कौन तैयार करता है?",
+      a: "बिहार के विद्यालयों में पहले से कार्यरत शिक्षकों का पैनल हर मॉक टेस्ट और प्रश्न को BPSC मानक के अनुसार तैयार और जाँचता है: पाठ्यक्रम, कठिनाई स्तर, भाषा और आधिकारिक पैटर्न।",
+    },
+    {
+      q: "मैं किस चीज़ का भुगतान करता/करती हूँ?",
+      a: "आप हर टेस्ट सीरीज़ का एक बार भुगतान करते हैं: एक परीक्षा + एक विषय (जैसे BPSC TRE 4.0 · कंप्यूटर विज्ञान)। इससे उस परीक्षा और विषय के सभी मॉक टेस्ट, पिछले वर्षों के पेपर और पेड ई-बुक्स खुल जाते हैं। एक से ज़्यादा की तैयारी? जो चाहिए, हर एक को अनलॉक करें; सब आपके डैशबोर्ड पर दिखेंगे।",
     },
     {
       q: "भुगतान कैसे करें? क्या यह सुरक्षित है?",

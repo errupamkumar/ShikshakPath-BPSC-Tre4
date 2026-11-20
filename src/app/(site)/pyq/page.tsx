@@ -4,7 +4,7 @@ import { examByKey, exams } from "@config/exams";
 import { subjectByKey, subjectName } from "@config/subjects";
 import { ExamLogo } from "@/components/exam-logo";
 import { BookIcon, LockIcon } from "@/components/icons";
-import { fullAccess } from "@/lib/access";
+import { accessFor, canOpenSeries } from "@/lib/access";
 import { getCatalog, isExamLive, liveExams, paperSource, seriesPath, subjectsForExam, testsFor } from "@/lib/catalog";
 import { getT } from "@/lib/lang";
 import { getSessionUser } from "@/lib/session";
@@ -20,7 +20,7 @@ type Props = { searchParams: Promise<{ exam?: string | string[]; subject?: strin
 export default async function PyqIndex({ searchParams }: Props) {
   const sp = await searchParams;
   const [cat, { lang, t }, user] = await Promise.all([getCatalog(), getT(), getSessionUser()]);
-  const paid = await fullAccess(user);
+  const access = await accessFor(user);
   const examsOn = liveExams(cat);
   const examKey = typeof sp.exam === "string" && isExamLive(cat, sp.exam) ? sp.exam : (examsOn.find((e) => (cat.stats.papersByExam[e.key] ?? 0) > 0) ?? examsOn[0])?.key;
   const subjects = examKey ? subjectsForExam(cat, examKey).filter((s) => s.live) : [];
@@ -97,7 +97,7 @@ export default async function PyqIndex({ searchParams }: Props) {
               </h2>
               <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
                 {g.papers.map((p) => {
-                  const open = p.free || paid;
+                  const open = p.free || canOpenSeries(access, p.examKey, p.subject);
                   return (
                     <Link key={p.id} href={`/pyq/${p.id}`} className="card group flex items-start gap-4 p-5 transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-ink-900/5">
                       <span className={`grid size-11 shrink-0 place-items-center rounded-2xl ${open ? "bg-brand-50 text-brand-700 ring-1 ring-brand-200 dark:bg-brand-900/40 dark:text-brand-200" : "bg-ink-100 text-ink-500 dark:bg-ink-800"}`}>

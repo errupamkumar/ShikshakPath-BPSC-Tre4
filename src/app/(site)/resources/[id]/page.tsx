@@ -5,7 +5,7 @@ import { examByKey } from "@config/exams";
 import { subjectName } from "@config/subjects";
 import { LockIcon } from "@/components/icons";
 import { UnlockButton } from "@/components/unlock-button";
-import { fullAccess } from "@/lib/access";
+import { accessFor, canOpenResource } from "@/lib/access";
 import { isFirebaseAdminConfigured } from "@/lib/firebase-admin";
 import { rupees } from "@/lib/format";
 import { getT } from "@/lib/lang";
@@ -29,7 +29,7 @@ export default async function ResourcePage({ params }: Props) {
   const [{ lang, t }, user, r] = await Promise.all([getT(), getSessionUser(), getResource(id)]);
   if (!r || (r.hidden && !user?.isAdmin)) notFound();
   if (!user) redirect(`/login?next=/resources/${id}`);
-  const open = r.free || (await fullAccess(user));
+  const open = r.free || canOpenResource(await accessFor(user), r);
   const meta = EBOOK_META[r.type] ?? EBOOK_META.others;
   const file = `/api/resources/${r.id}/file`;
 
@@ -70,7 +70,13 @@ export default async function ResourcePage({ params }: Props) {
           <h2 className="mt-4 text-2xl font-bold">{t("lib.lockedTitle")}</h2>
           <p className="mt-2 text-ink-600 dark:text-ink-300">{t("lib.lockedText", { price: rupees(await getPriceInPaise()) })}</p>
           <div className="mt-6 flex justify-center">
-            <UnlockButton priceLabel={rupees(await getPriceInPaise())} loggedIn />
+            {r.examKey && r.subject ? (
+              <UnlockButton series={{ exam: r.examKey, subject: r.subject }} priceLabel={rupees(await getPriceInPaise())} loggedIn />
+            ) : (
+              <Link href="/#choose" className="btn btn-primary px-6 py-3">
+                {t("pc.chooseSeries")}
+              </Link>
+            )}
           </div>
         </div>
       )}

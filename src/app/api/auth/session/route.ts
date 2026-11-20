@@ -30,10 +30,12 @@ export async function POST(req: Request) {
     // Create or update the user's profile.
     const ref = db().doc(`users/${decoded.uid}`);
     const now = Date.now();
-    await db().runTransaction(async (tx) => {
+    const onboarded = await db().runTransaction(async (tx) => {
       const snap = await tx.get(ref);
       if (snap.exists) tx.update(ref, { phone, lastLoginAt: now });
       else tx.set(ref, { phone, createdAt: now, lastLoginAt: now, paid: false });
+      // Has the student chosen exams + subjects (onboarding) yet?
+      return Boolean(snap.get("onboardedAt"));
     });
 
     (await cookies()).set(SESSION_COOKIE, sessionCookie, {
@@ -43,7 +45,7 @@ export async function POST(req: Request) {
       path: "/",
       maxAge: expiresIn / 1000,
     });
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true, onboarded });
   } catch (e) {
     console.error("Session creation failed", e);
     return NextResponse.json({ error: "Could not verify your login. Please try again." }, { status: 401 });

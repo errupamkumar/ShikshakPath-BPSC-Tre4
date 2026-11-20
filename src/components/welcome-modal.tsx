@@ -12,20 +12,24 @@ const DELAY_MS = 1200;
 
 /**
  * Landing-page greeting: welcomes the visitor, invites them to the free mock test and
- * makes the case for the full pass (with a link to pricing). Shown once, then again only
- * after SNOOZE_DAYS if they closed it. Never shown to students who have already paid.
+ * makes the case for buying their test series (one exam + subject). Shown once, then again
+ * only after SNOOZE_DAYS if they closed it. Never shown to students who have unlocked a series.
  */
 export function WelcomeModal({
   freeHref,
+  buyHref,
   price,
   compareAt,
-  stats,
+  experts,
   loggedIn,
 }: {
   freeHref: string;
+  /** Where "choose exam & subject" goes: the home picker, or the dashboard for logged-in students. */
+  buyHref: string;
   price: string;
   compareAt: string;
-  stats: { mocks: number; papers: number; questions: string };
+  /** Number of serving teachers on the panel (0 = don't mention it). */
+  experts: number;
   loggedIn: boolean;
 }) {
   const { t } = useLang();
@@ -108,18 +112,13 @@ export function WelcomeModal({
               <span className="pb-0.5 text-sm font-semibold text-ink-600 dark:text-ink-300">{t("wm.once")}</span>
             </p>
             <ul className="mt-3 grid gap-1 text-[13px] sm:gap-1.5 sm:text-sm">
-              {[
-                t("wm.b1", { m: stats.mocks, p: stats.papers }),
-                t("wm.b2", { q: stats.questions }),
-                t("wm.b3"),
-                t("wm.b4"),
-              ].map((b) => (
+              {[t("wm.b1"), ...(experts > 0 ? [t("wm.bExperts", { n: experts })] : []), t("wm.b2"), t("wm.b3"), t("wm.b4")].map((b) => (
                 <li key={b} className="flex gap-2">
                   <CheckIcon width={16} height={16} className="mt-0.5 shrink-0 text-emerald-600 dark:text-emerald-400" /> {b}
                 </li>
               ))}
             </ul>
-            <Link href="/#pricing" onClick={close} className="btn btn-accent mt-4 w-full py-3">
+            <Link href={buyHref} onClick={close} className="btn btn-accent mt-4 w-full py-3">
               {t("wm.buyCta", { price })} <ArrowRight width={16} height={16} />
             </Link>
           </div>

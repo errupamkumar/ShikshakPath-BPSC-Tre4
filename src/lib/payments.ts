@@ -1,4 +1,5 @@
 import "server-only";
+import { seriesKey } from "./access";
 import { db } from "./firebase-admin";
 
 export type PaymentDoc = {
@@ -7,6 +8,9 @@ export type PaymentDoc = {
   amount: number; // paise
   currency: string;
   status: "created" | "paid" | "failed";
+  /** The test series bought (exam + subject). Orders without them (older) unlock everything. */
+  exam?: string;
+  subject?: string;
   createdAt: number;
   paidAt?: number;
   paymentId?: string;
@@ -15,7 +19,8 @@ export type PaymentDoc = {
 };
 
 /**
- * Mark an order as paid and unlock the user's access, atomically and idempotently.
+ * Mark an order as paid and unlock the series it was for (or everything, for older orders),
+ * atomically and idempotently.
  * Called after the checkout signature or the webhook signature has been verified.
  */
 export async function markOrderPaid(
@@ -34,7 +39,12 @@ export async function markOrderPaid(
     if (p.status === "paid") return "already_paid";
     const now = Date.now();
     tx.update(payRef, { status: "paid", paymentId, paidAt: now, verifiedVia: via });
-    tx.set(db().doc(`users/${p.uid}`), { paid: true, paidAt: now, paidOrderId: orderId }, { merge: true });
+    const user = db().doc(`users/${p.uid}`);
+    if (p.exam && p.subject) {
+      tx.set(user, { passes: { [seriesKey(p.exam, p.subject)]: { exam: p.exam, subject: p.subject, paidAt: now, orderId } } }, { merge: true });
+    } else {
+      tx.set(user, { paid: true, paidAt: now, paidOrderId: orderId }, { merge: true });
+    }
     return "paid";
   });
 }

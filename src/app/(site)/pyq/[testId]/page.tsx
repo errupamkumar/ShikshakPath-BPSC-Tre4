@@ -6,8 +6,8 @@ import { subjectName } from "@config/subjects";
 import { LockIcon } from "@/components/icons";
 import { PyqViewer, type PyqItem } from "@/components/pyq-viewer";
 import { UnlockButton } from "@/components/unlock-button";
-import { fullAccess } from "@/lib/access";
-import { examShort, getCatalog, isOpenToStudents, paperSource, sourceNames } from "@/lib/catalog";
+import { accessFor, canOpenSeries } from "@/lib/access";
+import { examShort, getCatalog, isOpenToStudents, paperSource, seriesOf, sourceNames } from "@/lib/catalog";
 import { rupees } from "@/lib/format";
 import { getT } from "@/lib/lang";
 import { getSessionUser } from "@/lib/session";
@@ -28,7 +28,7 @@ export default async function PyqPaperPage({ params }: Props) {
   if (!test || test.kind !== "paper" || (!isOpenToStudents(test) && !user?.isAdmin)) notFound();
 
   // Full paper: logged in AND (free paper OR paid OR admin). Otherwise a short preview.
-  const full = !!user && (test.free || (await fullAccess(user)));
+  const full = !!user && (test.free || canOpenSeries(await accessFor(user), test.examKey, test.subject));
   const ids = full ? test.questionIds : test.questionIds.slice(0, libraryConfig.pyqPreviewQuestions);
   const items: PyqItem[] = ids
     .map((id, i) => {
@@ -68,7 +68,7 @@ export default async function PyqPaperPage({ params }: Props) {
           <p className="mt-3 font-semibold">{t("pyq.previewNote", { n: items.length, total: test.questionCount })}</p>
           <div className="mt-4 flex flex-col items-center gap-2">
             {user ? (
-              <UnlockButton priceLabel={price} loggedIn />
+              <UnlockButton series={seriesOf(test)} priceLabel={price} loggedIn />
             ) : (
               <Link href={`/login?next=/pyq/${test.id}`} className="btn btn-primary px-6 py-3">
                 {t("lib.loginToRead")}
